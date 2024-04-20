@@ -582,10 +582,6 @@ html {
   height: 100vh;
 }
 
-.min-h-\[400px\] {
-  min-height: 400px;
-}
-
 .min-h-80 {
   min-height: 20rem;
 }
@@ -655,11 +651,6 @@ html {
   padding-top: 2rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -668,7 +659,7 @@ html {
 @font-face {
   font-family: "Neue Haas Grotesk";
 
-  src: url("NeueHaasGrotText-55Roman-Web.woff2") format("woff2");
+  src: url("public/NeueHaasGrotText-55Roman-Web.woff2") format("woff2");
 
   font-weight: normal;
 
@@ -681,13 +672,6 @@ html {
   }
 
   .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
