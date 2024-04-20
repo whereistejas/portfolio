@@ -1,0 +1,16 @@
+---
+interface Props {
+  key: string;
+  value: string[];
+}
+
+const { key, value } = Astro.props;
+---
+
+<div class="flex justify-between items-start flex-col md:flex-row">
+  <div class="flex justify-start items-center w-2/5">{key}</div>
+  <div
+    class="flex justify-start items-center w-3/5 whitespace-pre"
+    set:html={value.join("<br>")}
+  />
+</div>

@@ -1,0 +1,20 @@
+---
+import Portfolio from "../layouts/portfolio.astro";
+import Profile from "../layouts/profile.astro";
+
+import "../../styles/output.css";
+---
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <main
+      class="flex-col columns-1 min-h-80 overflow-x-hidden text-sm md:text-lg"
+    >
+      <Portfolio title="Tejas Sanap" />
+      <Profile />
+    </main>
+  </body>
+</html>

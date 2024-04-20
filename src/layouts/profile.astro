@@ -1,0 +1,46 @@
+---
+import Section from "../components/section.astro";
+
+const qualities = ["A software engineer and photographer based in London, UK"];
+const beliefs = ["Software is made for humans and made by humans"];
+const experiences = [
+  "Tably, 2021-Present",
+  "Wipro, 2019-2021",
+  "\tClients - Johnson & Johnson, Wipro OSPO",
+];
+const school = ["Bachelors in Mechanical Engineering, 2013-2019", "\tSPPU"];
+---
+
+<div class="flex h-screen w-screen pt-8 justify-between items-center">
+  <div class="flex flex-col gap-6 p-3 w-full h-full">
+    <Section key="Profile" value={qualities} />
+    <Section key="Things I believe" value={beliefs} />
+    <Section key="Experience" value={experiences} />
+    <Section key="Education" value={school} />
+    <div class="flex justify-between items-start flex-col md:flex-row">
+      <div class="flex justify-start items-center w-2/5">Contact</div>
+      <div class="flex flex-col justify-start items-start w-3/5">
+        <div>
+          Email <a href="mailto:email@whereistejas.xyz"
+            >email@whereistejas.xyz</a
+          >
+        </div>
+        <div>
+          GitHub <a href="https://www.instagram.com/whereistejas"
+            >whereistejas</a
+          >
+        </div>
+        <div>
+          LinkedIn <a href="https://www.linkedin.com/in/whereistejas"
+            >whereistejas</a
+          >
+        </div>
+        <div>
+          Refrakt <a href="https://www.instagram.com/whereistejas"
+            >whereistejas</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

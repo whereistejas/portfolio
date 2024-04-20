@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Neue Haas Grotesk";
+  src: url("NeueHaasGrotText-55Roman-Web.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  html {
+    font-family: "Neue Haas Grotesk", system-ui, sans-serif;
+  }
+}

@@ -1,0 +1,16 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+import Showcase from "../components/showcase.astro";
+---
+
+<div class="absolute top-0 left-0">
+  <h2>
+    {title}
+  </h2>
+</div>
+<Showcase />
