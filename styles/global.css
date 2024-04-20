@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Neue Haas Grotesk";
-  src: url("public/NeueHaasGrotText-55Roman-Web.woff2") format("woff2");
+  src: url("/portfolio/NeueHaasGrotText-55Roman-Web.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }

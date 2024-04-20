@@ -643,6 +643,10 @@ html {
   white-space: pre;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -659,7 +663,7 @@ html {
 @font-face {
   font-family: "Neue Haas Grotesk";
 
-  src: url("public/NeueHaasGrotText-55Roman-Web.woff2") format("woff2");
+  src: url("/portfolio/NeueHaasGrotText-55Roman-Web.woff2") format("woff2");
 
   font-weight: normal;
 
@@ -667,6 +671,14 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:w-2\/5 {
+    width: 40%;
+  }
+
+  .md\:w-3\/5 {
+    width: 60%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
