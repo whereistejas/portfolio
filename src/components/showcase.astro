@@ -1,12 +1,31 @@
-<div class="flex w-screen h-screen justify-center items-center">
-  <div>
-    <!-- <p>Showcase</p> -->
-    <div class="carousel" data-flickity="">
-      <div class="carousel-cell"></div>
-      <div class="carousel-cell"></div>
-      <div class="carousel-cell"></div>
-      <div class="carousel-cell"></div>
-      <div class="carousel-cell"></div>
-    </div>
-  </div>
+<div
+  data-flickity='{ "wrapAround": true, "lazyLoad": true, "prevNextButtons": false, "pageDots": false, "imagesLoaded": true, "percentPosition": false }'
+>
+  <img
+    class="h-screen w-screen object-cover"
+    src="https://live.staticflickr.com/65535/53183761820_00eeab72e3_b_d.jpg"
+    alt="orange tree"
+  />
+  <img
+    class="h-screen w-screen object-cover"
+    src="https://live.staticflickr.com/65535/53183761820_00eeab72e3_b_d.jpg"
+    alt="orange tree"
+  />
+  <img
+    class="h-screen w-screen object-cover"
+    src="https://live.staticflickr.com/65535/53183761820_00eeab72e3_b_d.jpg"
+    alt="orange tree"
+  />
 </div>
+<style>
+  .flickity-viewport {
+    img {
+      width: 100%;
+      height: fit-content;
+    }
+    cursor: w-resize;
+  }
+  .flickity-viewport:after {
+    cursor: e-resize;
+  }
+</style>
