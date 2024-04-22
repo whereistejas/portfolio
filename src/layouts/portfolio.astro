@@ -5,7 +5,6 @@ interface Props {
 
 const { title } = Astro.props;
 
-import "../../node_modules/reveal.js/dist/reveal.css";
 // import "../../node_modules/reveal.js/dist/theme/black.css";
 ---
 
@@ -34,7 +33,6 @@ import "../../node_modules/reveal.js/dist/reveal.css";
   </div>
 </div>
 
-<script is:inline src="../node_modules/reveal.js/dist/reveal.js"></script>
 <script is:inline>
   let deck = new Reveal(document.querySelector(".showcase"), {
     embedded: true,
