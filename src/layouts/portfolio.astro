@@ -5,12 +5,41 @@ interface Props {
 
 const { title } = Astro.props;
 
-import Showcase from "../components/showcase.astro";
+import "../../node_modules/reveal.js/dist/reveal.css";
+// import "../../node_modules/reveal.js/dist/theme/black.css";
 ---
 
 <div class="absolute top-0 left-0">
-  <h2>
+  <h2 style="z-index: 2;">
     {title}
   </h2>
 </div>
-<Showcase />
+<div class="showcase reveal h-screen w-screen">
+  <div class="slides">
+    <section>
+      <img
+        src="https://live.staticflickr.com/65535/53183761820_00eeab72e3_b_d.jpg"
+      />
+    </section>
+    <section>
+      <img
+        src="https://live.staticflickr.com/65535/53183761820_00eeab72e3_b_d.jpg"
+      />
+    </section>
+    <section>
+      <img
+        src="https://live.staticflickr.com/65535/53183761820_00eeab72e3_b_d.jpg"
+      />
+    </section>
+  </div>
+</div>
+
+<script is:inline src="../node_modules/reveal.js/dist/reveal.js"></script>
+<script is:inline>
+  let deck = new Reveal(document.querySelector(".showcase"), {
+    embedded: true,
+    slideNumber: true,
+    controlsTutorial: false,
+  });
+  deck.initialize();
+</script>
