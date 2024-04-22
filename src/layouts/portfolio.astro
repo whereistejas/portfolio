@@ -5,11 +5,11 @@ interface Props {
 
 const { title } = Astro.props;
 
-// import "../../node_modules/reveal.js/dist/theme/black.css";
+import "reveal.js";
 ---
 
 <div class="absolute top-0 left-0">
-  <h2 style="z-index: 2;">
+  <h2>
     {title}
   </h2>
 </div>
