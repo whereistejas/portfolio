@@ -6,43 +6,37 @@ interface Props {
 const { title } = Astro.props;
 
 import "reveal.js/dist/reveal.css";
+// import "reveal.js/dist/theme/white.css";
 ---
 
 <script>
   import Reveal from "reveal.js";
   let deck = new Reveal({
-    touch: false,
     embedded: true,
-    slideNumber: "c/t",
-    controlsTutorial: false,
-    progress: false,
+    height: "300",
   });
   deck.initialize();
 </script>
 
-<div class="absolute top-0 left-0">
-  <h2>
-    {title}
-  </h2>
-</div>
-<div class="h-screen w-screen">
-  <div class="reveal">
-    <div class="slides">
-      <section>
-        <img
-          src="https://live.staticflickr.com/65535/53183761820_00eeab72e3_b_d.jpg"
-        />
-      </section>
-      <section>
-        <img
-          src="https://live.staticflickr.com/65535/53183624504_baf929b1ed_o.jpg"
-        />
-      </section>
-      <section>
-        <img
-          src="https://live.staticflickr.com/65535/53182878564_1db33b6455_o.jpg"
-        />
-      </section>
+<div class="flex flex-col h-1/3 md:h-dvh w-100vw">
+  <div class="p-3">
+    <h2>
+      {title}
+    </h2>
+  </div>
+  <div class="showcase h-full w-full">
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="DSCF3992.jpg" />
+        </section>
+        <section>
+          <img src="DSCF3993.jpg" />
+        </section>
+        <section>
+          <img src="DSCF4002.jpg" />
+        </section>
+      </div>
     </div>
   </div>
 </div>
