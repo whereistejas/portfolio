@@ -5,15 +5,25 @@ interface Props {
 
 const { title } = Astro.props;
 
-import "reveal.js";
+import "reveal.js/dist/reveal.css";
 ---
+
+<script>
+  import Reveal from "reveal.js/dist/reveal.esm";
+  let deck = new Reveal(document.querySelector(".reveal"), {
+    embedded: true,
+    slideNumber: true,
+    controlsTutorial: false,
+  });
+  deck.initialize();
+</script>
 
 <div class="absolute top-0 left-0">
   <h2>
     {title}
   </h2>
 </div>
-<div class="showcase reveal h-screen w-screen">
+<div class="reveal h-screen w-screen">
   <div class="slides">
     <section>
       <img
@@ -32,12 +42,3 @@ import "reveal.js";
     </section>
   </div>
 </div>
-
-<script is:inline>
-  let deck = new Reveal(document.querySelector(".showcase"), {
-    embedded: true,
-    slideNumber: true,
-    controlsTutorial: false,
-  });
-  deck.initialize();
-</script>
