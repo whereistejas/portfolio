@@ -582,6 +582,15 @@ html {
   height: 100vh;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-dvh {
+  height: 100dvh;
+}
+
 .min-h-80 {
   min-height: 20rem;
 }
@@ -600,6 +609,15 @@ html {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-dvw {
+  width: 100dvw;
 }
 
 .columns-1 {
