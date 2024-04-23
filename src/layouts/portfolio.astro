@@ -13,28 +13,29 @@ import "reveal.js/dist/reveal.css";
   import Reveal from "reveal.js";
   let deck = new Reveal({
     embedded: true,
-    height: "300",
+    progress: false,
+    pause: false,
   });
   deck.initialize();
 </script>
 
-<div class="flex flex-col h-1/3 md:h-dvh w-100vw">
-  <div class="p-3">
+<div class="flex flex-col w-screen">
+  <div class="absolute z-10 t-0 r-0 p-3">
     <h2>
       {title}
     </h2>
   </div>
-  <div class="showcase h-full w-full">
+  <div class="showcase z-0 h-screen">
     <div class="reveal">
       <div class="slides">
         <section>
-          <img src="DSCF3992.jpg" />
+          <img class="h-full w-full" src="DSCF3992.jpg" />
         </section>
         <section>
-          <img src="DSCF3993.jpg" />
+          <img class="h-full w-full" src="DSCF3993.jpg" />
         </section>
         <section>
-          <img src="DSCF4002.jpg" />
+          <img class="h-full w-full" src="DSCF4002.jpg" />
         </section>
       </div>
     </div>
