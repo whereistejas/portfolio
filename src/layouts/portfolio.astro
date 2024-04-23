@@ -11,21 +11,24 @@ import "reveal.js/dist/reveal.css";
 <script>
   import Reveal from "reveal.js";
   let deck = new Reveal({
+    controls: true,
     embedded: true,
     progress: false,
     pause: false,
     loop: true,
-    navigationMode: "linear",
-    scrollActivationWidth: 0,
+    // scrollActivationWidth: 0,
+    // view: "scroll",
+    // scrollProgress: true,
+    scrollLayout: "compact",
   });
   deck.initialize();
 </script>
 
 <div class="flex flex-col w-screen">
   <div class="absolute z-10 t-0 r-0 p-3">
-    <h2>
+    <p class="text-md md:text-lg">
       {title}
-    </h2>
+    </p>
   </div>
   <div class="showcase relative z-0">
     <div class="reveal">
@@ -44,6 +47,10 @@ import "reveal.js/dist/reveal.css";
   </div>
 </div>
 <style>
+  :root {
+    --r-overlay-element-bg-color: 0, 0, 0;
+    --r-overlay-element-fg-color: 220, 220, 220;
+  }
   .showcase {
     padding-top: 40px;
     height: 33vh;

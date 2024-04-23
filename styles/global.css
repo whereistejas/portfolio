@@ -13,4 +13,7 @@
   html {
     font-family: "Neue Haas Grotesk", system-ui, sans-serif;
   }
+  a {
+    @apply underline;
+  }
 }

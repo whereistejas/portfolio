@@ -1,7 +1,7 @@
 ---
 import Section from "../components/section.astro";
 
-const qualities = ["A software engineer and photographer based in London, UK"];
+const qualities = ["A software engineer and street photographer."];
 const beliefs = ["Software is made for humans and made by humans"];
 const experiences = [
   "Tably, 2021-Present",
@@ -12,7 +12,7 @@ const school = ["Bachelors in Mechanical Engineering, 2013-2019", "\tSPPU"];
 ---
 
 <div class="flex w-full pt-8 justify-between items-center">
-  <div class="flex flex-col gap-6 p-3 w-full">
+  <div class="flex flex-col space-y-4 p-3 w-full">
     <Section key="Profile" value={qualities} />
     <Section key="Things I believe" value={beliefs} />
     <Section key="Experience" value={experiences} />
@@ -26,8 +26,9 @@ const school = ["Bachelors in Mechanical Engineering, 2013-2019", "\tSPPU"];
           >
         </div>
         <div>
-          GitHub <a href="https://www.instagram.com/whereistejas"
-            >whereistejas</a
+          GitHub <a
+            class="decoration-solid"
+            href="https://www.instagram.com/whereistejas">whereistejas</a
           >
         </div>
         <div>
@@ -40,6 +41,7 @@ const school = ["Bachelors in Mechanical Engineering, 2013-2019", "\tSPPU"];
             >whereistejas</a
           >
         </div>
+        <div>London, UK</div>
       </div>
     </div>
   </div>
