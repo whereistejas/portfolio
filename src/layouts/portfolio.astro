@@ -6,7 +6,6 @@ interface Props {
 const { title } = Astro.props;
 
 import "reveal.js/dist/reveal.css";
-// import "reveal.js/dist/theme/white.css";
 ---
 
 <script>
@@ -15,6 +14,9 @@ import "reveal.js/dist/reveal.css";
     embedded: true,
     progress: false,
     pause: false,
+    loop: true,
+    navigationMode: "linear",
+    scrollActivationWidth: 0,
   });
   deck.initialize();
 </script>
@@ -25,19 +27,32 @@ import "reveal.js/dist/reveal.css";
       {title}
     </h2>
   </div>
-  <div class="showcase z-0 h-screen">
+  <div class="showcase relative z-0">
     <div class="reveal">
       <div class="slides">
         <section>
-          <img class="h-full w-full" src="DSCF3992.jpg" />
+          <img src="DSCF3992.jpg" />
         </section>
         <section>
-          <img class="h-full w-full" src="DSCF3993.jpg" />
+          <img src="DSCF3993.jpg" />
         </section>
         <section>
-          <img class="h-full w-full" src="DSCF4002.jpg" />
+          <img src="DSCF4002.jpg" />
         </section>
       </div>
     </div>
   </div>
 </div>
+<style>
+  .showcase {
+    padding-top: 40px;
+    height: 33vh;
+    position: relative;
+  }
+  @media (min-width: 640px) {
+    .showcase {
+      padding: 0;
+      height: 100vh;
+    }
+  }
+</style>
