@@ -582,6 +582,10 @@ a {
   display: flex;
 }
 
+.h-\[33vh\] {
+  height: 33vh;
+}
+
 .w-2\/5 {
   width: 40%;
 }
@@ -640,22 +644,17 @@ a {
   padding: 0.75rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.decoration-solid {
-  text-decoration-style: solid;
 }
 
 @font-face {
@@ -669,6 +668,10 @@ a {
 }
 
 @media (min-width: 768px) {
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-2\/5 {
     width: 40%;
   }
@@ -679,6 +682,10 @@ a {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-base {

@@ -8,14 +8,27 @@ const experiences = [
   "Wipro, 2019-2021",
   "\tClients - Johnson & Johnson, Wipro OSPO",
 ];
-const school = ["Bachelors in Mechanical Engineering, 2013-2019", "\tSPPU"];
+const school = [
+  "Univeristy of Pune, 2013-2019",
+  "\tBachelors in Mechanical Engineering",
+];
 ---
 
 <div class="flex w-full pt-8 justify-between items-center">
   <div class="flex flex-col space-y-4 p-3 w-full">
     <Section key="Profile" value={qualities} />
     <Section key="Things I believe" value={beliefs} />
-    <Section key="Experience" value={experiences} />
+    <div class="flex justify-between items-start flex-col md:flex-row">
+      <div class="flex justify-start items-center w-2/5">Experience</div>
+      <div class="flex flex-col justify-start items-start w-3/5">
+        <div>
+          <a href="tably.com">Tably</a>, 2021-Present
+        </div>
+        <div>
+          <a href="www.wipro.com">Wipro</a>, 2019-2021
+        </div>
+      </div>
+    </div>
     <Section key="Education" value={school} />
     <div class="flex justify-between items-start flex-col md:flex-row">
       <div class="flex justify-start items-center w-2/5">Contact</div>
@@ -26,9 +39,8 @@ const school = ["Bachelors in Mechanical Engineering, 2013-2019", "\tSPPU"];
           >
         </div>
         <div>
-          GitHub <a
-            class="decoration-solid"
-            href="https://www.instagram.com/whereistejas">whereistejas</a
+          GitHub <a href="https://www.instagram.com/whereistejas"
+            >whereistejas</a
           >
         </div>
         <div>
@@ -37,8 +49,7 @@ const school = ["Bachelors in Mechanical Engineering, 2013-2019", "\tSPPU"];
           >
         </div>
         <div>
-          Refrakt <a href="https://www.instagram.com/whereistejas"
-            >whereistejas</a
+          Refrakt <a href="https://www.refrakt.app/whereistejas">whereistejas</a
           >
         </div>
         <div>London, UK</div>
