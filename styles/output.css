@@ -447,7 +447,17 @@ video {
 }
 
 html {
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
   font-family: "Neue Haas Grotesk", system-ui, sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 
 a {
