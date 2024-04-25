@@ -1,60 +1,44 @@
 ---
 import Section from "../components/section.astro";
-
-const qualities = ["A software engineer and street photographer."];
-const beliefs = ["Software is made for humans and made by humans"];
-const experiences = [
-  "Tably, 2021-Present",
-  "Wipro, 2019-2021",
-  "\tClients - Johnson & Johnson, Wipro OSPO",
-];
-const school = [
-  "Univeristy of Pune, 2013-2019",
-  "\tBachelors in Mechanical Engineering",
-];
 ---
 
 <!-- TODO: Increase Gap. -->
-<div class="flex w-full pt-8 justify-between items-center">
-  <div class="flex flex-col space-y-4 p-3 w-full">
-    <Section key="Profile" value={qualities} />
-    <Section key="Things I believe" value={beliefs} />
-    <div class="flex justify-between items-start flex-col md:flex-row">
-      <div class="flex justify-start items-center w-2/5">Experience</div>
-      <div class="flex flex-col justify-start items-start w-3/5">
-        <div>
-          <a href="https://tably.com">Tably</a>, 2021-Present
-        </div>
-        <div>
-          <a href="https://wipro.com">Wipro</a>, 2019-2021
-        </div>
-      </div>
+<div class="grid grid-cols-1 gap-y-4 w-full pt-8 pl-4 pb-4 pr-4">
+  <Section key="Profile">
+    <p>A software engineer and street photographer.</p>
+  </Section>
+  <Section key="Things I believe">
+    <p>Software is made for humans and made by humans.</p>
+  </Section>
+  <Section key="Experience">
+    <div>
+      <a href="https://tably.com">Tably</a>, 2021&mdash;Present
     </div>
-    <Section key="Education" value={school} />
-    <div class="flex justify-between items-start flex-col md:flex-row">
-      <div class="flex justify-start items-center w-2/5">Contact</div>
-      <div class="flex flex-col justify-start items-start w-3/5">
-        <div>
-          Email <a href="mailto:email@whereistejas.xyz"
-            >email@whereistejas.xyz</a
-          >
-        </div>
-        <div>
-          GitHub <a href="https://www.instagram.com/whereistejas"
-            >whereistejas</a
-          >
-        </div>
-        <div>
-          LinkedIn <a href="https://www.linkedin.com/in/whereistejas"
-            >whereistejas</a
-          >
-        </div>
-        <div>
-          Refrakt <a href="https://www.refrakt.app/whereistejas">whereistejas</a
-          >
-        </div>
-        <div>London, UK</div>
-      </div>
+    <div>
+      <a href="https://wipro.com">Wipro</a>, 2019&mdash;2021
     </div>
-  </div>
+  </Section>
+  <Section key="Education">
+    <div>
+      <a href="https://www.unipune.ac.in">SPPU</a>, 2016&mdash;2019
+    </div>
+    <p class="indent-4">Bachelors in Mechanical Engineering</p>
+  </Section>
+  <Section key="Contact">
+    <div>
+      Email <a href="mailto:email@whereistejas.xyz">email@whereistejas.xyz</a>
+    </div>
+    <div>
+      GitHub <a href="https://www.instagram.com/whereistejas">whereistejas</a>
+    </div>
+    <div>
+      LinkedIn <a href="https://www.linkedin.com/in/whereistejas"
+        >whereistejas</a
+      >
+    </div>
+    <div>
+      Refrakt <a href="https://www.refrakt.app/whereistejas">whereistejas</a>
+    </div>
+    <div>London, UK</div>
+  </Section>
 </div>

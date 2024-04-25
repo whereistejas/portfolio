@@ -1,16 +1,14 @@
 ---
 interface Props {
   key: string;
-  value: string[];
 }
 
-const { key, value } = Astro.props;
+const { key } = Astro.props;
 ---
 
-<div class="flex justify-between items-start flex-col md:flex-row">
-  <div class="flex justify-start items-center md:w-2/5">{key}</div>
-  <div
-    class="flex justify-start items-center md:w-3/5 whitespace-pre text-wrap"
-    set:html={value.join("<br>")}
-  />
+<div class="grid grid-cols-1 sm:grid-cols-[2fr,3fr] justify-items-start">
+  <p>{key}</p>
+  <div class="grid grid-cols-1">
+    <slot />
+  </div>
 </div>
