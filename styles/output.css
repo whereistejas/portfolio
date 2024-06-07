@@ -464,6 +464,10 @@ a {
   text-decoration-line: underline;
 }
 
+h1 {
+  font-size: 20;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -576,16 +580,16 @@ a {
   position: absolute;
 }
 
-.relative {
-  position: relative;
+.bottom-0 {
+  bottom: 0px;
 }
 
-.z-0 {
-  z-index: 0;
+.left-0 {
+  left: 0px;
 }
 
-.z-10 {
-  z-index: 10;
+.top-0 {
+  top: 0px;
 }
 
 .flex {
@@ -596,32 +600,8 @@ a {
   display: grid;
 }
 
-.h-\[33vh\] {
-  height: 33vh;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[40vh\] {
-  height: 40vh;
-}
-
-.h-\[35vh\] {
-  height: 35vh;
-}
-
-.h-\[34vh\] {
-  height: 34vh;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-3\/5 {
-  width: 60%;
+.h-screen {
+  height: 100vh;
 }
 
 .w-full {
@@ -636,36 +616,16 @@ a {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-center {
   align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -676,55 +636,16 @@ a {
   justify-items: start;
 }
 
-.gap-x-8 {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-}
-
-.gap-y-8 {
-  row-gap: 2rem;
-}
-
-.gap-y-6 {
-  row-gap: 1.5rem;
-}
-
 .gap-y-4 {
   row-gap: 1rem;
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 
-.whitespace-pre {
-  white-space: pre;
-}
-
-.text-wrap {
-  text-wrap: wrap;
-}
-
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-8 {
-  padding: 2rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .pb-4 {
@@ -739,23 +660,18 @@ a {
   padding-right: 1rem;
 }
 
-.indent-1 {
-  text-indent: 0.25rem;
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .indent-4 {
   text-indent: 1rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 @font-face {
   font-family: "Neue Haas Grotesk";
 
-  src: url("/NeueHaasGrotText-55Roman-Web.woff2") format("woff2");
+  src: url("/AUTHENTICSans-130.woff2") format("woff2");
 
   font-weight: normal;
 
@@ -763,55 +679,7 @@ a {
 }
 
 @media (min-width: 640px) {
-  .sm\:h-screen {
-    height: 100vh;
-  }
-
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-\[1fr\2c 2fr\] {
-    grid-template-columns: 1fr 2fr;
-  }
-
   .sm\:grid-cols-\[2fr\2c 3fr\] {
     grid-template-columns: 2fr 3fr;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:h-screen {
-    height: 100vh;
-  }
-
-  .md\:w-2\/5 {
-    width: 40%;
-  }
-
-  .md\:w-3\/5 {
-    width: 60%;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
-  .md\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }
