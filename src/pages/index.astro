@@ -3,22 +3,29 @@ import Slideshow from "../components/slideshow.astro";
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
 
+import { ViewTransitions } from "astro:transitions";
+
 import SpeedInsights from "@vercel/speed-insights/astro";
 
 import "../../styles/output.css";
+import Profile from "../components/profile.astro";
 ---
 
 <html>
   <head>
+    <ViewTransitions />
+
     <SpeedInsights />
   </head>
   <body>
-    <main
-      class="flex flex-col justify-between w-screen h-screen overflow-x-hidden"
-    >
-      <Header />
-      <Slideshow />
-      <Footer />
+    <main class="overflow-x-hidden">
+      <div class="flex flex-col justify-between items-center w-screen h-screen">
+        <Header />
+        <Slideshow />
+        <div></div>
+        <!-- <Footer /> -->
+      </div>
+      <Profile />
     </main>
   </body>
 </html>
