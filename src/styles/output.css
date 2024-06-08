@@ -470,6 +470,51 @@ h1 {
   font-weight: 130;
 }
 
+/* .slide {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+
+  .slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+  }
+
+  .slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+  }
+
+  @keyframes slide-in {
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @-webkit-keyframes slide-in {
+    100% {
+      -webkit-transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @-webkit-keyframes slide-out {
+    0% {
+      -webkit-transform: translateX(0%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+    }
+  } */
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -590,6 +635,10 @@ h1 {
   left: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -598,8 +647,8 @@ h1 {
   top: 0px;
 }
 
-.left-1\/2 {
-  left: 50%;
+.-z-10 {
+  z-index: -10;
 }
 
 .flex {
@@ -610,8 +659,12 @@ h1 {
   display: grid;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
+.hidden {
+  display: none;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
 }
 
 .h-full {
@@ -622,16 +675,12 @@ h1 {
   height: 100vh;
 }
 
-.h-\[60vh\] {
-  height: 60vh;
+.w-\[120vh\] {
+  width: 120vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[75vh\] {
-  width: 75vh;
+.w-\[60vh\] {
+  width: 60vh;
 }
 
 .w-full {
@@ -640,22 +689,6 @@ h1 {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[37vh\] {
-  width: 37vh;
-}
-
-.w-\[37\.5vh\] {
-  width: 37.5vh;
-}
-
-.w-\[45vh\] {
-  width: 45vh;
-}
-
-.w-\[90vh\] {
-  width: 90vh;
 }
 
 .cursor-e-resize {
@@ -698,16 +731,6 @@ h1 {
   overflow-x: hidden;
 }
 
-.bg-blue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
-}
-
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -719,7 +742,7 @@ h1 {
 @font-face {
   font-family: "Authentic Sans";
 
-  src: url("/AUTHENTICSans-130.woff2") format("woff2");
+  src: url("../assets/AUTHENTICSans-130.woff2") format("woff2");
 
   font-weight: 130;
 
@@ -729,7 +752,7 @@ h1 {
 @font-face {
   font-family: "Authentic Sans";
 
-  src: url("/AUTHENTICSans-90.woff2") format("woff2");
+  src: url("../assets/AUTHENTICSans-90.woff2") format("woff2");
 
   font-weight: 90;
 

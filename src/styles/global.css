@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Authentic Sans";
+  src: url("../assets/AUTHENTICSans-130.woff2") format("woff2");
+  font-weight: 130;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Authentic Sans";
+  src: url("../assets/AUTHENTICSans-90.woff2") format("woff2");
+  font-weight: 90;
+  font-style: regular;
+}
+
+@layer base {
+  html {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+
+    font-family: "Authentic Sans", system-ui, sans-serif;
+    font-weight: 90;
+    font-size: 1rem;
+  }
+  html::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+  a {
+    @apply underline;
+  }
+  h1 {
+    font-weight: 130;
+  }
+  /* .slide {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+
+  .slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+  }
+
+  .slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+  }
+
+  @keyframes slide-in {
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @-webkit-keyframes slide-in {
+    100% {
+      -webkit-transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide-out {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @-webkit-keyframes slide-out {
+    0% {
+      -webkit-transform: translateX(0%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+    }
+  } */
+}

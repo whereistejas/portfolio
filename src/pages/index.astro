@@ -1,27 +1,36 @@
 ---
+// import { ViewTransitions } from "astro:transitions";
+import SpeedInsights from "@vercel/speed-insights/astro";
+
 import Slideshow from "../components/slideshow.astro";
 import Header from "../components/header.astro";
 import Footer from "../components/footer.astro";
-
-import { ViewTransitions } from "astro:transitions";
-
-import SpeedInsights from "@vercel/speed-insights/astro";
-
-import "../../styles/output.css";
 import Profile from "../components/profile.astro";
+
+import "../styles/output.css";
+
+import Image1 from "../assets/Image1.jpg";
+import Image2 from "../assets/Image2.jpg";
+import Image3 from "../assets/Image3.jpg";
 ---
 
 <html>
   <head>
-    <ViewTransitions />
-
+    <title>Tejas Sanap | Portfolio</title>
+    <!-- <ViewTransitions /> -->
     <SpeedInsights />
   </head>
   <body>
     <main class="overflow-x-hidden">
       <div class="flex flex-col justify-between items-center w-screen h-screen">
         <Header />
-        <Slideshow />
+        <Slideshow
+          images={[
+            { idx: 1, img: Image1 },
+            { idx: 2, img: Image2 },
+            { idx: 3, img: Image3 },
+          ]}
+        />
         <div></div>
         <!-- <Footer /> -->
       </div>

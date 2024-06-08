@@ -1,13 +1,77 @@
 ---
-import "reveal.js/dist/reveal.css";
+import { Picture } from "astro:assets";
+
+interface Props {
+  images: Array<{ idx: number; img: ImageMetadata }>;
+}
+
+const { images } = Astro.props as Props;
 ---
 
-<div class="flex justify-center items-center h-[60vh] w-[90vh]">
+<div class="flex justify-center items-center h-[80vh] w-[120vh]">
   <div class="flex h-full w-full">
-    <div class="absolute left-1/2 h-[60vh] w-[45vh] cursor-e-resize"></div>
-    <div class="absolute h-[60vh] w-[45vh] cursor-w-resize"></div>
-    <div>
-      <img src="DSCF0159.jpg" />
+    <div
+      class="absolute left-1/2 h-[80vh] w-[60vh] cursor-e-resize"
+      data-next-slide
+    >
     </div>
+    <div class="absolute h-[80vh] w-[60vh] cursor-w-resize" data-prev-slide>
+    </div>
+
+    {
+      images.map((img) => (
+        <div class="-z-10 slide hidden">
+          <Picture src={img.img} alt={`Slide ${img.idx}`} />
+        </div>
+      ))
+    }
   </div>
 </div>
+
+<script>
+  let currentImage = 0;
+
+  let slides = Array.from(document.querySelectorAll(".slide"));
+
+  const next = document.querySelector("[data-next-slide]") as HTMLDivElement;
+  next.addEventListener("click", (e) => {
+    e.preventDefault();
+    slides[currentImage].classList.add("hidden");
+    // slides[currentImage].classList.remove("slide-in");
+    // slides[currentImage].classList.add("slide-out");
+    console.log(`next ${currentImage}`);
+    if (currentImage == slides.length - 1) {
+      currentImage = 0;
+    } else {
+      currentImage++;
+    }
+    console.log(`next ${currentImage}`);
+    slides[currentImage].classList.remove("hidden");
+    // slides[currentImage].classList.remove("slide-out");
+    // slides[currentImage].classList.add("slide-in");
+  });
+  let prev = document.querySelector("[data-prev-slide]") as HTMLDivElement;
+  prev.addEventListener("click", (e) => {
+    e.preventDefault();
+    slides[currentImage].classList.add("hidden");
+    // slides[currentImage].classList.remove("slide-in");
+    // slides[currentImage].classList.add("slide-out");
+    console.log(`prev ${currentImage}`);
+    if (currentImage == 0) {
+      currentImage = slides.length - 1;
+    } else {
+      currentImage--;
+    }
+    console.log(`prev ${currentImage}`);
+    slides[currentImage].classList.remove("hidden");
+    // slides[currentImage].classList.remove("slide-out");
+    // slides[currentImage].classList.add("slide-in");
+  });
+
+  function init() {
+    slides[currentImage].classList.remove("hidden");
+    // slides[currentImage].classList.remove("slide-out");
+    // slides[currentImage].classList.add("slide-in");
+  }
+  init();
+</script>
