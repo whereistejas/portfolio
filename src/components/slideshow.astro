@@ -2,76 +2,29 @@
 import { Picture } from "astro:assets";
 
 interface Props {
-  images: Array<{ idx: number; img: ImageMetadata }>;
+  images: Array<{idx: number, img: ImageMetadata}>;
 }
 
 const { images } = Astro.props as Props;
+const last = images.length;
 ---
 
-<div class="flex justify-center items-center h-[80vh] w-[120vh]">
-  <div class="flex h-full w-full">
-    <div
-      class="absolute left-1/2 h-[80vh] w-[60vh] cursor-e-resize"
-      data-next-slide
-    >
-    </div>
-    <div class="absolute h-[80vh] w-[60vh] cursor-w-resize" data-prev-slide>
-    </div>
-
-    {
-      images.map((img) => (
-        <div class="-z-10 slide hidden">
-          <Picture src={img.img} alt={`Slide ${img.idx}`} />
+<ol
+  class="overflow-x-scroll scroll-smooth snap-x snap-mandatory h-[60vh] w-[90vh]"
+>
+  {
+    images.map(({idx, img}) => (
+      <li id=`slide${idx}` class="relative flex flex-col snap-start h-full w-full" tabindex="0">
+        <div class="relative h-1/2 w-full" >
+        <a href={idx == 1 ? `#slide${last}` : `#slide${idx - 1}`} class="absolute h-full w-full hover:cursor-n-resize" ></a>
         </div>
-      ))
-    }
-  </div>
-</div>
-
-<script>
-  let currentImage = 0;
-
-  let slides = Array.from(document.querySelectorAll(".slide"));
-
-  const next = document.querySelector("[data-next-slide]") as HTMLDivElement;
-  next.addEventListener("click", (e) => {
-    e.preventDefault();
-    slides[currentImage].classList.add("hidden");
-    // slides[currentImage].classList.remove("slide-in");
-    // slides[currentImage].classList.add("slide-out");
-    console.log(`next ${currentImage}`);
-    if (currentImage == slides.length - 1) {
-      currentImage = 0;
-    } else {
-      currentImage++;
-    }
-    console.log(`next ${currentImage}`);
-    slides[currentImage].classList.remove("hidden");
-    // slides[currentImage].classList.remove("slide-out");
-    // slides[currentImage].classList.add("slide-in");
-  });
-  let prev = document.querySelector("[data-prev-slide]") as HTMLDivElement;
-  prev.addEventListener("click", (e) => {
-    e.preventDefault();
-    slides[currentImage].classList.add("hidden");
-    // slides[currentImage].classList.remove("slide-in");
-    // slides[currentImage].classList.add("slide-out");
-    console.log(`prev ${currentImage}`);
-    if (currentImage == 0) {
-      currentImage = slides.length - 1;
-    } else {
-      currentImage--;
-    }
-    console.log(`prev ${currentImage}`);
-    slides[currentImage].classList.remove("hidden");
-    // slides[currentImage].classList.remove("slide-out");
-    // slides[currentImage].classList.add("slide-in");
-  });
-
-  function init() {
-    slides[currentImage].classList.remove("hidden");
-    // slides[currentImage].classList.remove("slide-out");
-    // slides[currentImage].classList.add("slide-in");
+        <div class="relative h-1/2 w-full" >
+        <a href={idx == last ? `#slide1` : `#slide${idx + 1}`} class="absolute h-full w-full hover:cursor-s-resize" ></a>
+        </div>
+        <div class="absolute -z-10 h-full w-full">
+          <Picture src={img} alt="" />
+        </div>
+      </li>
+    ))
   }
-  init();
-</script>
+</ol>
