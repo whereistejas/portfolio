@@ -10,7 +10,7 @@ const last = images.length;
 ---
 
 <ol
-  class="overflow-x-scroll scroll-smooth snap-x snap-mandatory h-[60vh] w-[90vh]"
+  class="overflow-x-scroll scroll-smooth snap-y snap-mandatory h-[66.66vw] w-full xl:h-[60vh] xl:w-[90vh]"
 >
   {
     images.map(({idx, img}) => (
@@ -21,7 +21,7 @@ const last = images.length;
         <div class="relative h-1/2 w-full" >
         <a href={idx == last ? `#slide1` : `#slide${idx + 1}`} class="absolute h-full w-full hover:cursor-s-resize" ></a>
         </div>
-        <div class="absolute -z-10 h-full w-full">
+        <div class="absolute -z-10 h-full w-full p-3">
           <Picture src={img} alt="" />
         </div>
       </li>

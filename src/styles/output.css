@@ -665,8 +665,16 @@ ol,
   display: grid;
 }
 
-.h-\[60vh\] {
-  height: 60vh;
+.hidden {
+  display: none;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-\[66\.66vw\] {
+  height: 66.66vw;
 }
 
 .h-full {
@@ -675,18 +683,6 @@ ol,
 
 .h-screen {
   height: 100vh;
-}
-
-.h-1\/2 {
-  height: 50%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[90vh\] {
-  width: 90vh;
 }
 
 .w-full {
@@ -702,17 +698,12 @@ ol,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-1\/2 {
-  --tw-translate-y: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .transform-gpu {
   transform: translate3d(var(--tw-translate-x), var(--tw-translate-y), 0) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.snap-x {
-  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+.snap-y {
+  scroll-snap-type: y var(--tw-scroll-snap-strictness);
 }
 
 .snap-mandatory {
@@ -725,10 +716,6 @@ ol,
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -771,6 +758,11 @@ ol,
   text-indent: 1rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 @font-face {
   font-family: "Authentic Sans";
 
@@ -791,14 +783,6 @@ ol,
   font-style: regular;
 }
 
-.hover\:cursor-e-resize:hover {
-  cursor: e-resize;
-}
-
-.hover\:cursor-w-resize:hover {
-  cursor: w-resize;
-}
-
 .hover\:cursor-n-resize:hover {
   cursor: n-resize;
 }
@@ -810,5 +794,35 @@ ol,
 @media (min-width: 640px) {
   .sm\:grid-cols-\[2fr\2c 3fr\] {
     grid-template-columns: 2fr 3fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-\[60vh\] {
+    height: 60vh;
+  }
+
+  .xl\:w-\[90vh\] {
+    width: 90vh;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
