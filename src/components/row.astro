@@ -1,0 +1,16 @@
+---
+interface Props {
+  key: string;
+}
+
+const { key } = Astro.props;
+---
+
+<section>
+  <div class="key">
+    <h2>{key}</h2>
+  </div>
+  <div class="value">
+    <slot />
+  </div>
+</section>

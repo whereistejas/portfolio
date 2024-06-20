@@ -1,41 +1,41 @@
 ---
-import Section from "./section.astro";
+import Row from "./row.astro";
 ---
 
-<div class="grid grid-cols-1 gap-y-5 w-full p-3 md:hidden">
-  <Section key="Profile">
+<section>
+  <Row key="Profile">
     <p>A software engineer and street photographer.</p>
-  </Section>
-  <Section key="Things I believe">
+  </Row>
+  <Row key="Things I believe">
     <p>All software is a tool, a means to an end.</p>
     <p>A good tool is simple and intuitive to use.</p>
     <p>Software is made "for" humans.</p>
-  </Section>
-  <Section key="Experience">
+  </Row>
+  <Row key="Experience">
     <p>
       <a href="https://tably.com">Tably</a>, 2021&mdash;Present
     </p>
     <p>
       <a href="https://wipro.com">Wipro</a>, 2019&mdash;2021
     </p>
-  </Section>
-  <Section key="Education">
+  </Row>
+  <Row key="Education">
     <p>
       <a href="https://www.unipune.ac.in">SPPU</a>, 2016&mdash;2019
       <p class="indent-4">Bachelors in Mechanical Engineering</p>
     </p>
-  </Section>
-  <Section key="Contact">
-    <p>
+  </Row>
+  <Row key="Contact">
+    <address>
       Email <a href="mailto:email@whereistejas.xyz">email@whereistejas.xyz</a>
-    </p>
-    <p>
+    </address>
+    <address>
       Github <a href="https://www.github.com/whereistejas">whereistejas</a>
-    </p>
-    <p>
+    </address>
+    <address>
       Instagram <a href="https://www.instagram.com/whereistejas">whereistejas</a
       >
-    </p>
-    <p>London, UK.</p>
-  </Section>
-</div>
+    </address>
+    <address>London, UK.</address>
+  </Row>
+</section>
