@@ -3,14 +3,14 @@ interface Props {
   key: string;
 }
 
+import "../styles/global.css";
+
 const { key } = Astro.props;
 ---
 
-<section>
-  <div class="key">
-    <h2>{key}</h2>
-  </div>
+<div class="row">
+  {key}
   <div class="value">
     <slot />
   </div>
-</section>
+</div>

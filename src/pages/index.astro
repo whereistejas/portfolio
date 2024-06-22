@@ -1,39 +1,89 @@
 ---
-import SpeedInsights from "@vercel/speed-insights/astro";
+import { Picture } from "astro:assets";
 
-import Slideshow from "../components/slideshow.astro";
-import Header from "../components/header.astro";
-import Footer from "../components/footer.astro";
-import Profile from "../components/profile.astro";
-
-import "../styles/output.css";
+import "../styles/global.css";
 
 import Image1 from "../assets/Image1.jpg";
 import Image2 from "../assets/Image2.jpg";
 import Image3 from "../assets/Image3.jpg";
+
+const slides = [
+  { image: Image1, caption: "Potter in Pench, Madhya Pradesh" },
+  { image: Image2, caption: "Never waste time" },
+  { image: Image3, caption: "Ride into the darkness" },
+];
 ---
 
 <html>
   <head>
     <title>Tejas Sanap | Portfolio</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <SpeedInsights />
+    <meta name="viewport" content="width=device-width" />
   </head>
   <body>
-    <main class="overflow-x-hidden text-xs md:text-lg xl:text-xl">
-      <div class="flex flex-col justify-between items-center h-screen w-screen">
-        <Header />
-        <Slideshow
-          images={[
-            { idx: 1, img: Image1 },
-            { idx: 2, img: Image2 },
-            { idx: 3, img: Image3 },
-          ]}
-        />
-        <Profile />
-        <Footer />
+    <header>
+      <h1 class="name">TEJAS SANAP</h1>
+      <h1 class="description">PROGRAMMER, ENGINEER, PHOTOGRAPHER</h1>
+      <nav>
+        <h1><a href="/info">INFO</a></h1>
+      </nav>
+    </header>
+
+    <main>
+      <div class="carousel">
+        <div class="slides-wrapper">
+          <div class="left-scroll"></div>
+          <div class="right-scroll"></div>
+          <div class="slides">
+            {
+              slides.map(({ image, caption: _ }) => (
+                <div class="slide">
+                  <Picture src={image} alt="" />
+                </div>
+              ))
+            }
+          </div>
+        </div>
+        <div class="captions">
+          {
+            slides.map(({ image: _, caption }, idx) => (
+              <div class="caption">
+                <span>{caption}</span>
+                <span>
+                  {idx + 1}/{slides.length}
+                </span>
+              </div>
+            ))
+          }
+        </div>
       </div>
     </main>
+
+    <footer>
+      <h1>
+        <a href="https://www.instagram.com/whereistejas">INSTAGRAM</a>
+      </h1>
+      <h1>
+        <a href="mailto:email@whereistejas.xyz">SEND AN EMAIL</a>
+      </h1>
+    </footer>
+
+    <script>
+      let slides = document.querySelector(".slides") as HTMLDivElement;
+      let captions = document.querySelector(".captions") as HTMLDivElement;
+      let left = document.querySelector(".left-scroll") as HTMLDivElement;
+      let right = document.querySelector(".right-scroll") as HTMLDivElement;
+      let slide = document.querySelector(".slide") as HTMLDivElement;
+      let caption = document.querySelector(".caption") as HTMLDivElement;
+      left.addEventListener("click", function (e) {
+        e.preventDefault();
+        slides.scrollLeft -= slide.clientWidth;
+        captions.scrollLeft -= caption.clientWidth;
+      });
+      right.addEventListener("click", function (e) {
+        e.preventDefault();
+        slides.scrollLeft += slide.clientWidth;
+        captions.scrollLeft += caption.clientWidth;
+      });
+    </script>
   </body>
 </html>
