@@ -17,7 +17,7 @@ const slides = [
 <html>
   <head>
     <title>Tejas Sanap | Portfolio</title>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
     <header>
@@ -68,21 +68,31 @@ const slides = [
     </footer>
 
     <script>
-      let slides = document.querySelector(".slides") as HTMLDivElement;
-      let captions = document.querySelector(".captions") as HTMLDivElement;
+      function modulo(number: number, mod: number) {
+        let result = number % mod;
+        if (result < 0) {
+          result += mod;
+        }
+        return result;
+      }
+
+      let carousel = document.querySelector(".carousel") as HTMLDivElement;
       let left = document.querySelector(".left-scroll") as HTMLDivElement;
       let right = document.querySelector(".right-scroll") as HTMLDivElement;
-      let slide = document.querySelector(".slide") as HTMLDivElement;
-      let caption = document.querySelector(".caption") as HTMLDivElement;
+
+      let currentSlide = 0;
+      const numSlides = (document.querySelector(".slides") as HTMLDivElement)
+        .children.length;
+
       left.addEventListener("click", function (e) {
         e.preventDefault();
-        slides.scrollLeft -= slide.clientWidth;
-        captions.scrollLeft -= caption.clientWidth;
+        currentSlide = modulo(currentSlide - 1, numSlides);
+        carousel.style.setProperty("--current-slide", `${currentSlide}`);
       });
       right.addEventListener("click", function (e) {
         e.preventDefault();
-        slides.scrollLeft += slide.clientWidth;
-        captions.scrollLeft += caption.clientWidth;
+        currentSlide = modulo(currentSlide + 1, numSlides);
+        carousel.style.setProperty("--current-slide", `${currentSlide}`);
       });
     </script>
   </body>

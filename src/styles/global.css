@@ -25,7 +25,7 @@
 html {
   font-family: "Authentic Sans", system-ui, sans-serif;
   font-weight: 90;
-  font-size: 1.1rem;
+  font-size: 17.5px;
 }
 
 img {
@@ -171,7 +171,7 @@ main {
   }
 }
 .carousel {
-  height: 45.5vw;
+  height: 46.5vw;
   width: 66vw;
 
   display: flex;
@@ -180,6 +180,7 @@ main {
   position: relative;
 
   gap: 0.5rem;
+  --current-slide: 0;
 }
 
 .slides-wrapper {
@@ -210,6 +211,9 @@ main {
 
   display: flex;
   flex-direction: column;
+
+  transition: transform 0.5s;
+  transform: translateX(calc(-100% * var(--current-slide)));
 }
 .caption {
   width: 100%;
@@ -218,6 +222,8 @@ main {
   position: relative;
 
   flex-shrink: 0;
+
+  transform: translateX(calc(-100% * var(--current-slide)));
 
   > span:first-child {
     float: left;
