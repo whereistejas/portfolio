@@ -42,9 +42,16 @@ const slides = [
           <div class="right-scroll"></div>
           <div class="slides">
             {
-              slides.map(({ image, caption: _ }) => (
+              slides.map(({ image, caption: _ }, idx) => (
                 <div class="slide">
-                  <Picture src={image} alt="" />
+                  <div class="slide-inner">
+                    <Picture src={image} alt="" />
+                  </div>
+                  <div class="caption">
+                    <span>
+                      {idx + 1}/{slides.length}
+                    </span>
+                  </div>
                 </div>
               ))
             }
@@ -89,14 +96,13 @@ const slides = [
 
       let carousel = document.querySelector(".carousel") as HTMLDivElement;
 
+      let currentSlide = 0;
+      const numSlides = (document.querySelector(".slides") as HTMLDivElement)
+        .children.length;
+
       let left = document.querySelector(".left-scroll");
       let right = document.querySelector(".right-scroll");
-
       if (left && right) {
-        let currentSlide = 0;
-        const numSlides = (document.querySelector(".slides") as HTMLDivElement)
-          .children.length;
-
         left.addEventListener("click", function (e) {
           e.preventDefault();
           currentSlide = modulo(currentSlide - 1, numSlides);
@@ -107,6 +113,7 @@ const slides = [
           currentSlide = modulo(currentSlide + 1, numSlides);
           carousel.style.setProperty("--current-slide", `${currentSlide}`);
         });
+      } else {
       }
     </script>
   </body>
