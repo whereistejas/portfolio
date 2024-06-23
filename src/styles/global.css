@@ -4,13 +4,13 @@
   font-family: "Authentic Sans";
   src: url("../assets/AUTHENTICSans-130.woff2") format("woff2");
   font-weight: 130;
-  font-style: bold;
+  font-style: normal;
 }
 @font-face {
   font-family: "Authentic Sans";
   src: url("../assets/AUTHENTICSans-90.woff2") format("woff2");
   font-weight: 90;
-  font-style: regular;
+  font-style: normal;
 }
 
 * {
@@ -23,7 +23,7 @@
 }
 
 @media (max-width: 640px) {
-  html > * {
+  html {
     font-size: 0.875rem;
     line-height: 1.2rem;
   }
@@ -32,6 +32,9 @@ html {
   font-family: "Authentic Sans", system-ui, sans-serif;
   font-weight: 90;
   font-size: 1rem;
+}
+body {
+  overscroll-behavior: none !important;
 }
 
 img {
@@ -68,32 +71,25 @@ h1 {
   font-weight: 130;
 }
 
-nav,
-h1 {
-  display: inline;
-}
-
 @media (max-width: 640px) {
-  header {
-    .description {
-      display: none;
-    }
+  header > div:nth-child(2) {
+    display: none;
   }
 }
 header {
   width: 100%;
-
-  .name {
+  div:first-child {
     position: absolute;
 
     top: 0;
     left: 0;
 
     padding: 1rem;
-    cursor: pointer;
+
+    z-index: 1;
   }
 
-  .description {
+  div:nth-child(2) {
     position: absolute;
 
     top: 0;
@@ -103,10 +99,9 @@ header {
     text-align: center;
 
     padding: 1rem;
-    z-index: -1;
   }
 
-  nav {
+  div:last-child {
     position: absolute;
 
     top: 0;
@@ -116,11 +111,10 @@ header {
     cursor: pointer;
   }
 }
-
 footer {
   width: 100%;
 
-  h1:first-child {
+  div:first-child {
     position: absolute;
 
     bottom: 0;
@@ -128,7 +122,7 @@ footer {
 
     padding: 1rem;
   }
-  h1:last-child {
+  div:last-child {
     position: absolute;
 
     bottom: 0;
@@ -138,29 +132,16 @@ footer {
   }
 }
 
-main {
-  height: 100vh;
-  width: 100vw;
-
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  z-index: -10;
-}
-
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   main > .info {
-    width: 100vw;
-    height: auto;
-
     display: flex;
     flex-direction: column;
 
-    padding: 1rem;
+    width: 100%;
+    height: 100%;
 
     gap: 1rem;
+    padding: 1rem;
 
     div.row {
       display: flex;
@@ -169,6 +150,37 @@ main {
       gap: 0.3rem;
     }
   }
+  main {
+    min-width: 100vw;
+    min-height: 100dvh;
+  }
+  main > .carousel {
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+  }
+
+  .carousel > .captions {
+    display: none;
+  }
+  .slides-wrapper > .left-scroll {
+    display: none;
+  }
+  .slides-wrapper > .right-scroll {
+    display: none;
+  }
+}
+
+main {
+  min-width: 100vw;
+  min-height: 100dvh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: -10;
 }
 .info {
   height: 45.5vw;
@@ -196,19 +208,6 @@ main {
     gap: 0.2rem;
   }
 }
-
-@media (max-width: 640px) {
-  main > .carousel {
-    width: 100vw;
-    height: auto;
-
-    padding: 1rem;
-  }
-
-  .carousel > .captions {
-    display: none;
-  }
-}
 .carousel {
   height: 46.5vw;
   width: 66vw;
@@ -225,6 +224,7 @@ main {
 .slides-wrapper {
   position: relative;
 }
+
 .slides {
   overflow: scroll;
   scroll-snap-type: x mandatory;
@@ -232,7 +232,6 @@ main {
 
   display: flex;
 }
-
 .captions {
   width: 100%;
 
@@ -273,14 +272,6 @@ main {
   }
 }
 
-@media (max-width: 640px) {
-  .left-scroll {
-    display: none;
-  }
-  .right-scroll {
-    display: none;
-  }
-}
 .left-scroll {
   height: 100%;
   width: 50%;

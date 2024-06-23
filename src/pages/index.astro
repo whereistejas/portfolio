@@ -17,15 +17,22 @@ const slides = [
 <html>
   <head>
     <title>Tejas Sanap | Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,interactive-widget=resizes-content"
+    />
   </head>
   <body>
     <header>
-      <h1 class="name">TEJAS SANAP</h1>
-      <h1 class="description">PROGRAMMER, ENGINEER, PHOTOGRAPHER</h1>
-      <nav>
+      <div>
+        <h1>TEJAS SANAP</h1>
+      </div>
+      <div>
+        <h1>PROGRAMMER, ENGINEER, PHOTOGRAPHER</h1>
+      </div>
+      <div>
         <h1><a href="/info">INFO</a></h1>
-      </nav>
+      </div>
     </header>
 
     <main>
@@ -59,12 +66,16 @@ const slides = [
     </main>
 
     <footer>
-      <h1>
-        <a href="https://www.instagram.com/whereistejas">INSTAGRAM</a>
-      </h1>
-      <h1>
-        <a href="mailto:email@whereistejas.xyz">SEND AN EMAIL</a>
-      </h1>
+      <div>
+        <h1>
+          <a href="https://www.instagram.com/whereistejas">INSTAGRAM</a>
+        </h1>
+      </div>
+      <div>
+        <h1>
+          <a href="mailto:email@whereistejas.xyz">SEND AN EMAIL</a>
+        </h1>
+      </div>
     </footer>
 
     <script>
@@ -77,23 +88,26 @@ const slides = [
       }
 
       let carousel = document.querySelector(".carousel") as HTMLDivElement;
-      let left = document.querySelector(".left-scroll") as HTMLDivElement;
-      let right = document.querySelector(".right-scroll") as HTMLDivElement;
 
-      let currentSlide = 0;
-      const numSlides = (document.querySelector(".slides") as HTMLDivElement)
-        .children.length;
+      let left = document.querySelector(".left-scroll");
+      let right = document.querySelector(".right-scroll");
 
-      left.addEventListener("click", function (e) {
-        e.preventDefault();
-        currentSlide = modulo(currentSlide - 1, numSlides);
-        carousel.style.setProperty("--current-slide", `${currentSlide}`);
-      });
-      right.addEventListener("click", function (e) {
-        e.preventDefault();
-        currentSlide = modulo(currentSlide + 1, numSlides);
-        carousel.style.setProperty("--current-slide", `${currentSlide}`);
-      });
+      if (left && right) {
+        let currentSlide = 0;
+        const numSlides = (document.querySelector(".slides") as HTMLDivElement)
+          .children.length;
+
+        left.addEventListener("click", function (e) {
+          e.preventDefault();
+          currentSlide = modulo(currentSlide - 1, numSlides);
+          carousel.style.setProperty("--current-slide", `${currentSlide}`);
+        });
+        right.addEventListener("click", function (e) {
+          e.preventDefault();
+          currentSlide = modulo(currentSlide + 1, numSlides);
+          carousel.style.setProperty("--current-slide", `${currentSlide}`);
+        });
+      }
     </script>
   </body>
 </html>
