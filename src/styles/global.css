@@ -22,10 +22,16 @@
   display: none; /* for Chrome, Safari, and Opera */
 }
 
+@media (max-width: 640px) {
+  html > * {
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+  }
+}
 html {
   font-family: "Authentic Sans", system-ui, sans-serif;
   font-weight: 90;
-  font-size: 17.5px;
+  font-size: 1rem;
 }
 
 img {
