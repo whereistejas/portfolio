@@ -13,7 +13,15 @@
   font-style: normal;
 }
 
-* {
+*,
+html,
+body {
+  font-family: "Authentic Sans", system-ui, sans-serif;
+  font-weight: 90;
+  font-size: 1.1rem;
+
+  line-height: 1.1;
+
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow: hidden;
@@ -26,13 +34,6 @@
   html {
     font-size: 0.875rem;
   }
-}
-html {
-  font-family: "Authentic Sans", system-ui, sans-serif;
-  font-weight: 90;
-  font-size: 1rem;
-
-  line-height: 1.2;
 }
 body {
   overscroll-behavior: none !important;
