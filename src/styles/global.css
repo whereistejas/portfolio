@@ -144,6 +144,26 @@ main {
   z-index: -10;
 }
 
+@media (max-width: 640px) {
+  main > .info {
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+
+    gap: 1rem;
+
+    div.row {
+      display: flex;
+      flex-direction: column;
+
+      gap: 0.3rem;
+    }
+  }
+}
 .info {
   height: 45.5vw;
   width: 66vw;
@@ -170,6 +190,19 @@ main {
     gap: 0.2rem;
   }
 }
+
+@media (max-width: 640px) {
+  main > .carousel {
+    width: 100vw;
+    height: auto;
+
+    padding: 1rem;
+  }
+
+  .carousel > .captions {
+    display: none;
+  }
+}
 .carousel {
   height: 46.5vw;
   width: 66vw;
@@ -193,6 +226,7 @@ main {
 
   display: flex;
 }
+
 .captions {
   width: 100%;
 
@@ -233,6 +267,14 @@ main {
   }
 }
 
+@media (max-width: 640px) {
+  .left-scroll {
+    display: none;
+  }
+  .right-scroll {
+    display: none;
+  }
+}
 .left-scroll {
   height: 100%;
   width: 50%;
