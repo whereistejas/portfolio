@@ -2,15 +2,17 @@
 
 @font-face {
   font-family: "Authentic Sans";
-  src: url("../assets/AUTHENTICSans-130.woff2") format("woff2");
+  src: url("/AUTHENTICSans-130.woff2") format("woff2");
   font-weight: 130;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Authentic Sans";
-  src: url("../assets/AUTHENTICSans-90.woff2") format("woff2");
+  src: url("/AUTHENTICSans-90.woff2") format("woff2");
   font-weight: 90;
   font-style: normal;
+  font-display: swap;
 }
 
 *,
@@ -67,6 +69,7 @@ a:hover::after {
 }
 
 h1 {
+  font-size: 1.3rem;
   font-weight: 130;
 }
 
