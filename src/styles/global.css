@@ -5,14 +5,14 @@
   src: url("/AUTHENTICSans-130.woff2") format("woff2");
   font-weight: 130;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }
 @font-face {
   font-family: "Authentic Sans";
   src: url("/AUTHENTICSans-90.woff2") format("woff2");
   font-weight: 90;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }
 
 *,
