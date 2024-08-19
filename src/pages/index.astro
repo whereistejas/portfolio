@@ -39,10 +39,8 @@ const slides = [
 ---
 
 <!--
-
   Like to view source? We might get along
   email@whereistejas.xyz
-
 -->
 <html lang="en">
   <head>
@@ -63,12 +61,6 @@ const slides = [
       type="font/woff2"
       crossorigin
     />
-
-    {
-      slides.map(({ image, caption: _ }) => (
-        <link rel="preload" href={image.src} as="image" />
-      ))
-    }
 
     <title>Tejas Sanap | Portfolio</title>
   </head>
@@ -129,7 +121,12 @@ const slides = [
     </main>
 
     <footer>
-      <div></div>
+      <div>
+        <h1>
+          <a href="https://notes.whereistejas.xyz/Reading-List/">READING LIST</a
+          >
+        </h1>
+      </div>
       <div>
         <h1>
           <a href="mailto:email@whereistejas.xyz">SEND AN EMAIL</a>
@@ -165,8 +162,25 @@ const slides = [
           currentSlide = modulo(currentSlide + 1, numSlides);
           carousel.style.setProperty("--current-slide", `${currentSlide}`);
         });
-      } else {
       }
+
+      function fetch_images() {
+        fetch(
+          "https://api.cloudflare.com/client/v4/accounts/account_id/images/v2",
+          {
+            method: "GET",
+            mode: "cors",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: "Bearer undefined",
+            },
+          }
+        )
+          .then((response) => response.json())
+          .then((response) => console.log(response))
+          .catch((err) => console.error(err));
+      }
+      fetch_images();
     </script>
   </body>
 </html>
