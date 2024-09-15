@@ -90,9 +90,8 @@ const slides = [
                     <Image
                       src={image}
                       alt={caption}
-                      format="webp"
-                      loading="eager"
-                      decoding="sync"
+                      widths={[320, 640, 1280, image.width]}
+                      sizes={`(max-width: 360px) 320px, (max-width: 720px) 640px, (max-width: 1600px) 1280px, ${image.width}px`}
                     />
                   </div>
                   <div class="caption">
