@@ -1,185 +1,45 @@
 ---
-import { Image } from "astro:assets";
-
 import "../styles/global.css";
 
-import Image1 from "../assets/reader.webp";
-import Image2 from "../assets/tunnel.webp";
-import Image3 from "../assets/potter.webp";
-import Image4 from "../assets/blackrock.jpg";
-import Image5 from "../assets/ghost tree.jpg";
-import Image6 from "../assets/liverpool.jpg";
+import Homepage from "../components/homepage.astro";
+import Carousel from "../components/carousel.astro";
+import Textorlink from "../components/textorlink.astro";
 
-const slides = [
+const headers = [
+  { type: "text", content: "TEJAS SANAP" },
+  { type: "text", content: "PROGRAMMER, ENGINEER, PHOTOGRAPHER" },
+  { type: "link", content: "INFO", href: "/info" },
+];
+
+const footers = [
+  { type: "link", content: "BLOGROLL", href: "/blogroll" },
+  { type: "text", content: "" },
   {
-    image: Image1,
-    caption: "Never waste time",
-  },
-  {
-    image: Image2,
-    caption: "Ride into the darkness",
-  },
-  {
-    image: Image3,
-    caption: "Potter in Pench, Madhya Pradesh",
-  },
-  {
-    image: Image4,
-    caption: "Whisky Bar in London",
-  },
-  {
-    image: Image5,
-    caption: "Ghost tree in Pench Tiger Reserve",
-  },
-  {
-    image: Image6,
-    caption: "Liverpool Street",
+    type: "link",
+    content: "SEND AN EMAIL",
+    href: "mailto:email@whereistejas.xyz",
   },
 ];
 ---
 
-<!--
-  Like to view source? We might get along
-  email@whereistejas.xyz
--->
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<Homepage>
+  <Fragment slot="header">
+    {
+      headers.map((el) => (
+        <Textorlink type={el.type} content={el.content} href={el.href} />
+      ))
+    }
+  </Fragment>
 
-    <link
-      rel="preload"
-      href="/AUTHENTICSans-90.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/AUTHENTICSans-130.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <Fragment slot="main">
+    <Carousel />
+  </Fragment>
 
-    <title>Tejas Sanap | Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <div>
-        <h1>TEJAS SANAP</h1>
-      </div>
-      <div>
-        <h1>PROGRAMMER, ENGINEER, PHOTOGRAPHER</h1>
-      </div>
-      <div>
-        <h1><a href="/info">INFO</a></h1>
-      </div>
-    </header>
-
-    <main>
-      <div class="carousel">
-        <div class="slides-wrapper">
-          <div class="left-scroll"></div>
-          <div class="right-scroll"></div>
-          <div class="slides">
-            {
-              slides.map(({ image, caption }, idx) => (
-                <div class="slide">
-                  <div class="slide-inner">
-                    <Image
-                      src={image}
-                      alt={caption}
-                      widths={[400, 600, 900, 1200, image.width]}
-                      sizes={`(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 900px) 900px, (max-width: 1200px) 1200px, ${image.width}px`}
-                    />
-                  </div>
-                  <div class="caption">
-                    <span>
-                      {idx + 1}/{slides.length}
-                    </span>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </div>
-        <div class="captions">
-          {
-            slides.map(({ image: _, caption }, idx) => (
-              <div class="caption">
-                <span>{caption}</span>
-                <span>
-                  {idx + 1}/{slides.length}
-                </span>
-              </div>
-            ))
-          }
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div>
-        <h1>
-          <a href="https://notes.whereistejas.xyz/Reading-List/">READING LIST</a
-          >
-        </h1>
-      </div>
-      <div>
-        <h1>
-          <a href="mailto:email@whereistejas.xyz">SEND AN EMAIL</a>
-        </h1>
-      </div>
-    </footer>
-
-    <script>
-      function modulo(number: number, mod: number) {
-        let result = number % mod;
-        if (result < 0) {
-          result += mod;
-        }
-        return result;
-      }
-
-      let carousel = document.querySelector(".carousel") as HTMLDivElement;
-
-      let currentSlide = 0;
-      const numSlides = (document.querySelector(".slides") as HTMLDivElement)
-        .children.length;
-
-      let left = document.querySelector(".left-scroll");
-      let right = document.querySelector(".right-scroll");
-      if (left && right) {
-        left.addEventListener("click", function (e) {
-          e.preventDefault();
-          currentSlide = modulo(currentSlide - 1, numSlides);
-          carousel.style.setProperty("--current-slide", `${currentSlide}`);
-        });
-        right.addEventListener("click", function (e) {
-          e.preventDefault();
-          currentSlide = modulo(currentSlide + 1, numSlides);
-          carousel.style.setProperty("--current-slide", `${currentSlide}`);
-        });
-      }
-
-      function fetch_images() {
-        fetch(
-          "https://api.cloudflare.com/client/v4/accounts/account_id/images/v2",
-          {
-            method: "GET",
-            mode: "cors",
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: "Bearer undefined",
-            },
-          }
-        )
-          .then((response) => response.json())
-          .then((response) => console.log(response))
-          .catch((err) => console.error(err));
-      }
-      fetch_images();
-    </script>
-  </body>
-</html>
+  <Fragment slot="footer">
+    {
+      footers.map((el) => (
+        <Textorlink type={el.type} content={el.content} href={el.href} />
+      ))
+    }
+  </Fragment>
+</Homepage>

@@ -1,0 +1,128 @@
+---
+import "../styles/carousel.css";
+
+import { Image } from "astro:assets";
+
+import Image1 from "../assets/reader.webp";
+// import Image2 from "../assets/tunnel.webp";
+// import Image4 from "../assets/blackrock.jpg";
+// import Image5 from "../assets/ghost tree.jpg";
+// import Image6 from "../assets/liverpool.jpg";
+
+const slides = [
+  {
+    image: Image1,
+    caption: "Never waste time",
+  },
+  // {
+  //   image: Image2,
+  //   caption: "Ride into the darkness",
+  // },
+  // {
+  //   image: Image3,
+  //   caption: "Potter in Pench, Madhya Pradesh",
+  // },
+  // {
+  //   image: Image4,
+  //   caption: "Whisky Bar in London",
+  // },
+  // {
+  //   image: Image5,
+  //   caption: "Ghost tree in Pench Tiger Reserve",
+  // },
+  // {
+  //   image: Image6,
+  //   caption: "Liverpool Street",
+  // },
+];
+---
+
+<div class="carousel">
+  <div class="slides-wrapper">
+    <div class="left-scroll"></div>
+    <div class="right-scroll"></div>
+    <div class="slides">
+      {
+        slides.map(({ image, caption }, idx) => (
+          <div class="slide">
+            <div class="slide-inner">
+              <Image
+                src={image}
+                alt={caption}
+                widths={[400, 600, 900, 1200, image.width]}
+                sizes={`(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 900px) 900px, (max-width: 1200px) 1200px, ${image.width}px`}
+              />
+            </div>
+            <div class="caption">
+              <span>{caption}</span>
+              <span>
+                {idx + 1}/{slides.length}
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <!-- <div class="captions">
+    {
+      slides.map(({ image: _, caption }, idx) => (
+        <div class="caption">
+          <span>{caption}</span>
+          <span>
+            {idx + 1}/{slides.length}
+          </span>
+        </div>
+      ))
+    }
+  </div> -->
+</div>
+<!-- 
+<script>
+  function modulo(number: number, mod: number) {
+    let result = number % mod;
+    if (result < 0) {
+      result += mod;
+    }
+    return result;
+  }
+
+  let carousel = document.querySelector(".carousel") as HTMLDivElement;
+
+  let currentSlide = 0;
+  const numSlides = (document.querySelector(".slides") as HTMLDivElement)
+    .children.length;
+
+  let left = document.querySelector(".left-scroll");
+  let right = document.querySelector(".right-scroll");
+  if (left && right) {
+    left.addEventListener("click", function (e) {
+      e.preventDefault();
+      currentSlide = modulo(currentSlide - 1, numSlides);
+      carousel.style.setProperty("--current-slide", `${currentSlide}`);
+    });
+    right.addEventListener("click", function (e) {
+      e.preventDefault();
+      currentSlide = modulo(currentSlide + 1, numSlides);
+      carousel.style.setProperty("--current-slide", `${currentSlide}`);
+    });
+  }
+
+  function fetch_images() {
+    fetch(
+      "https://api.cloudflare.com/client/v4/accounts/account_id/images/v2",
+      {
+        method: "GET",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer undefined",
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((response) => console.log(response))
+      .catch((err) => console.error(err));
+  }
+  fetch_images();
+</script> -->

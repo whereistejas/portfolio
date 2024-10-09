@@ -1,0 +1,48 @@
+@import "types.css";
+@import "dimensions.css";
+
+.carousel {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides-wrapper {
+  padding-left: var(--space-xs-s);
+  padding-right: var(--space-xs-s);
+}
+
+.slides {
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  display: flex;
+}
+
+.slide-inner {
+  height: 58vh;
+  width: 87vh;
+}
+
+@media (max-width: 800px) {
+  .slide-inner {
+    height: 66vw;
+    width: 100%;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xs-2xs)
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,44 +1,29 @@
 ---
-import Row from "../components/row.astro";
+import "../styles/info.css";
 
-import "../styles/global.css";
+import Homepage from "../components/homepage.astro";
+import Row from "../components/row.astro";
+import Textorlink from "../components/textorlink.astro";
+
+const headers = [
+  { type: "text", content: "TEJAS SANAP" },
+  { type: "text", content: "INFO" },
+  { type: "link", content: "CLOSE", href: "/" },
+];
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<Homepage>
+  <Fragment slot="header">
+    {
+      headers.map((el) => (
+        <Textorlink type={el.type} content={el.content} href={el.href} />
+      ))
+    }
+  </Fragment>
 
-    <link
-      rel="preload"
-      href="/AUTHENTICSans-90.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/AUTHENTICSans-130.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <title>Tejas Sanap | Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <div>
-        <h1><a href="/">TEJAS SANAP</a></h1>
-      </div>
-      <div></div>
-      <div>
-        <h1><a href="/">CLOSE</a></h1>
-      </div>
-    </header>
-
-    <main>
-      <section class="info">
+  <Fragment slot="main">
+    <section class="info">
+      <div class="info-inner">
         <Row key="Profile">
           <p>
             A software engineer and street photographer based in London, UK.
@@ -72,7 +57,7 @@ import "../styles/global.css";
             <a href="https://www.instagram.com/whereistejas">Instagram</a>
           </p>
         </Row>
-      </section>
-    </main>
-  </body>
-</html>
+      </div>
+    </section>
+  </Fragment>
+</Homepage>

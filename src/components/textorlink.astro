@@ -1,0 +1,15 @@
+---
+interface Props {
+  type: string;
+  content: string;
+  href: string | undefined;
+}
+
+const { type, content, href } = Astro.props;
+---
+
+<div>
+  <h4>
+    {type === "link" ? <a href={href}>{content}</a> : content}
+  </h4>
+</div>
