@@ -2,7 +2,7 @@
 import "../styles/global.css";
 
 import Homepage from "../components/homepage.astro";
-import Carousel from "../components/carousel.jsx";
+import Carousel from "../components/carousel.astro";
 import Textorlink from "../components/textorlink.astro";
 
 const headers = [
@@ -32,7 +32,7 @@ const footers = [
   </Fragment>
 
   <Fragment slot="main">
-    <Carousel client:load />
+    <Carousel />
   </Fragment>
 
   <Fragment slot="footer">

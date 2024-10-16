@@ -15,21 +15,21 @@ import Image14 from "./photos/DSCF5617.jpg";
 import Image15 from "./photos/DSCF6631.jpg";
 
 const imageList: ImageMetadata[] = [
+	Image2,
+	Image3,
+	Image4,
+	Image5,
+	Image6,
+	Image7,
+	Image8,
+	Image9,
 	Image1,
-	// Image2,
-	// Image3,
-	// Image4,
-	// Image5,
-	// Image6,
-	// Image7,
-	// Image8,
-	// Image9,
-	// Image10,
-	// Image11,
-	// Image12,
-	// Image13,
-	// Image14,
-	// Image15,
+	Image10,
+	Image11,
+	Image12,
+	Image13,
+	Image14,
+	Image15,
 ];
 
 export default imageList

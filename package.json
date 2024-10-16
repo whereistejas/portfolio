@@ -12,15 +12,10 @@
   "dependencies": {
     "@astrojs/check": "^0.9.3",
     "@astrojs/node": "^8.3.4",
-    "@astrojs/react": "^3.6.2",
     "@astrojs/ts-plugin": "^1.10.2",
     "@omnivore-app/api": "^1.0.4",
-    "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.1",
     "astro": "^4.15.6",
     "exifreader": "^4.23.7",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "swiper": "^11.1.14",
     "typescript": "^5.4.5"
   },

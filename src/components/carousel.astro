@@ -1,0 +1,91 @@
+---
+import { Image } from "astro:assets";
+
+import imageList from "../assets/photos";
+
+import "../styles/carousel.css";
+
+import ExifReader from "exifreader";
+
+const slides = await Promise.all(
+  imageList.map(async (image) => {
+    let filepath = image.src.replace("@fs/", "").split("?").shift();
+    let tags = await ExifReader.load(filepath);
+
+    return {
+      image: image,
+      caption: tags["title"].description,
+    };
+  })
+);
+---
+
+<div class="carousel">
+  <div class="slides-wrapper">
+    <div class="left-scroll"></div>
+    <div class="right-scroll"></div>
+    <div class="slides">
+      {
+        slides.map(({ image, caption }, idx) => (
+          <div class="slide">
+            <Image
+              src={image}
+              alt={caption}
+              widths={[320, 640, 1280, image.width]}
+              sizes={`(max-width: 360px) 320px, (max-width: 720px) 640px, (max-width: 1600px) 1280px, ${image.width}px`}
+            />
+            <div class="caption">
+              <span>{caption}</span>
+              <span>
+                {idx + 1}/{slides.length}
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <div class="captions">
+    {
+      slides.map(({ image: _, caption }, idx) => (
+        <div class="caption">
+          <span>{caption}</span>
+          <span>
+            {idx + 1}/{slides.length}
+          </span>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<script>
+  function modulo(number: number, mod: number) {
+    let result = number % mod;
+    if (result < 0) {
+      result += mod;
+    }
+    return result;
+  }
+
+  let carousel = document.querySelector(".carousel") as HTMLDivElement;
+
+  let currentSlide = 0;
+  const numSlides = (document.querySelector(".slides") as HTMLDivElement)
+    .children.length;
+
+  let left = document.querySelector(".left-scroll");
+  let right = document.querySelector(".right-scroll");
+  if (left && right) {
+    left.addEventListener("click", function (e) {
+      e.preventDefault();
+      currentSlide = modulo(currentSlide - 1, numSlides);
+      carousel.style.setProperty("--current-slide", `${currentSlide}`);
+    });
+    right.addEventListener("click", function (e) {
+      e.preventDefault();
+      currentSlide = modulo(currentSlide + 1, numSlides);
+      carousel.style.setProperty("--current-slide", `${currentSlide}`);
+    });
+  }
+</script>
