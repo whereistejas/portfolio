@@ -7,17 +7,15 @@ import "../styles/carousel.css";
 
 import ExifReader from "exifreader";
 
-const slides = await Promise.all(
-  imageList.map(async (image) => {
-    let filepath = image.src.replace("@fs/", "").split("?").shift();
-    let tags = await ExifReader.load(filepath);
+const slides = imageList.map((image) => {
+  let filepath = image.src.replace("@fs/", "").split("?").shift();
+  let tags = ExifReader.load(filepath);
 
-    return {
-      image: image,
-      caption: tags["title"].description,
-    };
-  })
-);
+  return {
+    image: image,
+    caption: tags["title"].description,
+  };
+});
 ---
 
 <div class="carousel">
