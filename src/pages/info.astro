@@ -10,6 +10,15 @@ const headers = [
   { type: "text", content: "INFO" },
   { type: "link", content: "CLOSE", href: "/" },
 ];
+const footers = [
+  { type: "link", content: "BLOGROLL", href: "/blogroll" },
+  { type: "text", content: "" },
+  {
+    type: "link",
+    content: "SEND AN EMAIL",
+    href: "mailto:email@whereistejas.xyz",
+  },
+];
 ---
 
 <Homepage>
@@ -59,5 +68,13 @@ const headers = [
         </Row>
       </div>
     </section>
+  </Fragment>
+
+  <Fragment slot="footer">
+    {
+      footers.map((el) => (
+        <Textorlink type={el.type} content={el.content} href={el.href} />
+      ))
+    }
   </Fragment>
 </Homepage>

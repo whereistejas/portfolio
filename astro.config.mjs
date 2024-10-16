@@ -1,11 +1,17 @@
 import { defineConfig } from "astro/config";
 
-import vercel from "@astrojs/vercel/serverless";
-import vercel from "@astrojs/vercel/static";
+import node from "@astrojs/node";
+
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: vercel({
-    webAnalytics: { enabled: true }
+  prefetch: true,
+  output: "server",
+
+  adapter: node({
+    mode: "standalone",
   }),
+
+  integrations: [react()],
 });
