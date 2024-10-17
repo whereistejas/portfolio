@@ -39,18 +39,18 @@ const slides = await Promise.all(
               widths={[320, 640, image.width]}
               sizes={`(max-width: 400px) 320px, (max-width: 800px) 640px, ${image.width}px`}
             />
-            <div class="caption">
+            {/* <div class="caption">
               <span>{caption}</span>
               <span>
                 {idx + 1}/{slides.length}
               </span>
-            </div>
+            </div> */}
           </div>
         ))
       }
     </div>
   </div>
-  <div class="captions">
+  <!-- <div class="captions">
     {
       slides.map(({ image: _, caption }, idx) => (
         <div class="caption">
@@ -61,7 +61,7 @@ const slides = await Promise.all(
         </div>
       ))
     }
-  </div>
+  </div> -->
 </div>
 
 <script>

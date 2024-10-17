@@ -9,6 +9,8 @@
   height: 100%;
   width: fit-content;
 
+  aspect-ratio: 3/2;
+
   max-height: 75vh;
   max-width: 75vw;
 
@@ -28,11 +30,6 @@
 .slides-wrapper {
   height: 100%;
   width: fit-content;
-
-  max-height: 75vh;
-  max-width: 75vw;
-
-  aspect-ratio: 3/2;
 
   position: relative;
 }
@@ -81,7 +78,7 @@
     display: none;
   }
 }
-
+/* 
 @media (max-width: 800px) {
   .slide {
     gap: var(--space-2xs-xs);
@@ -89,9 +86,9 @@
       display: block;
     }
   }
-}
+} */
 
-.captions {
+/* .captions {
   display: flex;
 
   overflow: scroll;
@@ -118,7 +115,7 @@
   > span:last-child {
     float: right;
   }
-}
+} */
 
 .left {
   height: 100%;
