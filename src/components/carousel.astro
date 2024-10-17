@@ -1,21 +1,28 @@
 ---
-import { Image } from "astro:assets";
-
-import imageList from "../assets/photos";
-
-import "../styles/carousel.css";
+import { Image, getImage } from "astro:assets";
 
 import ExifReader from "exifreader";
 
-const slides = imageList.map((image) => {
-  let filepath = image.src.replace("@fs/", "").split("?").shift();
-  let tags = ExifReader.load(filepath);
+import "../styles/carousel.css";
 
-  return {
-    image: image,
-    caption: tags["title"].description,
-  };
-});
+let images: Record<string, any>[] = await Astro.glob("../assets/*.jpg");
+
+const slides = await Promise.all(
+  images.map(async (image_path) => {
+    const img = image_path.default;
+    const path = img.fsPath;
+
+    const exif = await ExifReader.load(path, { async: true });
+    let caption = exif["title"].description;
+    let image = (await getImage({ src: img, format: "jpg" })).options
+      .src as ImageMetadata;
+
+    return {
+      image: image,
+      caption: caption,
+    };
+  })
+);
 ---
 
 <div class="carousel">
@@ -29,8 +36,8 @@ const slides = imageList.map((image) => {
             <Image
               src={image}
               alt={caption}
-              widths={[320, 640, 1280, image.width]}
-              sizes={`(max-width: 360px) 320px, (max-width: 720px) 640px, (max-width: 1600px) 1280px, ${image.width}px`}
+              widths={[320, 640, image.width]}
+              sizes={`(max-width: 400px) 320px, (max-width: 800px) 640px, ${image.width}px`}
             />
             <div class="caption">
               <span>{caption}</span>

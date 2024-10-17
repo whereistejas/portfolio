@@ -10,22 +10,6 @@
 		},
 		{
 			"handle": "filesystem"
-		},
-		{
-			"src": "^\\/_image$",
-			"dest": "_render"
-		},
-		{
-			"src": "^\\/blogroll\\/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^\\/info\\/?$",
-			"dest": "_render"
-		},
-		{
-			"src": "^\\/$",
-			"dest": "_render"
 		}
 	]
 }
