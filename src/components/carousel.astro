@@ -27,8 +27,8 @@ const slides = await Promise.all(
 
 <div class="carousel">
   <div class="slides-wrapper">
-    <div class="left-scroll"></div>
-    <div class="right-scroll"></div>
+    <div class="left"></div>
+    <div class="right"></div>
     <div class="slides">
       {
         slides.map(({ image, caption }, idx) => (
@@ -79,8 +79,8 @@ const slides = await Promise.all(
   const numSlides = (document.querySelector(".slides") as HTMLDivElement)
     .children.length;
 
-  let left = document.querySelector(".left-scroll");
-  let right = document.querySelector(".right-scroll");
+  let left = document.querySelector(".left");
+  let right = document.querySelector(".right");
   if (left && right) {
     left.addEventListener("click", function (e) {
       e.preventDefault();
