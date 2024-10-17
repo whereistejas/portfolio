@@ -7,20 +7,19 @@ import Textorlink from "../components/textorlink.astro";
 import { Omnivore } from "@omnivore-app/api";
 import type { Item } from "@omnivore-app/api/dist/src/client";
 
-// const OMNIVORE_API_URL = "https://api-prod.omnivore.app/api/graphql";
-// const OMNIVORE_API_KEY = "2b6ef701-27a9-4fe6-9ec2-994d0b6f2e8a"; // Replace with your actual API key
-// const omnivore = new Omnivore({
-//   apiKey: OMNIVORE_API_KEY,
-//   baseUrl: OMNIVORE_API_URL,
-// });
+const OMNIVORE_API_URL = "https://api-prod.omnivore.app/api/graphql";
+const OMNIVORE_API_KEY = "2b6ef701-27a9-4fe6-9ec2-994d0b6f2e8a"; // Replace with your actual API key
+const omnivore = new Omnivore({
+  apiKey: OMNIVORE_API_KEY,
+  baseUrl: OMNIVORE_API_URL,
+});
 
-// const data = await omnivore.items.search({
-//   after: 0,
-//   first: 1000,
-//   query: "in:archive",
-// });
-// const articles = data.edges.map((edge) => edge.node);
-const articles: Item[] = [];
+const data = await omnivore.items.search({
+  after: 0,
+  first: 1000,
+  query: "in:archive",
+});
+const articles = data.edges.map((edge) => edge.node);
 
 const headers = [
   { type: "text", content: "TEJAS SANAP" },
