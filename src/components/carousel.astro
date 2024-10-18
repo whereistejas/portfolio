@@ -25,43 +25,45 @@ const slides = await Promise.all(
 );
 ---
 
-<div class="carousel">
-  <div class="slides-wrapper">
-    <div class="left"></div>
-    <div class="right"></div>
-    <div class="slides">
+<div class="carousel-wrapper">
+  <div class="carousel">
+    <div class="slides-wrapper">
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="slides">
+        {
+          slides.map(({ image, caption }, idx) => (
+            <div class="slide">
+              <Image
+                src={image}
+                alt={caption}
+                widths={[400, 800, image.width]}
+                sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px, ${image.width}px`}
+              />
+              <div class="caption">
+                <span>{caption}</span>
+                <span>
+                  {idx + 1}/{slides.length}
+                </span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class="captions">
       {
-        slides.map(({ image, caption }, idx) => (
-          <div class="slide">
-            <Image
-              src={image}
-              alt={caption}
-              widths={[320, 640, image.width]}
-              sizes={`(max-width: 400px) 320px, (max-width: 800px) 640px, ${image.width}px`}
-            />
-            {/* <div class="caption">
-              <span>{caption}</span>
-              <span>
-                {idx + 1}/{slides.length}
-              </span>
-            </div> */}
+        slides.map(({ image: _, caption }, idx) => (
+          <div class="caption">
+            <span>{caption}</span>
+            <span>
+              {idx + 1}/{slides.length}
+            </span>
           </div>
         ))
       }
     </div>
   </div>
-  <!-- <div class="captions">
-    {
-      slides.map(({ image: _, caption }, idx) => (
-        <div class="caption">
-          <span>{caption}</span>
-          <span>
-            {idx + 1}/{slides.length}
-          </span>
-        </div>
-      ))
-    }
-  </div> -->
 </div>
 
 <script>
