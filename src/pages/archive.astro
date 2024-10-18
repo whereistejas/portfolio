@@ -1,0 +1,37 @@
+---
+import "../styles/blog.css";
+
+import Homepage from "../components/homepage.astro";
+import Textorlink from "../components/textorlink.astro";
+
+const headers = [
+  { type: "text", content: "TEJAS SANAP" },
+  { type: "text", content: "BLOG ARCHIVE" },
+  { type: "link", content: "CLOSE", href: "/" },
+];
+
+const posts = Object.values(await Astro.glob("./posts/*.md"));
+---
+
+<Homepage>
+  <Fragment slot="header">
+    {
+      headers.map((el) => (
+        <Textorlink type={el.type} content={el.content} href={el.href} />
+      ))
+    }
+  </Fragment>
+  <Fragment slot="main">
+    <div class="archive">
+      <ul>
+        {
+          posts.map((post) => (
+            <li>
+              <a href={post.url}>{post.frontmatter.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </Fragment>
+</Homepage>
