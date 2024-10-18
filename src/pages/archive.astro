@@ -10,7 +10,7 @@ const headers = [
   { type: "link", content: "CLOSE", href: "/" },
 ];
 
-const posts = Object.values(await Astro.glob("./posts/*.md"));
+const posts = Object.values(await Astro.glob("./archive/*.md"));
 ---
 
 <Homepage>
@@ -22,16 +22,21 @@ const posts = Object.values(await Astro.glob("./posts/*.md"));
     }
   </Fragment>
   <Fragment slot="main">
-    <div class="archive">
-      <ul>
+    <section class="archive">
+      <div class="archive-inner">
         {
           posts.map((post) => (
-            <li>
-              <a href={post.url}>{post.frontmatter.title}</a>
-            </li>
+            <div class="row">
+              <div>{new Date(post.frontmatter.date).toLocaleDateString()}</div>
+              <div class="value">
+                <p>
+                  <a href={post.url}>{post.frontmatter.title}</a>
+                </p>
+              </div>
+            </div>
           ))
         }
-      </ul>
-    </div>
+      </div>
+    </section>
   </Fragment>
 </Homepage>

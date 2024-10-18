@@ -7,9 +7,12 @@ references:
 tags:
   - prompt
 publish: true
+date: 01-01-1970
 ---
 
-# Work in progress
+<center>
+<h1> Work in progress</h1>
+</center>
 
 <!-- ## Introduction [[2024-06-02]]
 This articles main conjecture that good memory helps us think better and that good memory is a choice. First half talks about: what is [[Anki]], patterns and anti-patterns in Anki, how to build deep understanding of complex topics. Second half talks about: different memory systems, role of memory in creativity and problem solving.

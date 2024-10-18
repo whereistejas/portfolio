@@ -19,7 +19,7 @@
 
   gap: var(--space-m-l);
 }
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   .readinglist-inner {
     width: 100%;
   }
@@ -30,8 +30,9 @@
   grid-template-columns: 1fr 4fr;
 
   align-items: start;
+  justify-content: baseline;
 }
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   .row {
     display: flex;
     flex-direction: column;

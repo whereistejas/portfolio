@@ -19,7 +19,7 @@
 
   gap: var(--space-m-l);
 }
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   .info-inner {
     width: 100%;
   }
@@ -27,11 +27,11 @@
 
 .row {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
 
   align-items: start;
 }
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   .row {
     display: flex;
     flex-direction: column;
