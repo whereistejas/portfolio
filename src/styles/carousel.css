@@ -21,14 +21,46 @@
     align-items: center;
     gap: var(--space-2xs-xs);
 
-    width: 900px;
+    width: 1600px;
     max-width: 100%;
 
     --current-slide: 0;
   }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 1600px) {
+  .carousel-wrapper {
+    .carousel {
+      width: 1400px;
+    }
+  }
+}
+
+@media (max-height: 1400px) {
+  .carousel-wrapper {
+    .carousel {
+      width: 1200px;
+    }
+  }
+}
+
+@media (max-height: 1200px) {
+  .carousel-wrapper {
+    .carousel {
+      width: 1000px;
+    }
+  }
+}
+
+@media (max-height: 1000px) {
+  .carousel-wrapper {
+    .carousel {
+      width: 800px;
+    }
+  }
+}
+
+@media (max-height: 800px) {
   .carousel-wrapper {
     .carousel {
       width: 600px;
