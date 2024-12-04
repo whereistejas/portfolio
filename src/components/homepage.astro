@@ -1,5 +1,19 @@
 ---
-// import { ViewTransitions } from "astro:transitions";
+import { getImage } from "astro:assets";
+
+let images: Record<string, any>[] = await Astro.glob("../assets/*.jpg");
+
+const slides = await Promise.all(
+  images.map(async (image_path) => {
+    const img = image_path.default;
+    const path = img.fsPath;
+
+    let image = (await getImage({ src: img, format: "jpg" })).options
+      .src as ImageMetadata;
+
+    return image;
+  })
+);
 
 import "../styles/global.css";
 ---
@@ -28,7 +42,12 @@ import "../styles/global.css";
       type="font/woff2"
       crossorigin
     />
-    <!-- <ViewTransitions /> -->
+
+    {
+      slides.map((slide) => (
+        <link rel="preload" href={slide.src} as="image" type="image/jpeg" />
+      ))
+    }
 
     <title>Tejas Sanap | Portfolio</title>
   </head>

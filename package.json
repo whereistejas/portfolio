@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.3",
-    "@astrojs/ts-plugin": "^1.10.2",
-    "@astrojs/vercel": "^7.8.1",
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/ts-plugin": "^1.10.4",
+    "@astrojs/vercel": "^7.8.2",
     "@omnivore-app/api": "^1.0.4",
-    "astro": "^4.15.6",
+    "astro": "^4.16.15",
     "exifreader": "^4.23.7",
     "typescript": "^5.4.5"
   },

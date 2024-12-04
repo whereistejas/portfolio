@@ -30,6 +30,10 @@
   grid-template-columns: 1fr 4fr;
 
   align-items: start;
+
+  div:first-child {
+    line-height: 1.5;
+  }
 }
 @media (max-width: 700px) {
   .row {

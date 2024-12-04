@@ -27,6 +27,7 @@ As an example I'm going to read [[pages/What every systems programmer should kno
 - _thorough_ pass:
 	- read slower
 	- add more in-depth questions
+
 ## How spaced repetition works [[2024-06-04]]
 The author points out that Anki works much better when it is used as an aid to personal project/aim, describing this using emotional commitment. [[Andy Matuschak]] in his talk [[How might we learn]] makes the same point. Learning is only effective when it is about something the we deeply care about.
 
