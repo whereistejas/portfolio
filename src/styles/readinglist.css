@@ -7,8 +7,6 @@
   padding-right: var(--space-xs-s);
 
   align-self: flex-start;
-
-  width: 100%;
 }
 
 .readinglist-inner {
@@ -29,7 +27,7 @@
 
 .row {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: minmax(300px, auto) 4fr;
 
   align-items: start;
   justify-content: baseline;
