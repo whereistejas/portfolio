@@ -6,12 +6,13 @@
   padding-left: var(--space-xs-s);
   padding-right: var(--space-xs-s);
 
-  align-self: flex-start;
+  align-self: center;
 }
 
 .readinglist-inner {
   height: 100%;
-  width: 100%;
+  width: 800px;
+  max-width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -20,6 +21,9 @@
   gap: var(--space-m-l);
 }
 @media (max-width: 800px) {
+  .readinglist {
+    align-self: start;
+  }
   .readinglist-inner {
     width: 100%;
   }
@@ -27,7 +31,7 @@
 
 .row {
   display: grid;
-  grid-template-columns: minmax(300px, auto) 4fr;
+  grid-template-columns: minmax(150px, auto) 4fr;
 
   align-items: start;
   justify-content: baseline;

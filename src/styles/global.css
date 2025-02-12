@@ -20,6 +20,12 @@ body {
   font-family: var(--font-display);
   font-size: var(--step-0);
   font-weight: var(--font-normal);
+
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 :is(strong, .font-bold) {
@@ -64,15 +70,15 @@ body {
 
 header,
 footer {
-  position: absolute;
-  width: 100%;
+  width: 800px;
+  max-width: 100%;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
   div:nth-child(odd) {
-    padding: var(--space-xs-s);
+    padding: var(--space-xs-s) 0;
   }
 
   div:nth-child(2) {
@@ -93,6 +99,10 @@ footer {
     div:nth-child(2) {
       display: none;
     }
+
+    div:nth-child(odd) {
+      padding: var(--space-xs-s);
+    }
   }
 }
 header {
@@ -105,33 +115,21 @@ footer {
 }
 
 main {
-  min-width: 100vw;
-  min-height: 100dvh;
+  width: 800px;
+  max-width: 100%;
 
   display: flex;
   flex-direction: column;
-
-  z-index: -10;
 }
 
 a {
   position: relative;
-  color: black;
+  color: black; /* Initial color */
   text-decoration: none;
+  transition: color 150ms ease; /* The transition property */
+  z-index: 1;
 }
-a::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  transform: scaleX(0);
-  transform-origin: top left;
-  transition: transform 0.3s ease;
-}
-a:hover::after {
-  transform: scaleX(1);
+
+a:hover {
+  color: grey; /* Color on hover */
 }
