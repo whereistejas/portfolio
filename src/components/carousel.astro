@@ -38,7 +38,7 @@ const slides = await Promise.all(
                 src={image}
                 alt={caption}
                 widths={[400, 800, image.width]}
-                sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px, ${image.width}px`}
+                sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px`}
               />
               <div class="caption">
                 <span>{caption}</span>

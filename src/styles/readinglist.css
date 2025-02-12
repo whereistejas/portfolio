@@ -2,7 +2,7 @@
 
 .readinglist-inner {
   height: 100%;
-  width: 800px;
+  width: var(--page-width);
   max-width: 100%;
 
   display: flex;
@@ -11,7 +11,7 @@
 
   gap: var(--space-m-l);
 }
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .readinglist {
     padding-left: var(--space-xs-s);
     padding-right: var(--space-xs-s);
@@ -28,7 +28,7 @@
   align-items: start;
   justify-content: baseline;
 }
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .row {
     display: flex;
     flex-direction: column;
@@ -41,11 +41,9 @@
   display: flex;
   flex-direction: column;
 
-  line-height: 1.5;
-
   gap: var(--space-2xs-xs);
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     a {
       font-weight: 130;
     }
@@ -60,7 +58,7 @@
     font-size: var(--step--1);
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     .kind {
       font-size: var(--step-0);
     }

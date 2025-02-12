@@ -1,19 +1,14 @@
 @import "types.css";
+@import "dimensions.css";
 
 .archive {
-  padding-top: calc(3 * var(--space-xs-s) + var(--step-1));
-  padding-bottom: calc(2 * var(--space-xs-s) + var(--step-1));
-  padding-left: var(--space-xs-s);
-  padding-right: var(--space-xs-s);
-
-  align-self: flex-start;
-
-  width: 100%;
+  align-self: start;
 }
 
 .archive-inner {
   height: 100%;
-  width: 100%;
+  width: var(--page-width);
+  max-width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -21,7 +16,11 @@
 
   gap: var(--space-m-l);
 }
-@media (max-width: 800px) {
+@media (max-width: 700px) {
+  .archive {
+    padding-left: var(--space-xs-s);
+    padding-right: var(--space-xs-s);
+  }
   .archive-inner {
     width: 100%;
   }
@@ -29,11 +28,12 @@
 
 .row {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: minmax(150px, auto) 4fr;
 
   align-items: start;
+  justify-content: baseline;
 }
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .row {
     display: flex;
     flex-direction: column;
@@ -46,52 +46,55 @@
   display: flex;
   flex-direction: column;
 
-  line-height: 1.5;
-
   gap: var(--space-2xs-xs);
+
+  @media (max-width: 700px) {
+    a {
+      font-weight: var(--font-bold);
+    }
+  }
 }
 
 .blog {
-  height: 100%;
-  max-width: 800px;
+  font-family: InterVariable;
+  font-size: var(--step-0);
 
-  align-self: start;
-
-  padding-top: calc(3 * var(--space-xs-s) + var(--step-1));
-  padding-bottom: calc(2 * var(--space-xs-s) + var(--step-1));
-  padding-left: var(--space-xs-s);
-  padding-right: var(--space-xs-s);
-
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fffff8;
+  /* background-color: #fffff8; */
   color: #111;
   counter-reset: sidenote-counter;
 
+  ul {
+    list-style: disc;
+    left-margin: var(--space-3xs-2xs);
+  }
+  ol {
+    list-style: decimal;
+    left-margin: var(--space-3xs-2xs);
+  }
+
   h1 {
-    font-weight: 400;
+    font-weight: var(--font-reader-bold);
     margin-top: 4rem;
     margin-bottom: 1.5rem;
-    font-size: 3.2rem;
-    line-height: 1;
+    font-size: var(--step-5);
+    line-height: 1.1;
   }
 
   h2 {
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--font-reader-bold);
     margin-top: 2.1rem;
     margin-bottom: 1.4rem;
-    font-size: 2.2rem;
-    line-height: 1;
+    font-size: var(--step-3);
+    line-height: 1.1;
   }
 
   h3 {
     font-style: italic;
-    font-weight: 400;
-    font-size: 1.7rem;
+    font-size: var(--step-2);
+    line-height: 1.3;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
-    line-height: 1;
   }
 
   hr {
@@ -104,26 +107,34 @@
     padding: 0;
   }
 
+  :is(strong, .font-bold) {
+    font-weight: var(--font-reader-bold);
+    letter-spacing: -0.01em;
+  }
+  em {
+    font-style: italic;
+  }
+
   p.subtitle {
     font-style: italic;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: var(--step-1);
     display: block;
     line-height: 1;
   }
 
   .numeral {
-    font-family: et-book-roman-old-style;
+    font-family: InterVariable;
   }
 
   .danger {
     color: red;
   }
 
-  /* article {
-    padding: 2rem 0rem;
-  } */
+  article {
+    padding: 0rem 0rem;
+  }
 
   section {
     padding-top: 1rem;
@@ -134,7 +145,7 @@
   dl,
   ol,
   ul {
-    font-size: 1.4rem;
+    font-size: var(--step-0);
     line-height: 2rem;
   }
 
@@ -170,17 +181,14 @@
   /* end chapter epigraphs styles */
 
   blockquote {
-    font-size: 1.4rem;
-  }
-
-  blockquote p {
-    width: 55%;
-    margin-right: 40px;
+    margin-left: 3rem;
+    font-size: var(--step-0);
+    font-style: italic;
+    width: 80%;
   }
 
   blockquote footer {
-    width: 55%;
-    font-size: 1.1rem;
+    font-size: var(--step--1);
     text-align: right;
   }
 
@@ -220,7 +228,7 @@
     clear: right;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.1rem;
+    font-size: var(--step--1);
     line-height: 1.6;
     vertical-align: baseline;
     position: relative;
@@ -251,7 +259,7 @@
     width: 50%;
     margin-top: 0.3rem;
     margin-bottom: 0;
-    font-size: 1.1rem;
+    font-size: var(--step--1);
     line-height: 1.3;
     vertical-align: baseline;
     position: relative;
@@ -263,21 +271,21 @@
 
   .sidenote-number:after,
   .sidenote:before {
-    font-family: et-book-roman-old-style;
+    font-family: InterVariable;
     position: relative;
     vertical-align: baseline;
   }
 
   .sidenote-number:after {
     content: counter(sidenote-counter);
-    font-size: 1rem;
+    font-size: var(--step--1);
     top: -0.5rem;
     left: 0.1rem;
   }
 
   .sidenote:before {
     content: counter(sidenote-counter) " ";
-    font-size: 1rem;
+    font-size: var(--step--1);
     top: -0.5rem;
   }
 
@@ -295,39 +303,39 @@
 
   div.table-wrapper {
     overflow-x: auto;
-    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+    font-family: InterVariable;
   }
 
   .sans {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font-family: InterVariable;
     letter-spacing: 0.03em;
   }
 
   code,
   pre > code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 1rem;
+    font-family: monospace;
+    font-size: var(--step--1);
     line-height: 1.42;
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
   }
 
   .sans > code {
-    font-size: 1.2rem;
+    font-size: var(--step--1);
   }
 
   h1 > code,
   h2 > code,
   h3 > code {
-    font-size: 0.8em;
+    font-size: var(--step--1);
   }
 
   .marginnote > code,
   .sidenote > code {
-    font-size: 1rem;
+    font-size: var(--step--1);
   }
 
   pre > code {
-    font-size: 0.9rem;
+    font-size: var(--step--1);
     width: 52.5%;
     margin-left: 2.5%;
     overflow-x: auto;
@@ -345,7 +353,7 @@
 
   span.newthought {
     font-variant: small-caps;
-    font-size: 1.2em;
+    font-size: var(--step-0);
   }
 
   input.margin-toggle {
@@ -376,7 +384,7 @@
     height: 100%;
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 700px) {
     body {
       width: 84%;
       padding-left: 8%;
@@ -453,5 +461,12 @@
     img {
       width: 100%;
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .blog {
+    background-color: #151515;
+    color: #ddd;
   }
 }

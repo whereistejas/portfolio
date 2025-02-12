@@ -1,0 +1,31 @@
+---
+interface Props {
+  /**
+   * A unique ID so the label & input can work together.
+   * If you don’t provide one, we generate a random ID.
+   */
+  id?: string;
+  /**
+   * The text for the margin note
+   */
+  text: string;
+}
+
+// Grab props passed into the component
+const { id, text } = Astro.props;
+
+// If no ID is explicitly provided, generate one
+const noteId = id ?? `margin-note-${Math.random().toString(36).slice(2, 7)}`;
+---
+
+<!-- 
+  The markup Tufte CSS expects:
+    1) A label with `margin-toggle sidenote-number`
+    2) An input[type=checkbox] with the same ID
+    3) A span with class sidenote (or marginnote if you prefer)
+-->
+<label for={noteId} class="margin-toggle sidenote-number"></label>
+<input type="checkbox" id={noteId} class="margin-toggle" />
+<span class="sidenote">
+  {text}
+</span>
