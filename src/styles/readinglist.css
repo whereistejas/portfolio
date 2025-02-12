@@ -1,14 +1,5 @@
 @import "types.css";
 
-.readinglist {
-  padding-top: calc(3 * var(--space-xs-s) + var(--step-1));
-  padding-bottom: calc(2 * var(--space-xs-s) + var(--step-1));
-  padding-left: var(--space-xs-s);
-  padding-right: var(--space-xs-s);
-
-  align-self: center;
-}
-
 .readinglist-inner {
   height: 100%;
   width: 800px;
@@ -22,7 +13,8 @@
 }
 @media (max-width: 800px) {
   .readinglist {
-    align-self: start;
+    padding-left: var(--space-xs-s);
+    padding-right: var(--space-xs-s);
   }
   .readinglist-inner {
     width: 100%;

@@ -1,69 +1,25 @@
 @import "dimensions.css";
 
-.carousel-wrapper {
-  padding-left: var(--space-xs-s);
-  padding-right: var(--space-xs-s);
-
+.carousel {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex: 1 0 auto;
-  align-self: center;
+  gap: var(--space-2xs-xs);
 
   height: 100%;
-  max-width: calc(100% - 2 * var(--space-xs-s));
-  min-height: 600px;
+  width: 800px;
+  max-width: 100%;
+
+  --current-slide: 0;
+}
+@media (max-width: 800px) {
+  .carousel-wrapper {
+    padding-left: var(--space-xs-s);
+    padding-right: var(--space-xs-s);
+  }
 
   .carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-2xs-xs);
-
-    width: 1600px;
-    max-width: 100%;
-
-    --current-slide: 0;
-  }
-}
-
-@media (max-height: 1600px) {
-  .carousel-wrapper {
-    .carousel {
-      width: 1400px;
-    }
-  }
-}
-
-@media (max-height: 1400px) {
-  .carousel-wrapper {
-    .carousel {
-      width: 1200px;
-    }
-  }
-}
-
-@media (max-height: 1200px) {
-  .carousel-wrapper {
-    .carousel {
-      width: 1000px;
-    }
-  }
-}
-
-@media (max-height: 1000px) {
-  .carousel-wrapper {
-    .carousel {
-      width: 800px;
-    }
-  }
-}
-
-@media (max-height: 800px) {
-  .carousel-wrapper {
-    .carousel {
-      width: 600px;
-    }
+    width: 100%;
   }
 }
 
