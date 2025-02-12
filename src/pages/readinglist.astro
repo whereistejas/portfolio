@@ -15,6 +15,8 @@ type Item = {
   url: URL;
   saved_at: Date;
   title: string;
+  summary: string;
+  kind: string;
 };
 
 /**
@@ -91,6 +93,8 @@ async function fetchAllReadwiseReaderItems(
       url: new URL(doc.source_url),
       saved_at: new Date(doc.saved_at),
       title: doc.title,
+      summary: doc.summary,
+      kind: doc.category,
     });
   }
 
@@ -128,7 +132,9 @@ const headers = [
                 <a href={item.url} target="_blank" rel="noopener noreferrer">
                   {item.title}
                 </a>
+                <span class="kind">{item.kind}</span>
               </p>
+              <p class="summary">{item.summary}</p>
             </Row>
           ))
         }
