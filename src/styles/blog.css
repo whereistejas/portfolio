@@ -56,6 +56,7 @@
 }
 
 .blog {
+  height: 90dvh;
   font-family: InterVariable;
   font-size: var(--step-0);
 
@@ -65,11 +66,13 @@
 
   ul {
     list-style: disc;
-    left-margin: var(--space-3xs-2xs);
   }
   ol {
     list-style: decimal;
-    left-margin: var(--space-3xs-2xs);
+    padding-left: var(--space-m-l);
+  }
+  ::marker {
+    padding-left: var(--space-3xs-2xs);
   }
 
   h1 {
@@ -385,10 +388,9 @@
   }
 
   @media (max-width: 700px) {
-    body {
-      width: 84%;
-      padding-left: 8%;
-      padding-right: 8%;
+    article {
+      padding-left: var(--space-xs-s);
+      padding-right: var(--space-xs-s);
     }
 
     hr,
@@ -402,11 +404,11 @@
       width: 97%;
     }
 
-    section > dl,
+    /* section > dl,
     section > ol,
     section > ul {
       width: 90%;
-    }
+    } */
 
     figure {
       max-width: 90%;
