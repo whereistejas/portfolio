@@ -471,7 +471,6 @@ body {
 
 @media (prefers-color-scheme: dark) {
   .blog {
-    background-color: #151515;
     color: #ddd;
   }
 }

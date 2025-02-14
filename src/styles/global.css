@@ -8,6 +8,17 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #151515;
+    color: #ddd;
+  }
+
+  a {
+    color: #ddd;
+  }
+}
+
 html {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
@@ -133,4 +144,9 @@ a {
 
 a:hover {
   color: grey; /* Color on hover */
+}
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #ddd;
+  }
 }
