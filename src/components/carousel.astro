@@ -5,7 +5,9 @@ import ExifReader from "exifreader";
 
 import "../styles/carousel.css";
 
-let images: Record<string, any>[] = await Astro.glob("../assets/*.jpg");
+let images: Record<string, any>[] = Object.values(
+  import.meta.glob("../assets/*.jpg", { eager: true })
+);
 
 const slides = await Promise.all(
   images.map(async (image_path) => {

@@ -1,6 +1,10 @@
 @import "types.css";
 @import "dimensions.css";
 
+body {
+  justify-content: flex-start;
+}
+
 .archive {
   align-self: start;
 }
@@ -56,7 +60,6 @@
 }
 
 .blog {
-  height: 90dvh;
   font-family: InterVariable;
   font-size: var(--step-0);
 

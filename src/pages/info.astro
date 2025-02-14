@@ -1,9 +1,9 @@
 ---
 import "../styles/info.css";
 
-import Homepage from "../components/homepage.astro";
 import Row from "../components/row.astro";
 import Textorlink from "../components/textorlink.astro";
+import PageCenter from "../components/pagecenter.astro";
 
 const headers = [
   { type: "text", content: "TEJAS SANAP" },
@@ -21,7 +21,7 @@ const footers = [
 ];
 ---
 
-<Homepage>
+<PageCenter>
   <Fragment slot="header">
     {
       headers.map((el) => (
@@ -80,4 +80,4 @@ const footers = [
       ))
     }
   </Fragment>
-</Homepage>
+</PageCenter>

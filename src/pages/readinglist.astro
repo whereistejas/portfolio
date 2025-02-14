@@ -1,10 +1,10 @@
 ---
 import "../styles/readinglist.css";
 
-import Homepage from "../components/homepage.astro";
 import Textorlink from "../components/textorlink.astro";
 
 import Row from "../components/row.astro";
+import PageCenter from "../components/pagecenter.astro";
 
 const apiToken: string = "FniVXl7lBu5esBwjW47jhapfdqvo95st7q81dXEcDM1935dTJU";
 
@@ -114,7 +114,7 @@ const headers = [
 ];
 ---
 
-<Homepage>
+<PageCenter>
   <Fragment slot="header">
     {
       headers.map((el) => (
@@ -141,4 +141,4 @@ const headers = [
       </div>
     </section>
   </Fragment>
-</Homepage>
+</PageCenter>

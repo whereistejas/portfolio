@@ -27,9 +27,6 @@
 
   align-items: start;
   justify-content: baseline;
-
-  div:first-child {
-  }
 }
 @media (max-width: 700px) {
   .row {

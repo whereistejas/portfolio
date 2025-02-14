@@ -1,9 +1,9 @@
 ---
 import "../styles/global.css";
 
-import Homepage from "../components/homepage.astro";
 import Carousel from "../components/carousel.astro";
 import Textorlink from "../components/textorlink.astro";
+import PageCenter from "../components/pagecenter.astro";
 
 const headers = [
   { type: "text", content: "TEJAS SANAP" },
@@ -14,17 +14,11 @@ const headers = [
 const footers = [
   { type: "link", content: "READING LIST", href: "/readinglist" },
   { type: "text", content: "" },
-  // { type: "text", content: "" },
-  // {
-  //   type: "link",
-  //   content: "SEND AN EMAIL",
-  //   href: "mailto:email@whereistejas.xyz",
-  // },
   { type: "link", content: "INFO", href: "/info" },
 ];
 ---
 
-<Homepage>
+<PageCenter>
   <Fragment slot="header">
     {
       headers.map((el) => (
@@ -44,4 +38,4 @@ const footers = [
       ))
     }
   </Fragment>
-</Homepage>
+</PageCenter>
