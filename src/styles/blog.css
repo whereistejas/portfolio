@@ -62,7 +62,7 @@ body {
 .blog {
   * {
     font-family: var(--font-reader);
-    font-size: var(--step-0);
+    font-size: var(--step-1);
   }
 
   /* background-color: #fffff8; */
@@ -82,27 +82,24 @@ body {
 
   h1 {
     font-weight: var(--font-reader-bold);
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
-    font-size: var(--step-5);
-    line-height: 1.1;
+    margin-top: 0.875rem;
+    margin-bottom: 0.5rem;
+    font-size: var(--step-3);
   }
 
   h2 {
     font-style: italic;
     font-weight: var(--font-reader-bold);
-    margin-top: 2.1rem;
-    margin-bottom: 1.4rem;
-    font-size: var(--step-3);
-    line-height: 1.1;
+    margin-top: 0.875rem;
+    margin-bottom: 0.5rem;
+    font-size: var(--step-2);
   }
 
   h3 {
     font-style: italic;
-    font-size: var(--step-2);
-    line-height: 1.3;
-    margin-top: 2rem;
-    margin-bottom: 1.4rem;
+    font-size: var(--step-1);
+    margin-top: 0.875rem;
+    margin-bottom: 0.5rem;
   }
 
   hr {
@@ -153,15 +150,16 @@ body {
   dl,
   ol,
   ul {
-    font-size: var(--step-0);
-    line-height: 2rem;
+    font-size: var(--step-1);
+    line-height: 1.75rem;
   }
 
   p {
-    margin-top: 1.4rem;
-    margin-bottom: 1.4rem;
     padding-right: 0;
     vertical-align: baseline;
+  }
+  p + p {
+    margin-top: 1rem;
   }
 
   /* Chapter Epigraphs */

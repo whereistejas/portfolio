@@ -38,7 +38,7 @@ interface FetchReaderDocsOptions {
  * and returns them in a simplified array of type `Item`.
  */
 async function fetchAllReadwiseReaderItems(
-  options: FetchReaderDocsOptions
+  options: FetchReaderDocsOptions,
 ): Promise<Item[]> {
   const { token, location, category, updatedAfter, withHtmlContent } = options;
 
@@ -76,7 +76,7 @@ async function fetchAllReadwiseReaderItems(
 
   if (!response.ok) {
     throw new Error(
-      `Failed to fetch Reader items: ${response.status} ${response.statusText}`
+      `Failed to fetch Reader items: ${response.status} ${response.statusText}`,
     );
   }
 
@@ -107,6 +107,8 @@ let items = await fetchAllReadwiseReaderItems({
   location: "archive",
 });
 
+const displayedDates = new Set<string>();
+
 const headers = [
   { type: "text", content: "TEJAS SANAP" },
   { type: "text", content: "READING LIST" },
@@ -126,17 +128,25 @@ const headers = [
     <section class="readinglist">
       <div class="readinglist-inner">
         {
-          items.map((item) => (
-            <Row key={item.saved_at.toLocaleDateString()}>
-              <p>
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                  {item.title}
-                </a>
-                <span class="kind">#{item.kind}</span>
-              </p>
-              <p class="summary">{item.summary}</p>
-            </Row>
-          ))
+          items.map((item) => {
+            let dateStr = item.saved_at.toLocaleDateString();
+            if (!displayedDates.has(dateStr)) {
+              displayedDates.add(dateStr);
+            } else {
+              dateStr = "";
+            }
+            return (
+              <Row key={dateStr}>
+                <p>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.title}
+                  </a>
+                  <span class="kind">#{item.kind}</span>
+                </p>
+                <p class="summary">{item.summary}</p>
+              </Row>
+            );
+          })
         }
       </div>
     </section>
