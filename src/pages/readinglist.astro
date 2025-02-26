@@ -16,7 +16,6 @@ type Item = {
   saved_at: Date;
   title: string;
   summary: string;
-  kind: string;
 };
 
 /**
@@ -93,7 +92,6 @@ async function fetchAllReadwiseReaderItems(
       saved_at: new Date(doc.saved_at),
       title: doc.title,
       summary: doc.summary,
-      kind: doc.category,
     });
   }
 
@@ -136,11 +134,10 @@ const headers = [
             }
             return (
               <Row key={dateStr}>
-                <p>
+                <p class="title">
                   <a href={item.url} target="_blank" rel="noopener noreferrer">
                     {item.title}
                   </a>
-                  <span class="kind">#{item.kind}</span>
                 </p>
                 <p class="summary">{item.summary}</p>
               </Row>

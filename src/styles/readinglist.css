@@ -43,13 +43,13 @@
 
   gap: var(--space-3xs-2xs);
 
+  p.title {
+    text-transform: uppercase;
+  }
+
   @media (max-width: 700px) {
     a {
       font-weight: 130;
     }
-  }
-
-  .kind {
-    padding-left: var(--space-3xs-2xs);
   }
 }
