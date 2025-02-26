@@ -1,35 +1,19 @@
 ---
 import "../styles/global.css";
+
+const { flex_start = true } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <!--
-  Like to view source? We might get along
-  email@whereistejas.xyz
--->
+    <!-- Like to view source? We might get along email@whereistejas.xyz -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <link
-      rel="preload"
-      href="/AUTHENTICSans-90.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/AUTHENTICSans-130.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
     <title>Tejas Sanap</title>
   </head>
-  <body style="justify-content: flex-start;">
+  <body style={flex_start ? "justify-content: flex-start;" : ""}>
     <header>
       <slot name="header" />
     </header>

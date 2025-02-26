@@ -2,8 +2,9 @@
 import "../styles/global.css";
 import "../styles/blog.css";
 
-import Textorlink from "./textorlink.astro";
-import PageStart from "./pagestart.astro";
+import Page from "./page.astro";
+
+import Textorlink from "../components/textorlink.astro";
 
 const { frontmatter } = Astro.props;
 
@@ -14,7 +15,7 @@ const headers = [
 ];
 ---
 
-<PageStart>
+<Page>
   <Fragment slot="header">
     {
       headers.map((el) => (
@@ -29,4 +30,4 @@ const headers = [
       </article>
     </div>
   </Fragment>
-</PageStart>
+</Page>

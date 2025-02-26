@@ -1,8 +1,10 @@
 ---
 import "../styles/blog.css";
 
+import Page from "../layouts/page.astro";
+import Blog from "../layouts/blog.astro";
+
 import Textorlink from "../components/textorlink.astro";
-import PageStart from "../components/pagestart.astro";
 
 const headers = [
   { type: "text", content: "TEJAS SANAP" },
@@ -10,12 +12,12 @@ const headers = [
   { type: "link", content: "CLOSE", href: "/" },
 ];
 
-const posts = Object.values(
-  import.meta.glob("./archive/*.mdx", { eager: true })
+const posts: Record<string, any>[] = Object.values(
+  import.meta.glob("./archive/*.mdx", { eager: true }),
 );
 ---
 
-<PageStart>
+<Page>
   <Fragment slot="header">
     {
       headers.map((el) => (
@@ -41,4 +43,4 @@ const posts = Object.values(
       </div>
     </section>
   </Fragment>
-</PageStart>
+</Page>

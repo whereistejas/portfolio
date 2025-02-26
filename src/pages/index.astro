@@ -3,7 +3,8 @@ import "../styles/global.css";
 
 import Carousel from "../components/carousel.astro";
 import Textorlink from "../components/textorlink.astro";
-import PageCenter from "../components/pagecenter.astro";
+
+import Page from "../layouts/page.astro";
 
 const headers = [
   { type: "text", content: "TEJAS SANAP" },
@@ -18,7 +19,7 @@ const footers = [
 ];
 ---
 
-<PageCenter>
+<Page flex_start={false}>
   <Fragment slot="header">
     {
       headers.map((el) => (
@@ -38,4 +39,4 @@ const footers = [
       ))
     }
   </Fragment>
-</PageCenter>
+</Page>

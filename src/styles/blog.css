@@ -1,5 +1,5 @@
-@import "types.css";
-@import "dimensions.css";
+@import "./types.css";
+@import "./dimensions.css";
 
 body {
   justify-content: flex-start;

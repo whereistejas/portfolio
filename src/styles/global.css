@@ -1,6 +1,7 @@
-@import "reset.css";
-@import "types.css";
-@import "dimensions.css";
+@import "tailwindcss";
+@import "./reset.css";
+@import "./types.css";
+@import "./dimensions.css";
 
 @media (prefers-reduced-motion: no-preference) {
   html {
