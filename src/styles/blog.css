@@ -60,10 +60,9 @@ body {
 }
 
 .blog {
-  * {
-    font-family: var(--font-reader);
-    font-size: var(--step-1);
-  }
+  font-family: var(--font-reader);
+  font-size: var(--step-0);
+  line-height: 1.875rem;
 
   /* background-color: #fffff8; */
   color: #111;
@@ -80,26 +79,27 @@ body {
     padding-left: var(--space-3xs-2xs);
   }
 
-  h1 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-reader);
     font-weight: var(--font-reader-bold);
     margin-top: 0.875rem;
     margin-bottom: 0.5rem;
+  }
+  h1 {
     font-size: var(--step-3);
   }
 
   h2 {
-    font-style: italic;
-    font-weight: var(--font-reader-bold);
-    margin-top: 0.875rem;
-    margin-bottom: 0.5rem;
     font-size: var(--step-2);
   }
 
   h3 {
-    font-style: italic;
     font-size: var(--step-1);
-    margin-top: 0.875rem;
-    margin-bottom: 0.5rem;
   }
 
   hr {
@@ -126,7 +126,7 @@ body {
     margin-bottom: 1rem;
     font-size: var(--step-1);
     display: block;
-    line-height: 1;
+    line-height: 1.2;
   }
 
   .numeral {
@@ -146,13 +146,11 @@ body {
     padding-bottom: 1rem;
   }
 
-  p,
+  /* p,
   dl,
   ol,
   ul {
-    font-size: var(--step-1);
-    line-height: 1.75rem;
-  }
+  } */
 
   p {
     padding-right: 0;
@@ -188,7 +186,7 @@ body {
 
   blockquote {
     margin-left: 3rem;
-    font-size: var(--step-0);
+    font-size: var(--step-1);
     font-style: italic;
     width: 80%;
   }
