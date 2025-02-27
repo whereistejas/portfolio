@@ -1,18 +1,16 @@
 ---
-import "../styles/info.css";
-
-interface Props {
-  key: string;
-}
-
-const { key } = Astro.props;
+const { value_class = "" } = Astro.props;
 ---
 
-<div class="row">
-  <div class="key">
-    {key}
+<div
+  class="flex flex-col gap-0.5
+          md:grid md:grid-cols-[minmax(150px,auto)4fr]
+          align-items-start justify-baseline"
+>
+  <div class="uppercase">
+    <slot name="key" />
   </div>
-  <div class="value">
-    <slot />
+  <div class={value_class}>
+    <slot name="value" />
   </div>
 </div>

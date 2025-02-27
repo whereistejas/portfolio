@@ -1,14 +1,10 @@
 ---
-interface Props {
-  type: string;
-  content: string;
-  href: string | undefined;
-}
+import "../styles/global.css";
 
 const { type, content, href } = Astro.props;
 ---
 
-<div>
+<div class="nth-of-type-2:hidden md:nth-of-type-2:block">
   <h4>
     {type === "link" ? <a href={href}>{content}</a> : content}
   </h4>

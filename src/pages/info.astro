@@ -1,5 +1,5 @@
 ---
-import "../styles/info.css";
+import "../styles/global.css";
 
 import Row from "../components/row.astro";
 import Textorlink from "../components/textorlink.astro";
@@ -21,7 +21,7 @@ const footers = [
 ];
 ---
 
-<Page>
+<Page flex_start={false}>
   <Fragment slot="header">
     {
       headers.map((el) => (
@@ -31,43 +31,68 @@ const footers = [
   </Fragment>
 
   <Fragment slot="main">
-    <section class="info">
-      <div class="info-inner">
-        <Row key="Profile">
-          <p>
-            I'm a software engineer and photographer based in London, UK. I'm a
-            generalist programmer who codes in Rust. I am an avid reader and am
-            currently reading "The Gene" by Siddharth Mukherjee.
-          </p>
+    <section class="p-1 md:p-0">
+      <div
+        class="w-full md:w-48 md:max-w-full
+      flex flex-col justify-center
+      gap-2"
+      >
+        <Row>
+          <Fragment slot="key">Profile</Fragment>
+          <Fragment slot="value">
+            <p class="font-[Economist]">
+              I'm a software engineer and photographer based in London, UK. I'm
+              a generalist programmer who codes in Rust. I am an avid reader,
+              currently reading <em>The Gene</em> by Siddhartha Mukherjee.
+            </p>
+          </Fragment>
         </Row>
-        <Row key="Things I believe">
-          <p>All software is a tool, a means to an end.</p>
-          <p>A good tool is simple and intuitive to use.</p>
-          <p>Software is made "for" humans.</p>
+        <Row>
+          <Fragment slot="key">Beliefs</Fragment>
+          <Fragment slot="value">
+            <p class="font-[Economist]">
+              All software is a tool, a means to an end.
+            </p>
+            <p class="font-[Economist]">
+              A good tool is simple and intuitive to use.
+            </p>
+            <p class="font-[Economist]">
+              Software is made <em>for</em> humans, not the other way around.
+            </p>
+          </Fragment>
         </Row>
-        <Row key="Experience">
-          <p>
-            <a href="https://tably.com">Tably</a>, 2021&mdash;Present
-          </p>
-          <p>
-            <a href="https://wipro.com">Wipro</a>, 2019&mdash;2021
-          </p>
+        <Row>
+          <Fragment slot="key">Experience</Fragment>
+          <Fragment slot="value">
+            <p class="font-[Economist]">
+              <a href="https://tably.com">Tably</a>, 2021&mdash;Present
+            </p>
+            <p class="font-[Economist]">
+              <a href="https://wipro.com">Wipro</a>, 2019&mdash;2021
+            </p>
+          </Fragment>
         </Row>
-        <Row key="Education">
-          <p>
-            Bachelors in Mechanical Engineering, <a
-              href="https://www.unipune.ac.in">SPPU</a
-            >, 2016&mdash;2019
-          </p>
+        <Row>
+          <Fragment slot="key">Education</Fragment>
+          <Fragment slot="value">
+            <p class="font-[Economist]">
+              Bachelors in Mechanical Engineering, <a
+                href="https://www.unipune.ac.in">SPPU</a
+              >, 2016&mdash;2019
+            </p>
+          </Fragment>
         </Row>
-        <Row key="Elsewhere">
-          <p>
-            <a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>,
-            <a href="https://www.github.com/whereistejas">Github</a>,
-            <a href="https://www.x.com/whereistejas">X</a>,
-            <a href="https://www.instagram.com/whereistejas">Instagram</a>,
-            <a href="https://www.are.na/whereistejas">Are.na</a>
-          </p>
+        <Row>
+          <Fragment slot="key">Elsewhere</Fragment>
+          <Fragment slot="value">
+            <p class="font-[Economist]">
+              <a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>,
+              <a href="https://www.github.com/whereistejas">Github</a>,
+              <a href="https://www.x.com/whereistejas">X</a>,
+              <a href="https://www.instagram.com/whereistejas">Instagram</a>,
+              <a href="https://www.are.na/whereistejas">Are.na</a>
+            </p>
+          </Fragment>
         </Row>
       </div>
     </section>

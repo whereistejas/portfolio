@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "./reset.css";
+/* @import "./reset.css"; */
 @import "./types.css";
 @import "./dimensions.css";
 
@@ -18,6 +18,11 @@
   a {
     color: #ddd;
   }
+}
+
+:root {
+  --spacing: 1rem;
+  --page-width: 48rem;
 }
 
 html {
@@ -81,56 +86,7 @@ body {
   line-height: 1.4;
 }
 
-header,
-footer {
-  width: var(--page-width);
-  max-width: 100%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  div:nth-child(odd) {
-    padding: var(--space-xs-s) 0;
-  }
-
-  div:nth-child(2) {
-    position: absolute;
-
-    padding-top: var(--space-xs-s);
-    padding-bottom: var(--space-xs-s);
-
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-
-    > * {
-      text-align: center;
-    }
-  }
-  @media (max-width: 700px) {
-    div:nth-child(2) {
-      display: none;
-    }
-
-    div:nth-child(odd) {
-      padding: var(--space-xs-s);
-    }
-  }
-}
-header {
-  top: 0;
-  left: 0;
-}
-footer {
-  bottom: 0;
-  left: 0;
-}
-
 main {
-  width: var(--page-width);
-  max-width: 100%;
-
   display: flex;
   flex-direction: column;
 }

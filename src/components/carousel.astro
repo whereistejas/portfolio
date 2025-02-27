@@ -4,6 +4,7 @@ import { Image, getImage } from "astro:assets";
 import ExifReader from "exifreader";
 
 import "../styles/carousel.css";
+import "../styles/global.css";
 
 let images: Record<string, any>[] = Object.values(
   import.meta.glob("../assets/*.jpg", { eager: true })
@@ -27,7 +28,7 @@ const slides = await Promise.all(
 );
 ---
 
-<div class="carousel-wrapper">
+<div class="p-1 md:p-0">
   <div class="carousel">
     <div class="slides-wrapper">
       <div class="left"></div>

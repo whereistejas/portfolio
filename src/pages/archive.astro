@@ -5,6 +5,7 @@ import Page from "../layouts/page.astro";
 import Blog from "../layouts/blog.astro";
 
 import Textorlink from "../components/textorlink.astro";
+import Row from "../components/row.astro";
 
 const headers = [
   { type: "text", content: "TEJAS SANAP" },
@@ -13,7 +14,7 @@ const headers = [
 ];
 
 const posts: Record<string, any>[] = Object.values(
-  import.meta.glob("./archive/*.mdx", { eager: true }),
+  import.meta.glob("./archive/*.mdx", { eager: true })
 );
 ---
 
@@ -26,18 +27,22 @@ const posts: Record<string, any>[] = Object.values(
     }
   </Fragment>
   <Fragment slot="main">
-    <section class="archive">
-      <div class="archive-inner">
+    <section class="p-1 md:p-0">
+      <div
+        class="w-full md:w-48 md:max-w-full flex flex-col justify-center gap-2"
+      >
         {
           posts.map((post) => (
-            <div class="row">
-              <div>{new Date(post.frontmatter.date).toLocaleDateString()}</div>
-              <div class="value">
-                <p>
+            <Row>
+              <Fragment slot="key">
+                {new Date(post.frontmatter.date).toLocaleDateString()}
+              </Fragment>
+              <Fragment slot="value">
+                <p class="uppercase">
                   <a href={post.url}>{post.frontmatter.title}</a>
                 </p>
-              </div>
-            </div>
+              </Fragment>
+            </Row>
           ))
         }
       </div>

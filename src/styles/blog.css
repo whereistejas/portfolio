@@ -62,7 +62,7 @@ body {
 .blog {
   font-family: var(--font-reader);
   font-size: var(--step-0);
-  line-height: 1.875rem;
+  /* line-height: 1.5rem; */
 
   /* background-color: #fffff8; */
   color: #111;

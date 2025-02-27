@@ -23,6 +23,4 @@
 
   /* Custom pairs */
   --space-s-l: clamp(1rem, 0.5652rem + 2.1739vw, 2.25rem);
-
-  --page-width: 700px;
 }
