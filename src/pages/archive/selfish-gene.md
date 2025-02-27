@@ -1,14 +1,15 @@
 ---
-layout: ../../components/blog.astro
+layout: ../../layouts/blog.astro
 title: TBA
 publish: true
 date: 01-01-1970
 ---
+
 <center>
 # Work in progress
 </center>
 
-{/* 
+{/\*
 
 import MarginNote from "../../components/MarginNote.astro";
 
@@ -148,4 +149,4 @@ But not all species participate in aggression, some only posture in a war of att
 
 Different organisms employ different strategies when competing for resources, however they all do the same cost-benefit analysis. This means, that depending on how strong each individual is and how much they need a particular resource, we can determine which strategies have the highest payoffs and which strategies are stable. Different kinds of asymmetries can arise during competitions between individuals for resources, such as fighting ability or size.
 
-> Whenever there is a strong asymmetry in a contest, ESSs are likely to be conditional strategies dependent on the asymmetry. */}
+> Whenever there is a strong asymmetry in a contest, ESSs are likely to be conditional strategies dependent on the asymmetry. \*/}
