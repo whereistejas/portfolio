@@ -1,8 +1,5 @@
 ---
-import "../styles/blog.css";
-
 import Page from "../layouts/page.astro";
-import Blog from "../layouts/blog.astro";
 
 import Textorlink from "../components/textorlink.astro";
 import Row from "../components/row.astro";
@@ -27,7 +24,7 @@ const posts: Record<string, any>[] = Object.values(
     }
   </Fragment>
   <Fragment slot="main">
-    <section class="p-1 md:p-0">
+    <section class="">
       <div
         class="w-full md:w-48 md:max-w-full flex flex-col justify-center gap-2"
       >
