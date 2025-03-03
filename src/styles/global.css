@@ -47,6 +47,7 @@
 :root {
   --spacing: 1rem;
   --page-width: 48rem;
+  --current-slide: 0;
 }
 
 html {
