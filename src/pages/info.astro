@@ -6,8 +6,8 @@ import Textorlink from "../components/textorlink.astro";
 import Page from "../layouts/page.astro";
 
 const headers = [
-  { type: "text", content: "TEJAS SANAP" },
   { type: "text", content: "INFO" },
+  { type: "text", content: "" },
   { type: "link", content: "CLOSE", href: "/" },
 ];
 const footers = [
@@ -39,11 +39,11 @@ const footers = [
         <Row>
           <Fragment slot="key">Profile</Fragment>
           <Fragment slot="value">
-            <p class="font-serif">
+            <p class="font-[300]">
               I'm a software engineer and photographer based in London, UK. I am
               an avid reader, currently reading
               <a href="https://www.goodreads.com/book/show/27276428-the-gene">
-                <em>The Gene</em>
+                <span class="italic font-serif">The Gene</span>
               </a>
               by Siddhartha Mukherjee.
             </p>
@@ -52,42 +52,35 @@ const footers = [
         <Row>
           <Fragment slot="key">Beliefs</Fragment>
           <Fragment slot="value">
-            <p class="font-serif">
-              Software is made <em>for</em> humans.
+            <p class="font-[300]">Software is made for humans.</p>
+            <p class="font-[300]">All software is a tool.</p>
+            <p class="font-[300]">Good tools are simple and intuitive.</p>
+          </Fragment>
+        </Row>
+        <Row>
+          <Fragment slot="key">Work</Fragment>
+          <Fragment slot="value">
+            <p class="font-[300]">
+              <a href="https://tably.com">Tably</a>, 2021 &mdash; Present
             </p>
-            <p class="font-serif">
-              <em>All</em> software is a tool.
-            </p>
-            <p class="font-serif">
-              Good tools are <em>simple</em> and <em>intuitive</em>.
+            <p class="font-[300]">
+              <a href="https://wipro.com">Wipro</a>, 2019 &mdash; 2021
             </p>
           </Fragment>
         </Row>
         <Row>
-          <Fragment slot="key">Experience</Fragment>
+          <Fragment slot="key">University</Fragment>
           <Fragment slot="value">
-            <p class="font-serif">
-              <a href="https://tably.com">Tably</a>, 2021&mdash;Present
-            </p>
-            <p class="font-serif">
-              <a href="https://wipro.com">Wipro</a>, 2019&mdash;2021
+            <p class="font-[300]">
+              Bachelors in Mechanical Engineering,
+              <a href="https://www.unipune.ac.in">SPPU</a>, 2016&mdash;2019
             </p>
           </Fragment>
         </Row>
         <Row>
-          <Fragment slot="key">Education</Fragment>
+          <Fragment slot="key">Socials</Fragment>
           <Fragment slot="value">
-            <p class="font-serif">
-              Bachelors in Mechanical Engineering, <a
-                href="https://www.unipune.ac.in">SPPU</a
-              >, 2016&mdash;2019
-            </p>
-          </Fragment>
-        </Row>
-        <Row>
-          <Fragment slot="key">Elsewhere</Fragment>
-          <Fragment slot="value">
-            <p class="font-serif">
+            <p class="font-[300]">
               <a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>,
               <a href="https://www.github.com/whereistejas">Github</a>,
               <a href="https://www.x.com/whereistejas">X</a>,

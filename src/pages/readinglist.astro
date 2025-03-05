@@ -107,8 +107,8 @@ let items = await fetchAllReadwiseReaderItems({
 const displayedDates = new Set<string>();
 
 const headers = [
-  { type: "text", content: "TEJAS SANAP" },
   { type: "text", content: "READING LIST" },
+  { type: "text", content: "" },
   { type: "link", content: "CLOSE", href: "/" },
 ];
 ---
@@ -148,7 +148,7 @@ const headers = [
                       {item.title}
                     </a>
                   </p>
-                  <p class="font-[Economist] pb-0.25">{item.summary}</p>
+                  <p class="pb-0.25">{item.summary}</p>
                 </Fragment>
               </Row>
             );
