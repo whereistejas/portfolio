@@ -32,7 +32,9 @@ const posts: Record<string, any>[] = Object.values(
           posts.map((post) => (
             <Row>
               <Fragment slot="key">
-                {new Date(post.frontmatter.date).toLocaleDateString()}
+                {new Date(post.frontmatter.date)
+                  .toLocaleDateString("en-Gb")
+                  .replace(/\//g, ".")}
               </Fragment>
               <Fragment slot="value">
                 <p class="uppercase">

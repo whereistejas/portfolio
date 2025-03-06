@@ -129,7 +129,9 @@ const headers = [
       >
         {
           items.map((item) => {
-            let dateStr = item.saved_at.toLocaleDateString();
+            let dateStr = item.saved_at
+              .toLocaleDateString("en-GB")
+              .replace(/\//g, ".");
             if (!displayedDates.has(dateStr)) {
               displayedDates.add(dateStr);
             } else {
