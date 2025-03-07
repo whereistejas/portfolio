@@ -13,7 +13,7 @@ const apiToken: string = "FniVXl7lBu5esBwjW47jhapfdqvo95st7q81dXEcDM1935dTJU";
  */
 type Item = {
   url: URL;
-  saved_at: Date;
+  last_moved_at: Date;
   title: string;
   summary: string;
 };
@@ -45,7 +45,7 @@ async function fetchAllReadwiseReaderItems(
   const baseUrl = "https://readwise.io/api/v3/list/";
 
   // We'll store results here
-  const items: Item[] = [];
+  let items: Item[] = [];
 
   // Build query params for each request
   const url = new URL(baseUrl);
@@ -89,11 +89,15 @@ async function fetchAllReadwiseReaderItems(
   for (const doc of docs) {
     items.push({
       url: new URL(doc.source_url),
-      saved_at: new Date(doc.saved_at),
+      last_moved_at: new Date(doc.last_moved_at),
       title: doc.title,
       summary: doc.summary,
     });
   }
+
+  items = items.sort(
+    (a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime()
+  );
 
   return items;
 }
@@ -129,7 +133,7 @@ const headers = [
       >
         {
           items.map((item) => {
-            let dateStr = item.saved_at
+            let dateStr = item.last_moved_at
               .toLocaleDateString("en-GB")
               .replace(/\//g, ".");
             if (!displayedDates.has(dateStr)) {
