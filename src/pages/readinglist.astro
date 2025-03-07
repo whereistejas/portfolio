@@ -129,12 +129,16 @@ const headers = [
     <section class="">
       <div
         class="w-full md:w-48 md:max-w-full
-      flex flex-col justify-center gap-1"
+              flex flex-col justify-center gap-1 md:gap-2.5"
       >
         {
           items.map((item) => {
             let dateStr = item.last_moved_at
-              .toLocaleDateString("en-GB")
+              .toLocaleDateString("en-GB", {
+                day: "2-digit",
+                month: "short",
+                year: "numeric",
+              })
               .replace(/\//g, ".");
             if (!displayedDates.has(dateStr)) {
               displayedDates.add(dateStr);
@@ -145,7 +149,7 @@ const headers = [
               <Row>
                 <Fragment slot="key">{dateStr}</Fragment>
                 <Fragment slot="value">
-                  <p class="uppercase">
+                  <p class="uppercase font-medium">
                     <a
                       href={item.url}
                       target="_blank"
@@ -154,7 +158,7 @@ const headers = [
                       {item.title}
                     </a>
                   </p>
-                  <p class="pb-0.25">{item.summary}</p>
+                  <p>{item.summary}</p>
                 </Fragment>
               </Row>
             );
