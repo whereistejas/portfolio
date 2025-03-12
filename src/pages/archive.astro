@@ -26,7 +26,8 @@ const posts: Record<string, any>[] = Object.values(
   <Fragment slot="main">
     <section class="">
       <div
-        class="w-full md:w-48 md:max-w-full flex flex-col justify-center gap-2"
+        class="w-full md:w-48 md:max-w-full
+              flex flex-col justify-center gap-1.5 md:gap-3"
       >
         {
           posts.map((post) => (
@@ -43,7 +44,7 @@ const posts: Record<string, any>[] = Object.values(
                 </span>
               </Fragment>
               <Fragment slot="value">
-                <p class="uppercase italic">
+                <p class="uppercase font-medium">
                   <a href={post.url}>{post.frontmatter.title}</a>
                 </p>
               </Fragment>

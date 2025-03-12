@@ -31,17 +31,15 @@ const footers = [
   </Fragment>
 
   <Fragment slot="main">
-    <section class="">
+    <section>
       <div
         class="w-full md:w-48 md:max-w-full
-      flex flex-col justify-center gap-1 md:gap-2"
+              flex flex-col justify-center gap-1.5 md:gap-3"
       >
-        <Row>
-          <Fragment slot="key"
-            ><span class="uppercase italic">Profile</span></Fragment
-          >
+        <Row tight={true}>
+          <Fragment slot="key"><span class="uppercase">Profile</span></Fragment>
           <Fragment slot="value">
-            <p class="">
+            <p>
               I'm a software engineer and photographer based in London, UK. I am
               an avid reader, currently reading
               <span class="italic">
@@ -53,27 +51,27 @@ const footers = [
             </p>
           </Fragment>
         </Row>
-        <Row>
+        <Row tight={true}>
           <Fragment slot="key">
-            <span class="uppercase italic">Beliefs</span>
+            <span class="uppercase">Beliefs</span>
           </Fragment>
           <Fragment slot="value">
-            <p class="">Software is made for humans.</p>
-            <p class="">All software is a tool.</p>
-            <p class="">Good tools are simple and intuitive.</p>
+            <p>Software is made for humans.</p>
+            <p>All software is a tool.</p>
+            <p>Good tools are simple and intuitive.</p>
           </Fragment>
         </Row>
-        <Row>
+        <Row tight={true}>
           <Fragment slot="key">
-            <span class="uppercase italic">Work</span>
+            <span class="uppercase">Work</span>
           </Fragment>
           <Fragment slot="value">
-            <p class="">
+            <p>
               <a href="https://tably.com">Tably</a>,
               <span class="uppercase"> 2021 </span>
               &mdash; Present
             </p>
-            <p class="">
+            <p>
               <a href="https://wipro.com">Wipro</a>,
               <span class="uppercase"> 2019 </span>
               &mdash;
@@ -81,12 +79,12 @@ const footers = [
             </p>
           </Fragment>
         </Row>
-        <Row>
+        <Row tight={true}>
           <Fragment slot="key">
-            <span class="uppercase italic">University</span>
+            <span class="uppercase">University</span>
           </Fragment>
           <Fragment slot="value">
-            <p class="">
+            <p>
               Bachelors in Mechanical Engineering,
               <a href="https://www.unipune.ac.in">SPPU</a>,
               <span class="uppercase"> 2016 </span>
@@ -95,12 +93,12 @@ const footers = [
             </p>
           </Fragment>
         </Row>
-        <Row>
+        <Row tight={true}>
           <Fragment slot="key">
-            <span class="uppercase italic">Socials</span>
+            <span class="uppercase">Socials</span>
           </Fragment>
           <Fragment slot="value">
-            <p class="">
+            <p>
               <a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>,
               <a href="https://www.github.com/whereistejas">Github</a>,
               <a href="https://www.x.com/whereistejas">X</a>,

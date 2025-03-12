@@ -1,5 +1,9 @@
+---
+const { tight = false } = Astro.props;
+---
+
 <div
-  class="flex flex-col md:flex-row
+  class="flex flex-col md:flex-row gap-0.5 md:gap-1
           md:grid md:grid-cols-[minmax(150px,auto)4fr]
           items-baseline"
 >
@@ -7,6 +11,12 @@
     <slot name="key" />
   </div>
   <div class="flex flex-col">
-    <slot name="value" />
+    <div
+      class={tight
+        ? "flex flex-col justify-center gap-0.25 md:gap-1.5"
+        : "flex flex-col justify-center gap-1 md:gap-1.5"}
+    >
+      <slot name="value" />
+    </div>
   </div>
 </div>

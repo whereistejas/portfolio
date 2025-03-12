@@ -12,7 +12,7 @@ const apiToken: string = "FniVXl7lBu5esBwjW47jhapfdqvo95st7q81dXEcDM1935dTJU";
  * Represents the simplified shape you want for each Reader document.
  */
 type Item = {
-  url: URL;
+  url: string;
   last_moved_at: Date;
   title: string;
   summary: string;
@@ -38,20 +38,17 @@ interface FetchReaderDocsOptions {
  */
 async function fetchAllReadwiseReaderItems(
   options: FetchReaderDocsOptions
-): Promise<Item[]> {
+): Promise<Map<string, Item[]>> {
   const { token, location, category, updatedAfter, withHtmlContent } = options;
 
   // Base URL for the endpoint
   const baseUrl = "https://readwise.io/api/v3/list/";
 
   // We'll store results here
-  let items: Item[] = [];
+  const itemsMap: Map<string, Item[]> = new Map();
 
   // Build query params for each request
   const url = new URL(baseUrl);
-  // if (pageCursor) {
-  //   url.searchParams.set("pageCursor", pageCursor);
-  // }
   if (location) {
     url.searchParams.set("location", location);
   }
@@ -82,24 +79,41 @@ async function fetchAllReadwiseReaderItems(
   const data = await response.json();
 
   // If this endpoint returns `results` containing the actual docs
-  // (as shown in the example JSON you provided)
   const docs = data.results ?? [];
 
   // Transform each doc into your desired `Item` shape
   for (const doc of docs) {
-    items.push({
-      url: new URL(doc.source_url),
+    const item: Item = {
+      url: new URL(doc.source_url).href,
       last_moved_at: new Date(doc.last_moved_at),
       title: doc.title,
       summary: doc.summary,
-    });
+    };
+
+    const dateStr = item.last_moved_at
+      .toLocaleDateString("en-GB", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+      })
+      .replace(/\//g, ".");
+
+    if (!itemsMap.has(dateStr)) {
+      itemsMap.set(dateStr, []);
+    }
+    itemsMap.get(dateStr)?.push(item);
   }
 
-  items = items.sort(
-    (a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime()
+  // Sort the itemsMap by date in descending order
+  const sortedItemsMap = new Map(
+    [...itemsMap.entries()].sort((a, b) => {
+      const dateA = new Date(a[0].split(".").reverse().join("-"));
+      const dateB = new Date(b[0].split(".").reverse().join("-"));
+      return dateB.getTime() - dateA.getTime();
+    })
   );
 
-  return items;
+  return sortedItemsMap;
 }
 
 // Example usage:
@@ -129,38 +143,38 @@ const headers = [
     <section class="">
       <div
         class="w-full md:w-48 md:max-w-full
-              flex flex-col justify-center gap-1 md:gap-3"
+              flex flex-col justify-center gap-1.5 md:gap-3"
       >
         {
-          items.map((item) => {
-            let dateStr = item.last_moved_at
-              .toLocaleDateString("en-GB", {
-                day: "2-digit",
-                month: "short",
-                year: "numeric",
-              })
-              .replace(/\//g, ".");
-            if (!displayedDates.has(dateStr)) {
-              displayedDates.add(dateStr);
+          items.entries().map(([dateKey, itemsList]) => {
+            if (!displayedDates.has(dateKey)) {
+              displayedDates.add(dateKey);
             } else {
-              dateStr = "";
+              dateKey = "";
             }
+
             return (
               <Row>
                 <Fragment slot="key">
-                  <span class="uppercase">{dateStr}</span>
+                  <span class="uppercase">{dateKey}</span>
                 </Fragment>
                 <Fragment slot="value">
-                  <p class="uppercase italic">
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {item.title}
-                    </a>
-                  </p>
-                  <p>{item.summary}</p>
+                  {itemsList.map((item: Item) => {
+                    return (
+                      <div>
+                        <p class="uppercase font-medium">
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {item.title}
+                          </a>
+                        </p>
+                        <p>{item.summary}</p>
+                      </div>
+                    );
+                  })}
                 </Fragment>
               </Row>
             );
