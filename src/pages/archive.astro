@@ -6,7 +6,6 @@ import Row from "../components/row.astro";
 
 const headers = [
   { type: "text", content: "BLOG" },
-  { type: "text", content: "" },
   { type: "link", content: "CLOSE", href: "/" },
 ];
 
@@ -24,7 +23,7 @@ const posts: Record<string, any>[] = Object.values(
     }
   </Fragment>
   <Fragment slot="main">
-    <section class="">
+    <section>
       <div
         class="w-full md:w-48 md:max-w-full
               flex flex-col justify-center gap-1.5 md:gap-3"

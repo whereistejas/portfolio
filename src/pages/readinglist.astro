@@ -126,7 +126,6 @@ const displayedDates = new Set<string>();
 
 const headers = [
   { type: "text", content: "READING LIST" },
-  { type: "text", content: "" },
   { type: "link", content: "CLOSE", href: "/" },
 ];
 ---
@@ -140,7 +139,7 @@ const headers = [
     }
   </Fragment>
   <Fragment slot="main">
-    <section class="">
+    <section>
       <div
         class="w-full md:w-48 md:max-w-full
               flex flex-col justify-center gap-1.5 md:gap-3"

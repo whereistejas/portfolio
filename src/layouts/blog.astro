@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props;
 
 const headers = [
   { type: "text", content: (frontmatter.title as string).toUpperCase() },
-  { type: "text", content: "" },
+
   { type: "link", content: "CLOSE", href: "/archive" },
 ];
 ---
