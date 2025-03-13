@@ -62,7 +62,9 @@
 
 @layer components {
   a {
-    @apply relative no-underline transition-colors duration-150 ease-in z-[1] text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
+    @apply relative 
+    transition-colors duration-150 ease-in z-[1]
+    text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
   }
 }
 
