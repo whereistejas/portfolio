@@ -9,7 +9,6 @@ const { frontmatter } = Astro.props;
 
 const headers = [
   { type: "text", content: (frontmatter.title as string).toUpperCase() },
-
   { type: "link", content: "CLOSE", href: "/archive" },
 ];
 ---
@@ -24,7 +23,7 @@ const headers = [
   </Fragment>
   <Fragment slot="main">
     <article
-      class="prose dark:prose-invert
+      class="@container prose dark:prose-invert
       bg-neutral-100 dark:bg-neutral-800 text-slate-950 dark:text-slate-100
       prose-md md:prose-lg lg:prose-xl
       prose-a:font-normal prose-a:relative
@@ -34,8 +33,7 @@ const headers = [
       prose-a:hover:text-neutral-500 prose-a:hover:dark:text-neutral-400
       prose-p:font-normal
       prose-p:leading-1.5 md:prose-p:leading-1.75 lg:prose-p:leading-2
-      prose-headings:leading-0.75 md:prose-headings:leading-1 lg:prose-headings:leading-1.5
-      prose-headings:mt-1.5 prose-headings:mb-0.5
+      prose-headings:leading-1.5 md:prose-headings:leading-1 lg:prose-headings:leading-0.75
       prose-headings:text-xl md:prose-headings:text-2xl lg:prose-headings:text-3xl
       prose-headings:font-medium"
     >
