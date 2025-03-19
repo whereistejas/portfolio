@@ -57,7 +57,8 @@
 }
 
 @theme {
-  --font-sans: NeueHaasGroteskText;
+  --font-sans:
+    apple-system, NeueHaasGroteskText, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 @layer components {

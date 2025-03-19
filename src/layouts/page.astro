@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from "astro:transitions";
+
 import "../styles/global.css";
 
 const { flex_start = true } = Astro.props;
@@ -12,6 +14,8 @@ const { flex_start = true } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Tejas Sanap</title>
+
+    <ClientRouter />
   </head>
   <body
     style={flex_start ? "justify-content: flex-start;" : ""}
