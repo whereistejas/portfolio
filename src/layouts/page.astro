@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import PostHog from "../components/posthog.astro";
 
 import "../styles/global.css";
 
@@ -8,6 +9,7 @@ const { flex_start = true } = Astro.props;
 
 <html lang="en">
   <head>
+    <PostHog />
     <!-- Like to view source? We might get along email@whereistejas.xyz -->
 
     <meta charset="UTF-8" />
