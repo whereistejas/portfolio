@@ -52,6 +52,17 @@
     api_host: "https://us.i.posthog.com",
     person_profiles: "always", // or 'always' to create profiles for anonymous users as well
   });
+  // Track initial pageview on load
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof window.posthog === "function") {
+      posthog.capture("$pageview", {
+        $current_url: window.location.href,
+        $referrer: document.referrer,
+        // Add any custom properties
+        pageTitle: document.title,
+      });
+    }
+  });
 </script><!-- Like to view source? We might get along email@whereistejas.xyz --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tejas Sanap</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.6lKCtFIE.js"></script><style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}
 </style>
 <link rel="stylesheet" href="/_astro/index.BfjnuY6x.css"></head> <body style="justify-content: flex-start;" class="h-[100dvh]

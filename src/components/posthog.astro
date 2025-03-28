@@ -67,4 +67,21 @@
       });
     }
   });
+  window.addEventListener("beforeunload", () => {
+    // Calculate time spent on page
+    const timeSpent =
+      (Date.now() - window.performance.timing.navigationStart) / 1000;
+
+    // Send $pageleave event to PostHog
+    posthog.capture("$pageleave", {
+      $current_url: window.location.href,
+      page: window.location.pathname,
+      timeSpent: timeSpent,
+      // You can add other useful properties here
+      title: document.title,
+    });
+
+    // Note: For beforeunload events, browsers may not guarantee
+    // that the event is fully processed before navigating away
+  });
 </script>
