@@ -56,4 +56,15 @@
     api_host: "https://us.i.posthog.com",
     person_profiles: "always", // or 'always' to create profiles for anonymous users as well
   });
+  // Track initial pageview on load
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof window.posthog === "function") {
+      posthog.capture("$pageview", {
+        $current_url: window.location.href,
+        $referrer: document.referrer,
+        // Add any custom properties
+        pageTitle: document.title,
+      });
+    }
+  });
 </script>
