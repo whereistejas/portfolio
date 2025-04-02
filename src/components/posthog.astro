@@ -69,8 +69,7 @@
   });
   window.addEventListener("beforeunload", () => {
     // Calculate time spent on page
-    const timeSpent =
-      (Date.now() - window.performance.timing.navigationStart) / 1000;
+    const timeSpent = (Date.now() - performance.timeOrigin) / 1000;
 
     // Send $pageleave event to PostHog
     posthog.capture("$pageleave", {
