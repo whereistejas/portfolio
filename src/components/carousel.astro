@@ -28,7 +28,7 @@ const slides = await Promise.all(
 );
 ---
 
-<div transition:animate="none">
+<div>
   <div class="carousel">
     <div class="slides-wrapper">
       <div class="left"></div>
@@ -70,32 +70,41 @@ const slides = await Promise.all(
 </div>
 
 <script>
-  function modulo(number: number, mod: number) {
-    let result = number % mod;
-    if (result < 0) {
-      result += mod;
+  function setupCarousel() {
+    let carousel = document.querySelector(".carousel") as HTMLDivElement;
+    let currentSlide = 0;
+    const numSlides = (document.querySelector(".slides") as HTMLDivElement)
+      .children.length;
+
+    function modulo(number: number, mod: number) {
+      let result = number % mod;
+      if (result < 0) {
+        result += mod;
+      }
+      return result;
     }
-    return result;
+
+    let left = document.querySelector(".left");
+    let right = document.querySelector(".right");
+
+    if (left && right) {
+      left.addEventListener("click", function (e) {
+        e.preventDefault();
+        currentSlide = modulo(currentSlide - 1, numSlides);
+        carousel.style.setProperty("--current-slide", `${currentSlide}`);
+      });
+
+      right.addEventListener("click", function (e) {
+        e.preventDefault();
+        currentSlide = modulo(currentSlide + 1, numSlides);
+        carousel.style.setProperty("--current-slide", `${currentSlide}`);
+      });
+    }
   }
 
-  let carousel = document.querySelector(".carousel") as HTMLDivElement;
+  // Run on initial load
+  setupCarousel();
 
-  let currentSlide = 0;
-  const numSlides = (document.querySelector(".slides") as HTMLDivElement)
-    .children.length;
-
-  let left = document.querySelector(".left");
-  let right = document.querySelector(".right");
-  if (left && right) {
-    left.addEventListener("click", function (e) {
-      e.preventDefault();
-      currentSlide = modulo(currentSlide - 1, numSlides);
-      carousel.style.setProperty("--current-slide", `${currentSlide}`);
-    });
-    right.addEventListener("click", function (e) {
-      e.preventDefault();
-      currentSlide = modulo(currentSlide + 1, numSlides);
-      carousel.style.setProperty("--current-slide", `${currentSlide}`);
-    });
-  }
+  // Re-run after view transitions
+  document.addEventListener("astro:after-swap", setupCarousel);
 </script>
