@@ -75,7 +75,7 @@ img {
 .captions {
   display: flex;
 
-  overflow: scroll;
+  overflow: hidden;
 
   width: 100%;
 }
