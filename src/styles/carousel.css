@@ -75,8 +75,6 @@ img {
 .captions {
   display: flex;
 
-  overflow: hidden;
-
   width: 100%;
 }
 @media (max-width: 64rem) {
@@ -87,6 +85,7 @@ img {
 .caption {
   flex: 0 0 auto;
 
+  transition: transform 0.5s;
   transform: translateX(calc(-100% * var(--current-slide)));
 
   height: 1lh;
