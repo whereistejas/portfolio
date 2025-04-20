@@ -54,7 +54,10 @@
   });
   // Track initial pageview on load
   document.addEventListener("DOMContentLoaded", () => {
-    if (typeof window.posthog === "function") {
+    if (
+      typeof window.posthog === "function" &&
+      !window.location.host.includes("localhost")
+    ) {
       posthog.capture("$pageview", {
         $current_url: window.location.href,
         $referrer: document.referrer,
@@ -64,17 +67,22 @@
     }
   });
   window.addEventListener("beforeunload", () => {
-    // Calculate time spent on page
-    const timeSpent = (Date.now() - performance.timeOrigin) / 1000;
+    if (
+      typeof window.posthog === "function" &&
+      !window.location.host.includes("localhost")
+    ) {
+      // Calculate time spent on page
+      const timeSpent = (Date.now() - performance.timeOrigin) / 1000;
 
-    // Send $pageleave event to PostHog
-    posthog.capture("$pageleave", {
-      $current_url: window.location.href,
-      page: window.location.pathname,
-      timeSpent: timeSpent,
-      // You can add other useful properties here
-      title: document.title,
-    });
+      // Send $pageleave event to PostHog
+      posthog.capture("$pageleave", {
+        $current_url: window.location.href,
+        page: window.location.pathname,
+        timeSpent: timeSpent,
+        // You can add other useful properties here
+        title: document.title,
+      });
+    }
 
     // Note: For beforeunload events, browsers may not guarantee
     // that the event is fully processed before navigating away
@@ -92,6 +100,8 @@
       p-1
       md:text-lg lg:text-xl font-regular">  <section> <div class="w-full md:w-48 md:max-w-full
               flex flex-col justify-center gap-1.5 md:gap-2 lg:gap-3"> <div class="flex flex-col md:flex-row gap-0.5 md:gap-1
+          md:grid md:grid-cols-[minmax(150px,auto)4fr]
+          items-baseline"> <div class="flex flex-col">  <span class="uppercase">20 Apr 2025</span>  </div> <div class="flex flex-col"> <div class="flex flex-col justify-center gap-1.25 md:gap-1.5 lg:gap-2"> <div> <p class="uppercase font-medium"> <a href="https://theahura.substack.com/p/tech-things-openai-buys-windsurf" target="_blank" rel="noopener noreferrer"> Tech things: OpenAI buys Windsurf, Google retains its lead, and where the hell is Apple? </a> </p> <p>OpenAI&#39;s acquisition of Windsurf raises questions about their strategy, especially given their financial constraints and competition from Google. The AI market is crowded, and companies like OpenAI need access to data and computing power to succeed. Google&#39;s dominance in AI tools and their continued innovation put pressure on other players, making it challenging for them to compete.</p> </div> </div> </div> </div><div class="flex flex-col md:flex-row gap-0.5 md:gap-1
           md:grid md:grid-cols-[minmax(150px,auto)4fr]
           items-baseline"> <div class="flex flex-col">  <span class="uppercase">18 Apr 2025</span>  </div> <div class="flex flex-col"> <div class="flex flex-col justify-center gap-1.25 md:gap-1.5 lg:gap-2"> <div> <p class="uppercase font-medium"> <a href="https://stovetop.substack.com/p/why-crypto-developer-activity-is" target="_blank" rel="noopener noreferrer"> Why Crypto Developer Activity Is Declining </a> </p> <p>Comments</p> </div> </div> </div> </div><div class="flex flex-col md:flex-row gap-0.5 md:gap-1
           md:grid md:grid-cols-[minmax(150px,auto)4fr]

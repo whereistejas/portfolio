@@ -54,7 +54,10 @@
   });
   // Track initial pageview on load
   document.addEventListener("DOMContentLoaded", () => {
-    if (typeof window.posthog === "function") {
+    if (
+      typeof window.posthog === "function" &&
+      !window.location.host.includes("localhost")
+    ) {
       posthog.capture("$pageview", {
         $current_url: window.location.href,
         $referrer: document.referrer,
@@ -64,17 +67,22 @@
     }
   });
   window.addEventListener("beforeunload", () => {
-    // Calculate time spent on page
-    const timeSpent = (Date.now() - performance.timeOrigin) / 1000;
+    if (
+      typeof window.posthog === "function" &&
+      !window.location.host.includes("localhost")
+    ) {
+      // Calculate time spent on page
+      const timeSpent = (Date.now() - performance.timeOrigin) / 1000;
 
-    // Send $pageleave event to PostHog
-    posthog.capture("$pageleave", {
-      $current_url: window.location.href,
-      page: window.location.pathname,
-      timeSpent: timeSpent,
-      // You can add other useful properties here
-      title: document.title,
-    });
+      // Send $pageleave event to PostHog
+      posthog.capture("$pageleave", {
+        $current_url: window.location.href,
+        page: window.location.pathname,
+        timeSpent: timeSpent,
+        // You can add other useful properties here
+        title: document.title,
+      });
+    }
 
     // Note: For beforeunload events, browsers may not guarantee
     // that the event is fully processed before navigating away
