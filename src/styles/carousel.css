@@ -1,6 +1,8 @@
 @import "./dimensions.css";
 
 .carousel {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,18 +20,11 @@
   }
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
-
 .slides-wrapper {
-  position: relative;
-}
-@media (max-width: 64rem) {
-  .slides-wrapper {
-    display: contents;
-  }
+  height: 100%;
+  width: 100%;
+
+  display: contents;
 }
 
 .slides {
@@ -54,42 +49,23 @@ img {
 
   scroll-snap-align: center;
 
+  -webkit-transition: transform 0.5s;
   transition: transform 0.5s;
+  -webkit-transform: translateX(-webkit-calc(-100% * var(--current-slide)));
   transform: translateX(calc(-100% * var(--current-slide)));
 
   height: 100%;
   width: 100%;
 
-  .caption {
-    display: none;
-  }
-}
-@media (max-width: 64rem) {
-  .slide {
-    .caption {
-      display: unset;
-    }
+  img {
+    aspect-ratio: 3 / 2;
+
+    width: 100%;
+    height: 100%;
   }
 }
 
-.captions {
-  display: flex;
-
-  overflow: hidden;
-
-  width: 100%;
-}
-@media (max-width: 64rem) {
-  .captions {
-    display: none;
-  }
-}
 .caption {
-  flex: 0 0 auto;
-
-  transition: transform 0.5s;
-  transform: translateX(calc(-100% * var(--current-slide)));
-
   height: 1lh;
   width: 100%;
 
@@ -98,11 +74,6 @@ img {
   }
   > span:last-child {
     float: right;
-  }
-}
-@media (max-width: 64rem) {
-  .caption {
-    flex: 0 1 auto;
   }
 }
 
