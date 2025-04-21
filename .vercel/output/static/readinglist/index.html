@@ -48,29 +48,24 @@
       }),
       (e.__SV = 1));
   })(document, window.posthog || []);
-  posthog.init("phc_pkzpycxlLsw0J7qsEYKEyFQh7aKWFHYKUlggKDLaxQE", {
-    api_host: "https://us.i.posthog.com",
-    person_profiles: "always", // or 'always' to create profiles for anonymous users as well
-  });
-  // Track initial pageview on load
-  document.addEventListener("DOMContentLoaded", () => {
-    if (
-      typeof window.posthog === "function" &&
-      !window.location.host.includes("localhost")
-    ) {
+  if (
+    typeof window.posthog === "function" &&
+    !window.location.host.includes("localhost")
+  ) {
+    posthog.init("phc_pkzpycxlLsw0J7qsEYKEyFQh7aKWFHYKUlggKDLaxQE", {
+      api_host: "https://us.i.posthog.com",
+      person_profiles: "always", // or 'always' to create profiles for anonymous users as well
+    });
+    // Track initial pageview on load
+    document.addEventListener("DOMContentLoaded", () => {
       posthog.capture("$pageview", {
         $current_url: window.location.href,
         $referrer: document.referrer,
         // Add any custom properties
         pageTitle: document.title,
       });
-    }
-  });
-  window.addEventListener("beforeunload", () => {
-    if (
-      typeof window.posthog === "function" &&
-      !window.location.host.includes("localhost")
-    ) {
+    });
+    window.addEventListener("beforeunload", () => {
       // Calculate time spent on page
       const timeSpent = (Date.now() - performance.timeOrigin) / 1000;
 
@@ -82,11 +77,11 @@
         // You can add other useful properties here
         title: document.title,
       });
-    }
 
-    // Note: For beforeunload events, browsers may not guarantee
-    // that the event is fully processed before navigating away
-  });
+      // Note: For beforeunload events, browsers may not guarantee
+      // that the event is fully processed before navigating away
+    });
+  }
 </script><!-- Like to view source? We might get along email@whereistejas.xyz --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tejas Sanap</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/_astro/index.B3sBDTMn.css">
 <style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}
 </style></head> <body style="justify-content: flex-start;" class="h-[100dvh]
