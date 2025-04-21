@@ -75,6 +75,8 @@ img {
 .captions {
   display: flex;
 
+  overflow: hidden;
+
   width: 100%;
 }
 @media (max-width: 64rem) {
