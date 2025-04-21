@@ -4,7 +4,6 @@ import type { ImageMetadata } from "astro";
 
 import ExifReader from "exifreader";
 
-import "../styles/carousel.css";
 import "../styles/global.css";
 
 let images: Record<string, any>[] = Object.values(
@@ -30,21 +29,51 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 ---
 
 <div>
-  <div class="carousel">
-    <div class="slides-wrapper">
-      <div class="left"></div>
-      <div class="right"></div>
-      <div class="slides">
+  <div
+    id="carousel"
+    class="relative
+  flex flex-col items-center gap-2
+  h-full w-full md:w-[48rem] max-w-full
+  select-none"
+    style="--current-slide: 0;"
+  >
+    <div class="h-full w-full contents">
+      <div
+        id="left"
+        class="hidden md:block h-full w-1/2 absolute z-10 left-0 cursor-w-resize"
+      >
+      </div>
+      <div
+        id="right"
+        class="hidden md:block h-full w-1/2 absolute z-10 right-0 cursor-e-resize"
+      >
+      </div>
+      <div
+        class="flex items-center
+      overflow-scroll snap-mandatory snap-x scroll-smooth
+      h-full w-full"
+      >
         {
           slides.map(({ caption, image }, idx) => (
-            <div class="slide" style={`order: ${idx};`}>
+            <div
+              class={`
+            flex flex-col items-center justify-center 
+            gap-1 md:gap-1.25
+            flex-shrink-0 flex-grow-0
+            order-${idx}
+            scroll-snap snap-center
+            h-full w-full
+            transition-transform duration-500
+            translate-x-[calc(-100%*var(--current-slide))]
+            `}
+            >
               <Image
                 src={image}
                 alt={caption}
                 widths={[400, 800, image.width]}
                 sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px`}
               />
-              <div class="caption">
+              <div class="h-[1lh] w-full flex justify-between">
                 <span>{caption}</span>
                 <span>
                   {idx + 1}/{slides.length}
@@ -60,7 +89,7 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 
 <script>
   function setupCarousel() {
-    let carousel = document.querySelector(".carousel") as HTMLDivElement;
+    let carousel = document.querySelector("#carousel") as HTMLDivElement;
     let currentSlide = 0;
     const numSlides = 13;
 
@@ -72,8 +101,8 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
       return result;
     }
 
-    let left = document.querySelector(".left");
-    let right = document.querySelector(".right");
+    let left = document.querySelector("#left");
+    let right = document.querySelector("#right");
 
     if (left && right) {
       left.addEventListener("click", function (e) {
