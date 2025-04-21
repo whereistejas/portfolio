@@ -52,29 +52,24 @@
       }),
       (e.__SV = 1));
   })(document, window.posthog || []);
-  posthog.init("phc_pkzpycxlLsw0J7qsEYKEyFQh7aKWFHYKUlggKDLaxQE", {
-    api_host: "https://us.i.posthog.com",
-    person_profiles: "always", // or 'always' to create profiles for anonymous users as well
-  });
-  // Track initial pageview on load
-  document.addEventListener("DOMContentLoaded", () => {
-    if (
-      typeof window.posthog === "function" &&
-      !window.location.host.includes("localhost")
-    ) {
+  if (
+    typeof window.posthog === "function" &&
+    !window.location.host.includes("localhost")
+  ) {
+    posthog.init("phc_pkzpycxlLsw0J7qsEYKEyFQh7aKWFHYKUlggKDLaxQE", {
+      api_host: "https://us.i.posthog.com",
+      person_profiles: "always", // or 'always' to create profiles for anonymous users as well
+    });
+    // Track initial pageview on load
+    document.addEventListener("DOMContentLoaded", () => {
       posthog.capture("$pageview", {
         $current_url: window.location.href,
         $referrer: document.referrer,
         // Add any custom properties
         pageTitle: document.title,
       });
-    }
-  });
-  window.addEventListener("beforeunload", () => {
-    if (
-      typeof window.posthog === "function" &&
-      !window.location.host.includes("localhost")
-    ) {
+    });
+    window.addEventListener("beforeunload", () => {
       // Calculate time spent on page
       const timeSpent = (Date.now() - performance.timeOrigin) / 1000;
 
@@ -86,9 +81,9 @@
         // You can add other useful properties here
         title: document.title,
       });
-    }
 
-    // Note: For beforeunload events, browsers may not guarantee
-    // that the event is fully processed before navigating away
-  });
+      // Note: For beforeunload events, browsers may not guarantee
+      // that the event is fully processed before navigating away
+    });
+  }
 </script>
