@@ -2,63 +2,8 @@
 
 @plugin '@tailwindcss/typography';
 
-@font-face {
-  font-family: "NeueHaasGroteskText";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    url("/NHaasGroteskTXPro-55Rg.ttf") format("truetype"),
-    url("/NHaasGroteskTXPro-55Rg.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "NeueHaasGroteskText";
-  font-style: italic;
-  font-weight: 400;
-  src:
-    url("/NHaasGroteskTXPro-56It.ttf") format("truetype"),
-    url("/NHaasGroteskTXPro-56It.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "NeueHaasGroteskText";
-  font-style: normal;
-  font-weight: 500;
-  src:
-    url("/NHaasGroteskTXPro-65Md.ttf") format("truetype"),
-    url("/NHaasGroteskTXPro-65Md.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "NeueHaasGroteskText";
-  font-style: italic;
-  font-weight: 500;
-  src:
-    url("/NHaasGroteskTXPro-66MdIt.ttf") format("truetype"),
-    url("/NHaasGroteskTXPro-66MdIt.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "NeueHaasGroteskText";
-  font-style: normal;
-  font-weight: 700;
-  src:
-    url("/NHaasGroteskTXPro-75Bd.ttf") format("truetype"),
-    url("/NHaasGroteskTXPro-75Bd.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "NeueHaasGroteskText";
-  font-style: italic;
-  font-weight: 700;
-  src:
-    url("/NHaasGroteskTXPro-76BdIt.ttf") format("truetype"),
-    url("/NHaasGroteskTXPro-76BdIt.ttf") format("ttf");
-}
-
 @theme {
-  --font-sans:
-    apple-system, NeueHaasGroteskText, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-sans: Inter, sans-serif;
 }
 
 @layer components {
