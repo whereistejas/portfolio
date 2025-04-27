@@ -23,10 +23,13 @@ const headers = [
   </Fragment>
   <Fragment slot="main">
     <article
-      class="@container prose
+      class="@container prose dark:prose-invert
       max-w-full
-      dark:prose-invert text-slate-950 dark:text-slate-100
+      //
+      text-slate-950 dark:text-slate-100
+      //
       prose-md md:prose-lg lg:prose-xl
+      //
       prose-a:font-normal
       prose-a:relative
       prose-a:z-[1]
@@ -37,8 +40,17 @@ const headers = [
       prose-p:text-md md:prose-p:text-lg lg:prose-p:text-lg
       prose-li:text-md md:prose-li:text-lg lg:prose-li:text-lg
       //
+      prose-p:leading-snug md:prose-p:leading-normal
+      prose-li:leading-snug md:prose-li:leading-normal
+      //
       prose-headings:font-medium
-      prose-headings:text-xl md:prose-headings:text-2xl lg:prose-headings:text-3xl"
+      prose-headings:text-xl md:prose-headings:text-2xl lg:prose-headings:text-3xl
+      //
+      prose-p:my-0.75
+      prose-li:my-0.75
+      prose-headings:mt-1.5 prose-headings:mb-0.5
+      //
+      marker:text-slate-950 dark:marker:text-slate-100"
     >
       <slot />
     </article>
