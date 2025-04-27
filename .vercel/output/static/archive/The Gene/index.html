@@ -82,7 +82,7 @@
       // that the event is fully processed before navigating away
     });
   }
-</script><!-- Like to view source? We might get along email@whereistejas.xyz --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"><title>Tejas Sanap</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/_astro/index.Cs98ldjg.css">
+</script><!-- Like to view source? We might get along email@whereistejas.xyz --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tejas Sanap</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/_astro/index.BcBMDJ-B.css">
 <style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}
 </style></head> <body style="justify-content: flex-start;" class="h-[100dvh]
     flex flex-col justify-between items-center
@@ -93,10 +93,13 @@
       text-xl lg:text-2xl font-medium"> <div class="inline-block"> <h4> THE GENE: AN INTIMATE HISTORY </h4> </div><div class="inline-block"> <h4> <a href="/archive">CLOSE</a> </h4> </div> </header> <main class="flex flex-col
       w-full md:w-48 md:max-w-full
       p-1
-      md:text-lg lg:text-xl font-regular">  <article class="@container prose
+      md:text-lg lg:text-xl font-regular">  <article class="@container prose dark:prose-invert
       max-w-full
-      dark:prose-invert text-slate-950 dark:text-slate-100
+      //
+      text-slate-950 dark:text-slate-100
+      //
       prose-md md:prose-lg lg:prose-xl
+      //
       prose-a:font-normal
       prose-a:relative
       prose-a:z-[1]
@@ -107,8 +110,17 @@
       prose-p:text-md md:prose-p:text-lg lg:prose-p:text-lg
       prose-li:text-md md:prose-li:text-lg lg:prose-li:text-lg
       //
+      prose-p:leading-snug md:prose-p:leading-normal
+      prose-li:leading-snug md:prose-li:leading-normal
+      //
       prose-headings:font-medium
-      prose-headings:text-xl md:prose-headings:text-2xl lg:prose-headings:text-3xl"> <p>My notes while reading <a href="https://www.goodreads.com/book/show/28780555-the-gene">The Gene</a> by Siddharth Mukherjee.</p>
+      prose-headings:text-xl md:prose-headings:text-2xl lg:prose-headings:text-3xl
+      //
+      prose-p:my-0.75
+      prose-li:my-0.75
+      prose-headings:mt-1.5 prose-headings:mb-0.5
+      //
+      marker:text-slate-950 dark:marker:text-slate-100"> <p>My notes while reading <a href="https://www.goodreads.com/book/show/28780555-the-gene">The Gene</a> by Siddharth Mukherjee.</p>
 <h1 id="part-2--in-the-sum-of-the-parts-there-are-only-parts">Part 2:  In the sum of the parts there are only parts</h1>
 <blockquote>
 <p>The study of “genes” turned from a statistical analysis to cell biology. </p>
@@ -152,7 +164,26 @@ In order to discover how genes were arranged on a chromosome, he started studyin
 </blockquote>
 <blockquote>
 <p>The biologist John Sulston wrote, “We see it as a rather stubby double helix, for they seldom show its other striking feature: it is immensely long and thin. In every cell in your body, you have two meters of the stuff; if we were to draw a scaled-up picture of it with the DNA as thick as sewing thread, that cell’s worth would be about 200 kilometers long.”</p>
-</blockquote> </article>  </main> <footer class="bottom-0 left-0
+</blockquote>
+<h2 id="that-damned-elusive-pimpernel">That Damned, Elusive Pimpernel</h2>
+<p>George Beadle and Edward Tatum won the 1958 Nobel prize for proposing the One gene–one enzyme hypothesis in the 1940s.</p>
+<p>“Instructions” were carried from the DNA into the ribosome to produce proteins.</p>
+<p>They were carried over by some kind of “messenger” molecule, which was later discovered to be RNA and was called “messenger RNA” or (mRNA).</p>
+<blockquote>
+<p>The generation of an RNA copy of a gene was termed <em>transcription</em>.</p>
+</blockquote>
+<p>Proteins are made of amino acids and there are 20 unique amino acids. How could the 4 bases of RNA be converted into 20 unique amino acids? Francis Crick discovered that each amino acid is defined by a “triplet” of bases. Eventually we discovered all the combinations that created the 20 amino acids. The other combinations of the four bases, served as start and stop instructions.</p>
+<p>Out of the 64 possible codon combinations, 61 represent different amino acids and 3 act as STOP signals. The codon for a START signal is an amino acid itself. This means that each amino acid can be represented by multiple codons, but each codon always represents only one amino acid. This multiciplity of codons is called “degeneracy” or “redundancy”.</p>
+<h2 id="regulation-replication-recombination">Regulation, Replication, Recombination</h2>
+<p>How do cells activate specific genes needed to perform their unique function?</p>
+<p>Jacques Monod was studying the “smooth” exponential growth of <em>Escherichia coli</em>. One day, he decided to add from two different sugars: glucose and lactose to the culture. Glucose is a simpler sugar molecule (mono-saccharide) whereas, lactose (bi-saccharide) is a complex sugar and needs to be broken into simpler units before it can be digested.</p>
+<p>He observed that the growth curve now had a “kink” in it contrary to his expectation of a smooth curve. He had assumed that both sugars would be metabolised in the same way. However, Escherichia coli should preference to glucose over lactose. The “kink” in the growth curve was the result of the bacteria switching from glucose to lactose as their food source, during which they had to pause growing. He called these two distinct growth phases “double growth” or <em>“diauxie”</em>.</p>
+<p>Jacques Monod wondered what was the relationship between:</p>
+<ol>
+<li>glucose+lactose culture (the environment of the bacteria)</li>
+<li>enzyme (the protein needed to process lactose) and</li>
+<li>genes (that produced the enzyme)</li>
+</ol> </article>  </main> <footer class="bottom-0 left-0
       px-1 pb-1
       w-full md:w-48 md:max-w-full
       flex flex-row justify-between

@@ -82,7 +82,7 @@
       // that the event is fully processed before navigating away
     });
   }
-</script><!-- Like to view source? We might get along email@whereistejas.xyz --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"><title>Tejas Sanap</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/_astro/index.Cs98ldjg.css">
+</script><!-- Like to view source? We might get along email@whereistejas.xyz --><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Tejas Sanap</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CMTcOisY.js"></script><link rel="stylesheet" href="/_astro/index.BcBMDJ-B.css">
 <style>.astro-route-announcer{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}
 </style></head> <body style="justify-content: flex-start;" class="h-[100dvh]
     flex flex-col justify-between items-center
@@ -93,10 +93,13 @@
       text-xl lg:text-2xl font-medium"> <div class="inline-block"> <h4> BOOKS I RECOMMEND </h4> </div><div class="inline-block"> <h4> <a href="/archive">CLOSE</a> </h4> </div> </header> <main class="flex flex-col
       w-full md:w-48 md:max-w-full
       p-1
-      md:text-lg lg:text-xl font-regular">  <article class="@container prose
+      md:text-lg lg:text-xl font-regular">  <article class="@container prose dark:prose-invert
       max-w-full
-      dark:prose-invert text-slate-950 dark:text-slate-100
+      //
+      text-slate-950 dark:text-slate-100
+      //
       prose-md md:prose-lg lg:prose-xl
+      //
       prose-a:font-normal
       prose-a:relative
       prose-a:z-[1]
@@ -107,8 +110,17 @@
       prose-p:text-md md:prose-p:text-lg lg:prose-p:text-lg
       prose-li:text-md md:prose-li:text-lg lg:prose-li:text-lg
       //
+      prose-p:leading-snug md:prose-p:leading-normal
+      prose-li:leading-snug md:prose-li:leading-normal
+      //
       prose-headings:font-medium
-      prose-headings:text-xl md:prose-headings:text-2xl lg:prose-headings:text-3xl"> <p>Whenever someone asks me for a book recommendation, I always offer something from this list. I thought it would be really nice to make my first blog post about the books I love.</p>
+      prose-headings:text-xl md:prose-headings:text-2xl lg:prose-headings:text-3xl
+      //
+      prose-p:my-0.75
+      prose-li:my-0.75
+      prose-headings:mt-1.5 prose-headings:mb-0.5
+      //
+      marker:text-slate-950 dark:marker:text-slate-100"> <p>Whenever someone asks me for a book recommendation, I always offer something from this list. I thought it would be really nice to make my first blog post about the books I love.</p>
 <ul>
 <li>Samarkand</li>
 <li>The Way Things Were</li>
