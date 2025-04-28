@@ -90,31 +90,12 @@
 @theme {
   --font-sans: InterVarible, sans-serif;
   --font-serif: "Spectral", serif;
-}
-
-@layer components {
-  a {
-    @apply relative 
-    transition-colors duration-150 ease-in z-[1]
-    text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
-  }
+  --spacing: 1rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
-  }
-}
-
-:root {
-  font-family: "Inter", sans-serif;
-  --spacing: 1rem;
-  --current-slide: 0;
-}
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: "InterVariable", sans-serif;
-    font-optical-sizing: auto;
   }
 }
 
@@ -126,16 +107,9 @@ html {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-.prose {
-  .footnotes {
+.footnotes {
+  li,
+  p {
     @apply text-sm;
-    ol {
-      li {
-        @apply text-sm;
-        p {
-          @apply text-sm;
-        }
-      }
-    }
   }
 }
