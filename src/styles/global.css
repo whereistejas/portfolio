@@ -17,8 +17,79 @@
   src: url("/InterVariable-Italic.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Spectral";
+  src: url("/Spectral-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("Spectral-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("Spectral-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/Spectral-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/Spectral-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/Spectral-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/Spectral-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/Spectral-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/Spectral-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url("/Spectral-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
 @theme {
   --font-sans: InterVarible, sans-serif;
+  --font-serif: "Spectral", serif;
 }
 
 @layer components {

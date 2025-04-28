@@ -23,19 +23,25 @@ const headers = [
   </Fragment>
   <Fragment slot="main">
     <article
-      class="@container prose dark:prose-invert
-      max-w-full
+      class="@container prose dark:prose-invert max-w-full
       //
       text-slate-950 dark:text-slate-100
       //
-      prose-md md:prose-lg lg:prose-xl
+      prose-lg lg:prose-xl
       //
-      prose-a:font-normal
+      prose-a:font-light
       prose-a:relative
       prose-a:z-[1]
       prose-a:transition-colors prose-a:duration-150 prose-a:ease-in
       prose-a:text-neutral-950 prose-a:dark:text-neutral-50
       prose-a:hover:text-neutral-500 prose-a:hover:dark:text-neutral-400
+      //
+      prose-h1:text-4xl
+      prose-h2:text-3xl
+      prose-h3:text-2xl
+      prose-h4:text-xl
+      prose-h5:text-lg
+      prose-h6:text-md
       //
       prose-p:text-md md:prose-p:text-lg lg:prose-p:text-lg
       prose-li:text-md md:prose-li:text-lg lg:prose-li:text-lg
@@ -43,14 +49,16 @@ const headers = [
       prose-p:leading-snug md:prose-p:leading-normal
       prose-li:leading-snug md:prose-li:leading-normal
       //
-      prose-headings:font-medium
+      prose-headings:font-medium prose-headings:italic
       prose-headings:text-xl md:prose-headings:text-2xl lg:prose-headings:text-3xl
       //
-      prose-p:my-0.75
-      prose-li:my-0.75
       prose-headings:mt-1.5 prose-headings:mb-0.5
+      prose-p:my-0.75
+      marker:text-zinc-500 marker:dark:text-slate-200
       //
-      marker:text-slate-950 dark:marker:text-slate-100"
+      prose-strong:font-semibold
+      //
+      font-serif font-light"
     >
       <slot />
     </article>
