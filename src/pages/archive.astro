@@ -23,34 +23,29 @@ const posts: Record<string, any>[] = Object.values(
     }
   </Fragment>
   <Fragment slot="main">
-    <section>
-      <div
-        class="w-full md:w-48 md:max-w-full
-              flex flex-col justify-center gap-1.5"
-      >
-        {
-          posts.map((post) => (
-            <Row>
-              <Fragment slot="key">
-                <span class="uppercase">
-                  {new Date(post.frontmatter.date)
-                    .toLocaleDateString("en-GB", {
-                      day: "2-digit",
-                      month: "short",
-                      year: "numeric",
-                    })
-                    .replace(/\//g, ".")}
-                </span>
-              </Fragment>
-              <Fragment slot="value">
-                <p class="uppercase">
-                  <a href={post.url}>{post.frontmatter.title}</a>
-                </p>
-              </Fragment>
-            </Row>
-          ))
-        }
-      </div>
-    </section>
+    <div class="first:pt-2 flex flex-col gap-2 self-start">
+      {
+        posts.map((post) => (
+          <Row>
+            <Fragment slot="key">
+              <span class="uppercase">
+                {new Date(post.frontmatter.date)
+                  .toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric",
+                  })
+                  .replace(/\//g, ".")}
+              </span>
+            </Fragment>
+            <Fragment slot="value">
+              <p class="uppercase">
+                <a href={post.url}>{post.frontmatter.title}</a>
+              </p>
+            </Fragment>
+          </Row>
+        ))
+      }
+    </div>
   </Fragment>
 </Page>

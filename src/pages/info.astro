@@ -1,6 +1,4 @@
 ---
-import "../styles/global.css";
-
 import Row from "../components/row.astro";
 import Textorlink from "../components/textorlink.astro";
 import Page from "../layouts/page.astro";
@@ -29,98 +27,64 @@ const footers = [
   </Fragment>
 
   <Fragment slot="main">
-    <section>
-      <div
-        class="w-full md:w-48 md:max-w-full
-              flex flex-col justify-center gap-1 md:gap-1.5 lg:gap-2"
-      >
-        <Row tight={true}>
-          <Fragment slot="key"><span class="uppercase">Profile</span></Fragment>
-          <Fragment slot="value">
-            <p class="font-light text-justify text-pretty hyphens-auto">
-              I'm a software engineer and photographer based in London, UK. I am
-              an avid reader, currently reading
-              <span class="italic">
-                <a href="https://www.goodreads.com/book/show/27276428-the-gene">
-                  The Gene
-                </a>
-              </span>
-              by Siddhartha Mukherjee.
-            </p>
-          </Fragment>
-        </Row>
-        <Row tight={true}>
-          <Fragment slot="key">
-            <span class="uppercase">Beliefs</span>
-          </Fragment>
-          <Fragment slot="value">
-            <p class="font-light text-justify text-pretty hyphens-auto">
-              Software is made for humans.
-            </p>
-            <p class="font-light text-justify text-pretty hyphens-auto">
-              All software is a tool.
-            </p>
-            <p class="font-light text-justify text-pretty hyphens-auto">
-              Good tools are simple and intuitive.
-            </p>
-          </Fragment>
-        </Row>
-        <Row tight={true}>
-          <Fragment slot="key">
-            <span class="uppercase">Work</span>
-          </Fragment>
-          <Fragment slot="value">
-            <p class="font-light text-justify text-pretty hyphens-auto">
-              <a href="https://tably.com" class="external">Tably</a>,
-              <span class="uppercase"> 2021 </span>
-              &mdash; Present
-            </p>
-            <p class="font-light text-justify text-pretty hyphens-auto">
-              <a href="https://wipro.com" class="external">Wipro</a>,
-              <span class="uppercase"> 2019 </span>
-              &mdash;
-              <span class="uppercase"> 2021 </span>
-            </p>
-          </Fragment>
-        </Row>
-        <Row tight={true}>
-          <Fragment slot="key">
-            <span class="uppercase">University</span>
-          </Fragment>
-          <Fragment slot="value">
-            <p class="font-light">
-              Bachelors in Mechanical Engineering,
-              <a href="https://www.unipune.ac.in" class="external">SPPU</a>,
-              <span class="uppercase"> 2016 </span>
-              &mdash;
-              <span class="uppercase"> 2019 </span>
-            </p>
-          </Fragment>
-        </Row>
-        <Row tight={true}>
-          <Fragment slot="key">
-            <span class="uppercase">Socials</span>
-          </Fragment>
-          <Fragment slot="value">
-            <p class="font-light">
-              <a
-                href="https://www.linkedin.com/in/whereistejas"
-                class="external">Linkedin</a
-              >,
-              <a href="https://www.github.com/whereistejas" class="external"
-                >Github</a
-              >,
-              <a href="https://www.x.com/whereistejas" class="external">X</a>,
-              <a href="https://www.instagram.com/whereistejas" class="external"
-                >Instagram</a
-              >,
-              <a href="https://www.are.na/whereistejas">Are.na</a>,
-              <a href="https://www.goodreads.com/whereistejas">Goodreads</a>
-            </p>
-          </Fragment>
-        </Row>
-      </div>
-    </section>
+    <div class="h-full first:pt-2 flex flex-col gap-2">
+      <Row>
+        <Fragment slot="key">Profile</Fragment>
+        <Fragment slot="value">
+          <p>
+            I'm a software engineer and photographer based in London, UK. I am
+            an avid reader, currently reading
+            <span class="italic">
+              <a href="https://www.goodreads.com/book/show/27276428-the-gene">
+                The Gene
+              </a>
+            </span>
+            by Siddhartha Mukherjee.
+          </p>
+        </Fragment>
+      </Row>
+      <Row>
+        <Fragment slot="key">Beliefs</Fragment>
+        <Fragment slot="value">
+          <p>Software is made for humans.</p>
+          <p>All software is a tool.</p>
+          <p>Good tools are simple and intuitive.</p>
+        </Fragment>
+      </Row>
+      <Row>
+        <Fragment slot="key">Work</Fragment>
+        <Fragment slot="value">
+          <p>
+            <a href="https://tably.com">Tably</a>, 2021 &mdash; Present
+          </p>
+          <p>
+            <a href="https://wipro.com">Wipro</a>, 2019 &mdash; 2021
+          </p>
+        </Fragment>
+      </Row>
+      <Row>
+        <Fragment slot="key">University</Fragment>
+        <Fragment slot="value">
+          <p>
+            Bachelors in Mechanical Engineering,
+            <a href="https://www.unipune.ac.in">SPPU</a>, 2016 &mdash; 2019
+          </p>
+        </Fragment>
+      </Row>
+      <Row>
+        <Fragment slot="key">Socials</Fragment>
+        <Fragment slot="value">
+          <p>
+            <a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>,
+            <a href="https://www.github.com/whereistejas">Github</a>,
+            <a href="https://www.x.com/whereistejas">X</a>,
+            <a href="https://www.instagram.com/whereistejas">Instagram</a>,
+            <a href="https://www.are.na/whereistejas">Are.na</a>,
+            <a href="https://www.goodreads.com/whereistejas">Goodreads</a>
+          </p>
+        </Fragment>
+      </Row>
+    </div>
   </Fragment>
 
   <Fragment slot="footer">

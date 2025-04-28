@@ -1,6 +1,4 @@
 ---
-import "../styles/global.css";
-
 import Page from "../layouts/page.astro";
 
 import Row from "../components/row.astro";
@@ -139,29 +137,27 @@ const headers = [
     }
   </Fragment>
   <Fragment slot="main">
-    <section>
-      <div
-        class="w-full md:w-48 md:max-w-full
-              flex flex-col justify-center gap-1.5 md:gap-2 lg:gap-3"
-      >
-        {
-          items.entries().map(([dateKey, itemsList]) => {
-            if (!displayedDates.has(dateKey)) {
-              displayedDates.add(dateKey);
-            } else {
-              dateKey = "";
-            }
+    <div
+      class="first:pt-1.5 first:md:pt-3 flex flex-col gap-2 md:gap-3
+    self-start"
+    >
+      {
+        items.entries().map(([dateKey, itemsList]) => {
+          if (!displayedDates.has(dateKey)) {
+            displayedDates.add(dateKey);
+          } else {
+            dateKey = "";
+          }
 
-            return (
-              <Row>
-                <Fragment slot="key">
-                  <span class="uppercase">{dateKey}</span>
-                </Fragment>
-                <Fragment slot="value">
+          return (
+            <Row>
+              <Fragment slot="key">{dateKey}</Fragment>
+              <Fragment slot="value">
+                <div class="flex flex-col gap-4">
                   {itemsList.map((item: Item) => {
                     return (
-                      <div class="flex flex-col gap-0.5">
-                        <p class="uppercase font-regular">
+                      <div class="flex flex-col gap-0.25">
+                        <p class="uppercase font-stretch-ultra-condensed">
                           <a
                             href={item.url}
                             target="_blank"
@@ -170,18 +166,16 @@ const headers = [
                             {item.title}
                           </a>
                         </p>
-                        <p class="font-light text-pretty text-justify hyphens-auto">
-                          {item.summary}
-                        </p>
+                        <p class="font-normal">{item.summary}</p>
                       </div>
                     );
                   })}
-                </Fragment>
-              </Row>
-            );
-          })
-        }
-      </div>
-    </section>
+                </div>
+              </Fragment>
+            </Row>
+          );
+        })
+      }
+    </div>
   </Fragment>
 </Page>
