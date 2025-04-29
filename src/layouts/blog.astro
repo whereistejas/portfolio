@@ -2,7 +2,6 @@
 import "../styles/global.css";
 
 import Page from "./page.astro";
-
 import Textorlink from "../components/textorlink.astro";
 
 const { frontmatter } = Astro.props;
@@ -11,16 +10,6 @@ const headers = [
   { type: "text", content: (frontmatter.title as string).toUpperCase() },
   { type: "link", content: "CLOSE", href: "/archive" },
 ];
-
-// prose-lg lg:prose-2xl
-// //
-// prose-h1:text-4xl
-// prose-h2:text-3xl
-// prose-h3:text-2xl
-// prose-h4:text-xl
-// prose-h5:text-lg
-// prose-h6:text-md
-// //
 ---
 
 <Page>
@@ -46,6 +35,15 @@ const headers = [
       prose-a:transition-colors prose-a:duration-150 prose-a:ease-in
       prose-a:text-neutral-950 prose-a:dark:text-neutral-50
       prose-a:hover:text-neutral-500 prose-a:hover:dark:text-neutral-400
+      //
+      prose-lg lg:prose-2xl
+      //
+      prose-h1:text-4xl
+      prose-h2:text-3xl
+      prose-h3:text-2xl
+      prose-h4:text-xl
+      prose-h5:text-lg
+      prose-h6:text-md
       //
       prose-p:text-md md:prose-p:text-lg lg:prose-p:text-xl
       prose-li:text-md md:prose-li:text-lg lg:prose-li:text-xl

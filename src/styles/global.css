@@ -108,6 +108,19 @@ html {
 }
 
 .footnotes {
+  h2 {
+    position: relative;
+  }
+  h2::before {
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: 1px solid #000;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+  }
   li,
   p {
     @apply text-sm;
