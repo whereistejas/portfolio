@@ -108,18 +108,11 @@ html {
 }
 
 .footnotes {
-  h2 {
-    position: relative;
-  }
-  h2::before {
-    content: "";
+  ol::before {
     display: block;
     width: 100%;
-    border-top: 1px solid #000;
+    border-top: 4px solid #000;
     margin-bottom: 1rem;
-    position: absolute;
-    top: -1.5rem;
-    left: 0;
   }
   li,
   p {
