@@ -78,6 +78,9 @@
   src: url("/Spectral-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1; /* fix for Chrome */
 }
 
 @font-face {
@@ -85,12 +88,17 @@
   src: url("/Spectral-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1; /* fix for Chrome */
 }
 
 @theme {
-  --font-sans: InterVarible, sans-serif;
-  --font-serif: "Spectral", serif;
+  --font-sans: InterVariable, sans-serif;
+  --font-serif: InterVariable, sans-serif;
   --spacing: 1rem;
+
+  --font-weight-normal: 380;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -105,19 +113,6 @@ html {
 }
 *::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
-}
-
-/* CSS */
-:root {
-  font-family: Inter, sans-serif;
-  font-feature-settings:
-    "liga" 1,
-    "calt" 1; /* fix for Chrome */
-}
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
 }
 
 .footnotes {

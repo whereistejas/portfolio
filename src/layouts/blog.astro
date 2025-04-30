@@ -29,14 +29,14 @@ const headers = [
       //
       text-slate-950 dark:text-slate-100
       //
-      prose-a:font-light
+      prose-a:font-normal
       prose-a:relative
       prose-a:z-[1]
       prose-a:transition-colors prose-a:duration-150 prose-a:ease-in
       prose-a:text-neutral-950 prose-a:dark:text-neutral-50
       prose-a:hover:text-neutral-500 prose-a:hover:dark:text-neutral-400
       //
-      prose-lg lg:prose-2xl
+      prose-lg md:prose-2xl
       //
       prose-h1:text-4xl
       prose-h2:text-3xl
@@ -45,8 +45,8 @@ const headers = [
       prose-h5:text-lg
       prose-h6:text-md
       //
-      prose-p:text-md md:prose-p:text-lg lg:prose-p:text-xl
-      prose-li:text-md md:prose-li:text-lg lg:prose-li:text-xl
+      prose-p:text-md md:prose-p:text-xl
+      prose-li:text-md md:prose-li:text-xl
       //
       prose-p:leading-snug md:prose-p:leading-normal
       prose-li:leading-snug md:prose-li:leading-normal
@@ -55,7 +55,7 @@ const headers = [
       prose-ol:my-0.75
       //
       prose-headings:font-semibold
-      prose-headings:text-xl md:prose-headings:text-2xl lg:prose-headings:text-3xl
+      prose-headings:text-xl lg:prose-headings:text-3xl
       //
       prose-headings:mt-1.5 prose-headings:mb-0.5
       prose-p:my-0.75
@@ -63,7 +63,8 @@ const headers = [
       //
       prose-strong:font-semibold
       //
-      font-light text-pretty text-justify hyphens-auto"
+      font-normal
+      text-pretty text-justify hyphens-auto"
     >
       <slot />
     </article>
