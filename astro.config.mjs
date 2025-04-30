@@ -8,9 +8,9 @@ export default defineConfig({
   adapter: vercel(),
   markdown: {
     remarkRehype: {
-      footnoteLabel: "",
+      footnoteLabel: " ",
       footnoteLabelTagName: "hr",
-      footnoteLabelProperties: { class: "" },
+      footnoteLabelProperties: { className: [""] },
     },
   },
   vite: {
