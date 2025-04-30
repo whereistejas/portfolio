@@ -6,6 +6,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   output: "static",
   adapter: vercel(),
+  markdown: {
+    remarkRehype: {
+      footnoteLabel: "",
+      footnoteLabelTagName: "hr",
+      footnoteLabelProperties: { class: "" },
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },

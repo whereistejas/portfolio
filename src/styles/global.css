@@ -108,12 +108,10 @@ html {
 }
 
 .footnotes {
-  ol::before {
-    display: block;
-    width: 100%;
-    border-top: 4px solid #000;
-    margin-bottom: 1rem;
+  hr {
+    @apply my-1 border-neutral-500 dark:border-neutral-400;
   }
+
   li,
   p {
     @apply text-sm;
