@@ -157,7 +157,7 @@ const headers = [
                   {itemsList.map((item: Item) => {
                     return (
                       <div class="flex flex-col gap-0.25">
-                        <p class="uppercase font-stretch-ultra-condensed">
+                        <p class="uppercase font-medium">
                           <a
                             href={item.url}
                             target="_blank"
@@ -166,7 +166,7 @@ const headers = [
                             {item.title}
                           </a>
                         </p>
-                        <p class="font-normal">{item.summary}</p>
+                        <p class="font-regular">{item.summary}</p>
                       </div>
                     );
                   })}

@@ -107,6 +107,19 @@ html {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
+/* CSS */
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
 .footnotes {
   hr {
     @apply my-1 border-neutral-500 dark:border-neutral-400;

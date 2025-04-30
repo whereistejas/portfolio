@@ -65,6 +65,7 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
             h-full w-full
             transition-transform duration-500
             translate-x-[calc(-100%*var(--current-slide))]
+            mix-blend-multiply
             `}
             >
               <Image
