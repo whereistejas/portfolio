@@ -23,6 +23,7 @@
   --spacing: 1rem;
 
   --font-weight-normal: 380;
+  --text-lg: 1.1rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
