@@ -23,7 +23,9 @@ const posts: Record<string, any>[] = Object.values(
     }
   </Fragment>
   <Fragment slot="main">
-    <div class="first:pt-2 flex flex-col gap-2 self-start">
+    <div
+      class="first:pt-1.5 md:first:pt-2 flex flex-col gap-1.5 md:gap-2 self-start"
+    >
       {
         posts.map((post) => (
           <Row>
