@@ -17,7 +17,7 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 
     const exif = await ExifReader.load(path, { async: true });
     let caption = exif["title"].description;
-    let image = (await getImage({ src: img, format: "png" })).options
+    let image = (await getImage({ src: img, format: "webp" })).options
       .src as ImageMetadata;
 
     return {
@@ -60,18 +60,18 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
             gap-1 md:gap-1.25
             flex-shrink-0 flex-grow-0
             order-${idx}
+            bg-yellow-50
             scroll-snap snap-center
             h-full w-full
             transition-transform duration-500
             translate-x-[calc(-100%*var(--current-slide))]`}
             >
               <Image
-                class="bg-blend-multiply"
+                class="mix-blend-multiply"
                 src={image}
                 alt={caption}
                 widths={[400, 800]}
                 sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px`}
-                format="png"
               />
               <div class="h-[1lh] w-full flex justify-between">
                 <span>{caption}</span>
@@ -91,7 +91,7 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
   function setupCarousel() {
     let carousel = document.querySelector("#carousel") as HTMLDivElement;
     let currentSlide = 0;
-    const numSlides = 13;
+    const numSlides = 12;
 
     function modulo(number: number, mod: number) {
       let result = number % mod;
