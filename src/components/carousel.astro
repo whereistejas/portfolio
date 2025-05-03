@@ -60,14 +60,14 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
             gap-1 md:gap-1.25
             flex-shrink-0 flex-grow-0
             order-${idx}
-            bg-yellow-50
+            bg-yellow-50 dark:bg-neutral-900
             scroll-snap snap-center
             h-full w-full
             transition-transform duration-500
             translate-x-[calc(-100%*var(--current-slide))]`}
             >
               <Image
-                class="mix-blend-multiply"
+                class="mix-blend-multiply dark:mix-blend-normal"
                 src={image}
                 alt={caption}
                 widths={[400, 800]}
