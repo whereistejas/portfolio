@@ -36,17 +36,17 @@ const headers = [
       prose-a:text-neutral-950 prose-a:dark:text-neutral-50
       prose-a:hover:text-neutral-500 prose-a:hover:dark:text-neutral-400
       //
-      prose-lg md:prose-2xl
+      prose-base md:prose-lg
       //
-      prose-h1:text-4xl
-      prose-h2:text-3xl
-      prose-h3:text-2xl
-      prose-h4:text-xl
-      prose-h5:text-lg
-      prose-h6:text-md
+      prose-h1:text-2xl md:prose-h1:text-4xl
+      prose-h2:text-xl md:prose-h2:text-3xl
+      prose-h3:text-lg md:prose-h3:text-2xl
+      prose-h4:text-md md:prose-h4:text-xl
+      prose-h5:text-sm md:prose-h5:text-md
+      prose-h6:text-sm md:prose-h6:text-md
       //
-      prose-p:text-md md:prose-p:text-xl
-      prose-li:text-md md:prose-li:text-xl
+      prose-p:text-base md:prose-p:text-lg
+      prose-li:text-base md:prose-li:text-lg
       //
       prose-p:leading-snug md:prose-p:leading-normal
       prose-li:leading-snug md:prose-li:leading-normal
@@ -55,7 +55,6 @@ const headers = [
       prose-ol:my-0.75
       //
       prose-headings:font-semibold
-      prose-headings:text-xl lg:prose-headings:text-3xl
       //
       prose-headings:mt-1.5 prose-headings:mb-0.5
       prose-p:my-0.75
