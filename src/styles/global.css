@@ -26,6 +26,14 @@
   --text-lg: 1.1rem;
 }
 
+@layer components {
+  a {
+    @apply relative 
+    transition-colors duration-150 ease-in z-[1]
+    text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
