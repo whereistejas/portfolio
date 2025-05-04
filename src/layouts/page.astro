@@ -7,7 +7,7 @@ import "../styles/global.css";
 const header_footer =
   "left-0 w-full md:w-48 md:max-w-full px-1 flex flex-row justify-between text-xl md:text-3xl font-semibold";
 
-const { flex_start = true } = Astro.props;
+const { flex_start = true, title } = Astro.props;
 ---
 
 <html lang="en">
@@ -18,7 +18,7 @@ const { flex_start = true } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Tejas Sanap</title>
+    <title>{title === "" ? "Tejas Sanap" : `${title} | Tejas Sanap`}</title>
 
     <ClientRouter />
   </head>

@@ -42,7 +42,7 @@ html {
 
 .footnotes {
   hr {
-    @apply my-1 border-neutral-500 dark:border-neutral-400;
+    @apply my-2 border-neutral-500 dark:border-neutral-400;
   }
 
   li,
