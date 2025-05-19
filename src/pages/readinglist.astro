@@ -1,10 +1,17 @@
 ---
 import Page from "../layouts/page.astro";
-
 import Row from "../components/row.astro";
 import Textorlink from "../components/textorlink.astro";
 
 const apiToken: string = "rCfuIkJtzCM4QJv5xuMyBLvtMmHv85rJ7dTwUm94k4eEgfM4vH";
+
+// Node.js fs and path imports for server-side caching
+let fs: typeof import("fs/promises") | undefined;
+let path: typeof import("path") | undefined;
+if (typeof window === "undefined") {
+  fs = await import("fs/promises");
+  path = await import("path");
+}
 
 /**
  * Represents the simplified shape you want for each Reader document.
@@ -114,11 +121,56 @@ async function fetchAllReadwiseReaderItems(
   return sortedItemsMap;
 }
 
-// Example usage:
-let items = await fetchAllReadwiseReaderItems({
-  token: apiToken,
-  location: "archive",
-});
+// Try API first, then fallback to cache if API fails
+let items: Map<string, Item[]>;
+let usedCache = false;
+try {
+  items = await fetchAllReadwiseReaderItems({
+    token: apiToken,
+    location: "archive",
+  });
+  // If on server, save to cache for offline use
+  if (typeof window === "undefined" && fs && path) {
+    const cacheDir = path.resolve(process.cwd(), "tmp");
+    const cacheFile = path.join(cacheDir, "readinglist.json");
+    try {
+      await fs.mkdir(cacheDir, { recursive: true });
+      await fs.writeFile(
+        cacheFile,
+        JSON.stringify(Array.from(items.entries())),
+        "utf-8"
+      );
+    } catch (e) {
+      // Ignore cache write errors
+    }
+  }
+} catch (err: any) {
+  // If API fails, try to read from cache (server only)
+  if (typeof window === "undefined" && fs && path) {
+    const cacheDir = path.resolve(process.cwd(), "tmp");
+    const cacheFile = path.join(cacheDir, "readinglist.json");
+    try {
+      const cacheData = await fs.readFile(cacheFile, "utf-8");
+      const parsed: [string, Item[]][] = JSON.parse(cacheData);
+      items = new Map(
+        parsed.map(([date, arr]: [string, any[]]) => [
+          date,
+          arr.map((item: any) => ({
+            ...item,
+            last_moved_at: new Date(item.last_moved_at),
+          })),
+        ])
+      );
+      usedCache = true;
+    } catch (cacheErr) {
+      throw new Error("Failed to fetch from API and no cache available.");
+    }
+  } else {
+    throw new Error(
+      "Failed to fetch from API and cache is not available on client."
+    );
+  }
+}
 
 const displayedDates = new Set<string>();
 
@@ -138,44 +190,41 @@ const headers = [
   </Fragment>
   <Fragment slot="main">
     <div
-      class="first:pt-2 first:md:pt-3 flex flex-col gap-2 md:gap-3
-    self-start"
+      class="first:pt-2 first:md:pt-3 flex flex-col gap-2 md:gap-3 self-start"
     >
-      {
-        items.entries().map(([dateKey, itemsList]) => {
-          if (!displayedDates.has(dateKey)) {
-            displayedDates.add(dateKey);
-          } else {
-            dateKey = "";
-          }
-
-          return (
-            <Row>
-              <Fragment slot="key">{dateKey}</Fragment>
-              <Fragment slot="value">
-                <div class="flex flex-col gap-2 md:gap-3">
-                  {itemsList.map((item: Item) => {
-                    return (
-                      <div class="flex flex-col gap-0.25">
-                        <p class="uppercase font-medium text-pretty">
-                          <a
-                            href={item.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {item.title}
-                          </a>
-                        </p>
-                        <p class="text-pretty">{item.summary}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </Fragment>
-            </Row>
-          );
-        })
-      }
+      <div class="columns-1 sm:columns-2 md:columns-3 gap-1.5">
+        {
+          Array.from(items.values())
+            .flat()
+            .sort(
+              (a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime()
+            )
+            .map((item: Item) => (
+              <div class="flex flex-col break-inside-avoid gap-0.25 pb-1.5">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-semibold uppercase italic"
+                >
+                  <div class="text-pretty">{item.title}</div>
+                </a>
+                <span class="text-base text-neutral-500 dark:text-neutral-400">
+                  {item.last_moved_at
+                    .toLocaleDateString("en-GB", {
+                      day: "2-digit",
+                      month: "short",
+                      year: "numeric",
+                    })
+                    .replace(/\//g, ".")}
+                </span>
+                <p class="leading-snug text-base font-normal hyphens-auto text-justify">
+                  {item.summary}
+                </p>
+              </div>
+            ))
+        }
+      </div>
     </div>
   </Fragment>
 </Page>
