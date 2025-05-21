@@ -189,7 +189,10 @@ const headers = [
     <div
       class="first:pt-2 first:md:pt-3 flex flex-col gap-2 md:gap-3 self-start"
     >
-      <Masonry breakpointCols={{ default: 3 }} class="flex gap-1.5">
+      <Masonry
+        breakpointCols={{ default: 3, 768: 2, 640: 1 }}
+        class="flex gap-1.5"
+      >
         {
           Array.from(items.values())
             .flat()
