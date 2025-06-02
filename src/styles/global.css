@@ -50,7 +50,7 @@
     }
 
     div.readinglist-item:hover::before {
-      @apply bg-yellow-100;
+      @apply bg-yellow-100 dark:bg-neutral-700;
     }
   }
 }
