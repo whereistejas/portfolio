@@ -32,6 +32,27 @@
     transition-colors duration-150 ease-in z-[1]
     text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
   }
+
+  div.astro-masonry-grid_column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    div.readinglist-item::before {
+      content: "";
+      top: -0.5rem; /* Margin size */
+      left: -0.5rem;
+      right: -0.5rem;
+      bottom: -0.5rem;
+      background: transparent; /* No highlight by default */
+
+      @apply absolute -z-1 rounded-lg transition duration-200 ease-in;
+    }
+
+    div.readinglist-item:hover::before {
+      @apply bg-yellow-100;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

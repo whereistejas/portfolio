@@ -191,7 +191,7 @@ const headers = [
     >
       <Masonry
         breakpointCols={{ default: 3, 768: 2, 640: 1 }}
-        class="flex gap-1.5"
+        class="flex gap-1.5 relative"
       >
         {
           Array.from(items.values())
@@ -200,7 +200,7 @@ const headers = [
               (a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime()
             )
             .map((item: Item) => (
-              <div class="flex flex-col gap-0.25 pb-1.5">
+              <div class="flex flex-col gap-0.25 readinglist-item z-1 relative">
                 <a
                   href={item.url}
                   target="_blank"
