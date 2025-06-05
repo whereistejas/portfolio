@@ -186,13 +186,8 @@ const headers = [
     }
   </Fragment>
   <Fragment slot="main">
-    <div
-      class="first:pt-2 first:md:pt-3 flex flex-col gap-2 md:gap-3 self-start"
-    >
-      <Masonry
-        breakpointCols={{ default: 3, 768: 2, 640: 1 }}
-        class="flex gap-1.5 relative"
-      >
+    <div class="readinglist_main">
+      <Masonry breakpointCols={{ default: 3, 768: 2, 640: 1 }}>
         {
           Array.from(items.values())
             .flat()
@@ -200,16 +195,16 @@ const headers = [
               (a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime()
             )
             .map((item: Item) => (
-              <div class="flex flex-col gap-0.25 readinglist-item z-1 relative">
+              <div class="readinglist_item">
                 <a
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="font-semibold uppercase italic"
+                  class="title"
                 >
-                  <div class="text-pretty">{item.title}</div>
+                  <div>{item.title}</div>
                 </a>
-                <span class="text-base text-neutral-500 dark:text-neutral-400">
+                <span class="date">
                   {item.last_moved_at
                     .toLocaleDateString("en-GB", {
                       day: "2-digit",
@@ -218,9 +213,7 @@ const headers = [
                     })
                     .replace(/\//g, ".")}
                 </span>
-                <p class="leading-snug text-base font-normal hyphens-auto text-justify">
-                  {item.summary}
-                </p>
+                <p class="summary">{item.summary}</p>
               </div>
             ))
         }

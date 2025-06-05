@@ -27,31 +27,92 @@
 }
 
 @layer components {
+  body {
+    @apply h-[100dvh]
+    flex flex-col justify-between items-center
+    bg-yellow-50 dark:bg-neutral-900 text-slate-950 dark:text-slate-50;
+  }
+
+  header,
+  footer {
+    @apply left-0 w-full md:w-48 md:max-w-full 
+    px-1 
+    flex flex-row justify-between 
+    text-xl md:text-3xl font-semibold;
+  }
+  header {
+    @apply top-0 pt-1;
+  }
+  footer {
+    @apply bottom-0 pb-1;
+  }
+
+  main {
+    @apply w-full md:w-48 md:max-w-full
+    px-1
+    flex flex-col
+    text-lg md:text-xl;
+  }
+
+  div.archive_main {
+    @apply first:pt-1.5 md:first:pt-2 
+    flex flex-col gap-1.5 md:gap-2 self-start;
+  }
+
+  div.info_main {
+    @apply h-full 
+    first:pt-1.5 md:first:pt-0
+    last:pb-1.5 
+    flex flex-col gap-1.5 md:gap-2;
+  }
+
+  div.readinglist_main {
+    @apply first:pt-1.5 md:first:pt-2
+    flex flex-col gap-1.5 md:gap-2 self-start;
+
+    div.astro-masonry-grid {
+      @apply relative flex gap-1.5;
+
+      div.astro-masonry-grid_column {
+        @apply flex flex-col gap-1.5;
+
+        div.readinglist_item {
+          @apply z-1 relative
+          flex flex-col gap-0.25
+
+          before:absolute 
+          before:-top-0.5 before:-left-0.5 before:-right-0.5 before:-bottom-0.5
+          before:-z-1 
+          before:bg-transparent before:rounded-lg 
+          before:transition before:duration-200 before:ease-in
+
+          md:hover:before:bg-yellow-100/50 md:hover:before:dark:bg-neutral-700;
+
+          a.title {
+            @apply font-semibold uppercase italic;
+          }
+
+          span.date {
+            @apply text-base text-neutral-500 dark:text-neutral-400;
+          }
+
+          p.summary {
+            @apply leading-snug text-base font-normal text-justify hyphens-auto;
+
+            -webkit-hyphenate-limit-before: 4;
+            -webkit-hyphenate-limit-after: 5;
+            -ms-hyphenate-limit-chars: 10 4 5;
+            hyphenate-limit-chars: 10 4 5;
+          }
+        }
+      }
+    }
+  }
+
   a {
     @apply relative 
     transition-colors duration-150 ease-in z-[1]
     text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
-  }
-
-  div.astro-masonry-grid_column {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-
-    div.readinglist-item::before {
-      content: "";
-      top: -0.5rem; /* Margin size */
-      left: -0.5rem;
-      right: -0.5rem;
-      bottom: -0.5rem;
-      background: transparent; /* No highlight by default */
-
-      @apply absolute -z-1 rounded-lg transition duration-200 ease-in;
-    }
-
-    div.readinglist-item:hover::before {
-      @apply bg-yellow-100 dark:bg-neutral-700;
-    }
   }
 }
 
