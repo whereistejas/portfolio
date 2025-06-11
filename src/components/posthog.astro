@@ -52,10 +52,7 @@
       }),
       (e.__SV = 1));
   })(document, window.posthog || []);
-  if (
-    typeof window.posthog === "function" &&
-    !window.location.host.includes("localhost")
-  ) {
+  if (!window.location.host.includes("localhost")) {
     posthog.init("phc_pkzpycxlLsw0J7qsEYKEyFQh7aKWFHYKUlggKDLaxQE", {
       api_host: "https://us.i.posthog.com",
       defaults: "2025-05-24",
