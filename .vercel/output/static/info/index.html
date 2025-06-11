@@ -36,7 +36,7 @@
               return u.toString(1) + ".people (stub)";
             },
             o =
-              "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(
+              "init Ee Ps Rs xe ks Is capture We calculateEventProperties Cs register register_once register_for_session unregister unregister_for_session Ds getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty Fs Ms createPersonProfile As Es opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing Ts debug Os getPageViewId captureTraceFeedback captureTraceMetric".split(
                 " "
               ),
             n = 0;
@@ -54,6 +54,7 @@
   ) {
     posthog.init("phc_pkzpycxlLsw0J7qsEYKEyFQh7aKWFHYKUlggKDLaxQE", {
       api_host: "https://us.i.posthog.com",
+      defaults: "2025-05-24",
       person_profiles: "always", // or 'always' to create profiles for anonymous users as well
     });
     // Track initial pageview on load
