@@ -5,47 +5,59 @@ import Textorlink from "../components/textorlink.astro";
 import Row from "../components/row.astro";
 
 const headers = [
-  { type: "text", content: "BLOG" },
-  { type: "link", content: "CLOSE", href: "/" },
+	{ type: "text", content: "BLOG" },
+	{ type: "link", content: "CLOSE", href: "/" },
 ];
 
 const posts: Record<string, any>[] = Object.values(
-  import.meta.glob("./archive/*.md", { eager: true })
+	import.meta.glob("./archive/*.md", { eager: true }),
 );
 ---
 
 <Page title="Blog">
-  <Fragment slot="header">
-    {
-      headers.map((el) => (
-        <Textorlink type={el.type} content={el.content} href={el.href} />
-      ))
-    }
-  </Fragment>
-  <Fragment slot="main">
-    <div class="archive_main">
-      {
-        posts.map((post) => (
-          <Row>
-            <Fragment slot="key">
-              <span class="uppercase">
-                {new Date(post.frontmatter.date)
-                  .toLocaleDateString("en-GB", {
-                    day: "2-digit",
-                    month: "short",
-                    year: "numeric",
-                  })
-                  .replace(/\//g, ".")}
-              </span>
-            </Fragment>
-            <Fragment slot="value">
-              <p class="uppercase font-medium">
-                <a href={post.url}>{post.frontmatter.title}</a>
-              </p>
-            </Fragment>
-          </Row>
-        ))
-      }
-    </div>
-  </Fragment>
+	<Fragment slot="header">
+		{
+			headers.map((el) => (
+				<Textorlink
+					type={el.type}
+					content={el.content}
+					href={el.href}
+				/>
+			))
+		}
+	</Fragment>
+	<Fragment slot="main">
+		<div class="archive_main">
+			{
+				posts
+					.sort((a, b) => {
+						const dateA = new Date(a.frontmatter.date);
+						const dateB = new Date(b.frontmatter.date);
+						return dateB.getTime() - dateA.getTime();
+					})
+					.map((post) => (
+						<Row>
+							<Fragment slot="key">
+								<span class="uppercase">
+									{new Date(post.frontmatter.date)
+										.toLocaleDateString("en-GB", {
+											day: "2-digit",
+											month: "short",
+											year: "numeric",
+										})
+										.replace(/\//g, ".")}
+								</span>
+							</Fragment>
+							<Fragment slot="value">
+								<p class="uppercase font-medium">
+									<a href={post.url}>
+										{post.frontmatter.title}
+									</a>
+								</p>
+							</Fragment>
+						</Row>
+					))
+			}
+		</div>
+	</Fragment>
 </Page>
