@@ -4,16 +4,6 @@ import Textorlink from "../components/textorlink.astro";
 
 import { Masonry } from "astro-masonry";
 
-const apiToken: string = "rCfuIkJtzCM4QJv5xuMyBLvtMmHv85rJ7dTwUm94k4eEgfM4vH";
-
-// Node.js fs and path imports for server-side caching
-// let fs: typeof import("fs/promises") | undefined;
-// let path: typeof import("path") | undefined;
-// if (typeof window === "undefined") {
-//   fs = await import("fs/promises");
-//   path = await import("path");
-// }
-
 /**
  * Represents the simplified shape you want for each Reader document.
  */
@@ -121,55 +111,62 @@ async function fetchAllReadwiseReaderItems(
 
   return sortedItemsMap;
 }
-
-// Try API first, then fallback to cache if API fails
 let items: Map<string, Item[]>;
-// try {
-items = await fetchAllReadwiseReaderItems({
-  token: apiToken,
-  location: "archive",
-});
-//   // If on server, save to cache for offline use
-//   if (typeof window === "undefined" && fs && path) {
-//     const cacheDir = path.resolve(process.cwd(), "tmp");
-//     const cacheFile = path.join(cacheDir, "readinglist.json");
-//     try {
-//       await fs.mkdir(cacheDir, { recursive: true });
-//       await fs.writeFile(
-//         cacheFile,
-//         JSON.stringify(Array.from(items.entries())),
-//         "utf-8"
-//       );
-//     } catch (e) {
-//       // Ignore cache write errors
-//     }
-//   }
-// } catch (err: any) {
-//   // If API fails, try to read from cache (server only)
-//   if (typeof window === "undefined" && fs && path) {
-//     const cacheDir = path.resolve(process.cwd(), "tmp");
-//     const cacheFile = path.join(cacheDir, "readinglist.json");
-//     try {
-//       const cacheData = await fs.readFile(cacheFile, "utf-8");
-//       const parsed: [string, Item[]][] = JSON.parse(cacheData);
-//       items = new Map(
-//         parsed.map(([date, arr]: [string, any[]]) => [
-//           date,
-//           arr.map((item: any) => ({
-//             ...item,
-//             last_moved_at: new Date(item.last_moved_at),
-//           })),
-//         ])
-//       );
-//     } catch (cacheErr) {
-//       throw new Error("Failed to fetch from API and no cache available.");
-//     }
-//   } else {
-//     throw new Error(
-//       "Failed to fetch from API and cache is not available on client."
-//     );
-//   }
-// }
+
+// Node.js fs and path imports for server-side caching
+let fs: typeof import("fs/promises") | undefined;
+let path: typeof import("path") | undefined;
+if (typeof window === "undefined") {
+  fs = await import("fs/promises");
+  path = await import("path");
+}
+// Try API first, then fallback to cache if API fails
+try {
+  items = await fetchAllReadwiseReaderItems({
+    token: import.meta.env.READWISE_API_TOKEN,
+    location: "archive",
+  });
+  // If on server, save to cache for offline use
+  if (typeof window === "undefined" && fs && path) {
+    const cacheDir = path.resolve(process.cwd(), "tmp");
+    const cacheFile = path.join(cacheDir, "readinglist.json");
+    try {
+      await fs.mkdir(cacheDir, { recursive: true });
+      await fs.writeFile(
+        cacheFile,
+        JSON.stringify(Array.from(items.entries())),
+        "utf-8"
+      );
+    } catch (e) {
+      // Ignore cache write errors
+    }
+  }
+} catch (err: any) {
+  // If API fails, try to read from cache (server only)
+  if (typeof window === "undefined" && fs && path) {
+    const cacheDir = path.resolve(process.cwd(), "tmp");
+    const cacheFile = path.join(cacheDir, "readinglist.json");
+    try {
+      const cacheData = await fs.readFile(cacheFile, "utf-8");
+      const parsed: [string, Item[]][] = JSON.parse(cacheData);
+      items = new Map(
+        parsed.map(([date, arr]: [string, any[]]) => [
+          date,
+          arr.map((item: any) => ({
+            ...item,
+            last_moved_at: new Date(item.last_moved_at),
+          })),
+        ])
+      );
+    } catch (cacheErr) {
+      throw new Error("Failed to fetch from API and no cache available.");
+    }
+  } else {
+    throw new Error(
+      "Failed to fetch from API and cache is not available on client."
+    );
+  }
+}
 
 const headers = [
   { type: "text", content: "READING LIST" },
