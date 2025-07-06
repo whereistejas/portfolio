@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: build & deploy
 
 on:
   # Trigger the workflow every time you push to the `main` branch
@@ -17,6 +17,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: main
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
@@ -29,7 +31,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: main
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
