@@ -109,6 +109,8 @@ async function fetchAllReadwiseReaderItems(
     })
   );
 
+  console.log(`\nLast date fetched: ${sortedItemsMap.keys().next().value}`);
+
   return sortedItemsMap;
 }
 let items: Map<string, Item[]>;
