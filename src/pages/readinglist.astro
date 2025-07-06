@@ -124,11 +124,11 @@ let items: Map<string, Item[]>;
 // }
 // // Try API first, then fallback to cache if API fails
 // try {
-if (import.meta.env.READWISE_API_TOKEN === "") {
+if (import.meta.env.READWISE_TOKEN === "") {
   throw new Error("No API token found");
 }
 items = await fetchAllReadwiseReaderItems({
-  token: import.meta.env.READWISE_API_TOKEN,
+  token: import.meta.env.READWISE_TOKEN,
   location: "archive",
 });
 if (items.size === 0) {

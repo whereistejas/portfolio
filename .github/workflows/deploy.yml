@@ -23,7 +23,7 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         env:
-          READWISE_API_TOKEN: ${{ secrets.READWISE_API_TOKEN }}
+          READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
 
   deploy:
     needs: build
