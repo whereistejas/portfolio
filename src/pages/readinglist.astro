@@ -190,15 +190,13 @@ const headers = [
         Array.from(items.entries()).map(([date, items]) => (
           <Row>
             <Fragment slot="key">
-              <span class="text-yellow-700">
-                {new Date(date)
-                  .toLocaleDateString("en-GB", {
-                    day: "2-digit",
-                    month: "numeric",
-                    year: "numeric",
-                  })
-                  .replace(/\//g, ".")}
-              </span>
+              {new Date(date)
+                .toLocaleDateString("en-GB", {
+                  day: "2-digit",
+                  month: "numeric",
+                  year: "numeric",
+                })
+                .replace(/\//g, ".")}
             </Fragment>
             <Fragment slot="value">
               <div class="items">
