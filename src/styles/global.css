@@ -86,7 +86,8 @@
           before:bg-transparent before:rounded-lg 
           before:transition before:duration-200 before:ease-in
 
-          md:hover:before:bg-yellow-100/50 md:hover:before:dark:bg-neutral-700;
+          md:hover:before:bg-yellow-200/50 md:hover:before:dark:bg-neutral-700
+          md:hover:before:shadow-md;
 
           a.title {
             @apply font-semibold uppercase italic;
@@ -111,7 +112,7 @@
 
   a {
     @apply relative 
-    transition-colors duration-150 ease-in z-[1]
+    transition-colors duration-200 ease-in z-[1]
     text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
   }
 }
@@ -139,4 +140,32 @@ html {
   p {
     @apply text-sm;
   }
+}
+
+/* Spaced Repetition Cards */
+quote.srs-prompt {
+  @apply relative
+  block
+  my-0.5
+  px-1
+  py-0.5
+  border-l-4
+  border-red-700
+  bg-red-50/30
+  dark:bg-red-950/20
+  rounded-r-lg
+  shadow-sm;
+}
+
+quote.srs-prompt .Q {
+  @apply font-semibold
+  text-red-800
+  dark:text-red-200
+  mb-0.5;
+}
+
+quote.srs-prompt .A {
+  @apply text-red-700
+  dark:text-red-300
+  italic;
 }
