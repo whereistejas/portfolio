@@ -6,20 +6,21 @@
   font-family: InterVariable;
   font-style: normal;
   font-weight: 100 900;
-  font-display: swap;
+  font-display: block;
   src: url("/InterVariable.woff2") format("woff2");
 }
 @font-face {
   font-family: InterVariable;
   font-style: italic;
   font-weight: 100 900;
-  font-display: swap;
+  font-display: block;
   src: url("/InterVariable-Italic.woff2") format("woff2");
 }
 
 @theme {
   --font-sans: InterVariable, sans-serif;
   --font-serif: InterVariable, sans-serif;
+  --default-font-feature-settings: "calt", "tnum", "ss03";
   --spacing: 1rem;
 
   --font-weight-normal: 380;
@@ -67,52 +68,32 @@
   }
 
   div.readinglist_main {
-    @apply first:pt-1.5 md:first:pt-2
+    @apply w-full max-w-full
+    first:pt-1.5 md:first:pt-2
     flex flex-col gap-1.5 md:gap-2 self-start;
 
-    div.astro-masonry-grid {
-      @apply relative flex gap-1.5;
+    div.items {
+      @apply flex flex-col gap-1 md:gap-1.5 min-w-0 w-full max-w-full;
 
-      div.astro-masonry-grid_column {
-        @apply flex flex-col gap-1.5;
+      a.title {
+        @apply block 
+        font-medium uppercase 
+        md:overflow-hidden md:whitespace-nowrap md:text-ellipsis;
+      }
 
-        div.readinglist_item {
-          @apply z-1 relative
-          flex flex-col gap-0.25
+      p.summary {
+        @apply leading-snug text-base font-normal text-justify hyphens-auto;
 
-          before:absolute 
-          before:-top-0.5 before:-left-0.5 before:-right-0.5 before:-bottom-0.5
-          before:-z-1 
-          before:bg-transparent before:rounded-lg 
-          before:transition before:duration-200 before:ease-in
-
-          md:hover:before:bg-yellow-200/50 md:hover:before:dark:bg-neutral-700
-          md:hover:before:shadow-md;
-
-          a.title {
-            @apply font-semibold uppercase italic;
-          }
-
-          span.date {
-            @apply text-base text-neutral-500 dark:text-neutral-400;
-          }
-
-          p.summary {
-            @apply leading-snug text-base font-normal text-justify hyphens-auto;
-
-            -webkit-hyphenate-limit-before: 4;
-            -webkit-hyphenate-limit-after: 5;
-            -ms-hyphenate-limit-chars: 10 4 5;
-            hyphenate-limit-chars: 10 4 5;
-          }
-        }
+        -webkit-hyphenate-limit-before: 4;
+        -webkit-hyphenate-limit-after: 5;
+        -ms-hyphenate-limit-chars: 10 4 5;
+        hyphenate-limit-chars: 10 4 5;
       }
     }
   }
 
   a {
-    @apply relative 
-    transition-colors duration-200 ease-in z-[1]
+    @apply transition-colors duration-200 ease-in z-[1]
     text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
   }
 }

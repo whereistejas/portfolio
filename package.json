@@ -16,7 +16,6 @@
     "@next-libs/constants": "^2.0.6",
     "@tailwindcss/vite": "^4.0.9",
     "astro": "^5.2.6",
-    "astro-masonry": "^1.2.2",
     "exifreader": "^4.23.7",
     "rehype-katex": "^7.0.1",
     "remark-math": "^6.0.0",

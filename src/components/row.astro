@@ -3,21 +3,14 @@ import "../styles/global.css";
 ---
 
 <div
-  class="flex flex-col md:flex-row gap-0.1 md:gap-1.5
-          md:grid md:grid-cols-[minmax(150px,auto)4fr]
-          items-baseline"
+  class="flex flex-col md:flex-row gap-0.1 md:gap-3 items-baseline w-full max-w-full"
 >
-  <div class="flex flex-col">
-    <span class="uppercase text-sm md:text-xl font-medium">
+  <div>
+    <span class="uppercase text-sm md:text-xl font-regular">
       <slot name="key" />
     </span>
   </div>
-  <div class="flex flex-col">
-    <div
-      class="hyphens-auto flex flex-col justify-center gap-0.25 md:gap-0.5"
-      style=""
-    >
-      <slot name="value" />
-    </div>
+  <div class="flex flex-col min-w-0 max-w-full">
+    <slot name="value" />
   </div>
 </div>
