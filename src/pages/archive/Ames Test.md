@@ -1,9 +1,9 @@
-
 ---
 date: 2025-06-17
 layout: ../../layouts/blog.astro
 title: What is an Ames Test?
 ---
+
 The Ames test is used to detect mutagenic substances. It utilises genetically engineered strains of Salmonella that are sensitive to mutations caused by a wide range of chemicals. Specifically, these strains have mutations in their histidine operons, which prevent them from synthesising histidine, an amino acid essential for bacterial growth and replication.
 
 When a population is grown on an agar plate with a trace amount of histidine, most of the bacteria die. However, some use the trace amount to reproduce and spontaneously revert to the histidine-independent wild type, allowing them to synthesise histidine on their own. Each generation produced in this way exhibits a natural spontaneous mutation frequency that can be quantified.

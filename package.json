@@ -18,6 +18,8 @@
     "astro": "^5.2.6",
     "astro-masonry": "^1.2.2",
     "exifreader": "^4.23.7",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
     "tailwindcss": "^4.0.9",
     "typescript": "^5.4.5"
   },

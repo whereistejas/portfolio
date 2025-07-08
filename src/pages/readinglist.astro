@@ -124,15 +124,16 @@ let items: Map<string, Item[]>;
 // }
 // // Try API first, then fallback to cache if API fails
 // try {
-let API_TOKEN = process.env.READWISE_TOKEN;
+let API_TOKEN = import.meta.env.READWISE_TOKEN;
 if (API_TOKEN === undefined) {
   throw new Error("No API token found");
-} else {
-  items = await fetchAllReadwiseReaderItems({
-    token: API_TOKEN as string,
-    location: "archive",
-  });
 }
+
+items = await fetchAllReadwiseReaderItems({
+  token: API_TOKEN as string,
+  location: "archive",
+});
+
 if (items.size === 0) {
   throw new Error("No items found");
 }
