@@ -187,7 +187,7 @@ const headers = [
   <Fragment slot="main">
     <div class="readinglist_main">
       {
-        items.entries().map(([date, items]) => (
+        Array.from(items.entries()).map(([date, items]) => (
           <Row>
             <Fragment slot="key">
               {new Date(date)
