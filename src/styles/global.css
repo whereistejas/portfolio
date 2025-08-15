@@ -75,43 +75,48 @@
     div.items {
       @apply flex flex-col gap-1 md:gap-1.5 min-w-0 w-full max-w-full;
 
-      a.title {
-        @apply block 
-        font-medium uppercase 
-        md:overflow-hidden md:whitespace-nowrap md:text-ellipsis;
-      }
+      div.item {
+        @apply flex flex-col gap-[0.25rem];
 
-      p.summary {
-        @apply leading-snug text-base font-normal text-justify hyphens-auto;
-        /* Hide summary by default with smooth transition */
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition:
-          max-height 0.3s ease-in-out,
-          opacity 0.3s ease-in-out;
-
-        -webkit-hyphenate-limit-before: 4;
-        -webkit-hyphenate-limit-after: 5;
-        -ms-hyphenate-limit-chars: 10 4 5;
-        hyphenate-limit-chars: 10 4 5;
-      }
-
-      /* Show summary when hovering over the title with smooth animation */
-      div.tags:hover ~ p.summary {
-        max-height: 2000px;
-        opacity: 1;
-      }
-      div.tags {
-        @apply flex flex-wrap gap-0.5;
-
-        span.tag {
-          @apply text-xs uppercase;
+        a.title {
+          @apply block 
+          font-medium uppercase 
+          md:overflow-hidden md:whitespace-nowrap md:text-ellipsis;
         }
 
-        span.tag::before {
-          content: "#";
-          @apply mr-0;
+        p.summary {
+          @apply leading-snug text-base font-normal text-justify hyphens-auto;
+          /* Hide summary by default with smooth transition */
+          max-height: 0;
+          opacity: 0;
+          overflow: hidden;
+          transition:
+            max-height 0.3s ease-in-out,
+            opacity 0.3s ease-in-out;
+
+          -webkit-hyphenate-limit-before: 4;
+          -webkit-hyphenate-limit-after: 5;
+          -ms-hyphenate-limit-chars: 10 4 5;
+          hyphenate-limit-chars: 10 4 5;
+        }
+
+        /* Show summary when hovering over the title with smooth animation */
+        &:hover p.summary {
+          max-height: 2000px;
+          opacity: 1;
+        }
+
+        div.tags {
+          @apply flex flex-wrap gap-0.5;
+
+          span.tag {
+            @apply text-xs uppercase;
+          }
+
+          span.tag::before {
+            content: "#";
+            @apply mr-0;
+          }
         }
       }
     }
