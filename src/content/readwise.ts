@@ -1,10 +1,12 @@
-// ========================================
-// Readwise Reader API integration for Astro Content Collections
-// ========================================
+import { writeFile, readFile, mkdir } from 'fs/promises';
+import { existsSync } from 'fs';
+import { join } from 'path';
 
-// ========================================
-// Enums and Constants
-// ========================================
+/**
+ * Cache file path for storing Readwise API responses
+ */
+const CACHE_DIR = '.readwise-cache';
+const CACHE_FILE = join(CACHE_DIR, 'readwise-items.json');
 
 /**
  * Readwise Reader location types
@@ -32,15 +34,11 @@ enum ReadwiseCategory {
 	VIDEO = 'video'
 }
 
-// ========================================
-// Core Types
-// ========================================
-
 /**
  * Represents a simplified Readwise Reader document entry
  * for use in Astro content collections.
  */
-interface ReadwiseItem {
+type ReadwiseItem = {
 	/** The original URL of the article/document */
 	url: URL;
 	/** When this item was last moved/updated in Readwise */
@@ -55,14 +53,12 @@ interface ReadwiseItem {
 	location: ReadwiseLocation;
 	/** Category of content (article, pdf, etc.) */
 	category?: ReadwiseCategory;
-	/** Optional date group for rendering (added by loaders) */
-	dateGroup?: string;
 }
 
 /**
  * Raw response structure from Readwise Reader API
  */
-interface ReadwiseApiDocument {
+type ReadwiseApiDocument = {
 	id: string;
 	source_url: string;
 	last_moved_at: string; // ISO8601 date string from API
@@ -75,7 +71,7 @@ interface ReadwiseApiDocument {
 /**
  * Readwise API response structure
  */
-interface ReadwiseApiResponse {
+type ReadwiseApiResponse = {
 	results: ReadwiseApiDocument[];
 	nextPageCursor?: string;
 	count: number;
@@ -84,7 +80,7 @@ interface ReadwiseApiResponse {
 /**
  * Options for fetching documents from Readwise Reader API
  */
-interface FetchReadwiseOptions {
+type FetchReadwiseOptions = {
 	/** Your Readwise API token */
 	token: string;
 	/** Filter by location */
@@ -98,30 +94,9 @@ interface FetchReadwiseOptions {
 }
 
 /**
- * Base serialized version of ReadwiseItem for storage in collections
- * URLs and Dates become strings when serialized
- */
-interface ReadwiseItemSerializedBase {
-	/** The original URL of the article/document (as string) */
-	url: string;
-	/** When this item was last moved/updated in Readwise (as ISO string) */
-	last_moved_at: string;
-	/** The title of the article/document */
-	title: string;
-	/** AI-generated summary of the content */
-	summary: string;
-	/** Unique identifier from Readwise */
-	id: string;
-	/** Location in Readwise (archive, later, etc.) */
-	location: ReadwiseLocation;
-	/** Category of content (article, pdf, etc.) */
-	category?: ReadwiseCategory;
-}
-
-/**
  * Archive item with required dateGroup for grouped display
  */
-interface ReadwiseArchiveItem extends ReadwiseItemSerializedBase {
+type ReadwiseArchiveItem = ReadwiseItem & {
 	/** Date group for rendering (required for archive items) */
 	dateGroup: string;
 }
@@ -129,8 +104,80 @@ interface ReadwiseArchiveItem extends ReadwiseItemSerializedBase {
 /**
  * Archive collection entry (flat structure for Astro)
  */
-interface ReadwiseArchiveEntry extends ReadwiseArchiveItem {
+type ReadwiseArchiveEntry = ReadwiseArchiveItem & {
 	// Inherits all fields from ReadwiseArchiveItem, no nested 'data' property
+}
+
+/**
+ * Serialized cache data structure
+ */
+type CacheData = {
+	items: ReadwiseItem[];
+	timestamp: number;
+	options: FetchReadwiseOptions;
+}
+
+/**
+ * Cache management for Readwise API responses
+ */
+class ReadwiseCache {
+	/**
+	 * Save items to cache file
+	 */
+	static async saveToCache(items: ReadwiseItem[], options: FetchReadwiseOptions): Promise<void> {
+		try {
+			// Ensure cache directory exists
+			if (!existsSync(CACHE_DIR)) {
+				await mkdir(CACHE_DIR, { recursive: true });
+			}
+
+			const cacheData = {
+				items,
+				timestamp: Date.now(),
+				options: {
+					...options,
+					token: '[REDACTED]' // Don't store the actual token
+				}
+			};
+
+			await writeFile(CACHE_FILE, JSON.stringify(cacheData, null, 2));
+			console.log('✅ Cached Readwise data successfully');
+		} catch (error) {
+			console.warn('⚠️ Failed to save cache:', error);
+		}
+	}
+
+	/**
+	 * Load items from cache file
+	 */
+	static async loadFromCache(): Promise<ReadwiseItem[] | null> {
+		try {
+			if (!existsSync(CACHE_FILE)) {
+				console.log('📁 No cache file found');
+				return null;
+			}
+
+			const cacheContent = await readFile(CACHE_FILE, 'utf-8');
+			const cacheData = JSON.parse(cacheContent);
+
+			// Deserialize items back to ReadwiseItem objects
+			const items: ReadwiseItem[] = cacheData.items.map((item: any) => ({
+				id: item.id,
+				url: new URL(item.url),
+				last_moved_at: new Date(item.last_moved_at),
+				title: item.title,
+				summary: item.summary,
+				location: item.location,
+				category: item.category,
+			}));
+
+			console.log(`📦 Loaded ${items.length} items from cache`);
+			return items;
+		} catch (error) {
+			console.warn('⚠️ Failed to load cache:', error);
+			return null;
+		}
+	}
 }
 
 /**
@@ -146,6 +193,8 @@ async function fetchAllReadwiseReaderItems(
 	const items: ReadwiseItem[] = [];
 
 	let nextPageCursor: string | null = null;
+	let allRequestsSuccessful = true;
+
 	do {
 		const url = new URL(baseUrl);
 		if (location) url.searchParams.set("location", location);
@@ -155,37 +204,62 @@ async function fetchAllReadwiseReaderItems(
 			url.searchParams.set("withHtmlContent", String(withHtmlContent));
 		if (nextPageCursor) url.searchParams.set("pageCursor", nextPageCursor);
 
-		const response = await fetch(url.toString(), {
-			headers: {
-				Authorization: `Token ${token}`,
-			},
-		});
+		try {
+			const response = await fetch(url.toString(), {
+				headers: {
+					Authorization: `Token ${token}`,
+				},
+			});
 
-		if (!response.ok) {
-			throw new Error(
-				`Failed to fetch Reader items: ${response.status} ${response.statusText}`
-			);
+			if (!response.ok) {
+				allRequestsSuccessful = false;
+				throw new Error(
+					`Failed to fetch Reader items: ${response.status} ${response.statusText}`
+				);
+			}
+
+			const data: ReadwiseApiResponse = await response.json();
+			const docs = data.results ?? [];
+
+			for (const doc of docs) {
+				const item: ReadwiseItem = {
+					id: doc.id,
+					url: new URL(doc.source_url),
+					last_moved_at: new Date(doc.last_moved_at),
+					title: doc.title,
+					summary: doc.summary,
+					location: doc.location as ReadwiseLocation,
+					category: doc.category as ReadwiseCategory,
+				};
+
+				items.push(item);
+			}
+
+			nextPageCursor = data.nextPageCursor || null;
+		} catch (error) {
+			allRequestsSuccessful = false;
+			// Handle network errors, timeout, or other fetch exceptions
+			console.error('❌ Network error or fetch exception:', error);
+
+			if (!import.meta.env.PROD) {
+				// Try to use cache as fallback
+				console.log('🔄 Attempting to use cached data due to network error...');
+				const cachedItems = await ReadwiseCache.loadFromCache();
+				if (cachedItems) {
+					console.log('✅ Using cached data instead due to network error');
+					return cachedItems.sort((a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime());
+				} else {
+					console.error('❌ No cache available and network error occurred');
+					throw new Error(`Network error occurred and no cache available: ${error instanceof Error ? error.message : String(error)}`);
+				}
+			}
 		}
-
-		const data: ReadwiseApiResponse = await response.json();
-		const docs = data.results ?? [];
-
-		for (const doc of docs) {
-			const item: ReadwiseItem = {
-				id: doc.id,
-				url: new URL(doc.source_url),
-				last_moved_at: new Date(doc.last_moved_at),
-				title: doc.title,
-				summary: doc.summary,
-				location: doc.location as ReadwiseLocation,
-				category: doc.category as ReadwiseCategory,
-			};
-
-			items.push(item);
-		}
-
-		nextPageCursor = data.nextPageCursor || null;
 	} while (nextPageCursor);
+
+	// Only cache the response if all requests were successful
+	if (allRequestsSuccessful && !import.meta.env.PROD) {
+		await ReadwiseCache.saveToCache(items, options);
+	}
 
 	// Sort items by date in descending order (most recent first)
 	return items.sort((a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime());
@@ -204,14 +278,15 @@ export async function loadReadwiseArchive(token: string): Promise<ReadwiseArchiv
 
 		// Return flat structure for Astro Content Collections
 		const entries = items.map(item => ({
-			id: item.id,
-			title: item.title,
-			summary: item.summary,
-			url: item.url.href, // Convert URL object to string
-			last_moved_at: item.last_moved_at.toISOString(), // Convert Date to ISO string
-			location: item.location,
-			category: item.category,
-			dateGroup: formatDateForDisplay(item.last_moved_at), // Add date group for archive
+			...item,
+			dateGroup:
+				item.last_moved_at
+					.toLocaleDateString("en-GB", {
+						day: "2-digit",
+						month: "short",
+						year: "numeric",
+					})
+					.replace(/\//g, ".")
 		}));
 
 		console.log('Processed archive entries count:', entries.length);
@@ -221,24 +296,5 @@ export async function loadReadwiseArchive(token: string): Promise<ReadwiseArchiv
 		throw error;
 	}
 }
-
-// ========================================
-// Utility Functions
-// ========================================
-
-/**
- * Formats a date for display in the UK format (DD.MM.YYYY)
- */
-function formatDateForDisplay(date: Date): string {
-	return date
-		.toLocaleDateString("en-GB", {
-			day: "2-digit",
-			month: "short",
-			year: "numeric",
-		})
-		.replace(/\//g, ".");
-}
-
-
 
 
