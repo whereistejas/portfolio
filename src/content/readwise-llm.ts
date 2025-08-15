@@ -160,7 +160,7 @@ export async function tagAndGroupDocuments(
 	anthropic: Anthropic,
 	summaries: SummaryCache,
 	maxRetries = 3
-): Promise<{ [id: string]: string[] }> {
+): Promise<{ [id: string]: { tags: string[]; order: number } }> {
 	const inputJson = JSON.stringify(summaries, null, 2);
 	const prompt = `${REORDERING_PROMPT}\n\`\`\`json\n${inputJson}\n\`\`\``;
 
@@ -188,12 +188,12 @@ export async function tagAndGroupDocuments(
 			// Sort by order and return as grouped documents cache format
 			reordered.sort((a, b) => a.order - b.order);
 
-			const result: { [id: string]: string[] } = {};
+			const result: { [id: string]: { tags: string[]; order: number } } = {};
 			for (const item of reordered) {
 				if (!item.id || !Array.isArray(item.tags) || item.tags.length !== 5) {
 					throw new Error(`Invalid reordered item: ${JSON.stringify(item)}`);
 				}
-				result[item.id] = item.tags;
+				result[item.id] = { tags: item.tags, order: item.order };
 			}
 
 			return result;
@@ -220,6 +220,7 @@ export interface DisplayDocument {
 	url: string;
 	tags: string[];
 	summary: string;
+	order: number;
 }
 
 // Cache helper functions
@@ -287,10 +288,10 @@ export async function processDocuments(
 	console.log(`Starting reorder step with ${Object.keys(requestedSummaries).length} tagged documents`);
 
 	// Load grouped documents cache
-	const groupCache: { [id: string]: string[] } = await readJsonCache(GROUPED_CACHE_PATH, {});
+	const groupCache: { [id: string]: { tags: string[]; order: number } } = await readJsonCache(GROUPED_CACHE_PATH, {});
 	console.log(`Group cache has ${Object.keys(groupCache).length} items.`);
 
-	let groupedDocuments: { [id: string]: string[] };
+	let groupedDocuments: { [id: string]: { tags: string[]; order: number } };
 
 	// Check if all documents are already grouped
 	const allDocumentsGrouped = Object.keys(requestedSummaries).every(id => groupCache[id]);
@@ -325,7 +326,7 @@ export async function processDocuments(
 
 	// Create final display documents
 	const result: DisplayDocument[] = [];
-	for (const [id, tags] of Object.entries(groupedDocuments)) {
+	for (const [id, groupData] of Object.entries(groupedDocuments)) {
 		const document = documents.find(d => d.id === id);
 		const summary = requestedSummaries[id];
 
@@ -337,8 +338,9 @@ export async function processDocuments(
 			id,
 			title: document.title,
 			url: document.source,
-			tags,
-			summary: summary.summary
+			summary: summary.summary,
+			tags: groupData.tags,
+			order: groupData.order
 		});
 	}
 

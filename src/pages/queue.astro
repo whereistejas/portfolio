@@ -5,8 +5,9 @@ import Textorlink from "../components/textorlink.astro";
 import Row from "../components/row.astro";
 
 // Fetch queue items from the content collection
-// Items are already ordered by LLM for minimal context switching
+// Sort items by LLM-determined order for minimal context switching
 const queueEntries = await getCollection("readwise-queue");
+queueEntries.sort((a, b) => a.data.order - b.data.order);
 
 const headers = [
   { type: "text", content: "READING QUEUE" },

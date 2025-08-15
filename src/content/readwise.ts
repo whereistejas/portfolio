@@ -117,6 +117,7 @@ type ReadwiseQueueItem = {
 	url: string;
 	tags: string[];
 	summary: string;
+	order: number;
 }
 
 /**

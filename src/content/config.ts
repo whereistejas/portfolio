@@ -39,6 +39,7 @@ const readwiseQueueSchema = z.object({
 	url: z.string(), // Simple string URL (from display cache)
 	tags: z.array(z.string()).length(5), // Exactly 5 LLM-generated tags
 	summary: z.string(), // LLM-enhanced summary
+	order: z.number(), // LLM-determined order for minimal context switching
 });
 
 /**
