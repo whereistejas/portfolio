@@ -9,7 +9,7 @@ on:
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -25,6 +25,21 @@ jobs:
         uses: withastro/action@v3
         env:
           READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Commit updated cache files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add src/content/document-summary-cache.json || true
+          git add src/content/grouped-documents-cache.json || true
+          git add src/content/display-documents-cache.json || true
+          if git diff --staged --quiet; then
+            echo "No cache changes to commit"
+          else
+            git commit -m "Update LLM cache files [skip ci]"
+            git push
+            echo "Cache files updated and committed"
+          fi
 
   deploy:
     needs: build
