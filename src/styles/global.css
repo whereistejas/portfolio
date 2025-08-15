@@ -99,14 +99,14 @@
 
       /* Show summary when hovering over the title with smooth animation */
       div.tags:hover ~ p.summary {
-        max-height: 200px; /* Adjust this value based on your typical summary length */
+        max-height: 2000px;
         opacity: 1;
       }
       div.tags {
         @apply flex flex-wrap gap-0.5;
 
         span.tag {
-          @apply text-xs text-neutral-700 font-medium uppercase;
+          @apply text-xs uppercase;
         }
 
         span.tag::before {
