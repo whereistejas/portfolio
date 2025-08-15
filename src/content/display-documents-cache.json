@@ -1,0 +1,535 @@
+[
+  {
+    "id": "01k1xb9q0p7q9qmw30wbmqr1ts",
+    "title": "What Can a Cell Remember? | Quanta Magazine",
+    "url": "https://www.quantamagazine.org/what-can-a-cell-remember-20250730/",
+    "tags": [
+      "cellular biology",
+      "memory research",
+      "neuroscience",
+      "single-cell organisms",
+      "cognitive science"
+    ],
+    "summary": "Explores emerging research challenging the neurocentric view of memory by demonstrating that single cells can learn and remember. Scientists are rediscovering century-old experiments showing unicellular organisms like Stentor can modify their behavior based on past experiences, while new studies reveal human kidney cells exhibit the spacing effect - a fundamental memory phenomenon. The work suggests memory is an ancient cellular capacity that predates nervous systems by hundreds of millions of years, with implications for understanding cognition as a distributed biological property rather than exclusively neural phenomenon."
+  },
+  {
+    "id": "01k1fvvw9hcjk4fjey8d4x8gsg",
+    "title": "It All Comes Down to the Mitochondria",
+    "url": "https://www.science.org/content/blog-post/it-all-comes-down-mitochondria",
+    "tags": [
+      "sleep",
+      "mitochondria",
+      "biochemistry",
+      "cellular biology",
+      "neuroscience"
+    ],
+    "summary": "Explores the biochemical origins of tiredness and sleep need through research on fruit fly neurons. Findings suggest that mitochondrial dysfunction, particularly electron transport buildup and resulting cellular damage, is the fundamental driver of sleep requirements. Sleep deprivation leads to mitochondrial fragmentation and stress, requiring downtime for repair. The hypothesis proposes that aerobic respiration inherently requires periodic sleep for mitochondrial recovery, especially in nervous system cells, making sleep and hunger both tied to energy balance and mitochondrial health."
+  },
+  {
+    "id": "01jxar0st58n3zv6b7x6424ff0",
+    "title": "Why Mitochondria Are More like a Motherboard Than the Powerhouse of the Cell",
+    "url": "https://www.scientificamerican.com/article/why-mitochondria-are-more-like-a-motherboard-than-the-powerhouse-of-the-cell/",
+    "tags": [
+      "procrastination",
+      "emotional regulation",
+      "psychology",
+      "therapy techniques",
+      "cognitive behavioral therapy"
+    ],
+    "summary": "Explores the revolutionary understanding of mitochondria as dynamic, social organelles that function more like a cellular motherboard than simple powerhouses. Describes how mitochondria communicate through aligned cristae, nanotunnels, and hormonal signaling, forming specialized communities within and between cells. Presents evidence that mitochondria operate as information-processing systems that integrate environmental signals and regulate gene expression, with implications for diseases like diabetes, cancer, and neurodegeneration. Discusses therapeutic interventions including exercise, social connections, and ketogenic diets that support mitochondrial health and potentially treat mental health conditions."
+  },
+  {
+    "id": "01jy7rehn3m7m521ddgc5p1y30",
+    "title": "Size and Geometry Introduction",
+    "url": "https://book.bionumbers.org/size-and-geometry-introduction/",
+    "tags": [
+      "cell biology",
+      "biophysics",
+      "quantitative biology",
+      "molecular biology",
+      "structural biology"
+    ],
+    "summary": "Explores the fundamental importance of size and geometry in biological systems across multiple scales, from individual molecules to cellular structures. Discusses how size constraints affect biological function, using examples like surface tension effects on different organisms. Introduces the concept of using model systems (E. coli for bacteria, HeLa cells for mammalian cells) to understand general biological principles. Examines the relationship between structure and function, including how size differences between hosts affect viral burst sizes. Emphasizes the role of Avogadro's number in connecting macroscopic and microscopic biological phenomena."
+  },
+  {
+    "id": "01jwf9yr2mwzaakjns4hqe2sbb",
+    "title": "The Baffling Intelligence of a Single Cell: The story of E. coli chemotaxis",
+    "url": "https://jsomers.net/e-coli-chemotaxis/",
+    "tags": [
+      "molecular biology",
+      "systems biology",
+      "cellular computation",
+      "bacterial behavior",
+      "biochemistry"
+    ],
+    "summary": "Explores the sophisticated foraging behavior of E. coli bacteria through chemotaxis - their ability to sense and navigate toward nutrients using chemical gradients. Details the molecular machinery including receptor complexes that detect attractants, signaling proteins like CheY that carry information, and flagellar motors that control swimming behavior. Covers the adaptation mechanism through methylation that allows bacteria to respond across wide concentration ranges, creating a form of cellular memory. Examines the physical structure and mechanics of flagellar motors, protein interactions, and the experimental methods used to understand these processes. Demonstrates how single cells exhibit computational intelligence through molecular networks."
+  },
+  {
+    "id": "01k2fder0ezwd75njceewc980v",
+    "title": "The Making of a Gene Circuit",
+    "url": "https://www.asimov.press/p/gene-circuit",
+    "tags": [
+      "synthetic biology",
+      "gene circuits",
+      "molecular biology",
+      "bioengineering",
+      "genetic engineering"
+    ],
+    "summary": "Explores the creation and functioning of the repressilator, a foundational synthetic gene circuit developed by Michael Elowitz that made cells oscillate in periodic rhythms. Details the circuit's design using three genes in negative feedback loops, mathematical modeling with differential equations, and parameter optimization. Discusses how this breakthrough launched synthetic biology by proving that predictable biological circuits could be engineered, and traces subsequent improvements to enhance precision and reliability."
+  },
+  {
+    "id": "01jx25y45749xbqr1mr7ypqadm",
+    "title": "A Visual Guide to Genome Editors",
+    "url": "https://www.asimov.press/p/a-visual-guide-to-genome-editors",
+    "tags": [
+      "gene therapy",
+      "CRISPR",
+      "genome editing",
+      "biotechnology",
+      "molecular biology"
+    ],
+    "summary": "Comprehensive overview of genome editing technologies, covering the evolution from bacterial immune systems to therapeutic tools. Explains mechanisms of CRISPR-Cas9, Cas12, and Cas13 systems, along with engineered variants like base editors, prime editors, and bridge RNA systems. Details how these tools work at the molecular level, their off-target effects, current clinical applications including FDA-approved Casgevy for sickle cell disease, and future therapeutic potential. Includes discussion of delivery methods, specificity improvements, and emerging applications in agriculture and sustainability."
+  },
+  {
+    "id": "01k2fdeym6jvfb3zkgx0j3c11f",
+    "title": "A Visual Guide to Gene Delivery",
+    "url": "https://www.asimov.press/p/gene-delivery",
+    "tags": [
+      "gene therapy",
+      "biotechnology",
+      "medical technology",
+      "drug delivery",
+      "viral vectors"
+    ],
+    "summary": "Comprehensive overview of gene delivery vectors used in gene therapy, examining the technical and economic tradeoffs between different delivery systems. Covers adeno-associated virus (AAV), adenovirus, lipid nanoparticles (LNPs), herpes simplex virus (HSV), and lentivirus vectors. Details their mechanisms, cargo capacity, tissue specificity, immune responses, and clinical applications. Explains the distinction between ex vivo and in vivo gene therapies, and how vector selection depends on factors like target tissue, payload size, duration of expression needed, manufacturing costs, and safety profiles. Includes current clinical trials and FDA-approved therapies using each vector type."
+  },
+  {
+    "id": "01k0yr5mk34g2yn5vq2521828c",
+    "title": "Researchers simulate an entire fly brain on a laptop. Is a human brain next?",
+    "url": "https://news.berkeley.edu/2024/10/02/researchers-simulate-an-entire-fly-brain-on-a-laptop-is-a-human-brain-next/",
+    "tags": [
+      "neuroscience",
+      "brain simulation",
+      "connectome",
+      "computational biology",
+      "artificial intelligence"
+    ],
+    "summary": "Scientists successfully created a computer simulation of an entire fruit fly brain containing 139,255 neurons and 50 million connections that runs on a laptop. The model accurately predicts neural activity and behavior responses when sensory neurons are stimulated, such as proboscis extension for feeding or grooming behaviors. This achievement represents the first complete connectome simulation for a complex brain and demonstrates that brain wiring diagrams can effectively predict neural function. The research suggests potential applications for understanding brain disorders, developing AI systems based on biological neural networks, and paves the way for future simulations of mouse and human brains to study mental health disorders and brain function."
+  },
+  {
+    "id": "01k0yr667kps6mz7abkd99n3ds",
+    "title": "Why the Human Brain Project Went Wrong—and How to Fix It",
+    "url": "https://www.scientificamerican.com/article/why-the-human-brain-project-went-wrong-and-how-to-fix-it/",
+    "tags": [
+      "neuroscience",
+      "big science",
+      "scientific management",
+      "brain research",
+      "European Union"
+    ],
+    "summary": "Examines the failure of the European Union's $1.3 billion Human Brain Project, led by neuroscientist Henry Markram, which aimed to simulate the entire human brain on a supercomputer. The project faced scientific criticism, management dysfunction, and governance issues including conflicts of interest. Compares this centralized approach with the more successful, distributed U.S. BRAIN Initiative. Discusses broader issues with Big Science funding, the tension between political objectives and scientific feasibility, and how bureaucratic processes can enable poorly conceived megaprojects. Explores whether the project can be salvaged through reorganization and refocusing on computational tools rather than full brain simulation."
+  },
+  {
+    "id": "01jyct0ccg4hydaqgav2fj991p",
+    "title": "On The Tolkienic Hero",
+    "url": "https://scholars-stage.org/on-the-tolkienic-hero/",
+    "tags": [
+      "Tolkien",
+      "literary criticism",
+      "heroism",
+      "character archetypes",
+      "cultural analysis"
+    ],
+    "summary": "Analyzes the concept of the reluctant hero archetype that dominates modern literature, arguing that Tolkien fundamentally redefined heroism from the classical pursuit of glory and power to a modern distrust of authority and preference for ordinary life. Contrasts ancient heroes who actively sought greatness with contemporary protagonists who have greatness thrust upon them. Explores how this shift reflects broader cultural changes following world wars and totalitarianism, positioning Tolkien as potentially the defining literary voice of the 20th century due to his ability to create inspiring heroes within a framework of modern skepticism about power."
+  },
+  {
+    "id": "01jyfbnd92y1w2xhm511pakkze",
+    "title": "The Fight Against Cancer Turns to a Special Class of Carcinogens | Th…",
+    "url": "https://archive.is/Jpuzq",
+    "tags": [
+      "cancer biology",
+      "carcinogens",
+      "environmental health",
+      "inflammation",
+      "toxicology"
+    ],
+    "summary": "Explores the emerging understanding of a new class of carcinogens - substances that don't directly cause DNA mutations but instead promote cancer by awakening dormant mutant cells through inflammatory processes. Discusses how traditional cancer testing (like the Ames test) focuses on mutagenic chemicals, but researchers are discovering that many carcinogens work as 'promoters' rather than 'initiators' - creating inflammatory environments that rouse pre-existing mutant cells from dormancy. Uses air pollution and fine particulate matter as key examples, showing how PM2.5 particles don't mutate DNA but trigger inflammatory responses that lead to tumor formation in lung tissue already containing rare mutant cells. Challenges the conventional multi-hit model of cancer development and suggests we may be missing a vast universe of cancer-promoting environmental irritants."
+  },
+  {
+    "id": "01jym0svp7f768hbhjymgmhyd5",
+    "title": "Medicine’s Burning Question | The New Yorker",
+    "url": "https://www.newyorker.com/magazine/2015/11/30/inflamed",
+    "tags": [
+      "inflammation",
+      "medicine",
+      "chronic disease",
+      "immune system",
+      "medical research"
+    ],
+    "summary": "Explores the complex role of inflammation in human health, examining how it functions as both a protective mechanism and potential contributor to chronic diseases. Discusses scientific research linking inflammation to heart disease, diabetes, and Alzheimer's, while critically evaluating popular claims about anti-inflammatory diets and treatments. Highlights the gap between promising laboratory findings and limited clinical evidence, emphasizing that correlation doesn't equal causation in inflammation research."
+  },
+  {
+    "id": "01jyxcfgnngyv41y6ma393y3jx",
+    "title": "Endometriosis is an incredibly interesting disease",
+    "url": "https://www.owlposting.com/p/endometriosis-is-an-incredibly-interesting",
+    "tags": [
+      "endometriosis",
+      "women's health",
+      "gynecology",
+      "medical research",
+      "chronic disease"
+    ],
+    "summary": "An in-depth exploration of endometriosis, examining why it's one of the most fascinating and understudied diseases. The condition involves endometrial-like tissue growing outside the uterus, causing chronic pain and inflammation. The primary theory of retrograde menstruation cannot fully explain all cases, as the disease occurs in non-menstruating individuals and distant organs. Endometriosis shares striking similarities with cancer, including oncogenic mutations, invasion capabilities, and tissue manipulation. Despite affecting 10% of reproductive-age women globally, there are no curative treatments - only hormonal management and surgical interventions that don't prevent recurrence. The disease is severely underfunded relative to its widespread impact, with a 7-10 year average diagnostic delay due to requiring invasive laparoscopic surgery for confirmation."
+  },
+  {
+    "id": "01jzmqv1gtzgntkpr861khmtdw",
+    "title": "How did X-Rays gain mass adoption?",
+    "url": "https://www.aditharun.com/p/how-did-x-rays-gain-mass-adoption",
+    "tags": [
+      "medical technology adoption",
+      "X-ray history",
+      "healthcare innovation",
+      "technology diffusion",
+      "medical regulation"
+    ],
+    "summary": "Examines how X-rays achieved rapid mass adoption from 1895-1925 despite initial skepticism, driven by military use in WWI, physician curiosity, lack of regulatory barriers, fee-for-service payment model, and immediate visual results. Contrasts this with modern challenges facing cell-free DNA adoption, including FDA regulation, complex interpretation requirements, insurance coverage limitations, and slower clinician demand. Argues that today's regulatory and payment structures may impede breakthrough medical technologies despite their patient benefits."
+  },
+  {
+    "id": "01k0ym452574a7aed7aj98rmnv",
+    "title": "The Brilliant Inventor Who Made Two of History’s Biggest Mistakes",
+    "url": "https://archive.ph/B5R0C",
+    "tags": [
+      "innovation",
+      "unintended consequences",
+      "environmental science",
+      "technology ethics",
+      "chemistry"
+    ],
+    "summary": "Explores the life of Thomas Midgley Jr., who invented both leaded gasoline and chlorofluorocarbons (CFCs/Freon) in the 1920s. While these innovations solved urgent technological problems - eliminating engine knock and creating safer refrigeration - they caused massive environmental and health damage decades later. The story examines unintended consequences of innovation, the challenge of predicting long-term effects of new technologies, and raises questions about how to evaluate risks when developing potentially world-changing inventions. Discusses the difference between 'known unknowns' (like lead toxicity) and 'unknown unknowns' (like ozone depletion), and considers implications for modern technologies like genetic engineering and nanotechnology."
+  },
+  {
+    "id": "01k0bvm4t4fvbr5276rebhnnf0",
+    "title": "Will We Ever Get Fusion Power?",
+    "url": "https://www.construction-physics.com/p/will-we-ever-get-fusion-power",
+    "tags": [
+      "nuclear fusion",
+      "energy technology",
+      "plasma physics",
+      "clean energy",
+      "scientific research"
+    ],
+    "summary": "Explores the history and future prospects of nuclear fusion power, from early research in the 1930s through modern private ventures. Covers the scientific challenges of creating and containing plasma at extreme temperatures, the evolution of different reactor designs (tokamaks, stellarators, pinch machines), decades of government-funded research with limited practical results, and the recent surge in private fusion companies raising billions in funding. Examines both optimistic and pessimistic views on whether fusion will ever become a commercially viable energy source, comparing fusion's development pace to other breakthrough technologies."
+  },
+  {
+    "id": "01jxnq8j9ren2sv44agrbnzheb",
+    "title": "NASA Is Worth Saving",
+    "url": "https://caseyhandmer.wordpress.com/2025/06/12/nasa-is-worth-saving/",
+    "tags": [
+      "NASA",
+      "space policy",
+      "China competition",
+      "Space Launch System",
+      "organizational reform"
+    ],
+    "summary": "Argues that NASA faces an existential crisis as China approaches lunar dominance within 1637 days while NASA's Space Launch System cannot actually reach the Moon despite $100 billion in spending over 20 years. Critiques NASA's institutional failures including talent misallocation, bureaucratic inefficiency, and inability to leverage abundant commercial launch capacity from SpaceX. Proposes organizational reforms including flattened management, product-oriented structure, improved hiring practices, and urgent refocus on Moon and Mars missions to defend US interests in space and preserve democratic values against authoritarian competition."
+  },
+  {
+    "id": "01k0ykj81ccqfeyga677yya7jz",
+    "title": "Bill Atkinson, Macintosh Pioneer and Inventor of Hypercard, Dies at 74",
+    "url": "https://www.wired.com/story/bill-atkinson-apple-engineer-dies/",
+    "tags": [
+      "Apple",
+      "computer history",
+      "graphical user interface",
+      "software development",
+      "technology pioneers"
+    ],
+    "summary": "Obituary of a pioneering computer engineer who made fundamental contributions to personal computing at Apple, including developing QuickDraw graphics technology, MacPaint, and the Round-Rect interface element for the Macintosh. Later created HyperCard, a hypertext linking system that prefigured the World Wide Web. Also worked on early tablet concepts and handheld devices that anticipated modern smartphones and iPads. After leaving tech, became a nature photographer specializing in abstract stone imagery."
+  },
+  {
+    "id": "01k0yk3nd27x9s3w1jhcxa17g8",
+    "title": "Bill Atkinson, Who Made Computers Easier to Use, Is Dead at 74",
+    "url": "https://archive.ph/Lb4C8",
+    "tags": [
+      "Apple",
+      "computer history",
+      "graphical user interface",
+      "software development",
+      "technology pioneers"
+    ],
+    "summary": "Obituary of a pioneering Apple software designer who created QuickDraw, the foundational graphics software that enabled the Lisa and Macintosh computers' revolutionary graphical user interface. He invented key computing concepts like pull-down menus and double-click gestures, developed MacPaint drawing software, and later created HyperCard, a precursor to the World Wide Web. His work transformed computers from text-based business machines into user-friendly consumer products that enabled individual creativity."
+  },
+  {
+    "id": "01k0rkksw05j6r0fb3sg2t75ze",
+    "title": "LL and LR Parsing Demystified",
+    "url": "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html",
+    "tags": [
+      "parsing",
+      "compilers",
+      "LL parsing",
+      "LR parsing",
+      "algorithms"
+    ],
+    "summary": "Explains LL and LR parsing algorithms from an implementation perspective rather than mathematical. Draws parallels between Polish/Reverse Polish notation and parsing approaches - LL parsers output pre-order traversals (like Polish notation) while LR parsers output post-order traversals (like Reverse Polish). Discusses how parsers transform token streams by inserting grammar rules at appropriate positions, the role of lookahead in parsing decisions, and trade-offs between approaches. LL parsers have less lookahead information but know parsing context, enabling regex-like grammar operators and inherited attributes. LR parsers can handle more grammars including left recursion due to better lookahead positioning."
+  },
+  {
+    "id": "01k2j3mk1ywfs2m2bt4kjch8q8",
+    "title": "A.I. Is Shedding Enlightenment Values",
+    "url": "https://archive.ph/tKiYx",
+    "tags": [
+      "artificial intelligence",
+      "AI ethics",
+      "Enlightenment",
+      "intellectual history",
+      "philosophy"
+    ],
+    "summary": "Compares AI's promise of a \"second Enlightenment\" to the original 18th-century intellectual movement, finding striking parallels in their revolutionary ambitions, knowledge organization, and educational transformation. However, argues that AI fundamentally differs from Enlightenment values by reinforcing existing beliefs rather than challenging them, providing pre-digested answers instead of forcing critical thinking, and following user preferences rather than leading intellectual development. Concludes that while AI offers utility, it undermines the core Enlightenment principle of intellectual challenge and may actually distance us from true enlightenment."
+  },
+  {
+    "id": "01k2fpgz8hzcvet5rbnz9gpr5a",
+    "title": "A startup is a bundle, and Windsurf broke the bundle",
+    "url": "https://alexdanco.com/2025/07/18/a-startup-is-a-bundle-and-windsurf-broke-the-bundle/",
+    "tags": [
+      "startup economics",
+      "bundling theory",
+      "AI talent wars",
+      "equity distribution",
+      "venture capital"
+    ],
+    "summary": "Analyzes how AI talent wars are disrupting traditional startup economics by breaking the \"startup bundle\" - the mechanism that aligns founders, VCs, and employees around shared equity upside. Uses the Windsurf acquisition case where founders/key employees were hired by Google separately from the company being acquired by Cognition, creating an unbundled liquidation event. Argues this precedent threatens the coordination benefits that bundled equity provides, making it harder for founders to align stakeholders and maximize overall company potential."
+  },
+  {
+    "id": "01jwg7jf76yadan8p0cbkmjcvw",
+    "title": "The Reenchanted World",
+    "url": "https://harpers.org/archive/2025/06/the-reenchanted-world-karl-ove-knausgaard-digital-age/",
+    "tags": [
+      "technology criticism",
+      "digital alienation",
+      "nature vs technology",
+      "phenomenology",
+      "embodied experience"
+    ],
+    "summary": "Explores the author's relationship with technology from first encountering a computer in 1984 to grappling with feeling alienated from a digitally saturated world. Argues that technology creates a substitute reality of images and information that distances us from direct experience, leading to a \"loss of the world.\" Through conversations with technologist James Bridle and personal experiences with gardening and brain surgery observation, examines how to reconnect with the physical, material world while finding ways to relate to technology that don't involve rejection but rather understanding and active engagement."
+  },
+  {
+    "id": "01jy6rem6wbkfj90g95gazpq5p",
+    "title": "More on Repealing the Laws of Economics",
+    "url": "https://www.oaktreecapital.com/insights/memo/more-on-repealing-the-laws-of-economics",
+    "tags": [
+      "economics",
+      "government intervention",
+      "market forces",
+      "regulation",
+      "economic policy"
+    ],
+    "summary": "Explores how government interventions that override market mechanisms often produce unintended negative consequences. Uses rent control, California fire insurance regulations, and tariffs as primary examples to illustrate how attempts to mandate economic outcomes typically create more problems than they solve. Also discusses fiscal irresponsibility in government spending and Social Security funding as examples of ignoring economic realities. Argues that while free markets don't produce perfect outcomes, they generally lead to better overall welfare than heavy-handed government intervention."
+  },
+  {
+    "id": "01k2j40tf05d83f02kjh422fnt",
+    "title": "India and the invidious comparison with China",
+    "url": "https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/?ref=thediff.co",
+    "tags": [
+      "economic development",
+      "comparative economics",
+      "India",
+      "China",
+      "manufacturing"
+    ],
+    "summary": "Examines why India hasn't achieved China-style economic superpower status despite expectations, analyzing key differences in manufacturing share, investment rates, human capital development, and state capacity. Argues that while India lags China in manufacturing (13% vs higher rates) and has lower investment shares, it has achieved 7%+ GDP growth through services-led boom rather than traditional East Asian export manufacturing model. Suggests India should build on existing strengths in IT services and focus on incremental reforms rather than attempting to replicate China's manufacturing-heavy industrial policy approach."
+  },
+  {
+    "id": "01k18xzxnt7gec54mw47qe2730",
+    "title": "American fried chicken can now be served from the Philippines",
+    "url": "https://archive.ph/j9NOC",
+    "tags": [
+      "global trade",
+      "service economy",
+      "developing countries",
+      "digital transformation",
+      "economic development"
+    ],
+    "summary": "Examines the rise of service exports from developing countries, exemplified by Filipino virtual cashiers serving American restaurants. Service exports have grown 60% over the past decade to $7.9 trillion, while goods trade has stagnated. Developing nations are increasingly exporting IT services, business services, and medical tourism. While services offer technological advancement and tradability similar to manufacturing, they provide fewer jobs and may be vulnerable to AI disruption. Countries must now focus on human capital and urban development rather than traditional manufacturing-led growth strategies."
+  },
+  {
+    "id": "01k1c5yaaf9tngc5pnssxa6zgw",
+    "title": "Does the U.S. Actually Have the Will to Reindustrialize?",
+    "url": "https://www.corememory.com/p/does-the-us-actually-have-the-will?r=1gvqcg&utm_medium=ios&triedRedirect=true",
+    "tags": [
+      "manufacturing",
+      "reindustrialization",
+      "US economy",
+      "industrial policy",
+      "economic competitiveness"
+    ],
+    "summary": "Argues that the U.S. faces challenges in reindustrialization efforts, with Tesla and SpaceX being the only major manufacturing success stories in the past two decades, suggesting a concerning lack of broader industrial revival and questioning America's commitment to rebuilding its manufacturing base."
+  },
+  {
+    "id": "01k10h6bjne1bjfp0pandb9aec",
+    "title": "The Clash Of Two Gilded Ages",
+    "url": "https://www.noemamag.com/the-clash-of-two-gilded-ages/",
+    "tags": [
+      "comparative politics",
+      "political economy",
+      "US-China relations",
+      "capitalism",
+      "inequality"
+    ],
+    "summary": "Compares America's 19th-century Gilded Age with contemporary China and modern America, arguing that both the US and China currently face similar challenges of inequality, corruption, and financial instability despite different political systems. Examines how capitalism and democracy/authoritarianism coexist in tension, with both Biden and Xi attempting progressive reforms to address capitalist excesses. Critiques the \"clash of civilizations\" narrative, proposing instead that US-China competition should be understood as rival nations addressing shared domestic problems rather than destined cultural conflict."
+  },
+  {
+    "id": "01k10j2dq4d6gxg5wqs5ae3zcz",
+    "title": "A digital payments revolution in India",
+    "url": "https://archive.is/3RNVw",
+    "tags": [
+      "digital payments",
+      "fintech",
+      "emerging markets",
+      "India",
+      "financial technology"
+    ],
+    "summary": "Explores how emerging economies, particularly India, have developed alternative digital payment systems that bypass traditional banking infrastructure. Focuses on India's UPI (Unified Payments Interface) which processes over $1 trillion annually and facilitates free, instant bank-to-bank transfers through QR codes and mobile apps. Compares open payment systems like UPI and Brazil's Pix with closed ecosystems like China's Alipay and WeChat Pay. Discusses how digital payments can drive financial inclusion, enable credit access for underbanked populations, and potentially allow developing countries to leapfrog Western financial infrastructure. Examines the tradeoffs of state-subsidized, zero-fee models including reduced investment in consumer protection and fraud prevention."
+  },
+  {
+    "id": "01k18xy2c4hxqamxnkfhfna78d",
+    "title": "A short history of India in eight maps",
+    "url": "https://archive.ph/dRE9b",
+    "tags": [
+      "Indian history",
+      "political geography",
+      "empire building",
+      "cultural diversity",
+      "state formation"
+    ],
+    "summary": "Traces India's political evolution through eight historical periods using maps, from the Mauryan Empire under Ashoka to modern India. Explores how various rulers - from Buddhist emperors to Muslim sultans to British colonizers - attempted to unify the diverse subcontinent, often failing due to India's linguistic, cultural, and regional diversity. Chronicles the rise and fall of major empires including the Mughals, British colonial rule, partition in 1947, and post-independence reorganization of states along linguistic lines. Emphasizes that India's greatest challenge and strength has always been accommodating its vast diversity while maintaining political unity."
+  },
+  {
+    "id": "01k10ga3m23ks5864t1qtxvz0p",
+    "title": "Contrary India",
+    "url": "https://archive.is/ab6nD",
+    "tags": [
+      "democracy",
+      "political systems",
+      "India",
+      "governance",
+      "public reasoning"
+    ],
+    "summary": "Explores the paradoxical nature of India's democracy, highlighting how the country successfully maintains democratic institutions with free elections, speech, and civil liberties while simultaneously facing persistent challenges like poverty, illiteracy, and undernourishment. Argues that India's democratic success stems from its ancient tradition of public reasoning and argumentative discourse, dating back to Buddhist councils in the 6th century BC. Emphasizes how democracy protects minority rights and maintains secularism, as evidenced by religious minorities holding top leadership positions despite Hindu majority. Contends that India's extensive practice of democracy offers valuable lessons for global democratic development."
+  },
+  {
+    "id": "01k10g6485vhvggbvmqvq7cj0s",
+    "title": "He had strong views on India’s leaders",
+    "url": "https://archive.is/RFFHA#selection-1339.116-1339.217",
+    "tags": [
+      "Lee Kuan Yew",
+      "Singapore",
+      "India",
+      "political leadership",
+      "economic development"
+    ],
+    "summary": "Explores Lee Kuan Yew's complex relationship with India and its leaders from Nehru to Modi. Discusses his admiration for Nehru, controversial support of Indira Gandhi's Emergency, criticism of India's bureaucracy and development path, dismissal of India-China conflict theories, and eventual recognition of India's economic potential. Covers his views on Indian leadership, economic policy, and geopolitical positioning in Asia."
+  },
+  {
+    "id": "01k10hk5n1ya3cd38bdm224d4h",
+    "title": "Why India’s elite loves Narendra Modi",
+    "url": "https://archive.is/NUfMd",
+    "tags": [
+      "Indian politics",
+      "populism",
+      "political science",
+      "Modi",
+      "electoral politics"
+    ],
+    "summary": "Explores why India's Prime Minister Narendra Modi maintains strong support among educated elites despite being a populist leader, contradicting the typical pattern where higher education correlates with lower support for populists. Three key factors explain this phenomenon: class politics where Modi appeals to upper-caste Hindus and business communities while marketing as pan-Hindu; economic growth creating an affluent middle class that benefits from his policies; and elite admiration for strongman governance that they believe can drive development. The analysis examines polling data showing Modi's approval increases with education level, discusses his geopolitical positioning, and considers what might eventually erode his elite support base."
+  },
+  {
+    "id": "01k10hr6jb5ydtqsvwfph68f7r",
+    "title": "How Modi’s party took over one of India’s most prestigious private clubs",
+    "url": "https://www.ft.com/content/3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116",
+    "tags": [
+      "Indian politics",
+      "Modi",
+      "BJP",
+      "elite institutions",
+      "political control"
+    ],
+    "summary": "Explores the political takeover of an elite private club in Delhi, examining how Modi's BJP government seized control of the prestigious Delhi Gymkhana Club in 2021, citing financial mismanagement and corruption. The takeover represents a broader pattern of the nationalist government challenging traditional elite institutions and colonial-era establishments. Long-standing members are fighting legal battles to regain control, viewing the government's actions as politically motivated score-settling and an attempt to transform civil society institutions. The conflict reveals tensions between India's old establishment elites and the new political order."
+  },
+  {
+    "id": "01k2net1yda1j1tqkqadctppfx",
+    "title": "The Wedding Wars - Samir Varma",
+    "url": "https://substack.com/inbox/post/168803790?r=1gvqcg&utm_medium=ios&triedRedirect=true",
+    "tags": [
+      "Indian culture",
+      "marriage traditions",
+      "social change",
+      "caste system",
+      "tradition vs modernity"
+    ],
+    "summary": "Explores the tension between traditional arranged marriages within caste and religious boundaries versus modern love marriages in Indian society, highlighting how contemporary weddings navigate between preserving cultural customs and embracing progressive values."
+  },
+  {
+    "id": "01jxqzew0asyht6bdwqcsnbyha",
+    "title": "The ‘Arab Spring’ and other American seasons",
+    "url": "https://www.aljazeera.com/opinions/2012/8/29/the-arab-spring-and-other-american-seasons/",
+    "tags": [
+      "Arab Spring",
+      "Middle East politics",
+      "US foreign policy",
+      "neoliberalism",
+      "political analysis"
+    ],
+    "summary": "A critical analysis of the Western framing of Arab uprisings as an \"Arab Spring,\" arguing this terminology serves US strategic interests rather than reflecting the actual nature of these movements. Contrasts the Prague Spring (1966-68) - a top-down, neoliberal reform benefiting managerial classes while harming workers - with Arab uprisings that protest neoliberalism and demand both economic and political rights. Examines how the US supports counter-revolutions in client states while backing regime change in semi-independent states like Libya and Syria. Argues that Arab peoples seek comprehensive human rights (both Soviet-style economic rights and Western-style civil rights) while the US promotes only formal political changes that preserve elite control and neoliberal economics."
+  },
+  {
+    "id": "01k228ps97vg5bwhhv6433c1tm",
+    "title": "The Popular Alternative",
+    "url": "https://dirt.fyi/article/2025/05/the-popular-alternative",
+    "tags": [
+      "film industry",
+      "A24",
+      "independent cinema",
+      "corporate strategy",
+      "brand marketing"
+    ],
+    "summary": "Examines A24's evolution from scrappy independent distributor to mainstream entertainment company backed by private equity. Analyzes how the studio has built brand loyalty through strategic marketing while maintaining an \"alternative\" image, despite increasingly chasing mainstream success. Critiques the company's transformation from art-focused to growth-driven entity, comparing it to Disney and Miramax. Explores the tension between A24's reputation as champion of independent cinema and its corporate ambitions, including expansion into TV, merchandise, and potential franchises. Questions whether A24 represents genuine artistic innovation or sophisticated brand management that packages prestige for consumption."
+  },
+  {
+    "id": "01k0cet4pw72nn9pab1a2sywrx",
+    "title": "Tradition is Smarter Than You Are",
+    "url": "https://scholars-stage.org/tradition-is-smarter-than-you-are/",
+    "tags": [
+      "cultural evolution",
+      "tradition",
+      "rationalism",
+      "anthropology",
+      "cultural adaptation"
+    ],
+    "summary": "Argues that cultural traditions and practices often contain adaptive wisdom that evolved over generations, even when practitioners cannot explain why they work. Uses examples like cassava processing techniques and divination practices to show how cultural evolution produces solutions that individual rational thinking cannot easily discover. Contrasts this with modern rationalist approaches that dismiss unexplainable traditions, potentially destroying valuable accumulated knowledge. Explores the tension between preserving traditional wisdom and adapting to rapidly changing modern conditions where old traditions may no longer be adaptive."
+  },
+  {
+    "id": "01k0p4hj3k6r9vetkx17nqr6fe",
+    "title": "The Copenhagen Interpretation of Ethics",
+    "url": "https://laneless.substack.com/p/the-copenhagen-interpretation-of-ethics",
+    "tags": [
+      "ethics",
+      "moral philosophy",
+      "social criticism",
+      "moral responsibility",
+      "behavioral economics"
+    ],
+    "summary": "Introduces the concept that observing or interacting with a problem makes one morally responsible for it, even when providing partial solutions or marginal improvements. Uses examples like homeless programs, surge pricing, and charitable efforts to show how people attempting to help are often criticized more harshly than those who do nothing. Argues that this ethical framework discourages beneficial action and suggests we should accept partial improvements rather than demanding perfect solutions."
+  },
+  {
+    "id": "01jzagw9s9k81xj7hsvq10b98n",
+    "title": "Flounder Mode",
+    "url": "https://joincolossus.com/article/flounder-mode/",
+    "tags": [
+      "career philosophy",
+      "work-life balance",
+      "Silicon Valley culture",
+      "alternative success models",
+      "creative work"
+    ],
+    "summary": "A profile of Kevin Kelly that explores an alternative approach to ambitious work life, contrasting the traditional Silicon Valley \"unicorn or bust\" mentality with Kelly's \"Hollywood style\" of pursuing diverse creative projects. The piece examines how one can maintain both ambition and joy in work, questioning the cultural fetishization of suffering and white-knuckling in pursuit of greatness. Through Kelly's example of following interests rather than destinations, the essay advocates for a more sustainable, happiness-compatible approach to impactful work that doesn't require being tortured into greatness."
+  }
+]

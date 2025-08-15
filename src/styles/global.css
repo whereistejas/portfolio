@@ -83,11 +83,36 @@
 
       p.summary {
         @apply leading-snug text-base font-normal text-justify hyphens-auto;
+        /* Hide summary by default with smooth transition */
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.3s ease-in-out,
+          opacity 0.3s ease-in-out;
 
         -webkit-hyphenate-limit-before: 4;
         -webkit-hyphenate-limit-after: 5;
         -ms-hyphenate-limit-chars: 10 4 5;
         hyphenate-limit-chars: 10 4 5;
+      }
+
+      /* Show summary when hovering over the title with smooth animation */
+      div.tags:hover ~ p.summary {
+        max-height: 200px; /* Adjust this value based on your typical summary length */
+        opacity: 1;
+      }
+      div.tags {
+        @apply flex flex-wrap gap-0.5;
+
+        span.tag {
+          @apply text-xs text-neutral-700 font-medium uppercase;
+        }
+
+        span.tag::before {
+          content: "#";
+          @apply mr-0;
+        }
       }
     }
   }

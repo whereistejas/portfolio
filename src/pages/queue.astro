@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content";
+import Page from "../layouts/page.astro";
+import Textorlink from "../components/textorlink.astro";
+import Row from "../components/row.astro";
+
+// Fetch queue items from the content collection
+// Items are already ordered by LLM for minimal context switching
+const queueEntries = await getCollection("readwise-queue");
+
+const headers = [
+  { type: "text", content: "READING QUEUE" },
+  { type: "link", content: "CLOSE", href: "/" },
+];
+---
+
+<Page title="Reading Queue">
+  <Fragment slot="header">
+    {
+      headers.map((el) => (
+        <Textorlink type={el.type} content={el.content} href={el.href} />
+      ))
+    }
+  </Fragment>
+  <Fragment slot="main">
+    <div class="archive_main">
+      <div class="items">
+        {
+          queueEntries.map((item) => (
+            <div>
+              <a
+                href={item.data.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="title"
+              >
+                {item.data.title}
+              </a>
+              <div class="tags">
+                {item.data.tags.map((tag, index) => (
+                  <span class="tag" data-primary={index === 0}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <p class="summary">{item.data.summary}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </Fragment>
+</Page>
