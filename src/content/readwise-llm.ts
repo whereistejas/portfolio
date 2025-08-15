@@ -141,7 +141,9 @@ For example,
 
 Do not wrap your JSON response in markdown code blocks or any other formatting. Return only the raw JSON object.
 
+Follow these two instructions at all times, they are non-negotiable:
 STRICTLY NEVER change the "id" of the item and ALWAYS, ALWAYS PRESERVE it.
+ENSURE that you return ALL items in your response. Double check to make sure you haven't missed any.
 
 Thank you for helping me out.`;
 
@@ -248,6 +250,12 @@ export async function processDocuments(
 	const summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
 	console.log(`Summary cache has ${Object.keys(summaryCache).length} items.`);
 
+	// Log missing items from summary cache
+	const missingFromSummaryCache = documents.filter(doc => !summaryCache[doc.id]).map(doc => doc.id);
+	if (missingFromSummaryCache.length > 0) {
+		console.log(`Missing ${missingFromSummaryCache.length} items from summary cache:`, missingFromSummaryCache);
+	}
+
 	const requestedSummaries: SummaryCache = {};
 
 	// Process each document for summarization
@@ -287,6 +295,12 @@ export async function processDocuments(
 	// Check if all documents are already grouped
 	const allDocumentsGrouped = Object.keys(requestedSummaries).every(id => groupCache[id]);
 
+	// Log missing items from group cache
+	const missingFromGroupCache = Object.keys(requestedSummaries).filter(id => !groupCache[id]);
+	if (missingFromGroupCache.length > 0) {
+		console.log(`Missing ${missingFromGroupCache.length} items from group cache:`, missingFromGroupCache);
+	}
+
 	if (allDocumentsGrouped) {
 		console.log('All documents are already grouped.');
 		groupedDocuments = {};
@@ -296,6 +310,16 @@ export async function processDocuments(
 	} else {
 		console.log('Reordering documents...');
 		groupedDocuments = await tagAndGroupDocuments(anthropic, requestedSummaries);
+
+		// Validate that LLM returned all missing items before proceeding
+		const stillMissingFromLLM = missingFromGroupCache.filter(id => !groupedDocuments[id]);
+		if (stillMissingFromLLM.length > 0) {
+			console.error(`❌ FATAL: LLM failed to return ${stillMissingFromLLM.length} expected items:`, stillMissingFromLLM);
+			console.error('Expected items:', missingFromGroupCache);
+			console.error('Received items:', Object.keys(groupedDocuments));
+			process.exit(1);
+		}
+
 		await writeJsonCache(GROUPED_CACHE_PATH, groupedDocuments);
 	}
 
