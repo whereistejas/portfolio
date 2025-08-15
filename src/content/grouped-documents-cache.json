@@ -1,242 +1,4 @@
 {
-  "01k0cet4pw72nn9pab1a2sywrx": [
-    "cultural evolution",
-    "traditional knowledge",
-    "anthropology",
-    "rationalism",
-    "social adaptation"
-  ],
-  "01k228ps97vg5bwhhv6433c1tm": [
-    "film industry",
-    "corporate strategy",
-    "brand marketing",
-    "cultural criticism",
-    "entertainment business"
-  ],
-  "01jzagw9s9k81xj7hsvq10b98n": [
-    "medical technology",
-    "X-ray history",
-    "healthcare innovation",
-    "technology adoption",
-    "medical regulation"
-  ],
-  "01k0p4hj3k6r9vetkx17nqr6fe": [
-    "ethics",
-    "moral philosophy",
-    "social responsibility",
-    "effective altruism",
-    "moral psychology"
-  ],
-  "01jxaybc1kh90y9pjsnf5w3bre": [
-    "psychology",
-    "emotional regulation",
-    "behavioral therapy",
-    "mental health",
-    "self-improvement"
-  ],
-  "01k2j40tf05d83f02kjh422fnt": [
-    "economic development",
-    "India",
-    "comparative economics",
-    "manufacturing",
-    "industrial policy"
-  ],
-  "01k18xzxnt7gec54mw47qe2730": [
-    "global trade",
-    "service economy",
-    "developing countries",
-    "economic transformation",
-    "digital economy"
-  ],
-  "01k10j2dq4d6gxg5wqs5ae3zcz": [
-    "fintech",
-    "digital payments",
-    "emerging markets",
-    "financial inclusion",
-    "economic development"
-  ],
-  "01k1c5yaaf9tngc5pnssxa6zgw": [
-    "manufacturing",
-    "US economy",
-    "industrial policy",
-    "economic competitiveness",
-    "reindustrialization"
-  ],
-  "01jy6rem6wbkfj90g95gazpq5p": [
-    "economics",
-    "government intervention",
-    "market forces",
-    "economic policy",
-    "regulation"
-  ],
-  "01k18xy2c4hxqamxnkfhfna78d": [
-    "Indian history",
-    "political geography",
-    "empire building",
-    "cultural diversity",
-    "state formation"
-  ],
-  "01k10ga3m23ks5864t1qtxvz0p": [
-    "democracy",
-    "Indian politics",
-    "governance",
-    "political philosophy",
-    "civil liberties"
-  ],
-  "01k10hk5n1ya3cd38bdm224d4h": [
-    "Indian politics",
-    "populism",
-    "political science",
-    "elite behavior",
-    "electoral politics"
-  ],
-  "01k10hr6jb5ydtqsvwfph68f7r": [
-    "Indian politics",
-    "political control",
-    "elite institutions",
-    "nationalism",
-    "civil society"
-  ],
-  "01k10g6485vhvggbvmqvq7cj0s": [
-    "Singapore",
-    "Indian politics",
-    "political leadership",
-    "Asian geopolitics",
-    "economic development"
-  ],
-  "01k2net1yda1j1tqkqadctppfx": [
-    "Indian culture",
-    "marriage traditions",
-    "social change",
-    "tradition vs modernity",
-    "family dynamics"
-  ],
-  "01k10h6bjne1bjfp0pandb9aec": [
-    "comparative politics",
-    "US-China relations",
-    "capitalism",
-    "democracy vs authoritarianism",
-    "great power competition"
-  ],
-  "01jxqzew0asyht6bdwqcsnbyha": [
-    "Middle East politics",
-    "US foreign policy",
-    "Arab Spring",
-    "neoliberalism",
-    "revolution"
-  ],
-  "01jxnq8j9ren2sv44agrbnzheb": [
-    "NASA",
-    "space policy",
-    "China competition",
-    "organizational reform",
-    "space exploration"
-  ],
-  "01k2j3mk1ywfs2m2bt4kjch8q8": [
-    "artificial intelligence",
-    "AI ethics",
-    "Enlightenment",
-    "philosophy",
-    "critical thinking"
-  ],
-  "01k2fpgz8hzcvet5rbnz9gpr5a": [
-    "startup economics",
-    "AI talent wars",
-    "venture capital",
-    "business strategy",
-    "tech industry"
-  ],
-  "01jwg7jf76yadan8p0cbkmjcvw": [
-    "technology criticism",
-    "digital alienation",
-    "philosophy of technology",
-    "nature vs technology",
-    "embodied experience"
-  ],
-  "01k0yk3nd27x9s3w1jhcxa17g8": [
-    "Apple",
-    "computer history",
-    "software development",
-    "technology pioneers",
-    "user interface design"
-  ],
-  "01k0ykj81ccqfeyga677yya7jz": [
-    "Apple",
-    "computer history",
-    "software development",
-    "technology pioneers",
-    "user interface design"
-  ],
-  "01k0rkksw05j6r0fb3sg2t75ze": [
-    "computer science",
-    "parsing algorithms",
-    "compilers",
-    "programming languages",
-    "theoretical computer science"
-  ],
-  "01k0bvm4t4fvbr5276rebhnnf0": [
-    "nuclear fusion",
-    "energy technology",
-    "clean energy",
-    "scientific research",
-    "technology development"
-  ],
-  "01k0ym452574a7aed7aj98rmnv": [
-    "innovation",
-    "environmental science",
-    "unintended consequences",
-    "technology ethics",
-    "risk assessment"
-  ],
-  "01k0yr667kps6mz7abkd99n3ds": [
-    "neuroscience",
-    "big science",
-    "scientific management",
-    "research funding",
-    "science policy"
-  ],
-  "01k0yr5mk34g2yn5vq2521828c": [
-    "neuroscience",
-    "brain simulation",
-    "computational biology",
-    "artificial intelligence",
-    "neural networks"
-  ],
-  "01k1xb9q0p7q9qmw30wbmqr1ts": [
-    "cellular biology",
-    "memory research",
-    "neuroscience",
-    "cellular cognition",
-    "evolution"
-  ],
-  "01k1fvvw9hcjk4fjey8d4x8gsg": [
-    "sleep research",
-    "mitochondria",
-    "biochemistry",
-    "cellular biology",
-    "metabolism"
-  ],
-  "01jxar0st58n3zv6b7x6424ff0": [
-    "mitochondria",
-    "cell biology",
-    "bioenergetics",
-    "metabolism",
-    "therapeutic interventions"
-  ],
-  "01jy7rehn3m7m521ddgc5p1y30": [
-    "cell biology",
-    "biophysics",
-    "quantitative biology",
-    "structural biology",
-    "model systems"
-  ],
-  "01jwf9yr2mwzaakjns4hqe2sbb": [
-    "molecular biology",
-    "E. coli",
-    "chemotaxis",
-    "cellular computation",
-    "bacterial behavior"
-  ],
   "01k2fdeym6jvfb3zkgx0j3c11f": [
     "gene therapy",
     "biotechnology",
@@ -244,19 +6,75 @@
     "viral vectors",
     "medical technology"
   ],
-  "01jx25y45749xbqr1mr7ypqadm": [
-    "CRISPR",
-    "genome editing",
-    "gene therapy",
-    "biotechnology",
-    "precision medicine"
-  ],
   "01k2fder0ezwd75njceewc980v": [
     "synthetic biology",
     "gene circuits",
     "bioengineering",
     "molecular biology",
     "biological systems"
+  ],
+  "01jx25y45749xbqr1mr7ypqadm": [
+    "CRISPR",
+    "genome editing",
+    "gene therapy",
+    "biotechnology",
+    "molecular biology"
+  ],
+  "01jy7rehn3m7m521ddgc5p1y30": [
+    "cell biology",
+    "biophysics",
+    "structural biology",
+    "biological systems",
+    "quantitative biology"
+  ],
+  "01jwf9yr2mwzaakjns4hqe2sbb": [
+    "molecular biology",
+    "bacterial behavior",
+    "cellular computation",
+    "systems biology",
+    "biochemistry"
+  ],
+  "01jxar0st58n3zv6b7x6424ff0": [
+    "mitochondria",
+    "cell biology",
+    "metabolism",
+    "health",
+    "medical research"
+  ],
+  "01k1xb9q0p7q9qmw30wbmqr1ts": [
+    "cellular biology",
+    "memory research",
+    "neuroscience",
+    "cognitive science",
+    "cellular learning"
+  ],
+  "01k1fvvw9hcjk4fjey8d4x8gsg": [
+    "sleep",
+    "mitochondria",
+    "biochemistry",
+    "neuroscience",
+    "cellular biology"
+  ],
+  "01k0yr5mk34g2yn5vq2521828c": [
+    "neuroscience",
+    "brain simulation",
+    "connectome",
+    "computational biology",
+    "neural networks"
+  ],
+  "01k0yr667kps6mz7abkd99n3ds": [
+    "neuroscience",
+    "scientific management",
+    "research funding",
+    "brain research",
+    "science policy"
+  ],
+  "01jyfbnd92y1w2xhm511pakkze": [
+    "cancer biology",
+    "carcinogens",
+    "environmental health",
+    "inflammation",
+    "medical research"
   ],
   "01jyxcfgnngyv41y6ma393y3jx": [
     "endometriosis",
@@ -272,18 +90,207 @@
     "medical research",
     "immune system"
   ],
-  "01jyfbnd92y1w2xhm511pakkze": [
-    "cancer biology",
-    "carcinogens",
-    "environmental health",
-    "toxicology",
+  "01jzmqv1gtzgntkpr861khmtdw": [
+    "medical technology",
+    "healthcare innovation",
+    "technology adoption",
+    "medical regulation",
+    "healthcare policy"
+  ],
+  "01k0ym452574a7aed7aj98rmnv": [
+    "innovation",
+    "environmental science",
+    "unintended consequences",
+    "technology ethics",
     "public health"
   ],
+  "01k0bvm4t4fvbr5276rebhnnf0": [
+    "nuclear fusion",
+    "energy technology",
+    "clean energy",
+    "scientific research",
+    "technology development"
+  ],
+  "01k2j3mk1ywfs2m2bt4kjch8q8": [
+    "artificial intelligence",
+    "AI ethics",
+    "philosophy",
+    "technology critique",
+    "intellectual history"
+  ],
+  "01k2fpgz8hzcvet5rbnz9gpr5a": [
+    "startup economics",
+    "AI talent wars",
+    "venture capital",
+    "business strategy",
+    "technology industry"
+  ],
+  "01k0rkksw05j6r0fb3sg2t75ze": [
+    "parsing",
+    "compilers",
+    "algorithms",
+    "computer science",
+    "programming languages"
+  ],
+  "01k0ykj81ccqfeyga677yya7jz": [
+    "technology history",
+    "Apple",
+    "computer graphics",
+    "user interface",
+    "personal computing"
+  ],
+  "01k0yk3nd27x9s3w1jhcxa17g8": [
+    "Apple",
+    "computer history",
+    "software development",
+    "technology pioneers",
+    "personal computing"
+  ],
+  "01jxnq8j9ren2sv44agrbnzheb": [
+    "NASA",
+    "space policy",
+    "space exploration",
+    "organizational reform",
+    "geopolitics"
+  ],
+  "01k1c5yaaf9tngc5pnssxa6zgw": [
+    "manufacturing",
+    "US economy",
+    "industrial policy",
+    "economic competitiveness",
+    "reindustrialization"
+  ],
+  "01k18xzxnt7gec54mw47qe2730": [
+    "global trade",
+    "service economy",
+    "developing countries",
+    "economic development",
+    "digital transformation"
+  ],
+  "01k2j40tf05d83f02kjh422fnt": [
+    "economic development",
+    "India",
+    "China",
+    "manufacturing",
+    "comparative economics"
+  ],
+  "01k10h6bjne1bjfp0pandb9aec": [
+    "comparative politics",
+    "US-China relations",
+    "political economy",
+    "capitalism",
+    "geopolitics"
+  ],
+  "01jy6rem6wbkfj90g95gazpq5p": [
+    "economics",
+    "government intervention",
+    "market forces",
+    "economic policy",
+    "regulation"
+  ],
+  "01k10j2dq4d6gxg5wqs5ae3zcz": [
+    "digital payments",
+    "fintech",
+    "India",
+    "financial inclusion",
+    "economic development"
+  ],
+  "01k18xy2c4hxqamxnkfhfna78d": [
+    "Indian history",
+    "political geography",
+    "empire building",
+    "cultural diversity",
+    "historical analysis"
+  ],
+  "01k10ga3m23ks5864t1qtxvz0p": [
+    "democracy",
+    "India",
+    "governance",
+    "political systems",
+    "political philosophy"
+  ],
+  "01k10hk5n1ya3cd38bdm224d4h": [
+    "Indian politics",
+    "populism",
+    "Modi",
+    "political science",
+    "electoral politics"
+  ],
+  "01k10hr6jb5ydtqsvwfph68f7r": [
+    "Indian politics",
+    "Modi",
+    "elite institutions",
+    "political control",
+    "nationalism"
+  ],
+  "01k10g6485vhvggbvmqvq7cj0s": [
+    "Lee Kuan Yew",
+    "India",
+    "political leadership",
+    "economic development",
+    "Asian politics"
+  ],
+  "01k2net1yda1j1tqkqadctppfx": [
+    "Indian culture",
+    "marriage traditions",
+    "social change",
+    "tradition vs modernity",
+    "cultural evolution"
+  ],
+  "01jxqzew0asyht6bdwqcsnbyha": [
+    "Middle East politics",
+    "Arab Spring",
+    "US foreign policy",
+    "political analysis",
+    "social movements"
+  ],
+  "01k0cet4pw72nn9pab1a2sywrx": [
+    "cultural evolution",
+    "tradition",
+    "anthropology",
+    "rationalism",
+    "social change"
+  ],
+  "01k0p4hj3k6r9vetkx17nqr6fe": [
+    "ethics",
+    "moral philosophy",
+    "social criticism",
+    "moral responsibility",
+    "altruism"
+  ],
+  "01jxaybc1kh90y9pjsnf5w3bre": [
+    "procrastination",
+    "psychology",
+    "emotional regulation",
+    "therapy",
+    "behavioral psychology"
+  ],
   "01jyct0ccg4hydaqgav2fj991p": [
-    "literary criticism",
     "Tolkien",
+    "literary criticism",
     "heroism",
-    "cultural analysis",
-    "fantasy literature"
+    "character archetypes",
+    "cultural analysis"
+  ],
+  "01k228ps97vg5bwhhv6433c1tm": [
+    "film industry",
+    "A24",
+    "independent cinema",
+    "cultural criticism",
+    "corporate strategy"
+  ],
+  "01jwg7jf76yadan8p0cbkmjcvw": [
+    "technology criticism",
+    "digital alienation",
+    "philosophy of technology",
+    "nature vs technology",
+    "embodied experience"
+  ],
+  "01jzagw9s9k81xj7hsvq10b98n": [
+    "career philosophy",
+    "work-life balance",
+    "alternative success",
+    "creative work",
+    "Silicon Valley culture"
   ]
 }
