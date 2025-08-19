@@ -30,9 +30,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add src/content/document-summary-cache.json || true
-          git add src/content/grouped-documents-cache.json || true
-          git add src/content/display-documents-cache.json || true
+          git add src/content/cache-summary.json || true
+          git add src/content/cache-group.json || true
+          git add src/content/cache-display.json || true
           if git diff --staged --quiet; then
             echo "No cache changes to commit"
           else

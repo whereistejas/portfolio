@@ -33,32 +33,39 @@ export function getAnthropicClient(apiKey: string) {
 	});
 }
 
-// Anthropic model name (Claude Sonnet 4)
-const ANTHROPIC_MODEL = 'claude-sonnet-4-0'; // Use the latest available Sonnet model
+const ANTHROPIC_MODEL = 'claude-sonnet-4-0';
 
 // Summarization prompt (from Rust)
-const SUMMARY_PROMPT = `You are my reading assistant. Your job is to look through my reading list and arrange all the items in the best order possible.
+const SUMMARY_PROMPT = `Imagine you are a librarian or archivist. Your job is  to go through a bunch of documents and summarize, categorise and tag them. Your job is also to group these documents based on different criterias such as subject, theme, source, author, etc.
 
-My reading list will often have items from a lot of different authors, subjects and themes. I want you to go through each item and try to understand its core ideas. Then, I want you to rearrange my reading list such that I have to context switch as little as possible when I go from one item to another.
+For example, you can group all documents about "biology" (i.e., based on subject) or group all documents from "Siddhartha Mukherjee" (i.e., based on author) or group all documents related to "productivity" (i.e., based on theme).
 
-For example, you can group all items about "biology" (i.e., based on subject) or group all items from "Siddhartha Mukherjee" (i.e., based on author) or group all items related to "productivity" (i.e., based on theme).
+We're going to do this in 2 steps:
+Step 1: Create a summary and a wide-variety of tags for each document.
+Step 2: Reorder the documents based on the tags and merge the tags into higher-level topics so that they can used for multiple documents.
 
-I'm going to give you 1 item at a time. I want you to return to me a summary in whatever structure that makes most sense to you for later retrival and a list of "tokens/tags" that capture the various categories this item could fall into.
+Instructions for Step 1:
 
-The summary should be concise and should not mention thinks like the title or source or author.
+Instructions for creating the summary:
+- The summary should be concise and should NOT mention things like the title or source or author.
+- The summary should be less than 250 characters.
 
-Remember, while generating the summary and tags that the final goal is to reorder my reading list, in the best way possible.
+Instructions for creating the tags:
+- Read the content of the document before creating the tags.
+- The tags should be a wide-variety of tags that capture the various categories this document could fall into.
 
-Each item will be given to you along with some metadata in the json format:
+Remember, while generating the summary and tags that the FINAL GOAL IS TO CATEGORISE AND GROUP THE DOCUMENTs.
+
+Each document will be given to you along with some metadata in the json format:
 {
     "id": "uuid",
-    "title": "item title",
-    "author": "item name",
+    "title": "document title",
+    "author": "document name",
     "source": "source_url",
-    "content": "item content"
+    "content": "document content"
 }
 
-For each item give output in JSON format with keys: "id" (string), "summary" (string) and "tags" (list of string).
+For each document give output in JSON format with keys: "id" (string), "summary" (string) and "tags" (list of string).
 For example,
 {
     "id": "<uuid>",
@@ -66,12 +73,14 @@ For example,
     "tags": ["your tags"]
 }
 
-Remember, to never change the "id" of the item and always, always preserve it.
-When adding the summary to the JSON object, always escape characters in order to produce valid JSON.
+ALWAYS perform these checks before returning the JSON object to me:
+- Make sure the "id" is the SAME.
+- Make sure the "summary" ALWAYS escapes characters in order to produce valid JSON.
+- NEVER WRAP the JSON response in markdown code blocks, ALWAYS return the raw JSON object.
 
-Do not wrap your JSON response in markdown code blocks or any other formatting. Return only the raw JSON object.
+Stricly follow the given instructions at all times. Especially the instructions above, they are non-negotiable.
 
-Here is the item:`;
+Here is the document:`;
 
 // Summarize a single document using Anthropic LLM
 export async function summariseDocument(
@@ -104,6 +113,7 @@ export async function summariseDocument(
 			}
 			return summary;
 		} catch (err) {
+			console.error(`Error summarizing document ${document.id}:`, err);
 			lastError = err;
 			if (attempt < maxRetries) {
 				// Wait before retrying
@@ -115,23 +125,27 @@ export async function summariseDocument(
 }
 
 // Reordering prompt (from Rust)
-const REORDERING_PROMPT = `You are my reading assistant. Your job is to look through my reading list and arrange all the items in the best order possible.
+const REORDERING_PROMPT = `Imagine you are a librarian or archivist. Your job is  to go through a bunch of documents and summarize, categorise and tag them. Your job is also to group these documents based on different criterias such as subject, theme, source, author, etc.
 
-My reading list will often have items from a lot of different authors, subjects and themes. I want you to go through each item and try to understand its core ideas. Then, I want you to rearrange my reading list such that I have to context switch as little as possible when I go from one item to another.
+For example, you can group all documents about "biology" (i.e., based on subject) or group all documents from "Siddhartha Mukherjee" (i.e., based on author) or group all documents related to "productivity" (i.e., based on theme).
 
-For example, you can group all items about "biology" (i.e., based on subject) or group all items from "Siddhartha Mukherjee" (i.e., based on author) or group all items related to "productivity" (i.e., based on theme).
+We're going to do this in 2 steps:
+Step 1: Create a summary and a wide-variety of tags for each document.
+Step 2: Reorder the documents based on the tags and merge the tags into higher-level topics so that they can used for multiple documents.
 
-After giving you each item, you returned to me a summary in whatever structure that made most sense to you for later retrival and a list of "tokens/tags" that capture the various categories the item could fall into.
-
-After going through all the items in my reading list, I'm giving all of the summaries and tags back to you and asking you to reorder my reading list.
+Instructions for Step 2:
     
-Follow these instructions:
-- Condense the tags for each item to fit in with the rest of the items, as best as you can. Use the summaries to get more context.
-- Each item should only have 5 tags.
-- The "index" of each item should be stored in the \`order\` field.
-- Feel free to merge tags into higher level topics so that they can used for multiple items.
+Instructions for reordering the documents:
+- Reorder the documents based on the tags and summaries.
+- Make sure that the order flows naturally and makes sense.
+- Make sure that the "switching cost" from one document to the next is as low as possible.
 
-For each item give output in JSON format with keys: "order" (number), "id" (string) and "tags" (list of string).
+Instructions for merging the tags into higher-level topics:
+- Merge the tags into higher-level topics so that they can used for multiple documents.
+- Make sure that each document only has 5 tags.
+- Make sure all tags are single words. If you need a tag like "nuclear power" or "development economics", then join them using a "_".
+
+For each document give output in JSON format with keys: "order" (number), "id" (string) and "tags" (list of string).
 For example,
 {
     "order": 0,
@@ -141,14 +155,13 @@ For example,
 
 Do not wrap your JSON response in markdown code blocks or any other formatting. Return only the raw JSON object.
 
-Follow these two instructions at all times, they are non-negotiable:
-STRICTLY NEVER change the "id" of the item and ALWAYS, ALWAYS PRESERVE it.
-ENSURE that you return ALL items in your response. Double check to make sure you haven't missed any.
+ALWAYS perform these checks before returning the JSON object to me:
+- Make sure the "id" remains the SAME or UNCHANGED.
+- Make sure that you return ALL the documents.
+- NEVER WRAP the JSON response in markdown code blocks, ALWAYS return the raw JSON object.`;
 
-Thank you for helping me out.`;
-
-// Type for summary cache (matches document-summary-cache.json structure)
-export interface SummaryCache {
+// Type for summary cache (matches cache-summary.json structure)
+export type SummaryCache = {
 	[id: string]: {
 		summary: string;
 		tags: string[];
@@ -159,8 +172,8 @@ export interface SummaryCache {
 export async function tagAndGroupDocuments(
 	anthropic: Anthropic,
 	summaries: SummaryCache,
-	maxRetries = 3
-): Promise<{ [id: string]: { tags: string[]; order: number } }> {
+	maxRetries = 25
+): Promise<GroupCache> {
 	const inputJson = JSON.stringify(summaries, null, 2);
 	const prompt = `${REORDERING_PROMPT}\n\`\`\`json\n${inputJson}\n\`\`\``;
 
@@ -188,7 +201,7 @@ export async function tagAndGroupDocuments(
 			// Sort by order and return as grouped documents cache format
 			reordered.sort((a, b) => a.order - b.order);
 
-			const result: { [id: string]: { tags: string[]; order: number } } = {};
+			const result: GroupCache = {};
 			for (const item of reordered) {
 				if (!item.id || !Array.isArray(item.tags) || item.tags.length !== 5) {
 					throw new Error(`Invalid reordered item: ${JSON.stringify(item)}`);
@@ -198,6 +211,7 @@ export async function tagAndGroupDocuments(
 
 			return result;
 		} catch (err) {
+			console.error(`Error reordering documents:`, err);
 			lastError = err;
 			if (attempt < maxRetries) {
 				// Wait before retrying
@@ -209,12 +223,12 @@ export async function tagAndGroupDocuments(
 }
 
 // Cache file paths (in src/content/ for use by Astro collections)
-const SUMMARY_CACHE_PATH = 'src/content/document-summary-cache.json';
-const GROUPED_CACHE_PATH = 'src/content/grouped-documents-cache.json';
-const DISPLAY_CACHE_PATH = 'src/content/display-documents-cache.json';
+const SUMMARY_CACHE_PATH = 'src/content/cache-summary.json';
+const GROUPED_CACHE_PATH = 'src/content/cache-group.json';
+const DISPLAY_CACHE_PATH = 'src/content/cache-display.json';
 
 // Final display document structure
-export interface DisplayDocument {
+export type DisplayDocument = {
 	id: string;
 	title: string;
 	url: string;
@@ -239,25 +253,26 @@ async function writeJsonCache<T>(path: string, data: T): Promise<void> {
 	await writeFile(path, JSON.stringify(data, null, 2), 'utf-8');
 }
 
+// Type for grouped documents cache (matches cache-group.json structure)
+export type GroupCache = { [id: string]: { tags: string[]; order: number } }
+
 // Main function to process documents (equivalent to tag_documents in Rust)
 export async function processDocuments(
 	anthropic: Anthropic,
 	documents: LLMDocumentInput[]
 ): Promise<DisplayDocument[]> {
-	const total = documents.length;
-	console.log(`Processing ${total} documents...`);
+	const documentIds = documents.map(doc => doc.id);
+	console.log(`Processing ${documentIds.length} documents...`);
 
 	// Load summary cache
-	const summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
+	var summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
 	console.log(`Summary cache has ${Object.keys(summaryCache).length} items.`);
 
 	// Log missing items from summary cache
-	const missingFromSummaryCache = documents.filter(doc => !summaryCache[doc.id]).map(doc => doc.id);
-	if (missingFromSummaryCache.length > 0) {
-		console.log(`Missing ${missingFromSummaryCache.length} items from summary cache:`, missingFromSummaryCache);
+	var missingIds = documents.filter(doc => !summaryCache[doc.id]).map(doc => doc.id);
+	if (missingIds.length > 0) {
+		console.error(`Missing ${missingIds.length} items from summary cache:`, missingIds);
 	}
-
-	const requestedSummaries: SummaryCache = {};
 
 	// Process each document for summarization
 	for (let idx = 0; idx < documents.length; idx++) {
@@ -266,10 +281,10 @@ export async function processDocuments(
 
 		let summary;
 		if (summaryCache[id]) {
-			console.log(`Skipped ${idx + 1} of ${total}: ${document.title}`);
+			console.log(`Skipped ${idx + 1} of ${documentIds.length}: ${document.title}`);
 			summary = summaryCache[id];
 		} else {
-			console.log(`Summarizing ${idx + 1} of ${total}: ${document.title}`);
+			console.log(`Summarizing ${idx + 1} of ${documentIds.length}: ${document.title}`);
 			const llmSummary = await summariseDocument(anthropic, document);
 			summary = {
 				summary: llmSummary.summary,
@@ -279,59 +294,82 @@ export async function processDocuments(
 			// Update and save cache
 			summaryCache[id] = summary;
 			await writeJsonCache(SUMMARY_CACHE_PATH, summaryCache);
-			console.log(`Summarized ${idx + 1} of ${total}: ${document.title}`);
+			console.log(`Summarized ${idx + 1} of ${documentIds.length}: ${document.title}`);
 		}
 
-		requestedSummaries[id] = summary;
 	}
 
-	console.log(`Starting reorder step with ${Object.keys(requestedSummaries).length} tagged documents`);
+	var summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
+	// Log missing items from summary cache after update
+	var missingIds = documentIds.filter(id => !summaryCache[id]);
+	if (missingIds.length > 0) {
+		throw new Error(`Missing document IDs in summary cache after update: ${missingIds.join(', ')}`);
+	}
 
+	console.log(`Starting reorder step with ${Object.keys(documentIds).length} tagged documents`);
 	// Load grouped documents cache
-	const groupCache: { [id: string]: { tags: string[]; order: number } } = await readJsonCache(GROUPED_CACHE_PATH, {});
+	const groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
 	console.log(`Group cache has ${Object.keys(groupCache).length} items.`);
 
-	let groupedDocuments: { [id: string]: { tags: string[]; order: number } };
-
-	// Check if all documents are already grouped
-	const allDocumentsGrouped = Object.keys(requestedSummaries).every(id => groupCache[id]);
-
-	// Log missing items from group cache
-	const missingFromGroupCache = Object.keys(requestedSummaries).filter(id => !groupCache[id]);
-	if (missingFromGroupCache.length > 0) {
-		console.log(`Missing ${missingFromGroupCache.length} items from group cache:`, missingFromGroupCache);
+	// Check if all the ids in `documentIds` are already present in `groupCache`.
+	var missingIds = documentIds.filter(id => !groupCache[id]);
+	if (missingIds.length > 0) {
+		console.log(`Missing ${missingIds.length} items from group cache:`, missingIds);
 	}
 
-	if (allDocumentsGrouped) {
+	var groupedDocuments: GroupCache = {};
+	if (missingIds.length === 0) {
 		console.log('All documents are already grouped.');
-		groupedDocuments = {};
-		for (const id of Object.keys(requestedSummaries)) {
-			groupedDocuments[id] = groupCache[id];
-		}
+
+		// Filter out the documents that are already in the group cache
+		groupedDocuments = Object
+			.entries(groupCache)
+			.filter(([id, _]) => documentIds.includes(id))
+			.reduce((acc, [id, groupData]) => { acc[id] = groupData; return acc; }, {} as GroupCache);
 	} else {
 		console.log('Reordering documents...');
-		groupedDocuments = await tagAndGroupDocuments(anthropic, requestedSummaries);
 
-		// Validate that LLM returned all missing items before proceeding
-		const stillMissingFromLLM = missingFromGroupCache.filter(id => !groupedDocuments[id]);
-		if (stillMissingFromLLM.length > 0) {
-			console.error(`❌ FATAL: LLM failed to return ${stillMissingFromLLM.length} expected items:`, stillMissingFromLLM);
-			console.error('Expected items:', missingFromGroupCache);
-			console.error('Received items:', Object.keys(groupedDocuments));
-			process.exit(1);
+		const requestedSummaries = Object.fromEntries(
+			Object
+				.entries(summaryCache)
+				.filter(([id, _]) => documentIds.includes(id))
+		);
+
+		const maxRetries = 3;
+		let lastError: unknown = null;
+		for (let attempt = 1; attempt <= maxRetries; attempt++) {
+			try {
+				groupedDocuments = await tagAndGroupDocuments(anthropic, requestedSummaries);
+
+				// Validate that LLM returned all missing items before proceeding
+				var missingIds = missingIds.filter(id => !groupedDocuments[id]);
+				if (missingIds.length > 0) {
+					throw new Error(`Missing document IDs in LLM response: ${missingIds.join(', ')}`);
+				}
+
+				// If we get here, the operation was successful
+				break;
+			} catch (err) {
+				console.error(`Error grouping documents:`, err);
+				lastError = err;
+			}
+		}
+
+		if (lastError && Object.keys(groupedDocuments).length === 0) {
+			throw new Error(`Failed to group documents after ${maxRetries} attempts: ${lastError}`);
 		}
 
 		await writeJsonCache(GROUPED_CACHE_PATH, groupedDocuments);
-	}
+	};
 
-	// Create final display documents
+	var groupedDocuments: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
 	const result: DisplayDocument[] = [];
 	for (const [id, groupData] of Object.entries(groupedDocuments)) {
 		const document = documents.find(d => d.id === id);
-		const summary = requestedSummaries[id];
+		const summary = summaryCache[id];
 
 		if (!document || !summary) {
-			throw new Error(`Missing document or summary for id: ${id}`);
+			throw new Error(`Missing document or summary for id: ${id} `);
 		}
 
 		result.push({
