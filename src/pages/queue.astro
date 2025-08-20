@@ -47,11 +47,13 @@ const headers = [
                 </a>
               </div>
               <div class="tags">
-                {item.data.tags.map((tag, index) => (
-                  <span class="tag" data-primary={index === 0}>
-                    {tag}
-                  </span>
-                ))}
+                {[...item.data.tags]
+                  .sort((a, b) =>
+                    a.toLowerCase().localeCompare(b.toLowerCase())
+                  )
+                  .map((tag) => (
+                    <span class="tag">{tag}</span>
+                  ))}
               </div>
               <p class="summary">{item.data.summary}</p>
             </div>
