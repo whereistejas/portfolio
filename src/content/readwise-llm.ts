@@ -161,12 +161,9 @@ ALWAYS perform these checks before returning the JSON object to me:
 - NEVER WRAP the JSON response in markdown code blocks, ALWAYS return the raw JSON object.`;
 
 // Type for summary cache (matches cache-summary.json structure)
-export type SummaryCache = {
-	[id: string]: {
-		summary: string;
-		tags: string[];
-	};
-}
+export type SummaryCache =
+	Record<string, { summary: string, tags: string[] }>
+
 
 // Reorder and tag documents using Anthropic LLM
 export async function tagAndGroupDocuments(
@@ -254,7 +251,7 @@ async function writeJsonCache<T>(path: string, data: T): Promise<void> {
 }
 
 // Type for grouped documents cache (matches cache-group.json structure)
-export type GroupCache = { [id: string]: { tags: string[]; order: number } }
+export type GroupCache = Record<string, { tags: string[]; order: number }>
 
 // Main function to process documents (equivalent to tag_documents in Rust)
 export async function processDocuments(
@@ -269,15 +266,14 @@ export async function processDocuments(
 	console.log(`Summary cache has ${Object.keys(summaryCache).length} items.`);
 
 	// Log missing items from summary cache
-	var missingIds = documents.filter(doc => !summaryCache[doc.id]).map(doc => doc.id);
+	var missingIds = documentIds.filter(id => !Object.keys(summaryCache).includes(id));
 	if (missingIds.length > 0) {
 		console.error(`Missing ${missingIds.length} items from summary cache:`, missingIds);
 	}
 
 	// Process each document for summarization
-	for (let idx = 0; idx < documents.length; idx++) {
+	for (const [idx, id] of documentIds.entries()) {
 		const document = documents[idx];
-		const id = document.id;
 
 		let summary;
 		if (summaryCache[id]) {
@@ -301,33 +297,25 @@ export async function processDocuments(
 
 	var summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
 	// Log missing items from summary cache after update
-	var missingIds = documentIds.filter(id => !summaryCache[id]);
+	var missingIds = documentIds.filter(id => !Object.keys(summaryCache).includes(id));
 	if (missingIds.length > 0) {
-		throw new Error(`Missing document IDs in summary cache after update: ${missingIds.join(', ')}`);
+		console.error(`Missing ${missingIds.length} items from summary cache (after update):`, missingIds);
 	}
 
 	console.log(`Starting reorder step with ${Object.keys(documentIds).length} tagged documents`);
-	// Load grouped documents cache
-	const groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
+	var groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
 	console.log(`Group cache has ${Object.keys(groupCache).length} items.`);
 
 	// Check if all the ids in `documentIds` are already present in `groupCache`.
-	var missingIds = documentIds.filter(id => !groupCache[id]);
+	var missingIds = documentIds.filter(id => !Object.keys(groupCache).includes(id));
 	if (missingIds.length > 0) {
 		console.log(`Missing ${missingIds.length} items from group cache:`, missingIds);
 	}
 
-	var groupedDocuments: GroupCache = {};
-	if (missingIds.length === 0) {
-		console.log('All documents are already grouped.');
-
-		// Filter out the documents that are already in the group cache
-		groupedDocuments = Object
-			.entries(groupCache)
-			.filter(([id, _]) => documentIds.includes(id))
-			.reduce((acc, [id, groupData]) => { acc[id] = groupData; return acc; }, {} as GroupCache);
-	} else {
+	if (missingIds.length != 0) {
 		console.log('Reordering documents...');
+
+		var groupedDocuments: GroupCache = {};
 
 		const requestedSummaries = Object.fromEntries(
 			Object
@@ -337,6 +325,7 @@ export async function processDocuments(
 
 		const maxRetries = 3;
 		let lastError: unknown = null;
+
 		for (let attempt = 1; attempt <= maxRetries; attempt++) {
 			try {
 				groupedDocuments = await tagAndGroupDocuments(anthropic, requestedSummaries);
@@ -360,17 +349,22 @@ export async function processDocuments(
 		}
 
 		await writeJsonCache(GROUPED_CACHE_PATH, groupedDocuments);
+	} else {
+		console.log('All documents are already grouped.');
 	};
 
-	var groupedDocuments: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
-	const result: DisplayDocument[] = [];
-	for (const [id, groupData] of Object.entries(groupedDocuments)) {
-		const document = documents.find(d => d.id === id);
-		const summary = summaryCache[id];
+	var groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
+	// Check if all the ids in `documentIds` are already present in `groupCache` after update.
+	var missingIds = documentIds.filter(id => !Object.keys(groupCache).includes(id));
+	if (missingIds.length > 0) {
+		console.log(`Missing ${missingIds.length} items from group cache (after update):`, missingIds);
+	}
 
-		if (!document || !summary) {
-			throw new Error(`Missing document or summary for id: ${id} `);
-		}
+	const result: DisplayDocument[] = [];
+	for (const id of documentIds) {
+		const document: LLMDocumentInput = documents.find(d => d.id === id)!;
+		const summary = summaryCache[id];
+		const groupData = groupCache[id];
 
 		result.push({
 			id,
