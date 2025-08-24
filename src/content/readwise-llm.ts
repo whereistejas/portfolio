@@ -338,7 +338,7 @@ export async function processDocuments(
 
 		for (let attempt = 1; attempt <= maxRetries; attempt++) {
 			try {
-				console.log('[LLM][Group] Reordering documents...');
+				console.log(`[LLM][Group] Reordering documents...`);
 
 				const requestedSummaries = Object.fromEntries(
 					Object
@@ -365,7 +365,7 @@ export async function processDocuments(
 
 		assert(!lastError, `[LLM][Group] Failed: ${lastError}`);
 	} else {
-		console.log('[LLM][Group] All documents are already grouped.');
+		console.log(`[LLM][Group] All documents are already grouped.`);
 	};
 
 	var groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
