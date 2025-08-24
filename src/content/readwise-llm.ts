@@ -3,6 +3,7 @@
 // This file is used at build time to generate JSON caches for Astro content collections
 
 import Anthropic from '@anthropic-ai/sdk';
+import assert from 'assert';
 
 // Types for document input and LLM output
 export interface LLMDocumentInput {
@@ -259,106 +260,102 @@ export async function processDocuments(
 	documents: LLMDocumentInput[]
 ): Promise<DisplayDocument[]> {
 	const documentIds = documents.map(doc => doc.id);
-	console.log(`Processing ${documentIds.length} documents...`);
+	console.log(`[LLM] Processing documents: ${documentIds.length}`);
 
 	// Load summary cache
 	var summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
-	console.log(`Summary cache has ${Object.keys(summaryCache).length} items.`);
+	console.log(`[LLM][Summary cache] len: ${Object.keys(summaryCache).length}`);
 
 	// Log missing items from summary cache
 	var missingIds = documentIds.filter(id => !Object.keys(summaryCache).includes(id));
 	if (missingIds.length > 0) {
-		console.error(`Missing ${missingIds.length} items from summary cache:`, missingIds);
+		console.error(
+			`[LLM][Summary cache] Missing: `,
+			missingIds.map(id => documents.find(d => d.id === id)!.title)
+		);
 	}
 
 	// Process each document for summarization
 	for (const [idx, id] of documentIds.entries()) {
 		const document = documents[idx];
 
-		let summary;
 		if (summaryCache[id]) {
-			console.log(`Skipped ${idx + 1} of ${documentIds.length}: ${document.title}`);
-			summary = summaryCache[id];
+			console.log(`[LLM] Skipped summarizing (${idx + 1}/${documentIds.length}): ${document.title}`);
 		} else {
-			console.log(`Summarizing ${idx + 1} of ${documentIds.length}: ${document.title}`);
+			console.log(`[LLM] Summarizing ${idx + 1} of ${documentIds.length}: ${document.title}`);
 			const llmSummary = await summariseDocument(anthropic, document);
-			summary = {
+
+			// Update and save cache
+			summaryCache[id] = {
 				summary: llmSummary.summary,
 				tags: llmSummary.tags
 			};
 
-			// Update and save cache
-			summaryCache[id] = summary;
 			await writeJsonCache(SUMMARY_CACHE_PATH, summaryCache);
-			console.log(`Summarized ${idx + 1} of ${documentIds.length}: ${document.title}`);
+			console.log(`[LLM] Finished summarizing: ${document.title}`);
 		}
-
 	}
 
 	var summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
 	// Log missing items from summary cache after update
 	var missingIds = documentIds.filter(id => !Object.keys(summaryCache).includes(id));
-	if (missingIds.length > 0) {
-		console.error(`Missing ${missingIds.length} items from summary cache (after update):`, missingIds);
-	}
+	assert(
+		missingIds.length > 0,
+		`[LLM][Summary cache] Missing after update: ${missingIds.map(id => documents.find(d => d.id === id)!.title)}`,
+	);
 
-	console.log(`Starting reorder step with ${Object.keys(documentIds).length} tagged documents`);
 	var groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
-	console.log(`Group cache has ${Object.keys(groupCache).length} items.`);
+	console.log(`[LLM][Group cache] len: ${Object.keys(groupCache).length}`);
 
 	// Check if all the ids in `documentIds` are already present in `groupCache`.
 	var missingIds = documentIds.filter(id => !Object.keys(groupCache).includes(id));
 	if (missingIds.length > 0) {
-		console.log(`Missing ${missingIds.length} items from group cache:`, missingIds);
+		console.error(`[LLM][Group cache] Missing: `, missingIds.map(id => documents.find(d => d.id === id)!.title));
 	}
 
 	if (missingIds.length != 0) {
-		console.log('Reordering documents...');
-
-		var groupedDocuments: GroupCache = {};
-
-		const requestedSummaries = Object.fromEntries(
-			Object
-				.entries(summaryCache)
-				.filter(([id, _]) => documentIds.includes(id))
-		);
-
 		const maxRetries = 3;
 		let lastError: unknown = null;
 
 		for (let attempt = 1; attempt <= maxRetries; attempt++) {
 			try {
-				groupedDocuments = await tagAndGroupDocuments(anthropic, requestedSummaries);
+				console.log('[LLM][Group] Reordering documents...');
+
+				const requestedSummaries = Object.fromEntries(
+					Object
+						.entries(summaryCache)
+						.filter(([id, _]) => documentIds.includes(id))
+				);
+				var groupedDocuments = await tagAndGroupDocuments(anthropic, requestedSummaries);
 
 				// Validate that LLM returned all missing items before proceeding
 				var missingIds = missingIds.filter(id => !groupedDocuments[id]);
-				if (missingIds.length > 0) {
-					throw new Error(`Missing document IDs in LLM response: ${missingIds.join(', ')}`);
-				}
+				assert(
+					missingIds.length > 0,
+					`[LLM][Group] Missing after update: ${missingIds.map(id => documents.find(d => d.id === id)!.title)}`,
+				);
 
+				await writeJsonCache(GROUPED_CACHE_PATH, groupedDocuments);
 				// If we get here, the operation was successful
 				break;
 			} catch (err) {
-				console.error(`Error grouping documents:`, err);
+				console.error(`[LLM][Group] Error grouping documents:`, err);
 				lastError = err;
 			}
 		}
 
-		if (lastError && Object.keys(groupedDocuments).length === 0) {
-			throw new Error(`Failed to group documents after ${maxRetries} attempts: ${lastError}`);
-		}
-
-		await writeJsonCache(GROUPED_CACHE_PATH, groupedDocuments);
+		assert(!lastError, `[LLM][Group] Failed: ${lastError}`);
 	} else {
-		console.log('All documents are already grouped.');
+		console.log('[LLM][Group] All documents are already grouped.');
 	};
 
 	var groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
 	// Check if all the ids in `documentIds` are already present in `groupCache` after update.
 	var missingIds = documentIds.filter(id => !Object.keys(groupCache).includes(id));
-	if (missingIds.length > 0) {
-		console.log(`Missing ${missingIds.length} items from group cache (after update):`, missingIds);
-	}
+	assert(
+		missingIds.length > 0,
+		`[LLM][Group cache] Missing ${missingIds.length} after update: ${missingIds.map(id => documents.find(d => d.id === id)!.title)}`
+	);
 
 	const result: DisplayDocument[] = [];
 	for (const id of documentIds) {
@@ -378,7 +375,7 @@ export async function processDocuments(
 
 	// Save display cache
 	await writeJsonCache(DISPLAY_CACHE_PATH, result);
-	console.log(`Processed ${result.length} documents successfully.`);
+	console.log(`[LLM] Processed ${result.length} documents successfully.`);
 
 	return result;
 }
