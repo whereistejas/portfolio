@@ -319,7 +319,7 @@ export async function processDocuments(
 	// Log missing items from summary cache after update
 	var missingIds = documentIds.filter(id => !Object.keys(summaryCache).includes(id));
 	assert(
-		missingIds.length > 0,
+		missingIds.length === 0,
 		`[LLM][Summary cache] Missing after update: ${missingIds.map(id => documents.find(d => d.id === id)!.title)}`,
 	);
 
@@ -350,7 +350,7 @@ export async function processDocuments(
 				// Validate that LLM returned all missing items before proceeding
 				var missingIds = missingIds.filter(id => !groupedDocuments[id]);
 				assert(
-					missingIds.length > 0,
+					missingIds.length === 0,
 					`[LLM][Group] Missing after update: ${missingIds.map(id => documents.find(d => d.id === id)!.title)}`,
 				);
 
@@ -372,7 +372,7 @@ export async function processDocuments(
 	// Check if all the ids in `documentIds` are already present in `groupCache` after update.
 	var missingIds = documentIds.filter(id => !Object.keys(groupCache).includes(id));
 	assert(
-		missingIds.length > 0,
+		missingIds.length === 0,
 		`[LLM][Group cache] Missing ${missingIds.length} after update: ${missingIds.map(id => documents.find(d => d.id === id)!.title)}`
 	);
 
