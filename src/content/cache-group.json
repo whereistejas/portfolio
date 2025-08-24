@@ -1,472 +1,402 @@
 {
-  "01k2zk9h07tbv9eqn13g32q1x8": {
-    "tags": [
-      "India",
-      "economics",
-      "transaction_costs",
-      "development",
-      "governance"
-    ],
-    "order": 0
-  },
-  "01k2y4w5ns4kbgzhen9xhj9deq": {
-    "tags": [
-      "India",
-      "economic_policy",
-      "reforms",
-      "development",
-      "governance"
-    ],
-    "order": 1
-  },
-  "01k2y4t67rynbj5tzdsv1m0g7j": {
-    "tags": [
-      "India",
-      "economics",
-      "inequality",
-      "employment",
-      "development"
-    ],
-    "order": 2
-  },
-  "01k2y4thneh39qaga0ajap9sdb": {
-    "tags": [
-      "India",
-      "renewable_energy",
-      "development",
-      "environment",
-      "economics"
-    ],
-    "order": 3
-  },
-  "01k2j40tf05d83f02kjh422fnt": {
-    "tags": [
-      "India",
-      "China",
-      "economics",
-      "development",
-      "comparison"
-    ],
-    "order": 4
-  },
-  "01k18xy2c4hxqamxnkfhfna78d": {
-    "tags": [
-      "India",
-      "history",
-      "governance",
-      "diversity",
-      "politics"
-    ],
-    "order": 5
-  },
-  "01k10ga3m23ks5864t1qtxvz0p": {
-    "tags": [
-      "India",
-      "paradox",
-      "complexity",
-      "economics",
-      "philosophy"
-    ],
-    "order": 6
-  },
-  "01k10g6485vhvggbvmqvq7cj0s": {
-    "tags": [
-      "India",
-      "politics",
-      "leadership",
-      "diplomacy",
-      "Singapore"
-    ],
-    "order": 7
-  },
-  "01k10j2dq4d6gxg5wqs5ae3zcz": {
-    "tags": [
-      "India",
-      "fintech",
-      "payments",
-      "technology",
-      "innovation"
-    ],
-    "order": 8
-  },
-  "01k2net1yda1j1tqkqadctppfx": {
-    "tags": [
-      "India",
-      "culture",
-      "marriage",
-      "tradition",
-      "society"
-    ],
-    "order": 9
-  },
-  "01k10hk5n1ya3cd38bdm224d4h": {
-    "tags": [
-      "India",
-      "politics",
-      "leadership",
-      "Modi",
-      "democracy"
-    ],
-    "order": 10
-  },
-  "01k10hr6jb5ydtqsvwfph68f7r": {
-    "tags": [
-      "India",
-      "politics",
-      "BJP",
-      "institutions",
-      "power"
-    ],
-    "order": 11
-  },
-  "01k2y4wjf4kebrh13r6g8998sx": {
-    "tags": [
-      "India",
-      "research",
-      "bibliography",
-      "economics",
-      "governance"
-    ],
-    "order": 12
-  },
-  "01k2zj0xxcdk4gje1cj3gxyjmm": {
-    "tags": [
-      "China",
-      "America",
-      "geopolitics",
-      "manufacturing",
-      "competition"
-    ],
-    "order": 13
-  },
-  "01k10h6bjne1bjfp0pandb9aec": {
-    "tags": [
-      "America",
-      "China",
-      "capitalism",
-      "inequality",
-      "geopolitics"
-    ],
-    "order": 14
-  },
-  "01k1c5yaaf9tngc5pnssxa6zgw": {
-    "tags": [
-      "America",
-      "policy",
-      "manufacturing",
-      "reindustrialization",
-      "strategy"
-    ],
-    "order": 15
-  },
-  "01k18xzxnt7gec54mw47qe2730": {
-    "tags": [
-      "outsourcing",
-      "Philippines",
-      "America",
-      "remote_work",
-      "economics"
-    ],
-    "order": 16
-  },
-  "01jy6rem6wbkfj90g95gazpq5p": {
-    "tags": [
-      "economics",
-      "markets",
-      "policy",
-      "tariffs",
-      "regulation"
-    ],
-    "order": 17
-  },
-  "01jxqzew0asyht6bdwqcsnbyha": {
-    "tags": [
-      "politics",
-      "revolution",
-      "Middle_East",
-      "economics",
-      "geopolitics"
-    ],
-    "order": 18
-  },
-  "01k2j3mk1ywfs2m2bt4kjch8q8": {
-    "tags": [
-      "AI",
-      "philosophy",
-      "critical_thinking",
-      "technology",
-      "ethics"
-    ],
-    "order": 19
-  },
-  "01k2fpgz8hzcvet5rbnz9gpr5a": {
-    "tags": [
-      "startups",
-      "business",
-      "AI",
-      "talent",
-      "organization"
-    ],
-    "order": 20
-  },
-  "01jzagw9s9k81xj7hsvq10b98n": {
-    "tags": [
-      "career",
-      "creativity",
-      "work",
-      "passion",
-      "fulfillment"
-    ],
-    "order": 21
-  },
-  "01k0p4hj3k6r9vetkx17nqr6fe": {
-    "tags": [
-      "ethics",
-      "philosophy",
-      "responsibility",
-      "society",
-      "morality"
-    ],
-    "order": 22
-  },
-  "01k0cet4pw72nn9pab1a2sywrx": {
-    "tags": [
-      "culture",
-      "tradition",
-      "anthropology",
-      "wisdom",
-      "society"
-    ],
-    "order": 23
-  },
-  "01jyct0ccg4hydaqgav2fj991p": {
-    "tags": [
-      "literature",
-      "heroism",
-      "Tolkien",
-      "storytelling",
-      "culture"
-    ],
-    "order": 24
-  },
-  "01k228ps97vg5bwhhv6433c1tm": {
-    "tags": [
-      "film",
-      "A24",
-      "cinema",
-      "entertainment",
-      "culture"
-    ],
-    "order": 25
-  },
-  "01k0yk3nd27x9s3w1jhcxa17g8": {
-    "tags": [
-      "Apple",
-      "technology",
-      "design",
-      "innovation",
-      "computing"
-    ],
-    "order": 26
-  },
-  "01k0ykj81ccqfeyga677yya7jz": {
-    "tags": [
-      "Apple",
-      "technology",
-      "innovation",
-      "computing",
-      "legacy"
-    ],
-    "order": 27
-  },
-  "01k0rkksw05j6r0fb3sg2t75ze": {
-    "tags": [
-      "programming",
-      "parsing",
-      "compilers",
-      "algorithms",
-      "computer_science"
-    ],
-    "order": 28
-  },
-  "01jzmqv1gtzgntkpr861khmtdw": {
-    "tags": [
-      "medicine",
-      "technology",
-      "X-rays",
-      "healthcare",
-      "history"
-    ],
-    "order": 29
-  },
-  "01k0ym452574a7aed7aj98rmnv": {
-    "tags": [
-      "invention",
-      "environment",
-      "toxicity",
-      "history",
-      "consequences"
-    ],
-    "order": 30
-  },
-  "01k0bvm4t4fvbr5276rebhnnf0": {
-    "tags": [
-      "energy",
-      "fusion",
-      "nuclear",
-      "technology",
-      "research"
-    ],
-    "order": 31
-  },
-  "01jy7rehn3m7m521ddgc5p1y30": {
-    "tags": [
-      "biology",
-      "cells",
-      "structure",
-      "function",
-      "research"
-    ],
-    "order": 32
-  },
-  "01k1xb9q0p7q9qmw30wbmqr1ts": {
-    "tags": [
-      "biology",
-      "cells",
-      "memory",
-      "neuroscience",
-      "research"
-    ],
-    "order": 33
-  },
-  "01k1fvvw9hcjk4fjey8d4x8gsg": {
-    "tags": [
-      "biology",
-      "cells",
-      "mitochondria",
-      "sleep",
-      "neuroscience"
-    ],
-    "order": 34
-  },
-  "01jxar0st58n3zv6b7x6424ff0": {
-    "tags": [
-      "biology",
-      "mitochondria",
-      "health",
-      "metabolism",
-      "cells"
-    ],
-    "order": 35
-  },
   "01jwf9yr2mwzaakjns4hqe2sbb": {
+    "order": 0,
     "tags": [
-      "biology",
-      "bacteria",
-      "cells",
-      "navigation",
-      "microbiology"
-    ],
-    "order": 36
-  },
-  "01jx25y45749xbqr1mr7ypqadm": {
-    "tags": [
-      "biology",
-      "CRISPR",
-      "genetics",
-      "editing",
-      "biotechnology"
-    ],
-    "order": 37
-  },
-  "01k2fdeym6jvfb3zkgx0j3c11f": {
-    "tags": [
-      "biology",
-      "gene_therapy",
-      "medicine",
-      "biotechnology",
-      "treatment"
-    ],
-    "order": 38
-  },
-  "01k2fder0ezwd75njceewc980v": {
-    "tags": [
-      "biology",
-      "synthetic_biology",
-      "genetics",
-      "engineering",
-      "innovation"
-    ],
-    "order": 39
-  },
-  "01k0yr667kps6mz7abkd99n3ds": {
-    "tags": [
-      "neuroscience",
-      "research",
-      "brain",
-      "simulation",
-      "failure"
-    ],
-    "order": 40
-  },
-  "01k0yr5mk34g2yn5vq2521828c": {
-    "tags": [
-      "neuroscience",
-      "brain",
-      "simulation",
-      "research",
-      "breakthrough"
-    ],
-    "order": 41
-  },
-  "01jym0svp7f768hbhjymgmhyd5": {
-    "tags": [
-      "medicine",
-      "inflammation",
-      "research",
-      "health",
-      "disease"
-    ],
-    "order": 42
-  },
-  "01jyfbnd92y1w2xhm511pakkze": {
-    "tags": [
-      "medicine",
-      "cancer",
-      "inflammation",
-      "disease",
-      "research"
-    ],
-    "order": 43
-  },
-  "01jyxcfgnngyv41y6ma393y3jx": {
-    "tags": [
-      "medicine",
-      "endometriosis",
-      "health",
-      "women",
-      "disease"
-    ],
-    "order": 44
-  },
-  "01jxaybc1kh90y9pjsnf5w3bre": {
-    "tags": [
-      "psychology",
-      "procrastination",
-      "therapy",
-      "behavior",
-      "mental_health"
-    ],
-    "order": 45
+      "microbiology",
+      "cellular_navigation",
+      "chemotaxis",
+      "molecular_mechanisms",
+      "bacterial_behavior"
+    ]
   },
   "01jwg7jf76yadan8p0cbkmjcvw": {
+    "order": 38,
     "tags": [
       "philosophy",
       "technology",
       "nature",
-      "modernity",
-      "existence"
-    ],
-    "order": 46
+      "modern_life",
+      "existential"
+    ]
+  },
+  "01jx25y45749xbqr1mr7ypqadm": {
+    "order": 7,
+    "tags": [
+      "CRISPR",
+      "genome_editing",
+      "genetic_engineering",
+      "biotechnology",
+      "gene_therapy"
+    ]
+  },
+  "01jxar0st58n3zv6b7x6424ff0": {
+    "order": 2,
+    "tags": [
+      "mitochondria",
+      "cellular_communication",
+      "cell_biology",
+      "energy_metabolism",
+      "cellular_networks"
+    ]
+  },
+  "01jxaybc1kh90y9pjsnf5w3bre": {
+    "order": 22,
+    "tags": [
+      "procrastination",
+      "psychology",
+      "behavioral_change",
+      "counseling",
+      "productivity"
+    ]
+  },
+  "01jxqzew0asyht6bdwqcsnbyha": {
+    "order": 32,
+    "tags": [
+      "political_uprising",
+      "social_movements",
+      "political_reform",
+      "geopolitics",
+      "political_analysis"
+    ]
+  },
+  "01jy6rem6wbkfj90g95gazpq5p": {
+    "order": 23,
+    "tags": [
+      "economics",
+      "free_markets",
+      "government_intervention",
+      "economic_policy",
+      "market_regulation"
+    ]
+  },
+  "01jy7rehn3m7m521ddgc5p1y30": {
+    "order": 1,
+    "tags": [
+      "cell_biology",
+      "molecular_biology",
+      "cellular_processes",
+      "biophysics",
+      "biological_functions"
+    ]
+  },
+  "01jyct0ccg4hydaqgav2fj991p": {
+    "order": 36,
+    "tags": [
+      "literary_analysis",
+      "heroism",
+      "storytelling",
+      "narrative_theory",
+      "cultural_impact"
+    ]
+  },
+  "01jym0svp7f768hbhjymgmhyd5": {
+    "order": 10,
+    "tags": [
+      "inflammation",
+      "medical_research",
+      "chronic_conditions",
+      "disease_mechanisms",
+      "therapeutic_interventions"
+    ]
+  },
+  "01jyxcfgnngyv41y6ma393y3jx": {
+    "order": 11,
+    "tags": [
+      "endometriosis",
+      "womens_health",
+      "chronic_disease",
+      "underdiagnosed_conditions",
+      "healthcare_disparities"
+    ]
+  },
+  "01jzagw9s9k81xj7hsvq10b98n": {
+    "order": 21,
+    "tags": [
+      "career_development",
+      "creative_work",
+      "meaningful_work",
+      "alternative_career_paths",
+      "work_philosophy"
+    ]
+  },
+  "01jzmqv1gtzgntkpr861khmtdw": {
+    "order": 13,
+    "tags": [
+      "medical_technology",
+      "healthcare_innovation",
+      "technology_adoption",
+      "diagnostic_imaging",
+      "medical_history"
+    ]
+  },
+  "01k0bvm4t4fvbr5276rebhnnf0": {
+    "order": 14,
+    "tags": [
+      "fusion_power",
+      "nuclear_energy",
+      "renewable_energy",
+      "energy_technology",
+      "clean_energy"
+    ]
+  },
+  "01k0cet4pw72nn9pab1a2sywrx": {
+    "order": 34,
+    "tags": [
+      "cultural_evolution",
+      "tradition",
+      "anthropology",
+      "collective_wisdom",
+      "human_behavior"
+    ]
+  },
+  "01k0p4hj3k6r9vetkx17nqr6fe": {
+    "order": 35,
+    "tags": [
+      "ethics",
+      "moral_philosophy",
+      "social_responsibility",
+      "applied_ethics",
+      "moral_theory"
+    ]
+  },
+  "01k0rkksw05j6r0fb3sg2t75ze": {
+    "order": 17,
+    "tags": [
+      "compiler_design",
+      "parsing",
+      "computer_science",
+      "programming_languages",
+      "software_engineering"
+    ]
+  },
+  "01k0yk3nd27x9s3w1jhcxa17g8": {
+    "order": 16,
+    "tags": [
+      "technology_pioneer",
+      "user_interface",
+      "computer_design",
+      "innovation",
+      "interface_design"
+    ]
+  },
+  "01k0ym452574a7aed7aj98rmnv": {
+    "order": 15,
+    "tags": [
+      "invention",
+      "environmental_damage",
+      "technology_risks",
+      "industrial_chemistry",
+      "unintended_consequences"
+    ]
+  },
+  "01k0yr5mk34g2yn5vq2521828c": {
+    "order": 5,
+    "tags": [
+      "neuroscience",
+      "brain_simulation",
+      "computational_biology",
+      "neural_networks",
+      "medical_research"
+    ]
+  },
+  "01k0yr667kps6mz7abkd99n3ds": {
+    "order": 6,
+    "tags": [
+      "neuroscience",
+      "brain_simulation",
+      "scientific_research",
+      "computational_neuroscience",
+      "research_methodology"
+    ]
+  },
+  "01k10g6485vhvggbvmqvq7cj0s": {
+    "order": 31,
+    "tags": [
+      "political_leadership",
+      "diplomacy",
+      "international_relations",
+      "asian_politics",
+      "statesmanship"
+    ]
+  },
+  "01k10h6bjne1bjfp0pandb9aec": {
+    "order": 30,
+    "tags": [
+      "geopolitics",
+      "capitalism",
+      "economic_inequality",
+      "great_power_rivalry",
+      "comparative_politics"
+    ]
+  },
+  "01k10hk5n1ya3cd38bdm224d4h": {
+    "order": 26,
+    "tags": [
+      "indian_politics",
+      "political_leadership",
+      "governance",
+      "economic_policy",
+      "political_analysis"
+    ]
+  },
+  "01k10hr6jb5ydtqsvwfph68f7r": {
+    "order": 27,
+    "tags": [
+      "indian_politics",
+      "institutional_takeover",
+      "power_dynamics",
+      "governance",
+      "political_control"
+    ]
+  },
+  "01k10j2dq4d6gxg5wqs5ae3zcz": {
+    "order": 28,
+    "tags": [
+      "digital_payments",
+      "fintech",
+      "financial_inclusion",
+      "government_policy",
+      "financial_technology"
+    ]
+  },
+  "01k18xzxnt7gec54mw47qe2730": {
+    "order": 20,
+    "tags": [
+      "remote_work",
+      "outsourcing",
+      "international_business",
+      "global_workforce",
+      "economic_development"
+    ]
+  },
+  "01k1c5yaaf9tngc5pnssxa6zgw": {
+    "order": 24,
+    "tags": [
+      "reindustrialization",
+      "industrial_policy",
+      "economic_strategy",
+      "manufacturing",
+      "government_policy"
+    ]
+  },
+  "01k1fvvw9hcjk4fjey8d4x8gsg": {
+    "order": 3,
+    "tags": [
+      "mitochondria",
+      "sleep",
+      "cellular_stress",
+      "energy_metabolism",
+      "neuroscience"
+    ]
+  },
+  "01k1xb9q0p7q9qmw30wbmqr1ts": {
+    "order": 4,
+    "tags": [
+      "cellular_memory",
+      "cell_biology",
+      "cellular_behavior",
+      "adaptation",
+      "scientific_discovery"
+    ]
+  },
+  "01k228ps97vg5bwhhv6433c1tm": {
+    "order": 37,
+    "tags": [
+      "film_industry",
+      "independent_cinema",
+      "creative_filmmaking",
+      "artistic_cinema",
+      "entertainment_industry"
+    ]
+  },
+  "01k2fder0ezwd75njceewc980v": {
+    "order": 8,
+    "tags": [
+      "synthetic_biology",
+      "gene_circuits",
+      "genetic_engineering",
+      "biotechnology",
+      "molecular_biology"
+    ]
+  },
+  "01k2fdeym6jvfb3zkgx0j3c11f": {
+    "order": 9,
+    "tags": [
+      "gene_therapy",
+      "biotechnology",
+      "medical_technology",
+      "drug_delivery",
+      "therapeutic_delivery"
+    ]
+  },
+  "01k2fpgz8hzcvet5rbnz9gpr5a": {
+    "order": 19,
+    "tags": [
+      "startups",
+      "business_model",
+      "coordination",
+      "technology_industry",
+      "business_strategy"
+    ]
+  },
+  "01k2j3mk1ywfs2m2bt4kjch8q8": {
+    "order": 18,
+    "tags": [
+      "artificial_intelligence",
+      "critical_thinking",
+      "technology_ethics",
+      "intellectual_revolution",
+      "philosophy"
+    ]
+  },
+  "01k2j40tf05d83f02kjh422fnt": {
+    "order": 29,
+    "tags": [
+      "economic_development",
+      "economic_comparison",
+      "development_models",
+      "emerging_economies",
+      "economic_policy"
+    ]
+  },
+  "01k2net1yda1j1tqkqadctppfx": {
+    "order": 33,
+    "tags": [
+      "indian_culture",
+      "social_change",
+      "traditions",
+      "cultural_evolution",
+      "family_dynamics"
+    ]
+  },
+  "01k2zj0xxcdk4gje1cj3gxyjmm": {
+    "order": 25,
+    "tags": [
+      "geopolitics",
+      "manufacturing",
+      "economic_rivalry",
+      "industrial_capacity",
+      "comparative_analysis"
+    ]
+  },
+  "01k38s3z2gty73bpdzpejer4fj": {
+    "order": 39,
+    "tags": [
+      "insect_biology",
+      "pest_control",
+      "agriculture",
+      "biological_control",
+      "entomology"
+    ]
+  },
+  "01k3c0njfkfk5g7a8gtrjh0dgp": {
+    "order": 12,
+    "tags": [
+      "cancer",
+      "medical_screening",
+      "early_detection",
+      "healthcare",
+      "diagnostic_challenges"
+    ]
   }
 }

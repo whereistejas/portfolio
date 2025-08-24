@@ -1,576 +1,562 @@
 [
   {
-    "id": "01k2zk9h07tbv9eqn13g32q1x8",
-    "title": "Life in India is a series of bilateral negotiations",
-    "url": "https://www.strangeloopcanon.com/p/life-in-india-is-a-series-of-bilateral",
-    "summary": "Explores how India's daily life involves constant bilateral negotiations despite improved infrastructure, creating high transaction costs that reduce GDP efficiency, requiring policy and cultural changes.",
+    "id": "01k3c0njfkfk5g7a8gtrjh0dgp",
+    "order": 12,
+    "summary": "Early cancer detection methods like liquid biopsies promise blood-based screening but face challenges with false positives, detecting non-threatening tumors, and proving they actually reduce cancer mortality rates.",
     "tags": [
-      "India",
-      "economics",
-      "transaction_costs",
-      "development",
-      "governance"
+      "cancer",
+      "medical_screening",
+      "early_detection",
+      "healthcare",
+      "diagnostic_challenges"
     ],
-    "order": 0
+    "title": "The Problem With Early Cancer Detection | The New Yorker",
+    "url": "https://www.newyorker.com/magazine/2025/06/23/the-catch-in-catching-cancer-early"
+  },
+  {
+    "id": "01k38s3z2gty73bpdzpejer4fj",
+    "order": 39,
+    "summary": "Diapause is a developmental pause in insects at any life stage that removes biomass from active life. It can be manipulated for pest control and biological management, with applications in farming, disease control, and conservation.",
+    "tags": [
+      "insect_biology",
+      "pest_control",
+      "agriculture",
+      "biological_control",
+      "entomology"
+    ],
+    "title": "Pausing Insect Activity",
+    "url": "https://press.asimov.com/articles/insect-diapause"
   },
   {
     "id": "01k2zj0xxcdk4gje1cj3gxyjmm",
-    "title": "A Nation of Lawyers Confronts China’s Engineering State",
-    "url": "https://www.theatlantic.com/ideas/archive/2025/08/china-america-tariffs-trump-economy/683895/?gift=c04SMsUDu_5IHrILqcoSgyI0nXW4Kw0Qw9R7N00x508",
+    "order": 25,
     "summary": "Contrasts China's engineering-focused approach to building infrastructure and manufacturing with America's lawyer-dominated, rule-based culture that has lost production capacity.",
     "tags": [
-      "China",
-      "America",
       "geopolitics",
       "manufacturing",
-      "competition"
+      "economic_rivalry",
+      "industrial_capacity",
+      "comparative_analysis"
     ],
-    "order": 13
+    "title": "A Nation of Lawyers Confronts China’s Engineering State",
+    "url": "https://www.theatlantic.com/ideas/archive/2025/08/china-america-tariffs-trump-economy/683895/?gift=c04SMsUDu_5IHrILqcoSgyI0nXW4Kw0Qw9R7N00x508"
   },
   {
     "id": "01k2net1yda1j1tqkqadctppfx",
-    "title": "The Wedding Wars - Samir Varma",
-    "url": "https://substack.com/inbox/post/168803790?r=1gvqcg&utm_medium=ios&triedRedirect=true",
+    "order": 33,
     "summary": "Indian weddings blend traditional customs with modern romance, creating family conflicts. Most marriages remain within caste and religious boundaries, maintaining social hierarchies. However, love and evolving attitudes are gradually making ceremonies more inclusive.",
     "tags": [
-      "India",
-      "culture",
-      "marriage",
-      "tradition",
-      "society"
+      "indian_culture",
+      "social_change",
+      "traditions",
+      "cultural_evolution",
+      "family_dynamics"
     ],
-    "order": 9
+    "title": "The Wedding Wars - Samir Varma",
+    "url": "https://substack.com/inbox/post/168803790?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01k2j40tf05d83f02kjh422fnt",
-    "title": "India and the invidious comparison with China",
-    "url": "https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/?ref=thediff.co",
+    "order": 29,
     "summary": "Explores how India's service-driven economic growth differs from China's export-led manufacturing model, highlighting India's unique challenges and strengths in pursuing its own development path.",
     "tags": [
-      "India",
-      "China",
-      "economics",
-      "development",
-      "comparison"
+      "economic_development",
+      "economic_comparison",
+      "development_models",
+      "emerging_economies",
+      "economic_policy"
     ],
-    "order": 4
+    "title": "India and the invidious comparison with China",
+    "url": "https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/?ref=thediff.co"
   },
   {
     "id": "01k2j3mk1ywfs2m2bt4kjch8q8",
-    "title": "A.I. Is Shedding Enlightenment Values",
-    "url": "https://archive.ph/tKiYx",
+    "order": 18,
     "summary": "AI promises an intellectual revolution similar to the Enlightenment but undermines its core values by providing easy answers that reinforce existing beliefs rather than inspiring critical thinking and debate.",
     "tags": [
-      "AI",
-      "philosophy",
+      "artificial_intelligence",
       "critical_thinking",
-      "technology",
-      "ethics"
+      "technology_ethics",
+      "intellectual_revolution",
+      "philosophy"
     ],
-    "order": 19
+    "title": "A.I. Is Shedding Enlightenment Values",
+    "url": "https://archive.ph/tKiYx"
   },
   {
     "id": "01k2fpgz8hzcvet5rbnz9gpr5a",
-    "title": "A startup is a bundle, and Windsurf broke the bundle",
-    "url": "https://alexdanco.com/2025/07/18/a-startup-is-a-bundle-and-windsurf-broke-the-bundle/",
+    "order": 19,
     "summary": "Explains how startups function as bundles combining various stakeholder interests. Uses Windsurf as example of bundle breakdown where AI talent gets valued separately, making startup coordination more difficult.",
     "tags": [
       "startups",
-      "business",
-      "AI",
-      "talent",
-      "organization"
+      "business_model",
+      "coordination",
+      "technology_industry",
+      "business_strategy"
     ],
-    "order": 20
+    "title": "A startup is a bundle, and Windsurf broke the bundle",
+    "url": "https://alexdanco.com/2025/07/18/a-startup-is-a-bundle-and-windsurf-broke-the-bundle/"
   },
   {
     "id": "01k2fdeym6jvfb3zkgx0j3c11f",
-    "title": "A Visual Guide to Gene Delivery",
-    "url": "https://www.asimov.press/p/gene-delivery",
+    "order": 9,
     "summary": "Explores various gene therapy delivery methods including AAV, lipid nanoparticles, and herpes simplex virus vectors, discussing their advantages, challenges, immune reactions, and targeting capabilities.",
     "tags": [
-      "biology",
       "gene_therapy",
-      "medicine",
       "biotechnology",
-      "treatment"
+      "medical_technology",
+      "drug_delivery",
+      "therapeutic_delivery"
     ],
-    "order": 38
+    "title": "A Visual Guide to Gene Delivery",
+    "url": "https://www.asimov.press/p/gene-delivery"
   },
   {
     "id": "01k2fder0ezwd75njceewc980v",
-    "title": "The Making of a Gene Circuit",
-    "url": "https://www.asimov.press/p/gene-circuit",
+    "order": 8,
     "summary": "Michael Elowitz developed the repressilator in the late 1990s, a gene circuit using three genes in a feedback loop to make cells flash rhythmically, demonstrating programmable gene circuits and inspiring modern synthetic biology tools.",
     "tags": [
-      "biology",
       "synthetic_biology",
-      "genetics",
-      "engineering",
-      "innovation"
+      "gene_circuits",
+      "genetic_engineering",
+      "biotechnology",
+      "molecular_biology"
     ],
-    "order": 39
+    "title": "The Making of a Gene Circuit",
+    "url": "https://www.asimov.press/p/gene-circuit"
   },
   {
     "id": "01k228ps97vg5bwhhv6433c1tm",
-    "title": "The Popular Alternative",
-    "url": "https://dirt.fyi/article/2025/05/the-popular-alternative",
+    "order": 37,
     "summary": "A24 has established itself as a prominent filmmaker known for unique, challenging movies with dedicated fans. Despite marketing quality cinema as events, the company struggles with consistency in ambitious projects.",
     "tags": [
-      "film",
-      "A24",
-      "cinema",
-      "entertainment",
-      "culture"
+      "film_industry",
+      "independent_cinema",
+      "creative_filmmaking",
+      "artistic_cinema",
+      "entertainment_industry"
     ],
-    "order": 25
+    "title": "The Popular Alternative",
+    "url": "https://dirt.fyi/article/2025/05/the-popular-alternative"
   },
   {
     "id": "01k1xb9q0p7q9qmw30wbmqr1ts",
-    "title": "What Can a Cell Remember? | Quanta Magazine",
-    "url": "https://www.quantamagazine.org/what-can-a-cell-remember-20250730/",
+    "order": 4,
     "summary": "Scientists discover that individual cells, not just neurons, can learn and remember past experiences, challenging traditional views and suggesting memory is a fundamental property of all living cells that aids adaptation and survival.",
     "tags": [
-      "biology",
-      "cells",
-      "memory",
-      "neuroscience",
-      "research"
+      "cellular_memory",
+      "cell_biology",
+      "cellular_behavior",
+      "adaptation",
+      "scientific_discovery"
     ],
-    "order": 33
+    "title": "What Can a Cell Remember? | Quanta Magazine",
+    "url": "https://www.quantamagazine.org/what-can-a-cell-remember-20250730/"
   },
   {
     "id": "01k1fvvw9hcjk4fjey8d4x8gsg",
-    "title": "It All Comes Down to the Mitochondria",
-    "url": "https://www.science.org/content/blog-post/it-all-comes-down-mitochondria",
+    "order": 3,
     "summary": "Research reveals that tiredness and sleep needs originate from mitochondrial stress in brain cells. When mitochondria become overwhelmed by continuous activity, they trigger sleep signals for cellular repair and energy restoration.",
     "tags": [
-      "biology",
-      "cells",
       "mitochondria",
       "sleep",
+      "cellular_stress",
+      "energy_metabolism",
       "neuroscience"
     ],
-    "order": 34
+    "title": "It All Comes Down to the Mitochondria",
+    "url": "https://www.science.org/content/blog-post/it-all-comes-down-mitochondria"
   },
   {
     "id": "01k1c5yaaf9tngc5pnssxa6zgw",
-    "title": "Does the U.S. Actually Have the Will to Reindustrialize?",
-    "url": "https://www.corememory.com/p/does-the-us-actually-have-the-will?r=1gvqcg&utm_medium=ios&triedRedirect=true",
+    "order": 24,
     "summary": "Brief commentary suggesting that among those involved in U.S. reindustrialization efforts, only a single individual appears to have a clear understanding of the necessary approach.",
     "tags": [
-      "America",
-      "policy",
-      "manufacturing",
       "reindustrialization",
-      "strategy"
+      "industrial_policy",
+      "economic_strategy",
+      "manufacturing",
+      "government_policy"
     ],
-    "order": 15
+    "title": "Does the U.S. Actually Have the Will to Reindustrialize?",
+    "url": "https://www.corememory.com/p/does-the-us-actually-have-the-will?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01k18xzxnt7gec54mw47qe2730",
-    "title": "American fried chicken can now be served from the Philippines",
-    "url": "https://archive.ph/j9NOC",
+    "order": 20,
     "summary": "American companies hire Filipino workers remotely for cashier and customer support roles. Service exports from developing nations grow rapidly due to technology and cost advantages, but offer fewer opportunities than manufacturing.",
     "tags": [
-      "outsourcing",
-      "Philippines",
-      "America",
       "remote_work",
-      "economics"
+      "outsourcing",
+      "international_business",
+      "global_workforce",
+      "economic_development"
     ],
-    "order": 16
+    "title": "American fried chicken can now be served from the Philippines",
+    "url": "https://archive.ph/j9NOC"
   },
   {
     "id": "01k10j2dq4d6gxg5wqs5ae3zcz",
-    "title": "A digital payments revolution in India",
-    "url": "https://archive.is/3RNVw",
+    "order": 28,
     "summary": "India's UPI is a fast, free, open digital payment system processing over $1 trillion in 2022. It promotes competition, improves financial access, has government support, and inspires global adoption.",
     "tags": [
-      "India",
+      "digital_payments",
       "fintech",
-      "payments",
-      "technology",
-      "innovation"
+      "financial_inclusion",
+      "government_policy",
+      "financial_technology"
     ],
-    "order": 8
+    "title": "A digital payments revolution in India",
+    "url": "https://archive.is/3RNVw"
   },
   {
     "id": "01k10hr6jb5ydtqsvwfph68f7r",
-    "title": "How Modi’s party took over one of India’s most prestigious private clubs",
-    "url": "https://www.ft.com/content/3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116",
+    "order": 27,
     "summary": "BJP took control of Delhi Gymkhana Club citing financial mismanagement, sparking opposition from elite members who view it as an institutional power grab reflecting broader efforts to reshape India's social structures.",
     "tags": [
-      "India",
-      "politics",
-      "BJP",
-      "institutions",
-      "power"
+      "indian_politics",
+      "institutional_takeover",
+      "power_dynamics",
+      "governance",
+      "political_control"
     ],
-    "order": 11
+    "title": "How Modi’s party took over one of India’s most prestigious private clubs",
+    "url": "https://www.ft.com/content/3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116"
   },
   {
     "id": "01k10hk5n1ya3cd38bdm224d4h",
-    "title": "Why India’s elite loves Narendra Modi",
-    "url": "https://archive.is/NUfMd",
+    "order": 26,
     "summary": "Modi enjoys broad support across education levels due to economic growth policies, strong leadership, and cross-caste appeal. Elites support him for economic advancement and global positioning despite democratic concerns.",
     "tags": [
-      "India",
-      "politics",
-      "leadership",
-      "Modi",
-      "democracy"
+      "indian_politics",
+      "political_leadership",
+      "governance",
+      "economic_policy",
+      "political_analysis"
     ],
-    "order": 10
+    "title": "Why India’s elite loves Narendra Modi",
+    "url": "https://archive.is/NUfMd"
   },
   {
     "id": "01k10h6bjne1bjfp0pandb9aec",
-    "title": "The Clash Of Two Gilded Ages",
-    "url": "https://www.noemamag.com/the-clash-of-two-gilded-ages/",
+    "order": 30,
     "summary": "Explores similarities between America and China during their respective Gilded Ages, highlighting how both superpowers are grappling with capitalist excesses despite their geopolitical rivalry.",
     "tags": [
-      "America",
-      "China",
+      "geopolitics",
       "capitalism",
-      "inequality",
-      "geopolitics"
+      "economic_inequality",
+      "great_power_rivalry",
+      "comparative_politics"
     ],
-    "order": 14
-  },
-  {
-    "id": "01k10ga3m23ks5864t1qtxvz0p",
-    "title": "Contrary India",
-    "url": "https://archive.is/ab6nD",
-    "summary": "A Cambridge economist observes that India is paradoxical - any true statement about the country can be countered with an equally valid opposite truth, highlighting the nation's complexity and contradictions.",
-    "tags": [
-      "India",
-      "paradox",
-      "complexity",
-      "economics",
-      "philosophy"
-    ],
-    "order": 6
+    "title": "The Clash Of Two Gilded Ages",
+    "url": "https://www.noemamag.com/the-clash-of-two-gilded-ages/"
   },
   {
     "id": "01k10g6485vhvggbvmqvq7cj0s",
-    "title": "He had strong views on India’s leaders",
-    "url": "https://archive.is/RFFHA#selection-1339.116-1339.217",
+    "order": 31,
     "summary": "Discusses Lee Kuan Yew's extensive knowledge and understanding of multiple Indian Prime Ministers, highlighting his unique perspective on Indian political leadership.",
     "tags": [
-      "India",
-      "politics",
-      "leadership",
+      "political_leadership",
       "diplomacy",
-      "Singapore"
+      "international_relations",
+      "asian_politics",
+      "statesmanship"
     ],
-    "order": 7
+    "title": "He had strong views on India’s leaders",
+    "url": "https://archive.is/RFFHA#selection-1339.116-1339.217"
   },
   {
     "id": "01k0yr667kps6mz7abkd99n3ds",
-    "title": "Why the Human Brain Project Went Wrong—and How to Fix It",
-    "url": "https://www.scientificamerican.com/article/why-the-human-brain-project-went-wrong-and-how-to-fix-it/",
+    "order": 6,
     "summary": "A $1-billion effort to simulate the human brain has encountered significant problems after two years, raising questions about whether the issues stem from poor management or fundamental flaws in large-scale scientific projects.",
     "tags": [
       "neuroscience",
-      "research",
-      "brain",
-      "simulation",
-      "failure"
+      "brain_simulation",
+      "scientific_research",
+      "computational_neuroscience",
+      "research_methodology"
     ],
-    "order": 40
+    "title": "Why the Human Brain Project Went Wrong—and How to Fix It",
+    "url": "https://www.scientificamerican.com/article/why-the-human-brain-project-went-wrong-and-how-to-fix-it/"
   },
   {
     "id": "01k0yr5mk34g2yn5vq2521828c",
-    "title": "Researchers simulate an entire fly brain on a laptop. Is a human brain next?",
-    "url": "https://news.berkeley.edu/2024/10/02/researchers-simulate-an-entire-fly-brain-on-a-laptop-is-a-human-brain-next/",
+    "order": 5,
     "summary": "Scientists simulated a complete fruit fly brain on a laptop, mapping 139,255 neurons and predicting responses to stimuli. This research aims to understand brain circuits and eventually model more complex brains to study human disorders.",
     "tags": [
       "neuroscience",
-      "brain",
-      "simulation",
-      "research",
-      "breakthrough"
+      "brain_simulation",
+      "computational_biology",
+      "neural_networks",
+      "medical_research"
     ],
-    "order": 41
+    "title": "Researchers simulate an entire fly brain on a laptop. Is a human brain next?",
+    "url": "https://news.berkeley.edu/2024/10/02/researchers-simulate-an-entire-fly-brain-on-a-laptop-is-a-human-brain-next/"
   },
   {
     "id": "01k0ym452574a7aed7aj98rmnv",
-    "title": "The Brilliant Inventor Who Made Two of History’s Biggest Mistakes",
-    "url": "https://archive.ph/B5R0C",
+    "order": 15,
     "summary": "Thomas Midgley Jr. invented leaded gasoline and CFCs, solving immediate problems but causing severe long-term health and environmental damage. His story serves as a cautionary tale about considering future risks of new technologies.",
     "tags": [
       "invention",
-      "environment",
-      "toxicity",
-      "history",
-      "consequences"
+      "environmental_damage",
+      "technology_risks",
+      "industrial_chemistry",
+      "unintended_consequences"
     ],
-    "order": 30
+    "title": "The Brilliant Inventor Who Made Two of History’s Biggest Mistakes",
+    "url": "https://archive.ph/B5R0C"
   },
   {
     "id": "01k0yk3nd27x9s3w1jhcxa17g8",
-    "title": "Bill Atkinson, Who Made Computers Easier to Use, Is Dead at 74",
-    "url": "https://archive.ph/Lb4C8",
+    "order": 16,
     "summary": "Key Apple designer who created QuickDraw software, invented pull-down menus and double-clicking, developed MacPaint and HyperCard, revolutionizing computer user interaction and interface design.",
     "tags": [
-      "Apple",
-      "technology",
-      "design",
+      "technology_pioneer",
+      "user_interface",
+      "computer_design",
       "innovation",
-      "computing"
+      "interface_design"
     ],
-    "order": 26
+    "title": "Bill Atkinson, Who Made Computers Easier to Use, Is Dead at 74",
+    "url": "https://archive.ph/Lb4C8"
   },
   {
     "id": "01k0rkksw05j6r0fb3sg2t75ze",
-    "title": "LL and LR Parsing Demystified",
-    "url": "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html",
+    "order": 17,
     "summary": "Explains LL and LR parsing methods, highlighting their differences in token processing and tree traversal approaches. LL uses pre-order while LR uses post-order traversal, each suited for different grammars.",
     "tags": [
-      "programming",
+      "compiler_design",
       "parsing",
-      "compilers",
-      "algorithms",
-      "computer_science"
+      "computer_science",
+      "programming_languages",
+      "software_engineering"
     ],
-    "order": 28
+    "title": "LL and LR Parsing Demystified",
+    "url": "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html"
   },
   {
     "id": "01k0p4hj3k6r9vetkx17nqr6fe",
-    "title": "The Copenhagen Interpretation of Ethics",
-    "url": "https://laneless.substack.com/p/the-copenhagen-interpretation-of-ethics",
+    "order": 35,
     "summary": "Explores how observing or addressing social problems assigns ethical responsibility, even for partial solutions. Uses quantum mechanics analogy to argue that marginal improvements should be valued rather than judged.",
     "tags": [
       "ethics",
-      "philosophy",
-      "responsibility",
-      "society",
-      "morality"
+      "moral_philosophy",
+      "social_responsibility",
+      "applied_ethics",
+      "moral_theory"
     ],
-    "order": 22
+    "title": "The Copenhagen Interpretation of Ethics",
+    "url": "https://laneless.substack.com/p/the-copenhagen-interpretation-of-ethics"
   },
   {
     "id": "01k0cet4pw72nn9pab1a2sywrx",
-    "title": "Tradition is Smarter Than You Are",
-    "url": "https://scholars-stage.org/tradition-is-smarter-than-you-are/",
+    "order": 34,
     "summary": "Cultural traditions shaped over generations are more effective for human success than individual rational thinking. Many beneficial practices aren't fully understood by followers, suggesting traditions should be respected and maintained.",
     "tags": [
-      "culture",
+      "cultural_evolution",
       "tradition",
       "anthropology",
-      "wisdom",
-      "society"
+      "collective_wisdom",
+      "human_behavior"
     ],
-    "order": 23
+    "title": "Tradition is Smarter Than You Are",
+    "url": "https://scholars-stage.org/tradition-is-smarter-than-you-are/"
   },
   {
     "id": "01k0bvm4t4fvbr5276rebhnnf0",
-    "title": "Will We Ever Get Fusion Power?",
-    "url": "https://www.construction-physics.com/p/will-we-ever-get-fusion-power",
+    "order": 14,
     "summary": "Fusion power remains impractical after 70+ years of research due to challenges in creating extreme conditions. Despite new company approaches promising near-term reactors, fusion remains uncertain and costly.",
     "tags": [
-      "energy",
-      "fusion",
-      "nuclear",
-      "technology",
-      "research"
+      "fusion_power",
+      "nuclear_energy",
+      "renewable_energy",
+      "energy_technology",
+      "clean_energy"
     ],
-    "order": 31
+    "title": "Will We Ever Get Fusion Power?",
+    "url": "https://www.construction-physics.com/p/will-we-ever-get-fusion-power"
   },
   {
     "id": "01jzmqv1gtzgntkpr861khmtdw",
-    "title": "How did X-Rays gain mass adoption?",
-    "url": "https://www.aditharun.com/p/how-did-x-rays-gain-mass-adoption",
+    "order": 13,
     "summary": "X-Rays achieved widespread adoption by 1925 due to their clear medical utility in diagnosing injuries and diseases, military applications in wars, dedicated hospital roles, and their simplicity and speed compared to other technologies.",
     "tags": [
-      "medicine",
-      "technology",
-      "X-rays",
-      "healthcare",
-      "history"
+      "medical_technology",
+      "healthcare_innovation",
+      "technology_adoption",
+      "diagnostic_imaging",
+      "medical_history"
     ],
-    "order": 29
+    "title": "How did X-Rays gain mass adoption?",
+    "url": "https://www.aditharun.com/p/how-did-x-rays-gain-mass-adoption"
   },
   {
     "id": "01jzagw9s9k81xj7hsvq10b98n",
-    "title": "Flounder Mode",
-    "url": "https://joincolossus.com/article/flounder-mode/",
+    "order": 21,
     "summary": "Explores Kevin Kelly's approach to following interests with joy, turning them into meaningful work without chasing fame or fortune. Discusses his creative project-focused \"Hollywood style\" career path versus traditional ladder climbing.",
     "tags": [
-      "career",
-      "creativity",
-      "work",
-      "passion",
-      "fulfillment"
+      "career_development",
+      "creative_work",
+      "meaningful_work",
+      "alternative_career_paths",
+      "work_philosophy"
     ],
-    "order": 21
+    "title": "Flounder Mode",
+    "url": "https://joincolossus.com/article/flounder-mode/"
   },
   {
     "id": "01jyxcfgnngyv41y6ma393y3jx",
-    "title": "Endometriosis is an incredibly interesting disease",
-    "url": "https://www.owlposting.com/p/endometriosis-is-an-incredibly-interesting",
+    "order": 11,
     "summary": "Complex, poorly understood disease affecting many people. Behaves like cancer but lacks cure and is often underdiagnosed. Receives insufficient funding despite widespread impact and severity.",
     "tags": [
-      "medicine",
       "endometriosis",
-      "health",
-      "women",
-      "disease"
+      "womens_health",
+      "chronic_disease",
+      "underdiagnosed_conditions",
+      "healthcare_disparities"
     ],
-    "order": 44
+    "title": "Endometriosis is an incredibly interesting disease",
+    "url": "https://www.owlposting.com/p/endometriosis-is-an-incredibly-interesting"
   },
   {
     "id": "01jym0svp7f768hbhjymgmhyd5",
-    "title": "Medicine’s Burning Question | The New Yorker",
-    "url": "https://www.newyorker.com/magazine/2015/11/30/inflamed",
+    "order": 10,
     "summary": "Explores inflammation's role in heart disease and Alzheimer's. Scientists investigate links between inflammation and chronic conditions while developing treatments to control inflammatory responses for improved health outcomes.",
     "tags": [
-      "medicine",
       "inflammation",
-      "research",
-      "health",
-      "disease"
+      "medical_research",
+      "chronic_conditions",
+      "disease_mechanisms",
+      "therapeutic_interventions"
     ],
-    "order": 42
-  },
-  {
-    "id": "01jyfbnd92y1w2xhm511pakkze",
-    "title": "The Fight Against Cancer Turns to a Special Class of Carcinogens | Th…",
-    "url": "https://archive.is/Jpuzq",
-    "summary": "Cancers can develop from inflammation activating dormant mutant cells, not just new mutations. Air pollution and irritants promote tumor growth without creating mutations. Research focuses on detecting these factors.",
-    "tags": [
-      "medicine",
-      "cancer",
-      "inflammation",
-      "disease",
-      "research"
-    ],
-    "order": 43
+    "title": "Medicine’s Burning Question | The New Yorker",
+    "url": "https://www.newyorker.com/magazine/2015/11/30/inflamed"
   },
   {
     "id": "01jyct0ccg4hydaqgav2fj991p",
-    "title": "On The Tolkienic Hero",
-    "url": "https://scholars-stage.org/on-the-tolkienic-hero/",
+    "order": 36,
     "summary": "Explores Tolkien's unique portrayal of heroism, where heroes perform great deeds without seeking fame or power, reshaping modern storytelling's approach to heroic narratives in a skeptical contemporary world.",
     "tags": [
-      "literature",
+      "literary_analysis",
       "heroism",
-      "Tolkien",
       "storytelling",
-      "culture"
+      "narrative_theory",
+      "cultural_impact"
     ],
-    "order": 24
+    "title": "On The Tolkienic Hero",
+    "url": "https://scholars-stage.org/on-the-tolkienic-hero/"
   },
   {
     "id": "01jy7rehn3m7m521ddgc5p1y30",
-    "title": "Size and Geometry Introduction",
-    "url": "https://book.bionumbers.org/size-and-geometry-introduction/",
+    "order": 1,
     "summary": "Explores how size and shape influence biological functions across molecular and cellular levels, using E. coli and HeLa cells as examples to demonstrate size-related differences in processes like virus production and behavior.",
     "tags": [
-      "biology",
-      "cells",
-      "structure",
-      "function",
-      "research"
+      "cell_biology",
+      "molecular_biology",
+      "cellular_processes",
+      "biophysics",
+      "biological_functions"
     ],
-    "order": 32
+    "title": "Size and Geometry Introduction",
+    "url": "https://book.bionumbers.org/size-and-geometry-introduction/"
   },
   {
     "id": "01jy6rem6wbkfj90g95gazpq5p",
-    "title": "More on Repealing the Laws of Economics",
-    "url": "https://www.oaktreecapital.com/insights/memo/more-on-repealing-the-laws-of-economics",
+    "order": 23,
     "summary": "Discusses how government interference in free markets through rules like tariffs can lead to negative consequences such as higher consumer prices and reduced competition, arguing that free markets generally produce better outcomes than controlled ones.",
     "tags": [
       "economics",
-      "markets",
-      "policy",
-      "tariffs",
-      "regulation"
+      "free_markets",
+      "government_intervention",
+      "economic_policy",
+      "market_regulation"
     ],
-    "order": 17
+    "title": "More on Repealing the Laws of Economics",
+    "url": "https://www.oaktreecapital.com/insights/memo/more-on-repealing-the-laws-of-economics"
   },
   {
     "id": "01jxqzew0asyht6bdwqcsnbyha",
-    "title": "The ‘Arab Spring’ and other American seasons",
-    "url": "https://www.aljazeera.com/opinions/2012/8/29/the-arab-spring-and-other-american-seasons/",
+    "order": 32,
     "summary": "Analysis of Arab Spring uprisings driven by demands for political and economic rights against neoliberal policies, contrasting with Prague Spring's elite-focused reforms. Discusses Western powers' shift from supporting dictators to backing counter-revolutions.",
     "tags": [
-      "politics",
-      "revolution",
-      "Middle_East",
-      "economics",
-      "geopolitics"
+      "political_uprising",
+      "social_movements",
+      "political_reform",
+      "geopolitics",
+      "political_analysis"
     ],
-    "order": 18
+    "title": "The ‘Arab Spring’ and other American seasons",
+    "url": "https://www.aljazeera.com/opinions/2012/8/29/the-arab-spring-and-other-american-seasons/"
   },
   {
     "id": "01jxaybc1kh90y9pjsnf5w3bre",
-    "title": "Procrastination: An emotional struggle",
-    "url": "https://www.counseling.org/publications/counseling-today-magazine/article-archive/article/legacy/procrastination-an-emotional-struggle",
+    "order": 22,
     "summary": "Procrastination is rooted in emotional issues and irrational beliefs rather than poor habits. Counselors help clients identify triggers and develop strategies to address root causes for improved well-being.",
     "tags": [
-      "psychology",
       "procrastination",
-      "therapy",
-      "behavior",
-      "mental_health"
+      "psychology",
+      "behavioral_change",
+      "counseling",
+      "productivity"
     ],
-    "order": 45
+    "title": "Procrastination: An emotional struggle",
+    "url": "https://www.counseling.org/publications/counseling-today-magazine/article-archive/article/legacy/procrastination-an-emotional-struggle"
   },
   {
     "id": "01jxar0st58n3zv6b7x6424ff0",
-    "title": "Why Mitochondria Are More like a Motherboard Than the Powerhouse of the Cell",
-    "url": "https://www.scientificamerican.com/article/why-mitochondria-are-more-like-a-motherboard-than-the-powerhouse-of-the-cell/",
+    "order": 2,
     "summary": "Mitochondria function beyond energy production, acting as cellular motherboards that process information, communicate within and between cells, form social networks, and adapt to environmental changes, crucial for health.",
     "tags": [
-      "biology",
       "mitochondria",
-      "health",
-      "metabolism",
-      "cells"
+      "cellular_communication",
+      "cell_biology",
+      "energy_metabolism",
+      "cellular_networks"
     ],
-    "order": 35
+    "title": "Why Mitochondria Are More like a Motherboard Than the Powerhouse of the Cell",
+    "url": "https://www.scientificamerican.com/article/why-mitochondria-are-more-like-a-motherboard-than-the-powerhouse-of-the-cell/"
   },
   {
     "id": "01jx25y45749xbqr1mr7ypqadm",
-    "title": "A Visual Guide to Genome Editors",
-    "url": "https://www.asimov.press/p/a-visual-guide-to-genome-editors",
+    "order": 7,
     "summary": "Overview of CRISPR genome editing systems including Cas9, Cas12, and Cas13, covering their mechanisms, applications, and advances in specificity and precision for targeted genetic modifications.",
     "tags": [
-      "biology",
       "CRISPR",
-      "genetics",
-      "editing",
-      "biotechnology"
+      "genome_editing",
+      "genetic_engineering",
+      "biotechnology",
+      "gene_therapy"
     ],
-    "order": 37
+    "title": "A Visual Guide to Genome Editors",
+    "url": "https://www.asimov.press/p/a-visual-guide-to-genome-editors"
   },
   {
     "id": "01jwg7jf76yadan8p0cbkmjcvw",
-    "title": "The Reenchanted World",
-    "url": "https://harpers.org/archive/2025/06/the-reenchanted-world-karl-ove-knausgaard-digital-age/",
+    "order": 38,
     "summary": "Knausgaard examines the tension between technology and nature, exploring how modern life disconnects us from the physical world while seeking ways to reconnect with material existence and understand deeper life connections.",
     "tags": [
       "philosophy",
       "technology",
       "nature",
-      "modernity",
-      "existence"
+      "modern_life",
+      "existential"
     ],
-    "order": 46
+    "title": "The Reenchanted World",
+    "url": "https://harpers.org/archive/2025/06/the-reenchanted-world-karl-ove-knausgaard-digital-age/"
   },
   {
     "id": "01jwf9yr2mwzaakjns4hqe2sbb",
-    "title": "The Baffling Intelligence of a Single Cell: The story of E. coli chemotaxis",
-    "url": "https://jsomers.net/e-coli-chemotaxis/",
+    "order": 0,
     "summary": "Explores how E. coli bacteria navigate environments to find nutrients through chemotaxis, using molecular mechanisms like flagellar motors and signaling molecules to sense chemical gradients and adapt.",
     "tags": [
-      "biology",
-      "bacteria",
-      "cells",
-      "navigation",
-      "microbiology"
+      "microbiology",
+      "cellular_navigation",
+      "chemotaxis",
+      "molecular_mechanisms",
+      "bacterial_behavior"
     ],
-    "order": 36
+    "title": "The Baffling Intelligence of a Single Cell: The story of E. coli chemotaxis",
+    "url": "https://jsomers.net/e-coli-chemotaxis/"
   }
 ]
