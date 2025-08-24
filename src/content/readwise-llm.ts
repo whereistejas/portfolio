@@ -248,7 +248,28 @@ async function readJsonCache<T>(path: string, defaultValue: T): Promise<T> {
 
 async function writeJsonCache<T>(path: string, data: T): Promise<void> {
 	const { writeFile } = await import('fs/promises');
-	await writeFile(path, JSON.stringify(data, null, 2), 'utf-8');
+
+	// Sort object keys recursively to ensure consistent ordering
+	const sortKeys = (obj: any): any => {
+		if (obj === null || typeof obj !== 'object') {
+			return obj;
+		}
+
+		if (Array.isArray(obj)) {
+			return obj.map(sortKeys);
+		}
+
+		// Sort object keys alphabetically
+		const sortedObj: any = {};
+		const keys = Object.keys(obj).sort();
+		for (const key of keys) {
+			sortedObj[key] = sortKeys(obj[key]);
+		}
+		return sortedObj;
+	};
+
+	const sortedData = sortKeys(data);
+	await writeFile(path, JSON.stringify(sortedData, null, 2), 'utf-8');
 }
 
 // Type for grouped documents cache (matches cache-group.json structure)
@@ -260,7 +281,6 @@ export async function processDocuments(
 	documents: LLMDocumentInput[]
 ): Promise<DisplayDocument[]> {
 	const documentIds = documents.map(doc => doc.id);
-	console.log(`[LLM] Processing documents: ${documentIds.length}`);
 
 	// Load summary cache
 	var summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
@@ -292,7 +312,6 @@ export async function processDocuments(
 			};
 
 			await writeJsonCache(SUMMARY_CACHE_PATH, summaryCache);
-			console.log(`[LLM] Finished summarizing: ${document.title}`);
 		}
 	}
 
