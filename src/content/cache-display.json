@@ -1,21 +1,21 @@
 [
   {
-    "id": "01k3h73ga5f44yh7kfb5jr3s32",
-    "order": 34,
-    "summary": "A free platform for cataloging books, movies, and music with features for tracking reading progress, rating, reviewing, and receiving personalized recommendations. Used by nearly 3 million readers.",
+    "id": "01k3jv94zaqbejv2c3j9t3dm9r",
+    "order": 5,
+    "summary": "Waddington's model illustrates cell differentiation using a ball rolling down hills into valleys, representing how cells choose developmental paths guided by genes, signals, and timing that shape cellular routes.",
     "tags": [
-      "cataloging",
-      "media_management",
-      "digital_catalog",
-      "community",
-      "entertainment"
+      "developmental_biology",
+      "cell_differentiation",
+      "gene_regulation",
+      "cellular_development",
+      "embryology"
     ],
-    "title": "LibraryThing A Home For Your Books.",
-    "url": "https://www.librarything.com/"
+    "title": "Epigenetic Landscape",
+    "url": "https://embryo.asu.edu/pages/epigenetic-landscape?utm_source=chatgpt.com"
   },
   {
     "id": "01k3c0njfkfk5g7a8gtrjh0dgp",
-    "order": 12,
+    "order": 13,
     "summary": "Early cancer detection methods like liquid biopsies promise blood-based screening but face challenges with false positives, detecting non-threatening tumors, and proving they actually reduce cancer mortality rates.",
     "tags": [
       "cancer",
@@ -29,13 +29,13 @@
   },
   {
     "id": "01k38s3z2gty73bpdzpejer4fj",
-    "order": 14,
+    "order": 17,
     "summary": "Diapause is a developmental pause in insects at any life stage that removes biomass from active life. It can be manipulated for pest control and biological management, with applications in farming, disease control, and conservation.",
     "tags": [
       "insect_biology",
       "diapause",
       "pest_control",
-      "agriculture",
+      "agricultural_science",
       "biological_control"
     ],
     "title": "Pausing Insect Activity",
@@ -43,13 +43,13 @@
   },
   {
     "id": "01k2zj0xxcdk4gje1cj3gxyjmm",
-    "order": 20,
+    "order": 24,
     "summary": "Contrasts China's engineering-focused approach to building infrastructure and manufacturing with America's lawyer-dominated, rule-based culture that has lost production capacity.",
     "tags": [
-      "geopolitics",
+      "economic_rivalry",
       "manufacturing",
       "industrial_capacity",
-      "economic_rivalry",
+      "geopolitics",
       "comparative_analysis"
     ],
     "title": "A Nation of Lawyers Confronts China’s Engineering State",
@@ -57,26 +57,26 @@
   },
   {
     "id": "01k2net1yda1j1tqkqadctppfx",
-    "order": 28,
+    "order": 32,
     "summary": "Indian weddings blend traditional customs with modern romance, creating family conflicts. Most marriages remain within caste and religious boundaries, maintaining social hierarchies. However, love and evolving attitudes are gradually making ceremonies more inclusive.",
     "tags": [
-      "Indian_culture",
+      "indian_culture",
       "social_change",
-      "cultural_evolution",
-      "traditions",
-      "family_dynamics"
+      "cultural_traditions",
+      "family_dynamics",
+      "cultural_evolution"
     ],
     "title": "The Wedding Wars - Samir Varma",
     "url": "https://substack.com/inbox/post/168803790?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01k2j40tf05d83f02kjh422fnt",
-    "order": 19,
+    "order": 27,
     "summary": "Explores how India's service-driven economic growth differs from China's export-led manufacturing model, highlighting India's unique challenges and strengths in pursuing its own development path.",
     "tags": [
       "economic_development",
       "comparative_economics",
-      "emerging_economies",
+      "asian_economies",
       "growth_strategies",
       "development_models"
     ],
@@ -85,27 +85,27 @@
   },
   {
     "id": "01k2fpgz8hzcvet5rbnz9gpr5a",
-    "order": 37,
+    "order": 19,
     "summary": "Explains how startups function as bundles combining various stakeholder interests. Uses Windsurf as example of bundle breakdown where AI talent gets valued separately, making startup coordination more difficult.",
     "tags": [
       "startups",
       "business_strategy",
+      "talent_acquisition",
       "organizational_structure",
-      "entrepreneurship",
-      "talent_acquisition"
+      "technology_industry"
     ],
     "title": "A startup is a bundle, and Windsurf broke the bundle",
     "url": "https://alexdanco.com/2025/07/18/a-startup-is-a-bundle-and-windsurf-broke-the-bundle/"
   },
   {
     "id": "01k2fdeym6jvfb3zkgx0j3c11f",
-    "order": 7,
+    "order": 8,
     "summary": "Explores various gene therapy delivery methods including AAV, lipid nanoparticles, and herpes simplex virus vectors, discussing their advantages, challenges, immune reactions, and targeting capabilities.",
     "tags": [
       "gene_therapy",
+      "drug_delivery",
       "biotechnology",
       "medical_technology",
-      "drug_delivery",
       "therapeutic_delivery"
     ],
     "title": "A Visual Guide to Gene Delivery",
@@ -113,27 +113,27 @@
   },
   {
     "id": "01k2fder0ezwd75njceewc980v",
-    "order": 6,
+    "order": 7,
     "summary": "Michael Elowitz developed the repressilator in the late 1990s, a gene circuit using three genes in a feedback loop to make cells flash rhythmically, demonstrating programmable gene circuits and inspiring modern synthetic biology tools.",
     "tags": [
       "synthetic_biology",
       "gene_circuits",
       "genetic_engineering",
       "biotechnology",
-      "bioengineering"
+      "molecular_biology"
     ],
     "title": "The Making of a Gene Circuit",
     "url": "https://www.asimov.press/p/gene-circuit"
   },
   {
     "id": "01k228ps97vg5bwhhv6433c1tm",
-    "order": 33,
+    "order": 37,
     "summary": "A24 has established itself as a prominent filmmaker known for unique, challenging movies with dedicated fans. Despite marketing quality cinema as events, the company struggles with consistency in ambitious projects.",
     "tags": [
       "film_industry",
       "independent_cinema",
-      "creative_filmmaking",
       "artistic_cinema",
+      "creative_filmmaking",
       "entertainment_industry"
     ],
     "title": "The Popular Alternative",
@@ -145,10 +145,10 @@
     "summary": "Scientists discover that individual cells, not just neurons, can learn and remember past experiences, challenging traditional views and suggesting memory is a fundamental property of all living cells that aids adaptation and survival.",
     "tags": [
       "cellular_memory",
-      "cell_biology",
-      "neuroscience",
       "cellular_intelligence",
-      "adaptation"
+      "adaptation",
+      "cellular_behavior",
+      "scientific_discovery"
     ],
     "title": "What Can a Cell Remember? | Quanta Magazine",
     "url": "https://www.quantamagazine.org/what-can-a-cell-remember-20250730/"
@@ -159,7 +159,7 @@
     "summary": "Research reveals that tiredness and sleep needs originate from mitochondrial stress in brain cells. When mitochondria become overwhelmed by continuous activity, they trigger sleep signals for cellular repair and energy restoration.",
     "tags": [
       "mitochondria",
-      "sleep",
+      "sleep_science",
       "cellular_stress",
       "energy_metabolism",
       "neuroscience"
@@ -169,27 +169,27 @@
   },
   {
     "id": "01k1c5yaaf9tngc5pnssxa6zgw",
-    "order": 18,
+    "order": 23,
     "summary": "Brief commentary suggesting that among those involved in U.S. reindustrialization efforts, only a single individual appears to have a clear understanding of the necessary approach.",
     "tags": [
       "reindustrialization",
       "industrial_policy",
       "economic_strategy",
       "manufacturing",
-      "economic_development"
+      "american_industry"
     ],
     "title": "Does the U.S. Actually Have the Will to Reindustrialize?",
     "url": "https://www.corememory.com/p/does-the-us-actually-have-the-will?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01k18xzxnt7gec54mw47qe2730",
-    "order": 21,
+    "order": 25,
     "summary": "American companies hire Filipino workers remotely for cashier and customer support roles. Service exports from developing nations grow rapidly due to technology and cost advantages, but offer fewer opportunities than manufacturing.",
     "tags": [
       "remote_work",
       "outsourcing",
-      "international_business",
       "global_workforce",
+      "international_business",
       "economic_development"
     ],
     "title": "American fried chicken can now be served from the Philippines",
@@ -197,69 +197,69 @@
   },
   {
     "id": "01k10j2dq4d6gxg5wqs5ae3zcz",
-    "order": 22,
+    "order": 26,
     "summary": "India's UPI is a fast, free, open digital payment system processing over $1 trillion in 2022. It promotes competition, improves financial access, has government support, and inspires global adoption.",
     "tags": [
       "digital_payments",
       "fintech",
-      "financial_technology",
+      "financial_inclusion",
       "payment_systems",
-      "financial_inclusion"
+      "financial_innovation"
     ],
     "title": "A digital payments revolution in India",
     "url": "https://archive.is/3RNVw"
   },
   {
     "id": "01k10hr6jb5ydtqsvwfph68f7r",
-    "order": 24,
+    "order": 31,
     "summary": "BJP took control of Delhi Gymkhana Club citing financial mismanagement, sparking opposition from elite members who view it as an institutional power grab reflecting broader efforts to reshape India's social structures.",
     "tags": [
-      "Indian_politics",
+      "indian_politics",
       "institutional_control",
       "power_dynamics",
-      "political_influence",
-      "governance"
+      "civil_society",
+      "political_influence"
     ],
     "title": "How Modi’s party took over one of India’s most prestigious private clubs",
     "url": "https://www.ft.com/content/3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116"
   },
   {
     "id": "01k10hk5n1ya3cd38bdm224d4h",
-    "order": 23,
+    "order": 30,
     "summary": "Modi enjoys broad support across education levels due to economic growth policies, strong leadership, and cross-caste appeal. Elites support him for economic advancement and global positioning despite democratic concerns.",
     "tags": [
-      "Indian_politics",
+      "indian_politics",
       "political_leadership",
+      "populism",
       "economic_policy",
-      "governance",
-      "political_analysis"
+      "democratic_governance"
     ],
     "title": "Why India’s elite loves Narendra Modi",
     "url": "https://archive.is/NUfMd"
   },
   {
     "id": "01k10h6bjne1bjfp0pandb9aec",
-    "order": 26,
+    "order": 28,
     "summary": "Explores similarities between America and China during their respective Gilded Ages, highlighting how both superpowers are grappling with capitalist excesses despite their geopolitical rivalry.",
     "tags": [
-      "geopolitics",
-      "capitalism",
       "economic_inequality",
-      "superpower_competition",
-      "comparative_politics"
+      "capitalism",
+      "comparative_politics",
+      "political_economy",
+      "economic_history"
     ],
     "title": "The Clash Of Two Gilded Ages",
     "url": "https://www.noemamag.com/the-clash-of-two-gilded-ages/"
   },
   {
     "id": "01k10g6485vhvggbvmqvq7cj0s",
-    "order": 25,
+    "order": 29,
     "summary": "Discusses Lee Kuan Yew's extensive knowledge and understanding of multiple Indian Prime Ministers, highlighting his unique perspective on Indian political leadership.",
     "tags": [
       "political_leadership",
       "diplomacy",
       "international_relations",
-      "Asian_politics",
+      "asian_politics",
       "statesmanship"
     ],
     "title": "He had strong views on India’s leaders",
@@ -267,49 +267,49 @@
   },
   {
     "id": "01k0yr667kps6mz7abkd99n3ds",
-    "order": 8,
+    "order": 9,
     "summary": "A $1-billion effort to simulate the human brain has encountered significant problems after two years, raising questions about whether the issues stem from poor management or fundamental flaws in large-scale scientific projects.",
     "tags": [
-      "neuroscience",
       "brain_simulation",
-      "computational_neuroscience",
+      "neuroscience",
+      "computational_biology",
       "scientific_research",
-      "research_funding"
+      "research_methodology"
     ],
     "title": "Why the Human Brain Project Went Wrong—and How to Fix It",
     "url": "https://www.scientificamerican.com/article/why-the-human-brain-project-went-wrong-and-how-to-fix-it/"
   },
   {
     "id": "01k0yr5mk34g2yn5vq2521828c",
-    "order": 9,
+    "order": 10,
     "summary": "Scientists simulated a complete fruit fly brain on a laptop, mapping 139,255 neurons and predicting responses to stimuli. This research aims to understand brain circuits and eventually model more complex brains to study human disorders.",
     "tags": [
       "neuroscience",
       "brain_simulation",
       "computational_biology",
       "neural_networks",
-      "scientific_modeling"
+      "medical_research"
     ],
     "title": "Researchers simulate an entire fly brain on a laptop. Is a human brain next?",
     "url": "https://news.berkeley.edu/2024/10/02/researchers-simulate-an-entire-fly-brain-on-a-laptop-is-a-human-brain-next/"
   },
   {
     "id": "01k0ym452574a7aed7aj98rmnv",
-    "order": 15,
+    "order": 16,
     "summary": "Thomas Midgley Jr. invented leaded gasoline and CFCs, solving immediate problems but causing severe long-term health and environmental damage. His story serves as a cautionary tale about considering future risks of new technologies.",
     "tags": [
+      "invention",
       "environmental_damage",
       "technology_risks",
-      "industrial_chemistry",
-      "public_health",
-      "unintended_consequences"
+      "unintended_consequences",
+      "industrial_chemistry"
     ],
     "title": "The Brilliant Inventor Who Made Two of History’s Biggest Mistakes",
     "url": "https://archive.ph/B5R0C"
   },
   {
     "id": "01k0rkksw05j6r0fb3sg2t75ze",
-    "order": 38,
+    "order": 18,
     "summary": "Explains LL and LR parsing methods, highlighting their differences in token processing and tree traversal approaches. LL uses pre-order while LR uses post-order traversal, each suited for different grammars.",
     "tags": [
       "parsing",
@@ -323,26 +323,26 @@
   },
   {
     "id": "01k0p4hj3k6r9vetkx17nqr6fe",
-    "order": 31,
+    "order": 35,
     "summary": "Explores how observing or addressing social problems assigns ethical responsibility, even for partial solutions. Uses quantum mechanics analogy to argue that marginal improvements should be valued rather than judged.",
     "tags": [
       "ethics",
       "moral_philosophy",
       "social_responsibility",
       "applied_ethics",
-      "moral_theory"
+      "moral_judgment"
     ],
     "title": "The Copenhagen Interpretation of Ethics",
     "url": "https://laneless.substack.com/p/the-copenhagen-interpretation-of-ethics"
   },
   {
     "id": "01k0cet4pw72nn9pab1a2sywrx",
-    "order": 29,
+    "order": 34,
     "summary": "Cultural traditions shaped over generations are more effective for human success than individual rational thinking. Many beneficial practices aren't fully understood by followers, suggesting traditions should be respected and maintained.",
     "tags": [
       "cultural_evolution",
-      "anthropology",
       "collective_wisdom",
+      "anthropology",
       "cultural_practices",
       "behavioral_science"
     ],
@@ -351,13 +351,13 @@
   },
   {
     "id": "01k0bvm4t4fvbr5276rebhnnf0",
-    "order": 16,
+    "order": 15,
     "summary": "Fusion power remains impractical after 70+ years of research due to challenges in creating extreme conditions. Despite new company approaches promising near-term reactors, fusion remains uncertain and costly.",
     "tags": [
       "fusion_power",
       "nuclear_energy",
-      "clean_energy",
       "energy_technology",
+      "clean_energy",
       "technological_barriers"
     ],
     "title": "Will We Ever Get Fusion Power?",
@@ -365,13 +365,13 @@
   },
   {
     "id": "01jzmqv1gtzgntkpr861khmtdw",
-    "order": 13,
+    "order": 14,
     "summary": "X-Rays achieved widespread adoption by 1925 due to their clear medical utility in diagnosing injuries and diseases, military applications in wars, dedicated hospital roles, and their simplicity and speed compared to other technologies.",
     "tags": [
       "medical_technology",
+      "diagnostic_imaging",
       "healthcare_innovation",
       "technology_adoption",
-      "diagnostic_imaging",
       "medical_history"
     ],
     "title": "How did X-Rays gain mass adoption?",
@@ -379,25 +379,25 @@
   },
   {
     "id": "01jzagw9s9k81xj7hsvq10b98n",
-    "order": 36,
+    "order": 20,
     "summary": "Explores Kevin Kelly's approach to following interests with joy, turning them into meaningful work without chasing fame or fortune. Discusses his creative project-focused \"Hollywood style\" career path versus traditional ladder climbing.",
     "tags": [
       "career_development",
       "creative_work",
+      "alternative_careers",
       "meaningful_work",
-      "work_philosophy",
-      "personal_fulfillment"
+      "professional_fulfillment"
     ],
     "title": "Flounder Mode",
     "url": "https://joincolossus.com/article/flounder-mode/"
   },
   {
     "id": "01jyxcfgnngyv41y6ma393y3jx",
-    "order": 11,
+    "order": 12,
     "summary": "Complex, poorly understood disease affecting many people. Behaves like cancer but lacks cure and is often underdiagnosed. Receives insufficient funding despite widespread impact and severity.",
     "tags": [
       "endometriosis",
-      "women's_health",
+      "womens_health",
       "chronic_disease",
       "medical_research",
       "healthcare_disparities"
@@ -407,28 +407,28 @@
   },
   {
     "id": "01jym0svp7f768hbhjymgmhyd5",
-    "order": 10,
+    "order": 11,
     "summary": "Explores inflammation's role in heart disease and Alzheimer's. Scientists investigate links between inflammation and chronic conditions while developing treatments to control inflammatory responses for improved health outcomes.",
     "tags": [
       "inflammation",
       "medical_research",
-      "chronic_conditions",
-      "disease_mechanisms",
-      "therapeutic_interventions"
+      "chronic_disease",
+      "therapeutic_interventions",
+      "disease_mechanisms"
     ],
     "title": "Medicine’s Burning Question | The New Yorker",
     "url": "https://www.newyorker.com/magazine/2015/11/30/inflamed"
   },
   {
     "id": "01jyct0ccg4hydaqgav2fj991p",
-    "order": 32,
+    "order": 36,
     "summary": "Explores Tolkien's unique portrayal of heroism, where heroes perform great deeds without seeking fame or power, reshaping modern storytelling's approach to heroic narratives in a skeptical contemporary world.",
     "tags": [
       "literary_analysis",
       "heroism",
       "storytelling",
-      "narrative_theory",
-      "literary_criticism"
+      "character_archetypes",
+      "narrative_theory"
     ],
     "title": "On The Tolkienic Hero",
     "url": "https://scholars-stage.org/on-the-tolkienic-hero/"
@@ -440,16 +440,16 @@
     "tags": [
       "cell_biology",
       "cellular_structure",
-      "biological_functions",
-      "molecular_biology",
-      "biophysics"
+      "biophysics",
+      "cellular_processes",
+      "quantitative_biology"
     ],
     "title": "Size and Geometry Introduction",
     "url": "https://book.bionumbers.org/size-and-geometry-introduction/"
   },
   {
     "id": "01jy6rem6wbkfj90g95gazpq5p",
-    "order": 17,
+    "order": 22,
     "summary": "Discusses how government interference in free markets through rules like tariffs can lead to negative consequences such as higher consumer prices and reduced competition, arguing that free markets generally produce better outcomes than controlled ones.",
     "tags": [
       "economics",
@@ -463,27 +463,27 @@
   },
   {
     "id": "01jxqzew0asyht6bdwqcsnbyha",
-    "order": 27,
+    "order": 33,
     "summary": "Analysis of Arab Spring uprisings driven by demands for political and economic rights against neoliberal policies, contrasting with Prague Spring's elite-focused reforms. Discusses Western powers' shift from supporting dictators to backing counter-revolutions.",
     "tags": [
       "political_uprising",
       "social_movements",
-      "geopolitics",
-      "political_reform",
-      "democratization"
+      "middle_east_politics",
+      "social_justice",
+      "political_reform"
     ],
     "title": "The ‘Arab Spring’ and other American seasons",
     "url": "https://www.aljazeera.com/opinions/2012/8/29/the-arab-spring-and-other-american-seasons/"
   },
   {
     "id": "01jxaybc1kh90y9pjsnf5w3bre",
-    "order": 30,
+    "order": 21,
     "summary": "Procrastination is rooted in emotional issues and irrational beliefs rather than poor habits. Counselors help clients identify triggers and develop strategies to address root causes for improved well-being.",
     "tags": [
-      "psychology",
+      "procrastination",
       "behavioral_change",
-      "mental_health",
       "therapy",
+      "psychology",
       "emotional_regulation"
     ],
     "title": "Procrastination: An emotional struggle",
@@ -495,38 +495,38 @@
     "summary": "Mitochondria function beyond energy production, acting as cellular motherboards that process information, communicate within and between cells, form social networks, and adapt to environmental changes, crucial for health.",
     "tags": [
       "mitochondria",
-      "cell_biology",
       "cellular_communication",
       "energy_metabolism",
-      "cellular_networks"
+      "cellular_networks",
+      "cell_biology"
     ],
     "title": "Why Mitochondria Are More like a Motherboard Than the Powerhouse of the Cell",
     "url": "https://www.scientificamerican.com/article/why-mitochondria-are-more-like-a-motherboard-than-the-powerhouse-of-the-cell/"
   },
   {
     "id": "01jx25y45749xbqr1mr7ypqadm",
-    "order": 5,
+    "order": 6,
     "summary": "Overview of CRISPR genome editing systems including Cas9, Cas12, and Cas13, covering their mechanisms, applications, and advances in specificity and precision for targeted genetic modifications.",
     "tags": [
       "CRISPR",
       "genome_editing",
       "genetic_engineering",
       "biotechnology",
-      "molecular_biology"
+      "precision_medicine"
     ],
     "title": "A Visual Guide to Genome Editors",
     "url": "https://www.asimov.press/p/a-visual-guide-to-genome-editors"
   },
   {
     "id": "01jwg7jf76yadan8p0cbkmjcvw",
-    "order": 35,
+    "order": 38,
     "summary": "Knausgaard examines the tension between technology and nature, exploring how modern life disconnects us from the physical world while seeking ways to reconnect with material existence and understand deeper life connections.",
     "tags": [
       "philosophy",
-      "technology",
-      "nature",
+      "technology_critique",
+      "existential_reflection",
       "modern_life",
-      "existential"
+      "cultural_criticism"
     ],
     "title": "The Reenchanted World",
     "url": "https://harpers.org/archive/2025/06/the-reenchanted-world-karl-ove-knausgaard-digital-age/"
