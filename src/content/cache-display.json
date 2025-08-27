@@ -1,19 +1,5 @@
 [
   {
-    "id": "01k3jv94zaqbejv2c3j9t3dm9r",
-    "order": 5,
-    "summary": "Waddington's model illustrates cell differentiation using a ball rolling down hills into valleys, representing how cells choose developmental paths guided by genes, signals, and timing that shape cellular routes.",
-    "tags": [
-      "developmental_biology",
-      "cell_differentiation",
-      "gene_regulation",
-      "cellular_development",
-      "embryology"
-    ],
-    "title": "Epigenetic Landscape",
-    "url": "https://embryo.asu.edu/pages/epigenetic-landscape?utm_source=chatgpt.com"
-  },
-  {
     "id": "01k3c0njfkfk5g7a8gtrjh0dgp",
     "order": 13,
     "summary": "Early cancer detection methods like liquid biopsies promise blood-based screening but face challenges with false positives, detecting non-threatening tumors, and proving they actually reduce cancer mortality rates.",
