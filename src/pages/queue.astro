@@ -9,57 +9,59 @@ const queueEntries = await getCollection("readwise-queue");
 queueEntries.sort((a, b) => a.data.order - b.data.order);
 
 const headers = [
-  { type: "text", content: "READING QUEUE" },
-  { type: "link", content: "CLOSE", href: "/" },
+	{ type: "text", content: "READING QUEUE" },
+	{ type: "link", content: "CLOSE", href: "/" },
 ];
 ---
 
 <Page title="Reading Queue">
-  <Fragment slot="header">
-    {
-      headers.map((el) => (
-        <Textorlink type={el.type} content={el.content} href={el.href} />
-      ))
-    }
-  </Fragment>
-  <Fragment slot="main">
-    <div class="archive_main">
-      <div class="items">
-        {
-          queueEntries.map((item) => (
-            <div class="item">
-              <div class="flex flex-row gap-0.5">
-                <a
-                  href={item.data.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="title"
-                >
-                  {item.data.title}
-                </a>
-                <a
-                  href={`https://read.readwise.io/new/read/${item.data.id}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="title text-yellow-700 dark:text-yellow-600 shrink-0"
-                >
-                  Ⓡ
-                </a>
-              </div>
-              <div class="tags">
-                {[...item.data.tags]
-                  .sort((a, b) =>
-                    a.toLowerCase().localeCompare(b.toLowerCase())
-                  )
-                  .map((tag) => (
-                    <span class="tag">{tag}</span>
-                  ))}
-              </div>
-              <p class="summary">{item.data.summary}</p>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </Fragment>
+	<Fragment slot="header">
+		{
+			headers.map((el) => (
+				<Textorlink type={el.type} content={el.content} href={el.href} />
+			))
+		}
+	</Fragment>
+	<Fragment slot="main">
+		<div class="archive_main">
+			<div class="items">
+				{
+					queueEntries.map((item) => (
+						<div class="item">
+							<div class="flex flex-row gap-0.5">
+								<div class="links">
+									<a
+										href={item.data.url}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="title"
+									>
+										{item.data.title}
+									</a>
+									<a
+										href={`https://read.readwise.io/new/read/${item.data.id}`}
+										target="_blank"
+										rel="noopener noreferrer"
+										class="readwise"
+									>
+										Ⓡ
+									</a>
+								</div>
+							</div>
+							<div class="tags">
+								{[...item.data.tags]
+									.sort((a, b) =>
+										a.toLowerCase().localeCompare(b.toLowerCase())
+									)
+									.map((tag) => (
+										<span class="tag">{tag}</span>
+									))}
+							</div>
+							<p class="summary">{item.data.summary}</p>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</Fragment>
 </Page>
