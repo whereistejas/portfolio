@@ -11,53 +11,55 @@ const archiveEntries = await getCollection("readwise-archive");
 // Items are already sorted by date from the loader, so groups will be in correct order
 const items = new Map<string, (typeof archiveEntries)[0][]>();
 for (const entry of archiveEntries) {
-  const dateGroup = entry.data.dateGroup;
-  if (!items.has(dateGroup)) {
-    items.set(dateGroup, []);
-  }
-  items.get(dateGroup)?.push(entry);
+	const dateGroup = entry.data.dateGroup;
+	if (!items.has(dateGroup)) {
+		items.set(dateGroup, []);
+	}
+	items.get(dateGroup)?.push(entry);
 }
 
 const headers = [
-  { type: "text", content: "READING LIST" },
-  { type: "link", content: "CLOSE", href: "/" },
+	{ type: "text", content: "READING LIST" },
+	{ type: "link", content: "CLOSE", href: "/" },
 ];
 ---
 
 <Page title="Reading List">
-  <Fragment slot="header">
-    {
-      headers.map((el) => (
-        <Textorlink type={el.type} content={el.content} href={el.href} />
-      ))
-    }
-  </Fragment>
-  <Fragment slot="main">
-    <div class="archive_main">
-      {
-        Array.from(items.entries()).map(([date, items]) => (
-          <Row>
-            <Fragment slot="key">{date === "" ? "XYZ" : date}</Fragment>
-            <Fragment slot="value">
-              <div class="items">
-                {items.map((item) => (
-                  <div class="item">
-                    <a
-                      href={item.data.url.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="title"
-                    >
-                      {item.data.title}
-                    </a>
-                    {/* <p class="summary">{item.summary}</p> */}
-                  </div>
-                ))}
-              </div>
-            </Fragment>
-          </Row>
-        ))
-      }
-    </div>
-  </Fragment>
+	<Fragment slot="header">
+		{
+			headers.map((el) => (
+				<Textorlink type={el.type} content={el.content} href={el.href} />
+			))
+		}
+	</Fragment>
+	<Fragment slot="main">
+		<div class="archive_main">
+			{
+				Array.from(items.entries()).map(([date, items]) => (
+					<Row>
+						<Fragment slot="key">{date === "" ? "XYZ" : date}</Fragment>
+						<Fragment slot="value">
+							<div class="items">
+								{items.map((item) => (
+									<div class="item">
+										<div class="links">
+											<a
+												href={item.data.url.href}
+												target="_blank"
+												rel="noopener noreferrer"
+												class="title"
+											>
+												{item.data.title}
+											</a>
+										</div>
+										{/* <p class="summary">{item.summary}</p> */}
+									</div>
+								))}
+							</div>
+						</Fragment>
+					</Row>
+				))
+			}
+		</div>
+	</Fragment>
 </Page>
