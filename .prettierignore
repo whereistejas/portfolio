@@ -1,0 +1,9 @@
+.astro/*
+dist/*
+.readwise-cache/*
+
+src/*
+!src/styles/
+package-lock.json
+
+**/*.yml

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
 
@@ -7,20 +7,20 @@
 	font-style: normal;
 	font-weight: 100 900;
 	font-display: block;
-	src: url("/InterVariable.woff2") format("woff2");
+	src: url('/InterVariable.woff2') format('woff2');
 }
 @font-face {
 	font-family: InterVariable;
 	font-style: italic;
 	font-weight: 100 900;
 	font-display: block;
-	src: url("/InterVariable-Italic.woff2") format("woff2");
+	src: url('/InterVariable-Italic.woff2') format('woff2');
 }
 
 @theme {
 	--font-sans: InterVariable, sans-serif;
 	--font-serif: InterVariable, sans-serif;
-	--default-font-feature-settings: "calt", "tnum", "ss03";
+	--default-font-feature-settings: 'calt', 'tnum', 'ss03';
 	--spacing: 1rem;
 
 	--font-weight-normal: 380;
@@ -29,17 +29,15 @@
 
 @layer components {
 	body {
-		@apply h-[100dvh]
-    flex flex-col justify-between items-center
-    bg-yellow-50 dark:bg-neutral-900 text-slate-950 dark:text-slate-50;
+		@apply h-[100dvh] flex flex-col justify-between items-center bg-yellow-50 dark:bg-neutral-900 text-slate-950 dark:text-slate-50;
 	}
 
 	header,
 	footer {
-		@apply left-0 w-full md:w-48 md:max-w-full 
-    px-1 
-    flex flex-row justify-between 
-    text-xl md:text-3xl font-semibold;
+		@apply left-0 w-full md:w-48 md:max-w-full
+		px-1
+		flex flex-row justify-between
+		text-xl md:text-3xl font-semibold;
 	}
 	header {
 		@apply top-0 pt-1;
@@ -49,28 +47,19 @@
 	}
 
 	main {
-		@apply w-full md:w-48 md:max-w-full
-    px-1
-    flex flex-col
-    text-lg md:text-xl;
+		@apply w-full md:w-48 md:max-w-full px-1 flex flex-col text-lg md:text-xl;
 	}
 
 	div.blog_main {
-		@apply first:pt-1.5 md:first:pt-2 
-    flex flex-col gap-1.5 md:gap-2 self-start;
+		@apply first:pt-1.5 md:first:pt-2 flex flex-col gap-1.5 md:gap-2 self-start;
 	}
 
 	div.info_main {
-		@apply h-full 
-    first:pt-1.5 md:first:pt-0 last:pb-1.5
-    flex flex-col gap-1.5 md:gap-2;
+		@apply h-full first:pt-1.5 md:first:pt-0 last:pb-1.5 flex flex-col gap-1.5 md:gap-2;
 	}
 
 	div.archive_main {
-		@apply w-full max-w-full
-    first:pt-1.5 md:first:pt-2
-    flex flex-col gap-1.5 md:gap-2 self-start;
-
+		@apply w-full max-w-full first:pt-1.5 md:first:pt-2 flex flex-col gap-1.5 md:gap-2 self-start;
 		div.items {
 			@apply flex flex-col gap-1 md:gap-1.5 min-w-0 w-full max-w-full;
 
@@ -117,7 +106,7 @@
 					}
 
 					span.tag::before {
-						content: "#";
+						content: '#';
 						@apply mr-0;
 					}
 				}
@@ -126,8 +115,7 @@
 	}
 
 	a {
-		@apply transition-colors duration-200 ease-in z-[1]
-    text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
+		@apply transition-colors duration-200 ease-in z-[1] text-neutral-950 dark:text-neutral-50 hover:text-neutral-500 hover:dark:text-neutral-400;
 	}
 }
 

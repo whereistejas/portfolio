@@ -1,35 +1,37 @@
 {
-  "name": "whereistejas",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && tsx src/content/readwise-llm.ts && astro build",
-    "build:queue": "tsx src/content/readwise-llm.ts",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@anthropic-ai/sdk": "^0.32.0",
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/ts-plugin": "^1.10.4",
-    "@astrojs/vercel": "^8.0.4",
-    "@next-libs/constants": "^2.0.6",
-    "@tailwindcss/vite": "^4.0.9",
-    "astro": "^5.2.6",
-    "exifreader": "^4.23.7",
-    "rehype-katex": "^7.0.1",
-    "remark-math": "^6.0.0",
-    "tailwindcss": "^4.0.9",
-    "tsx": "^4.19.2",
-    "typescript": "^5.4.5",
-    "dotenv": "^16.4.5"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/node": "^20.17.48",
-    "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0"
-  }
+	"name": "whereistejas",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && tsx src/content/readwise-llm.ts && astro build",
+		"build:queue": "tsx src/content/readwise-llm.ts",
+		"preview": "astro preview",
+		"astro": "astro",
+		"prettier": "prettier --write ."
+	},
+	"dependencies": {
+		"@anthropic-ai/sdk": "^0.32.0",
+		"@astrojs/check": "^0.9.4",
+		"@astrojs/ts-plugin": "^1.10.4",
+		"@astrojs/vercel": "^8.0.4",
+		"@next-libs/constants": "^2.0.6",
+		"@tailwindcss/vite": "^4.0.9",
+		"astro": "^5.2.6",
+		"dotenv": "^16.4.5",
+		"exifreader": "^4.23.7",
+		"rehype-katex": "^7.0.1",
+		"remark-math": "^6.0.0",
+		"tailwindcss": "^4.0.9",
+		"tsx": "^4.19.2",
+		"typescript": "^5.4.5"
+	},
+	"devDependencies": {
+		"@tailwindcss/typography": "^0.5.16",
+		"@types/node": "^20.17.48",
+		"prettier": "^3.6.2",
+		"prettier-plugin-astro": "^0.13.0",
+		"prettier-plugin-tailwindcss": "^0.6.14"
+	}
 }
