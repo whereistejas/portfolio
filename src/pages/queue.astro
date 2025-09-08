@@ -26,29 +26,27 @@ const headers = [
 		<div class="archive_main">
 			<div class="items">
 				{
-					queueEntries.map((item) => (
+					queueEntries.map((item, idx) => (
 						<div class="item">
-							<div class="flex flex-row gap-0.5">
-								<div class="links">
-									<a
-										href={item.data.url}
-										target="_blank"
-										rel="noopener noreferrer"
-										class="title"
-									>
-										{item.data.title}
-									</a>
-									<a
-										href={`https://read.readwise.io/new/read/${item.data.id}`}
-										target="_blank"
-										rel="noopener noreferrer"
-										class="readwise"
-									>
-										Ⓡ
-									</a>
-								</div>
+							<div class="links">
+								<a
+									href={item.data.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="title"
+								>
+									{item.data.title}
+								</a>
+								<a
+									href={`https://read.readwise.io/new/read/${item.data.id}`}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="readwise"
+								>
+									Ⓡ
+								</a>
 							</div>
-							<div class="tags">
+							<label class="tags" for={`toggle-summary-${idx}`}>
 								{[...item.data.tags]
 									.sort((a, b) =>
 										a.toLowerCase().localeCompare(b.toLowerCase())
@@ -56,8 +54,9 @@ const headers = [
 									.map((tag) => (
 										<span class="tag">{tag}</span>
 									))}
-							</div>
-							<p class="summary">{item.data.summary}</p>
+							</label>
+							<input type="checkbox" id={`toggle-summary-${idx}`} class="toggle"/>
+							<div class="summary">{item.data.summary}</div>
 						</div>
 					))
 				}
