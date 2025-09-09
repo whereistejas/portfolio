@@ -77,19 +77,14 @@
 				}
 
 				div.summary {
-					@apply text-base leading-snug;
+					@apply max-h-0 overflow-hidden text-base leading-snug opacity-20 duration-150 ease-[cubic-bezier(.62,.16,.13,1.01)];
 
 					/* Hide summary by default with smooth transition */
-					max-height: 0;
-					opacity: 0;
-					overflow: hidden;
-					transition:
-						max-height 0.3s ease-in-out,
-						opacity 0.3s ease-in-out;
+					transition: max-height opacity;
 				}
 
 				label.tags {
-					@apply flex cursor-pointer flex-wrap gap-0.5;
+					@apply flex flex-wrap gap-0.5;
 
 					span.tag {
 						@apply text-xs uppercase;
@@ -102,12 +97,15 @@
 				}
 
 				.toggle {
-					display: none;
+					@apply hidden;
 				}
 
 				.toggle:checked ~ div.summary {
-					max-height: 2000px;
-					opacity: 1;
+					@apply max-h-[2000px] opacity-100;
+				}
+
+				&:hover div.summary {
+					@apply md:max-h-[2000px] md:opacity-100;
 				}
 			}
 		}
