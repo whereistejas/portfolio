@@ -19,12 +19,12 @@ for (const entry of archiveEntries) {
 }
 
 const headers = [
-	{ type: "text", content: "READING LIST" },
+	{ type: "text", content: "READING ARCHIVE" },
 	{ type: "link", content: "CLOSE", href: "/" },
 ];
 ---
 
-<Page title="Reading List">
+<Page title="Reading Archive">
 	<Fragment slot="header">
 		{
 			headers.map((el) => (
@@ -52,7 +52,6 @@ const headers = [
 												{item.data.title}
 											</a>
 										</div>
-										{/* <p class="summary">{item.summary}</p> */}
 									</div>
 								))}
 							</div>

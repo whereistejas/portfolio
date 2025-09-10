@@ -9,12 +9,12 @@ const queueEntries = await getCollection("readwise-queue");
 queueEntries.sort((a, b) => a.data.order - b.data.order);
 
 const headers = [
-	{ type: "text", content: "READING QUEUE" },
+	{ type: "text", content: "READING INBOX" },
 	{ type: "link", content: "CLOSE", href: "/" },
 ];
 ---
 
-<Page title="Reading Queue">
+<Page title="Reading Inbox">
 	<Fragment slot="header">
 		{
 			headers.map((el) => (
