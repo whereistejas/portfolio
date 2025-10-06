@@ -3,14 +3,14 @@
     "order": 0,
     "tags": [
       "microbiology",
+      "bacterial_behavior",
       "chemotaxis",
-      "cellular_navigation",
       "molecular_mechanisms",
-      "bacterial_behavior"
+      "cellular_navigation"
     ]
   },
   "01jwg7jf76yadan8p0cbkmjcvw": {
-    "order": 30,
+    "order": 21,
     "tags": [
       "philosophy",
       "technology",
@@ -20,107 +20,107 @@
     ]
   },
   "01jy6rem6wbkfj90g95gazpq5p": {
-    "order": 16,
+    "order": 22,
     "tags": [
       "economics",
       "free_markets",
       "government_intervention",
-      "trade_policy",
-      "market_economics"
+      "tariffs",
+      "market_regulation"
     ]
   },
   "01jym0svp7f768hbhjymgmhyd5": {
-    "order": 9,
+    "order": 6,
     "tags": [
       "inflammation",
       "medical_research",
-      "cardiovascular_health",
-      "immunology",
-      "disease_mechanisms"
+      "heart_disease",
+      "alzheimers_disease",
+      "chronic_conditions"
     ]
   },
   "01jyxcfgnngyv41y6ma393y3jx": {
-    "order": 10,
+    "order": 8,
     "tags": [
       "endometriosis",
       "womens_health",
-      "reproductive_health",
+      "gynecology",
       "chronic_disease",
       "healthcare_disparities"
     ]
   },
   "01jzagw9s9k81xj7hsvq10b98n": {
-    "order": 32,
+    "order": 18,
     "tags": [
       "career_development",
       "creative_work",
       "meaningful_work",
-      "alternative_careers",
-      "personal_fulfillment"
+      "passion_driven_work",
+      "professional_inspiration"
     ]
   },
   "01jzmqv1gtzgntkpr861khmtdw": {
     "order": 12,
     "tags": [
       "medical_technology",
+      "xrays",
+      "technology_adoption",
       "healthcare_innovation",
-      "medical_history",
-      "diagnostic_imaging",
-      "technology_adoption"
+      "medical_history"
     ]
   },
   "01k0bvm4t4fvbr5276rebhnnf0": {
-    "order": 13,
+    "order": 14,
     "tags": [
-      "nuclear_energy",
       "fusion_power",
+      "nuclear_energy",
       "renewable_energy",
       "energy_technology",
       "engineering_challenges"
     ]
   },
   "01k0cet4pw72nn9pab1a2sywrx": {
-    "order": 28,
+    "order": 19,
     "tags": [
       "cultural_evolution",
+      "tradition",
       "anthropology",
       "collective_wisdom",
-      "social_science",
       "human_behavior"
     ]
   },
   "01k0p4hj3k6r9vetkx17nqr6fe": {
-    "order": 29,
+    "order": 20,
     "tags": [
       "ethics",
       "moral_philosophy",
       "social_responsibility",
-      "applied_ethics",
-      "moral_theory"
+      "quantum_mechanics",
+      "applied_ethics"
     ]
   },
   "01k0rkksw05j6r0fb3sg2t75ze": {
     "order": 15,
     "tags": [
-      "computer_science",
-      "compiler_design",
       "parsing",
-      "programming_languages",
-      "software_engineering"
+      "compiler_design",
+      "syntax_analysis",
+      "computer_science",
+      "programming_languages"
     ]
   },
   "01k0ym452574a7aed7aj98rmnv": {
-    "order": 14,
+    "order": 13,
     "tags": [
+      "invention",
       "environmental_damage",
       "technology_risks",
-      "industrial_chemistry",
       "unintended_consequences",
-      "public_health"
+      "industrial_chemistry"
     ]
   },
   "01k0yr5mk34g2yn5vq2521828c": {
-    "order": 6,
+    "order": 10,
     "tags": [
       "neuroscience",
       "brain_simulation",
@@ -130,82 +130,82 @@
     ]
   },
   "01k0yr667kps6mz7abkd99n3ds": {
-    "order": 7,
+    "order": 11,
     "tags": [
       "neuroscience",
       "brain_simulation",
       "scientific_research",
-      "computational_neuroscience",
-      "research_methodology"
+      "project_management",
+      "research_funding"
     ]
   },
   "01k10h6bjne1bjfp0pandb9aec": {
-    "order": 20,
+    "order": 28,
     "tags": [
-      "economic_inequality",
+      "gilded_age",
+      "america",
+      "china",
       "capitalism",
-      "geopolitics",
-      "economic_history",
-      "superpower_competition"
+      "economic_inequality"
     ]
   },
   "01k10hk5n1ya3cd38bdm224d4h": {
-    "order": 24,
+    "order": 30,
     "tags": [
       "indian_politics",
-      "political_leadership",
+      "modi",
+      "populism",
       "economic_policy",
-      "governance",
-      "political_analysis"
+      "political_leadership"
     ]
   },
   "01k10hr6jb5ydtqsvwfph68f7r": {
-    "order": 25,
+    "order": 31,
     "tags": [
-      "indian_politics",
+      "bjp",
+      "india",
       "institutional_takeover",
-      "political_control",
-      "social_institutions",
-      "power_dynamics"
+      "elite",
+      "political_control"
     ]
   },
   "01k18xzxnt7gec54mw47qe2730": {
-    "order": 22,
+    "order": 24,
     "tags": [
-      "outsourcing",
       "remote_work",
-      "developing_countries",
+      "outsourcing",
+      "philippines",
       "international_business",
-      "labor_arbitrage"
+      "global_workforce"
     ]
   },
   "01k1c5yaaf9tngc5pnssxa6zgw": {
-    "order": 17,
+    "order": 25,
     "tags": [
+      "reindustrialization",
       "industrial_policy",
       "economic_strategy",
       "manufacturing",
-      "economic_development",
-      "policy_analysis"
+      "american_industry"
     ]
   },
   "01k228ps97vg5bwhhv6433c1tm": {
-    "order": 31,
+    "order": 17,
     "tags": [
       "film_industry",
       "independent_cinema",
       "entertainment_industry",
-      "artistic_cinema",
-      "creative_filmmaking"
+      "creative_filmmaking",
+      "media_analysis"
     ]
   },
   "01k2fder0ezwd75njceewc980v": {
     "order": 3,
     "tags": [
       "synthetic_biology",
+      "gene_circuits",
       "genetic_engineering",
       "biotechnology",
-      "molecular_biology",
       "bioengineering"
     ]
   },
@@ -213,70 +213,70 @@
     "order": 4,
     "tags": [
       "gene_therapy",
-      "biotechnology",
-      "medical_technology",
       "drug_delivery",
-      "molecular_medicine"
+      "biotechnology",
+      "viral_vectors",
+      "medical_technology"
     ]
   },
   "01k2j40tf05d83f02kjh422fnt": {
-    "order": 21,
+    "order": 29,
     "tags": [
       "india",
       "china",
+      "economic_comparison",
       "economic_development",
-      "services_sector",
-      "comparative_economics"
+      "development_models"
     ]
   },
   "01k2net1yda1j1tqkqadctppfx": {
-    "order": 26,
+    "order": 32,
     "tags": [
       "indian_culture",
+      "weddings",
       "marriage",
-      "cultural_evolution",
-      "social_change",
-      "family_dynamics"
+      "traditions",
+      "social_change"
     ]
   },
   "01k2zj0xxcdk4gje1cj3gxyjmm": {
-    "order": 18,
+    "order": 26,
     "tags": [
       "china",
       "united_states",
+      "engineering",
       "manufacturing",
-      "geopolitics",
-      "industrial_capacity"
+      "geopolitics"
     ]
   },
   "01k38s3z2gty73bpdzpejer4fj": {
     "order": 2,
     "tags": [
       "insect_biology",
+      "diapause",
+      "developmental_biology",
       "pest_control",
-      "agriculture",
-      "entomology",
-      "biological_control"
+      "agriculture"
     ]
   },
   "01k3c0njfkfk5g7a8gtrjh0dgp": {
-    "order": 11,
+    "order": 9,
     "tags": [
       "cancer",
-      "early_detection",
       "medical_screening",
-      "healthcare",
-      "diagnostic_challenges"
+      "early_detection",
+      "liquid_biopsy",
+      "oncology"
     ]
   },
   "01k3nxs3gwjfacac4apze81zqr": {
-    "order": 27,
+    "order": 33,
     "tags": [
       "education",
       "teacher_compensation",
       "developing_countries",
       "learning_outcomes",
-      "educational_effectiveness"
+      "education_economics"
     ]
   },
   "01k3nz6ne5jyg7avc3538248k8": {
@@ -294,19 +294,19 @@
     "tags": [
       "virology",
       "microbiology",
+      "virus_structure",
       "ecology",
-      "biomass",
-      "molecular_biology"
+      "biomass"
     ]
   },
   "01k4raerehhys44g2cdwenkkv6": {
-    "order": 8,
+    "order": 7,
     "tags": [
+      "amyloid_hypothesis",
       "alzheimers_disease",
-      "neuroscience",
+      "tau_protein",
       "neurodegeneration",
-      "protein_aggregation",
-      "medical_research"
+      "neuroscience"
     ]
   },
   "01k4ratjy331zk7tr6hts9ex19": {
@@ -314,19 +314,29 @@
     "tags": [
       "genetics",
       "embryo_selection",
-      "biotechnology",
+      "polygenic_scores",
       "reproductive_technology",
       "bioethics"
     ]
   },
   "01k6kkpgne5h19qqj62d19t0h2": {
-    "order": 19,
+    "order": 27,
     "tags": [
       "china",
       "economic_development",
+      "state_intervention",
       "infrastructure",
-      "technology_scaling",
-      "industrial_policy"
+      "technological_competition"
+    ]
+  },
+  "01k6va67563cax8s7f324ygv1t": {
+    "order": 16,
+    "tags": [
+      "artificial_intelligence",
+      "learning",
+      "education",
+      "educational_technology",
+      "digital_tools"
     ]
   }
 }
