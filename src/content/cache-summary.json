@@ -1524,5 +1524,50 @@
       "deep thinking",
       "platform business"
     ]
+  },
+  "01k76nwzj83c8p10nvhwq5rdhe": {
+    "summary": "Railways' primary product is their timetable, which requires precise planning to transport people efficiently. Quality timetables improve speed, reliability, capacity, and connectivity. Infrastructure should support timetables.",
+    "tags": [
+      "transportation",
+      "railways",
+      "logistics",
+      "planning",
+      "scheduling",
+      "infrastructure",
+      "public transport",
+      "systems design",
+      "operations management",
+      "network optimization",
+      "travel",
+      "efficiency",
+      "service delivery",
+      "urban planning",
+      "transit systems"
+    ]
+  },
+  "01k79byqsjx6wqh2fesc9960gk": {
+    "summary": "Contrasts behavioral prediction with mechanistic understanding. Behavioral models fit data but lack insight into internal workings, while gears-level models reveal mechanisms and handle changes better.",
+    "tags": [
+      "machine learning",
+      "causal inference",
+      "model interpretability",
+      "prediction",
+      "behavioral modeling",
+      "mechanistic modeling",
+      "internal mechanisms",
+      "falsifiability",
+      "distribution shift",
+      "systems thinking",
+      "epistemology",
+      "scientific methodology",
+      "AI alignment",
+      "explainable AI",
+      "rationality",
+      "cognitive science",
+      "philosophy of science",
+      "model robustness",
+      "generalization",
+      "causality"
+    ]
   }
 }
