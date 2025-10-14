@@ -6,41 +6,41 @@
       "chemotaxis",
       "cellular_navigation",
       "molecular_mechanisms",
-      "bacterial_motility"
+      "bacterial_behavior"
     ]
   },
   "01jwg7jf76yadan8p0cbkmjcvw": {
-    "order": 38,
+    "order": 40,
     "tags": [
       "philosophy",
       "technology",
       "nature",
-      "modern_life",
-      "existential"
+      "existential",
+      "cultural_criticism"
     ]
   },
   "01jy6rem6wbkfj90g95gazpq5p": {
-    "order": 23,
+    "order": 21,
     "tags": [
       "economics",
       "free_markets",
       "government_intervention",
-      "market_regulation",
-      "economic_policy"
+      "economic_policy",
+      "trade_policy"
     ]
   },
   "01jym0svp7f768hbhjymgmhyd5": {
-    "order": 6,
+    "order": 9,
     "tags": [
       "inflammation",
       "medical_research",
-      "chronic_conditions",
-      "immunology",
+      "chronic_disease",
+      "cardiovascular",
       "therapeutic_interventions"
     ]
   },
   "01jyxcfgnngyv41y6ma393y3jx": {
-    "order": 7,
+    "order": 10,
     "tags": [
       "endometriosis",
       "womens_health",
@@ -50,23 +50,23 @@
     ]
   },
   "01jzagw9s9k81xj7hsvq10b98n": {
-    "order": 19,
+    "order": 20,
     "tags": [
       "career_development",
       "creative_work",
-      "passion_driven_work",
-      "meaningful_work",
-      "work_philosophy"
+      "work_philosophy",
+      "personal_fulfillment",
+      "alternative_careers"
     ]
   },
   "01jzmqv1gtzgntkpr861khmtdw": {
     "order": 12,
     "tags": [
       "medical_technology",
+      "diagnostic_imaging",
       "healthcare_innovation",
       "technology_adoption",
-      "medical_history",
-      "radiology"
+      "medical_history"
     ]
   },
   "01k0bvm4t4fvbr5276rebhnnf0": {
@@ -74,29 +74,29 @@
     "tags": [
       "fusion_power",
       "nuclear_energy",
+      "renewable_energy",
       "energy_technology",
-      "engineering_challenges",
-      "clean_energy"
+      "scientific_research"
     ]
   },
   "01k0cet4pw72nn9pab1a2sywrx": {
-    "order": 36,
+    "order": 38,
     "tags": [
       "cultural_evolution",
-      "tradition",
       "anthropology",
       "collective_wisdom",
-      "social_science"
+      "tradition",
+      "behavioral_science"
     ]
   },
   "01k0p4hj3k6r9vetkx17nqr6fe": {
-    "order": 37,
+    "order": 39,
     "tags": [
       "ethics",
       "moral_philosophy",
       "social_responsibility",
-      "ethical_responsibility",
-      "applied_ethics"
+      "applied_ethics",
+      "moral_theory"
     ]
   },
   "01k0rkksw05j6r0fb3sg2t75ze": {
@@ -105,7 +105,7 @@
       "parsing",
       "compiler_design",
       "computer_science",
-      "programming_languages",
+      "algorithms",
       "software_engineering"
     ]
   },
@@ -115,72 +115,72 @@
       "invention",
       "environmental_damage",
       "technology_risks",
-      "unintended_consequences",
-      "industrial_chemistry"
+      "industrial_chemistry",
+      "cautionary_tale"
     ]
   },
   "01k0yr5mk34g2yn5vq2521828c": {
-    "order": 10,
+    "order": 6,
     "tags": [
       "neuroscience",
       "brain_simulation",
       "computational_biology",
       "neural_networks",
-      "medical_research"
+      "biotechnology"
     ]
   },
   "01k0yr667kps6mz7abkd99n3ds": {
-    "order": 11,
+    "order": 7,
     "tags": [
       "neuroscience",
       "brain_simulation",
       "scientific_research",
-      "project_management",
+      "research_funding",
       "computational_neuroscience"
     ]
   },
   "01k10h6bjne1bjfp0pandb9aec": {
-    "order": 29,
+    "order": 28,
     "tags": [
+      "gilded_age",
       "america",
       "china",
       "capitalism",
-      "economic_inequality",
-      "comparative_politics"
+      "economic_inequality"
     ]
   },
   "01k10hk5n1ya3cd38bdm224d4h": {
-    "order": 30,
+    "order": 29,
     "tags": [
       "indian_politics",
+      "modi",
       "populism",
       "economic_policy",
-      "political_leadership",
-      "governance"
+      "political_leadership"
     ]
   },
   "01k10hr6jb5ydtqsvwfph68f7r": {
-    "order": 31,
+    "order": 30,
     "tags": [
       "indian_politics",
+      "bjp",
       "institutional_takeover",
       "power_dynamics",
-      "political_control",
-      "governance"
+      "political_control"
     ]
   },
   "01k18xzxnt7gec54mw47qe2730": {
-    "order": 25,
+    "order": 24,
     "tags": [
-      "remote_work",
       "outsourcing",
+      "remote_work",
       "global_workforce",
       "international_business",
-      "labor_arbitrage"
+      "economic_development"
     ]
   },
   "01k1c5yaaf9tngc5pnssxa6zgw": {
-    "order": 24,
+    "order": 23,
     "tags": [
       "reindustrialization",
       "industrial_policy",
@@ -190,13 +190,13 @@
     ]
   },
   "01k228ps97vg5bwhhv6433c1tm": {
-    "order": 39,
+    "order": 35,
     "tags": [
       "film_industry",
       "independent_cinema",
-      "entertainment_industry",
+      "entertainment",
       "creative_filmmaking",
-      "media_analysis"
+      "artistic_cinema"
     ]
   },
   "01k2fder0ezwd75njceewc980v": {
@@ -220,27 +220,27 @@
     ]
   },
   "01k2j40tf05d83f02kjh422fnt": {
-    "order": 26,
+    "order": 25,
     "tags": [
       "economic_development",
+      "india",
+      "china",
       "comparative_economics",
-      "emerging_economies",
-      "growth_strategies",
-      "economic_policy"
+      "growth_strategies"
     ]
   },
   "01k2net1yda1j1tqkqadctppfx": {
-    "order": 32,
+    "order": 31,
     "tags": [
       "indian_culture",
+      "marriage",
       "traditions",
       "social_change",
-      "cultural_evolution",
-      "family_dynamics"
+      "caste_system"
     ]
   },
   "01k2zj0xxcdk4gje1cj3gxyjmm": {
-    "order": 28,
+    "order": 27,
     "tags": [
       "china",
       "united_states",
@@ -252,25 +252,25 @@
   "01k38s3z2gty73bpdzpejer4fj": {
     "order": 2,
     "tags": [
-      "insect_biology",
+      "entomology",
+      "diapause",
       "pest_control",
       "agriculture",
-      "developmental_biology",
-      "entomology"
+      "developmental_biology"
     ]
   },
   "01k3c0njfkfk5g7a8gtrjh0dgp": {
-    "order": 8,
+    "order": 11,
     "tags": [
       "cancer",
-      "medical_screening",
       "early_detection",
-      "diagnostic_challenges",
+      "medical_screening",
+      "oncology",
       "preventive_medicine"
     ]
   },
   "01k3nxs3gwjfacac4apze81zqr": {
-    "order": 34,
+    "order": 32,
     "tags": [
       "education",
       "developing_countries",
@@ -282,8 +282,8 @@
   "01k3nz6ne5jyg7avc3538248k8": {
     "order": 33,
     "tags": [
-      "digital_payments",
       "fintech",
+      "digital_payments",
       "india",
       "financial_inclusion",
       "payment_systems"
@@ -296,15 +296,15 @@
       "microbiology",
       "ecology",
       "molecular_biology",
-      "biodiversity"
+      "biomass"
     ]
   },
   "01k4raerehhys44g2cdwenkkv6": {
-    "order": 9,
+    "order": 8,
     "tags": [
-      "alzheimers_disease",
+      "alzheimers",
+      "amyloid_hypothesis",
       "neuroscience",
-      "protein_aggregation",
       "neurodegeneration",
       "medical_research"
     ]
@@ -320,57 +320,57 @@
     ]
   },
   "01k6kkpgne5h19qqj62d19t0h2": {
-    "order": 27,
+    "order": 26,
     "tags": [
       "china",
       "economic_development",
       "state_intervention",
-      "technological_competition",
+      "manufacturing",
       "geopolitics"
     ]
   },
   "01k6va67563cax8s7f324ygv1t": {
-    "order": 16,
+    "order": 17,
     "tags": [
       "artificial_intelligence",
       "education",
       "learning",
       "educational_technology",
-      "digital_tools"
+      "knowledge_management"
     ]
   },
   "01k6xgtzketeekb7h9er7ntrg4": {
-    "order": 20,
+    "order": 22,
     "tags": [
-      "business_leadership",
       "free_markets",
+      "business_leadership",
+      "liberal_democracy",
       "institutional_support",
-      "long_term_thinking",
-      "market_capitalism"
+      "economic_freedom"
     ]
   },
   "01k6z1cjetsqy8ev7j7ffnznfn": {
-    "order": 21,
+    "order": 36,
     "tags": [
       "data_software",
       "business_ethics",
-      "corporate_governance",
-      "technology_policy",
-      "government_contracts"
+      "government_contracts",
+      "corporate_responsibility",
+      "surveillance"
     ]
   },
   "01k6z1fbzxdwrh5n31xkhrzw6f": {
-    "order": 22,
+    "order": 37,
     "tags": [
-      "palantir",
       "enterprise_software",
       "data_platform",
       "artificial_intelligence",
+      "business_transformation",
       "corporate_culture"
     ]
   },
   "01k76nwzj83c8p10nvhwq5rdhe": {
-    "order": 35,
+    "order": 34,
     "tags": [
       "transportation",
       "railways",
@@ -380,23 +380,33 @@
     ]
   },
   "01k79byqsjx6wqh2fesc9960gk": {
-    "order": 17,
+    "order": 18,
     "tags": [
       "machine_learning",
       "model_interpretability",
       "causal_inference",
-      "systems_thinking",
+      "epistemology",
       "scientific_methodology"
     ]
   },
   "01k7d30sekn3twp4x8t3xjamrd": {
-    "order": 18,
+    "order": 19,
     "tags": [
       "optimization",
       "innovation",
       "strategy",
-      "problem_solving",
-      "business_strategy"
+      "business_strategy",
+      "decision_making"
+    ]
+  },
+  "01k7f54eg5kr8f6q2e236kc4d6": {
+    "order": 16,
+    "tags": [
+      "artificial_intelligence",
+      "software_engineering",
+      "development_workflow",
+      "code_generation",
+      "programming"
     ]
   }
 }
