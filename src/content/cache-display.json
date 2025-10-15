@@ -1,126 +1,196 @@
 [
   {
+    "id": "01k7jjdybfs76qndt357am4n6e",
+    "order": 41,
+    "summary": "Explains dynamic programming through House Robber problem - selecting nonadjacent houses to maximize loot. Shows space-efficient approach tracking last robbed/unrobbed values with Haskell and Rust implementations.",
+    "tags": [
+      "algorithms",
+      "dynamic_programming",
+      "optimization",
+      "programming",
+      "computer_science"
+    ],
+    "title": "Dynamic Programming Introduction",
+    "url": "https://mmhaskell.com/blog/2025/10/6/dynamic-programming-primer"
+  },
+  {
+    "id": "01k7jhyshb3yh49c98rs47sv78",
+    "order": 34,
+    "summary": "Josh Kushner transformed Thrive Capital into an influential venture firm through hiring diverse operators and making early investments in companies like Instagram and OpenAI, driven by long-term vision.",
+    "tags": [
+      "venture_capital",
+      "entrepreneurship",
+      "startup_investing",
+      "business_strategy",
+      "investment_firm"
+    ],
+    "title": "The New World",
+    "url": "https://joincolossus.com/article/joshua-kushner-thrive-new-world/"
+  },
+  {
+    "id": "01k2zj0xxcdk4gje1cj3gxyjmm",
+    "order": 14,
+    "summary": "Contrasts China's engineering-focused approach to building infrastructure and manufacturing with America's lawyer-dominated, rule-based culture that has lost production capacity.",
+    "tags": [
+      "china",
+      "manufacturing",
+      "engineering",
+      "economic_policy",
+      "geopolitics"
+    ],
+    "title": "A Nation of Lawyers Confronts China’s Engineering State",
+    "url": "https://www.theatlantic.com/ideas/archive/2025/08/china-america-tariffs-trump-economy/683895/?gift=c04SMsUDu_5IHrILqcoSgyI0nXW4Kw0Qw9R7N00x508"
+  },
+  {
+    "id": "01k7jezsp7frsmf8et4p9vnrpk",
+    "order": 40,
+    "summary": "Explains how to solve Snakes and Ladders using breadth-first search algorithm, treating game squares as nodes and die rolls as edges, with implementations in both Rust and Haskell.",
+    "tags": [
+      "algorithms",
+      "graph_algorithms",
+      "breadth_first_search",
+      "programming",
+      "computer_science"
+    ],
+    "title": "Graph Algorithms in Board Games!",
+    "url": "https://mmhaskell.com/blog/2025/9/8/graph-algorithms-in-board-games"
+  },
+  {
+    "id": "01k7h45yh2z9kwre69wx4pn0h8",
+    "order": 33,
+    "summary": "Palantir's FDE role combines customer alignment with strategy to solve complex problems. Imitators copy the structure without commitment, producing inferior results. Organizations should rethink assumptions before adopting models.",
+    "tags": [
+      "business_strategy",
+      "organizational_structure",
+      "customer_alignment",
+      "problem_solving",
+      "company_culture"
+    ],
+    "title": "Sorry, that isn't an FDE",
+    "url": "https://tedmabrey.substack.com/p/sorry-that-isnt-an-fde?utm_source=substack&utm_campaign=post_embed&utm_medium=web"
+  },
+  {
+    "id": "01k7h464drvvxkbd4yrdjkwmmv",
+    "order": 35,
+    "summary": "Companies struggle to gather scattered data from various sources into unified systems. The labor-intensive process of cleaning, accessing, and standardizing data creates bottlenecks that slow AI adoption and business impact.",
+    "tags": [
+      "data_integration",
+      "ai_adoption",
+      "business_intelligence",
+      "digital_transformation",
+      "enterprise_software"
+    ],
+    "title": "The Great Data Integration Schlep",
+    "url": "https://sarahconstantin.substack.com/p/the-great-data-integration-schlep?utm_source=substack&utm_campaign=post_embed&utm_medium=web"
+  },
+  {
     "id": "01k7f54eg5kr8f6q2e236kc4d6",
-    "order": 16,
+    "order": 37,
     "summary": "Developer uses AI agents to build macOS auto-update feature, sharing unedited sessions. Emphasizes iterative process of reviewing, cleaning, and fixing AI-generated code with thorough manual review before shipping.",
     "tags": [
-      "artificial_intelligence",
+      "ai_development",
       "software_engineering",
-      "development_workflow",
       "code_generation",
-      "programming"
+      "ai_agents",
+      "development_workflow"
     ],
     "title": "Vibing a Non-Trivial Ghostty Feature",
     "url": "https://mitchellh.com/writing/non-trivial-vibing"
   },
   {
     "id": "01k7d30sekn3twp4x8t3xjamrd",
-    "order": 19,
+    "order": 42,
     "summary": "Contrasts two improvement strategies: optimizing existing methods (hill-climbing) which is efficient but has limits, versus creating new possibilities (hill-making) which is risky but offers greater potential rewards.",
     "tags": [
       "optimization",
       "innovation",
       "strategy",
-      "business_strategy",
-      "decision_making"
+      "improvement",
+      "problem_solving"
     ],
     "title": "Hill-Making vs Hill-Climbing",
     "url": "https://kevinkelly.substack.com/p/hill-making-vs-hill-climbing"
   },
   {
     "id": "01k79byqsjx6wqh2fesc9960gk",
-    "order": 18,
+    "order": 38,
     "summary": "Contrasts behavioral prediction with mechanistic understanding. Behavioral models fit data but lack insight into internal workings, while gears-level models reveal mechanisms and handle changes better.",
     "tags": [
       "machine_learning",
       "model_interpretability",
       "causal_inference",
-      "epistemology",
-      "scientific_methodology"
+      "mechanistic_modeling",
+      "explainable_ai"
     ],
     "title": "Gears vs Behavior",
     "url": "https://www.lesswrong.com/s/xEFeCwk3pdYdeG2rL/p/gvK5QWRLk3H8iqcNy"
   },
   {
     "id": "01k76nwzj83c8p10nvhwq5rdhe",
-    "order": 34,
+    "order": 43,
     "summary": "Railways' primary product is their timetable, which requires precise planning to transport people efficiently. Quality timetables improve speed, reliability, capacity, and connectivity. Infrastructure should support timetables.",
     "tags": [
       "transportation",
       "railways",
       "logistics",
-      "infrastructure",
+      "planning",
       "systems_design"
     ],
     "title": "The product of the railways is the timetable",
     "url": "https://springbett.substack.com/p/the-product-of-the-railways-is-the"
   },
   {
-    "id": "01k6z1fbzxdwrh5n31xkhrzw6f",
-    "order": 37,
-    "summary": "Analysis of Palantir's transformation from consulting to enterprise data platform, highlighting impressive margins, unique messianic culture emphasizing deep thinking, and growing relevance in AI era.",
-    "tags": [
-      "enterprise_software",
-      "data_platform",
-      "artificial_intelligence",
-      "business_transformation",
-      "corporate_culture"
-    ],
-    "title": "Reflections on Palantir",
-    "url": "https://nabeelqu.substack.com/p/reflections-on-palantir"
-  },
-  {
     "id": "01k6z1cjetsqy8ev7j7ffnznfn",
-    "order": 36,
+    "order": 32,
     "summary": "Examines a data software company working with governments and businesses, highlighting its high revenue margins, controversial nature, public perception challenges, and efforts to navigate complex political and ethical issues.",
     "tags": [
       "data_software",
       "business_ethics",
       "government_contracts",
-      "corporate_responsibility",
-      "surveillance"
+      "political_controversy",
+      "corporate_responsibility"
     ],
     "title": "Palantir: On Business, Cults, and Politics",
     "url": "https://www.thediff.co/archive/palantir-on-business-cults-and-politics/#conclusion"
   },
   {
     "id": "01k6xgtzketeekb7h9er7ntrg4",
-    "order": 22,
+    "order": 31,
     "summary": "Business leaders focused on short-term wins while neglecting institutions that support free markets. This weakened support for rule of law and liberal ideas as opponents invested in long-term ideology. Wealthy founders must fund sustaining free societies.",
     "tags": [
-      "free_markets",
       "business_leadership",
-      "liberal_democracy",
+      "free_markets",
       "institutional_support",
-      "economic_freedom"
+      "philanthropy",
+      "long_term_thinking"
     ],
     "title": "Who maintains the scaffolding of freedom?",
     "url": "https://srajagopalan.substack.com/p/who-maintains-the-scaffolding-of"
   },
   {
     "id": "01k6va67563cax8s7f324ygv1t",
-    "order": 17,
+    "order": 36,
     "summary": "Demonstrates how AI transforms difficult textbooks into interactive lessons through PDF parsing, summarization, and digital organization, enabling faster deep learning with contextual Q&A and testing capabilities.",
     "tags": [
       "artificial_intelligence",
-      "education",
-      "learning",
       "educational_technology",
-      "knowledge_management"
+      "learning",
+      "digital_tools",
+      "study_methods"
     ],
     "title": "The Best Way to Use AI for Learning",
     "url": "https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1#fe23"
   },
   {
     "id": "01k6kkpgne5h19qqj62d19t0h2",
-    "order": 26,
+    "order": 15,
     "summary": "Examines China's development strategy using massive state investment and infrastructure to rapidly scale technologies, creating global strength but also inefficiencies and debt. Notes US export controls insufficient.",
     "tags": [
       "china",
       "economic_development",
       "state_intervention",
-      "manufacturing",
-      "geopolitics"
+      "industrial_policy",
+      "global_competition"
     ],
     "title": "The Real China Model",
     "url": "https://www.foreignaffairs.com/china/real-china-model-wang-kroeber"
@@ -144,9 +214,9 @@
     "order": 8,
     "summary": "Amyloid accumulation precedes symptoms and triggers tau protein spread. While tau correlates with brain damage, amyloid is the upstream cause. Reducing amyloid can decrease tau and slow cognitive decline, supporting the hypothesis.",
     "tags": [
-      "alzheimers",
-      "amyloid_hypothesis",
       "neuroscience",
+      "alzheimers_disease",
+      "protein_aggregation",
       "neurodegeneration",
       "medical_research"
     ],
@@ -169,26 +239,26 @@
   },
   {
     "id": "01k3nz6ne5jyg7avc3538248k8",
-    "order": 33,
+    "order": 24,
     "summary": "UPI is an open instant-payments system that has significantly reduced cash usage in India while promoting competition and financial inclusion. However, it requires more investment and better protections as it expands.",
     "tags": [
       "fintech",
       "digital_payments",
-      "india",
       "financial_inclusion",
-      "payment_systems"
+      "india",
+      "banking"
     ],
     "title": "A digital payments revolution in India",
     "url": "https://archive.is/3RNVw"
   },
   {
     "id": "01k3nxs3gwjfacac4apze81zqr",
-    "order": 32,
+    "order": 23,
     "summary": "Children in poor countries attend school but lack basic literacy and numeracy. Public teachers earn high wages relative to GDP through civil service pay, not market forces. Pay increases don't improve learning outcomes, but teacher quality remains crucial.",
     "tags": [
       "education",
-      "developing_countries",
       "teacher_compensation",
+      "developing_countries",
       "learning_outcomes",
       "public_policy"
     ],
@@ -201,10 +271,10 @@
     "summary": "Early cancer detection methods like liquid biopsies promise blood-based screening but face challenges with false positives, detecting non-threatening tumors, and proving they actually reduce cancer mortality rates.",
     "tags": [
       "cancer",
-      "early_detection",
       "medical_screening",
-      "oncology",
-      "preventive_medicine"
+      "early_detection",
+      "healthcare",
+      "diagnostic_challenges"
     ],
     "title": "The Problem With Early Cancer Detection | The New Yorker",
     "url": "https://www.newyorker.com/magazine/2025/06/23/the-catch-in-catching-cancer-early"
@@ -215,52 +285,38 @@
     "summary": "Diapause is a developmental pause in insects at any life stage that removes biomass from active life. It can be manipulated for pest control and biological management, with applications in farming, disease control, and conservation.",
     "tags": [
       "entomology",
-      "diapause",
+      "developmental_biology",
       "pest_control",
       "agriculture",
-      "developmental_biology"
+      "biological_control"
     ],
     "title": "Pausing Insect Activity",
     "url": "https://press.asimov.com/articles/insect-diapause"
   },
   {
-    "id": "01k2zj0xxcdk4gje1cj3gxyjmm",
-    "order": 27,
-    "summary": "Contrasts China's engineering-focused approach to building infrastructure and manufacturing with America's lawyer-dominated, rule-based culture that has lost production capacity.",
-    "tags": [
-      "china",
-      "united_states",
-      "manufacturing",
-      "geopolitics",
-      "industrial_capacity"
-    ],
-    "title": "A Nation of Lawyers Confronts China’s Engineering State",
-    "url": "https://www.theatlantic.com/ideas/archive/2025/08/china-america-tariffs-trump-economy/683895/?gift=c04SMsUDu_5IHrILqcoSgyI0nXW4Kw0Qw9R7N00x508"
-  },
-  {
     "id": "01k2net1yda1j1tqkqadctppfx",
-    "order": 31,
+    "order": 20,
     "summary": "Indian weddings blend traditional customs with modern romance, creating family conflicts. Most marriages remain within caste and religious boundaries, maintaining social hierarchies. However, love and evolving attitudes are gradually making ceremonies more inclusive.",
     "tags": [
       "indian_culture",
       "marriage",
       "traditions",
       "social_change",
-      "caste_system"
+      "cultural_evolution"
     ],
     "title": "The Wedding Wars - Samir Varma",
     "url": "https://substack.com/inbox/post/168803790?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01k2j40tf05d83f02kjh422fnt",
-    "order": 25,
+    "order": 17,
     "summary": "Explores how India's service-driven economic growth differs from China's export-led manufacturing model, highlighting India's unique challenges and strengths in pursuing its own development path.",
     "tags": [
-      "economic_development",
       "india",
       "china",
-      "comparative_economics",
-      "growth_strategies"
+      "economic_development",
+      "services_sector",
+      "comparative_economics"
     ],
     "title": "India and the invidious comparison with China",
     "url": "https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/?ref=thediff.co"
@@ -274,7 +330,7 @@
       "biotechnology",
       "medical_technology",
       "drug_delivery",
-      "molecular_medicine"
+      "genetics"
     ],
     "title": "A Visual Guide to Gene Delivery",
     "url": "https://www.asimov.press/p/gene-delivery"
@@ -295,13 +351,13 @@
   },
   {
     "id": "01k228ps97vg5bwhhv6433c1tm",
-    "order": 35,
+    "order": 44,
     "summary": "A24 has established itself as a prominent filmmaker known for unique, challenging movies with dedicated fans. Despite marketing quality cinema as events, the company struggles with consistency in ambitious projects.",
     "tags": [
       "film_industry",
       "independent_cinema",
-      "entertainment",
       "creative_filmmaking",
+      "entertainment_industry",
       "artistic_cinema"
     ],
     "title": "The Popular Alternative",
@@ -309,7 +365,7 @@
   },
   {
     "id": "01k1c5yaaf9tngc5pnssxa6zgw",
-    "order": 23,
+    "order": 13,
     "summary": "Brief commentary suggesting that among those involved in U.S. reindustrialization efforts, only a single individual appears to have a clear understanding of the necessary approach.",
     "tags": [
       "reindustrialization",
@@ -323,49 +379,49 @@
   },
   {
     "id": "01k18xzxnt7gec54mw47qe2730",
-    "order": 24,
+    "order": 22,
     "summary": "American companies hire Filipino workers remotely for cashier and customer support roles. Service exports from developing nations grow rapidly due to technology and cost advantages, but offer fewer opportunities than manufacturing.",
     "tags": [
-      "outsourcing",
       "remote_work",
-      "global_workforce",
+      "outsourcing",
+      "philippines",
       "international_business",
-      "economic_development"
+      "service_exports"
     ],
     "title": "American fried chicken can now be served from the Philippines",
     "url": "https://archive.ph/j9NOC"
   },
   {
     "id": "01k10hr6jb5ydtqsvwfph68f7r",
-    "order": 30,
+    "order": 19,
     "summary": "BJP took control of Delhi Gymkhana Club citing financial mismanagement, sparking opposition from elite members who view it as an institutional power grab reflecting broader efforts to reshape India's social structures.",
     "tags": [
       "indian_politics",
       "bjp",
       "institutional_takeover",
-      "power_dynamics",
-      "political_control"
+      "elite",
+      "power_dynamics"
     ],
     "title": "How Modi’s party took over one of India’s most prestigious private clubs",
     "url": "https://www.ft.com/content/3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116"
   },
   {
     "id": "01k10hk5n1ya3cd38bdm224d4h",
-    "order": 29,
+    "order": 18,
     "summary": "Modi enjoys broad support across education levels due to economic growth policies, strong leadership, and cross-caste appeal. Elites support him for economic advancement and global positioning despite democratic concerns.",
     "tags": [
       "indian_politics",
       "modi",
       "populism",
       "economic_policy",
-      "political_leadership"
+      "leadership"
     ],
     "title": "Why India’s elite loves Narendra Modi",
     "url": "https://archive.is/NUfMd"
   },
   {
     "id": "01k10h6bjne1bjfp0pandb9aec",
-    "order": 28,
+    "order": 16,
     "summary": "Explores similarities between America and China during their respective Gilded Ages, highlighting how both superpowers are grappling with capitalist excesses despite their geopolitical rivalry.",
     "tags": [
       "gilded_age",
@@ -385,8 +441,8 @@
       "neuroscience",
       "brain_simulation",
       "scientific_research",
-      "research_funding",
-      "computational_neuroscience"
+      "computational_neuroscience",
+      "research_funding"
     ],
     "title": "Why the Human Brain Project Went Wrong—and How to Fix It",
     "url": "https://www.scientificamerican.com/article/why-the-human-brain-project-went-wrong-and-how-to-fix-it/"
@@ -399,78 +455,78 @@
       "neuroscience",
       "brain_simulation",
       "computational_biology",
-      "neural_networks",
-      "biotechnology"
+      "neurons",
+      "brain_mapping"
     ],
     "title": "Researchers simulate an entire fly brain on a laptop. Is a human brain next?",
     "url": "https://news.berkeley.edu/2024/10/02/researchers-simulate-an-entire-fly-brain-on-a-laptop-is-a-human-brain-next/"
   },
   {
     "id": "01k0ym452574a7aed7aj98rmnv",
-    "order": 13,
+    "order": 26,
     "summary": "Thomas Midgley Jr. invented leaded gasoline and CFCs, solving immediate problems but causing severe long-term health and environmental damage. His story serves as a cautionary tale about considering future risks of new technologies.",
     "tags": [
       "invention",
       "environmental_damage",
       "technology_risks",
-      "industrial_chemistry",
-      "cautionary_tale"
+      "unintended_consequences",
+      "public_health"
     ],
     "title": "The Brilliant Inventor Who Made Two of History’s Biggest Mistakes",
     "url": "https://archive.ph/B5R0C"
   },
   {
     "id": "01k0rkksw05j6r0fb3sg2t75ze",
-    "order": 15,
+    "order": 39,
     "summary": "Explains LL and LR parsing methods, highlighting their differences in token processing and tree traversal approaches. LL uses pre-order while LR uses post-order traversal, each suited for different grammars.",
     "tags": [
       "parsing",
       "compiler_design",
       "computer_science",
       "algorithms",
-      "software_engineering"
+      "programming_languages"
     ],
     "title": "LL and LR Parsing Demystified",
     "url": "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html"
   },
   {
     "id": "01k0p4hj3k6r9vetkx17nqr6fe",
-    "order": 39,
+    "order": 28,
     "summary": "Explores how observing or addressing social problems assigns ethical responsibility, even for partial solutions. Uses quantum mechanics analogy to argue that marginal improvements should be valued rather than judged.",
     "tags": [
       "ethics",
       "moral_philosophy",
       "social_responsibility",
-      "applied_ethics",
-      "moral_theory"
+      "quantum_mechanics",
+      "observer_effect"
     ],
     "title": "The Copenhagen Interpretation of Ethics",
     "url": "https://laneless.substack.com/p/the-copenhagen-interpretation-of-ethics"
   },
   {
     "id": "01k0cet4pw72nn9pab1a2sywrx",
-    "order": 38,
+    "order": 27,
     "summary": "Cultural traditions shaped over generations are more effective for human success than individual rational thinking. Many beneficial practices aren't fully understood by followers, suggesting traditions should be respected and maintained.",
     "tags": [
       "cultural_evolution",
       "anthropology",
       "collective_wisdom",
-      "tradition",
-      "behavioral_science"
+      "human_behavior",
+      "social_science"
     ],
     "title": "Tradition is Smarter Than You Are",
     "url": "https://scholars-stage.org/tradition-is-smarter-than-you-are/"
   },
   {
     "id": "01k0bvm4t4fvbr5276rebhnnf0",
-    "order": 14,
+    "order": 25,
     "summary": "Fusion power remains impractical after 70+ years of research due to challenges in creating extreme conditions. Despite new company approaches promising near-term reactors, fusion remains uncertain and costly.",
     "tags": [
       "fusion_power",
       "nuclear_energy",
       "renewable_energy",
       "energy_technology",
-      "scientific_research"
+      "clean_energy"
     ],
     "title": "Will We Ever Get Fusion Power?",
     "url": "https://www.construction-physics.com/p/will-we-ever-get-fusion-power"
@@ -491,14 +547,14 @@
   },
   {
     "id": "01jzagw9s9k81xj7hsvq10b98n",
-    "order": 20,
+    "order": 30,
     "summary": "Explores Kevin Kelly's approach to following interests with joy, turning them into meaningful work without chasing fame or fortune. Discusses his creative project-focused \"Hollywood style\" career path versus traditional ladder climbing.",
     "tags": [
       "career_development",
       "creative_work",
-      "work_philosophy",
-      "personal_fulfillment",
-      "alternative_careers"
+      "meaningful_work",
+      "passion_driven_work",
+      "personal_fulfillment"
     ],
     "title": "Flounder Mode",
     "url": "https://joincolossus.com/article/flounder-mode/"
@@ -510,9 +566,9 @@
     "tags": [
       "endometriosis",
       "womens_health",
+      "gynecology",
       "chronic_disease",
-      "medical_research",
-      "healthcare_disparities"
+      "medical_research"
     ],
     "title": "Endometriosis is an incredibly interesting disease",
     "url": "https://www.owlposting.com/p/endometriosis-is-an-incredibly-interesting"
@@ -525,7 +581,7 @@
       "inflammation",
       "medical_research",
       "chronic_disease",
-      "cardiovascular",
+      "immunology",
       "therapeutic_interventions"
     ],
     "title": "Medicine’s Burning Question | The New Yorker",
@@ -539,7 +595,7 @@
       "economics",
       "free_markets",
       "government_intervention",
-      "economic_policy",
+      "market_regulation",
       "trade_policy"
     ],
     "title": "More on Repealing the Laws of Economics",
@@ -547,14 +603,14 @@
   },
   {
     "id": "01jwg7jf76yadan8p0cbkmjcvw",
-    "order": 40,
+    "order": 29,
     "summary": "Knausgaard examines the tension between technology and nature, exploring how modern life disconnects us from the physical world while seeking ways to reconnect with material existence and understand deeper life connections.",
     "tags": [
       "philosophy",
       "technology",
       "nature",
-      "existential",
-      "cultural_criticism"
+      "modern_life",
+      "existential"
     ],
     "title": "The Reenchanted World",
     "url": "https://harpers.org/archive/2025/06/the-reenchanted-world-karl-ove-knausgaard-digital-age/"
@@ -565,10 +621,10 @@
     "summary": "Explores how E. coli bacteria navigate environments to find nutrients through chemotaxis, using molecular mechanisms like flagellar motors and signaling molecules to sense chemical gradients and adapt.",
     "tags": [
       "microbiology",
+      "bacterial_behavior",
       "chemotaxis",
-      "cellular_navigation",
       "molecular_mechanisms",
-      "bacterial_behavior"
+      "cell_biology"
     ],
     "title": "The Baffling Intelligence of a Single Cell: The story of E. coli chemotaxis",
     "url": "https://jsomers.net/e-coli-chemotaxis/"
