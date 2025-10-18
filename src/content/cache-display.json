@@ -614,19 +614,5 @@
     ],
     "title": "The Reenchanted World",
     "url": "https://harpers.org/archive/2025/06/the-reenchanted-world-karl-ove-knausgaard-digital-age/"
-  },
-  {
-    "id": "01jwf9yr2mwzaakjns4hqe2sbb",
-    "order": 0,
-    "summary": "Explores how E. coli bacteria navigate environments to find nutrients through chemotaxis, using molecular mechanisms like flagellar motors and signaling molecules to sense chemical gradients and adapt.",
-    "tags": [
-      "microbiology",
-      "bacterial_behavior",
-      "chemotaxis",
-      "molecular_mechanisms",
-      "cell_biology"
-    ],
-    "title": "The Baffling Intelligence of a Single Cell: The story of E. coli chemotaxis",
-    "url": "https://jsomers.net/e-coli-chemotaxis/"
   }
 ]
