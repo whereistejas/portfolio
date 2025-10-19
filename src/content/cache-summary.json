@@ -1743,5 +1743,54 @@
       "programming tutorial",
       "technical education"
     ]
+  },
+  "01k7vfh217js8xtyrw23yfjq4g": {
+    "summary": "Traces the evolution of algebraic data types from McCarthy's early cartesian and union types through Hoare's contributions to ML's tagged unions and compiler checks, culminating in 1980s languages like HOPE and Miranda standardizing pattern matching.",
+    "tags": [
+      "computer science",
+      "programming languages",
+      "functional programming",
+      "algebraic data types",
+      "type theory",
+      "ML programming language",
+      "pattern matching",
+      "compiler design",
+      "programming history",
+      "John McCarthy",
+      "Tony Hoare",
+      "HOPE language",
+      "Miranda language",
+      "sum types",
+      "product types",
+      "tagged unions",
+      "discriminated unions",
+      "type systems",
+      "language design",
+      "programming concepts",
+      "software engineering",
+      "theoretical computer science",
+      "language evolution"
+    ]
+  },
+  "01k7vfh5rthxt5r6awxag07sga": {
+    "summary": "Explains algebraic types as simple concepts combining types through addition and multiplication. Sum types allow values from multiple types, enabling safe handling of errors and nulls while reducing bugs.",
+    "tags": [
+      "algebraic types",
+      "programming",
+      "type theory",
+      "sum types",
+      "error handling",
+      "null safety",
+      "software development",
+      "functional programming",
+      "type systems",
+      "computer science",
+      "programming concepts",
+      "code quality",
+      "bug prevention",
+      "software engineering",
+      "mathematics",
+      "set theory"
+    ]
   }
 }
