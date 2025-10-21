@@ -1792,5 +1792,72 @@
       "mathematics",
       "set theory"
     ]
+  },
+  "01k81d4yfkm1jnqqqfkj63c1qs": {
+    "summary": "Rust's strict lifetimes and mutability rules make graph data structures challenging to implement. Cycles prevent simple pointer usage, requiring arena-allocation approaches with explicit lifetimes.",
+    "tags": [
+      "rust",
+      "programming",
+      "data structures",
+      "graphs",
+      "memory management",
+      "lifetimes",
+      "mutability",
+      "ownership",
+      "pointers",
+      "arena allocation",
+      "computer science",
+      "software engineering",
+      "language design",
+      "algorithms",
+      "technical challenges",
+      "programming patterns",
+      "systems programming"
+    ]
+  },
+  "01k81d5805be8p10y5jfhwkhx0": {
+    "summary": "Presents a method for modeling graphs in Rust using vector indices that aligns with Rust's ownership model and provides efficiency benefits, though it carries risks when removing elements.",
+    "tags": [
+      "rust",
+      "programming",
+      "data structures",
+      "graphs",
+      "vector indices",
+      "ownership model",
+      "memory management",
+      "software engineering",
+      "algorithms",
+      "performance optimization",
+      "programming languages",
+      "systems programming",
+      "memory safety",
+      "dangling pointers",
+      "memory leaks"
+    ]
+  },
+  "01k81d5b9rbkwk3ztznbw1nrnr": {
+    "summary": "Implementation of computation graphs in Rust using indexed nodes for path counting, value evaluation, and derivatives. Evolution from enum-based to trait-based design with tradeoffs in syntax and structure.",
+    "tags": [
+      "rust",
+      "computation graphs",
+      "programming",
+      "software architecture",
+      "trait design",
+      "enum design",
+      "derivatives",
+      "mathematical computing",
+      "graph algorithms",
+      "node structures",
+      "software engineering",
+      "functional programming",
+      "systems programming",
+      "data structures",
+      "algorithm implementation",
+      "code design patterns",
+      "runtime construction",
+      "mathematical graphs",
+      "computation",
+      "programming languages"
+    ]
   }
 }

@@ -1,326 +1,326 @@
 {
   "01jwg7jf76yadan8p0cbkmjcvw": {
-    "order": 1,
+    "order": 41,
     "tags": [
       "philosophy",
       "technology",
       "nature",
-      "existential",
-      "modern_life"
+      "modern_life",
+      "existential"
     ]
   },
   "01jy6rem6wbkfj90g95gazpq5p": {
-    "order": 5,
+    "order": 26,
     "tags": [
       "economics",
       "free_markets",
-      "government_intervention",
+      "government_policy",
       "trade_policy",
-      "competition"
+      "market_economics"
     ]
   },
   "01jym0svp7f768hbhjymgmhyd5": {
-    "order": 34,
+    "order": 15,
     "tags": [
       "medical_research",
       "inflammation",
-      "disease_mechanisms",
+      "chronic_disease",
       "cardiovascular_health",
-      "neurology"
+      "biomedical_science"
     ]
   },
   "01jyxcfgnngyv41y6ma393y3jx": {
-    "order": 35,
+    "order": 16,
     "tags": [
       "medical_research",
       "womens_health",
-      "endometriosis",
+      "chronic_disease",
       "healthcare_disparities",
-      "chronic_disease"
+      "reproductive_health"
     ]
   },
   "01jzagw9s9k81xj7hsvq10b98n": {
-    "order": 24,
+    "order": 42,
     "tags": [
       "career_development",
       "creative_work",
       "meaningful_work",
-      "work_philosophy",
-      "personal_fulfillment"
+      "personal_fulfillment",
+      "professional_inspiration"
     ]
   },
   "01jzmqv1gtzgntkpr861khmtdw": {
-    "order": 33,
+    "order": 18,
     "tags": [
       "medical_technology",
       "healthcare_innovation",
       "technology_adoption",
-      "medical_history",
-      "radiology"
+      "diagnostic_imaging",
+      "medical_history"
     ]
   },
   "01k0bvm4t4fvbr5276rebhnnf0": {
-    "order": 45,
+    "order": 24,
     "tags": [
       "energy_technology",
-      "fusion_power",
-      "nuclear_energy",
+      "nuclear_fusion",
       "clean_energy",
-      "scientific_research"
+      "scientific_research",
+      "climate_solutions"
     ]
   },
   "01k0cet4pw72nn9pab1a2sywrx": {
-    "order": 2,
+    "order": 39,
     "tags": [
       "anthropology",
       "cultural_evolution",
-      "tradition",
-      "collective_wisdom",
-      "behavioral_science"
+      "social_science",
+      "human_behavior",
+      "traditions"
     ]
   },
   "01k0p4hj3k6r9vetkx17nqr6fe": {
-    "order": 3,
+    "order": 40,
     "tags": [
       "ethics",
-      "philosophy",
+      "moral_philosophy",
       "social_responsibility",
-      "moral_theory",
-      "applied_ethics"
+      "applied_ethics",
+      "philosophy"
     ]
   },
   "01k0rkksw05j6r0fb3sg2t75ze": {
-    "order": 28,
+    "order": 0,
     "tags": [
-      "computer_science",
       "parsing",
       "algorithms",
-      "compiler_design",
-      "programming_languages"
+      "computer_science",
+      "programming",
+      "compilers"
     ]
   },
   "01k0ym452574a7aed7aj98rmnv": {
-    "order": 46,
+    "order": 25,
     "tags": [
-      "technology_risks",
-      "environmental_damage",
-      "innovation",
+      "environmental_history",
+      "technology_ethics",
       "industrial_chemistry",
-      "unintended_consequences"
+      "public_health",
+      "innovation"
     ]
   },
   "01k0yr5mk34g2yn5vq2521828c": {
-    "order": 38,
+    "order": 12,
     "tags": [
       "neuroscience",
       "brain_simulation",
       "computational_biology",
-      "medical_research",
+      "scientific_research",
       "biotechnology"
     ]
   },
   "01k0yr667kps6mz7abkd99n3ds": {
-    "order": 39,
+    "order": 13,
     "tags": [
       "neuroscience",
       "brain_simulation",
       "scientific_research",
-      "computational_neuroscience",
+      "project_management",
       "research_funding"
     ]
   },
   "01k10h6bjne1bjfp0pandb9aec": {
-    "order": 6,
+    "order": 28,
     "tags": [
       "economics",
+      "geopolitics",
       "capitalism",
-      "america",
-      "china",
-      "comparative_analysis"
+      "economic_inequality",
+      "comparative_politics"
     ]
   },
   "01k10hk5n1ya3cd38bdm224d4h": {
-    "order": 12,
+    "order": 32,
     "tags": [
-      "indian_politics",
+      "india",
+      "politics",
       "leadership",
-      "populism",
       "economic_policy",
-      "governance"
+      "democracy"
     ]
   },
   "01k10hr6jb5ydtqsvwfph68f7r": {
-    "order": 13,
+    "order": 33,
     "tags": [
-      "indian_politics",
-      "power_dynamics",
-      "institutions",
-      "elite",
-      "governance"
+      "india",
+      "politics",
+      "institutional_control",
+      "governance",
+      "social_institutions"
     ]
   },
   "01k18xzxnt7gec54mw47qe2730": {
-    "order": 11,
+    "order": 35,
     "tags": [
+      "globalization",
       "remote_work",
       "outsourcing",
-      "global_workforce",
-      "technology",
-      "economic_development"
+      "economic_development",
+      "labor_markets"
     ]
   },
   "01k1c5yaaf9tngc5pnssxa6zgw": {
-    "order": 10,
+    "order": 31,
     "tags": [
+      "united_states",
       "industrial_policy",
-      "manufacturing",
       "economic_strategy",
-      "american_industry",
+      "manufacturing",
       "policy_analysis"
     ]
   },
   "01k228ps97vg5bwhhv6433c1tm": {
-    "order": 26,
+    "order": 48,
     "tags": [
       "film_industry",
+      "independent_cinema",
       "entertainment",
-      "creative_filmmaking",
-      "media_analysis",
-      "artistic_cinema"
+      "creative_industries",
+      "media_analysis"
     ]
   },
   "01k2fder0ezwd75njceewc980v": {
-    "order": 40,
+    "order": 19,
     "tags": [
       "synthetic_biology",
       "biotechnology",
       "genetic_engineering",
-      "gene_circuits",
-      "bioengineering"
+      "bioengineering",
+      "molecular_biology"
     ]
   },
   "01k2fdeym6jvfb3zkgx0j3c11f": {
-    "order": 41,
+    "order": 20,
     "tags": [
       "biotechnology",
       "gene_therapy",
-      "medical_technology",
       "drug_delivery",
-      "therapeutic_delivery"
+      "medical_technology",
+      "molecular_medicine"
     ]
   },
   "01k2j40tf05d83f02kjh422fnt": {
-    "order": 7,
+    "order": 27,
     "tags": [
       "economics",
-      "comparative_analysis",
+      "economic_development",
+      "comparative_economics",
       "india",
-      "china",
-      "development_models"
+      "china"
     ]
   },
   "01k2net1yda1j1tqkqadctppfx": {
-    "order": 14,
+    "order": 34,
     "tags": [
-      "indian_culture",
-      "traditions",
+      "india",
+      "cultural_anthropology",
       "social_change",
-      "family_dynamics",
+      "traditions",
       "modernization"
     ]
   },
   "01k2zj0xxcdk4gje1cj3gxyjmm": {
-    "order": 9,
+    "order": 30,
     "tags": [
       "china",
       "united_states",
-      "manufacturing",
       "geopolitics",
-      "industrial_policy"
+      "manufacturing",
+      "economic_rivalry"
     ]
   },
   "01k38s3z2gty73bpdzpejer4fj": {
-    "order": 44,
+    "order": 23,
     "tags": [
       "biology",
       "entomology",
       "pest_control",
       "agriculture",
-      "conservation"
+      "ecology"
     ]
   },
   "01k3c0njfkfk5g7a8gtrjh0dgp": {
-    "order": 36,
+    "order": 17,
     "tags": [
       "medical_research",
       "cancer",
       "early_detection",
-      "medical_screening",
-      "healthcare"
+      "healthcare",
+      "diagnostic_technology"
     ]
   },
   "01k3nxs3gwjfacac4apze81zqr": {
-    "order": 16,
+    "order": 36,
     "tags": [
       "education",
       "developing_countries",
-      "teacher_quality",
-      "policy",
+      "public_policy",
+      "teacher_compensation",
       "learning_outcomes"
     ]
   },
   "01k3nz6ne5jyg7avc3538248k8": {
-    "order": 15,
+    "order": 37,
     "tags": [
       "fintech",
       "digital_payments",
-      "india",
       "financial_inclusion",
-      "technology"
+      "india",
+      "payment_systems"
     ]
   },
   "01k4r90wrh5xv4jcn4zfjz453m": {
-    "order": 43,
+    "order": 22,
     "tags": [
       "virology",
       "microbiology",
       "ecology",
       "life_sciences",
-      "biodiversity"
+      "molecular_biology"
     ]
   },
   "01k4raerehhys44g2cdwenkkv6": {
-    "order": 37,
+    "order": 14,
     "tags": [
       "neuroscience",
-      "alzheimers_disease",
+      "alzheimers",
       "medical_research",
-      "neurodegeneration",
-      "disease_mechanism"
+      "protein_biology",
+      "neurodegeneration"
     ]
   },
   "01k4ratjy331zk7tr6hts9ex19": {
-    "order": 42,
+    "order": 21,
     "tags": [
       "genetics",
       "biotechnology",
-      "embryo_selection",
+      "reproductive_technology",
       "bioethics",
-      "reproductive_technology"
+      "genetic_screening"
     ]
   },
   "01k6kkpgne5h19qqj62d19t0h2": {
-    "order": 8,
+    "order": 29,
     "tags": [
       "china",
       "economic_development",
-      "state_intervention",
+      "geopolitics",
       "manufacturing",
-      "geopolitics"
+      "industrial_policy"
     ]
   },
   "01k6va67563cax8s7f324ygv1t": {
-    "order": 18,
+    "order": 8,
     "tags": [
       "artificial_intelligence",
       "education",
@@ -330,97 +330,97 @@
     ]
   },
   "01k6xgtzketeekb7h9er7ntrg4": {
-    "order": 4,
+    "order": 45,
     "tags": [
-      "free_markets",
       "business_leadership",
-      "institutions",
-      "liberal_democracy",
+      "free_markets",
+      "institutional_support",
+      "political_economy",
       "philanthropy"
     ]
   },
   "01k6z1cjetsqy8ev7j7ffnznfn": {
-    "order": 21,
+    "order": 47,
     "tags": [
-      "data_software",
       "business_ethics",
-      "government_contracts",
+      "corporate_responsibility",
       "technology_policy",
-      "corporate_responsibility"
+      "government_relations",
+      "data_privacy"
     ]
   },
   "01k76nwzj83c8p10nvhwq5rdhe": {
-    "order": 27,
+    "order": 38,
     "tags": [
       "transportation",
       "railways",
       "logistics",
       "systems_design",
-      "infrastructure"
+      "operations_management"
     ]
   },
   "01k79byqsjx6wqh2fesc9960gk": {
-    "order": 17,
+    "order": 10,
     "tags": [
       "machine_learning",
+      "artificial_intelligence",
+      "epistemology",
       "model_interpretability",
-      "scientific_methodology",
-      "causality",
-      "epistemology"
+      "scientific_methodology"
     ]
   },
   "01k7d30sekn3twp4x8t3xjamrd": {
-    "order": 25,
+    "order": 43,
     "tags": [
-      "optimization",
-      "innovation",
       "strategy",
-      "improvement",
+      "innovation",
+      "optimization",
+      "entrepreneurship",
       "decision_making"
     ]
   },
   "01k7f54eg5kr8f6q2e236kc4d6": {
-    "order": 19,
+    "order": 9,
     "tags": [
       "artificial_intelligence",
       "software_engineering",
-      "code_generation",
-      "development_workflow",
-      "programming"
+      "programming",
+      "development_tools",
+      "automation"
     ]
   },
   "01k7h45yh2z9kwre69wx4pn0h8": {
-    "order": 22,
+    "order": 46,
     "tags": [
       "business_strategy",
-      "organizational_structure",
+      "organizational_design",
       "customer_alignment",
-      "tech_industry",
-      "problem_solving"
+      "enterprise_solutions",
+      "consulting"
     ]
   },
   "01k7h464drvvxkbd4yrdjkwmmv": {
-    "order": 20,
+    "order": 11,
     "tags": [
       "artificial_intelligence",
-      "data_integration",
+      "data_management",
       "business_intelligence",
-      "enterprise_data",
-      "digital_transformation"
+      "digital_transformation",
+      "enterprise_technology"
     ]
   },
   "01k7jezsp7frsmf8et4p9vnrpk": {
-    "order": 29,
+    "order": 1,
     "tags": [
-      "computer_science",
       "algorithms",
       "programming",
-      "graph_algorithms",
-      "problem_solving"
+      "computer_science",
+      "graphs",
+      "breadth_first_search"
     ]
   },
   "01k7jhyshb3yh49c98rs47sv78": {
-    "order": 23,
+    "order": 44,
     "tags": [
       "venture_capital",
       "entrepreneurship",
@@ -430,33 +430,63 @@
     ]
   },
   "01k7jjdybfs76qndt357am4n6e": {
-    "order": 30,
+    "order": 2,
     "tags": [
-      "computer_science",
       "algorithms",
-      "dynamic_programming",
+      "programming",
       "optimization",
-      "programming"
+      "dynamic_programming",
+      "computer_science"
     ]
   },
   "01k7vfh217js8xtyrw23yfjq4g": {
-    "order": 31,
+    "order": 3,
     "tags": [
-      "computer_science",
       "programming_languages",
+      "computer_science",
       "functional_programming",
       "type_theory",
-      "language_design"
+      "history"
     ]
   },
   "01k7vfh5rthxt5r6awxag07sga": {
-    "order": 32,
+    "order": 4,
     "tags": [
-      "computer_science",
       "programming",
       "type_theory",
       "functional_programming",
-      "software_engineering"
+      "software_engineering",
+      "computer_science"
+    ]
+  },
+  "01k81d4yfkm1jnqqqfkj63c1qs": {
+    "order": 5,
+    "tags": [
+      "rust",
+      "programming",
+      "data_structures",
+      "memory_management",
+      "systems_programming"
+    ]
+  },
+  "01k81d5805be8p10y5jfhwkhx0": {
+    "order": 6,
+    "tags": [
+      "rust",
+      "programming",
+      "data_structures",
+      "graphs",
+      "systems_programming"
+    ]
+  },
+  "01k81d5b9rbkwk3ztznbw1nrnr": {
+    "order": 7,
+    "tags": [
+      "rust",
+      "programming",
+      "algorithms",
+      "mathematical_computing",
+      "software_architecture"
     ]
   }
 }
