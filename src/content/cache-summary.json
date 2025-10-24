@@ -1859,5 +1859,50 @@
       "computation",
       "programming languages"
     ]
+  },
+  "01k88v9t0wzrz4f6c78nvkmz8t": {
+    "summary": "Explains how dynamic programming optimizes recursive solutions through memoization and tabulation techniques to avoid redundant calculations and improve efficiency.",
+    "tags": [
+      "dynamic programming",
+      "algorithms",
+      "recursion",
+      "memoization",
+      "tabulation",
+      "optimization",
+      "computer science",
+      "programming techniques",
+      "software engineering",
+      "problem solving",
+      "coding",
+      "data structures",
+      "algorithmic efficiency",
+      "computational complexity",
+      "programming fundamentals"
+    ]
+  },
+  "01k88yvygrenzpysy3mjvd7qf9": {
+    "summary": "Examines Bloom's famous claim that one-on-one tutoring improves learning by two standard deviations, but rigorous reviews show actual gains are much smaller at 0.33-0.37 SD due to methodological factors.",
+    "tags": [
+      "education research",
+      "tutoring effectiveness",
+      "Bloom's two sigma problem",
+      "educational psychology",
+      "learning gains",
+      "standard deviation",
+      "one-on-one instruction",
+      "personalized learning",
+      "educational interventions",
+      "academic achievement",
+      "pedagogical methods",
+      "research methodology",
+      "educational statistics",
+      "teaching effectiveness",
+      "individualized instruction",
+      "learning outcomes",
+      "educational measurement",
+      "cognitive science",
+      "instructional design",
+      "evidence-based education"
+    ]
   }
 }
