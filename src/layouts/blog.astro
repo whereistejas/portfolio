@@ -8,7 +8,7 @@ const { frontmatter } = Astro.props;
 
 const headers = [
   { type: "text", content: (frontmatter.title as string).toUpperCase() },
-  { type: "link", content: "CLOSE", href: "/archive" },
+  { type: "link", content: "CLOSE", href: "/" },
 ];
 ---
 
@@ -21,6 +21,7 @@ const headers = [
     }
   </Fragment>
   <Fragment slot="main">
+    <meta name="fediverse:creator" content="@whereistejas@hachyderm.io" hidden>
     <article
       class="@container
       mt-1
