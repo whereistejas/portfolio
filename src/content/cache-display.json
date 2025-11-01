@@ -1,14 +1,28 @@
 [
   {
+    "id": "01k8zgj4cbgxhn0m39wj9m4w3g",
+    "order": 16,
+    "summary": "Modern self-help incorporates ancient Stoic and Buddhist philosophies, emphasizing acceptance of uncontrollable circumstances while focusing on manageable changes, promoting realistic attitudes over false optimism.",
+    "tags": [
+      "philosophy",
+      "stoicism",
+      "buddhism",
+      "acceptance",
+      "self_help"
+    ],
+    "title": "How I Learned to Stop Worrying and Love My Shitty Life​ | Self-Help Gets Philosophical",
+    "url": "https://www.thedriftmag.com/how-i-learned-to-stop-worrying-and-love-my-shitty-life/"
+  },
+  {
     "id": "01k8nxbnxpm3ehresv69xwpe90",
-    "order": 22,
+    "order": 38,
     "summary": "Argues that everyday toxins in food, clothing, and products harm health due to weak regulation. Recommends nutrient-dense whole foods, supplements, low-toxin brands, and an 80/20 approach to reduce exposures.",
     "tags": [
       "health",
-      "toxins",
+      "longevity",
       "nutrition",
-      "lifestyle",
-      "optimization"
+      "toxins",
+      "wellness"
     ],
     "title": "A builder’s guide to living a long and healthy life",
     "url": "https://www.lennysnewsletter.com/p/a-builders-guide-to-living-a-long"
@@ -29,12 +43,12 @@
   },
   {
     "id": "01k88yvygrenzpysy3mjvd7qf9",
-    "order": 11,
+    "order": 22,
     "summary": "Examines Bloom's famous claim that one-on-one tutoring improves learning by two standard deviations, but rigorous reviews show actual gains are much smaller at 0.33-0.37 SD due to methodological factors.",
     "tags": [
       "education",
-      "tutoring",
       "research",
+      "tutoring",
       "learning",
       "effectiveness"
     ],
@@ -43,13 +57,13 @@
   },
   {
     "id": "01k88v9t0wzrz4f6c78nvkmz8t",
-    "order": 30,
+    "order": 32,
     "summary": "Explains how dynamic programming optimizes recursive solutions through memoization and tabulation techniques to avoid redundant calculations and improve efficiency.",
     "tags": [
-      "algorithms",
       "programming",
+      "algorithms",
+      "dynamic_programming",
       "optimization",
-      "memoization",
       "recursion"
     ],
     "title": "The Ultimate Guide to Dynamic Programming",
@@ -57,39 +71,39 @@
   },
   {
     "id": "01k81d5b9rbkwk3ztznbw1nrnr",
-    "order": 33,
+    "order": 37,
     "summary": "Implementation of computation graphs in Rust using indexed nodes for path counting, value evaluation, and derivatives. Evolution from enum-based to trait-based design with tradeoffs in syntax and structure.",
     "tags": [
-      "rust",
       "programming",
+      "rust",
       "graphs",
       "computation",
-      "design"
+      "mathematics"
     ],
     "title": "Exploring Computation Graphs in Rust",
     "url": "https://paulkernfeld.com/2018/06/17/exploring-computation-graphs-in-rust.html"
   },
   {
     "id": "01k81d5805be8p10y5jfhwkhx0",
-    "order": 32,
+    "order": 36,
     "summary": "Presents a method for modeling graphs in Rust using vector indices that aligns with Rust's ownership model and provides efficiency benefits, though it carries risks when removing elements.",
     "tags": [
-      "rust",
       "programming",
+      "rust",
       "graphs",
-      "indices",
-      "efficiency"
+      "data_structures",
+      "optimization"
     ],
     "title": "Modeling graphs in Rust using vector indices",
     "url": "https://smallcultfollowing.com/babysteps/blog/2015/04/06/modeling-graphs-in-rust-using-vector-indices/"
   },
   {
     "id": "01k81d4yfkm1jnqqqfkj63c1qs",
-    "order": 31,
+    "order": 35,
     "summary": "Rust's strict lifetimes and mutability rules make graph data structures challenging to implement. Cycles prevent simple pointer usage, requiring arena-allocation approaches with explicit lifetimes.",
     "tags": [
-      "rust",
       "programming",
+      "rust",
       "graphs",
       "memory",
       "ownership"
@@ -99,54 +113,54 @@
   },
   {
     "id": "01k7vfh5rthxt5r6awxag07sga",
-    "order": 36,
+    "order": 34,
     "summary": "Explains algebraic types as simple concepts combining types through addition and multiplication. Sum types allow values from multiple types, enabling safe handling of errors and nulls while reducing bugs.",
     "tags": [
       "programming",
-      "types",
+      "type_systems",
+      "functional",
       "safety",
-      "theory",
-      "development"
+      "errors"
     ],
     "title": "Algebraic Types are not Scary, Actually",
     "url": "https://blog.aiono.dev/posts/algebraic-types-are-not-scary,-actually.html"
   },
   {
     "id": "01k7vfh217js8xtyrw23yfjq4g",
-    "order": 35,
+    "order": 33,
     "summary": "Traces the evolution of algebraic data types from McCarthy's early cartesian and union types through Hoare's contributions to ML's tagged unions and compiler checks, culminating in 1980s languages like HOPE and Miranda standardizing pattern matching.",
     "tags": [
       "programming",
-      "types",
+      "type_systems",
+      "functional",
       "history",
-      "languages",
-      "theory"
+      "computer_science"
     ],
     "title": "A Very Early History of Algebraic Data Types",
     "url": "https://www.hillelwayne.com/post/algdt-history/"
   },
   {
     "id": "01k7jjdybfs76qndt357am4n6e",
-    "order": 29,
+    "order": 31,
     "summary": "Explains dynamic programming through House Robber problem - selecting nonadjacent houses to maximize loot. Shows space-efficient approach tracking last robbed/unrobbed values with Haskell and Rust implementations.",
     "tags": [
-      "algorithms",
       "programming",
+      "algorithms",
       "optimization",
-      "rust",
-      "haskell"
+      "dynamic_programming",
+      "computer_science"
     ],
     "title": "Dynamic Programming Introduction",
     "url": "https://mmhaskell.com/blog/2025/10/6/dynamic-programming-primer"
   },
   {
     "id": "01k7jhyshb3yh49c98rs47sv78",
-    "order": 17,
+    "order": 28,
     "summary": "Josh Kushner transformed Thrive Capital into an influential venture firm through hiring diverse operators and making early investments in companies like Instagram and OpenAI, driven by long-term vision.",
     "tags": [
       "business",
       "venture_capital",
-      "investment",
+      "investing",
       "entrepreneurship",
       "leadership"
     ],
@@ -155,41 +169,41 @@
   },
   {
     "id": "01k2zj0xxcdk4gje1cj3gxyjmm",
-    "order": 3,
+    "order": 4,
     "summary": "Contrasts China's engineering-focused approach to building infrastructure and manufacturing with America's lawyer-dominated, rule-based culture that has lost production capacity.",
     "tags": [
+      "economics",
       "china",
       "manufacturing",
       "engineering",
-      "geopolitics",
-      "infrastructure"
+      "geopolitics"
     ],
     "title": "A Nation of Lawyers Confronts China’s Engineering State",
     "url": "https://www.theatlantic.com/ideas/archive/2025/08/china-america-tariffs-trump-economy/683895/?gift=c04SMsUDu_5IHrILqcoSgyI0nXW4Kw0Qw9R7N00x508"
   },
   {
     "id": "01k7jezsp7frsmf8et4p9vnrpk",
-    "order": 28,
+    "order": 30,
     "summary": "Explains how to solve Snakes and Ladders using breadth-first search algorithm, treating game squares as nodes and die rolls as edges, with implementations in both Rust and Haskell.",
     "tags": [
-      "algorithms",
       "programming",
+      "algorithms",
       "graphs",
-      "rust",
-      "haskell"
+      "computer_science",
+      "rust"
     ],
     "title": "Graph Algorithms in Board Games!",
     "url": "https://mmhaskell.com/blog/2025/9/8/graph-algorithms-in-board-games"
   },
   {
     "id": "01k7h45yh2z9kwre69wx4pn0h8",
-    "order": 16,
+    "order": 26,
     "summary": "Palantir's FDE role combines customer alignment with strategy to solve complex problems. Imitators copy the structure without commitment, producing inferior results. Organizations should rethink assumptions before adopting models.",
     "tags": [
       "business",
       "strategy",
+      "deployment",
       "palantir",
-      "innovation",
       "consulting"
     ],
     "title": "Sorry, that isn't an FDE",
@@ -200,11 +214,11 @@
     "order": 27,
     "summary": "Companies struggle to gather scattered data from various sources into unified systems. The labor-intensive process of cleaning, accessing, and standardizing data creates bottlenecks that slow AI adoption and business impact.",
     "tags": [
+      "business",
       "ai",
       "data",
       "integration",
-      "enterprise",
-      "challenges"
+      "enterprise"
     ],
     "title": "The Great Data Integration Schlep",
     "url": "https://sarahconstantin.substack.com/p/the-great-data-integration-schlep?utm_source=substack&utm_campaign=post_embed&utm_medium=web"
@@ -218,14 +232,14 @@
       "programming",
       "development",
       "automation",
-      "engineering"
+      "tools"
     ],
     "title": "Vibing a Non-Trivial Ghostty Feature",
     "url": "https://mitchellh.com/writing/non-trivial-vibing"
   },
   {
     "id": "01k7d30sekn3twp4x8t3xjamrd",
-    "order": 19,
+    "order": 18,
     "summary": "Contrasts two improvement strategies: optimizing existing methods (hill-climbing) which is efficient but has limits, versus creating new possibilities (hill-making) which is risky but offers greater potential rewards.",
     "tags": [
       "strategy",
@@ -239,53 +253,53 @@
   },
   {
     "id": "01k79byqsjx6wqh2fesc9960gk",
-    "order": 26,
+    "order": 21,
     "summary": "Contrasts behavioral prediction with mechanistic understanding. Behavioral models fit data but lack insight into internal workings, while gears-level models reveal mechanisms and handle changes better.",
     "tags": [
-      "ai",
       "modeling",
       "prediction",
-      "mechanisms",
-      "understanding"
+      "causality",
+      "interpretability",
+      "science"
     ],
     "title": "Gears vs Behavior",
     "url": "https://www.lesswrong.com/s/xEFeCwk3pdYdeG2rL/p/gvK5QWRLk3H8iqcNy"
   },
   {
     "id": "01k76nwzj83c8p10nvhwq5rdhe",
-    "order": 13,
+    "order": 20,
     "summary": "Railways' primary product is their timetable, which requires precise planning to transport people efficiently. Quality timetables improve speed, reliability, capacity, and connectivity. Infrastructure should support timetables.",
     "tags": [
       "transportation",
-      "railways",
-      "planning",
       "systems",
-      "efficiency"
+      "planning",
+      "efficiency",
+      "logistics"
     ],
     "title": "The product of the railways is the timetable",
     "url": "https://springbett.substack.com/p/the-product-of-the-railways-is-the"
   },
   {
     "id": "01k6z1cjetsqy8ev7j7ffnznfn",
-    "order": 15,
+    "order": 13,
     "summary": "Examines a data software company working with governments and businesses, highlighting its high revenue margins, controversial nature, public perception challenges, and efforts to navigate complex political and ethical issues.",
     "tags": [
-      "business",
       "technology",
       "ethics",
-      "data",
-      "government"
+      "surveillance",
+      "governance",
+      "data"
     ],
     "title": "Palantir: On Business, Cults, and Politics",
     "url": "https://www.thediff.co/archive/palantir-on-business-cults-and-politics/#conclusion"
   },
   {
     "id": "01k6xgtzketeekb7h9er7ntrg4",
-    "order": 14,
+    "order": 12,
     "summary": "Business leaders focused on short-term wins while neglecting institutions that support free markets. This weakened support for rule of law and liberal ideas as opponents invested in long-term ideology. Wealthy founders must fund sustaining free societies.",
     "tags": [
-      "business",
-      "markets",
+      "politics",
+      "capitalism",
       "institutions",
       "democracy",
       "leadership"
@@ -298,25 +312,25 @@
     "order": 24,
     "summary": "Demonstrates how AI transforms difficult textbooks into interactive lessons through PDF parsing, summarization, and digital organization, enabling faster deep learning with contextual Q&A and testing capabilities.",
     "tags": [
-      "ai",
       "education",
+      "ai",
       "learning",
       "tools",
-      "technology"
+      "optimization"
     ],
     "title": "The Best Way to Use AI for Learning",
     "url": "https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1#fe23"
   },
   {
     "id": "01k6kkpgne5h19qqj62d19t0h2",
-    "order": 2,
+    "order": 3,
     "summary": "Examines China's development strategy using massive state investment and infrastructure to rapidly scale technologies, creating global strength but also inefficiencies and debt. Notes US export controls insufficient.",
     "tags": [
+      "economics",
       "china",
       "development",
-      "manufacturing",
-      "geopolitics",
-      "strategy"
+      "infrastructure",
+      "competition"
     ],
     "title": "The Real China Model",
     "url": "https://www.foreignaffairs.com/china/real-china-model-wang-kroeber"
@@ -327,7 +341,7 @@
     "summary": "Companies offer polygenic embryo selection claiming to reduce disease risk and increase IQ, but effectiveness is limited due to complex genetics and small sample sizes. Critics raise scientific, ethical, and social concerns.",
     "tags": [
       "genetics",
-      "selection",
+      "screening",
       "embryos",
       "ethics",
       "biotechnology"
@@ -337,70 +351,70 @@
   },
   {
     "id": "01k4raerehhys44g2cdwenkkv6",
-    "order": 44,
+    "order": 41,
     "summary": "Amyloid accumulation precedes symptoms and triggers tau protein spread. While tau correlates with brain damage, amyloid is the upstream cause. Reducing amyloid can decrease tau and slow cognitive decline, supporting the hypothesis.",
     "tags": [
+      "health",
       "alzheimers",
-      "amyloid",
-      "tau",
       "neuroscience",
-      "hypothesis"
+      "disease",
+      "medical"
     ],
     "title": "In Defense Of The Amyloid Hypothesis",
     "url": "https://www.astralcodexten.com/p/in-defense-of-the-amyloid-hypothesis"
   },
   {
     "id": "01k4r90wrh5xv4jcn4zfjz453m",
-    "order": 49,
+    "order": 47,
     "summary": "Discusses the enormous population of viruses on Earth (10^31), their tiny size in nanometers, protein shell structure, genome sizes, and their crucial ecological role in infecting organisms and influencing global nutrient cycles.",
     "tags": [
       "biology",
       "viruses",
       "ecology",
-      "microorganisms",
-      "scale"
+      "population",
+      "microbiology"
     ],
     "title": "How big are viruses?",
     "url": "https://book.bionumbers.org/how-big-are-viruses/"
   },
   {
     "id": "01k3nz6ne5jyg7avc3538248k8",
-    "order": 12,
+    "order": 8,
     "summary": "UPI is an open instant-payments system that has significantly reduced cash usage in India while promoting competition and financial inclusion. However, it requires more investment and better protections as it expands.",
     "tags": [
+      "economics",
       "fintech",
-      "payments",
       "india",
-      "technology",
-      "inclusion"
+      "payments",
+      "digital"
     ],
     "title": "A digital payments revolution in India",
     "url": "https://archive.is/3RNVw"
   },
   {
     "id": "01k3nxs3gwjfacac4apze81zqr",
-    "order": 10,
+    "order": 7,
     "summary": "Children in poor countries attend school but lack basic literacy and numeracy. Public teachers earn high wages relative to GDP through civil service pay, not market forces. Pay increases don't improve learning outcomes, but teacher quality remains crucial.",
     "tags": [
+      "economics",
       "education",
-      "development",
-      "teachers",
       "policy",
-      "outcomes"
+      "developing_countries",
+      "teachers"
     ],
     "title": "Chart of the Week: Teacher Pay around the World: Beyond “Disruption” and “De-skilling”",
     "url": "https://riseprogramme.org/blog/teacher_pay_around_world.html"
   },
   {
     "id": "01k3c0njfkfk5g7a8gtrjh0dgp",
-    "order": 43,
+    "order": 40,
     "summary": "Early cancer detection methods like liquid biopsies promise blood-based screening but face challenges with false positives, detecting non-threatening tumors, and proving they actually reduce cancer mortality rates.",
     "tags": [
+      "health",
       "cancer",
       "screening",
-      "detection",
-      "medicine",
-      "testing"
+      "medical",
+      "detection"
     ],
     "title": "The Problem With Early Cancer Detection | The New Yorker",
     "url": "https://www.newyorker.com/magazine/2025/06/23/the-catch-in-catching-cancer-early"
@@ -412,23 +426,23 @@
     "tags": [
       "biology",
       "insects",
-      "diapause",
-      "control",
-      "agriculture"
+      "agriculture",
+      "pest_control",
+      "ecology"
     ],
     "title": "Pausing Insect Activity",
     "url": "https://press.asimov.com/articles/insect-diapause"
   },
   {
     "id": "01k2net1yda1j1tqkqadctppfx",
-    "order": 8,
+    "order": 11,
     "summary": "Indian weddings blend traditional customs with modern romance, creating family conflicts. Most marriages remain within caste and religious boundaries, maintaining social hierarchies. However, love and evolving attitudes are gradually making ceremonies more inclusive.",
     "tags": [
       "culture",
       "india",
-      "traditions",
       "marriage",
-      "modernization"
+      "tradition",
+      "modernity"
     ],
     "title": "The Wedding Wars - Samir Varma",
     "url": "https://substack.com/inbox/post/168803790?r=1gvqcg&utm_medium=ios&triedRedirect=true"
@@ -442,32 +456,32 @@
       "development",
       "india",
       "china",
-      "growth"
+      "services"
     ],
     "title": "India and the invidious comparison with China",
     "url": "https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/?ref=thediff.co"
   },
   {
     "id": "01k2fdeym6jvfb3zkgx0j3c11f",
-    "order": 41,
+    "order": 44,
     "summary": "Explores various gene therapy delivery methods including AAV, lipid nanoparticles, and herpes simplex virus vectors, discussing their advantages, challenges, immune reactions, and targeting capabilities.",
     "tags": [
       "biotechnology",
+      "genetics",
       "therapy",
-      "medicine",
       "delivery",
-      "vectors"
+      "medical"
     ],
     "title": "A Visual Guide to Gene Delivery",
     "url": "https://www.asimov.press/p/gene-delivery"
   },
   {
     "id": "01k2fder0ezwd75njceewc980v",
-    "order": 40,
+    "order": 43,
     "summary": "Michael Elowitz developed the repressilator in the late 1990s, a gene circuit using three genes in a feedback loop to make cells flash rhythmically, demonstrating programmable gene circuits and inspiring modern synthetic biology tools.",
     "tags": [
       "biotechnology",
-      "synthetic_biology",
+      "genetics",
       "engineering",
       "circuits",
       "innovation"
@@ -477,55 +491,55 @@
   },
   {
     "id": "01k228ps97vg5bwhhv6433c1tm",
-    "order": 37,
+    "order": 19,
     "summary": "A24 has established itself as a prominent filmmaker known for unique, challenging movies with dedicated fans. Despite marketing quality cinema as events, the company struggles with consistency in ambitious projects.",
     "tags": [
-      "entertainment",
+      "media",
       "cinema",
-      "a24",
-      "film",
-      "industry"
+      "quality",
+      "marketing",
+      "creativity"
     ],
     "title": "The Popular Alternative",
     "url": "https://dirt.fyi/article/2025/05/the-popular-alternative"
   },
   {
     "id": "01k1c5yaaf9tngc5pnssxa6zgw",
-    "order": 4,
+    "order": 5,
     "summary": "Brief commentary suggesting that among those involved in U.S. reindustrialization efforts, only a single individual appears to have a clear understanding of the necessary approach.",
     "tags": [
+      "economics",
       "manufacturing",
       "policy",
-      "leadership",
-      "strategy",
-      "development"
+      "america",
+      "competence"
     ],
     "title": "Does the U.S. Actually Have the Will to Reindustrialize?",
     "url": "https://www.corememory.com/p/does-the-us-actually-have-the-will?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01k18xzxnt7gec54mw47qe2730",
-    "order": 9,
+    "order": 6,
     "summary": "American companies hire Filipino workers remotely for cashier and customer support roles. Service exports from developing nations grow rapidly due to technology and cost advantages, but offer fewer opportunities than manufacturing.",
     "tags": [
+      "economics",
       "outsourcing",
-      "remote_work",
+      "technology",
       "philippines",
-      "services",
-      "globalization"
+      "remote_work"
     ],
     "title": "American fried chicken can now be served from the Philippines",
     "url": "https://archive.ph/j9NOC"
   },
   {
     "id": "01k10hr6jb5ydtqsvwfph68f7r",
-    "order": 7,
+    "order": 10,
     "summary": "BJP took control of Delhi Gymkhana Club citing financial mismanagement, sparking opposition from elite members who view it as an institutional power grab reflecting broader efforts to reshape India's social structures.",
     "tags": [
       "politics",
       "india",
-      "institutions",
       "power",
+      "institutions",
       "elite"
     ],
     "title": "How Modi’s party took over one of India’s most prestigious private clubs",
@@ -533,28 +547,28 @@
   },
   {
     "id": "01k10hk5n1ya3cd38bdm224d4h",
-    "order": 6,
+    "order": 9,
     "summary": "Modi enjoys broad support across education levels due to economic growth policies, strong leadership, and cross-caste appeal. Elites support him for economic advancement and global positioning despite democratic concerns.",
     "tags": [
       "politics",
-      "leadership",
       "india",
+      "leadership",
       "populism",
-      "governance"
+      "democracy"
     ],
     "title": "Why India’s elite loves Narendra Modi",
     "url": "https://archive.is/NUfMd"
   },
   {
     "id": "01k10h6bjne1bjfp0pandb9aec",
-    "order": 5,
+    "order": 2,
     "summary": "Explores similarities between America and China during their respective Gilded Ages, highlighting how both superpowers are grappling with capitalist excesses despite their geopolitical rivalry.",
     "tags": [
-      "geopolitics",
       "economics",
       "inequality",
-      "capitalism",
-      "comparison"
+      "america",
+      "china",
+      "capitalism"
     ],
     "title": "The Clash Of Two Gilded Ages",
     "url": "https://www.noemamag.com/the-clash-of-two-gilded-ages/"
@@ -566,9 +580,9 @@
     "tags": [
       "neuroscience",
       "simulation",
-      "brain",
       "research",
-      "failure"
+      "failure",
+      "science"
     ],
     "title": "Why the Human Brain Project Went Wrong—and How to Fix It",
     "url": "https://www.scientificamerican.com/article/why-the-human-brain-project-went-wrong-and-how-to-fix-it/"
@@ -580,72 +594,72 @@
     "tags": [
       "neuroscience",
       "simulation",
-      "brain",
       "research",
-      "modeling"
+      "brain",
+      "computational"
     ],
     "title": "Researchers simulate an entire fly brain on a laptop. Is a human brain next?",
     "url": "https://news.berkeley.edu/2024/10/02/researchers-simulate-an-entire-fly-brain-on-a-laptop-is-a-human-brain-next/"
   },
   {
     "id": "01k0ym452574a7aed7aj98rmnv",
-    "order": 38,
+    "order": 50,
     "summary": "Thomas Midgley Jr. invented leaded gasoline and CFCs, solving immediate problems but causing severe long-term health and environmental damage. His story serves as a cautionary tale about considering future risks of new technologies.",
     "tags": [
-      "invention",
-      "toxicity",
+      "technology",
       "environment",
+      "history",
       "consequences",
-      "history"
+      "invention"
     ],
     "title": "The Brilliant Inventor Who Made Two of History’s Biggest Mistakes",
     "url": "https://archive.ph/B5R0C"
   },
   {
     "id": "01k0rkksw05j6r0fb3sg2t75ze",
-    "order": 34,
+    "order": 29,
     "summary": "Explains LL and LR parsing methods, highlighting their differences in token processing and tree traversal approaches. LL uses pre-order while LR uses post-order traversal, each suited for different grammars.",
     "tags": [
       "programming",
       "parsing",
-      "compilers",
       "algorithms",
-      "traversal"
+      "compilers",
+      "computer_science"
     ],
     "title": "LL and LR Parsing Demystified",
     "url": "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html"
   },
   {
     "id": "01k0p4hj3k6r9vetkx17nqr6fe",
-    "order": 21,
+    "order": 14,
     "summary": "Explores how observing or addressing social problems assigns ethical responsibility, even for partial solutions. Uses quantum mechanics analogy to argue that marginal improvements should be valued rather than judged.",
     "tags": [
-      "ethics",
       "philosophy",
+      "ethics",
       "responsibility",
-      "problems",
-      "quantum"
+      "quantum",
+      "society"
     ],
     "title": "The Copenhagen Interpretation of Ethics",
     "url": "https://laneless.substack.com/p/the-copenhagen-interpretation-of-ethics"
   },
   {
     "id": "01k0cet4pw72nn9pab1a2sywrx",
-    "order": 20,
+    "order": 15,
     "summary": "Cultural traditions shaped over generations are more effective for human success than individual rational thinking. Many beneficial practices aren't fully understood by followers, suggesting traditions should be respected and maintained.",
     "tags": [
       "culture",
+      "tradition",
       "wisdom",
-      "anthropology",
-      "behavior",
-      "evolution"
+      "evolution",
+      "anthropology"
     ],
     "title": "Tradition is Smarter Than You Are",
     "url": "https://scholars-stage.org/tradition-is-smarter-than-you-are/"
   },
   {
     "id": "01k0bvm4t4fvbr5276rebhnnf0",
-    "order": 39,
+    "order": 49,
     "summary": "Fusion power remains impractical after 70+ years of research due to challenges in creating extreme conditions. Despite new company approaches promising near-term reactors, fusion remains uncertain and costly.",
     "tags": [
       "energy",
@@ -659,21 +673,21 @@
   },
   {
     "id": "01jzmqv1gtzgntkpr861khmtdw",
-    "order": 50,
+    "order": 51,
     "summary": "X-Rays achieved widespread adoption by 1925 due to their clear medical utility in diagnosing injuries and diseases, military applications in wars, dedicated hospital roles, and their simplicity and speed compared to other technologies.",
     "tags": [
       "technology",
+      "medical",
       "adoption",
-      "xrays",
-      "medicine",
-      "history"
+      "history",
+      "xrays"
     ],
     "title": "How did X-Rays gain mass adoption?",
     "url": "https://www.aditharun.com/p/how-did-x-rays-gain-mass-adoption"
   },
   {
     "id": "01jzagw9s9k81xj7hsvq10b98n",
-    "order": 18,
+    "order": 17,
     "summary": "Explores Kevin Kelly's approach to following interests with joy, turning them into meaningful work without chasing fame or fortune. Discusses his creative project-focused \"Hollywood style\" career path versus traditional ladder climbing.",
     "tags": [
       "career",
@@ -687,13 +701,13 @@
   },
   {
     "id": "01jyxcfgnngyv41y6ma393y3jx",
-    "order": 47,
+    "order": 39,
     "summary": "Complex, poorly understood disease affecting many people. Behaves like cancer but lacks cure and is often underdiagnosed. Receives insufficient funding despite widespread impact and severity.",
     "tags": [
       "health",
-      "endometriosis",
       "women",
       "disease",
+      "medical",
       "research"
     ],
     "title": "Endometriosis is an incredibly interesting disease",
@@ -705,10 +719,10 @@
     "summary": "Discusses how government interference in free markets through rules like tariffs can lead to negative consequences such as higher consumer prices and reduced competition, arguing that free markets generally produce better outcomes than controlled ones.",
     "tags": [
       "economics",
-      "markets",
+      "free_markets",
       "government",
-      "policy",
-      "trade"
+      "tariffs",
+      "competition"
     ],
     "title": "More on Repealing the Laws of Economics",
     "url": "https://www.oaktreecapital.com/insights/memo/more-on-repealing-the-laws-of-economics"
