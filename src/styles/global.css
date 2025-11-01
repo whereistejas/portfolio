@@ -29,7 +29,7 @@
 
 @layer components {
 	body {
-		@apply flex h-[100dvh] flex-col items-center justify-between bg-yellow-50 text-slate-950 dark:bg-neutral-900 dark:text-slate-50;
+		@apply flex h-dvh flex-col items-center justify-between bg-yellow-50 text-slate-950 dark:bg-neutral-900 dark:text-slate-50;
 	}
 
 	header,
@@ -112,7 +112,7 @@
 	}
 
 	a {
-		@apply z-[1] text-neutral-950 transition-colors duration-200 ease-in hover:text-neutral-500 dark:text-neutral-50 hover:dark:text-neutral-400;
+		@apply z-1 text-neutral-950 transition-colors duration-200 ease-in hover:text-neutral-500 dark:text-neutral-50 hover:dark:text-neutral-400;
 	}
 }
 

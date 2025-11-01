@@ -1,8 +1,6 @@
 import { defineConfig } from 'astro/config'
 
 import tailwindcss from '@tailwindcss/vite'
-import remarkMath from 'remark-math'
-import rehypeKatex from 'rehype-katex'
 
 export default defineConfig({
 	site: 'https://whereistejas.xyz',
@@ -14,8 +12,6 @@ export default defineConfig({
 			footnoteLabelTagName: 'hr',
 			footnoteLabelProperties: { className: [''] },
 		},
-		remarkPlugins: [remarkMath],
-		rehypePlugins: [rehypeKatex],
 	},
 	vite: {
 		plugins: [tailwindcss()],
