@@ -7,14 +7,6 @@ const headers = [
   { type: "text", content: "INFO" },
   { type: "link", content: "CLOSE", href: "/" },
 ];
-const footers = [
-  { type: "text", content: "" },
-  {
-    type: "link",
-    content: "SEND AN EMAIL",
-    href: "mailto:email@whereistejas.xyz",
-  },
-];
 ---
 
 <Page flex_start={false} title="Info">
@@ -65,12 +57,7 @@ const footers = [
           <p><br></p>
           <p>Some examples of good HX would be accessible healthcare, cheap credit, reliable public transport, shorter commute times, simplified governmental services, clean air and water, access to green spaces.</p>
           <p><br></p>
-          <p>The world doesn’t need another CRM, sales/marketing, accounting tool. But we do need all of the things I mentioned above.</p>
-          <p><br></p>
-          <p>If you resonate with this, feel free to reach out at <a class="underline" href="mailto:email@whereistejas.xyz">email@whereistejas.xyz</a> —especially if you're building in a mid-sized, revenue-generating company.</p>
-          <!-- <p>Software is made for humans.</p>
-          <p>All software is a tool.</p>
-          <p>Good tools are simple and intuitive.</p> -->
+          <p>If this resonates with you, feel free to reach out at <a class="underline" href="mailto:email@whereistejas.xyz">email@whereistejas.xyz</a> —especially if you're building in a mid-sized, revenue-generating company.</p>
         </Fragment>
       </Row>
       <Row>
@@ -119,11 +106,4 @@ const footers = [
     </div>
   </Fragment>
 
-  <Fragment slot="footer">
-    {
-      footers.map((el) => (
-        <Textorlink type={el.type} content={el.content} href={el.href} />
-      ))
-    }
-  </Fragment>
 </Page>
