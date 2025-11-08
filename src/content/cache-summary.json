@@ -2157,5 +2157,55 @@
       "employer branding",
       "talent strategy"
     ]
+  },
+  "01k9fhwzsdqbm56qxpr19htbny": {
+    "summary": "China's massive expansion of cheap solar and wind power is driving down global clean energy costs and reshaping markets, while creating both opportunities for affordable electrification and geopolitical concerns.",
+    "tags": [
+      "China",
+      "clean energy",
+      "renewable energy",
+      "solar power",
+      "wind power",
+      "global markets",
+      "decarbonisation",
+      "geopolitics",
+      "energy security",
+      "energy costs",
+      "electrification",
+      "developing countries",
+      "energy transition",
+      "climate change",
+      "international trade",
+      "energy policy",
+      "economic transformation",
+      "green technology",
+      "energy exports",
+      "political implications"
+    ]
+  },
+  "01k9fydx0pb1j6f91hjb89pe2n": {
+    "summary": "MongoDB's WiredTiger storage engine implements lock-free B+tree algorithms using hazard pointers for reads and skip lists for writes, achieving 50% faster reads and up to 4x faster updates compared to traditional locking mechanisms.",
+    "tags": [
+      "MongoDB",
+      "WiredTiger",
+      "lock-free algorithms",
+      "B+tree",
+      "B-tree",
+      "database performance",
+      "concurrency",
+      "threading",
+      "hazard pointers",
+      "skip lists",
+      "throughput optimization",
+      "database storage engine",
+      "NoSQL",
+      "data structures",
+      "parallel processing",
+      "database internals",
+      "performance benchmarking",
+      "computer science",
+      "systems programming",
+      "database engineering"
+    ]
   }
 }
