@@ -2207,5 +2207,95 @@
       "systems programming",
       "database engineering"
     ]
+  },
+  "01k9m6j4cz7ghfb43j88x6ry1s": {
+    "summary": "Discusses how algorithms interviews in big tech don't reflect actual job skills despite being used to prevent inefficient code. Suggests focusing on incentives and culture for better problem-solving.",
+    "tags": [
+      "algorithms",
+      "interviews",
+      "big tech",
+      "hiring",
+      "software engineering",
+      "job skills",
+      "workplace culture",
+      "technical interviews",
+      "coding interviews",
+      "talent acquisition",
+      "career",
+      "programming",
+      "computer science",
+      "recruitment",
+      "performance evaluation",
+      "tech industry",
+      "engineering management",
+      "professional development"
+    ]
+  },
+  "01k9m6ja73v676np9x1yf6twv6": {
+    "summary": "Journey from electrical engineer to programmer, emphasizing programming felt unnatural initially. Highlights non-traditional paths to success, skill development over time, problem-solving importance, and collaboration benefits.",
+    "tags": [
+      "programming",
+      "career transition",
+      "electrical engineering",
+      "learning journey",
+      "skill development",
+      "problem solving",
+      "collaboration",
+      "career change",
+      "professional development",
+      "software engineering",
+      "personal growth",
+      "technical skills",
+      "programming education",
+      "career advice",
+      "engineering",
+      "self-improvement",
+      "mentorship",
+      "teamwork",
+      "coding",
+      "technology career"
+    ]
+  },
+  "01k9md327xf3s138wsjgzvd1nm": {
+    "summary": "Contrasts two types of schedules: manager's schedule with hourly meetings vs maker's schedule requiring long uninterrupted blocks for deep work. Meetings disrupt makers' productivity and flow.",
+    "tags": [
+      "productivity",
+      "time management",
+      "work schedules",
+      "deep work",
+      "meetings",
+      "management",
+      "workplace efficiency",
+      "focus",
+      "interruptions",
+      "work styles",
+      "cognitive work",
+      "creative work",
+      "office culture",
+      "leadership",
+      "workflow optimization"
+    ]
+  },
+  "01k9md3encpvc2k845yc3tmjz5": {
+    "summary": "Reviews async Rust runtimes, criticizing ecosystem fragmentation caused by executor coupling. Highlights Tokio's dominance but argues its multithreaded defaults add complexity. Recommends learning sync Rust first and using async sparingly.",
+    "tags": [
+      "rust",
+      "programming",
+      "async",
+      "tokio",
+      "runtime",
+      "ecosystem",
+      "software development",
+      "concurrency",
+      "multithreading",
+      "ergonomics",
+      "smol",
+      "embassy",
+      "executor",
+      "sync programming",
+      "complexity",
+      "software architecture",
+      "systems programming"
+    ]
   }
 }
