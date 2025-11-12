@@ -33,19 +33,19 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
     id="carousel"
     class="relative
   flex flex-col items-center gap-2
-  h-full w-full md:w-[48rem] max-w-full
+  h-full w-full md:w-48 max-w-full
   select-none"
     style="--current-slide: 0;"
   >
     <div class="h-full w-full contents">
       <div
         id="left"
-        class="hidden md:block h-full w-1/2 absolute z-10 left-0 cursor-w-resize"
+        class="hidden md:block h-[calc(100%-1lh-0.5rem)] md:h-[calc(100%-1lh-0.625rem)] w-1/2 absolute z-10 left-0 cursor-w-resize"
       >
       </div>
       <div
         id="right"
-        class="hidden md:block h-full w-1/2 absolute z-10 right-0 cursor-e-resize"
+        class="hidden md:block h-[calc(100%-1lh-0.5rem)] md:h-[calc(100%-1lh-0.625rem)] w-1/2 absolute z-10 right-0 cursor-e-resize"
       >
       </div>
       <div
@@ -58,7 +58,7 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
             <div
               class={`flex flex-col items-center justify-center 
             gap-1 md:gap-1.25
-            flex-shrink-0 flex-grow-0
+            shrink-0 grow-0
             order-${idx}
             bg-yellow-50 dark:bg-neutral-900
             scroll-snap snap-center
@@ -73,7 +73,7 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
                 widths={[400, 800]}
                 sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px`}
               />
-              <div class="h-[1lh] w-full flex justify-between">
+              <div class="h-lh w-full flex justify-between">
                 <span>{caption}</span>
                 <span>
                   {idx + 1}/{slides.length}
