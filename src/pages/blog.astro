@@ -45,7 +45,7 @@ const posts: Post[] = Object.values(
                 {new Date(post.frontmatter.date)
                   .toLocaleDateString("en-GB", {
                     day: "2-digit",
-                    month: "numeric",
+                    month: "short",
                     year: "numeric",
                   })
                   .replace(/\//g, ".")}

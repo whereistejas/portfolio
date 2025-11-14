@@ -29,7 +29,7 @@
 
 @layer components {
 	body {
-		@apply flex h-dvh flex-col items-center justify-between bg-yellow-50 text-slate-950 dark:bg-neutral-900 dark:text-slate-50;
+		@apply flex h-dvh flex-col items-center justify-between bg-neutral-50 text-slate-950 dark:bg-neutral-900 dark:text-slate-50;
 	}
 
 	header,
