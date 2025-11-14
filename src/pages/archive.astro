@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Page from "../layouts/page.astro";
 import Textorlink from "../components/textorlink.astro";
 import Row from "../components/row.astro";
+import Barchart from "../components/barchart.astro";
 
 // Fetch archive items from the content collection
 const archiveEntries = await getCollection("readwise-archive");
@@ -17,6 +18,29 @@ for (const entry of archiveEntries) {
 	}
 	items.get(dateGroup)?.push(entry);
 }
+
+// Prepare data for bar chart: count articles by month
+const monthCounts = new Map<string, number>();
+for (const entry of archiveEntries) {
+	const date = entry.data.last_moved_at;
+	const monthKey = date.toLocaleDateString("en-US", {
+		month: "short",
+	});
+	monthCounts.set(monthKey, (monthCounts.get(monthKey) || 0) + 1);
+}
+
+// Convert to array and sort by date (most recent first)
+const chartData = Array.from(monthCounts.entries())
+	.map(([month, count]) => ({ month, count }))
+	.sort((a, b) => {
+		const dateA = new Date(a.month);
+		const dateB = new Date(b.month);
+		return dateB.getTime() - dateA.getTime();
+	})
+	.slice(0, 12); // Show last 12 months
+
+// Reverse for display (oldest to newest left to right)
+chartData.reverse();
 
 const headers = [
 	{ type: "text", content: "READING ARCHIVE" },
@@ -34,6 +58,7 @@ const headers = [
 	</Fragment>
 	<Fragment slot="main">
 		<div class="archive_main">
+			<Barchart data={chartData} /> 
 			{
 				Array.from(items.entries()).map(([date, items]) => (
 					<Row>

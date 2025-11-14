@@ -1,0 +1,35 @@
+---
+export interface Props {
+	data: Array<{ month: string; count: number }>;
+}
+
+const { data } = Astro.props;
+
+// Find the maximum count to scale the bars
+const maxCount = Math.max(...data.map((d) => d.count), 1);
+---
+
+<div class="barchart">
+	<div class="chart-container">
+		{
+			data.map(({ month, count }) => {
+				const heightPercent = (count / maxCount) * 100;
+				return (
+					<div class="bar-wrapper">
+						<div class="bar-container">
+							<div
+								class="bar"
+								style={`height: ${heightPercent}%`}
+								title={`${month}: ${count} article${count !== 1 ? 's' : ''}`}
+							>
+								<span class="bar-count">{count}</span>
+							</div>
+						</div>
+						<div class="bar-label">{month}</div>
+					</div>
+				);
+			})
+		}
+	</div>
+</div>
+
