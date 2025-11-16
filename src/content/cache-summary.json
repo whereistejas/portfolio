@@ -2327,5 +2327,56 @@
       "greatness",
       "clean energy"
     ]
+  },
+  "01ka3mnrd88p414jgfyaq7t5pv": {
+    "summary": "DNS translates domain names to IP addresses and mail servers using query-response messages. Names are structured in hierarchical zones with SOA/NS records. DNS encoding supports compression, case-insensitivity, and follows RFC standards.",
+    "tags": [
+      "DNS",
+      "domain name system",
+      "networking",
+      "IP addresses",
+      "mail servers",
+      "zones",
+      "SOA records",
+      "NS records",
+      "hierarchical structure",
+      "name resolution",
+      "queries",
+      "responses",
+      "encoding",
+      "compression",
+      "RFC standards",
+      "internet protocols",
+      "technical documentation",
+      "system administration",
+      "web infrastructure",
+      "authoritative servers"
+    ]
+  },
+  "01ka423qhpxetjkpqdrqwbebaq": {
+    "summary": "Life advice on accepting limitations, focusing selectively, choosing growth over comfort, tolerating discomfort, and knowing when to move forward. Emphasizes practical wisdom for living a fulfilled life through intentional choices.",
+    "tags": [
+      "life advice",
+      "personal development",
+      "fulfillment",
+      "priorities",
+      "focus",
+      "growth mindset",
+      "comfort zone",
+      "acceptance",
+      "life lessons",
+      "philosophy",
+      "wellbeing",
+      "self-help",
+      "mindfulness",
+      "intentional living",
+      "wisdom",
+      "life guidance",
+      "personal growth",
+      "lifestyle",
+      "journalism",
+      "column",
+      "Oliver Burkeman"
+    ]
   }
 }
