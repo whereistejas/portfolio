@@ -12,22 +12,20 @@
 		"prettier": "prettier --write ."
 	},
 	"dependencies": {
-		"@anthropic-ai/sdk": "^0.32.0",
-		"@astrojs/check": "^0.9.4",
-		"@astrojs/ts-plugin": "^1.10.4",
-		"@next-libs/constants": "^2.0.6",
-		"@tailwindcss/cli": "^4.1.16",
-		"@tailwindcss/vite": "^4.0.9",
-		"astro": "^5.2.6",
-		"dotenv": "^16.4.5",
-		"exifreader": "^4.23.7",
-		"tailwindcss": "^4.1.16",
-		"tsx": "^4.19.2",
-		"typescript": "^5.4.5"
+		"@anthropic-ai/sdk": "^0.32.1",
+		"@astrojs/check": "^0.9.5",
+		"@astrojs/ts-plugin": "^1.10.5",
+		"@tailwindcss/vite": "^4.1.17",
+		"astro": "^5.16.0",
+		"dotenv": "^16.6.1",
+		"exifreader": "^4.32.0",
+		"tailwindcss": "^4.1.17",
+		"tsx": "^4.20.6",
+		"typescript": "^5.9.3"
 	},
 	"devDependencies": {
-		"@tailwindcss/typography": "^0.5.16",
-		"@types/node": "^20.17.48",
+		"@tailwindcss/typography": "^0.5.19",
+		"@types/node": "^20.19.25",
 		"prettier": "3.6.2",
 		"prettier-plugin-astro": "^0.13.0",
 		"prettier-plugin-tailwindcss": "^0.6.14"
