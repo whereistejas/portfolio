@@ -1,12 +1,8 @@
-import { writeFile, readFile, mkdir } from 'fs/promises';
-import { existsSync } from 'fs';
-import { join } from 'path';
-
 /**
  * Cache file path for storing Readwise API responses
  */
 const CACHE_DIR = '.readwise-cache';
-const CACHE_FILE = join(CACHE_DIR, 'readwise-items.json');
+const CACHE_FILE = `${CACHE_DIR}/readwise-items.json`;
 
 /**
  * Readwise Reader location types
@@ -145,11 +141,6 @@ class ReadwiseCache {
 	 */
 	static async saveToCache(items: ReadwiseItem[], options: FetchReadwiseOptions): Promise<void> {
 		try {
-			// Ensure cache directory exists
-			if (!existsSync(CACHE_DIR)) {
-				await mkdir(CACHE_DIR, { recursive: true });
-			}
-
 			const cacheData: CacheData = {
 				items,
 				timestamp: Date.now(),
@@ -159,7 +150,8 @@ class ReadwiseCache {
 				}
 			};
 
-			await writeFile(CACHE_FILE, JSON.stringify(cacheData, null, 2));
+			// Bun.write automatically creates directories
+			await Bun.write(CACHE_FILE, JSON.stringify(cacheData, null, 2));
 			console.log('✅ Cached Readwise data successfully');
 		} catch (error) {
 			console.warn('⚠️ Failed to save cache:', error);
@@ -171,12 +163,13 @@ class ReadwiseCache {
 	 */
 	static async loadFromCache(): Promise<ReadwiseItem[] | null> {
 		try {
-			if (!existsSync(CACHE_FILE)) {
+			const cacheFile = Bun.file(CACHE_FILE);
+			if (!(await cacheFile.exists())) {
 				console.log('📁 No cache file found');
 				return null;
 			}
 
-			const cacheContent = await readFile(CACHE_FILE, 'utf-8');
+			const cacheContent = await cacheFile.text();
 			const cacheData = JSON.parse(cacheContent);
 
 			// Deserialize items back to ReadwiseItem objects
@@ -323,15 +316,16 @@ export async function loadReadwiseArchive(token: string): Promise<ReadwiseArchiv
 export async function loadReadwiseQueue(): Promise<ReadwiseQueueEntry[]> {
 	try {
 		const displayCachePath = 'src/content/cache-display.json';
+		const displayCacheFile = Bun.file(displayCachePath);
 
 		// Check if the display cache exists
-		if (!existsSync(displayCachePath)) {
+		if (!(await displayCacheFile.exists())) {
 			console.log('📁 No display cache found, returning empty queue');
 			return [];
 		}
 
 		// Read the display cache
-		const cacheContent = await readFile(displayCachePath, 'utf-8');
+		const cacheContent = await displayCacheFile.text();
 		const displayDocuments: ReadwiseQueueItem[] = JSON.parse(cacheContent);
 
 		console.log('Processed queue entries count:', displayDocuments.length);
