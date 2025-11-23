@@ -21,18 +21,31 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
-        uses: withastro/action@v3
+      
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+      
+      - name: Install dependencies
+        run: bun install
+      
+      - name: Build Astro site
+        run: bunx --bun astro build
         env:
           READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      
       - name: Commit updated cache files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add src/content/cache-summary.json || true
-          git add src/content/cache-group.json || true
-          git add src/content/cache-display.json || true
+          git add src/content/*.json || true
           if git diff --staged --quiet; then
             echo "No cache changes to commit"
           else
