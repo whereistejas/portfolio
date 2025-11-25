@@ -34,7 +34,7 @@
 
 	header,
 	footer {
-		@apply left-0 flex w-full flex-row justify-between px-1 text-xl font-semibold md:w-48 md:max-w-full md:text-3xl;
+		@apply left-0 flex w-full flex-row justify-between px-1 text-xl font-semibold md:w-48 md:max-w-full md:px-0 md:text-3xl;
 	}
 	header {
 		@apply top-0 pt-1;
@@ -44,7 +44,7 @@
 	}
 
 	main {
-		@apply flex w-full flex-col px-1 text-lg md:w-48 md:max-w-full md:text-xl;
+		@apply flex w-full flex-col px-1 text-lg md:w-48 md:max-w-full md:px-0 md:text-xl;
 	}
 
 	div.blog_main {
