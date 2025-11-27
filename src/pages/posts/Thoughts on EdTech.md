@@ -5,7 +5,7 @@ date: 2025-04-22
 ---
 I read two articles on [After Babel](https://www.afterbabel.com) last year, about the impact of EdTech in American schools. Here are some notes I made from those articles. The notes don't add anything to the conversation of EdTech, they just summarise the articles.
 
-## The EdTech Revolution Has Failed [^1]
+### The EdTech Revolution Has Failed [^1]
 
 The author argues that EdTech especially phones in schools, have negatively impacted the ability of students to learn and socialise. 
 
@@ -15,7 +15,7 @@ The author than suggests that because digital devices have so many distractions,
 
 The author raises the question of what the true function of these devices are? Not true as in intended, true as in what actually ends up happening. The author proves again using data, that these devices are mostly used for social media, video games and other kinds of entertainment and very little indeed for learning. 
 
-## The False Promise of Device-Based Education [^3]
+### The False Promise of Device-Based Education [^3]
 
 The author starts by defining how are screens used by students in educational settings: EdTech and recreational screen time. They claims that though these two things seem mutually exclusive in practice they overlap a lot. 
  
