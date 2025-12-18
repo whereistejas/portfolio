@@ -2436,5 +2436,187 @@
       "performance-optimization",
       "cross-platform"
     ]
+  },
+  "01kax9rrcdw83072fxbckmjnf1": {
+    "summary": "AI is transforming radiology by improving report accuracy and productivity. Large firms may consolidate operations using AI, while radiologists transition to supervisory roles, quality control, and complex case management.",
+    "tags": [
+      "artificial intelligence",
+      "radiology",
+      "healthcare technology",
+      "automation",
+      "workforce transformation",
+      "quality control",
+      "productivity",
+      "medical imaging",
+      "AI adoption",
+      "professional roles",
+      "industry consolidation",
+      "report generation"
+    ]
+  },
+  "01kax9se09619tbsw65y03hhzh": {
+    "summary": "Explores determinism requirements in durable execution frameworks, explaining how control flow must be deterministic while side effects need idempotency, and the importance of separating decisions from actions.",
+    "tags": [
+      "durable-execution",
+      "determinism",
+      "fault-tolerance",
+      "control-flow",
+      "side-effects",
+      "idempotency",
+      "system-design",
+      "distributed-systems",
+      "software-architecture",
+      "resilience",
+      "function-recovery",
+      "non-deterministic-inputs"
+    ]
+  },
+  "01kb3m2xd3t2vda3yqjs2e1stj": {
+    "summary": "Strong consistency in databases ensures reads always reflect latest writes, simplifying code and improving reliability compared to eventual consistency models.",
+    "tags": [
+      "database consistency",
+      "strong consistency",
+      "eventual consistency",
+      "database design",
+      "distributed systems",
+      "data reliability",
+      "developer experience",
+      "Aurora DSQL",
+      "scalability",
+      "database architecture",
+      "read-write semantics",
+      "consistency models"
+    ]
+  },
+  "01kb49j14w99ghhy405spv48yn": {
+    "summary": "Charlie Munger remained intellectually active and involved in investments and mentoring during his final years before his death at nearly 100, despite health challenges.",
+    "tags": [
+      "biography",
+      "charlie-munger",
+      "berkshire-hathaway",
+      "investing",
+      "business-leadership",
+      "mentorship",
+      "finance",
+      "aging",
+      "legacy",
+      "investment-strategy",
+      "corporate-culture",
+      "wealth-management"
+    ]
+  },
+  "01kb6950hhv4yh1z1egtntj0ys": {
+    "summary": "Proposes a one-month writing challenge eliminating vague collective \"we\" to promote clarity, accountability, and honest communication by using specific pronouns or group names instead.",
+    "tags": [
+      "writing",
+      "communication",
+      "language",
+      "clarity",
+      "accountability",
+      "responsibility",
+      "pronoun usage",
+      "writing challenge",
+      "rhetoric",
+      "specificity",
+      "authenticity",
+      "linguistics",
+      "editorial advice",
+      "grammar",
+      "persuasion techniques",
+      "fake intimacy"
+    ]
+  },
+  "01kbgwgd8jr4wkgr4g78f9ngmt": {
+    "summary": "Explores implementing dependent types using normalization-by-evaluation, where the typechecker evaluates terms to compare types through definitional equality.",
+    "tags": [
+      "dependent types",
+      "type systems",
+      "type checking",
+      "normalization-by-evaluation",
+      "programming language implementation",
+      "semantic values",
+      "definitional equality",
+      "compiler design",
+      "formal methods",
+      "beta-reduction",
+      "eta-reduction",
+      "type theory"
+    ]
+  },
+  "01kbgwgm2a6q5vsgrmdejmcvs3": {
+    "summary": "Implementation of typechecking for dependent-type calculus using normalization, normal/neutral term split, and semantic types to streamline evaluation and equality checking.",
+    "tags": [
+      "dependent types",
+      "type checking",
+      "type systems",
+      "programming languages",
+      "formal methods",
+      "normalization",
+      "semantic types",
+      "type theory",
+      "compiler design",
+      "static analysis",
+      "functional programming",
+      "calculus implementation"
+    ]
+  },
+  "01kcar3a4cj8xwzfwycy0b57aj": {
+    "summary": "Author quit social media and completed work, but didn't read significantly more books. Internet reshapes book discovery, creating efficiency gains and filter bubbles while altering traditional shared reading experiences.",
+    "tags": [
+      "social media",
+      "reading habits",
+      "digital technology",
+      "internet culture",
+      "book discovery",
+      "filter bubbles",
+      "productivity",
+      "online communities",
+      "media consumption",
+      "personal essay",
+      "technology impact",
+      "attention economy",
+      "algorithmic curation",
+      "cultural commentary"
+    ]
+  },
+  "01kcc85wxg8zcyj4arjjhb0qp3": {
+    "summary": "AI tools accelerate junior developer learning, reducing onboarding risk and improving hiring profitability. Success requires effective management focused on learning and AI skill development.",
+    "tags": [
+      "artificial intelligence",
+      "junior developers",
+      "software development",
+      "professional development",
+      "learning and training",
+      "hiring",
+      "productivity",
+      "career growth",
+      "tech education",
+      "workforce management",
+      "AI tools",
+      "onboarding",
+      "developer ramp-up",
+      "talent development",
+      "innovation"
+    ]
+  },
+  "01kckd3k69rdqz2w3pedvqp4cy": {
+    "summary": "Historical analysis of how 19th-century American techno-nationalist elite leveraged state power, markets, and institutions to build national industry and achieve technological dominance, with implications for contemporary techno-nationalism.",
+    "tags": [
+      "techno-nationalism",
+      "American history",
+      "elite formation",
+      "industrial development",
+      "technological dominance",
+      "state power",
+      "political economy",
+      "19th century",
+      "institutional history",
+      "nationalism",
+      "technology and politics",
+      "economic policy",
+      "historical analysis",
+      "governance",
+      "national development"
+    ]
   }
 }
