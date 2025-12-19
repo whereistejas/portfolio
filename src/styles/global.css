@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 
@@ -7,20 +7,20 @@
 	font-style: normal;
 	font-weight: 100 900;
 	font-display: block;
-	src: url('/InterVariable.woff2') format('woff2');
+	src: url("/InterVariable.woff2") format("woff2");
 }
 @font-face {
 	font-family: InterVariable;
 	font-style: italic;
 	font-weight: 100 900;
 	font-display: block;
-	src: url('/InterVariable-Italic.woff2') format('woff2');
+	src: url("/InterVariable-Italic.woff2") format("woff2");
 }
 
 @theme {
 	--font-sans: InterVariable, sans-serif;
 	--font-serif: InterVariable, sans-serif;
-	--default-font-feature-settings: 'calt', 'tnum', 'ss03';
+	--default-font-feature-settings: "calt", "tnum", "ss03";
 	--spacing: 1rem;
 
 	--font-weight-normal: 380;
@@ -96,7 +96,7 @@
 						@apply flex flex-wrap gap-0.5 gap-y-[0.125rem] pt-0.5 text-sm uppercase;
 
 						span.tag::before {
-							content: '#';
+							content: "#";
 							@apply mr-0;
 						}
 					}

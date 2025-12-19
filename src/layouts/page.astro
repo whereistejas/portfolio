@@ -8,53 +8,55 @@ const { flex_start = true, title, latex = false } = Astro.props;
 ---
 
 <html lang="en">
-  <head>
-    <PostHog />
-    <!-- Like to view source? We might get along email@whereistejas.xyz -->
+	<head>
+		<PostHog />
+		<!-- Like to view source? We might get along email@whereistejas.xyz -->
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#fafafa">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#fafafa">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#fafafa">
-    <a rel="me" href="https://hachyderm.io/@whereistejas" hidden>Mastodon</a>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#fafafa" />
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#fafafa" />
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#fafafa" />
+	</head><a rel="me" href="https://hachyderm.io/@whereistejas" hidden
+		>Mastodon</a
+	>
 
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSit" />
-    <link rel="manifest" href="/site.webmanifest" />
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="MyWebSit" />
+	<link rel="manifest" href="/site.webmanifest" />
 
-    {
-      latex && (
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
-          integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"
-          crossorigin="anonymous"
-        />
-      )
-    }
+	{
+		latex && (
+			<link
+				rel="stylesheet"
+				href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+				integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"
+				crossorigin="anonymous"
+			/>
+		)
+	}
 
-    <title>{title === "" ? "Tejas Sanap" : `${title} | Tejas Sanap`}</title>
+	<title>{title === "" ? "Tejas Sanap" : `${title} | Tejas Sanap`}</title>
 
-    <ClientRouter />
-  </head>
-  <body style={flex_start ? "justify-content: flex-start;" : ""}>
-    <header>
-      <slot name="header" />
-    </header>
+	<ClientRouter />
 
-    <main>
-      <slot name="main" />
-    </main>
+	<body style={flex_start ? "justify-content: flex-start;" : ""}>
+		<header>
+			<slot name="header" />
+		</header>
 
-    <footer>
-      <slot name="footer" />
-    </footer>
-  </body>
+		<main>
+			<slot name="main" />
+		</main>
+
+		<footer>
+			<slot name="footer" />
+		</footer>
+	</body>
 </html>

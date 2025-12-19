@@ -1,7 +1,21 @@
 {
-	"tabWidth": 4,
-	"semi": false,
-	"singleQuote": true,
+	"printWidth": 80,
+	"tabWidth": 2,
 	"useTabs": true,
-	"plugins": ["prettier-plugin-tailwindcss"]
+	"semi": true,
+	"singleQuote": false,
+	"quoteProps": "as-needed",
+	"trailingComma": "es5",
+	"bracketSpacing": true,
+	"arrowParens": "always",
+	"endOfLine": "lf",
+	"plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+	"overrides": [
+		{
+			"files": "*.astro",
+			"options": {
+				"parser": "astro"
+			}
+		}
+	]
 }

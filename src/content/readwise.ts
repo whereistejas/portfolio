@@ -1,33 +1,33 @@
 /**
  * Cache file path for storing Readwise API responses
  */
-const CACHE_DIR = '.readwise-cache';
+const CACHE_DIR = ".readwise-cache";
 const CACHE_FILE = `${CACHE_DIR}/readwise-items.json`;
 
 /**
  * Readwise Reader location types
  */
 enum ReadwiseLocation {
-	NEW = 'new',
-	LATER = 'later',
-	SHORTLIST = 'shortlist',
-	ARCHIVE = 'archive',
-	FEED = 'feed'
+	NEW = "new",
+	LATER = "later",
+	SHORTLIST = "shortlist",
+	ARCHIVE = "archive",
+	FEED = "feed",
 }
 
 /**
  * Readwise Reader content categories
  */
 enum ReadwiseCategory {
-	ARTICLE = 'article',
-	EMAIL = 'email',
-	RSS = 'rss',
-	HIGHLIGHT = 'highlight',
-	NOTE = 'note',
-	PDF = 'pdf',
-	EPUB = 'epub',
-	TWEET = 'tweet',
-	VIDEO = 'video'
+	ARTICLE = "article",
+	EMAIL = "email",
+	RSS = "rss",
+	HIGHLIGHT = "highlight",
+	NOTE = "note",
+	PDF = "pdf",
+	EPUB = "epub",
+	TWEET = "tweet",
+	VIDEO = "video",
 }
 
 /**
@@ -49,7 +49,7 @@ type ReadwiseItem = {
 	location: ReadwiseLocation;
 	/** Category of content (article, pdf, etc.) */
 	category?: ReadwiseCategory;
-}
+};
 
 /**
  * Raw response structure from Readwise Reader API
@@ -62,7 +62,7 @@ type ReadwiseApiDocument = {
 	summary: string;
 	location: ReadwiseLocation;
 	category: ReadwiseCategory;
-}
+};
 
 /**
  * Readwise API response structure
@@ -71,7 +71,7 @@ type ReadwiseApiResponse = {
 	results: ReadwiseApiDocument[];
 	nextPageCursor?: string;
 	count: number;
-}
+};
 
 /**
  * Options for fetching documents from Readwise Reader API
@@ -87,7 +87,7 @@ type FetchReadwiseOptions = {
 	updatedAfter?: string;
 	/** Whether to include HTML content in response */
 	withHtmlContent?: boolean;
-}
+};
 
 /**
  * Archive item with required dateGroup for grouped display
@@ -95,14 +95,14 @@ type FetchReadwiseOptions = {
 type ReadwiseArchiveItem = ReadwiseItem & {
 	/** Date group for rendering (required for archive items) */
 	dateGroup: string;
-}
+};
 
 /**
  * Archive collection entry (flat structure for Astro)
  */
 type ReadwiseArchiveEntry = ReadwiseArchiveItem & {
 	// Inherits all fields from ReadwiseArchiveItem, no nested 'data' property
-}
+};
 
 /**
  * Queue item structure (matches cache-display.json)
@@ -114,14 +114,14 @@ type ReadwiseQueueItem = {
 	tags: string[];
 	summary: string;
 	order: number;
-}
+};
 
 /**
  * Queue collection entry (flat structure for Astro)
  */
 type ReadwiseQueueEntry = ReadwiseQueueItem & {
 	// Inherits all fields from ReadwiseQueueItem, no nested 'data' property
-}
+};
 
 /**
  * Serialized cache data structure
@@ -130,7 +130,7 @@ type CacheData = {
 	items: ReadwiseItem[];
 	timestamp: number;
 	options: FetchReadwiseOptions;
-}
+};
 
 /**
  * Cache management for Readwise API responses
@@ -139,22 +139,25 @@ class ReadwiseCache {
 	/**
 	 * Save items to cache file
 	 */
-	static async saveToCache(items: ReadwiseItem[], options: FetchReadwiseOptions): Promise<void> {
+	static async saveToCache(
+		items: ReadwiseItem[],
+		options: FetchReadwiseOptions
+	): Promise<void> {
 		try {
 			const cacheData: CacheData = {
 				items,
 				timestamp: Date.now(),
 				options: {
 					...options,
-					token: '[REDACTED]' // Don't store the actual token
-				}
+					token: "[REDACTED]", // Don't store the actual token
+				},
 			};
 
 			// Bun.write automatically creates directories
 			await Bun.write(CACHE_FILE, JSON.stringify(cacheData, null, 2));
-			console.log('✅ Cached Readwise data successfully');
+			console.log("✅ Cached Readwise data successfully");
 		} catch (error) {
-			console.warn('⚠️ Failed to save cache:', error);
+			console.warn("⚠️ Failed to save cache:", error);
 		}
 	}
 
@@ -165,7 +168,7 @@ class ReadwiseCache {
 		try {
 			const cacheFile = Bun.file(CACHE_FILE);
 			if (!(await cacheFile.exists())) {
-				console.log('📁 No cache file found');
+				console.log("📁 No cache file found");
 				return null;
 			}
 
@@ -186,7 +189,7 @@ class ReadwiseCache {
 			console.log(`📦 Loaded ${items.length} items from cache`);
 			return items;
 		} catch (error) {
-			console.warn('⚠️ Failed to load cache:', error);
+			console.warn("⚠️ Failed to load cache:", error);
 			return null;
 		}
 	}
@@ -251,37 +254,45 @@ async function fetchAllReadwiseReaderItems(
 		} catch (error) {
 			allRequestsSuccessful = false;
 			// Handle network errors, timeout, or other fetch exceptions
-			console.error('❌ Network error or fetch exception:', error);
+			console.error("❌ Network error or fetch exception:", error);
 
-			if (process.env.NODE_ENV !== 'production') {
+			if (process.env.NODE_ENV !== "production") {
 				// Try to use cache as fallback
-				console.log('🔄 Attempting to use cached data due to network error...');
+				console.log("🔄 Attempting to use cached data due to network error...");
 				const cachedItems = await ReadwiseCache.loadFromCache();
 				if (cachedItems) {
-					console.log('✅ Using cached data instead due to network error');
-					return cachedItems.sort((a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime());
+					console.log("✅ Using cached data instead due to network error");
+					return cachedItems.sort(
+						(a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime()
+					);
 				} else {
-					console.error('❌ No cache available and network error occurred');
-					throw new Error(`Network error occurred and no cache available: ${error instanceof Error ? error.message : String(error)}`);
+					console.error("❌ No cache available and network error occurred");
+					throw new Error(
+						`Network error occurred and no cache available: ${error instanceof Error ? error.message : String(error)}`
+					);
 				}
 			}
 		}
 	} while (nextPageCursor);
 
 	// Only cache the response if all requests were successful
-	if (allRequestsSuccessful && process.env.NODE_ENV !== 'production') {
+	if (allRequestsSuccessful && process.env.NODE_ENV !== "production") {
 		await ReadwiseCache.saveToCache(items, options);
 	}
 
 	// Sort items by date in descending order (most recent first)
-	return items.sort((a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime());
+	return items.sort(
+		(a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime()
+	);
 }
 
 /**
  * Content loader for Readwise archive items.
  * Archive items include dateGroup for grouped display.
  */
-export async function loadReadwiseArchive(token: string): Promise<ReadwiseArchiveEntry[]> {
+export async function loadReadwiseArchive(
+	token: string
+): Promise<ReadwiseArchiveEntry[]> {
 	try {
 		const items = await fetchAllReadwiseReaderItems({
 			token,
@@ -289,22 +300,21 @@ export async function loadReadwiseArchive(token: string): Promise<ReadwiseArchiv
 		});
 
 		// Return flat structure for Astro Content Collections
-		const entries = items.map(item => ({
+		const entries = items.map((item) => ({
 			...item,
-			dateGroup:
-				item.last_moved_at
-					.toLocaleDateString("en-GB", {
-						day: "2-digit",
-						month: "short",
-						year: "numeric",
-					})
-					.replace(/\//g, ".")
+			dateGroup: item.last_moved_at
+				.toLocaleDateString("en-GB", {
+					day: "2-digit",
+					month: "short",
+					year: "numeric",
+				})
+				.replace(/\//g, "."),
 		}));
 
-		console.log('Processed archive entries count:', entries.length);
+		console.log("Processed archive entries count:", entries.length);
 		return entries;
 	} catch (error) {
-		console.error('Error in loadReadwiseArchive:', error);
+		console.error("Error in loadReadwiseArchive:", error);
 		throw error;
 	}
 }
@@ -315,12 +325,12 @@ export async function loadReadwiseArchive(token: string): Promise<ReadwiseArchiv
  */
 export async function loadReadwiseQueue(): Promise<ReadwiseQueueEntry[]> {
 	try {
-		const displayCachePath = 'src/content/cache-display.json';
+		const displayCachePath = "src/content/cache-display.json";
 		const displayCacheFile = Bun.file(displayCachePath);
 
 		// Check if the display cache exists
 		if (!(await displayCacheFile.exists())) {
-			console.log('📁 No display cache found, returning empty queue');
+			console.log("📁 No display cache found, returning empty queue");
 			return [];
 		}
 
@@ -328,10 +338,10 @@ export async function loadReadwiseQueue(): Promise<ReadwiseQueueEntry[]> {
 		const cacheContent = await displayCacheFile.text();
 		const displayDocuments: ReadwiseQueueItem[] = JSON.parse(cacheContent);
 
-		console.log('Processed queue entries count:', displayDocuments.length);
+		console.log("Processed queue entries count:", displayDocuments.length);
 		return displayDocuments;
 	} catch (error) {
-		console.error('Error in loadReadwiseQueue:', error);
+		console.error("Error in loadReadwiseQueue:", error);
 		// Return empty array instead of throwing to prevent build failures
 		return [];
 	}

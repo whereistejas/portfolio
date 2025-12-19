@@ -47,19 +47,23 @@ const headers = [
 								</a>
 							</div>
 							<div class="info">
-							<label class="tags" for={`toggle-summary-${idx}`}>
-								{[...item.data.tags]
-									.sort((a, b) =>
-										a.toLowerCase().localeCompare(b.toLowerCase())
-									)
-									.map((tag) => (
-										<span class="tag">{tag}</span>
-									))}
-							</label>
-							<input type="checkbox" id={`toggle-summary-${idx}`} class="toggle"/>
-							<div class="summary">
-								<div> {item.data.summary} </div>
-							</div>
+								<label class="tags" for={`toggle-summary-${idx}`}>
+									{[...item.data.tags]
+										.sort((a, b) =>
+											a.toLowerCase().localeCompare(b.toLowerCase())
+										)
+										.map((tag) => (
+											<span class="tag">{tag}</span>
+										))}
+								</label>
+								<input
+									type="checkbox"
+									id={`toggle-summary-${idx}`}
+									class="toggle"
+								/>
+								<div class="summary">
+									<div> {item.data.summary} </div>
+								</div>
 							</div>
 						</div>
 					))

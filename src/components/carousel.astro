@@ -7,121 +7,108 @@ import ExifReader from "exifreader";
 import "../styles/global.css";
 
 let images: Record<string, any>[] = Object.values(
-  import.meta.glob("../assets/*.jpg", { eager: true })
+	import.meta.glob("../assets/*.jpg", { eager: true })
 );
 
 const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
-  images.map(async (image_path) => {
-    const img = image_path.default;
-    const path = img.fsPath;
+	images.map(async (image_path) => {
+		const img = image_path.default;
+		const path = img.fsPath;
 
-    const exif = await ExifReader.load(path, { async: true });
-    let caption = exif["title"].description;
-    let image = (await getImage({ src: img, format: "webp" })).options
-      .src as ImageMetadata;
+		const exif = await ExifReader.load(path, { async: true });
+		let caption = exif["title"].description;
+		let image = (await getImage({ src: img, format: "webp" })).options
+			.src as ImageMetadata;
 
-    return {
-      caption,
-      image,
-    };
-  })
+		return {
+			caption,
+			image,
+		};
+	})
 );
 ---
 
 <div>
-  <div
-    id="carousel"
-    class="relative
-  flex flex-col items-center gap-2
-  h-full w-full md:w-48 max-w-full
-  select-none"
-    style="--current-slide: 0;"
-  >
-    <div class="h-full w-full contents">
-      <div
-        id="left"
-        class="hidden md:block h-[calc(100%-1lh-0.5rem)] md:h-[calc(100%-1lh-0.625rem)] w-1/2 absolute z-10 left-0 cursor-w-resize"
-      >
-      </div>
-      <div
-        id="right"
-        class="hidden md:block h-[calc(100%-1lh-0.5rem)] md:h-[calc(100%-1lh-0.625rem)] w-1/2 absolute z-10 right-0 cursor-e-resize"
-      >
-      </div>
-      <div
-        class="flex items-center
-      overflow-scroll snap-mandatory snap-x scroll-smooth
-      h-full w-full"
-      >
-        {
-          slides.map(({ caption, image }, idx) => (
-            <div
-              class={`flex flex-col items-center justify-center 
-            gap-1 md:gap-1.25
-            shrink-0 grow-0
-            order-${idx}
-            bg-neutral-50 dark:bg-neutral-900
-            scroll-snap snap-center
-            h-full w-full
-            transition-transform duration-500
-            translate-x-[calc(-100%*var(--current-slide))]`}
-            >
-              <Image
-                class="mix-blend-multiply dark:mix-blend-normal"
-                src={image}
-                alt={caption}
-                widths={[400, 800]}
-                sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px`}
-              />
-              <div class="h-lh w-full flex justify-between">
-                <span>{caption}</span>
-                <span>
-                  {idx + 1}/{slides.length}
-                </span>
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </div>
+	<div
+		id="carousel"
+		class="relative flex h-full w-full max-w-full flex-col items-center gap-2 select-none md:w-48"
+		style="--current-slide: 0;"
+	>
+		<div class="contents h-full w-full">
+			<div
+				id="left"
+				class="absolute left-0 z-10 hidden h-[calc(100%-1lh-0.5rem)] w-1/2 cursor-w-resize md:block md:h-[calc(100%-1lh-0.625rem)]"
+			>
+			</div>
+			<div
+				id="right"
+				class="absolute right-0 z-10 hidden h-[calc(100%-1lh-0.5rem)] w-1/2 cursor-e-resize md:block md:h-[calc(100%-1lh-0.625rem)]"
+			>
+			</div>
+			<div
+				class="flex h-full w-full snap-x snap-mandatory items-center overflow-scroll scroll-smooth"
+			>
+				{
+					slides.map(({ caption, image }, idx) => (
+						<div
+							class={`flex shrink-0 grow-0 flex-col items-center justify-center gap-1 md:gap-1.25 order-${idx} scroll-snap h-full w-full translate-x-[calc(-100%*var(--current-slide))] snap-center bg-neutral-50 transition-transform duration-500 dark:bg-neutral-900`}
+						>
+							<Image
+								class="mix-blend-multiply dark:mix-blend-normal"
+								src={image}
+								alt={caption}
+								widths={[400, 800]}
+								sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px`}
+							/>
+							<div class="flex h-lh w-full justify-between">
+								<span>{caption}</span>
+								<span>
+									{idx + 1}/{slides.length}
+								</span>
+							</div>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
-  function setupCarousel() {
-    let carousel = document.querySelector("#carousel") as HTMLDivElement;
-    let currentSlide = 0;
-    const numSlides = 12;
+	function setupCarousel() {
+		let carousel = document.querySelector("#carousel") as HTMLDivElement;
+		let currentSlide = 0;
+		const numSlides = 12;
 
-    function modulo(number: number, mod: number) {
-      let result = number % mod;
-      if (result < 0) {
-        result += mod;
-      }
-      return result;
-    }
+		function modulo(number: number, mod: number) {
+			let result = number % mod;
+			if (result < 0) {
+				result += mod;
+			}
+			return result;
+		}
 
-    let left = document.querySelector("#left");
-    let right = document.querySelector("#right");
+		let left = document.querySelector("#left");
+		let right = document.querySelector("#right");
 
-    if (left && right) {
-      left.addEventListener("click", function (e) {
-        e.preventDefault();
-        currentSlide = modulo(currentSlide - 1, numSlides);
-        carousel.style.setProperty("--current-slide", `${currentSlide}`);
-      });
+		if (left && right) {
+			left.addEventListener("click", function (e) {
+				e.preventDefault();
+				currentSlide = modulo(currentSlide - 1, numSlides);
+				carousel.style.setProperty("--current-slide", `${currentSlide}`);
+			});
 
-      right.addEventListener("click", function (e) {
-        e.preventDefault();
-        currentSlide = modulo(currentSlide + 1, numSlides);
-        carousel.style.setProperty("--current-slide", `${currentSlide}`);
-      });
-    }
-  }
+			right.addEventListener("click", function (e) {
+				e.preventDefault();
+				currentSlide = modulo(currentSlide + 1, numSlides);
+				carousel.style.setProperty("--current-slide", `${currentSlide}`);
+			});
+		}
+	}
 
-  // Run on initial load
-  setupCarousel();
+	// Run on initial load
+	setupCarousel();
 
-  // Re-run after view transitions
-  document.addEventListener("astro:after-swap", setupCarousel);
+	// Re-run after view transitions
+	document.addEventListener("astro:after-swap", setupCarousel);
 </script>

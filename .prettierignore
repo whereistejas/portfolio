@@ -1,9 +1,19 @@
+# Build outputs
 .astro/*
 dist/*
 .readwise-cache/*
 
-src/*
-!src/styles/
+# Dependencies
+node_modules/
+bun.lock
 package-lock.json
 
+# Cache files
+*.cache
+.cache/
+
+# Generated files
+src/content/cache-*.json
+
+# YAML files (if you don't want to format them)
 **/*.yml

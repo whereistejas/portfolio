@@ -3,7 +3,7 @@ const { type, content, href } = Astro.props;
 ---
 
 <div class="inline-block">
-  <h4>
-    {type === "link" ? <a href={href}>{content}</a> : content}
-  </h4>
+	<h4>
+		{type === "link" ? <a href={href}>{content}</a> : content}
+	</h4>
 </div>

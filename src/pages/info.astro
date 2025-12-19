@@ -4,102 +4,150 @@ import Textorlink from "../components/textorlink.astro";
 import Page from "../layouts/page.astro";
 
 const headers = [
-  { type: "text", content: "INFO" },
-  { type: "link", content: "CLOSE", href: "/" },
+	{ type: "text", content: "INFO" },
+	{ type: "link", content: "CLOSE", href: "/" },
 ];
 ---
 
 <Page flex_start={false} title="Info">
-  <Fragment slot="header">
-    {
-      headers.map((el) => (
-        <Textorlink type={el.type} content={el.content} href={el.href} />
-      ))
-    }
-  </Fragment>
+	<Fragment slot="header">
+		{
+			headers.map((el) => (
+				<Textorlink type={el.type} content={el.content} href={el.href} />
+			))
+		}
+	</Fragment>
 
-  <Fragment slot="main">
-    <div class="info_main">
-      <Row>
-        <Fragment slot="key">
-          <div class="min-w-8">Profile</div>
-        </Fragment>
-        <Fragment slot="value">
-          <p>
-            My name is Tejas Sanap. I live in London (arguably, one of the best
-            cities in the world). I work as a Rust engineer at a startup. Apart
-            from software and functional programming, I'm also an amateur street
-            photographer. I am an avid reader and am currently reading
-            <span class="italic text-nowrap">
-              <a
-                href="https://www.goodreads.com/book/show/220337366-use-of-weapons"
-                class="underline"
-              >Use of Weapons</a>
-            </span> 
-            by Iain M. Banks.
-          </p>
-        </Fragment>
-      </Row>
-      <Row>
-        <Fragment slot="key">
-          <div class="min-w-8">Beliefs</div>
-        </Fragment>
-        <Fragment slot="value">
-          <article class="blog-article first:pt-0 last:pb-0 text-lg">
-            <p style="margin-top: 0;">We are here to make the world a better place either by: solving new problems or improving existing solutions.</p>
-            <p>Most problems can only be solved if there is enough justification for someone to invest in them. The likelihood of investment can be understood in terms of “difficulty of solving” and “benefits from solving”.</p>
-            <p>We can justify solving problems with no clear solutions if there are enough benefits. We can also justify solving problems with little benefits because of how easy they are to solve. We can describe these two categories as the investor’s comfort zone. However, our society has evolved to disincentivize investment in problems outside this comfort zone.</p>
-            <p>Somewhere in our single-minded pursuit of "sexy" problems to create infinite <a class="underline" href="https://openai.com/index/planning-for-agi-and-beyond/">abundance</a> or move back to being <a class="underline" href="https://en.wikipedia.org/wiki/Degrowth">hunter-gatherer tribes</a>, we have forgotten that for most people the experience of living through their routine lives is far from optimal and must be improved.</p>
-            <p>The problems outside the comfort zone are often “not sexy”, they won’t 10x the GDP nor will they create a future so abundant that none of us will have to work or worry again. We need to start thinking about these problems in terms of improving the human experience (HX). We can <a href="https://www.nngroup.com/articles/what-is-user-experience/">define</a> HX as the holistic relationship — encompassing aspirations, struggles and successes — between a person and their lived life.</p>
-            <p>Some examples of good HX would be accessible healthcare, cheap credit, reliable public transport, shorter commute times, simplified governmental services, clean air and water, access to green spaces.</p>
-            <p style="margin-bottom: 0;">If this resonates with you, feel free to reach out at <a class="underline" href="mailto:email@whereistejas.xyz">email@whereistejas.xyz</a> — especially if you're building in a mid-sized, revenue-generating company.</p>
-          </article>
-        </Fragment>
-      </Row>
-      <Row>
-        <Fragment slot="key">
-          <div class="min-w-8">Work</div>
-        </Fragment>
-        <Fragment slot="value">
-          <p>
-            <a href="https://tably.com">Tably</a>, 2021 &mdash; Present
-          </p>
-          <p>
-            <a href="https://wipro.com">Wipro</a>, 2019 &mdash; 2021
-          </p>
-        </Fragment>
-      </Row>
-      <Row>
-        <Fragment slot="key">
-          <div class="min-w-8">University</div>
-        </Fragment>
-        <Fragment slot="value">
-          <p>
-            Bachelors in Mechanical Engineering,
-            <a href="https://www.unipune.ac.in">SPPU</a>, 2016 &mdash; 2019
-          </p>
-        </Fragment>
-      </Row>
-      <Row>
-        <Fragment slot="key">
-          <div class="min-w-8">Socials</div>
-        </Fragment>
-        <Fragment slot="value">
-          <p>
-            <a href="https://www.github.com/whereistejas">Github</a>,
-            <a href="https://www.goodreads.com/whereistejas">Goodreads</a>,
-            <a href="https://www.are.na/whereistejas">Are.na</a>,
-            <a href="https://www.x.com/whereistejas">X</a>,
-            <a href="https://bsky.app/profile/whereistejas.bsky.social"
-              >Bluesky</a
-            >,
-            <a href="https://hachyderm.io/@whereistejas">Mastodon</a>,
-            <a href="https://www.instagram.com/whereistejas">Instagram</a>,
-            <a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>
-          </p>
-        </Fragment>
-      </Row>
-    </div>
-  </Fragment>
-
+	<Fragment slot="main">
+		<div class="info_main">
+			<Row>
+				<Fragment slot="key">
+					<div class="min-w-8">Profile</div>
+				</Fragment>
+				<Fragment slot="value">
+					<p>
+						My name is Tejas Sanap. I live in London (arguably, one of the best
+						cities in the world). I work as a Rust engineer at a startup. Apart
+						from software and functional programming, I'm also an amateur street
+						photographer. I am an avid reader and am currently reading
+						<span class="text-nowrap italic">
+							<a
+								href="https://www.goodreads.com/book/show/220337366-use-of-weapons"
+								class="underline">Use of Weapons</a
+							>
+						</span>
+						by Iain M. Banks.
+					</p>
+				</Fragment>
+			</Row>
+			<Row>
+				<Fragment slot="key">
+					<div class="min-w-8">Beliefs</div>
+				</Fragment>
+				<Fragment slot="value">
+					<article class="blog-article text-lg first:pt-0 last:pb-0">
+						<p style="margin-top: 0;">
+							We are here to make the world a better place either by: solving
+							new problems or improving existing solutions.
+						</p>
+						<p>
+							Most problems can only be solved if there is enough justification
+							for someone to invest in them. The likelihood of investment can be
+							understood in terms of “difficulty of solving” and “benefits from
+							solving”.
+						</p>
+						<p>
+							We can justify solving problems with no clear solutions if there
+							are enough benefits. We can also justify solving problems with
+							little benefits because of how easy they are to solve. We can
+							describe these two categories as the investor’s comfort zone.
+							However, our society has evolved to disincentivize investment in
+							problems outside this comfort zone.
+						</p>
+						<p>
+							Somewhere in our single-minded pursuit of "sexy" problems to
+							create infinite <a
+								class="underline"
+								href="https://openai.com/index/planning-for-agi-and-beyond/"
+								>abundance</a
+							> or move back to being <a
+								class="underline"
+								href="https://en.wikipedia.org/wiki/Degrowth"
+								>hunter-gatherer tribes</a
+							>, we have forgotten that for most people the experience of living
+							through their routine lives is far from optimal and must be
+							improved.
+						</p>
+						<p>
+							The problems outside the comfort zone are often “not sexy”, they
+							won’t 10x the GDP nor will they create a future so abundant that
+							none of us will have to work or worry again. We need to start
+							thinking about these problems in terms of improving the human
+							experience (HX). We can <a
+								href="https://www.nngroup.com/articles/what-is-user-experience/"
+								>define</a
+							> HX as the holistic relationship — encompassing aspirations, struggles
+							and successes — between a person and their lived life.
+						</p>
+						<p>
+							Some examples of good HX would be accessible healthcare, cheap
+							credit, reliable public transport, shorter commute times,
+							simplified governmental services, clean air and water, access to
+							green spaces.
+						</p>
+						<p style="margin-bottom: 0;">
+							If this resonates with you, feel free to reach out at <a
+								class="underline"
+								href="mailto:email@whereistejas.xyz">email@whereistejas.xyz</a
+							> — especially if you're building in a mid-sized, revenue-generating
+							company.
+						</p>
+					</article>
+				</Fragment>
+			</Row>
+			<Row>
+				<Fragment slot="key">
+					<div class="min-w-8">Work</div>
+				</Fragment>
+				<Fragment slot="value">
+					<p>
+						<a href="https://tably.com">Tably</a>, 2021 &mdash; Present
+					</p>
+					<p>
+						<a href="https://wipro.com">Wipro</a>, 2019 &mdash; 2021
+					</p>
+				</Fragment>
+			</Row>
+			<Row>
+				<Fragment slot="key">
+					<div class="min-w-8">University</div>
+				</Fragment>
+				<Fragment slot="value">
+					<p>
+						Bachelors in Mechanical Engineering,
+						<a href="https://www.unipune.ac.in">SPPU</a>, 2016 &mdash; 2019
+					</p>
+				</Fragment>
+			</Row>
+			<Row>
+				<Fragment slot="key">
+					<div class="min-w-8">Socials</div>
+				</Fragment>
+				<Fragment slot="value">
+					<p>
+						<a href="https://www.github.com/whereistejas">Github</a>,
+						<a href="https://www.goodreads.com/whereistejas">Goodreads</a>,
+						<a href="https://www.are.na/whereistejas">Are.na</a>,
+						<a href="https://www.x.com/whereistejas">X</a>,
+						<a href="https://bsky.app/profile/whereistejas.bsky.social"
+							>Bluesky</a
+						>,
+						<a href="https://hachyderm.io/@whereistejas">Mastodon</a>,
+						<a href="https://www.instagram.com/whereistejas">Instagram</a>,
+						<a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>
+					</p>
+				</Fragment>
+			</Row>
+		</div>
+	</Fragment>
 </Page>

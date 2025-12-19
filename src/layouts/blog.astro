@@ -7,23 +7,27 @@ import Textorlink from "../components/textorlink.astro";
 const { frontmatter } = Astro.props;
 
 const headers = [
-  { type: "text", content: (frontmatter.title as string).toUpperCase() },
-  { type: "link", content: "CLOSE", href: "/blog" },
+	{ type: "text", content: (frontmatter.title as string).toUpperCase() },
+	{ type: "link", content: "CLOSE", href: "/blog" },
 ];
 ---
 
 <Page title={frontmatter.title as string} latex={true}>
-  <Fragment slot="header">
-    {
-      headers.map((el) => (
-        <Textorlink type={el.type} content={el.content} href={el.href} />
-      ))
-    }
-  </Fragment>
-  <Fragment slot="main">
-    <meta name="fediverse:creator" content="@whereistejas@hachyderm.io" hidden>
-    <article class="blog-article leading-1.5">
-      <slot />
-    </article>
-  </Fragment>
+	<Fragment slot="header">
+		{
+			headers.map((el) => (
+				<Textorlink type={el.type} content={el.content} href={el.href} />
+			))
+		}
+	</Fragment>
+	<Fragment slot="main">
+		<meta
+			name="fediverse:creator"
+			content="@whereistejas@hachyderm.io"
+			hidden
+		/>
+		<article class="blog-article leading-1.5">
+			<slot />
+		</article>
+	</Fragment>
 </Page>

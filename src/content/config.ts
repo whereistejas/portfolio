@@ -1,5 +1,5 @@
-import { defineCollection, z } from 'astro:content';
-import { loadReadwiseArchive, loadReadwiseQueue } from './readwise.ts';
+import { defineCollection, z } from "astro:content";
+import { loadReadwiseArchive, loadReadwiseQueue } from "./readwise.ts";
 
 /**
  * Base schema for Readwise Reader items
@@ -16,8 +16,20 @@ const readwiseBaseSchema = z.object({
 
 	title: z.string(),
 	summary: z.string(),
-	location: z.enum(['new', 'later', 'shortlist', 'archive', 'feed']),
-	category: z.enum(['article', 'email', 'rss', 'highlight', 'note', 'pdf', 'epub', 'tweet', 'video']).optional(),
+	location: z.enum(["new", "later", "shortlist", "archive", "feed"]),
+	category: z
+		.enum([
+			"article",
+			"email",
+			"rss",
+			"highlight",
+			"note",
+			"pdf",
+			"epub",
+			"tweet",
+			"video",
+		])
+		.optional(),
 });
 
 /**
@@ -50,7 +62,7 @@ const readwiseArchive = defineCollection({
 	loader: async () => {
 		const token = import.meta.env.READWISE_TOKEN;
 		if (!token) {
-			throw new Error('READWISE_TOKEN environment variable is required');
+			throw new Error("READWISE_TOKEN environment variable is required");
 		}
 		return loadReadwiseArchive(token);
 	},
@@ -69,6 +81,6 @@ const readwiseQueue = defineCollection({
 });
 
 export const collections = {
-	'readwise-archive': readwiseArchive,
-	'readwise-queue': readwiseQueue,
+	"readwise-archive": readwiseArchive,
+	"readwise-queue": readwiseQueue,
 };

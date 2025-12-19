@@ -1,16 +1,16 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig } from "astro/config";
 
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-	site: 'https://whereistejas.xyz',
-	base: '',
-	output: 'static',
+	site: "https://whereistejas.xyz",
+	base: "",
+	output: "static",
 	markdown: {
 		remarkRehype: {
-			footnoteLabel: ' ',
-			footnoteLabelTagName: 'hr',
-			footnoteLabelProperties: { className: [''] },
+			footnoteLabel: " ",
+			footnoteLabelTagName: "hr",
+			footnoteLabelProperties: { className: [""] },
 		},
 	},
 	vite: {
@@ -19,4 +19,4 @@ export default defineConfig({
 	experimental: {
 		headingIdCompat: true,
 	},
-})
+});
