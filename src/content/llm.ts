@@ -297,7 +297,7 @@ export async function processDocuments(
 		console.warn(`[LLM][Group cache] Missing: `, titlesOfMissingDocuments);
 
 		await retry(async () => {
-			console.log(`[LLM][Group] Reordering documents...`);
+			console.log(`[LLM] Reordering documents...`);
 
 			const requestedSummaries = Object.fromEntries(
 				Object.entries(summaryCache).filter(([id]) =>
@@ -317,13 +317,13 @@ export async function processDocuments(
 			);
 			assert(
 				missingDocuments.length === 0,
-				`[LLM][Group] Missing after update: ${titlesOfMissingDocuments}`
+				`[LLM][Reordering] Missing after update: ${titlesOfMissingDocuments}`
 			);
 
 			await writeJsonCache(GROUPED_CACHE_PATH, groupedDocuments);
 		});
 	} else {
-		console.log(`[LLM][Group] All documents are already grouped.`);
+		console.log(`[LLM][Reordering] All documents are already grouped.`);
 	}
 
 	var groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
