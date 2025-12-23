@@ -59,6 +59,9 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 								alt={caption}
 								widths={[400, 800]}
 								sizes={`(max-width: 400px) 400px, (max-width: 800px) 800px`}
+								loading={idx === 0 ? "eager" : "lazy"}
+								decoding={idx === 0 ? "sync" : "async"}
+								fetchpriority={idx === 0 ? "high" : undefined}
 							/>
 							<div class="flex h-lh w-full justify-between">
 								<span>{caption}</span>

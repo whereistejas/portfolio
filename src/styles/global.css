@@ -6,14 +6,14 @@
 	font-family: InterVariable;
 	font-style: normal;
 	font-weight: 100 900;
-	font-display: block;
+	font-display: swap;
 	src: url("/InterVariable.woff2") format("woff2");
 }
 @font-face {
 	font-family: InterVariable;
 	font-style: italic;
 	font-weight: 100 900;
-	font-display: block;
+	font-display: swap;
 	src: url("/InterVariable-Italic.woff2") format("woff2");
 }
 
@@ -121,34 +121,6 @@
 
 		--tw-prose-quote-borders: var(--color-yellow-700);
 		--tw-prose-invert-quote-borders: var(--color-yellow-700);
-	}
-
-	div.barchart {
-		@apply block w-full max-w-full md:flex;
-
-		div.chart-container {
-			@apply flex h-15 w-full items-end gap-1 align-bottom md:h-20 md:justify-between md:gap-2;
-		}
-
-		div.bar-wrapper {
-			@apply flex h-full min-w-1 flex-1 flex-col items-center justify-end align-bottom;
-		}
-
-		div.bar-container {
-			@apply flex h-full w-full flex-col justify-end;
-		}
-
-		div.bar {
-			@apply flex min-h-2 w-full items-center justify-center rounded-sm bg-neutral-600 md:rounded-md dark:bg-neutral-400;
-		}
-
-		span.bar-count {
-			@apply text-xs font-bold text-neutral-50 md:text-sm dark:text-neutral-900;
-		}
-
-		div.bar-label {
-			@apply mt-1 text-center text-[0.625rem] font-medium uppercase md:text-xs md:text-nowrap;
-		}
 	}
 
 	a {

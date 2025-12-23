@@ -15,8 +15,19 @@ export default defineConfig({
 	},
 	vite: {
 		plugins: [tailwindcss()],
+		build: {
+			cssMinify: "lightningcss",
+		},
+	},
+	image: {
+		domains: [],
+		remotePatterns: [],
+		service: {
+			entrypoint: "astro/assets/services/sharp",
+		},
 	},
 	experimental: {
 		headingIdCompat: true,
 	},
+	compressHTML: true,
 });
