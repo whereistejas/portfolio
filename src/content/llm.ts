@@ -6,6 +6,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { strict as assert } from "node:assert";
 import { z } from "zod";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
+import type { Message } from "@anthropic-ai/sdk/resources";
 
 const DUMB_MODEL = "claude-haiku-4-5";
 const SMART_MODEL = "claude-sonnet-4-5";
@@ -37,23 +38,6 @@ const DocumentSummarySchema = z.object({
 
 // Infer TypeScript type from Zod schema
 export type DocumentSummary = z.infer<typeof DocumentSummarySchema>;
-
-// Zod schema for structured output matching DocumentOrder[] array
-const DocumentOrderSchema = z.array(
-	z.object({
-		order: z.number().describe("The new sequence number (starting from 0)"),
-		id: z.string().describe("The original document ID (unchanged from input)"),
-		tags: z
-			.array(z.string())
-			.length(5)
-			.describe(
-				"An array of exactly 5 consolidated tags (single words or underscore-joined phrases)"
-			),
-	})
-);
-
-// Infer TypeScript type from Zod schema (element type of the array)
-export type DocumentOrder = z.infer<typeof DocumentOrderSchema>[number];
 
 // Anthropic client setup
 export function getAnthropicClient(apiKey: string) {
@@ -112,7 +96,6 @@ export async function summariseDocument(
 		const inputJson = JSON.stringify(document, null, 2);
 		const prompt = `${SUMMARY_PROMPT}\n${inputJson}`;
 
-
 		const response = await anthropic.beta.messages.parse({
 			model: DUMB_MODEL,
 			max_tokens: 50000,
@@ -136,55 +119,33 @@ export async function summariseDocument(
 }
 
 const REORDERING_PROMPT = `
-You are an expert librarian and archivist tasked with organizing a collection of documents. You will receive JSON data containing document summaries and tags from an initial analysis phase, and your job is to reorder these documents and consolidate their tags for better organization.
+You are an expert librarian and archivist. You will receive JSON data containing document summaries and tags from an initial analysis phase. Your job is to determine a new ordering and produce consolidated tags, but you will only return the indices in the new order (not the documents themselves).
 
-Here is the document collection data from the previous analysis:
+Here is the document collection data from the previous analysis (each entry is [index, [id, {summary, tags}]]):
 
 <document_summaries>
 {{summaries}}
 </document_summaries>
 
-Your task involves two main activities:
+Your task:
+- Analyze the summaries and tags to understand thematic relationships.
+- Reorder the documents to create a natural, logical flow that minimizes switching cost.
+- Consolidate tags into broader, useful categories.
 
-**Document Reordering:**
-- Analyze the document summaries and tags to understand thematic relationships
-- Reorder the documents to create a natural, logical flow
-- Minimize "switching cost" between consecutive documents by grouping related content
-- Ensure smooth transitions from one document to the next
+Strict output format:
+- Return ONLY raw JSON (no markdown) as an array of objects.
+- Each object must be: { "index": <number>, "tags": [tag1, tag2, tag3, tag4, tag5] }.
+- The array order is the desired sequence (first element = order 0, etc.).
+- Include every input index exactly once; do not drop or duplicate.
+- Tags must be exactly 5 strings, single words or underscore_joined phrases.
 
-**Tag Consolidation:**
-- Review all existing tags across documents and identify opportunities to merge similar tags into higher-level topics
-- Consolidate redundant or overly specific tags into broader, more useful categories
-- Ensure each document has exactly 5 tags from your consolidated tag set
-- Format all tags as single words, joining multi-word concepts with underscores (e.g., "nuclear_power", "development_economics")
-
-**Critical Requirements:**
-- Preserve every document ID exactly as provided in the input - do not modify IDs in any way
-- Include ALL documents from the input - do not drop or forget any documents
-- Output exactly 5 tags per document
-- Use only single words or underscore-joined phrases for tags
-- Return raw JSON without markdown code blocks or other formatting
-
-Before creating your final output, work through this systematically in <document_organization> tags inside your thinking block:
-
-1. First, create a complete inventory by listing out every single document ID from the input data to ensure none are forgotten. It's OK for this section to be quite long.
-2. For each document, write a brief note about its main theme based on the summary
-3. Group documents by thematic similarity and plan the optimal ordering sequence that creates natural flow
-4. Create a comprehensive list of all existing tags across all documents
-5. Design your consolidated tag vocabulary by merging similar tags and creating broader categories
-6. Assign the new sequence numbers (starting from 0) and exactly 5 consolidated tags to each document
-7. Perform a final completeness check by verifying that every document ID from step 1 appears exactly once in your final ordering
-
-Your final output must be a JSON array matching the structured output schema. Each object in the array must contain:
-- "order" (number): The new sequence number starting from 0
-- "id" (string): The original document ID (unchanged from input)
-- "tags" (array of exactly 5 strings): Consolidated tags (single words or underscore-joined phrases)
-
-The output format is enforced by the structured output schema, which requires:
-- An array of objects
-- Each object with exactly these three fields
-- Each tags array must contain exactly 5 strings
-- No additional properties allowed
+Thinking steps (inside your thinking block before final output):
+1) Inventory every index and its document ID to ensure completeness.
+2) Note each document's main theme from the summary.
+3) Plan groups and the optimal ordering sequence.
+4) Merge similar tags into consolidated categories.
+5) Assign exactly 5 consolidated tags to each index and finalize the order.
+6) Verify every index is present exactly once in the final array.
 `;
 
 // Type for summary cache (matches cache-summary.json structure)
@@ -193,16 +154,27 @@ export type SummaryCache = Record<string, { summary: string; tags: string[] }>;
 // Type for grouped documents cache (matches cache-group.json structure)
 export type GroupCache = Record<string, { tags: string[]; order: number }>;
 
+// Schema and type for reorder response: array ordered by desired sequence
+const ReorderItemSchema = z.object({
+	index: z.number().int().nonnegative(),
+	tags: z.array(z.string()).length(5),
+});
+const ReorderResponseSchema = z.array(ReorderItemSchema);
+type ReorderResponse = z.infer<typeof ReorderResponseSchema>;
+
 // Reorder and tag documents using Anthropic LLM
 export async function tagAndGroupDocuments(
 	anthropic: Anthropic,
 	summaries: SummaryCache
 ): Promise<GroupCache> {
 	return retry(async () => {
-		const inputJson = JSON.stringify(summaries, null, 2);
+		const indexedSummaries: Array<[number, [string, { summary: string; tags: string[] }]]> =
+			Object.entries(summaries).map(([id, data], idx) => [idx, [id, data]]);
+		const inputJson = JSON.stringify(indexedSummaries, null, 2);
+
 		const prompt = REORDERING_PROMPT.replace("{{summaries}}", inputJson);
 
-		const response = await anthropic.beta.messages.parse({
+		const response: Message = await anthropic.messages.create({
 			model: SMART_MODEL,
 			max_tokens: 50000,
 			messages: [
@@ -211,20 +183,49 @@ export async function tagAndGroupDocuments(
 					content: prompt,
 				},
 			],
-			betas: ["structured-outputs-2025-11-13"],
-			output_format: betaZodOutputFormat(DocumentOrderSchema),
 		});
 
 		// Automatically parsed and validated by Zod
-		if (!response.parsed_output) {
+		if (!response.content) {
 			throw new Error("No parsed output received from API");
 		}
 
-		const reordered = response.parsed_output;
-		const groups = reordered.reduce((acc, item) => {
-			acc[item.id] = { tags: item.tags, order: item.order };
-			return acc;
-		}, {} as GroupCache);
+		// Read and validate the message as { index, tags }[]
+		type TextBlock = { type: "text"; text: string };
+		const responseContent =
+			typeof response.content === "string"
+				? response.content
+				: response.content
+					.map((block) =>
+						typeof block === "object" && block && "text" in block
+							? (block as TextBlock).text
+							: ""
+					)
+					.join("");
+
+		// Extract the JSON array payload safely even if extra text is present
+		const extractJsonArray = (text: string): unknown => {
+			const start = text.indexOf("[");
+			const end = text.lastIndexOf("]");
+			if (start === -1 || end === -1 || end <= start) {
+				throw new Error("LLM response missing JSON array");
+			}
+			const slice = text.slice(start, end + 1);
+			return JSON.parse(slice);
+		};
+
+		const parsed: ReorderResponse = ReorderResponseSchema.parse(extractJsonArray(responseContent));
+
+		// Map ordered indices back to document IDs, preserving GroupCache shape
+		const groups: GroupCache = {};
+		for (const [order, item] of parsed.entries()) {
+			const entry = indexedSummaries[item.index];
+			if (!entry) {
+				throw new Error(`LLM returned unknown index: ${item.index}`);
+			}
+			const [, [id]] = entry;
+			groups[id] = { tags: item.tags, order };
+		}
 
 		return groups;
 	});
