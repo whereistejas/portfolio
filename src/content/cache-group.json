@@ -1,792 +1,802 @@
 {
   "01jy6rem6wbkfj90g95gazpq5p": {
-    "order": 28,
+    "order": 0,
     "tags": [
       "economics",
-      "free_markets",
-      "government_intervention",
-      "tariffs",
-      "trade_policy"
+      "markets",
+      "policy",
+      "trade",
+      "regulation"
     ]
   },
   "01k0bvm4t4fvbr5276rebhnnf0": {
-    "order": 0,
+    "order": 13,
     "tags": [
-      "nuclear_energy",
-      "fusion_power",
-      "energy_technology",
-      "scientific_research",
-      "engineering_challenges"
+      "energy",
+      "technology",
+      "science",
+      "innovation",
+      "engineering"
     ]
   },
   "01k0p4hj3k6r9vetkx17nqr6fe": {
-    "order": 29,
+    "order": 28,
     "tags": [
+      "philosophy",
       "ethics",
-      "moral_philosophy",
-      "social_responsibility",
-      "applied_ethics",
-      "incremental_improvement"
+      "responsibility",
+      "society",
+      "decision_making"
     ]
   },
   "01k0rkksw05j6r0fb3sg2t75ze": {
-    "order": 64,
+    "order": 57,
     "tags": [
-      "parsing",
-      "compiler_design",
-      "ll_parsing",
-      "lr_parsing",
-      "programming_languages"
-    ]
-  },
-  "01k0ym452574a7aed7aj98rmnv": {
-    "order": 1,
-    "tags": [
-      "invention",
-      "environmental_damage",
-      "technology_ethics",
-      "unintended_consequences",
-      "public_health"
-    ]
-  },
-  "01k0yr667kps6mz7abkd99n3ds": {
-    "order": 2,
-    "tags": [
-      "neuroscience",
-      "scientific_research",
-      "brain_simulation",
-      "project_management",
-      "research_funding"
+      "programming",
+      "compilers",
+      "algorithms",
+      "language_design",
+      "parsing"
     ]
   },
   "01k10h6bjne1bjfp0pandb9aec": {
-    "order": 15,
+    "order": 4,
     "tags": [
-      "economic_history",
-      "gilded_age",
-      "america",
-      "china",
-      "capitalism"
+      "geopolitics",
+      "economics",
+      "comparison",
+      "capitalism",
+      "history"
     ]
   },
   "01k10hk5n1ya3cd38bdm224d4h": {
-    "order": 16,
+    "order": 9,
     "tags": [
-      "indian_politics",
-      "narendra_modi",
-      "populism",
-      "economic_policy",
+      "politics",
+      "leadership",
+      "policy",
+      "society",
       "governance"
     ]
   },
   "01k10hr6jb5ydtqsvwfph68f7r": {
-    "order": 17,
+    "order": 10,
     "tags": [
-      "indian_politics",
-      "institutional_takeover",
-      "bjp",
-      "power_dynamics",
-      "social_institutions"
+      "politics",
+      "institutions",
+      "power",
+      "society",
+      "governance"
     ]
   },
   "01k18xzxnt7gec54mw47qe2730": {
-    "order": 23,
+    "order": 3,
     "tags": [
-      "remote_work",
+      "economics",
       "outsourcing",
-      "philippines",
-      "service_exports",
-      "international_business"
+      "labor",
+      "technology",
+      "globalization"
     ]
   },
   "01k1c5yaaf9tngc5pnssxa6zgw": {
-    "order": 24,
+    "order": 2,
     "tags": [
-      "industrial_policy",
-      "reindustrialization",
-      "economic_strategy",
-      "united_states",
-      "manufacturing"
+      "economics",
+      "policy",
+      "manufacturing",
+      "strategy",
+      "development"
     ]
   },
   "01k228ps97vg5bwhhv6433c1tm": {
-    "order": 39,
+    "order": 53,
     "tags": [
-      "film_industry",
-      "independent_cinema",
-      "a24",
-      "movie_production",
-      "film_marketing"
+      "strategy",
+      "business",
+      "entertainment",
+      "marketing",
+      "creativity"
     ]
   },
   "01k2fder0ezwd75njceewc980v": {
-    "order": 3,
+    "order": 20,
     "tags": [
-      "synthetic_biology",
-      "genetic_engineering",
+      "biology",
       "biotechnology",
-      "gene_circuits",
-      "scientific_innovation"
+      "genetics",
+      "engineering",
+      "innovation"
     ]
   },
   "01k2fdeym6jvfb3zkgx0j3c11f": {
-    "order": 4,
+    "order": 21,
     "tags": [
-      "gene_therapy",
+      "biology",
+      "medicine",
       "biotechnology",
-      "medical_technology",
-      "drug_delivery",
-      "viral_vectors"
+      "therapy",
+      "research"
     ]
   },
   "01k2j40tf05d83f02kjh422fnt": {
-    "order": 18,
+    "order": 5,
     "tags": [
-      "economic_development",
-      "india",
-      "china",
-      "comparative_economics",
-      "growth_strategies"
+      "geopolitics",
+      "economics",
+      "development",
+      "comparison",
+      "trade"
     ]
   },
   "01k2net1yda1j1tqkqadctppfx": {
-    "order": 14,
+    "order": 12,
     "tags": [
-      "indian_culture",
-      "marriage",
-      "traditions",
-      "social_change",
-      "caste_system"
+      "culture",
+      "society",
+      "tradition",
+      "change",
+      "family"
     ]
   },
   "01k2zj0xxcdk4gje1cj3gxyjmm": {
-    "order": 20,
+    "order": 6,
     "tags": [
       "geopolitics",
-      "china",
-      "united_states",
       "manufacturing",
-      "industrial_policy"
+      "infrastructure",
+      "competition",
+      "strategy"
     ]
   },
   "01k38s3z2gty73bpdzpejer4fj": {
-    "order": 7,
+    "order": 22,
     "tags": [
-      "insect_biology",
-      "pest_control",
+      "biology",
+      "ecology",
       "agriculture",
-      "diapause",
-      "conservation"
+      "pest_control",
+      "science"
     ]
   },
   "01k3c0njfkfk5g7a8gtrjh0dgp": {
-    "order": 6,
+    "order": 24,
     "tags": [
-      "cancer",
-      "medical_screening",
-      "early_detection",
+      "medicine",
+      "screening",
+      "diagnostics",
       "healthcare",
-      "diagnostic_challenges"
+      "research"
     ]
   },
   "01k3nxs3gwjfacac4apze81zqr": {
-    "order": 13,
+    "order": 37,
     "tags": [
       "education",
-      "teacher_compensation",
-      "developing_countries",
-      "learning_outcomes",
-      "public_policy"
+      "policy",
+      "development",
+      "economics",
+      "reform"
     ]
   },
   "01k3nz6ne5jyg7avc3538248k8": {
-    "order": 19,
+    "order": 11,
     "tags": [
-      "digital_payments",
-      "fintech",
-      "india",
-      "financial_inclusion",
-      "upi"
+      "technology",
+      "finance",
+      "payments",
+      "policy",
+      "innovation"
     ]
   },
   "01k4r90wrh5xv4jcn4zfjz453m": {
-    "order": 8,
+    "order": 23,
     "tags": [
+      "biology",
       "virology",
-      "microbiology",
       "ecology",
-      "virus_structure",
-      "biomass"
+      "microbiology",
+      "science"
     ]
   },
   "01k4raerehhys44g2cdwenkkv6": {
-    "order": 5,
+    "order": 25,
     "tags": [
-      "alzheimers_disease",
+      "medicine",
       "neuroscience",
-      "amyloid_hypothesis",
-      "tau_protein",
-      "neurodegeneration"
+      "research",
+      "disease",
+      "treatment"
     ]
   },
   "01k6kkpgne5h19qqj62d19t0h2": {
-    "order": 21,
+    "order": 7,
     "tags": [
-      "china",
-      "economic_development",
-      "state_intervention",
+      "geopolitics",
+      "development",
       "infrastructure",
-      "technological_competition"
+      "investment",
+      "strategy"
     ]
   },
   "01k6va67563cax8s7f324ygv1t": {
-    "order": 35,
+    "order": 39,
     "tags": [
-      "artificial_intelligence",
       "education",
-      "learning_optimization",
-      "educational_technology",
-      "study_methods"
+      "AI",
+      "learning",
+      "technology",
+      "innovation"
     ]
   },
   "01k6xgtzketeekb7h9er7ntrg4": {
-    "order": 26,
+    "order": 1,
     "tags": [
-      "business_leadership",
-      "free_markets",
-      "institutional_support",
-      "liberal_democracy",
-      "long_term_thinking"
+      "economics",
+      "markets",
+      "institutions",
+      "policy",
+      "democracy"
     ]
   },
   "01k6z1cjetsqy8ev7j7ffnznfn": {
-    "order": 41,
+    "order": 18,
     "tags": [
-      "data_software",
-      "business_ethics",
-      "government_contracts",
-      "political_controversy",
-      "corporate_responsibility"
+      "business",
+      "technology",
+      "ethics",
+      "strategy",
+      "governance"
     ]
   },
   "01k76nwzj83c8p10nvhwq5rdhe": {
-    "order": 57,
+    "order": 54,
     "tags": [
-      "transportation",
-      "railways",
+      "strategy",
+      "systems_design",
       "logistics",
-      "scheduling",
-      "infrastructure"
+      "planning",
+      "optimization"
     ]
   },
   "01k79byqsjx6wqh2fesc9960gk": {
-    "order": 58,
+    "order": 60,
     "tags": [
-      "machine_learning",
-      "causal_inference",
-      "model_interpretability",
-      "mechanistic_modeling",
-      "explainable_ai"
+      "programming",
+      "modeling",
+      "methodology",
+      "prediction",
+      "causality"
     ]
   },
   "01k7d30sekn3twp4x8t3xjamrd": {
-    "order": 53,
+    "order": 51,
     "tags": [
+      "strategy",
       "optimization",
       "innovation",
-      "strategy",
-      "improvement",
-      "decision_making"
+      "decision_making",
+      "growth"
     ]
   },
   "01k7f54eg5kr8f6q2e236kc4d6": {
-    "order": 37,
+    "order": 55,
     "tags": [
-      "artificial_intelligence",
       "software_engineering",
-      "code_generation",
-      "ai_agents",
-      "development_workflow"
+      "AI",
+      "development",
+      "workflow",
+      "tools"
     ]
   },
   "01k7h45yh2z9kwre69wx4pn0h8": {
-    "order": 42,
+    "order": 19,
     "tags": [
-      "business_strategy",
-      "palantir",
-      "customer_alignment",
-      "organizational_design",
-      "consulting"
+      "business",
+      "strategy",
+      "technology",
+      "organization",
+      "innovation"
     ]
   },
   "01k7h464drvvxkbd4yrdjkwmmv": {
-    "order": 43,
+    "order": 56,
     "tags": [
-      "data_integration",
-      "digital_transformation",
-      "enterprise_data",
-      "data_management",
-      "ai_adoption"
+      "software_engineering",
+      "AI",
+      "data",
+      "integration",
+      "challenges"
     ]
   },
   "01k7jhyshb3yh49c98rs47sv78": {
-    "order": 40,
+    "order": 16,
     "tags": [
+      "business",
       "venture_capital",
-      "startup_investing",
+      "investment",
       "entrepreneurship",
-      "thrive_capital",
-      "investment_strategy"
+      "strategy"
     ]
   },
   "01k7jjdybfs76qndt357am4n6e": {
-    "order": 71,
+    "order": 58,
     "tags": [
-      "dynamic_programming",
+      "programming",
       "algorithms",
       "optimization",
-      "haskell",
-      "rust"
+      "problem_solving",
+      "techniques"
     ]
   },
   "01k7vfh217js8xtyrw23yfjq4g": {
-    "order": 60,
-    "tags": [
-      "computer_science",
-      "programming_languages",
-      "functional_programming",
-      "algebraic_data_types",
-      "type_theory"
-    ]
-  },
-  "01k7vfh5rthxt5r6awxag07sga": {
     "order": 61,
     "tags": [
       "programming",
-      "type_theory",
-      "algebraic_types",
-      "error_handling",
-      "functional_programming"
+      "type_systems",
+      "history",
+      "language_design",
+      "theory"
+    ]
+  },
+  "01k7vfh5rthxt5r6awxag07sga": {
+    "order": 62,
+    "tags": [
+      "programming",
+      "type_systems",
+      "theory",
+      "fundamentals",
+      "design"
     ]
   },
   "01k81d4yfkm1jnqqqfkj63c1qs": {
-    "order": 65,
-    "tags": [
-      "rust",
-      "programming",
-      "data_structures",
-      "graphs",
-      "memory_management"
-    ]
-  },
-  "01k81d5805be8p10y5jfhwkhx0": {
     "order": 66,
     "tags": [
       "rust",
       "programming",
       "data_structures",
-      "graphs",
-      "memory_management"
+      "memory",
+      "ownership"
     ]
   },
-  "01k81d5b9rbkwk3ztznbw1nrnr": {
+  "01k81d5805be8p10y5jfhwkhx0": {
     "order": 67,
     "tags": [
       "rust",
-      "computation_graphs",
       "programming",
-      "software_architecture",
-      "mathematical_computing"
+      "data_structures",
+      "graphs",
+      "architecture"
     ]
   },
-  "01k88v9t0wzrz4f6c78nvkmz8t": {
-    "order": 70,
-    "tags": [
-      "dynamic_programming",
-      "algorithms",
-      "optimization",
-      "recursion",
-      "memoization"
-    ]
-  },
-  "01k88yvygrenzpysy3mjvd7qf9": {
-    "order": 12,
-    "tags": [
-      "education_research",
-      "tutoring_effectiveness",
-      "learning_outcomes",
-      "pedagogical_methods",
-      "evidence_based_education"
-    ]
-  },
-  "01k8hr8h4vevbdqnpgrphy3ta3": {
-    "order": 50,
-    "tags": [
-      "engineering_management",
-      "leadership",
-      "feedback",
-      "career_development",
-      "team_management"
-    ]
-  },
-  "01k8nxbnxpm3ehresv69xwpe90": {
-    "order": 48,
-    "tags": [
-      "health",
-      "longevity",
-      "nutrition",
-      "wellness",
-      "toxins"
-    ]
-  },
-  "01k8zgj4cbgxhn0m39wj9m4w3g": {
-    "order": 47,
-    "tags": [
-      "self_help",
-      "philosophy",
-      "stoicism",
-      "personal_development",
-      "acceptance"
-    ]
-  },
-  "01k93cdtwr1w9r40fq02kk1nf7": {
-    "order": 30,
-    "tags": [
-      "artificial_intelligence",
-      "business_deals",
-      "vendor_financing",
-      "technology_economics",
-      "risk_management"
-    ]
-  },
-  "01k99hvgwsseyxm8yjvx6tg0b3": {
-    "order": 31,
-    "tags": [
-      "artificial_intelligence",
-      "economics",
-      "automation",
-      "gdp_growth",
-      "technological_disruption"
-    ]
-  },
-  "01k9absj69zfwfard4kayg562p": {
-    "order": 45,
-    "tags": [
-      "book_recommendations",
-      "leadership",
-      "entrepreneurship",
-      "business_wisdom",
-      "professional_growth"
-    ]
-  },
-  "01k9b0mqm210tabsq5b7qr7fse": {
-    "order": 54,
-    "tags": [
-      "user_psychology",
-      "conversion_optimization",
-      "ui_design",
-      "user_experience",
-      "behavioral_psychology"
-    ]
-  },
-  "01k9b0n7m0z9y86zt49bv44fr7": {
-    "order": 59,
-    "tags": [
-      "programming",
-      "software_design",
-      "type_systems",
-      "object_oriented_programming",
-      "abstract_data_types"
-    ]
-  },
-  "01k9dycmjq1vjfns37vbqf3e9t": {
-    "order": 51,
-    "tags": [
-      "hiring",
-      "recruitment",
-      "engineering",
-      "talent_acquisition",
-      "transparency"
-    ]
-  },
-  "01k9fhwzsdqbm56qxpr19htbny": {
-    "order": 22,
-    "tags": [
-      "clean_energy",
-      "china",
-      "renewable_energy",
-      "global_markets",
-      "energy_transition"
-    ]
-  },
-  "01k9fydx0pb1j6f91hjb89pe2n": {
-    "order": 73,
-    "tags": [
-      "database_performance",
-      "mongodb",
-      "lock_free_algorithms",
-      "concurrency",
-      "b_tree"
-    ]
-  },
-  "01k9m6j4cz7ghfb43j88x6ry1s": {
-    "order": 55,
-    "tags": [
-      "software_engineering",
-      "algorithms",
-      "technical_interviews",
-      "hiring",
-      "workplace_culture"
-    ]
-  },
-  "01k9m6ja73v676np9x1yf6twv6": {
-    "order": 56,
-    "tags": [
-      "career_transition",
-      "programming",
-      "skill_development",
-      "professional_development",
-      "learning_journey"
-    ]
-  },
-  "01k9md327xf3s138wsjgzvd1nm": {
-    "order": 52,
-    "tags": [
-      "productivity",
-      "time_management",
-      "work_schedules",
-      "deep_work",
-      "meetings"
-    ]
-  },
-  "01k9md3encpvc2k845yc3tmjz5": {
+  "01k81d5b9rbkwk3ztznbw1nrnr": {
     "order": 68,
     "tags": [
       "rust",
-      "async_programming",
-      "tokio",
+      "programming",
+      "graphs",
+      "design",
+      "implementation"
+    ]
+  },
+  "01k88v9t0wzrz4f6c78nvkmz8t": {
+    "order": 59,
+    "tags": [
+      "programming",
+      "algorithms",
+      "optimization",
+      "recursion",
+      "fundamentals"
+    ]
+  },
+  "01k88yvygrenzpysy3mjvd7qf9": {
+    "order": 38,
+    "tags": [
+      "education",
+      "research",
+      "learning",
+      "pedagogy",
+      "analysis"
+    ]
+  },
+  "01k8hr8h4vevbdqnpgrphy3ta3": {
+    "order": 44,
+    "tags": [
+      "career_development",
+      "management",
+      "leadership",
+      "communication",
+      "mentoring"
+    ]
+  },
+  "01k8nxbnxpm3ehresv69xwpe90": {
+    "order": 46,
+    "tags": [
+      "personal_development",
+      "health",
+      "wellness",
+      "lifestyle",
+      "optimization"
+    ]
+  },
+  "01k8zgj4cbgxhn0m39wj9m4w3g": {
+    "order": 29,
+    "tags": [
+      "philosophy",
+      "self_help",
+      "wisdom",
+      "psychology",
+      "wellbeing"
+    ]
+  },
+  "01k93cdtwr1w9r40fq02kk1nf7": {
+    "order": 31,
+    "tags": [
+      "AI",
+      "business",
+      "finance",
+      "markets",
+      "analysis"
+    ]
+  },
+  "01k99hvgwsseyxm8yjvx6tg0b3": {
+    "order": 32,
+    "tags": [
+      "AI",
+      "economics",
+      "automation",
+      "labor",
+      "growth"
+    ]
+  },
+  "01k9absj69zfwfard4kayg562p": {
+    "order": 47,
+    "tags": [
+      "personal_development",
+      "books",
+      "learning",
+      "leadership",
+      "wisdom"
+    ]
+  },
+  "01k9b0mqm210tabsq5b7qr7fse": {
+    "order": 52,
+    "tags": [
+      "strategy",
+      "product_design",
+      "psychology",
+      "optimization",
+      "user_experience"
+    ]
+  },
+  "01k9b0n7m0z9y86zt49bv44fr7": {
+    "order": 63,
+    "tags": [
+      "programming",
+      "type_systems",
+      "design",
+      "architecture",
+      "patterns"
+    ]
+  },
+  "01k9dycmjq1vjfns37vbqf3e9t": {
+    "order": 43,
+    "tags": [
+      "career_development",
+      "hiring",
+      "engineering",
+      "recruitment",
+      "strategy"
+    ]
+  },
+  "01k9fhwzsdqbm56qxpr19htbny": {
+    "order": 8,
+    "tags": [
+      "geopolitics",
+      "energy",
+      "climate",
+      "trade",
+      "economics"
+    ]
+  },
+  "01k9fydx0pb1j6f91hjb89pe2n": {
+    "order": 72,
+    "tags": [
+      "data_structures",
+      "databases",
+      "algorithms",
       "concurrency",
-      "software_development"
+      "performance"
+    ]
+  },
+  "01k9m6j4cz7ghfb43j88x6ry1s": {
+    "order": 78,
+    "tags": [
+      "development_tools",
+      "hiring",
+      "interviews",
+      "culture",
+      "criticism"
+    ]
+  },
+  "01k9m6ja73v676np9x1yf6twv6": {
+    "order": 41,
+    "tags": [
+      "career_development",
+      "learning",
+      "engineering",
+      "transition",
+      "growth"
+    ]
+  },
+  "01k9md327xf3s138wsjgzvd1nm": {
+    "order": 45,
+    "tags": [
+      "career_development",
+      "productivity",
+      "time_management",
+      "work_culture",
+      "efficiency"
+    ]
+  },
+  "01k9md3encpvc2k845yc3tmjz5": {
+    "order": 69,
+    "tags": [
+      "rust",
+      "programming",
+      "async",
+      "concurrency",
+      "runtime"
     ]
   },
   "01k9zsg3y69nmp01fgg6e3320c": {
-    "order": 38,
+    "order": 14,
     "tags": [
-      "nuclear_energy",
-      "personal_development",
+      "energy",
+      "technology",
       "ambition",
-      "energy_abundance",
-      "meaningful_work"
+      "future",
+      "purpose"
     ]
   },
   "01ka3mnrd88p414jgfyaq7t5pv": {
     "order": 76,
     "tags": [
-      "dns",
-      "domain_names",
-      "network_infrastructure",
-      "dns_records",
-      "technical_documentation"
+      "systems_design",
+      "infrastructure",
+      "networking",
+      "protocols",
+      "documentation"
     ]
   },
   "01ka423qhpxetjkpqdrqwbebaq": {
-    "order": 46,
+    "order": 48,
     "tags": [
-      "self_help",
       "personal_development",
-      "life_advice",
+      "advice",
       "fulfillment",
-      "growth_mindset"
+      "growth",
+      "philosophy"
     ]
   },
   "01kagt2r74np8fv42c48am6g2q": {
-    "order": 49,
+    "order": 42,
     "tags": [
       "career_development",
-      "skill_building",
-      "professional_growth",
-      "deliberate_practice",
-      "sustainable_career"
+      "skills",
+      "strategy",
+      "growth",
+      "practice"
     ]
   },
   "01kap6av2g0z0j908pd1qabwvp": {
-    "order": 10,
+    "order": 26,
     "tags": [
+      "medicine",
       "genomics",
-      "embryo_screening",
-      "biotechnology",
-      "scientific_integrity",
-      "consumer_protection"
+      "ethics",
+      "analysis",
+      "criticism"
     ]
   },
   "01kaperjxdyr7kgxd7a391wwt8": {
-    "order": 11,
+    "order": 30,
     "tags": [
-      "scientific_discovery",
+      "philosophy",
+      "science",
       "methodology",
-      "artificial_intelligence",
-      "knowledge_creation",
-      "epistemology"
+      "knowledge",
+      "discovery"
     ]
   },
   "01kappxy9paxg48egatjf62n4j": {
-    "order": 69,
+    "order": 70,
     "tags": [
       "rust",
+      "programming",
       "testing",
-      "async_runtime",
-      "tokio",
+      "async",
       "concurrency"
     ]
   },
   "01kax9rrcdw83072fxbckmjnf1": {
-    "order": 9,
+    "order": 27,
     "tags": [
-      "artificial_intelligence",
-      "radiology",
-      "healthcare_technology",
+      "medicine",
+      "AI",
+      "healthcare",
       "automation",
-      "workforce_transformation"
+      "transformation"
     ]
   },
   "01kax9se09619tbsw65y03hhzh": {
-    "order": 75,
+    "order": 73,
     "tags": [
-      "durable_execution",
-      "determinism",
-      "fault_tolerance",
+      "systems_design",
       "distributed_systems",
-      "software_architecture"
+      "fault_tolerance",
+      "architecture",
+      "reliability"
     ]
   },
   "01kb3m2xd3t2vda3yqjs2e1stj": {
     "order": 74,
     "tags": [
-      "database_consistency",
-      "strong_consistency",
-      "distributed_systems",
-      "database_design",
-      "data_reliability"
+      "databases",
+      "systems_design",
+      "consistency",
+      "architecture",
+      "reliability"
     ]
   },
   "01kb49j14w99ghhy405spv48yn": {
-    "order": 44,
+    "order": 17,
     "tags": [
+      "business",
       "biography",
-      "charlie_munger",
-      "investing",
-      "business_leadership",
+      "investment",
+      "leadership",
       "legacy"
     ]
   },
   "01kb6950hhv4yh1z1egtntj0ys": {
-    "order": 77,
+    "order": 50,
     "tags": [
-      "writing",
+      "personal_development",
       "communication",
+      "writing",
       "clarity",
-      "accountability",
-      "language"
+      "rhetoric"
     ]
   },
   "01kbgwgd8jr4wkgr4g78f9ngmt": {
-    "order": 62,
+    "order": 64,
     "tags": [
-      "dependent_types",
+      "programming",
       "type_systems",
-      "type_checking",
-      "compiler_design",
-      "formal_methods"
+      "theory",
+      "implementation",
+      "compilers"
     ]
   },
   "01kbgwgm2a6q5vsgrmdejmcvs3": {
-    "order": 63,
+    "order": 65,
     "tags": [
-      "dependent_types",
-      "type_checking",
+      "programming",
       "type_systems",
-      "programming_languages",
-      "formal_methods"
+      "theory",
+      "implementation",
+      "checking"
     ]
   },
   "01kcar3a4cj8xwzfwycy0b57aj": {
-    "order": 78,
+    "order": 49,
     "tags": [
-      "social_media",
-      "reading_habits",
-      "digital_technology",
-      "internet_culture",
-      "book_discovery"
+      "personal_development",
+      "culture",
+      "media",
+      "reading",
+      "technology"
     ]
   },
   "01kcc85wxg8zcyj4arjjhb0qp3": {
-    "order": 36,
+    "order": 40,
     "tags": [
-      "artificial_intelligence",
-      "software_development",
-      "junior_developers",
-      "professional_development",
-      "ai_tools"
+      "education",
+      "AI",
+      "software_engineering",
+      "training",
+      "development"
     ]
   },
   "01kckd3k69rdqz2w3pedvqp4cy": {
-    "order": 25,
+    "order": 79,
     "tags": [
-      "techno_nationalism",
-      "american_history",
-      "industrial_development",
-      "political_economy",
-      "state_power"
+      "history",
+      "politics",
+      "economics",
+      "nationalism",
+      "development"
     ]
   },
   "01kcqwwdadj3w6g3jmrcmhd43x": {
-    "order": 33,
+    "order": 34,
     "tags": [
-      "artificial_intelligence",
-      "data_centers",
-      "water_consumption",
-      "environmental_impact",
-      "fact_checking"
+      "AI",
+      "environment",
+      "infrastructure",
+      "analysis",
+      "criticism"
     ]
   },
   "01kcqy89v0c6wb7gbrcs5jscrq": {
-    "order": 34,
+    "order": 35,
     "tags": [
-      "artificial_intelligence",
-      "data_centers",
-      "water_consumption",
-      "environmental_impact",
+      "AI",
+      "environment",
+      "infrastructure",
+      "analysis",
       "fact_checking"
     ]
   },
   "01kcr0fezd5acmg3pjgyppryw8": {
-    "order": 27,
+    "order": 36,
     "tags": [
+      "society",
       "employment",
-      "diversity",
-      "career_opportunities",
-      "generational_issues",
-      "social_change"
+      "demographics",
+      "policy",
+      "change"
     ]
   },
   "01kctde4a0ayv6vf6vk749wrmm": {
-    "order": 72,
+    "order": 71,
     "tags": [
-      "ring_buffers",
       "data_structures",
-      "algorithm_optimization",
-      "memory_management",
-      "software_engineering"
+      "algorithms",
+      "optimization",
+      "implementation",
+      "efficiency"
     ]
   },
   "01kcvb6pvb2g5bwpd19ek3htrp": {
-    "order": 32,
+    "order": 33,
     "tags": [
-      "artificial_intelligence",
-      "financial_bubbles",
-      "tech_investment",
-      "infrastructure",
-      "speculation"
+      "AI",
+      "finance",
+      "investment",
+      "risk",
+      "markets"
+    ]
+  },
+  "01kd3v0pf3r3361bm6x4hva197": {
+    "order": 15,
+    "tags": [
+      "history",
+      "science",
+      "consequences",
+      "environment",
+      "innovation"
+    ]
+  },
+  "01kd4qbtnqbrv9reefp862sfxf": {
+    "order": 77,
+    "tags": [
+      "development_tools",
+      "version_control",
+      "workflow",
+      "productivity",
+      "optimization"
+    ]
+  },
+  "01kd4qdjpc20ewyd47tv9mv0k6": {
+    "order": 75,
+    "tags": [
+      "databases",
+      "systems_design",
+      "architecture",
+      "concurrency",
+      "scalability"
     ]
   }
 }

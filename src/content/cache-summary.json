@@ -2713,5 +2713,69 @@
       "overinvestment",
       "uncertainty"
     ]
+  },
+  "01kd3v0pf3r3361bm6x4hva197": {
+    "summary": "A brilliant inventor whose major innovations—leaded gasoline and CFCs—caused devastating environmental and health damage, illustrating how well-intentioned inventions can have unforeseen harmful consequences.",
+    "tags": [
+      "history of science",
+      "innovation",
+      "environmental damage",
+      "public health",
+      "unintended consequences",
+      "industrial chemistry",
+      "chemical engineering",
+      "ozone depletion",
+      "air pollution",
+      "toxicology",
+      "scientific ethics",
+      "historical biography",
+      "technology history",
+      "industrial impact",
+      "human health",
+      "atmospheric science"
+    ]
+  },
+  "01kd4qbtnqbrv9reefp862sfxf": {
+    "summary": "Guide to advanced jj version control techniques including templates, revsets, and workflow optimization through absorb, parallelize, and fix commands with custom aliases.",
+    "tags": [
+      "version control",
+      "jj",
+      "software development",
+      "git alternatives",
+      "commit management",
+      "workflow optimization",
+      "command-line tools",
+      "developer productivity",
+      "bookmarks",
+      "templates",
+      "revsets",
+      "technical guides",
+      "programming tools",
+      "code management",
+      "developer tips"
+    ]
+  },
+  "01kd4qdjpc20ewyd47tv9mv0k6": {
+    "summary": "Argues that databases should use single-threaded shards instead of multi-threaded ones to avoid locking complexity, race conditions, and transaction issues while improving horizontal scalability and correctness.",
+    "tags": [
+      "database architecture",
+      "threading models",
+      "system design",
+      "sharding",
+      "horizontal scaling",
+      "concurrency control",
+      "database optimization",
+      "performance engineering",
+      "software architecture",
+      "transaction management",
+      "locking mechanisms",
+      "distributed systems",
+      "scalability",
+      "database performance",
+      "multi-threaded systems",
+      "single-threaded design",
+      "technical blog",
+      "database design patterns"
+    ]
   }
 }
