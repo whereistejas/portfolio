@@ -4,7 +4,8 @@ import PostHog from "../components/posthog.astro";
 
 import "../styles/global.css";
 
-const { flex_start = true, title, latex = false } = Astro.props;
+const { flex_start = true, title, latex = false, use_client_router = true } =
+	Astro.props;
 ---
 
 <html lang="en">
@@ -48,7 +49,7 @@ const { flex_start = true, title, latex = false } = Astro.props;
 
 	<title>{title === "" ? "Tejas Sanap" : `${title} | Tejas Sanap`}</title>
 
-	<ClientRouter />
+	{use_client_router && <ClientRouter />}
 
 	<body style={flex_start ? "justify-content: flex-start;" : ""}>
 		<header>

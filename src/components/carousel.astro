@@ -16,9 +16,13 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 		const path = img.fsPath;
 
 		const exif = await ExifReader.load(path, { async: true });
-		let caption = exif["title"].description;
-		let image = (await getImage({ src: img, format: "webp" })).options
-			.src as ImageMetadata;
+		const caption = exif["title"].description;
+		const image = (await getImage({
+			src: img,
+			format: "webp",
+			quality: 60,
+			placeholder: "blurhash",
+		})).options.src as ImageMetadata;
 
 		return {
 			caption,
@@ -26,6 +30,8 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 		};
 	})
 );
+
+const firstSlide = slides[0];
 ---
 
 <div>
@@ -75,6 +81,17 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 			</div>
 		</div>
 	</div>
+
+	{
+		firstSlide && (
+			<link
+				rel="preload"
+				as="image"
+				href={firstSlide.image.src}
+				fetchpriority="high"
+			/>
+		)
+	}
 </div>
 
 <script>
