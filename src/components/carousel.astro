@@ -17,12 +17,14 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 
 		const exif = await ExifReader.load(path, { async: true });
 		const caption = exif["title"].description;
-		const image = (await getImage({
-			src: img,
-			format: "webp",
-			quality: 60,
-			placeholder: "blurhash",
-		})).options.src as ImageMetadata;
+		const image = (
+			await getImage({
+				src: img,
+				format: "webp",
+				quality: 60,
+				placeholder: "blurhash",
+			})
+		).options.src as ImageMetadata;
 
 		return {
 			caption,

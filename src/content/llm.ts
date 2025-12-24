@@ -168,8 +168,9 @@ export async function tagAndGroupDocuments(
 	summaries: SummaryCache
 ): Promise<GroupCache> {
 	return retry(async () => {
-		const indexedSummaries: Array<[number, [string, { summary: string; tags: string[] }]]> =
-			Object.entries(summaries).map(([id, data], idx) => [idx, [id, data]]);
+		const indexedSummaries: Array<
+			[number, [string, { summary: string; tags: string[] }]]
+		> = Object.entries(summaries).map(([id, data], idx) => [idx, [id, data]]);
 		const inputJson = JSON.stringify(indexedSummaries, null, 2);
 
 		const prompt = REORDERING_PROMPT.replace("{{summaries}}", inputJson);
@@ -196,12 +197,12 @@ export async function tagAndGroupDocuments(
 			typeof response.content === "string"
 				? response.content
 				: response.content
-					.map((block) =>
-						typeof block === "object" && block && "text" in block
-							? (block as TextBlock).text
-							: ""
-					)
-					.join("");
+						.map((block) =>
+							typeof block === "object" && block && "text" in block
+								? (block as TextBlock).text
+								: ""
+						)
+						.join("");
 
 		// Extract the JSON array payload safely even if extra text is present
 		const extractJsonArray = (text: string): unknown => {
@@ -214,7 +215,9 @@ export async function tagAndGroupDocuments(
 			return JSON.parse(slice);
 		};
 
-		const parsed: ReorderResponse = ReorderResponseSchema.parse(extractJsonArray(responseContent));
+		const parsed: ReorderResponse = ReorderResponseSchema.parse(
+			extractJsonArray(responseContent)
+		);
 
 		// Map ordered indices back to document IDs, preserving GroupCache shape
 		const groups: GroupCache = {};
@@ -274,8 +277,9 @@ export async function processDocuments(
 	await writeJsonCache(SUMMARY_CACHE_PATH, summaryCache);
 
 	var summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
-	var missingDocuments = documents
-		.filter((document) => !Object.keys(summaryCache).includes(document.id))
+	var missingDocuments = documents.filter(
+		(document) => !Object.keys(summaryCache).includes(document.id)
+	);
 	var titlesOfMissingDocuments = missingDocuments.map(
 		(document) => document.title
 	);
@@ -288,11 +292,10 @@ export async function processDocuments(
 	console.log(`[LLM][Group cache] len: ${Object.keys(groupCache).length}`);
 
 	// Check if all the ids in `documentIds` are already present in `groupCache`.
-	missingDocuments = documents
-		.filter((document) => !Object.keys(groupCache).includes(document.id))
-	titlesOfMissingDocuments = missingDocuments.map(
-		(document) => document.title
+	missingDocuments = documents.filter(
+		(document) => !Object.keys(groupCache).includes(document.id)
 	);
+	titlesOfMissingDocuments = missingDocuments.map((document) => document.title);
 
 	if (missingDocuments.length != 0) {
 		console.warn(`[LLM][Group cache] Missing: `, titlesOfMissingDocuments);
@@ -312,7 +315,9 @@ export async function processDocuments(
 			);
 
 			// Validate that LLM returned all missing items before proceeding
-			missingDocuments = missingDocuments.filter((document) => !groupedDocuments[document.id]);
+			missingDocuments = missingDocuments.filter(
+				(document) => !groupedDocuments[document.id]
+			);
 			titlesOfMissingDocuments = missingDocuments.map(
 				(document) => document.title
 			);
@@ -332,9 +337,7 @@ export async function processDocuments(
 	missingDocuments = documents.filter(
 		(document) => !Object.keys(groupCache).includes(document.id)
 	);
-	titlesOfMissingDocuments = missingDocuments.map(
-		(document) => document.title
-	);
+	titlesOfMissingDocuments = missingDocuments.map((document) => document.title);
 	assert(
 		missingDocuments.length === 0,
 		`[LLM][Group cache]Missing ${missingDocuments.length} after update: ${titlesOfMissingDocuments}`
