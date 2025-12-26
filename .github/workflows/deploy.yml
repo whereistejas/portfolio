@@ -28,7 +28,7 @@ jobs:
           bun-version: latest
       
       - name: Install dependencies
-        run: bun install
+        run: bun install --omit dev
       
       - name: Build queue
         run: bun run build:queue

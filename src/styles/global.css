@@ -49,10 +49,6 @@
 		@apply text-lg text-pretty;
 	}
 
-	div.blog_main {
-		@apply flex flex-col gap-1.5 md:gap-2;
-	}
-
 	div.info_main {
 		@apply flex flex-col gap-1.5 first:pt-1.5 last:pb-1.5 md:gap-2 md:first:pt-2;
 	}
@@ -70,7 +66,7 @@
 					@apply w-full md:flex md:flex-row md:gap-0.5;
 
 					a.title {
-						@apply font-medium uppercase md:overflow-hidden md:text-ellipsis md:whitespace-nowrap;
+						@apply uppercase md:overflow-hidden md:text-ellipsis md:whitespace-nowrap;
 					}
 
 					a.readwise {
@@ -93,7 +89,7 @@
 					}
 
 					label.tags {
-						@apply flex flex-wrap gap-0.5 gap-y-[0.125rem] pt-0.5 text-sm uppercase;
+						@apply flex flex-wrap gap-0.5 gap-y-[0.125rem] pt-0.5 text-xs uppercase;
 
 						span.tag::before {
 							content: "#";

@@ -15,7 +15,7 @@ const footers = [
 ];
 ---
 
-<Page flex_start={false} title="">
+<Page title={undefined}>
 	<Fragment slot="header">
 		{
 			headers.map((el) => (
@@ -25,7 +25,7 @@ const footers = [
 	</Fragment>
 
 	<Fragment slot="main">
-		<Carousel transition:persist key="main-carousel" />
+		<Carousel key="main-carousel" />
 	</Fragment>
 
 	<Fragment slot="footer">

@@ -3,7 +3,11 @@ import PostHog from "../components/posthog.astro";
 
 import "../styles/global.css";
 
-const { flex_start = true, title, latex = false } = Astro.props;
+interface Props {
+	title: string | undefined;
+}
+
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -46,20 +50,11 @@ const { flex_start = true, title, latex = false } = Astro.props;
 	<meta name="apple-mobile-web-app-title" content="Tejas Sanap" />
 	<link rel="manifest" href="/site.webmanifest" />
 
-	{
-		latex && (
-			<link
-				rel="stylesheet"
-				href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
-				integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"
-				crossorigin="anonymous"
-			/>
-		)
-	}
+	<title>
+		{title === undefined ? "Tejas Sanap" : `${title} | Tejas Sanap`}
+	</title>
 
-	<title>{title === "" ? "Tejas Sanap" : `${title} | Tejas Sanap`}</title>
-
-	<body style={flex_start ? "justify-content: flex-start;" : ""}>
+	<body>
 		<header>
 			<slot name="header" />
 		</header>

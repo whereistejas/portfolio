@@ -31,7 +31,7 @@ const posts: Post[] = Object.values(
 		}
 	</Fragment>
 	<Fragment slot="main">
-		<div class="blog_main">
+		<div class="archive_main" style="padding-top: 0;">
 			{
 				posts
 					.sort((a, b) => {
@@ -51,9 +51,15 @@ const posts: Post[] = Object.values(
 									.replace(/\//g, ".")}
 							</Fragment>
 							<Fragment slot="value">
-								<p class="font-medium uppercase">
-									<a href={post.url}>{post.frontmatter.title}</a>
-								</p>
+								<div class="items">
+									<div class="item">
+										<div class="links">
+											<a href={post.url} class="title">
+												{post.frontmatter.title}
+											</a>
+										</div>
+									</div>
+								</div>
 							</Fragment>
 						</Row>
 					))
