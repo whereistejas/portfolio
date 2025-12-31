@@ -2816,5 +2816,42 @@
       "caution",
       "strategic thinking"
     ]
+  },
+  "01kdr3r6rd183ec5cphp7gw58s": {
+    "summary": "Capital replacing labor through automation concentrates wealth among the already rich. Without global capital taxation and inheritance controls, inequality could grow indefinitely, reversing historical wage-raising effects.",
+    "tags": [
+      "economics",
+      "wealth inequality",
+      "capital",
+      "automation",
+      "labor",
+      "artificial intelligence",
+      "taxation",
+      "inheritance",
+      "income distribution",
+      "economic policy",
+      "future trends",
+      "wealth concentration",
+      "economic systems",
+      "globalization",
+      "technological disruption"
+    ]
+  },
+  "01kdrdseyzm8cp2vj4mswbp0sn": {
+    "summary": "Argues that memory safety is a property of implementation rather than language or program, and that a memory-safe implementation cannot introduce behaviors beyond source semantics except crashing.",
+    "tags": [
+      "memory safety",
+      "programming languages",
+      "implementation semantics",
+      "computer science",
+      "software engineering",
+      "language design",
+      "systems programming",
+      "formal semantics",
+      "type safety",
+      "runtime behavior",
+      "program correctness",
+      "definitions and terminology"
+    ]
   }
 }
