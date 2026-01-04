@@ -1,111 +1,125 @@
 [
   {
+    "id": "01ke3s3adw4p0wmavzgnkkpj8w",
+    "order": 16,
+    "summary": "Analysis of risks from deliberately released engineered viruses and their potential to collapse societies, with recommendations for preventing such pandemics through research delays, early detection, and rapid worker protection.",
+    "tags": [
+      "biosecurity",
+      "pandemic_risk",
+      "public_health",
+      "bioterrorism",
+      "policy"
+    ],
+    "title": "How a deliberate pandemic could crush societies and what to do about it",
+    "url": "https://thebulletin.org/2022/11/how-a-deliberate-pandemic-could-crush-societies-and-what-to-do-about-it/"
+  },
+  {
     "id": "01ke06dspmcn9n6mpcq0d9fmfd",
-    "order": 28,
+    "order": 24,
     "summary": "Reflective analysis on how computational growth has enabled AI progress, cautioning against simplistic extrapolations while acknowledging potential for major breakthroughs, advocating for pragmatic consideration of societal implications.",
     "tags": [
       "artificial_intelligence",
-      "technology",
+      "scaling_laws",
+      "forecasting",
       "policy",
-      "research",
-      "strategy"
+      "societal_impact"
     ],
     "title": "2025 letter",
     "url": "https://zhengdongwang.com/2025/12/30/2025-letter.html"
   },
   {
     "id": "01kdxctzrzd2aqe8se54t51eqj",
-    "order": 6,
+    "order": 25,
     "summary": "Analysis of Silicon Valley and Chinese state as dominant technology forces, emphasizing China's industrial capabilities and AI advancement while warning the US must adopt similar strategies to remain competitive.",
     "tags": [
       "geopolitics",
-      "technology",
       "artificial_intelligence",
-      "policy",
-      "strategy"
+      "us_china_competition",
+      "industrial_policy",
+      "innovation"
     ],
     "title": "2025 letter",
     "url": "https://danwang.co/2025-letter/"
   },
   {
     "id": "01kdrdseyzm8cp2vj4mswbp0sn",
-    "order": 44,
+    "order": 36,
     "summary": "Argues that memory safety is a property of implementation rather than language or program, and that a memory-safe implementation cannot introduce behaviors beyond source semantics except crashing.",
     "tags": [
-      "computer_science",
       "programming",
-      "systems",
-      "safety",
-      "languages"
+      "memory_safety",
+      "language_design",
+      "semantics",
+      "systems_programming"
     ],
     "title": "Memory Safety Is …",
     "url": "https://matklad.github.io/2025/12/30/memory-safety-is.html"
   },
   {
     "id": "01kdr3r6rd183ec5cphp7gw58s",
-    "order": 5,
+    "order": 4,
     "summary": "Capital replacing labor through automation concentrates wealth among the already rich. Without global capital taxation and inheritance controls, inequality could grow indefinitely, reversing historical wage-raising effects.",
     "tags": [
       "economics",
-      "inequality",
+      "wealth_inequality",
       "automation",
-      "policy",
-      "workforce"
+      "taxation",
+      "capital_labor"
     ],
     "title": "Capital in the 22nd Century",
     "url": "https://substack.com/inbox/post/182789127?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01kdf16nfa5xqk708sz4csg4zp",
-    "order": 66,
+    "order": 20,
     "summary": "Studying history reveals how events often produce unintended consequences, fostering humility and cautious problem-solving. Learning from past mistakes helps navigate present challenges more effectively.",
     "tags": [
       "education",
       "history",
-      "learning",
-      "wisdom",
-      "strategy"
+      "critical_thinking",
+      "decision_making",
+      "wisdom"
     ],
     "title": "Does It Help to Know History? | The New Yorker",
     "url": "https://www.newyorker.com/news/daily-comment/help-know-history"
   },
   {
     "id": "01kdcft3cq5k18f1rd60k6a505",
-    "order": 62,
+    "order": 64,
     "summary": "An entrepreneur leaves her routine job to open a small bookshop in a struggling market, discovering it to be both joyful and exhausting while building community connections and creating a meaningful gathering place.",
     "tags": [
       "entrepreneurship",
-      "business",
-      "community",
+      "small_business",
+      "community_building",
       "retail",
-      "personal_development"
+      "lifestyle"
     ],
     "title": "I opened a bookshop. It was the best, worst thing I’ve ever done",
     "url": "https://www.ft.com/content/cc77c2c9-3415-4b96-af76-65f04d761a85?shareType=nongift"
   },
   {
     "id": "01kd4qdjpc20ewyd47tv9mv0k6",
-    "order": 43,
+    "order": 45,
     "summary": "Argues that databases should use single-threaded shards instead of multi-threaded ones to avoid locking complexity, race conditions, and transaction issues while improving horizontal scalability and correctness.",
     "tags": [
+      "data_management",
       "databases",
-      "computer_science",
+      "threading_models",
       "architecture",
-      "systems",
-      "performance"
+      "scalability"
     ],
     "title": "More databases should be single-threaded",
     "url": "https://blog.konsti.xyz/more-databases-should-be-single-threaded/"
   },
   {
     "id": "01kd4qbtnqbrv9reefp862sfxf",
-    "order": 57,
+    "order": 42,
     "summary": "Guide to advanced jj version control techniques including templates, revsets, and workflow optimization through absorb, parallelize, and fix commands with custom aliases.",
     "tags": [
       "software_engineering",
-      "tools",
-      "development",
-      "programming",
+      "version_control",
+      "developer_tools",
+      "workflow_optimization",
       "productivity"
     ],
     "title": "stupid jj tricks",
@@ -113,168 +127,168 @@
   },
   {
     "id": "01kcvb6pvb2g5bwpd19ek3htrp",
-    "order": 27,
+    "order": 23,
     "summary": "Investors debate whether AI enthusiasm reflects genuine opportunity or financial bubble, as massive debt funding AI infrastructure risks overbuilding amid uncertain demand and unclear profit distribution.",
     "tags": [
       "artificial_intelligence",
-      "finance",
-      "investment",
-      "technology",
-      "economics"
+      "finance_investment",
+      "market_bubbles",
+      "speculation",
+      "risk_management"
     ],
     "title": "Is It a Bubble?",
     "url": "https://www.oaktreecapital.com/insights/memo/is-it-a-bubble"
   },
   {
     "id": "01kctde4a0ayv6vf6vk749wrmm",
-    "order": 42,
+    "order": 41,
     "summary": "A deep dive into ring buffer implementations revealing a more efficient approach using unmasked wrapping indices and masking only at access points, eliminating wasted capacity while maintaining simplicity.",
     "tags": [
-      "computer_science",
-      "algorithms",
-      "optimization",
+      "software_engineering",
       "data_structures",
-      "performance"
+      "ring_buffers",
+      "performance_optimization",
+      "algorithms"
     ],
     "title": "I've been writing ring buffers wrong all these years",
     "url": "https://www.snellman.net/blog/archive/2016-12-13-ring-buffers/"
   },
   {
     "id": "01kcr0fezd5acmg3pjgyppryw8",
-    "order": 4,
+    "order": 67,
     "summary": "Younger white men face reduced access to prestigious positions as institutions prioritize diversity across media, academia, tech, and medicine, leading many to feel excluded from traditional career paths.",
     "tags": [
-      "workforce",
-      "policy",
+      "culture_society",
       "employment",
       "diversity",
-      "career"
+      "generational_issues",
+      "workforce_trends"
     ],
     "title": "The Lost Generation",
     "url": "https://www.compactmag.com/article/the-lost-generation/"
   },
   {
     "id": "01kcqy89v0c6wb7gbrcs5jscrq",
-    "order": 11,
+    "order": 72,
     "summary": "Critique of exaggerated claims about AI data center water consumption, showing actual usage is far lower than stated and mostly non-potable water, contradicting assertions about environmental harm to communities.",
     "tags": [
-      "artificial_intelligence",
-      "infrastructure",
       "environment",
-      "technology",
-      "resources"
+      "artificial_intelligence",
+      "water_consumption",
+      "critical_analysis",
+      "misinformation"
     ],
     "title": "Empire of AI is wildly misleading about AI water use",
     "url": "https://andymasley.substack.com/p/empire-of-ai-is-wildly-misleading?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01kcqwwdadj3w6g3jmrcmhd43x",
-    "order": 10,
+    "order": 71,
     "summary": "Argues that concerns about AI data centers consuming water are exaggerated, noting they use minimal freshwater and haven't damaged local supplies. Claims reports mislead by comparing industrial to household use.",
     "tags": [
-      "artificial_intelligence",
-      "infrastructure",
       "environment",
-      "technology",
-      "resources"
+      "artificial_intelligence",
+      "water_consumption",
+      "sustainability",
+      "fact_checking"
     ],
     "title": "The AI water issue is fake",
     "url": "https://andymasley.substack.com/p/the-ai-water-issue-is-fake?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01kcc85wxg8zcyj4arjjhb0qp3",
-    "order": 26,
+    "order": 56,
     "summary": "AI tools accelerate junior developer learning, reducing onboarding risk and improving hiring profitability. Success requires effective management focused on learning and AI skill development.",
     "tags": [
+      "professional_development",
       "artificial_intelligence",
-      "software_engineering",
-      "career",
-      "education",
-      "development"
+      "junior_developers",
+      "training",
+      "workforce"
     ],
     "title": "The Bet On Juniors Just Got Better",
     "url": "https://tidyfirst.substack.com/p/the-bet-on-juniors-just-got-better?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01kcar3a4cj8xwzfwycy0b57aj",
-    "order": 72,
+    "order": 63,
     "summary": "Author quit social media and completed work, but didn't read significantly more books. Internet reshapes book discovery, creating efficiency gains and filter bubbles while altering traditional shared reading experiences.",
     "tags": [
-      "culture",
-      "technology",
-      "media",
-      "reading",
-      "society"
+      "culture_society",
+      "reading_habits",
+      "internet_culture",
+      "media_consumption",
+      "technology_impact"
     ],
     "title": "If You Quit Social Media, Will You Read More Books? | The New Yorker",
     "url": "https://www.newyorker.com/news/fault-lines/if-you-quit-social-media-will-you-read-more-books?utm_source=nl&utm_brand=tny&utm_mailing=TNY_Daily_120925&utm_campaign=aud-dev&utm_medium=email&utm_term=tny_daily_digest&bxid=5bd66fd02ddf9c6194389d0a&cndid=22300418&hasha=268e3cc9cd4f93e81125ff99bc15edb0&hashb=f8df4272800edcc1fe2e8ce7e5c53aa6c2b79fe9&hashc=5906abdd2530ce567de22e52d1c561df763a24583893148a04c39e9a87bfced3&esrc=AUTO_OTHER"
   },
   {
     "id": "01kbgwgm2a6q5vsgrmdejmcvs3",
-    "order": 33,
+    "order": 30,
     "summary": "Implementation of typechecking for dependent-type calculus using normalization, normal/neutral term split, and semantic types to streamline evaluation and equality checking.",
     "tags": [
       "computer_science",
       "type_theory",
-      "programming",
-      "languages",
-      "compilers"
+      "dependent_types",
+      "typechecking",
+      "language_implementation"
     ],
     "title": "Implementing dependent types: how hard could it be? (Part 2)",
     "url": "https://jerrington.me/posts/2025-07-31-depty-impl-part-2.html"
   },
   {
     "id": "01kbgwgd8jr4wkgr4g78f9ngmt",
-    "order": 32,
+    "order": 29,
     "summary": "Explores implementing dependent types using normalization-by-evaluation, where the typechecker evaluates terms to compare types through definitional equality.",
     "tags": [
       "computer_science",
       "type_theory",
-      "programming",
-      "languages",
-      "compilers"
+      "dependent_types",
+      "formal_methods",
+      "compiler_design"
     ],
     "title": "Implementing dependent types: how hard could it be? (Part 1)",
     "url": "https://jerrington.me/posts/2025-05-23-depty-impl.html"
   },
   {
     "id": "01kb6950hhv4yh1z1egtntj0ys",
-    "order": 71,
+    "order": 62,
     "summary": "Proposes a one-month writing challenge eliminating vague collective \"we\" to promote clarity, accountability, and honest communication by using specific pronouns or group names instead.",
     "tags": [
-      "communication",
+      "culture_society",
       "writing",
-      "language",
+      "communication",
       "clarity",
-      "accountability"
+      "language"
     ],
     "title": "A We-free December",
     "url": "https://hollisrobbinsanecdotal.substack.com/p/a-we-free-december?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01kb49j14w99ghhy405spv48yn",
-    "order": 61,
+    "order": 69,
     "summary": "Charlie Munger remained intellectually active and involved in investments and mentoring during his final years before his death at nearly 100, despite health challenges.",
     "tags": [
-      "business",
-      "finance",
-      "investment",
-      "leadership",
-      "biography"
+      "business_strategy",
+      "biography",
+      "charlie_munger",
+      "investing",
+      "legacy"
     ],
     "title": "Exclusive | The Untold Story of Charlie Munger’s Final Years",
     "url": "https://www.wsj.com/finance/investing/charlie-munger-life-final-years-berkshire-7c20c18e?st=AGyyuQ&reflink=desktopwebshare_permalink"
   },
   {
     "id": "01kb3m2xd3t2vda3yqjs2e1stj",
-    "order": 41,
+    "order": 44,
     "summary": "Strong consistency in databases ensures reads always reflect latest writes, simplifying code and improving reliability compared to eventual consistency models.",
     "tags": [
+      "data_management",
       "databases",
-      "computer_science",
-      "systems",
-      "architecture",
-      "consistency"
+      "consistency_models",
+      "distributed_systems",
+      "reliability"
     ],
     "title": "Why Strong Consistency?",
     "url": "https://brooker.co.za/blog/2025/11/18/consistency.html"
@@ -284,24 +298,24 @@
     "order": 40,
     "summary": "Explores determinism requirements in durable execution frameworks, explaining how control flow must be deterministic while side effects need idempotency, and the importance of separating decisions from actions.",
     "tags": [
-      "computer_science",
-      "systems",
-      "architecture",
-      "distributed",
-      "reliability"
+      "software_engineering",
+      "durable_execution",
+      "distributed_systems",
+      "fault_tolerance",
+      "architecture"
     ],
     "title": "Demystifying Determinism in Durable Execution",
     "url": "https://jack-vanlightly.com/blog/2025/11/24/demystifying-determinism-in-durable-execution"
   },
   {
     "id": "01kax9rrcdw83072fxbckmjnf1",
-    "order": 19,
+    "order": 15,
     "summary": "AI is transforming radiology by improving report accuracy and productivity. Large firms may consolidate operations using AI, while radiologists transition to supervisory roles, quality control, and complex case management.",
     "tags": [
+      "biology_medicine",
       "artificial_intelligence",
-      "medicine",
-      "healthcare",
-      "technology",
+      "radiology",
+      "healthcare_transformation",
       "automation"
     ],
     "title": "The birth of Advanced Radiology",
@@ -309,55 +323,55 @@
   },
   {
     "id": "01kappxy9paxg48egatjf62n4j",
-    "order": 39,
+    "order": 35,
     "summary": "Nextest, a Rust test runner, leverages Tokio async runtime to manage concurrent test execution, retries, and partitioning. Async runtimes handle I/O-bound operations efficiently across multiple concurrent tasks.",
     "tags": [
-      "programming",
-      "computer_science",
-      "systems",
-      "rust",
-      "testing"
+      "rust_programming",
+      "testing",
+      "async_runtime",
+      "tokio",
+      "software_quality"
     ],
     "title": "How (and why) nextest uses tokio",
     "url": "https://sunshowers.io/posts/nextest-and-tokio/#what-are-heterogenous-selects"
   },
   {
     "id": "01kaperjxdyr7kgxd7a391wwt8",
-    "order": 65,
+    "order": 68,
     "summary": "Scientific discovery involves identifying and cataloging new principles or patterns to explain phenomena. Discovery difficulty increases over time, and while AI can automate the process, humans determine what findings have value.",
     "tags": [
-      "science",
-      "research",
-      "methodology",
       "philosophy",
-      "innovation"
+      "scientific_discovery",
+      "methodology",
+      "epistemology",
+      "artificial_intelligence"
     ],
     "title": "what is a discovery",
     "url": "https://diffuse.one/p/d2-001"
   },
   {
     "id": "01kap6av2g0z0j908pd1qabwvp",
-    "order": 18,
+    "order": 14,
     "summary": "Critical analysis identifying errors, misleading claims, and potential plagiarism in Nucleus Genomics' marketing materials and whitepaper. Questions accuracy of their polygenic embryo screening claims and recommends customer caution.",
     "tags": [
       "biotechnology",
-      "research",
-      "industry",
-      "ethics",
-      "science"
+      "genomics",
+      "scientific_integrity",
+      "consumer_protection",
+      "ethics"
     ],
     "title": "Concerns about the legitimacy and integrity of Nucleus Genomics",
     "url": "https://totalhealthoptimization.com/2025/11/21/concerns-about-the-legitimacy-and-integrity-of-nucleus-genomics/"
   },
   {
     "id": "01kagt2r74np8fv42c48am6g2q",
-    "order": 56,
+    "order": 55,
     "summary": "Building rare skills to solve important problems is more valuable than just securing employment. Emphasizes deliberate practice, testing capabilities through projects, showcasing work, and selecting roles that enable sustainable skill growth while preventing burnout.",
     "tags": [
-      "career",
-      "personal_development",
-      "learning",
-      "strategy",
+      "professional_development",
+      "career_strategy",
+      "skill_building",
+      "deliberate_practice",
       "growth"
     ],
     "title": "Your Goal Isn’t Really to Get a Job",
@@ -365,433 +379,405 @@
   },
   {
     "id": "01ka423qhpxetjkpqdrqwbebaq",
-    "order": 76,
+    "order": 59,
     "summary": "Life wisdom column sharing practical lessons on fulfillment through prioritization, accepting limitations, choosing growth over comfort, and tolerating discomfort while knowing when to move forward.",
     "tags": [
-      "personal_development",
       "philosophy",
-      "lifestyle",
-      "wellness",
-      "growth"
+      "self_help",
+      "personal_development",
+      "life_advice",
+      "fulfillment"
     ],
     "title": "Oliver Burkeman's last column: the eight secrets to a (fairly) fulfilled life",
     "url": "https://www.theguardian.com/lifeandstyle/2020/sep/04/oliver-burkemans-last-column-the-eight-secrets-to-a-fairly-fulfilled-life"
   },
   {
-    "id": "01ka3mnrd88p414jgfyaq7t5pv",
-    "order": 49,
-    "summary": "DNS maps domain names to IP addresses and mail servers using a hierarchical zone structure with SOA and NS records. Names are encoded, case-insensitive, and follow RFC standards.",
-    "tags": [
-      "computer_science",
-      "infrastructure",
-      "networks",
-      "technology",
-      "systems"
-    ],
-    "title": "A warm welcome to DNS",
-    "url": "https://powerdns.org/hello-dns/basic.md.html#dnsbasics"
-  },
-  {
     "id": "01k9zsg3y69nmp01fgg6e3320c",
-    "order": 9,
+    "order": 7,
     "summary": "A young person inspired by nuclear engineering's potential for abundance rejects superficial fame at age twenty, committing to meaningful pursuits in rowing, love, and building massive nuclear power capacity.",
     "tags": [
       "energy",
-      "nuclear",
+      "nuclear_power",
       "personal_development",
       "ambition",
-      "technology"
+      "clean_energy"
     ],
     "title": "Fission // 20",
     "url": "https://wavage.substack.com/p/fission-20?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
     "id": "01k9md3encpvc2k845yc3tmjz5",
-    "order": 38,
+    "order": 34,
     "summary": "Reviews async Rust runtimes, criticizing ecosystem fragmentation caused by executor coupling. Highlights Tokio's dominance but argues its multithreaded defaults add complexity. Recommends learning sync Rust first and using async sparingly.",
     "tags": [
-      "programming",
-      "computer_science",
-      "systems",
-      "rust",
-      "architecture"
+      "rust_programming",
+      "async_runtime",
+      "concurrency",
+      "tokio",
+      "ecosystem"
     ],
     "title": "The State of Async Rust: Runtimes",
     "url": "https://corrode.dev/blog/async/"
   },
   {
     "id": "01k9md327xf3s138wsjgzvd1nm",
-    "order": 55,
+    "order": 54,
     "summary": "Contrasts two types of schedules: manager's schedule with hourly meetings vs maker's schedule requiring long uninterrupted blocks for deep work. Meetings disrupt makers' productivity and flow.",
     "tags": [
       "productivity",
-      "management",
-      "work",
-      "organization",
-      "efficiency"
+      "time_management",
+      "deep_work",
+      "workplace_culture",
+      "focus"
     ],
     "title": "Maker's Schedule, Manager's Schedule",
     "url": "https://paulgraham.com/makersschedule.html"
   },
   {
     "id": "01k9m6ja73v676np9x1yf6twv6",
-    "order": 54,
+    "order": 53,
     "summary": "Journey from electrical engineer to programmer, emphasizing programming felt unnatural initially. Highlights non-traditional paths to success, skill development over time, problem-solving importance, and collaboration benefits.",
     "tags": [
-      "career",
+      "professional_development",
+      "career_transition",
+      "skill_development",
       "programming",
-      "personal_development",
-      "learning",
-      "education"
+      "learning_journey"
     ],
     "title": "How I learned to program",
     "url": "https://danluu.com/learning-to-program/"
   },
   {
     "id": "01k9m6j4cz7ghfb43j88x6ry1s",
-    "order": 48,
+    "order": 52,
     "summary": "Discusses how algorithms interviews in big tech don't reflect actual job skills despite being used to prevent inefficient code. Suggests focusing on incentives and culture for better problem-solving.",
     "tags": [
+      "professional_development",
       "career",
+      "technical_interviews",
       "software_engineering",
-      "hiring",
-      "industry",
-      "education"
+      "hiring"
     ],
     "title": "Algorithms interviews: theory vs. practice",
     "url": "https://danluu.com/algorithms-interviews/"
   },
   {
     "id": "01k9fydx0pb1j6f91hjb89pe2n",
-    "order": 37,
+    "order": 43,
     "summary": "MongoDB's WiredTiger storage engine implements lock-free B+tree algorithms using hazard pointers for reads and skip lists for writes, achieving 50% faster reads and up to 4x faster updates compared to traditional locking mechanisms.",
     "tags": [
+      "data_management",
       "databases",
-      "computer_science",
-      "algorithms",
-      "performance",
-      "systems"
+      "mongodb",
+      "lock_free_algorithms",
+      "performance"
     ],
     "title": "To Lock or Not: MongoDB’s Lock-Free B-Tree Unlocks Throughput",
     "url": "https://www.mongodb.com/company/blog/engineering/to-lock-or-not-mongodbs-lock-free-b-tree-unlocks-throughput"
   },
   {
     "id": "01k9fhwzsdqbm56qxpr19htbny",
-    "order": 8,
+    "order": 6,
     "summary": "China's massive expansion of cheap solar and wind power is driving down global clean energy costs and reshaping markets, while creating both opportunities for affordable electrification and geopolitical concerns.",
     "tags": [
       "energy",
-      "environment",
+      "renewable_energy",
+      "china",
       "geopolitics",
-      "technology",
-      "policy"
+      "climate_change"
     ],
     "title": "China’s clean-energy revolution will reshape markets and politics",
     "url": "https://archive.ph/SCi4H"
   },
   {
     "id": "01k9dycmjq1vjfns37vbqf3e9t",
-    "order": 53,
+    "order": 51,
     "summary": "Hiring engineers requires a sales approach with transparency about roles, compensation, and career progression. Focus on underserved experienced candidates through systematic recruiting processes.",
     "tags": [
+      "professional_development",
       "hiring",
-      "management",
-      "software_engineering",
-      "career",
-      "strategy"
+      "recruitment",
+      "engineering",
+      "talent_acquisition"
     ],
     "title": "The Talent Machine",
     "url": "https://paoramen.fika.bar/the-talent-machine-01K94NER8BZH9G9GYHR7TMFRES"
   },
   {
     "id": "01k9b0n7m0z9y86zt49bv44fr7",
-    "order": 31,
+    "order": 39,
     "summary": "Explores type representation options in programming: open data, objects, and abstract data types. Objects facilitate new operations while ADTs enable safe construction control. Mixed approaches create design challenges.",
     "tags": [
-      "computer_science",
-      "programming",
-      "type_theory",
-      "architecture",
-      "design"
+      "software_engineering",
+      "type_systems",
+      "design_patterns",
+      "abstraction",
+      "extensibility"
     ],
     "title": "Design duality and the expression problem",
     "url": "https://www.tedinski.com/2018/02/27/the-expression-problem.html"
   },
   {
     "id": "01k9b0mqm210tabsq5b7qr7fse",
-    "order": 75,
+    "order": 58,
     "summary": "Framework measuring how UI elements affect users' emotional energy (\"Psych\") and motivation. Positive elements boost conversions while negative elements cause drop-off. Recommends tallying Psych at each step to optimize flows.",
     "tags": [
-      "psychology",
-      "design",
-      "business",
-      "optimization",
-      "conversion"
+      "productivity",
+      "user_psychology",
+      "conversion_optimization",
+      "behavioral_design",
+      "engagement"
     ],
     "title": "Psych’d: A new user psychology framework for increasing funnel conversion (Guest Post)",
     "url": "https://andrewchen.com/psychd-funnel-conversion/"
   },
   {
     "id": "01k9absj69zfwfard4kayg562p",
-    "order": 74,
+    "order": 61,
     "summary": "A16z collected book recommendations from founders and partners, featuring 25 underrated titles covering leadership, creativity, decision-making, and resilience to provide contrarian insights and practical wisdom.",
     "tags": [
-      "learning",
-      "business",
+      "culture_society",
+      "books",
+      "reading",
       "leadership",
-      "entrepreneurship",
-      "development"
+      "entrepreneurship"
     ],
     "title": "You can just read 25 books",
     "url": "https://a16z.substack.com/p/you-can-just-read-25-books"
   },
   {
     "id": "01k99hvgwsseyxm8yjvx6tg0b3",
-    "order": 25,
+    "order": 3,
     "summary": "Explores how AI's decreasing costs and increasing capabilities could transform it into dominant economic labor, potentially driving GDP growth far beyond historical 2% rates through rapid task automation.",
     "tags": [
-      "artificial_intelligence",
       "economics",
+      "artificial_intelligence",
       "automation",
-      "technology",
-      "productivity"
+      "gdp_growth",
+      "labor_markets"
     ],
     "title": "Thoughts by a non-economist on AI and economics",
     "url": "https://windowsontheory.org/2025/11/04/thoughts-by-a-non-economist-on-ai-and-economics/"
   },
   {
     "id": "01k93cdtwr1w9r40fq02kk1nf7",
-    "order": 24,
+    "order": 22,
     "summary": "Examines intertwined business deals between AI companies, chipmakers, and cloud providers. Critics fear revenue inflation and systemic risk, but author suggests these are vendor financing arrangements that may actually diversify risk.",
     "tags": [
       "artificial_intelligence",
-      "business",
-      "finance",
-      "technology",
-      "industry"
+      "business_strategy",
+      "technology_economics",
+      "industry_analysis",
+      "risk_assessment"
     ],
     "title": "Should we worry about AI's circular deals?",
     "url": "https://www.noahpinion.blog/p/should-we-worry-about-ais-circular?utm_source=post-email-title&publication_id=35345&post_id=176711855&utm_campaign=email-post-title&isFreemail=false&r=6g77v&triedRedirect=true&utm_medium=email"
   },
   {
     "id": "01k8zgj4cbgxhn0m39wj9m4w3g",
-    "order": 64,
+    "order": 66,
     "summary": "Modern self-help incorporates ancient Stoic and Buddhist philosophies, emphasizing acceptance of uncontrollable circumstances while focusing on manageable changes, promoting realistic attitudes over false optimism.",
     "tags": [
       "philosophy",
-      "personal_development",
-      "psychology",
-      "wisdom",
-      "growth"
+      "self_help",
+      "stoicism",
+      "buddhism",
+      "mental_health"
     ],
     "title": "How I Learned to Stop Worrying and Love My Shitty Life​ | Self-Help Gets Philosophical",
     "url": "https://www.thedriftmag.com/how-i-learned-to-stop-worrying-and-love-my-shitty-life/"
   },
   {
     "id": "01k8nxbnxpm3ehresv69xwpe90",
-    "order": 73,
+    "order": 65,
     "summary": "Argues that everyday toxins in food, clothing, and products harm health due to weak regulation. Recommends nutrient-dense whole foods, supplements, low-toxin brands, and an 80/20 approach to reduce exposures.",
     "tags": [
-      "health",
-      "wellness",
+      "health_wellness",
       "nutrition",
+      "toxins",
       "lifestyle",
-      "optimization"
+      "preventive_health"
     ],
     "title": "A builder’s guide to living a long and healthy life",
     "url": "https://www.lennysnewsletter.com/p/a-builders-guide-to-living-a-long"
   },
   {
     "id": "01k8hr8h4vevbdqnpgrphy3ta3",
-    "order": 52,
+    "order": 50,
     "summary": "Guide for engineering managers on conducting effective 1:1 meetings using three key topics: people, product, and process. Emphasizes regular feedback, career development, early problem detection, and note-taking.",
     "tags": [
+      "professional_development",
       "management",
-      "leadership",
-      "software_engineering",
-      "communication",
-      "career"
+      "feedback",
+      "career_development",
+      "leadership"
     ],
     "title": "How to Run 1:1s as an Engineering Manager",
     "url": "https://justoffbyone.com/posts/how-to-run-11s/"
   },
   {
     "id": "01k88yvygrenzpysy3mjvd7qf9",
-    "order": 68,
+    "order": 19,
     "summary": "Examines Bloom's famous claim that one-on-one tutoring improves learning by two standard deviations, but rigorous reviews show actual gains are much smaller at 0.33-0.37 SD due to methodological factors.",
     "tags": [
       "education",
-      "research",
-      "learning",
-      "psychology",
-      "methodology"
+      "tutoring_effectiveness",
+      "research_methodology",
+      "learning_outcomes",
+      "evidence_based"
     ],
     "title": "Two-Sigma Tutoring: Separating Science Fiction from Science Fact",
     "url": "https://www.educationnext.org/two-sigma-tutoring-separating-science-fiction-from-science-fact/"
   },
   {
-    "id": "01k88v9t0wzrz4f6c78nvkmz8t",
-    "order": 47,
-    "summary": "Explains how dynamic programming optimizes recursive solutions through memoization and tabulation techniques to avoid redundant calculations and improve efficiency.",
-    "tags": [
-      "algorithms",
-      "computer_science",
-      "programming",
-      "optimization",
-      "education"
-    ],
-    "title": "The Ultimate Guide to Dynamic Programming",
-    "url": "https://medium.com/@al.eks/the-ultimate-guide-to-dynamic-programming-65865ef7ec5b"
-  },
-  {
     "id": "01k81d5b9rbkwk3ztznbw1nrnr",
-    "order": 36,
+    "order": 33,
     "summary": "Implementation of computation graphs in Rust using indexed nodes for path counting, value evaluation, and derivatives. Evolution from enum-based to trait-based design with tradeoffs in syntax and structure.",
     "tags": [
-      "programming",
-      "computer_science",
-      "algorithms",
-      "data_structures",
-      "rust"
+      "rust_programming",
+      "computation_graphs",
+      "software_architecture",
+      "trait_design",
+      "algorithms"
     ],
     "title": "Exploring Computation Graphs in Rust",
     "url": "https://paulkernfeld.com/2018/06/17/exploring-computation-graphs-in-rust.html"
   },
   {
     "id": "01k81d5805be8p10y5jfhwkhx0",
-    "order": 35,
+    "order": 32,
     "summary": "Presents a method for modeling graphs in Rust using vector indices that aligns with Rust's ownership model and provides efficiency benefits, though it carries risks when removing elements.",
     "tags": [
-      "programming",
-      "computer_science",
-      "algorithms",
+      "rust_programming",
       "data_structures",
-      "rust"
+      "graphs",
+      "vector_indices",
+      "performance"
     ],
     "title": "Modeling graphs in Rust using vector indices",
     "url": "https://smallcultfollowing.com/babysteps/blog/2015/04/06/modeling-graphs-in-rust-using-vector-indices/"
   },
   {
     "id": "01k81d4yfkm1jnqqqfkj63c1qs",
-    "order": 34,
+    "order": 31,
     "summary": "Rust's strict lifetimes and mutability rules make graph data structures challenging to implement. Cycles prevent simple pointer usage, requiring arena-allocation approaches with explicit lifetimes.",
     "tags": [
-      "programming",
-      "computer_science",
-      "algorithms",
+      "rust_programming",
       "data_structures",
-      "rust"
+      "memory_management",
+      "graphs",
+      "ownership"
     ],
     "title": "Graphs in Rust",
     "url": "http://featherweightmusings.blogspot.com/2015/04/graphs-in-rust.html"
   },
   {
     "id": "01k7vfh5rthxt5r6awxag07sga",
-    "order": 30,
+    "order": 28,
     "summary": "Explains algebraic types as simple concepts combining types through addition and multiplication. Sum types allow values from multiple types, enabling safe handling of errors and nulls while reducing bugs.",
     "tags": [
       "computer_science",
-      "programming",
       "type_theory",
-      "languages",
-      "education"
+      "algebraic_types",
+      "programming_concepts",
+      "software_development"
     ],
     "title": "Algebraic Types are not Scary, Actually",
     "url": "https://blog.aiono.dev/posts/algebraic-types-are-not-scary,-actually.html"
   },
   {
     "id": "01k7vfh217js8xtyrw23yfjq4g",
-    "order": 29,
+    "order": 27,
     "summary": "Traces the evolution of algebraic data types from McCarthy's early cartesian and union types through Hoare's contributions to ML's tagged unions and compiler checks, culminating in 1980s languages like HOPE and Miranda standardizing pattern matching.",
     "tags": [
       "computer_science",
-      "programming",
       "type_theory",
-      "history",
-      "languages"
+      "programming_languages",
+      "language_history",
+      "functional_programming"
     ],
     "title": "A Very Early History of Algebraic Data Types",
     "url": "https://www.hillelwayne.com/post/algdt-history/"
   },
   {
     "id": "01k7jjdybfs76qndt357am4n6e",
-    "order": 46,
+    "order": 38,
     "summary": "Explains dynamic programming through House Robber problem - selecting nonadjacent houses to maximize loot. Shows space-efficient approach tracking last robbed/unrobbed values with Haskell and Rust implementations.",
     "tags": [
+      "software_engineering",
       "algorithms",
-      "computer_science",
-      "programming",
+      "dynamic_programming",
       "optimization",
-      "education"
+      "programming_tutorial"
     ],
     "title": "Dynamic Programming Introduction",
     "url": "https://mmhaskell.com/blog/2025/10/6/dynamic-programming-primer"
   },
   {
     "id": "01k7jhyshb3yh49c98rs47sv78",
-    "order": 60,
+    "order": 49,
     "summary": "Josh Kushner transformed Thrive Capital into an influential venture firm through hiring diverse operators and making early investments in companies like Instagram and OpenAI, driven by long-term vision.",
     "tags": [
-      "business",
+      "business_strategy",
+      "venture_capital",
       "entrepreneurship",
-      "finance",
-      "investment",
-      "leadership"
+      "investment_strategy",
+      "startup_ecosystem"
     ],
     "title": "The New World",
     "url": "https://joincolossus.com/article/joshua-kushner-thrive-new-world/"
   },
   {
     "id": "01k7h45yh2z9kwre69wx4pn0h8",
-    "order": 51,
+    "order": 47,
     "summary": "Palantir's FDE role combines customer alignment with strategy to solve complex problems. Imitators copy the structure without commitment, producing inferior results. Organizations should rethink assumptions before adopting models.",
     "tags": [
-      "business",
-      "strategy",
-      "technology",
-      "organization",
-      "culture"
+      "business_strategy",
+      "palantir",
+      "organizational_design",
+      "customer_alignment",
+      "product_development"
     ],
     "title": "Sorry, that isn't an FDE",
     "url": "https://tedmabrey.substack.com/p/sorry-that-isnt-an-fde?utm_source=substack&utm_campaign=post_embed&utm_medium=web"
   },
   {
     "id": "01k7h464drvvxkbd4yrdjkwmmv",
-    "order": 23,
+    "order": 48,
     "summary": "Companies struggle to gather scattered data from various sources into unified systems. The labor-intensive process of cleaning, accessing, and standardizing data creates bottlenecks that slow AI adoption and business impact.",
     "tags": [
+      "business_strategy",
+      "data_integration",
       "artificial_intelligence",
-      "business",
-      "technology",
-      "infrastructure",
-      "data"
+      "digital_transformation",
+      "enterprise"
     ],
     "title": "The Great Data Integration Schlep",
     "url": "https://sarahconstantin.substack.com/p/the-great-data-integration-schlep?utm_source=substack&utm_campaign=post_embed&utm_medium=web"
   },
   {
     "id": "01k7f54eg5kr8f6q2e236kc4d6",
-    "order": 22,
+    "order": 37,
     "summary": "Developer uses AI agents to build macOS auto-update feature, sharing unedited sessions. Emphasizes iterative process of reviewing, cleaning, and fixing AI-generated code with thorough manual review before shipping.",
     "tags": [
-      "artificial_intelligence",
       "software_engineering",
-      "development",
-      "technology",
-      "programming"
+      "artificial_intelligence",
+      "code_generation",
+      "development_workflow",
+      "quality_assurance"
     ],
     "title": "Vibing a Non-Trivial Ghostty Feature",
     "url": "https://mitchellh.com/writing/non-trivial-vibing"
   },
   {
     "id": "01k7d30sekn3twp4x8t3xjamrd",
-    "order": 59,
+    "order": 57,
     "summary": "Contrasts two improvement strategies: optimizing existing methods (hill-climbing) which is efficient but has limits, versus creating new possibilities (hill-making) which is risky but offers greater potential rewards.",
     "tags": [
-      "strategy",
+      "business_strategy",
       "innovation",
       "optimization",
-      "business",
+      "decision_making",
       "growth"
     ],
     "title": "Hill-Making vs Hill-Climbing",
@@ -802,11 +788,11 @@
     "order": 21,
     "summary": "Contrasts behavioral prediction with mechanistic understanding. Behavioral models fit data but lack insight into internal workings, while gears-level models reveal mechanisms and handle changes better.",
     "tags": [
-      "machine_learning",
       "artificial_intelligence",
-      "methodology",
-      "science",
-      "philosophy"
+      "machine_learning",
+      "causal_inference",
+      "model_interpretability",
+      "epistemology"
     ],
     "title": "Gears vs Behavior",
     "url": "https://www.lesswrong.com/s/xEFeCwk3pdYdeG2rL/p/gvK5QWRLk3H8iqcNy"
@@ -816,122 +802,122 @@
     "order": 70,
     "summary": "Railways' primary product is their timetable, which requires precise planning to transport people efficiently. Quality timetables improve speed, reliability, capacity, and connectivity. Infrastructure should support timetables.",
     "tags": [
-      "infrastructure",
-      "systems",
-      "planning",
+      "systems_design",
       "transportation",
-      "optimization"
+      "railways",
+      "logistics",
+      "infrastructure"
     ],
     "title": "The product of the railways is the timetable",
     "url": "https://springbett.substack.com/p/the-product-of-the-railways-is-the"
   },
   {
     "id": "01k6z1cjetsqy8ev7j7ffnznfn",
-    "order": 50,
+    "order": 46,
     "summary": "Examines a data software company working with governments and businesses, highlighting its high revenue margins, controversial nature, public perception challenges, and efforts to navigate complex political and ethical issues.",
     "tags": [
-      "technology",
-      "business",
+      "business_strategy",
+      "data_software",
       "ethics",
-      "policy",
-      "industry"
+      "government_contracts",
+      "controversy"
     ],
     "title": "Palantir: On Business, Cults, and Politics",
     "url": "https://www.thediff.co/archive/palantir-on-business-cults-and-politics/#conclusion"
   },
   {
     "id": "01k6va67563cax8s7f324ygv1t",
-    "order": 20,
+    "order": 18,
     "summary": "Demonstrates how AI transforms difficult textbooks into interactive lessons through PDF parsing, summarization, and digital organization, enabling faster deep learning with contextual Q&A and testing capabilities.",
     "tags": [
-      "artificial_intelligence",
       "education",
-      "learning",
-      "technology",
-      "innovation"
+      "artificial_intelligence",
+      "learning_technology",
+      "study_methods",
+      "digital_tools"
     ],
     "title": "The Best Way to Use AI for Learning",
     "url": "https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1#fe23"
   },
   {
     "id": "01k6kkpgne5h19qqj62d19t0h2",
-    "order": 3,
+    "order": 2,
     "summary": "Examines China's development strategy using massive state investment and infrastructure to rapidly scale technologies, creating global strength but also inefficiencies and debt. Notes US export controls insufficient.",
     "tags": [
       "economics",
       "geopolitics",
-      "industry",
+      "industrial_policy",
       "infrastructure",
-      "strategy"
+      "china"
     ],
     "title": "The Real China Model",
     "url": "https://www.foreignaffairs.com/china/real-china-model-wang-kroeber"
   },
   {
     "id": "01k4raerehhys44g2cdwenkkv6",
-    "order": 17,
+    "order": 13,
     "summary": "Amyloid accumulation precedes symptoms and triggers tau protein spread. While tau correlates with brain damage, amyloid is the upstream cause. Reducing amyloid can decrease tau and slow cognitive decline, supporting the hypothesis.",
     "tags": [
-      "medicine",
+      "biology_medicine",
+      "alzheimers",
       "neuroscience",
-      "research",
-      "science",
-      "healthcare"
+      "disease_mechanism",
+      "therapeutics"
     ],
     "title": "In Defense Of The Amyloid Hypothesis",
     "url": "https://www.astralcodexten.com/p/in-defense-of-the-amyloid-hypothesis"
   },
   {
     "id": "01k4r90wrh5xv4jcn4zfjz453m",
-    "order": 16,
+    "order": 11,
     "summary": "Discusses the enormous population of viruses on Earth (10^31), their tiny size in nanometers, protein shell structure, genome sizes, and their crucial ecological role in infecting organisms and influencing global nutrient cycles.",
     "tags": [
-      "biology",
-      "science",
-      "research",
+      "biology_medicine",
+      "virology",
+      "microbiology",
       "ecology",
-      "microbiology"
+      "global_systems"
     ],
     "title": "How big are viruses?",
     "url": "https://book.bionumbers.org/how-big-are-viruses/"
   },
   {
     "id": "01k3nxs3gwjfacac4apze81zqr",
-    "order": 67,
+    "order": 17,
     "summary": "Children in poor countries attend school but lack basic literacy and numeracy. Public teachers earn high wages relative to GDP through civil service pay, not market forces. Pay increases don't improve learning outcomes, but teacher quality remains crucial.",
     "tags": [
       "education",
-      "economics",
-      "policy",
-      "development",
-      "workforce"
+      "teacher_compensation",
+      "developing_countries",
+      "public_policy",
+      "learning_outcomes"
     ],
     "title": "Chart of the Week: Teacher Pay around the World: Beyond “Disruption” and “De-skilling”",
     "url": "https://riseprogramme.org/blog/teacher_pay_around_world.html"
   },
   {
     "id": "01k3c0njfkfk5g7a8gtrjh0dgp",
-    "order": 15,
+    "order": 12,
     "summary": "Early cancer detection methods like liquid biopsies promise blood-based screening but face challenges with false positives, detecting non-threatening tumors, and proving they actually reduce cancer mortality rates.",
     "tags": [
-      "medicine",
-      "healthcare",
-      "research",
-      "technology",
-      "science"
+      "biology_medicine",
+      "cancer",
+      "medical_screening",
+      "diagnostics",
+      "healthcare"
     ],
     "title": "The Problem With Early Cancer Detection | The New Yorker",
     "url": "https://www.newyorker.com/magazine/2025/06/23/the-catch-in-catching-cancer-early"
   },
   {
     "id": "01k38s3z2gty73bpdzpejer4fj",
-    "order": 14,
+    "order": 10,
     "summary": "Diapause is a developmental pause in insects at any life stage that removes biomass from active life. It can be manipulated for pest control and biological management, with applications in farming, disease control, and conservation.",
     "tags": [
-      "biology",
+      "biology_medicine",
+      "insect_biology",
+      "pest_control",
       "agriculture",
-      "science",
-      "research",
       "ecology"
     ],
     "title": "Pausing Insect Activity",
@@ -939,126 +925,84 @@
   },
   {
     "id": "01k2j40tf05d83f02kjh422fnt",
-    "order": 2,
+    "order": 1,
     "summary": "Explores how India's service-driven economic growth differs from China's export-led manufacturing model, highlighting India's unique challenges and strengths in pursuing its own development path.",
     "tags": [
       "economics",
-      "development",
-      "policy",
-      "industry",
-      "geopolitics"
+      "economic_development",
+      "comparative_analysis",
+      "emerging_markets",
+      "growth_strategies"
     ],
     "title": "India and the invidious comparison with China",
     "url": "https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/?ref=thediff.co"
   },
   {
     "id": "01k2fdeym6jvfb3zkgx0j3c11f",
-    "order": 13,
+    "order": 9,
     "summary": "Explores various gene therapy delivery methods including AAV, lipid nanoparticles, and herpes simplex virus vectors, discussing their advantages, challenges, immune reactions, and targeting capabilities.",
     "tags": [
-      "medicine",
       "biotechnology",
-      "research",
-      "science",
-      "technology"
+      "gene_therapy",
+      "medical_technology",
+      "drug_delivery",
+      "viral_vectors"
     ],
     "title": "A Visual Guide to Gene Delivery",
     "url": "https://www.asimov.press/p/gene-delivery"
   },
   {
     "id": "01k2fder0ezwd75njceewc980v",
-    "order": 12,
+    "order": 8,
     "summary": "Michael Elowitz developed the repressilator in the late 1990s, a gene circuit using three genes in a feedback loop to make cells flash rhythmically, demonstrating programmable gene circuits and inspiring modern synthetic biology tools.",
     "tags": [
-      "biology",
       "biotechnology",
-      "research",
-      "science",
-      "innovation"
+      "synthetic_biology",
+      "genetic_engineering",
+      "scientific_innovation",
+      "gene_circuits"
     ],
     "title": "The Making of a Gene Circuit",
     "url": "https://www.asimov.press/p/gene-circuit"
   },
   {
     "id": "01k228ps97vg5bwhhv6433c1tm",
-    "order": 69,
+    "order": 60,
     "summary": "A24 has established itself as a prominent filmmaker known for unique, challenging movies with dedicated fans. Despite marketing quality cinema as events, the company struggles with consistency in ambitious projects.",
     "tags": [
-      "culture",
+      "culture_society",
+      "film_industry",
+      "independent_cinema",
       "entertainment",
-      "industry",
-      "business",
-      "creativity"
+      "artistic_expression"
     ],
     "title": "The Popular Alternative",
     "url": "https://dirt.fyi/article/2025/05/the-popular-alternative"
   },
   {
-    "id": "01k1c5yaaf9tngc5pnssxa6zgw",
-    "order": 1,
-    "summary": "Brief commentary suggesting that among those involved in U.S. reindustrialization efforts, only a single individual appears to have a clear understanding of the necessary approach.",
-    "tags": [
-      "policy",
-      "economics",
-      "industry",
-      "manufacturing",
-      "strategy"
-    ],
-    "title": "Does the U.S. Actually Have the Will to Reindustrialize?",
-    "url": "https://www.corememory.com/p/does-the-us-actually-have-the-will?r=1gvqcg&utm_medium=ios&triedRedirect=true"
-  },
-  {
-    "id": "01k18xzxnt7gec54mw47qe2730",
-    "order": 58,
-    "summary": "American companies hire Filipino workers remotely for cashier and customer support roles. Service exports from developing nations grow rapidly due to technology and cost advantages, but offer fewer opportunities than manufacturing.",
-    "tags": [
-      "business",
-      "workforce",
-      "economics",
-      "technology",
-      "globalization"
-    ],
-    "title": "American fried chicken can now be served from the Philippines",
-    "url": "https://archive.ph/j9NOC"
-  },
-  {
     "id": "01k0rkksw05j6r0fb3sg2t75ze",
-    "order": 45,
+    "order": 26,
     "summary": "Explains LL and LR parsing methods, highlighting their differences in token processing and tree traversal approaches. LL uses pre-order while LR uses post-order traversal, each suited for different grammars.",
     "tags": [
       "computer_science",
-      "compilers",
+      "parsing",
+      "compiler_design",
       "algorithms",
-      "programming",
-      "languages"
+      "formal_languages"
     ],
     "title": "LL and LR Parsing Demystified",
     "url": "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html"
   },
   {
-    "id": "01k0p4hj3k6r9vetkx17nqr6fe",
-    "order": 63,
-    "summary": "Explores how observing or addressing social problems assigns ethical responsibility, even for partial solutions. Uses quantum mechanics analogy to argue that marginal improvements should be valued rather than judged.",
-    "tags": [
-      "ethics",
-      "philosophy",
-      "responsibility",
-      "science",
-      "society"
-    ],
-    "title": "The Copenhagen Interpretation of Ethics",
-    "url": "https://laneless.substack.com/p/the-copenhagen-interpretation-of-ethics"
-  },
-  {
     "id": "01k0bvm4t4fvbr5276rebhnnf0",
-    "order": 7,
+    "order": 5,
     "summary": "Fusion power remains impractical after 70+ years of research due to challenges in creating extreme conditions. Despite new company approaches promising near-term reactors, fusion remains uncertain and costly.",
     "tags": [
       "energy",
-      "technology",
-      "research",
-      "innovation",
-      "science"
+      "nuclear_fusion",
+      "clean_energy",
+      "research_challenges",
+      "technology_barriers"
     ],
     "title": "Will We Ever Get Fusion Power?",
     "url": "https://www.construction-physics.com/p/will-we-ever-get-fusion-power"
@@ -1069,10 +1013,10 @@
     "summary": "Discusses how government interference in free markets through rules like tariffs can lead to negative consequences such as higher consumer prices and reduced competition, arguing that free markets generally produce better outcomes than controlled ones.",
     "tags": [
       "economics",
-      "policy",
-      "markets",
-      "regulation",
-      "trade"
+      "trade_policy",
+      "market_regulation",
+      "government_intervention",
+      "free_markets"
     ],
     "title": "More on Repealing the Laws of Economics",
     "url": "https://www.oaktreecapital.com/insights/memo/more-on-repealing-the-laws-of-economics"
