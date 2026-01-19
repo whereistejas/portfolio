@@ -322,20 +322,6 @@
     "url": "https://jack-vanlightly.com/blog/2025/11/24/demystifying-determinism-in-durable-execution"
   },
   {
-    "id": "01kax9rrcdw83072fxbckmjnf1",
-    "order": 29,
-    "summary": "AI is transforming radiology by improving report accuracy and productivity. Large firms may consolidate operations using AI, while radiologists transition to supervisory roles, quality control, and complex case management.",
-    "tags": [
-      "healthcare",
-      "artificial_intelligence",
-      "automation",
-      "radiology",
-      "technology"
-    ],
-    "title": "The birth of Advanced Radiology",
-    "url": "https://joejanizek.substack.com/p/the-birth-of-advanced-radiology?utm_campaign=post&utm_medium=web&triedRedirect=true"
-  },
-  {
     "id": "01kappxy9paxg48egatjf62n4j",
     "order": 63,
     "summary": "Nextest, a Rust test runner, leverages Tokio async runtime to manage concurrent test execution, retries, and partitioning. Async runtimes handle I/O-bound operations efficiently across multiple concurrent tasks.",
@@ -854,20 +840,6 @@
     "url": "https://www.astralcodexten.com/p/in-defense-of-the-amyloid-hypothesis"
   },
   {
-    "id": "01k4r90wrh5xv4jcn4zfjz453m",
-    "order": 31,
-    "summary": "Discusses the enormous population of viruses on Earth (10^31), their tiny size in nanometers, protein shell structure, genome sizes, and their crucial ecological role in infecting organisms and influencing global nutrient cycles.",
-    "tags": [
-      "biology",
-      "virology",
-      "ecology",
-      "microbiology",
-      "science"
-    ],
-    "title": "How big are viruses?",
-    "url": "https://book.bionumbers.org/how-big-are-viruses/"
-  },
-  {
     "id": "01k3nxs3gwjfacac4apze81zqr",
     "order": 20,
     "summary": "Children in poor countries attend school but lack basic literacy and numeracy. Public teachers earn high wages relative to GDP through civil service pay, not market forces. Pay increases don't improve learning outcomes, but teacher quality remains crucial.",
@@ -880,20 +852,6 @@
     ],
     "title": "Chart of the Week: Teacher Pay around the World: Beyond “Disruption” and “De-skilling”",
     "url": "https://riseprogramme.org/blog/teacher_pay_around_world.html"
-  },
-  {
-    "id": "01k3c0njfkfk5g7a8gtrjh0dgp",
-    "order": 26,
-    "summary": "Early cancer detection methods like liquid biopsies promise blood-based screening but face challenges with false positives, detecting non-threatening tumors, and proving they actually reduce cancer mortality rates.",
-    "tags": [
-      "healthcare",
-      "medicine",
-      "diagnostics",
-      "screening",
-      "technology"
-    ],
-    "title": "The Problem With Early Cancer Detection | The New Yorker",
-    "url": "https://www.newyorker.com/magazine/2025/06/23/the-catch-in-catching-cancer-early"
   },
   {
     "id": "01k2j40tf05d83f02kjh422fnt",
