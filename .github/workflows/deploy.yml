@@ -30,12 +30,12 @@ jobs:
       - name: Install dependencies
         run: bun install --omit dev
       
-      - name: Build queue
-        run: bun run build:queue
-        env:
-          NO_COLOR: 1
-          READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # - name: Build queue
+      #   run: bun run build:queue
+      #   env:
+      #     NO_COLOR: 1
+      #     READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
+      #     ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       
       - name: Build site
         run: bun run build
