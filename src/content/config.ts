@@ -74,9 +74,7 @@ const readwiseArchive = defineCollection({
  * Contains LLM-processed items from the reading queue with tags and enhanced summaries
  */
 const readwiseQueue = defineCollection({
-	loader: async () => {
-		return loadReadwiseQueue();
-	},
+	loader: loadReadwiseQueue,
 	schema: readwiseQueueSchema,
 });
 

@@ -3,7 +3,6 @@
 // This file is used at build time to generate JSON caches for Astro content collections
 
 import Anthropic from "@anthropic-ai/sdk";
-import { strict as assert } from "node:assert";
 import { z } from "zod";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import type { Message } from "@anthropic-ai/sdk/resources";
@@ -83,7 +82,7 @@ Your output must be a JSON object matching the structured output schema with the
 
 The output format is enforced by the structured output schema, so ensure your response matches this format exactly.
 
-Stricly follow the given instructions at all times. Especially the instructions above, they are non-negotiable.
+Strictly follow the given instructions at all times. Especially the instructions above, they are non-negotiable.
 
 Here is the document:`;
 
@@ -237,7 +236,7 @@ export async function tagAndGroupDocuments(
 // Cache file paths (in src/content/ for use by Astro collections)
 const SUMMARY_CACHE_PATH = "src/content/cache-summary.json";
 const GROUPED_CACHE_PATH = "src/content/cache-group.json";
-const DISPLAY_CACHE_PATH = "src/content/cache-display.json";
+export const DISPLAY_CACHE_PATH = "src/content/cache-display.json";
 
 // Final display document structure
 export type DisplayDocument = {
@@ -249,12 +248,24 @@ export type DisplayDocument = {
 	order: number;
 };
 
+function assertNoMissing(
+	documents: InputDocument[],
+	cache: Record<string, unknown>,
+	label: string
+): void {
+	const missing = documents.filter((d) => !(d.id in cache));
+	if (missing.length > 0) {
+		const titles = missing.map((d) => d.title);
+		throw new Error(`[LLM][${label}] Missing ${missing.length}: ${titles}`);
+	}
+}
+
 // Main function to process documents (equivalent to tag_documents in Rust)
 export async function processDocuments(
 	llm_client: Anthropic,
 	documents: InputDocument[]
 ): Promise<DisplayDocument[]> {
-	var summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
+	let summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
 	for (const [idx, document] of documents.entries()) {
 		if (document.id in summaryCache) {
 			console.log(
@@ -268,7 +279,6 @@ export async function processDocuments(
 		);
 		const llmSummary = await summariseDocument(llm_client, document);
 
-		// Update and save cache
 		summaryCache[document.id] = {
 			summary: llmSummary.summary,
 			tags: llmSummary.tags,
@@ -276,55 +286,41 @@ export async function processDocuments(
 	}
 	await writeJsonCache(SUMMARY_CACHE_PATH, summaryCache);
 
-	var summaryCache: SummaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
-	var missingDocuments = documents.filter(
-		(document) => !Object.keys(summaryCache).includes(document.id)
-	);
-	var titlesOfMissingDocuments = missingDocuments.map(
-		(document) => document.title
-	);
-	assert(
-		missingDocuments.length === 0,
-		`[LLM][Summary cache] Missing after update: ${titlesOfMissingDocuments}`
-	);
+	summaryCache = await readJsonCache(SUMMARY_CACHE_PATH, {});
+	assertNoMissing(documents, summaryCache, "Summary cache");
 
-	var groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
+	let groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
 	console.log(`[LLM][Group cache] len: ${Object.keys(groupCache).length}`);
 
-	// Check if all the ids in `documentIds` are already present in `groupCache`.
-	missingDocuments = documents.filter(
-		(document) => !Object.keys(groupCache).includes(document.id)
-	);
-	titlesOfMissingDocuments = missingDocuments.map((document) => document.title);
+	const missingFromGroup = documents.filter((d) => !(d.id in groupCache));
 
-	if (missingDocuments.length != 0) {
-		console.warn(`[LLM][Group cache] Missing: `, titlesOfMissingDocuments);
+	if (missingFromGroup.length !== 0) {
+		const missingTitles = missingFromGroup.map((d) => d.title);
+		console.warn(`[LLM][Group cache] Missing: `, missingTitles);
 
 		await retry(async () => {
 			console.log(`[LLM] Reordering documents...`);
 
 			const requestedSummaries = Object.fromEntries(
 				Object.entries(summaryCache).filter(([id]) =>
-					documents.some((document) => document.id === id)
+					documents.some((d) => d.id === id)
 				)
 			);
 
-			var groupedDocuments = await tagAndGroupDocuments(
+			const groupedDocuments = await tagAndGroupDocuments(
 				llm_client,
 				requestedSummaries
 			);
 
-			// Validate that LLM returned all missing items before proceeding
-			missingDocuments = missingDocuments.filter(
-				(document) => !groupedDocuments[document.id]
+			const stillMissing = missingFromGroup.filter(
+				(d) => !groupedDocuments[d.id]
 			);
-			titlesOfMissingDocuments = missingDocuments.map(
-				(document) => document.title
-			);
-			assert(
-				missingDocuments.length === 0,
-				`[LLM][Reordering] Missing after update: ${titlesOfMissingDocuments}`
-			);
+			if (stillMissing.length > 0) {
+				const titles = stillMissing.map((d) => d.title);
+				throw new Error(
+					`[LLM][Reordering] Missing after update: ${titles}`
+				);
+			}
 
 			await writeJsonCache(GROUPED_CACHE_PATH, groupedDocuments);
 		});
@@ -332,16 +328,8 @@ export async function processDocuments(
 		console.log(`[LLM][Reordering] All documents are already grouped.`);
 	}
 
-	var groupCache: GroupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
-	// Check if all the ids in `documentIds` are already present in `groupCache` after update.
-	missingDocuments = documents.filter(
-		(document) => !Object.keys(groupCache).includes(document.id)
-	);
-	titlesOfMissingDocuments = missingDocuments.map((document) => document.title);
-	assert(
-		missingDocuments.length === 0,
-		`[LLM][Group cache]Missing ${missingDocuments.length} after update: ${titlesOfMissingDocuments}`
-	);
+	groupCache = await readJsonCache(GROUPED_CACHE_PATH, {});
+	assertNoMissing(documents, groupCache, "Group cache");
 
 	const result: DisplayDocument[] = [];
 	for (const document of documents) {
@@ -358,7 +346,6 @@ export async function processDocuments(
 		});
 	}
 
-	// Save display cache
 	await writeJsonCache(DISPLAY_CACHE_PATH, result);
 	console.log(`[LLM] Processed ${result.length} documents successfully.`);
 
@@ -389,8 +376,8 @@ if (import.meta.main) {
 			console.log("🔄 Fetching documents from Readwise...");
 			const readwiseDocuments = await fetchAllReadwiseReaderItems({
 				token: readwiseToken,
-				location: "new" as any, // Location.NEW
-				category: "article" as any, // Category.ARTICLE
+				location: "new",
+				category: "article",
 				withHtmlContent: true,
 			});
 
@@ -439,8 +426,7 @@ async function readJsonCache<T>(path: string, defaultValue: T): Promise<T> {
 }
 
 async function writeJsonCache<T>(path: string, data: T): Promise<void> {
-	// Sort object keys recursively to ensure consistent ordering
-	const sortKeys = (obj: any): any => {
+	const sortKeys = (obj: unknown): unknown => {
 		if (obj === null || typeof obj !== "object") {
 			return obj;
 		}
@@ -449,11 +435,11 @@ async function writeJsonCache<T>(path: string, data: T): Promise<void> {
 			return obj.map(sortKeys);
 		}
 
-		// Sort object keys alphabetically
-		const sortedObj: any = {};
-		const keys = Object.keys(obj).sort();
+		const record = obj as Record<string, unknown>;
+		const sortedObj: Record<string, unknown> = {};
+		const keys = Object.keys(record).sort();
 		for (const key of keys) {
-			sortedObj[key] = sortKeys(obj[key]);
+			sortedObj[key] = sortKeys(record[key]);
 		}
 		return sortedObj;
 	};
