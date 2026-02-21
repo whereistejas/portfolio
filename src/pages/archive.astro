@@ -1,19 +1,44 @@
 ---
 import { getCollection } from "astro:content";
+import rehypeStringify from "rehype-stringify";
 import Page from "../layouts/page.astro";
+import remarkGfm from "remark-gfm";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
 import Textorlink from "../components/textorlink.astro";
 import Row from "../components/row.astro";
+import { unified } from "unified";
 
 const archiveEntries = await getCollection("readwise-archive");
+type ArchiveEntry = (typeof archiveEntries)[0];
 
-const items = new Map<string, (typeof archiveEntries)[0][]>();
+const markdownProcessor = unified()
+	.use(remarkParse)
+	.use(remarkGfm)
+	.use(remarkRehype)
+	.use(rehypeStringify);
+
+const itemsByDate = new Map<string, ArchiveEntry[]>();
 for (const entry of archiveEntries) {
 	const dateGroup = entry.data.dateGroup;
-	if (!items.has(dateGroup)) {
-		items.set(dateGroup, []);
+	if (!itemsByDate.has(dateGroup)) {
+		itemsByDate.set(dateGroup, []);
 	}
-	items.get(dateGroup)?.push(entry);
+	itemsByDate.get(dateGroup)?.push(entry);
 }
+
+const highlightsByEntry = await Promise.all(
+	archiveEntries
+		.filter((entry) => entry.data.highlights.length > 0)
+		.map(async (entry) => ({
+			id: entry.data.id,
+			highlights: await Promise.all(
+				entry.data.highlights.map(async (highlight) =>
+					String(await markdownProcessor.process(highlight))
+				)
+			),
+		}))
+);
 ---
 
 <Page title="Reading Archive">
@@ -22,32 +47,155 @@ for (const entry of archiveEntries) {
 		<Textorlink content="CLOSE" href="/" />
 	</Fragment>
 	<Fragment slot="main">
-		<div class="archive_main">
-			{
-				Array.from(items.entries()).map(([date, items]) => (
-					<Row>
-						<Fragment slot="key">{date === "" ? "XYZ" : date}</Fragment>
-						<Fragment slot="value">
-							<div class="items">
-								{items.map((item) => (
-									<div class="item">
-										<div class="links">
-											<a
-												href={item.data.url.href}
-												target="_blank"
-												rel="noopener noreferrer"
-												class="title"
-											>
-												{item.data.title}
-											</a>
+		<div class="archive_wrapper" id="archive-wrapper">
+			<div class="archive_main">
+				{
+					Array.from(itemsByDate.entries()).map(([date, groupItems]) => (
+						<Row>
+							<Fragment slot="key">{date === "" ? "XYZ" : date}</Fragment>
+							<Fragment slot="value">
+								<div class="items">
+									{groupItems.map((item) => (
+										<div
+											class="item"
+											data-highlight-id={
+												item.data.highlights.length > 0
+													? item.data.id
+													: undefined
+											}
+										>
+											<div class="links">
+												<a
+													href={item.data.url.href}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="title"
+												>
+													{item.data.title}
+												</a>
+											</div>
 										</div>
-									</div>
-								))}
+									))}
+								</div>
+							</Fragment>
+						</Row>
+					))
+				}
+			</div>
+
+			<aside class="archive_highlights_pane" id="archive-highlights-pane">
+				<div class="archive_highlights_content">
+					<h5 class="archive_highlights_heading">Highlights</h5>
+					{
+						highlightsByEntry.map((entry) => (
+							<div
+								class="archive_highlights_group"
+								data-highlight-group={entry.id}
+							>
+								<ul>
+									{entry.highlights.map((highlight) => (
+										<li>
+											<blockquote>
+												<Fragment set:html={highlight} />
+											</blockquote>
+										</li>
+									))}
+								</ul>
 							</div>
-						</Fragment>
-					</Row>
-				))
-			}
+						))
+					}
+				</div>
+			</aside>
 		</div>
+
+		<script is:inline>
+			(() => {
+				const wrapper = document.getElementById("archive-wrapper");
+				const pane = document.getElementById("archive-highlights-pane");
+				if (!wrapper || !pane) {
+					return;
+				}
+
+				const groups = Array.from(
+					pane.querySelectorAll("[data-highlight-group]")
+				);
+				const items = Array.from(wrapper.querySelectorAll(".item"));
+				let activeItem = null;
+				let activeId = null;
+
+				const setPaneTop = (item) => {
+					const wrapperRect = wrapper.getBoundingClientRect();
+					const itemRect = item.getBoundingClientRect();
+					const top = Math.max(itemRect.top - wrapperRect.top, 0);
+					pane.style.top = `${top}px`;
+				};
+
+				const hidePane = () => {
+					activeItem = null;
+					activeId = null;
+					pane.removeAttribute("data-visible");
+					pane.style.removeProperty("top");
+					for (const group of groups) {
+						group.removeAttribute("data-active");
+					}
+				};
+
+				const showPane = (id, item) => {
+					let hasActiveGroup = false;
+					for (const group of groups) {
+						if (group.dataset.highlightGroup === id) {
+							group.setAttribute("data-active", "true");
+							hasActiveGroup = true;
+						} else {
+							group.removeAttribute("data-active");
+						}
+					}
+
+					if (!hasActiveGroup) {
+						hidePane();
+						return;
+					}
+
+					activeItem = item;
+					activeId = id;
+					pane.setAttribute("data-visible", "true");
+					setPaneTop(item);
+				};
+
+				const refreshPanePosition = () => {
+					if (!activeItem || !activeId) {
+						return;
+					}
+					showPane(activeId, activeItem);
+				};
+
+				for (const item of items) {
+					const activate = () => {
+						const highlightId = item.dataset.highlightId;
+						if (!highlightId) {
+							hidePane();
+							return;
+						}
+						showPane(highlightId, item);
+					};
+
+					item.addEventListener("mouseenter", activate);
+					item.addEventListener("focusin", activate);
+				}
+
+				wrapper.addEventListener("mouseleave", hidePane);
+				wrapper.addEventListener("focusout", (event) => {
+					const nextFocus = event.relatedTarget;
+					if (nextFocus instanceof Node && wrapper.contains(nextFocus)) {
+						return;
+					}
+					hidePane();
+				});
+				window.addEventListener("scroll", refreshPanePosition, {
+					passive: true,
+				});
+				window.addEventListener("resize", refreshPanePosition);
+			})();
+		</script>
 	</Fragment>
 </Page>

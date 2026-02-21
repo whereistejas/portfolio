@@ -1,1 +1,1042 @@
-{}
+{
+  "01k9fydx0pb1j6f91hjb89pe2n": [
+    "The storage engine provides durability (once a document is inserted, it remains available until it is removed by the user) and facilitates concurrent reads and writes.",
+    "BerkeleyDB attempted to address this by progressively reducing locking granularity, which increased the number of locks and made lock management a bottleneck.",
+    "describes how read operations use hazard pointers and write operations use lock-free skip lists to maximize the value our customers get from their hardware.",
+    "WiredTiger is a B+tree, which means that the root and internal pages only contain keys, and only leaf pages contain values. An interesting characteristic of the WiredTiger B+tree, which is relevant to our ability to implement lock-free algorithms, is that the on-disk and in-memory representations of the tree are different.",
+    "The goal of a hazard pointer is for it to be as cheap as possible for shared access, with the trade-off that it can be more expensive to acquire exclusive access.",
+    "The key to implementing a lock-free skip list is for any operation wanting to change the content on the page to construct the change to the data structure, and then atomic-compare-and-swap (CAS) the change in place. If the atomic CAS operation fails, discard the changes and try again. If it has succeeded, then the change has been made and is visible to other operations.",
+    "a skip list, which can be thought of as a search-optimized singly linked list."
+  ],
+  "01jzjk118mdexxwzxhxd6ecww7": [
+    "Let me state here a personal conviction that appears, right now,\nto be profoundly unfashionable; which is that a planned economy can be more productive - and more morally desirable - than one left to market forces."
+  ],
+  "01jm9rk40t0d60dgapqvhbb7vs": [
+    "Like a lot of people I know, I tend to cluster my work into three distinct sections, neatly organized around different cognitive enhancers: morning espresso, late afternoon tea, and a shorter session after dinner, usually with a glass of wine in hand. I generally organize my day so that I have nothing to do during the postprandial slump of the early afternoon; I’ll read a little, take a quick nap sometimes, work out. (Though I should admit my exercise regime is more cherry tomato than the full Pomodoro—I’m more of a [seven-minute-abs](https://www.youtube.com/watch?v=JB2di69FmhE) kind of guy.) I also try to focus on different kinds of tasks, depending on the time of day. I save challenging creative work for the morning; busy work for the afternoon; and leave the evening free for more playful riffing.",
+    "I suspect that most of us have distinct cognitive rhythms tied into the circadian cycle; the trick is figuring out what yours is, and organizing your workflow around its idiosyncracies."
+  ],
+  "01k79byqsjx6wqh2fesc9960gk": [
+    "That’s the key feature of gears-level models: they make falsifiable predictions about the internals of a system, separate from the externally-visible behavior.",
+    "All that said, if we have abundant data and aren’t worried about distribution shifts or system changes, non-gears models can still give us great predictive power."
+  ],
+  "01jm9rjzzpzmjg4k1z4rxkz3x1": [
+    "The other cost—more subtle but in a way just as important—came from the way daily responsibilities hijacked your mind-wandering time."
+  ],
+  "01jm9rjwtrszpqh1zq4jxjp2d1": [
+    "It is an amazing gift to have someone who is—at least in your interactions with them—wholly focused on making your ideas better."
+  ],
+  "01jm9rjt0tth2rkzd78f2bdr19": [
+    "I haven’t done a formal inventory of this, but I suspect most creative people incorporate some kind of serendipity engine into their work routine,"
+  ],
+  "01jm9rjqmzd25d5c0xjchns41d": [
+    "As Isaac Asimov once said, “The most exciting phrase to hear in science, the one that heralds new discoveries, is not ‘Eureka!’ but ‘That’s funny’.”",
+    "in biology an exaptation is a feature of an organism that evolved for one specific purpose that turns out, by chance, to be useful for some other purpose."
+  ],
+  "01ka7pfwqnegptwnjprxh3xwwd": [
+    "In The Intelligent Investor, Ben Graham described the stock market as a weighing machine in the long run but a voting machine in the short run. What he meant by the latter reference was that in the short run, intrinsic value is often ignored and the stocks that do best are usually the ones capable of winning a popularity contest.",
+    "in recent decades the U.S. has lost roughly ten times as many potential jobs to increased productivity, mechanization and automation as it has actual jobs to low-cost competition from China.",
+    "Manufacturing employment is down a third since 1979, despite economic growth and increased manufacturing output.",
+    "People employed in uncompetitive industries at the time globalization takes place are particularly disadvantaged",
+    "the decline of balance in the media."
+  ],
+  "01k7vfh217js8xtyrw23yfjq4g": [
+    "For example: Addition over numbers is associative, meaning `a + (b + c) == (a + b) + c`. This tells us that `Int + (String + Null)` is isomorphic (≅) to `(Int + String) + Null`: we can convert values between the two types without losing any useful information.\n\nA more interesting example is that AlgDTs follow the distributive property `a*(b + c) == a*b + a*c`. If we have a value of type `Account(name: str, contact: (Email + Phone))`, we can transform it into a value of type `EmailAccount(name, email) + PhoneAccount(name, number)`."
+  ],
+  "01k7jjdybfs76qndt357am4n6e": [
+    "The key in dynamic programming is to define, whether for an array index or a recursive call, exactly what a “partial” solution means"
+  ],
+  "01ka7pa98gpaxvdm7bmez68zhv": [
+    "In 1977, responding to the difficult energy outlook brought on by the Arab Oil Embargo, President Jimmy Carter created the position of Secretary of Energy and chose James Schlesinger as America’s first “energy czar.” Previously Schlesinger had served as Chairman of the Atomic Energy Commission, Director of Central Intelligence, and Secretary of Defense, and in his early days he taught economics at the University of Virginia. I was tickled by a story – undoubtedly apocryphal – about his days in academia that made the rounds when Schlesinger was in his new energy post.\n\nAs the story went, Schlesinger was such a convincing evangelist for capitalism that two students in his economics class decided to go into business after graduation. Their plan was to borrow money from a bank, buy a truck, and use it to pick up firewood purchased in the Virginia countryside, which they would then sell to the grandees in Georgetown. Schlesinger wholeheartedly endorsed their entrepreneurial leanings, and they proceeded with great enthusiasm. From the start of their venture, the former students could barely keep up with the demand.\n\nThus it came as quite a shock when their banker called to tell them the balance in their account had reached zero and the truck was about to be repossessed. They contacted Schlesinger, and he listened attentively as they recounted their experience: they had, in fact, been able to acquire vast amounts of wood for $50 a cord, and they’d been able to sell all they had for $40 a cord. How could they be broke?\n\nWhere had they gone wrong? Schlesinger puffed on his ever-present pipe and said: “The answer’s obvious: you need a bigger truck.",
+    "The level of economic activity is determined by the nation’s productiveness.",
+    "For example, lending people money can enable them to buy things today that they otherwise mightn’t have bought until later (if at all). If a consumer buys a boat today with money made available through a low-interest loan, that’s a boat he won’t buy next year. Lending people money doesn’t alter their lifetime incomes, meaning consumers may buy fewer boats later, when the loans have to be repaid, causing disposable income to contract.",
+    "If lending personnel are making loans without a direct stake in their repayment, they’re less likely to say “no” to weak loan applicants. And if borrowers won’t be affected by a failure to repay loans, which of them will decline offers of financing?",
+    "“bankruptcy is to capitalism as hell is to Catholicism.”",
+    "It makes sense to assume that most democratic societies eventually will reach the point where the majority views the top tier as a cash cow available for unlimited milking. “Let’s hit them for a little more; there’s nothing they can do about it.” But the truth is, this “tyranny of the majority” is an unhealthy development.",
+    "Thus most governments are aware that while they can raise tax rates on people of means, in most cases they can’t make them sit still and take it.",
+    "In California, 5,745 taxpayers earning $5 million or more [or only 4/100s of a percent of the 13.6 million returns filed] generated more than $10 billion of income taxes in 2013, ... or about 19% of the state’s total, according to state officials.",
+    "In this globalized world, that means Americans can’t enjoy both the high-paying manufacturing jobs they used to have and the low-cost goods they’ve been buying of late. The imposition of tariffs can’t solve that conundrum.",
+    "It seems unlikely that you can make everyone better off just by mandating a higher wage."
+  ],
+  "01k7d30sekn3twp4x8t3xjamrd": [
+    "exploit and explore",
+    "Balancing the desire to improve your own skills versus being less productive while you learn new skills is one example at the personal level.",
+    "“innovator’s dilemma.”",
+    "base creativity",
+    "disruptive Creativity",
+    "Hill-making demands huge inefficiencies."
+  ],
+  "01kern87298zrhhx8m9rattwyd": [
+    "Nick pointed out the same applies to a writer struggling when creating a piece. “When you’re stuck and sit there, thinking, trying to come up with what’s next, that’s the valuable part of writing. It’s tempting to use AI to remove that stuck-ness, but it’s basically cheating—and leads to a very different result.”"
+  ],
+  "01k6va67563cax8s7f324ygv1t": [
+    "learning methods that once felt too time-consuming to attempt have suddenly become feasible",
+    "or example, when I was reading the card on *Gaussian distribution*, one passage in it left me confused. At that moment:\n\n•   I could right-click the card to start a chat with AI, quote the confusing passage, and ask it to explain. The AI would answer my question using the full content of the card as context.\n•   I could ask the AI to give me a simple, concrete example to explain that passage, or to design a hypothetical problem and solve it using the knowledge described there.\n•   I could share my current understanding of the passage with the AI, ask it to judge whether I was correct, and even have it quiz me to test my comprehension.\n•   I could even have the AI read the original textbook PDF, so that with the full context it could tell me what the author intended in writing that passage, and whether those details would become important in later chapters I hadn’t yet reached."
+  ],
+  "01k3nxs3gwjfacac4apze81zqr": [
+    "There's no doubt that teachers in, say, India earn much less than teachers in Ireland, but relative to context, they tend to be very well paid.",
+    "There is a second explanation though, that seems to fit the evidence better. Public school teachers in many developing countries earn civil service salaries that are far higher than market wages. This is what economists traditionally refer to as “rents.” The graph below highlights four examples.",
+    "Our paper joins a number of recent studies with very underwhelming findings about the impact of teacher pay. In India, Karthik Muralidharan and Venkatesh Sundararaman found that low-cost private schools produce similar learning levels while [paying one-fifth as much](http://www.nber.org/papers/w19441).",
+    "Because for all the hype around disruption and automation, the current evidence is equally consistent with the idea that investing significantly more money to train, recruit, and retain the highest quality teachers in public education systems is even better value for money."
+  ],
+  "01kfkg5c5m2cc5c4015qcgk3ce": [
+    "Typical hard cider has an alcohol level of about five percent, enough to kill most bacteria and viruses. Many settlers drank it whenever possible, because the water around them was polluted — sometimes by their own excrement, more commonly by excrement from their farm animals. Cider from Appleseed’s apples let people avoid smelly, foul-tasting water. It was a public health measure — one that, to be sure, let some of its users pass the day in a mild alcoholic haze.",
+    "If we could somehow collect the total world supply of rivers, lakes, and other fresh surface water in a single place — all the water that is easily available for the eight billion men, women, and children on Earth — it would form [a sphere just 35 miles in diameter](https://archive.ph/o/BPPyf/https://www.usgs.gov/special-topics/water-science-school/science/how-much-water-there-earth).",
+    "Households are responsible for just one-tenth of global water consumption, but most of that is used for cleaning: washing dishes, washing clothes, washing people, washing away excrement."
+  ],
+  "01ka423qhpxetjkpqdrqwbebaq": [
+    "facetiousness",
+    "The only viable solution is to make a shift: from a life spent trying not to neglect anything, to one spent proactively and consciously choosing what to neglect, in favour of what matters most.",
+    "decisions should be made not by asking, “Will this make me happy?”, but “Will this choice enlarge me or diminish me?”",
+    "(Relatedly, don’t worry about burning bridges: irreversible decisions tend to be more satisfying, because now there’s only one direction to travel – forward into whatever choice you made.)",
+    "It’s possible, instead, to make a game of gradually increasing your capacity for discomfort, like weight training at the gym. When you expect that an action will be accompanied by feelings of irritability, anxiety or boredom, it’s usually possible to let that feeling arise and fade, while doing the action anyway.",
+    "**The capacity to tolerate minor discomfort is a superpower****.**",
+    "One good question to ask is what kind of practices strike you as intolerably cheesy or self-indulgent: gratitude journals, mindfulness meditation, seeing a therapist? That might mean they are worth pursuing.",
+    "**The future will never provide the reassurance you seek from it****.** As the ancient Greek and Roman Stoics understood, much of our suffering arises from attempting to control what is not in our control."
+  ],
+  "01k228ps97vg5bwhhv6433c1tm": [
+    "Fans interpret A24 as a champion of cinema that believes in the mass appeal of challenging projects. Detractors see a zeitgeist-chasing machine that hawks products rather than art.",
+    "Thrive Capital founder Josh Kushner will sit on A24’s board.",
+    "In large part because A24 is adept not only at selling itself but making its audience feel good about the purchase. A24’s most enduring accomplishment is the creation of this feeling: everything it produces not only belongs in its roster but can’t be found anywhere else. The scarcity of recent quality mainstream films contributes to the sense that each A24 release, regardless of actual merit, is an event",
+    "Instead, it recalls James Baldwin’s invective against “the ostentatious parading of excessive and spurious emotion” that clouds the “wet eyes of the sentimentalist.”",
+    "Instead, what the company has created is akin to a [signature scent](https://dirt.fyi/article/2025/04/brand-sillage), the trail of which is easily pointed to until whatever distinctive original source it came from dissipates into the ether."
+  ],
+  "01k7h45yh2z9kwre69wx4pn0h8": [
+    "The product thesis for Gotham was to provide enhanced security *and* enhanced civil liberties. Karp believed society would not work with constant terror attacks and would not work if we were forced to forfeit our privacy in exchange for stopping them; the only way to push out the efficient frontier of that tradeoff is through technology.",
+    "The FDE role was famously inspired by Karp’s observation of how excellent French restaurants operate. The waitstaff is an intrinsic part of the kitchen. If you want to order the wrong wine with the fish, the wait staff will simply tell you no.",
+    "FDE’s are trained to view themselves as owners of their customers’ businesses. You must hold yourself accountable to the end results of the customers business and try to act as if you are the CEO, but with zero authority. This alignment constantly demands more of our product. We have a visceral connection to how much more a customer could win if the product could just do a little bit more for them.",
+    "For Palantir the problem statement is can you build a product that provides substantial technical leverage to solve the next problem we have never seen before."
+  ],
+  "01k7h464drvvxkbd4yrdjkwmmv": [
+    "You cannot, in general, assume it is possible to go into a factory and find a single dataset that is “all the process logs from all the machines, end to end”.",
+    "This is why I disagree with a lot of people who imagine an “AI transformation” in the economic productivity sense happening instantaneously once the models are sufficiently advanced.",
+    "So too with AI. You can’t skip over the work of convincing customers that the tool will be worth the setup costs, overcoming internal friction to actually change the way companies operate, and testing and adapting the tool for different contexts."
+  ],
+  "01k6z1cjetsqy8ev7j7ffnznfn": [
+    "Cults are high-variance. You can get superior growth and focused pursuit of a variant thesis. Or you can get fraud that’s ostensibly perpetrated for the greater good.",
+    "Deferring to voters is not exactly an ideal standard, but it’s a consistent one: the object-level debates are complex and challenging, but the meta question is whether policy should be made by technology executives or by the established institutions that are designed to make such decisions",
+    "Politics is the art of determining which difficult moral tradeoff you make, and Palantir’s job is, as much as possible, to minimize the extent to which it’s a tradeoff at all."
+  ],
+  "01k93cdtwr1w9r40fq02kk1nf7": [
+    "The first is that the deals will *artificially inflate companies’ revenue*, tricking investors into overvaluing their stock or lending them too much money. The second is that the deals *increase systemic risk* by tying all of the AI companies’ fortunes to each other.",
+    "In fact, I suspect that this is what’s actually going on with these circular deals — *diversification*. All of these companies are existentially dependent on AI itself, but they don’t want the added vulnerability of being dependent on specific AI companies.",
+    "We’ll end up with a system that’s more vulnerable to an AI crash, but *less* vulnerable to the failure of any specific AI company.",
+    "it’s not clear that the circular deals make things worse — instead, they might be letting AI companies *diversify* their dependencies. In the first quarter of this year, more than half of Nvidia’s revenue came from [just four big mysterious customers](https://finance.yahoo.com/news/54-nvidias-q1-revenue-came-093700382.html) — probably Amazon, Microsoft, and Google, and possibly Meta. Building up demand from OpenAI could help Nvidia be *less* dependent on those big customers."
+  ],
+  "01k88yvygrenzpysy3mjvd7qf9": [
+    "Tutors, Bloom claimed, could raise student achievement by two full standard deviations—or, in statistical parlance, two “sigmas.” In Bloom’s view, this extraordinary effect proved that most students were capable of much greater learning than they typically achieved, but most of their potential went untapped because it was impractical to assign an individual tutor to every student.",
+    "Cohen, Kulik, and Kulik’s 1982 meta-analysis reported that tutoring effects averaged 0.84 standard deviations when measured on narrow tests developed by the study authors, versus just 0.27 standard deviations when measured on broader standardized tests.",
+    "Indeed, Burke [wrote](https://www.proquest.com/docview/252076952?parentSessionId=eZh%2FxLty5zFIQRLoBINVaDRSpQEONbvK7WA%2BPN%2FYMBw%3D&sourcetype=Dissertations%20&%20Theses), “perhaps the most important part of the tutors’ training was learning to manage feedback and correction effectively.”",
+    "Finally, “tutors were urged to be appropriately generous with praise and encouragement whenever a student made progress. The purpose of this training was to help the tutor make learning a rewarding experience for each student.”",
+    "The benefits of tutoring depend on how much individualized instruction and feedback students get, how much they practice the tutored skills, and on the type of test used to measure tutoring’s effects.",
+    "Producing benefits of one-third of a standard deviation would be a huge triumph if it could be done at low cost, on a large scale, and on a broad test—all without requiring an army of human tutors"
+  ],
+  "01kcqy89v0c6wb7gbrcs5jscrq": [
+    "Read in this light, the chapter becomes somewhat ridiculous, because the rest includes descriptions of brutal acts of torture and plunder under colonialism, and then frames data center water use as a continuation of that same colonialism.",
+    "![](https://substackcdn.com/image/fetch/$s_!LYqG!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe376c4d-77f8-4e7f-bd53-f9c2550427ac_1528x700.png)",
+    "The vast majority of water that power plants use is withdrawn and then returned to the local source (non-consumptive use on this graph).",
+    "So the study Hao is citing is not only saying AI will consume just 10% as much water as she says, only 15% of that 10% will be drinking water.",
+    "[I also argue here](https://andymasley.substack.com/p/the-ai-water-issue-is-fake?open=false#%C2%A7how-big-of-a-deal-is-it-that-data-centers-use-potable-water) that whether water is potable doesn’t really matter, because what actually harms the availability of drinkable water is access to total freshwater, not potable water. It’s relatively easy to turn freshwater potable.",
+    "The reason I think this is strange is that in basically every country, including the US, 80% of water is used on industry and commercial buildings rather than household consumption."
+  ],
+  "01k2j40tf05d83f02kjh422fnt": [
+    "One of the most obvious economic contrasts between India and China is that China has followed the East Asian model of export-led manufacturing, like Japan, South Korea and Taiwan (albeit at much greater scale), and India has not",
+    "In recent years India’s manufacturing share of GDP has been around 13%, about half of the level in China, and historically it has never exceeded 18%. One of the central debates among Indian economists is how much of a problem the relative weakness in manufacturing is, and what should or could be done about it.",
+    "If India does not have a manufacturing boom, it probably will not have a broader investment boom.",
+    "dearth",
+    "As Wang Feng’s recent book [*China’s Age Of Abundance*](https://amzn.to/4lOul2k) emphasized, China was able to seize the opportunity presented by labor-intensive export manufacturing in the 1980s because it had made substantial improvements in health, education and gender equality in prior decades.",
+    "One reason why manufacturing has not taken off in India may well be that India does not have a mass workforce equipped with the basic skills to perform manufacturing jobs.",
+    "This points to an even more fundamental contrast between India and China, which is in state capacity",
+    "The significant increase in economic resources available to the state government does not seem to have translated into better outcomes for much of its population.",
+    "In any case, a government that struggles to deliver basic public services is unlikely to be able to execute interventionist industrial policies effectively. Even China has plenty of waste and corruption scandals alongside the success stories.",
+    "India’s cycle is mostly in services, which have fewer spillovers to the rest of the economy than manufacturing."
+  ],
+  "01kcvb6pvb2g5bwpd19ek3htrp": [
+    "**Struggling with whether to apply the “bubble” label can bog you down and interfere with proper judgment; we can accomplish a great deal by merely assessing what’s going on around us and drawing inferences with regard to proper behavior.**",
+    "the speculative mania enabled what Perez called the “Installation Phase,” where necessary but not necessarily financially wise investments laid the groundwork for the “Deployment Period.” What marked the shift to the deployment period was the popping of the bubble; what enabled the deployment period were the money-losing investments.",
+    ". . . “Inflection Bubbles” – the good kind of bubbles, as opposed to the much more damaging “Mean-reversion Bubbles” like the 2000’s subprime mortgage bubble.",
+    "The key realization seems to be that if people remained patient, prudent, analytical, and value-insistent, novel technologies would take many years and perhaps decades to be built out. Instead, the hysteria of the bubble causes the process to be compressed into a very short period – with some of the money going into life-changing investment in the winners but a lot of it being incinerated.",
+    "The foregoing is what I call “lottery-ticket thinking,” in which the dream of an enormous payoff justifies – no, compels – participation in an endeavor with an overwhelming probability of failing."
+  ],
+  "01jy6rem6wbkfj90g95gazpq5p": [
+    "governments can limit the rents landlords can charge for their apartments, but they can’t make developers build new ones.",
+    "“protectionism,” because tariffs protect domestic industries from encroachment from abroad",
+    "There were a number of reasons for the success of the foreign manufacturers, including quality, engineering and marketing, but one main reason was that consumers concluded that cars made in the U.S. were more expensive than foreign cars but not correspondingly better.",
+    "In other words, progress takes countries up the curve from subsistence to prosperity, and along the way they transition from agriculture- to manufacturing- to service-based economics.",
+    "he idea that spending shouldn’t exceed revenues is completely out the window. George F. Will listed nine tenets of progressivism in a May 28 article in *The Washington Post*, and one was as follows: “limitless borrowing from future Americans to fund today’s Americans’ consumption of government goods and services.”",
+    "**The bottom line on all the above is that free-market economies don’t produce perfect solutions, but efforts to significantly control them make things much worse. There can be no solution that gives everyone what they want. All things considered, however, the laws of economics lead to the best solutions that can be attained.**"
+  ],
+  "01k3c0njfkfk5g7a8gtrjh0dgp": [
+    "Thomas Bayes was no physician. Born at the start of the eighteenth century, he was a Presbyterian minister with a side gig in formal logic—an interpreter of uncertainty in an age that craved certainty. In the one portrait traditionally said to depict Bayes (though the sitter may have been misidentified), he appears as a sizable, self-assured man with a Wall Street haircut: Alec Baldwin in a clergyman’s coat. Bayes published only two papers in his lifetime: one a defense of God’s benevolence, the other a defense of Newton’s calculus. His lasting contribution came posthumously, in a Royal Society paper on conditional probability. Its argument still informs the way we assess information.",
+    "The consequences of ignoring these principles are staggering. In 2021, according to one estimate, the United States spent more than forty billion dollars on cancer screening. On average, a year’s worth of screenings yields nine million positive results—of which 8.8 million are false. Millions endure follow-up scans, biopsies, and anxiety so that just over two hundred thousand true positives can be found, of which an even smaller fraction can be cured by local treatment, like excision. The rest is noise mistaken for signal, harm mistaken for help.",
+    "This is “lead-time bias,” which inflates survival time without improving outcomes.",
+    "Screening disproportionately detects indolent tumors—those less likely to be lethal in the first place. That’s known as length-time bias.",
+    "One critical metric for any screening test is its positive predictive value, or P.P.V.—the likelihood that a positive result truly signals disease."
+  ],
+  "01k38s3z2gty73bpdzpejer4fj": [
+    "For all known life forms, activity is punctuated by periods of rest. Sleep may be the most familiar, but many other distinct dormant states occur on longer timescales, from weeks to months on end. Such suspended animation has garnered many different names: hibernation and torpor (in mammals and birds), brumation (in reptiles), diapause and quiescence (in insects and nematodes), aestivation (summer dormancy in vertebrates and invertebrates), hypobiosis, cryptobiosis, and latent life (in microorganisms).",
+    "Unlike most other kinds of dormancy, largely characterized by physiological and behavioral suppression, insect diapause is a state of programmed *developmental* *arrest*.1 It’s a pause button pressed on one of the stages of their life cycle — either as eggs, larvae, pupae, or adults, depending on the species.",
+    "In that sense, diapause is an example of [phenotypic plasticity](https://academic.oup.com/genetics/article/215/1/1/5930418), the capacity of one set of genetic instructions, “genotype,” to produce two or more alternative phenotypes (sets of traits), depending on the environment.",
+    "The seasonal diapause program is initiated long before adverse environmental conditions appear. In preparation for diapause entry, a number of biochemical and cellular changes take place. Cells stop dividing, and fat bodies of insects (equivalent to adipose tissue and liver in mammals) accumulate large fat reserves and [storage](https://www.eje.cz/pdfs/eje/1999/03/01.pdf) [proteins](https://www.sciencedirect.com/science/article/abs/pii/0305049195000357) as an energy source during the long period of fasting in winter. Metabolic rates decrease, and aerobic metabolism (oxygen-dependent) switches to the more conservative anaerobic (oxygen-independent) form.7 Insect bodies also become more stress-resistant, thanks to fortification of their cuticle and expression of protective molecules like heat-shock proteins and antioxidant enzymes.",
+    "The ability to induce or terminate diapause using chemicals has enormous implications — with their help, we can artificially manipulate when insects are active and when they are dormant. If we actively interfere with diapause by altering its natural timing, crop pests could be forced into activity during the wrong time of the year when there are no available food sources or when it’s too cold for them to survive. This could include blocking insects’ entry into diapause in the fall, prematurely breaking them out of an overwintering, or causing them to miss the correct window for diapause termination in the spring, effectively [driving them to ecological suicide](https://www.pnas.org/doi/full/10.1073/pnas.1113863108).",
+    "An explanation for this shift arrived in 1965, thanks to Dr. Huey C. Chiang, an entomologist at the University of Minnesota, who [observed](https://academic.oup.com/jee/article-abstract/58/3/470/789876) that a small percentage of northern corn rootworm eggs were capable of staying in diapause for two winters or longer. The pests caught up with the alternating cycle of crop rotation, which [strongly selected against](https://academic.oup.com/jee/article-abstract/85/1/262/2215814) [the wild-type one-year life cycle](https://academic.oup.com/ee/article-abstract/13/5/1237/2393573), favoring those insects that were able to persist in diapause longer. Crop rotation inadvertently selected for exactly those corn rootworms with a two-year prolonged diapause.14\n\nThis is an example of a bet-hedging strategy in action. Such variation may protect the population as a whole from going completely extinct, since at least some individuals can escape the adversity due to their unusual phenotype."
+  ],
+  "01k2fdeym6jvfb3zkgx0j3c11f": [
+    "A continuing challenge for AAV therapies is how to get them into the body without triggering an immune response, which are prone to happen with large initial dosing common to systemic therapies.",
+    "Though AAV’s immune profile is rather mild in most patients, deadly complications can still arise with this vector.",
+    "Still, AAV’s most obvious limitation remains its packaging capacity (~4.7 kb). This initially posed challenges for delivering the large Cas9 enzyme (which is encoded by a 4.2kb gene) plus its guide RNAs and necessary control elements.",
+    "Though they share a similar name with AAV, adenoviruses are distinct: they are medium-sized, about [90 nanometers in diameter](https://www.sciencedirect.com/science/article/pii/S216225312300241X), and non-enveloped, carrying a [double-stranded DNA](https://www.nature.com/articles/s41598-019-46228-2) genome of about 36 kb — significantly larger than AAV’s capacity of around 4.7 kb.",
+    "Adenovirus infects cells by attaching to surface receptors (such as [coxsackievirus and adenovirus receptor](https://pubmed.ncbi.nlm.nih.gov/32298477/), or CAR) and getting pulled inside. Once there, it escapes its membranous container and travels to the nucleus, where it releases its DNA. The viral DNA then remains separate from the cell’s chromosomes (as episomes) rather than integrating into them. Both adenoviruses and AAVs primarily persist this way, though AAVs can occasionally integrate into the host genome while adenoviruses rarely do.",
+    "After the Gelsinger case, work on this vector has lagged behind AAV. So even though capsid engineering is on the horizon for adenovirus, it has some catching up to do.",
+    "A major drawback of adenoviruses involves immunogenicity. Common serotypes such as Ad2 or Ad5 frequently trigger strong [innate and adaptive immune responses](https://journals.asm.org/doi/10.1128/jvi.76.9.4580-4590.2002), activating pattern recognition receptors",
+    "Lipid nanoparticles (LNPs) are microscopic spherical structures made of fat-like molecules that encapsulate and protect nucleic acids like mRNA for delivery into cells."
+  ],
+  "01k9fhwzsdqbm56qxpr19htbny": [
+    "In the context of the cold war, the distinctive measure of a “superpower” was the combination of a continental span and a world-threatening nuclear arsenal. The coming-together of China’s enormous manufacturing capacity and its ravenous appetite for copious, cheap, domestically produced electricity deserves to be seen in a similar world-changing light. They have made China a new type of superpower: one which deploys clean electricity on a planetary scale."
+  ],
+  "01k6kkpgne5h19qqj62d19t0h2": [
+    "Some analysts believe that China is the country that assembles most of the world’s smartphones and other electronics because its workforce costs are low. In reality, the country remains the world’s leader because its workforce has proved its worth in sophistication, scale, and speed.",
+    "The government backed this vision with enormous financial support, spending one to two percent of GDP each year on direct and indirect subsidies, cheap credit, and tax breaks.",
+    "Lavish funding, they point out, has led to waste and corruption. It has created industries in which dozens of competitors manufacture similar products and struggle to make a profit. The resulting deflation makes companies wary of hiring new staff or raising wages, leading to lower consumer confidence and weaker growth. China’s economy, which once looked poised to overtake the United States’ as the world’s biggest, is mired in a slowdown and may never match the American one in total output.",
+    "The standard explanation for China’s technological success is that the central government targeted various industries for support; provided hundreds of billions of dollars in subsidies, tax breaks, and low-interest loans to get these sectors going; and helped Chinese firms steal or copy technology from other states. This is part of what took place. But that story misses the bigger picture. China succeeded not only because it subsidized particular industries but also because it invested in the deep infrastructure—underlying physical systems and human expertise—that enables innovation and efficient production.",
+    "Over the past quarter century, China has led the world in building power plants, adding the equivalent of the United Kingdom’s total supply every year.",
+    "China’s subsidies may also, at times, suppress innovation. Generous manufacturing spending helps promote the tech ecosystem, but it also enables less efficient firms to stay in business far longer than they would in a more market-driven economy.",
+    "Ever-rising trade surpluses could trigger much more severe and coordinated protectionism from the rest of the world, with dozens of countries joining the United States in erecting tariff barriers to Chinese imports.",
+    "Real manufacturing output, which had risen steadily until the 2008 financial crisis, plunged then and has never recovered.",
+    "The United States will also need to find ways to reduce cost structures throughout its industries. Because it is a rich country with high wages and labor and environmental standards, it will never be able to compete with China or India in terms of availability of low-cost labor, and it should not try. But to be serious about rebuilding industry, Washington must display a commitment to making its markets attractive for capital-intensive sectors. Eliminating Trump’s ruinous tariffs, which will make American manufacturing prohibitively expensive, is essential, as is providing abundant, cheap energy. Yet so is permitting reform that eliminates the excessive regulatory costs of new construction, ample government funding for basic research and development, and liberal immigration policies that enable companies to source the best talent from anywhere in the world. The last is not strictly a cost measure, but it is essential to rebuilding U.S. process knowledge. Much of that knowledge now exists abroad, and the United States must be willing to import it."
+  ],
+  "01k3nz6ne5jyg7avc3538248k8": [
+    "As Patrick Collison of Stripe, a payments firm, puts it, “The provision of credit is more socially valuable the less legible the creditworthiness of the borrower.”",
+    "“India leads the world in real-time digital payments by clocking almost 40% of all such transactions,”",
+    "Once the fintech behemoths have lured consumers, they can offer loans and other financial services, helped by algorithms that gobble up data.",
+    "This could be supercharged by the Account Aggregator scheme, which, like open banking in Europe, allows users to carry their financial history to a competitor.",
+    "Yet the state-led, zero-fee model has downsides. Indian bankers claim that a shortage of revenue has dissuaded banks and fintech firms from investing in consumer protection. “There are tech costs, maintenance costs, fraud and dispute costs,” complains one. “Why would a financial firm incur all those expenditures when there’s no revenue stream?” asks Ajay Shah of the XKDR Forum, a think-tank in Mumbai. “This is a wake up call…maybe the answer is to charge a little more,” says Mr Rajan, the former RBI governor.",
+    "Ms Rai counters that UPI’s zero cost boosts economic growth. The government compensated banks and some fintechs with just over 2,000 crore rupees ($250m) in 2022 as a subsidy for their public service in sustaining UPI."
+  ],
+  "01k10hr6jb5ydtqsvwfph68f7r": [
+    "With Modi’s government accused of cracking down on everything from NGOs to think-tanks, opponents see in the Gymkhana takeover an effort to control not just a recreational club but civil society more broadly."
+  ],
+  "01k10hk5n1ya3cd38bdm224d4h": [
+    "A study in 2020 of Britain, Turkey, eight countries in the European Union and five in Latin America by Cristóbal Rovira and Steven van Hauwaert, two political scientists, confirmed the inverse relationship between higher education and support for populist leaders.",
+    "Annual GDP growth was 8.4% in the last quarter of 2023 (though because of quirks in how India measures its GDP, the underlying figure is closer to 6.5%)."
+  ],
+  "01k2zj0xxcdk4gje1cj3gxyjmm": [
+    "A righteous impulse from that era has convinced many Americans that physical dynamism is undesirable and has robbed society of its ability to improve itself. Rather than expanding new subway systems, building nuclear-energy plants or rare-earths-processing facilities, or designing the path for a new transmission line, many of the country’s smartest engineers have been seduced by Wall Street and Silicon Valley, where they can have more fun and make a lot more money."
+  ],
+  "01k10h6bjne1bjfp0pandb9aec": [
+    "gilded",
+    "The narratives we choose shape the realities we experience.",
+    "Competition can be a force for self-renewal instead of mutual destruction.",
+    "capitalism and democracy have always coexisted in tension in the United States:\n\n> Democracy depends on equality, capitalism on inequality. Citizens in a democracy come to the public square with one vote each; participants in a capitalist economy arrive at the marketplace with unequal talents and resources and leave the marketplace with unequal rewards.",
+    "While China is no longer impoverished as a whole, it suffers the ailments of a richer, crony capitalist economy.",
+    "“The growth slowdown means that expected progress in living standards has evaporated; high inequality means that just looking at GDP growth understates the magnitude of popular economic discontent, as the gains of growth have shifted away from ordinary Americans to benefit a relatively narrow elite.”",
+    "War begins at the psychological level when individuals cease to perceive a common humanity between us and them."
+  ],
+  "01k6xgtzketeekb7h9er7ntrg4": [
+    "The prosperity the western world enjoyed for decades was the result of ideas, specifically classical liberal ideas about free trade, individual rights, limited government, and rule of law.",
+    "For decades, the people who cared about progress poured their energy into their own pet causes: clean energy, AI, biotech, rockets. They gave generously to foundations, research labs, and startups. But they neglected the soil all of those things grow in: individuals working on a broad, classical liberal order that protects property rights, enforces contracts, limits arbitrary government action, and keeps borders and markets open.",
+    "When business leaders finally recognized that political ideas and politics mattered, many made the problem worse. Their instinct was to dive straight into politics. But they did it the way they approach startups: fast, improvisational, tactical.",
+    "Software can fix a feed, but it cannot create the conditions for free speech.",
+    "They funded causes that fit their measurement mindset. Medical research with clear outcomes. Educational programs with test score improvements. Environmental initiatives with quantifiable impact. These were good causes, but they shared one characteristic: you could track results. When they were failing, you could pivot and hack the problems. They prioritized projects, not principles.",
+    "One modern-day equivalent of a clear articulation of principles and values, not just a project or cause, is the “progress studies” movement that was first articulated by Patrick Collison and Tyler Cowen. It’s a movement that aims to study the combination of economic, technological, scientific, cultural, and organizational advances that have improved standards of living over time, with the goal of understanding how to speed it up and sustain it. We need many more to join their tribe.",
+    "It will mean accepting that some of the most valuable work is not measurable, that the best returns may come decades later, and that the surest foundation for freedom and prosperity is principled, long-term investment in the public good."
+  ],
+  "01kckd3k69rdqz2w3pedvqp4cy": [
+    "patrimonies",
+    "Enlightenment ideals",
+    "ex nihilo",
+    "the goal of *The Technological Republic* is to inspire American technologists to become American techno-nationalists.",
+    "The techno-nationalist sees technology and nationhood as two intertwined goods. As technology advances, so does national power.",
+    "Antebellum",
+    "United States was founded by a variety of settler cultures, each with distinct",
+    "The magnates of the Gilded Age grasped a lesson their twenty-first-century successors have largely forgotten. Technological development is only possible when a governing coalition commits to it; potential coalition members must be courted and convinced."
+  ],
+  "01k2net1yda1j1tqkqadctppfx": [
+    "The economics of marriage and the emotions of family are impossible to untangle.",
+    "The language wars intensify around the vows. Hindu weddings have the saat phere (seven circles around the fire), but what those seven vows actually say varies wildly by region, caste, and the pandit's mood.",
+    "Endogamy",
+    "That's the thing about Indian weddings — they're not just about two people getting married. They're about 5,000 years of tradition colliding with modern love, family honor wrestling with individual choice, and everyone pretending they know what's best while secretly making it up as they go along."
+  ],
+  "01kd3v0pf3r3361bm6x4hva197": [
+    "The history of any major technological or industrial advance is inevitably shadowed by a less predictable history of unintended consequences and secondary effects — what economists sometimes call “externalities.” Sometimes those consequences are innocuous ones, or even beneficial. Gutenberg invents the printing press, and literacy rates rise, which causes a significant part of the reading public to require spectacles for the first time, which creates a surge of investment in lens-making across Europe, which leads to the invention of the telescope and the microscope. Oftentimes the secondary effects seem to belong to an entirely different sphere of society. When Willis Carrier hit upon the idea of air-conditioning, the technology was primarily intended for industrial use: ensuring cool, dry air for factories that required low-humidity environments.",
+    "But you couldn’t *patent* alcohol."
+  ],
+  "01k0yr667kps6mz7abkd99n3ds": [
+    "optogenetics"
+  ],
+  "01k4ratjy331zk7tr6hts9ex19": [
+    "The strongest challenge to the application of polygenic scores for embryo selection comes from a recent body of research showing that most scores combine causal genetic effects with population stratification, and therefore can be expected to lose much of their predictive power when comparing two members of the same family (e.g. two embryos from the same couple). There is increasing agreement in the field that unless scores are validated within families, headline results like “decreases risk of X by Y%” will be large overestimates.",
+    "**Antagonistic Pleiotropy**\n\nThis is a fancy term for “sometimes genes that are good in one way are bad in other ways”.",
+    "Israel, offer free IVF for anybody who wants it. And universal basic IVF"
+  ],
+  "01jyxcfgnngyv41y6ma393y3jx": [
+    "it is when tissue that resembles the uterine lining, or endometrial-like tissue, grows outside the uterus. The tissue can implant itself in nearby tissues, like the ovaries and fallopian tubes, or even more distal organs like the bladder and bowel. Due to the continuous influx of hormonal growth factors (mainly estrogen), these misplaced endometrial-like cells respond cyclically, just as the normal uterine lining does. They thicken, break down, and bleed with each menstrual cycle, but unlike the uterine lining, **they have nowhere to go.**"
+  ],
+  "01jzmqv1gtzgntkpr861khmtdw": [
+    "Wilhelm Röntgen took the first X-Ray (XR) and presented his work “[On a New Kind of Rays](https://media.bloomsbury.com/rep/files/primary-source-125-w-k-rontgen-_the-x-rays_.pdf)” in December 1895 which was printed in January 1986. ... There were 49 monographs and 1044 research papers on XRs in 1896 alone.",
+    "when Roentgen discovered XRs there was no federal device regulation in place. The first [law to touch devices was in 1938](https://www.fda.gov/about-fda/changes-science-law-and-regulatory-authorities/part-ii-1938-food-drug-cosmetic-act). Today, we have heavy pre-market regulation. This regulatory oversight itself has many pros (protecting patients, exceeding standard of care) but also its faults (limiting pace of new technology).",
+    "XRs would not have taken off if patients and the public did not want to pay for it. In fact, hospitals charged $1-3 per image that were billed directly to the patient in a fee-for-service model. Self-pay made up about 70-80% of hospital payments, charity represented 5-10%, and the [remaining was from state or municipal lump sum](https://pmc.ncbi.nlm.nih.gov/articles/PMC10810293/?utm_source=chatgpt.com) payments for patients who could not afford to pay."
+  ],
+  "01jmhrpfa0tc8t8qbrxrb1hvm4": [
+    "The sages say that for a man to control his own tongue is the hardest thing. Pure speech, full of meaning, can save the very world; just as evil talk can bring doom. They say that a forest cut down with axes can grow again. But the heart wounded with cruel words may never recover. Arrows you can pull out of the flesh, but a word that pierces the heart: who will ever fetch it out? The savage words a man speaks defile him. The wise man never causes injury by speaking harshly; he knows how grievous this is.",
+    "The Gods do not protect us with weapons. Those whom they wish success, they bless with intelligence. The intelligent man knows what dharma is; only he who is righteous is wise, for there is no other cleverness in this world. Reciting the Vedas does not save a deceitful man. As fire does gold, a man’s birth is tested by his character, his honesty by his conduct and his courage in a time of panic. Poverty tests a man’s self-control and his friends are tested in times of danger and adversity.",
+    "When you act during the day, think of the night, which will surely come.",
+    "Silence is holier than speech. If you must speak, speak the truth and speak it agreeably.",
+    "Arjuna, I am with you. Free yourself from attachment to what you do; make no anxious difference between success and failure. Act! Act in purity, act serenely: even-mindedness is yoga; detachment and skill are yoga.\n\nFor one who is determined, his understanding is single and lucid. But the thoughts of the undis-cerning are many-branched, endless, endlessly confused.”"
+  ],
+  "01k8ds2qhdnvvrn9ry48nckzn9": [
+    "Reviewing the diff by itself is much easier than considering how it fits into the codebase as a whole.",
+    "As a reviewer, when you come across cases where you would have done it differently, you must be able to approve those cases without comment, so long as either way is acceptable."
+  ],
+  "01k0cet4pw72nn9pab1a2sywrx": [
+    "Henrich advances the argument that brain-power alone is not enough to explain why humans are such a successful species. Humans, he argues, are not nearly as intelligent as we think they are. Remove them from the culture and environment they have learned to operate in and they fail quickly.",
+    "rationality may not be the key to human survival.",
+    "The causal opacity of many cultural adaptations had a big impact on our psychology.",
+    "explicable",
+    "If we are to take analogies with genetic evolution seriously, then we should not be surprised if a large amount of our cultural baggage are just random accretions passed on from one generation to the next—in essence, the cultural version of genetic drift."
+  ],
+  "01ka7p7nn3bqj7vxjarrftjdyz": [
+    "incontrovertible",
+    "The incentives provided by free markets efficiently direct capital and other resources where they’ll be most productive. They prompt producers to make the goods people want most and workers to take the jobs where they’ll be most productive in terms of the value of their output. And they encourage hard work and risk taking.",
+    "The free-market system doesn’t necessarily produce “fair” outcomes in all circumstances, but economic systems designed to do so generally don’t provide the incentives needed to encourage economic productivity for the collective good. That’s what accounts for their record of failure.",
+    "Apartments aren’t much different from bread or toilet paper. Officials can limit the price people have to pay, which is popular with consumers, but other than in the most dictatorial jurisdictions, they can’t force suppliers to produce goods for sale at the regulated prices.",
+    "When prices are set below production costs, sellers can’t afford to keep the shelves stocked. Official prices are low, but it’s a mirage: The products have disappeared."
+  ],
+  "01k9k4yv9c96y7rkfq4fe5t6ae": [
+    "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
+  ],
+  "01k9dcxxt5nx2qegkgs9fn7nzj": [
+    "As one very early document on Cursor’s culture noted, “Cursor probably ranks the highest in the world in terms of the average number of hours using the company’s main product per employee per week. The only real contender might be Apple with their Macs and iPhones.” Everyone at Cursor is using Cursor all the time.",
+    "One of my favorite Slack channels at Cursor is #braintrust, which includes everyone at the company. People use it to get feedback on what they’re building, often in the form of a vote using emojis. A real example to make this vivid: “cmd k – edit full file – 🟢 = REMOVE and 🔴 = ‘I use this and need it.’” This is in fact a very efficient and engaging way to get people to “pick sides,” and it often sparks productive debate.",
+    "Stripe had such a culture; my former boss/colleague/co-founder, Eeke, came up with the term “micro-pessimist, macro-optimist” to describe this way of operating. This also rings true at Cursor. While people can be very critical of execution, they’re also quite optimistic that they’re going to build something consequential, and generally frame things in terms of potential success rather than potential failure.",
+    "At Cursor, people poke and prod each other’s work a lot. This can be quite jarring for folks who haven’t operated in that kind of culture before. Top builders know what great products feel like, so people can get very opinionated about how things *should* work. They’ll liberally offer feedback on what is missing to hit the bar, and extra hands to help get it there.",
+    "Cursor is in no way dismissive of these users or the general ambition to democratize coding. But the company’s stance is very much that other companies can focus on lowering the floor, while Cursor will focus on raising the ceiling.",
+    "If you believe, like I do, that what we build is a function of how it feels to build it, what Cursor does has a real shot at meaningfully shaping the future world we experience"
+  ],
+  "01k9jy7p6tvfkh9g70ysdrdvtd": [
+    "Unfortunately the way some operating systems implement `TIME_WAIT` appears to be slightly naive. Only a connection which exactly matches the socket that's in `TIME_WAIT` need by blocked to give the protection that `TIME_WAIT` affords. This means a connection that is identified by client address, client port, server address and server port. However, some operating systems impose a more stringent restriction and prevent the local port number being reused whilst that port number is included in a connection that is in `TIME_WAIT`. If enough sockets end up in `TIME_WAIT` then new outbound connections cannot be established as there are no local ports left to allocate to the new connection.",
+    "Given that `TIME_WAIT` affects outbound connection establishment due to the depletion of local port numbers and that these connections usually use local ports that are assigned automatically by the operating system from the ephemeral port range the first thing that you can do to improve the situation is make sure that you're using a decent sized ephemeral port range.",
+    "For a server that does establish outbound connections as well as accepting inbound connections then the golden rule is to always ensure that if a `TIME_WAIT` needs to occur that it ends up on the other peer and not the server. The best way to do this is to *never* initiate an active close from the server, no matter what the reason. If your peer times out, abort the connection with an `RST` rather than closing it. If your peer sends invalid data, abort the connection, etc. The idea being that if your server never initiates an active close it can never accumulate `TIME_WAIT` sockets and therefore will never suffer from the scalability problems that they cause."
+  ],
+  "01jzagw9s9k81xj7hsvq10b98n": [
+    "This shouldn’t make us defensive or self-conscious, but it does. I, like many others, want to be great. I want to feel commitment and camaraderie and work hard and be my best and impact top and bottom lines. But I don’t want to also feel tormented or be tortured into greatness or look in the mirror and wonder why I suck. But what does that say about me?"
+  ],
+  "01k0yr5mk34g2yn5vq2521828c": [
+    "Shiu noted that scientists have already created whole brain diagrams and computer simulations for much smaller brains, such as that of a fruit fly larva, which has 3,016 neurons, and a nematode worm, which has 302 neurons. But computer simulations of these brains weren’t very good at predicting larval or worm behavior, perhaps because it’s harder to establish in these creatures which neurons are excitatory, that is, likely to activate downstream neurons, or inhibitory, which would silence downstream neurons. Thanks to decades of research, this is much better understood in the adult fruit fly brain.",
+    "“We essentially ignore all of the different morphologies of individual neurons and assume all excitatory or inhibitory neurons work the same, which we know isn’t the case,”"
+  ],
+  "01k8cdy6qxpf7cjnq9vsr4cgyp": [
+    "If you're thinking without writing, you only think you're thinking.",
+    "The reason so many people have trouble writing is that it's fundamentally difficult. To write well you have to think clearly, and thinking clearly is hard."
+  ],
+  "01jym0svp7f768hbhjymgmhyd5": [
+    "the four classic symptoms of inflammation articulated by the Roman medical writer Celsus in the first century: *rubor*, redness; *tumor*, swelling; *calor*, heat; and *dolor*, pain. In Latin, *inflammatio* means “setting on fire,”",
+    "The key white blood cell in inflammation is called a macrophage,",
+    "The walls of the capillaries dilate and grow more porous, enabling white blood cells to flood the damaged site. As blood flows in and fluid leaks out, the region swells, which can put pressure on surrounding nerves, causing pain; inflammatory molecules may also activate pain fibres. The heat most likely results from the increase in blood flow.",
+    "One of the frustrations of treating inflammation is that our weapons against it are so imprecise. Drugs like naproxen and ibuprofen are the equivalent of peashooters. At the other extreme, cannon-like steroids shut down the immune system, raising the risk of infection, eroding the bones, predisposing the patient to diabetes, and causing mood swings.",
+    "salubrious"
+  ],
+  "01jwf9yr2mwzaakjns4hqe2sbb": [
+    "The phenomenon is the way in which an individual cell of *E. coli* forages for nutrients. This process, known as “chemotaxis”",
+    "Depending on what it senses, it can either use its flagellar tails to swim forward—this is known as a “run”—or it can spin in a random direction (a “tumble”).",
+    "In a uniform chemical environment, the *E. coli* swims in a random walk by balancing runs with periodic tumbles. By default, a run lasts about a second, or ten times longer than a tumble. The rate of runs versus tumbles, and their relative duration, is carefully tuned to balance “exploitation” and “exploration”:",
+    "The trick is that when the nose detects an *increase* in the concentration of attractant, that steady turning of CheYs into CheY-ps is interrupted. As a result, fewer CheY-ps bind to the rotors; fewer reversals take place; and so the *E. coli* runs more and tumbles less. In other words, the all-important relative rate of runs versus tumbles is determined entirely by how often the CheY→CheY-p process churns—and this, in turn, is determined by how much attractant is detected by the nose.",
+    "the stream of CheY-ps acts as a kind of adaptable, tunable chemical amplifier.",
+    "In reality, the *E. coli* is able to respond sensitively across [five orders of magnitude](https://www.youtube.com/watch?t=58&v=cT855rpX8bc&feature=youtu.be) of attractant concentration. The cell learns to treat whatever concentration it stumbles into as the new normal, so that the slightest increase triggers the same hypersensitive response as always.",
+    "Methylation of the receptors gives *E. coli* a “[simple chemical memory](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2899694/#:~:text=The%20receptor%20methylation%20level%20also%20provides%20a%20simple%20chemical%20memory%20used%20to%20ascertain%20whether%20the%20current%20direction%20of%20swimming%20is%20favorable%20or%20unfavorable.).”"
+  ],
+  "01k1xb9q0p7q9qmw30wbmqr1ts": [
+    "The prevailing wisdom in neuroscience has long been that memory and learning are consequences of “synaptic plasticity” in the brain.",
+    "A cell’s entire existence, Kukushkin explained, takes place in the warm darkness of a multicellular body. From that perspective, what we might call “experience” is patterns of chemicals spaced in time: nutrients, salts, hormones and signaling molecules from neighboring cells. These chemicals affect the cell in different ways — sparking molecular or epigenetic changes, for example — and at different rates. All of this affects how the cell responds to new signals. At the level of the cell, that’s what memory is, Kukushkin believes: an embodied response to change. There’s no distinction between memory, the memorizer and the act of remembering. “For the cell,” he said, “it’s all the same.”",
+    "The burden of proof shouldn’t be in proving that it’s the same. The burden of proof should be in proving that it’s different.”",
+    "In neuroscience, Kukushkin writes, the most common definition of memory is that it’s what remains after experience to change future behavior. This is a behavioral definition; the only way to measure it is to observe that future behavior."
+  ],
+  "01k6khgpg454ts9n1p7y86pw8q": [
+    "What I’d like to do is to write 30 separate $50 billion checks. I’d like to write a small number of huge checks. And this is a dynamic in private equity that people don’t understand. Capital can be allocated in lots of different ways, but the partners at these firms do not want to write a bunch of small checks to a bunch of small manufacturers, even if the hurdle rate is competitive. I’m a human, I don’t want to sit on 40 boards. And so you have this other perverse dynamic that even if everything else is equal, it’s not equal. So we’ve put manufacturers who might otherwise benefit from the onshoring phenomenon at an even worse position in part because of the internal dynamics of capital."
+  ],
+  "01jxar0st58n3zv6b7x6424ff0": [
+    "We inherit our mitochondria from our mother—from the egg cell, to be precise. Mitochondria have their own DNA, which consists of only 37 genes, compared with the thousands of genes in the spiraling chromosomes inside the cell nucleus. This ring of mitochondrial DNA, or mtDNA, is sheltered within two membranes. The outer shell, shaped like the skin of a sausage, encases the mitochondrion and selectively allows molecules to enter or exit. The inner membrane is made of densely packed proteins and has many folds, called cristae, which serve as a site for chemical reactions, much like the plates suspended inside a battery.",
+    "In the 1960s British biochemists Peter Mitchell and Jennifer Moyle discovered how electrons derived from carbon in food combine with oxygen in the cristae, releasing a spark of energy that is captured as a [gradient](https://naturedocumentaries.org/wp-content/uploads/2020/04/ProtonGradient_Mitchell1961.pdf) in electrical voltage across the membrane.",
+    "even when mitochondria looked unhealthy, their cristae looked healthy at places where the mitochondria touched one another. They were interacting, helping one another’s internal organization. These mito-mito junctions also had more cristae than any other part of the same mitochondrion.",
+    "At the next lab meeting, I suggested that these patterns looked like iron filings aligned around a magnet. Cristae are full of iron-sulfur clusters that may be paramagnetic. If they are, maybe there were electromagnetic fields induced by the flow of electrical charge across the cristae? Could they induce the cristae to line up?",
+    "the most remarkable aspect of the mitochondrial collective, however, is that mitochondria from different parts of the body [talk](https://www.sciencedirect.com/science/article/pii/S0091302218300062?via%3Dihub) to one another, using hormones as their language. Mitochondria produce the [steroid hormones](https://www.sciencedirect.com/science/article/abs/pii/S0303720713001597?via%3Dihub) we use for sustaining and reproducing life. Cortisol, the hormone that increases blood glucose levels to fuel the stress response, is made in the mitochondria of the adrenal glands, which sit on top of the kidneys. Testosterone, estrogen and progesterone are synthesized mainly by mitochondria in the reproductive organs.",
+    "In front of our eyes lay [mitochondrial nanotunnels](https://www.sciencedirect.com/science/article/pii/S0962892417301460?via%3Dihub): thin membrane protrusions—the same kind that bacteria use to share their circular DNA!",
+    "established that the mitochondrial collective operates as a mitochondrial information-processing system, or MIPS.",
+    "healthy mitochondria can donate intact mtDNA to mutant mitochondria. In conditions of [scarce](https://pubmed.ncbi.nlm.nih.gov/23562075/) energy supply, mitochondria fuse with one another into long strands to share mtDNA. Isolated mitochondria without mtDNA or with mutated mtDNA can similarly fuse with healthy mitochondria, restoring their normal function.",
+    "Because mtDNA rings resemble bacterial DNA, immune cells see them as pathogens and mount an attack that can develop into inflammation. And [inflammation](https://www.nature.com/articles/s41591-019-0675-0), clinicians know well, is linked to the onset and progression of a host of chronic health conditions."
+  ],
+  "01k1fvvw9hcjk4fjey8d4x8gsg": [
+    "A lot of painstaking work over the years in fruit flies (Drosophila) has pointed to the [dorsal fan-shaped body](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003014) (and particularly neurons that project to it) as the important sleep-regulating center. The new paper linked above looks at such neurons after extended sleep deprivation in flies and does single-cell analyses on these neurons. 122 gene transcripts were elevated under these conditions, with clusters around two processes (mitochondrial function and synaptic transmission) standing out. That ties in with [earlier reports](https://www.nature.com/articles/s41586-019-1034-5) about mitochondrial activity being tied to sleep function in these cells, and a close examination of the cells showed that as sleep deprivation increases there are increased signs of mitochondrial fragmentation, mitophagy, and outright contacts between mitochondria and the endoplasmic reticulum (the last of which is thought to be a way to take on fresh lipids as existing ones become damaged by reactive oxygen species)."
+  ],
+  "01k2fpgz8hzcvet5rbnz9gpr5a": [
+    "The smart move is to combine the channels into a single bundle offering at $13. Buyers overall get *more product*, at a price they happily pay, with more consumer surplus on top of it. Sellers overall get to *sell more product*, and minimize deadweight loss due to non-consumption.",
+    "The smart move is to combine the channels into a single bundle offering at $13. Buyers overall get *more product*, at a price they happily pay, with more consumer surplus on top of it. Sellers overall get to *sell more product*, and minimize deadweight loss due to non-consumption.",
+    "the basic intuition around bundles starts by acknowledging buyers’ heterogenous preferences: different people are after different things. ... The seller’s dilemma is how to price these channels: at $3, 10, or somewhere in between? ... The smart move is to combine the channels into a single bundle offering at $13. Buyers overall get *more product*, at a price they happily pay, with more consumer surplus on top of it. Sellers overall get to *sell more product*, and minimize deadweight loss due to non-consumption.",
+    "The key to bundle economics is that the benefits of bundling are proportional to how varied the buyers’ preferences are. The steeper the demand curve across all of the individual bundle components (e.g. individual TV stations), the more powerful the combined economics of a single subscription"
+  ],
+  "01k5dz14f72tkje88sfxh4jbkn": [
+    "The y-axis is the students’ “willingness-to-pay” and the x-axis is the students sorted from highest to lowest bids. The line is known as the demand curve.",
+    "![](https://cdixon.org/static/622db275908b51c270c316db64b89414/1ddc7/screen-shot-2012-06-29-at-9-24-53-pm.png)",
+    "To the right are students who were willing to pay but were priced out. Those are missed sales opportunities. ... Above the green box are students who were willing to pay more than you charged. That is lost revenue.",
+    "So the goal of pricing is to capture as much area under the demand curve as possible. In practice, the best way to do this is to find proxies for willingness-to-pay that are easy to observe and that customers will accept."
+  ],
+  "01k10g6485vhvggbvmqvq7cj0s": [
+    "“The average Indian civil servant still sees himself primarily as a regulator and not as a facilitator. The average Indian bureaucrat has not yet accepted that it is not a sin to make profits and become rich. The average Indian bureaucrat has little trust in India’s business community. They view Indian businesspeople as money-grabbing opportunists who do not have the welfare of the country at heart, and all the more so if they are foreign.”"
+  ],
+  "01jxqzew0asyht6bdwqcsnbyha": [
+    "The Prague Spring, in contrast, which was a top-down process and not a popular revolt, had the exact opposite agenda – namely, removing the social net from workers and the poor, reducing the institutional protections of workers, seeking alliances with the West, promoting local anti-federalist nationalism, refusing solidarity with popular struggles, liberalising the media, the arts and public expression to allow more western influence in the country and to end agitation on behalf of the working class and, not least, enriching and privileging the new dominant managerial class.",
+    "While in the late 1980s and early 1990s, most Soviet and East European citizens had hoped to end the autocratic systems of their ruling Communist Parties and gain western-style political and civil rights, they wanted them not *instead of* but *in addition* to retaining those human rights that the Soviet system guaranteed them.",
+    "While the US insisted that having the right to work, to free or universally affordable healthcare, free education, daycare and housing (which the Soviet system granted in the USSR and across Eastern Europe as substantive and not merely as formal rights) are not human rights at all, the Soviets, in the tradition of socialism, insisted they were essential for human life and dignity and that the western enumerating of the rights to free speech, free association, free movement, freedom to form political parties, etc., were “political” and “civil” and not “human” rights,"
+  ],
+  "01jxaybc1kh90y9pjsnf5w3bre": [
+    "“But when we put off things that are really in our best interest to complete and we do it habitually, then that’s more than just a bad habit or a lifestyle issue.”",
+    "“You can do all the time-management skills in the world with someone, but if you haven’t addressed the underlying irrational beliefs fueling the anxiety, which is why they’re procrastinating, they’re not going to do [the task they are avoiding],”",
+    "the four core irrational beliefs of rational emotive behavior therapy (REBT) are:\n\nDemands (“should” and “must” statements such as “I should go to the gym four times a week”)\n\nAwfulizing (imagining a situation as bad as it can be)\n\nLow frustration tolerance, which is sometimes referred to as “I-can’t-stand-it-itis” (belief that the struggle is unbearable)\n\nSelf-downing (defining oneself on the basis of a single aspect or outcome, such as thinking, “If I mess up one work project, then I am a failure”)",
+    "he procrastinates responding to work emails out of fear that he will answer it incorrectly and his co-workers will realize he is a failure.",
+    "“The emotion and conviction behind your voice is what moves the audience, and that’s what we have to do to ourselves when we’re trying to convince ourselves of the rational beliefs.”",
+    "Cilley finds rewards and consequences a useful motivational tool for those clients who are good at identifying irrational beliefs and who already possess coping and emotion-regulation skills yet are still procrastinating when faced with certain tasks (or even their therapy homework).",
+    "Self-compassion is one way to address critical thoughts and shaming, Eddins says. For example, the critical inner voice that declares a client lazy if he or she doesn’t go to the gym could be changed to use more motivating statements such as “It feels good when I go outside and move my body.”",
+    "the rehabilitation of a severe procrastinator is almost like working with a severely depressed person: Once they are able to … do anything, they will feel better about themselves, and they’ll have more self-efficacy.”"
+  ],
+  "01k4r9z8zxcpg9hm0brnhjda4s": [
+    "Defining consolation as “an argument about why life is the way it is and why we must keep going,”",
+    "antipode",
+    "The deepest consolation is found when we cease identifying with the pendulum and remember that [we are time itself](https://www.themarginalian.org/2016/09/19/a-new-refutation-of-time-borges/), in the hands of which no state is permanent and no feeling final.",
+    "felicitous"
+  ],
+  "01jy7rehn3m7m521ddgc5p1y30": [
+    "Often, the attempt to be comprehensive can lead to an inability to say anything concrete.",
+    "HeLa cells"
+  ],
+  "01k4r4mvy5b0ev0x107d70t874": [
+    "I plan to become a billionaire by age 30. Then I will have the time and resources to tackle problems close to my heart like climate change, species extinction and economic inequality. The formula is simple: Sacrifices I make now are an investment in decades of choice later."
+  ],
+  "01jxnqpjsrdg2nags8ew2eajy1": [
+    "Bacteria regulate gene expression by controlling genetic units called operons.",
+    "An operon consists of a set of genes that encode functionally related proteins, all of which are under the control of a common promoter.",
+    "The amount of synthesized pr\notein can\nalso be controlled by varying the duration or “half-life” of mRNA. The presence of multiple copies of the AUUUA sequence in the 3’ terminal noncoding region labels the mRNA for rapid degradation, reducing the time during which translation can operate."
+  ],
+  "01k4mpv1hapa453y2kgkt9tkqq": [
+    "*Re-read your code frequently.* After writing a few lines of code (3 to 6 lines, a short block within a function), re-read them. That habit will save you more time than any other simple change you can make."
+  ],
+  "01jx25y45749xbqr1mr7ypqadm": [
+    "Certain CRISPR components can [add short DNA sequences](https://www.nature.com/articles/nsmb.2820) from the genomes of defeated viruses into the bacterium’s own genome, creating a type of protective “memory.” These sequences, known as protospacers,",
+    "Collectively, these repeat-protospacer regions are known as CRISPR arrays.",
+    "short, repetitive DNA motifs",
+    "Cas9",
+    "Cas12",
+    "Cas13"
+  ],
+  "01k3rzgndnc4p69s96katj3y6s": [
+    "We hypothesized that the factors that play important roles in the maintenance of ES cell identity also play pivotal roles in the induction of pluripotency in somatic cells.",
+    "histone acetylation",
+    "transgenes"
+  ],
+  "01jyct0ccg4hydaqgav2fj991p": [
+    "Pre-modern writers were not blind to the abuse of power; they certainly did not believe that the office sanctifies its holder. Instead, they tended towards the opposite view: the office *judges* its holder. Power did not corrupt those who attained it; it merely provided opportunity prove their true character. A good man would be a good man in power; a bad man would be a bad man in power. But without wealth, rank, or influence, it was difficult to distinguish the first man from the second",
+    "In this age high culture was turned over to the hands of the ironist. It has stayed in those hands to this day.\n\nBut there lies the catch. The ironist inspires no one. He draws absurdity out of our crooked timbers, but he can find no purpose there. He can move to mirth, but not to awe. He provokes disgust, but not commitment."
+  ],
+  "01k3jv94zaqbejv2c3j9t3dm9r": [
+    "The lowest points of each valley signify developmental pathways that a cell can travel and the highest points define the limits of the pathway, symbolizing regulation.",
+    "First, the hills and valleys direct different paths of development the cell may take. The developmental pathways are the low points of the landscape, where the ball is likely to roll. The height and slope of the ridges to the valleys confer tolerance to environmental effects on the developing system, symbolizing the ability of the genes to regulate differentiation."
+  ],
+  "01k3f9vmye8q80xs83km5mz250": [
+    "pernicious",
+    "It is no coincidence that Mary Shelley’s 1818 novel “Frankenstein” is often read as a critique of the Enlightenment’s hubris and its supposed attempts to mimic divine creation.",
+    "Enlightenment authors imagined books in an oddly similar manner: not as didactic tracts, but as sites in which to engage readers in virtual dialogue.\n\nThe great political philosopher Baron de Montesquieu wrote: “One should never so exhaust a subject that nothing is left for readers to do. The point is not to make them read, but to make them think.” As for Voltaire, the most famous of the French “philosophes,” he claimed, “The most useful books are those that the readers write half of themselves.”",
+    "In my own interactions with ChatGPT, it has often responded, with patently insincere flattery: “That’s a great question.” It has never responded: “That’s the wrong question.” It has never challenged my moral convictions or asked me to justify myself."
+  ],
+  "01k3f2pxmn1t7zm382zhnnfeeg": [
+    "the results of nuclear transplantation experiments seem to be consistent with the view that stable changes restricting the developmental capacity of nuclei are not essential for cellular differentiation to take place.",
+    "Cellular differentiation is most probably initiated by the effect of the cyto- plasmic environment on a nucleus, so that the nucleus provides specific genetic information which promotes the formation of a particular cell type",
+    "It is concluded that the differentiation of a cell cannot be dependent upon the incapacity of its nucleus to give rise to other types of differentiated cell."
+  ],
+  "01k2zk9h07tbv9eqn13g32q1x8": [
+    "People sometimes talk about it in terms of “low trust” vs “high trust” societies. Francis Fukuyama wrote about this, discussing how low-trust societies often develop more rigid, hierarchical structures and rely on informal personal networks.",
+    "Schelling point"
+  ],
+  "01k3c0qq6ewe2jd7bv6drtbsym": [
+    "“Carcinogens Are Mutagens.”",
+    "In the eighties, not long after Balmain started researching cancer, the field was dominated by a step-by-step “multi-hit” model of carcinogenesis. A normal cell acquires one genetic mutation, and then another, and then another, moving, gene by gene, toward becoming a malignant cell.",
+    "a “promoting” agent: here was a new kind of carcinogen that, it appeared, acted through [an inflammatory response](https://www.newyorker.com/magazine/2015/11/30/inflamed).",
+    "Even as asbestos was identified as a major occupational carcinogen, however, scientists struggled to understand how it might cause cancer. The research remains inconclusive.",
+    "The fact that, in almost one in ten cases, we can’t identify a clear mechanism for the development of lung cancer even in smokers gives us all the more reason to think that we may be missing a plenitude of cancer-causing agents.",
+    "The lungs of the mice that had been exposed to the air pollution, they found, were full of inflammatory cells.",
+    "They found a particular kind of macrophage—a cell so named because it’s large (*macro*) and eats (*phago*) foreign particles—jump-starting an immune response by pumping out a potent inflammatory signal, interleukin-1 beta. When the interleukin-1 beta was blocked with an antibody, the effect of air-pollution exposure was attenuated. And when Hill, Lim, and Weeden reran their experiment with immune-deficient mice, the effect of air pollution disappeared. The macrophages, and their signals, were somehow promoting tumor development.",
+    "athwart",
+    "The researchers calculated that the incidence of these cells was roughly one in half a million, which sounds minuscule until you remember that lung cells may number in the trillions.",
+    "Environmental carcinogens have been notoriously difficult to find because toxicology, an experimental science, has to keep pace with epidemiology, an observational one."
+  ],
+  "01k10ga3m23ks5864t1qtxvz0p": [
+    "Indian commitment to democracy is sometimes attributed simply to the impact of British influence. And yet if that were the primary reason, it would not be clear why such an influence should not have worked similarly for a hundred other countries which also emerged from the same empire on which the sun used not to set.",
+    "Traditions of public reasoning exist across the world and are not a monopoly of the West or of any other civilisation or culture."
+  ],
+  "01jxjjj8hpyr87fzdwbgtg6fp0": [
+    "There’s just no way that NASA’s operational effectiveness can be restored without upsetting a lot of existing constituencies, many of whom are quite comfortable consuming vast quantities of public resources and producing fewer and fewer space wins.",
+    "Schelling Point"
+  ],
+  "01k0fzg2g3qdrdm1nk1sa2dv4b": [
+    "identity anchoring"
+  ],
+  "01jy7rbakaknajszxvrbyqkfya": [
+    "The higher animals are not larger than the lower because they are more complicated. They are more complicated because they are larger."
+  ],
+  "01k01j77vf8xm80hd9mnah4y9v": [
+    "A protocol-based system, however, moves much of the decision making *away from the center and gives it to the ends of the network.*",
+    "In such a world, we can let a million content moderation systems approach the same general corpus of content—each taking an entirely different approach—and see which ones work best.",
+    "The marketplace of the many different filters and interfaces (and the ability to customize your own) would enable much greater granularity.",
+    "It is entirely possible that any protocols-based system will tend to be too complicated and too cumbersome to attract a large enough userbase.",
+    "that this would likely quarantine them to some extent, as their content would be less likely to get into the most widely used implementations and services on the protocol."
+  ],
+  "01jyfbw0408qq5k7bafn754j0w": [
+    "Suspicions that chemicals or other external agents caused human cancer predated",
+    "Nonetheless, research into tumor viruses through the late twentieth century contributed significantly to identifying the roles of specific animal genes (so-called **oncogenes**) in cancer. (Morgan 2022)",
+    "After the signing of the international Partial Nuclear Test Ban Treaty in 1963, public concerns about environmental radioactivity shifted to nuclear power and radioactive waste. The 1979 accident at the Three Mile Island reactor in Pennsylvania, though it could not be linked to any changes in cancer incidence in the area, perpetuated public suspicion of nuclear power. (Walker 2005)",
+    "Theodor Boveri",
+    "At the same time as the EPA established the reduction of risk as a regulatory principle, however, the agency also hinted at the way that the language of risk could be used to shift blame away from polluters and toward individual behavior:\n\nThe risk of lung cancer appears to be enhanced by cigarette smoking in combination with the inhalation of radioactive materials; therefore, smoking by underground uranium miners should continue to be discouraged (Ibid.).\n\nWhereas the previous guidelines showed how risk could provide the rationale for reducing exposure and located this responsibility firmly in the hands of producers and polluters, this caveat shows how responsibility could be diffused using the same language. If risks are known, then individual behavior can be classified as risky, and individuals can be held responsible for their risky decision-making."
+  ],
+  "01jxcp5kyfsk7re7qpmm7s21wp": [
+    "Bridge recombinase is. ... a genome-editing tool made from two parts: a protein (called the recombinase) that cuts and rejoins strands of DNA, and a RNA molecule (called the ‘Bridge’) that guides the recombinase to a specific site in a cell’s genome.",
+    "All CRISPR gene-editing tools share a flaw, though: they rely on cell repair pathways to make their edits. If a researcher wants to permanently “shut down” a gene, for example, they might use CRISPR-Cas9. The Cas9 protein goes into the genome and makes a cut at the position indicated by its guide RNA. But the Cas9 protein itself doesn't then *fix* the DNA it has broken. The cell has to fix that damage a different way.\n\nCells have two main ways to fix DNA breaks. Non-homologous end joining quickly slaps the two broken strands together, often adding or deleting random bits of DNA in the process. It is messy, but fast. The second option, homology-directed repair, uses a matching DNA template to fix the break. Basically, scientists can introduce a DNA \"donor template\" into cells alongside CRISPR-Cas9. The cell sees this template as the correct version of the sequence and copies from it to fix the break. But homology-directed repair only works reliably during specific phases of the cell cycle and happens less frequently than non-homologous end joining.\n\nBecause CRISPR relies on these cellular repair pathways, its edits are inherently unpredictable. [[3](https://www.nmccarty.com/p/bridge-editors/#footnote-3-164698433)] Cellular repair systems are non-deterministic (sometimes the cell uses one option, and sometimes it uses the other), and different cells therefore produce different results. Bridge recombinases bypass these cellular pathways, which could make their edits more predictable. [[4](https://www.nmccarty.com/p/bridge-editors/#footnote-4-164698433)]"
+  ],
+  "01jx8jatrjgkrwhet9j8f7nffr": [
+    "under the right conditions some building blocks of proteins, the amino acids, form easily from simpler chemicals, ... But going from there to proteins and enzymes is a different matter."
+  ],
+  "01k0yht3kvb6p6mjs4xjqbp2fh": [
+    "Few in India believe the country can achieve double-digit growth. The East Asian countries benefited from huge inflows of foreign investment and the exports of a job-rich low-skill manufacturing sector. That helped them deepen their links to global value chains at a time of rampant globalisation. India’s rise began later and followed a different path.",
+    "India’s path has, therefore, been singular: its exports have been led not by manufacturing but by a productive yet job-poor it and services sector, and its companies are led by a handful of sprawling conglomerates along with a long tail of small informal businesses.",
+    "But there is no avoiding the economy’s shortcomings. The labour market is weak, with a majority of Indians underemployed or out of the labour force altogether. That limits consumption, and exports do not make up the shortfall.",
+    "Over three decades of reform, growth has averaged 6.4% a year. Though it has averaged 5.6% during the decade of Mr Modi’s rule, that has been in line with a broader slowdown in global growth.",
+    "Mr Modi’s ambition of *viksit Bharat*, or developed-country status, by 2047 (in the form of a gdp per head of $14,000) needs a broader perspective. It is one in which all the 28 states are capable of competing against each other economically, giving business leaders opportunities beyond the prosperous south.",
+    "nostrum"
+  ],
+  "01jye3ey96acmv6aaet8a98vgh": [
+    "For anyone starting out and trying to learn more about their chosen project and how they feel about it, I suggest adjusting the process so that you can maintain a high frequency of output. Focusing on maximum quality at the expense of frequency makes no sense at the beginning of your journey. You don’t even know what quality is since you haven’t received enough or any feedback. But, at the end of the day, it’s a decision you have to make on your own."
+  ],
+  "01k0yhp2s6q999wbp6d3fpdq8b": [
+    "shoe-leather reporting",
+    "“India is surrounded by China, Russia, and Pakistan; it would be a strategic disaster if we made enemies of all of them.”",
+    "Thus far, India’s successful startups have been in sectors that touch the physical world or are highly-regulated, which gives local players an advantage (Zoho and Freshworks are exceptions). China escaped the weight of global economics of scale by erecting the Great Firewall and using tech-transfer agreements to learn from foreign firms before displacing them with local champions",
+    "The domestic economy is another story. I suspect that the more illegible a society is, the slower AI diffusion will be.",
+    "ebullience",
+    "marginal product"
+  ],
+  "01jwfab0f4926hnqxegtw02aym": [
+    "In each of those mutants, disruptions to just *three genes* caused the circadian rhythms to go haywire. The Japanese scientists named the genes *kai*, which means “to change” in Japanese, and labeled them *kaiA*, *kaiB*, and *kaiC*.",
+    "The *kai* clock is so impressive, in fact, that it will continue to oscillate with nearly perfect 24-hour periods even when the three proteins are plucked from their microbial hosts and [placed into a test tube.](https://www.science.org/doi/10.1126/science.1108451%5D) This is akin to a deconstructed mechanical watch, lacking gears and springs, tracking time purely through the transfer of atoms between its cogs."
+  ],
+  "01jyep1g5kx0w80j57d9djcfdy": [
+    "For someone to have “safe drinking water”, their water source needs to meet three criteria: it needs to be free from contamination, located at home, and available whenever needed."
+  ],
+  "01k02f9e28wak16z8phjmdnjhb": [
+    "To rush, to read passively, is to risk missing the beauty before it discloses itself."
+  ],
+  "01jys83s578ncsnwvqyy75jpmk": [
+    "By “epistemic collapse” I mean the collapse of a shared reality, caused by the loss of reliable sources for distinguishing what is true from what is false."
+  ],
+  "01k0nzzmt69grc8bxhd3zw7kg9": [
+    "Think of the connectome as a map of the brain. It can tell us how neurons connect to each other through electrical and chemical synapses. But despite revealing which neurons connect to one another, it doesn’t tell us anything about how those connections work. To fully model a brain, we need to understand the biophysical parameters governing each neuron’s behavior. This includes not only the variable strength of synapses (in neuroscience, these are called weights) but also the cells’ membrane properties, such as capacitance and the shapes of dendrites and axons, which affect how electrical signals propagate. We need to know both a neuron’s firing threshold as well as how that threshold changes as the animal learns new things (learning involves shifts in both synaptic weights and the intrinsic properties of neurons themselves). A simulation based only on a static connectome can’t learn — so it won’t behave very much like the real creature it’s trying to simulate.",
+    "new techniques were developed to allow optical microscopy below the diffraction limit (the smallest distance between two points at which they can still be distinguished by an optical system)."
+  ],
+  "01jxfedfbs5na8kq5g8rc5p01x": [
+    "If tax is about putting resources into the pot in exchange for services, poor and lower income groups with less to give are also not able to get very much out. At the same time, the rich can justify demanding policies that benefit them in exchange for their larger contributions. Some [research](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1250982) suggests this is exactly what happens in modern states: states that tax lower income residents more tend to provide more social services, while those that rely more heavily on taxing the rich provide more property protection.",
+    "The surprising thing about this conclusion is that it is at odds with a powerful tradition in moral and political philosophy that emphasizes social contracts as a foundation for justice.",
+    "But there are risks when we treat this positive concept (that is, a concept that describes how the world is) as a normative concept (that is, as a guide to how the world should be).",
+    "“An important part of every country’s development process is the building of a social contract in which citizens pay tax and, in turn, receive public goods and services.”",
+    "the social contract is not between citizens and the state. *It is rather among citizens to create the state.* In other words, the very nature of the contract is one between free persons in some “state of nature,” before the state exists, and not between an existing institution and “taxpayers.”"
+  ],
+  "01jwr5h28x3c0kv2db5w80xmyy": [
+    "She wants to increase people’s “health span” — the number of healthy years of life — rather than aim at immortality."
+  ],
+  "01jpg9e0ymcrfjqg25jr3kyp1x": [
+    "The movement of genetic information from one chromosome to another occurs only under extremely special circumstances. The first occurs when sperm and eggs are generated for reproduction. Just before the spermiogenesis and oogenesis, the cell turns briefly into a playpen for genes. The paired maternal and paternal chromosomes hug each other and readily swap genetic information. The swapping of genetic information between paired chromosomes is crucial to the mixing and matching of hereditary information between parents. Morgan called this phenomenon crossing over (his students had used crossing over to map genes in flies). The more contemporary term is recombination—the ability to generate combinations of combinations of genes.",
+    "Regulation. Replication. Recombination. Remarkably, the three R’s of gene physiology",
+    "The fact that the genome also encodes genes to repair damage to the genome was discovered by several geneticists, including Evelyn Witkin and Steve Elledge. Witkin and Elledge, working independently, identified an entire cascade of proteins that sensed DNA damage, and activated a cellular response to repair or temporize the damage (if the damage was catastrophic, it would halt cell division). Mutations in these genes can lead to the accumulation of DNA damage—and thus, more mutations—ultimately leading to cancer. The fourth R of gene physiology, essential to both the survival and mutability of organisms, might be “repair.”",
+    "Mutations in genes that specified the basic elements of the body plan were more difficult to identify, since the mutations sharply decreased the survival of organisms. And mutants in the very first steps of embryogenesis were nearly impossible to capture alive since the embryos, with scrambled heads and tails, died instantly.",
+    "(the direct transmission of an adaptation into a heritable feature, remember, was the basis for Lamarck’s flawed theory of evolution by adaptation)."
+  ],
+  "01k09s3g4nr0wt5xp2y0znm9mf": [
+    "This is the correct Bayesian action: if I know that a false argument sounds just as convincing as a true argument, argument convincingness provides no evidence either way. I should ignore it and stick with my prior."
+  ],
+  "01jvsm2h8hmmg3k5v83dqzb0p0": [
+    "Of course, this is confounded by other changes in US industries over time."
+  ],
+  "01jx90xh1d1b0yc32fs8nnhw14": [
+    "Ill general the coding sequences on DNA, the regions that will ultimately be translated into amino acid sequence, are not continuous but are interrupted by 'silent' DNA.",
+    "the primary RNA transcript contains internal regions that are excised during maturation, the final tRNA or messenger being a spliced product.",
+    "Recombination now becomes more rapid. Since the gene is spread ou~ ov~r a larger region of DNA, reco11_1bm~t1on, which should be hampered m htgher cells by the inability of DNA molecules to get together, will be enhanced."
+  ],
+  "01jvvy9nwnpf2kzt844tbbtv23": [
+    "First, the protocol layer should have a mechanism for payments via digital currency, i.e. stablecoins. Second, AI providers like ChatGPT should build an auction mechanism that pays out content sources based on the frequency with which they are cited in AI answers. The result would be a new universe of creators who will be incentivized to produce high quality content that is more likely to be useful to AI, competing in a marketplace a la the open web; indeed, this would be the new open web, but one that operates at even greater scale than the current web given the fact that human attention is a scarce resource, while the number of potential agents is infinite."
+  ],
+  "01jwb23qnzjr457j953w57x25m": [
+    "“Thinking” is an active action. It takes time and energy.\n\nIf you don’t budget for “when will I think about topic X?”, then chances are you will simply never think about topic X and you will screw it up.",
+    "If you don’t do something, it doesn’t happen.",
+    "tractable",
+    "If you don’t write something down, you *will* forget it.",
+    "Importantly, you need to not just write things down, you also need a *process* by which you regularly look back and review your notes.",
+    "If you don’t have a process, a mechanism by which you make choices, if you don’t reflect on options, on your thoughts, emotions, feelings, then you are effectively just a natural output of whatever forces in your environment happen to take hold of you."
+  ],
+  "01jmhrpf9y5fmxkzj9x3gkdvyx": [
+    "surely as a river will sweep past a tree that falls across its course, Arjuna overcame these.",
+    "ebullient",
+    "His mother’s every word tore down his world; he was being reborn in her story.",
+    "chimerical",
+    "Dhritarashtra’s grief was like the autumn cloud, which is full of thunder but brings no rain. It was like the tears of the crocodile.",
+    "The darkest yaama of night is just before the dawn. Be calm, be brave: these trials are only to strengthen your spirits.",
+    "cynosure",
+    "madhurparka",
+    "Avoiding a battle of dharma never prolonged anyone’s life, but it always lost a man his honor: which is a fate worse than death.\n\nLife flits by, Yudhishtira and waits for neither you nor me. In life, there is no time for hesitation and too much deliberation. They serve no purpose but to divide the mind against itself. The thing is to act, swiftly, as the time demands.”",
+    "a kshatriya must never enter an enemy’s house openly, but by stealth.",
+    "“The ways of fate are inscrutable, my child. The omens can mean only one thing: misfortune and as I read it, misfortune for fourteen years. But the misfortune is only a part of a deeper destiny that springs in dark Krishna and uses your brothers and you as its agents.",
+    "Perhaps, if Duryodhana had not allowed the emerald monster to enslave him, not Yudhishtira but he would have become the Kuru emperor.",
+    ".\n\nHe was a kshatriya.",
+    "execrable",
+    "Good sense and sage counsel seldom deflect the progress of fate.",
+    "The people always see clearly into the hearts of those who rule them.",
+    "Of course, that does not justify what has been done to you, but it might explain it.”",
+    "But Bheema was not to know this, save from stories he had heard, which he hardly took literally. Like men of every age, he, too, thought that all times had been exactly like the one he lived in."
+  ],
+  "01jz318rcw17c3knm03qv7sqce": [
+    "Referential transparency—the principle that a function call can be replaced by its resulting value without changing the program's behavior"
+  ],
+  "01jyhgjde4amhh4p88hjkpxqr6": [
+    "“The first is how we’ve come to understand the nature of cancer at an increasingly smaller, and smaller, and smaller scale,” he said."
+  ],
+  "01jy1ekhache0s8sqvsjx213hq": [
+    "e four Salmonella strains were further customized with additional genetic changes that made the cells more permeable to large molecules and eliminated some kinds of DNA repair.",
+    "Facilitating the adoption of his test method, Ames made his strains freely available. Environmental groups were equally enthusiastic about the test, particularly once Ames identifi ed as likely carcinogens a food preservative and a fl ame retardant being incorporated into children’s pajamas.",
+    "First, as Ames put it, a carcinogen is a mutagen. Human cancer, in this view, could be triggered by exposure to environmental mutagens.1 Compounds that do not induce mutations were presumed not to cause cancer, either. Second, he assumed that a microbe was a suitable model organism for assaying mutagenicity as it occurred in human cells.",
+    "the broader context of postwar radiation genetics and environmentalism",
+    "Ames and his coworkers suggested that histidine regulated its own biosynthesis at the gene level, by repressing “the synthesis of all of the biosynthetic enzymes together”",
+    "It was not only scientists who were concerned, of course: Rachel Carson’s Silent Spring, which appeared in 1962, built on the public fear of radioactive contamination generated by the fallout debates to draw attention to the unseen hazards of pesticides and other synthetic chemicals (Lutts 1985).",
+    "In addition, all four tester strains included a mutation in the uvrB gene that disabled DNA excision repair, making them more sensitive to mutagens whose eff ects would otherwise be corrected by this system.",
+    "ree of the strains (originally TA1531, TA1532, and TA1534) were designed to detect diff erent kinds of frameshift mutagens. Th e fourth strain, TA1530, contained a base-pair change, and so it would detect mutations that involve base-pair substitutions.",
+    "Ames’s group showed that spreading an extract of rat or human liver with the potential carcinogen on the petri dish allowed testing of metabolic derivatives of the compound being tested (Ames et al. 1973). It was known that mammalian microsomal hydroxylase activated many classes of carcinogens and mutagens, including afl atoxin, aromatic amines, and polycyclic hydrocarbons (Ames 1973: 116).",
+    "Szybalski noted a strong correlation between carcinogenicity and mutagenicity: “these studies demonstrated a close correlation between the carcinogenic eff ect in mammals and the mutagenic eff ect on bacteria, stimulating a wide interest in this fi eld”",
+    "In addition, companies such as DuPont and American Cyanamid used it to test new products before deciding whether to bring them to market. According to Ames, DuPont decided not to produce two Freon propellants because they were found to be mutagenic in Salmonella tests",
+    "Sugimura found that plants were a major source of mutagens",
+    "He also pointed out that in both number and amount, we ingested more “natural pesticides and other natural toxic molecules (and traditional mixtures such as cooked food) than we do of manmade substances”",
+    "geneticists tended to view chemical mutagens as inherently different from radiation, which could directly modify genes. Demerec asserted that chemical agents induced mutations in an indirect way—that “mutagenic treatment brings about some change in either cytoplasm or nucleus which in turn aff ects certain physiological processes of the cell, and thereby infl uences genes”",
+    "scientists increasingly took the well-established correlation between mutagenicity and carcinogenicity as causal rather than coincidental",
+    "the apparent alliance between molecular biologists and environmental organizations was already unraveling in the late 1970s over disagreements about the safety of recombinant DNA.",
+    "\"The effort to prove a big role for industrial chemicals diverts attention from what is probably the best hope for reducing cancer incidence—careful study of foods and effects of cooking. … All people ingest the mutagens and carcinogens of food daily\"",
+    "Naomi Oreskes and Erik Conway"
+  ],
+  "01jy6d9ygfszer03595pcc3evs": [
+    "We should be wary about Collison and Cowen’s advice to study the “successful” and train the “brilliant” in order to speed up “progress.” Neither recent nor more distant history suggests that these terms have neutral definitions. To the contrary, they have often been excuses for colonial expropriation and social exclusion, and sometimes alibis for democratic and environmental catastrophe."
+  ],
+  "01jy1dh241hxvw2g0dbe9aeywx": [
+    "Using a panel of mutated bacteria that have trouble repairing damage to their DNA, the Ames test looks to see if your compound is causing any. A positive Ames isn’t all that common, but it will cast an immediate shadow over a drug candidate in most organisations.",
+    "histopathologists"
+  ],
+  "01jy1dvxmxhjknx1jyebrdf7vb": [
+    "The test was widely used in part because Dr. Ames did not patent his discovery, a decision almost “unheard-of” in biomedical research, said Randy Schekman, a Nobel laureate at Berkeley. Dr. Ames shipped out his mutant bacteria to governments, universities and businesses, asking only that private companies [make small donations](https://archive.ph/o/mD62Q/https://www.degruyter.com/document/doi/10.1515/9781789209457-008/html) to help pay for his lab’s labor and the cost of delivery.",
+    "He felt that some activists were overstating the risks of these chemicals and targeting chemical companies unfairly. He often said that he thought there was too much focus on substances that were technically mutagenic but that were no more likely to cause DNA damage than the “natural” chemicals found in fruits and vegetables."
+  ],
+  "01jy1c0b38z4c3e8v28grar8pf": [
+    "Inclusion of mammalian liver microsomes in the test.",
+    "Jacob together with Jacques Monod had originated the idea that control of enzyme levels in all cells occurs through regulation of transcription.",
+    "“mutagens are carcinogens and carcinogens are mutagens",
+    "It was argued that radiation causes a direct effect on DNA and therefore mutations could occur. In contrast, it was believed that chemicals had an indirect effect on DNA thereby not necessarily causing mutations. It is therefore interesting that while at Berkeley, Bruce received his first major funding from the American Atomic Energy Commission (AEC) that used to be the major funding agency for studying radiation induced carcinogenesis.",
+    "using several Salmonella strains carrying different mutations in the histidine operon, namely one base pair (BP) mutant hisG46, and three frameshift (FS) mutants, hisC207, hisC3076, and hisD3052",
+    "These strains had already been made more sensitive to chemical mutagens because of the deletion of the urvB gene that codes for the error-free DNA repair system. This deletion makes the bacteria dependent on the error-prone DNA repair system, an inducible DNA repair system that was discovered by Evelyn Witkin",
+    "Inclusion of mammalian liver microsomes in the test.",
+    "Making the cell wall more permeable to large molecules. ... Introduction of the mutagenesis enhancing plasmid"
+  ],
+  "01jy1decdxfhvfzyts0c9k974w": [
+    "Ames's point is that the mental division many people have between \"artificial\" or \"synthetic\" chemicals (bad) and \"natural\" ones (good) is nonsense.",
+    "Ames has forcefully made the point that testing compounds in animals at or near their maximum tolerated dose (MTD) is a poor measure of their cancer-causing potential. About half the compounds so tested show up as carcinogens, but the dose-response curves aren't linear.",
+    "MED, the minimum efficacious dose"
+  ],
+  "01jxzdvg1pg7dftgc6rbbvqzqd": [
+    "However, when a mutagen is added to the plate, the number of revertant colonies per plate is increased, usually in a dose-related manner.",
+    "leave the bacteria unable to synthesize the required amino acid, histidine, and therefore unable to grow and form colonies in its absence",
+    "The Salmonella strains used in the test have different mutations in various genes in the histidine operon; each of these mutations is designed to be responsive to mutagens that act via different mechanisms.",
+    "(base-pair substitution mutants),",
+    "(frameshift mutants)",
+    "When the histidine dependent bacteria are grown\nFig. 1. Spot test with strain TA100 and methyl methanesulfonate (10 ␮l).\non a glucose minimal (GM) agar plate containing a trace amount of histidine, only those cells that revert to histidine independence (His+) are able to form colonies. The small amount of histidine allows all the plated bacteria to undergo a few cell divisions; in many cases, this growth is essential for mutagenesis to occur. The His+ revertants are easily scored as colonies against the slight background growth. The number of spontaneously induced revertant colonies is relatively constant for each strain. However, when a mutagen is added to the plate, the number of revertant colonies per plate is increased, usually in a dose related manner as depicted in Fig. 3.",
+    "the cytochrome-based P450 metabolic oxidation system,",
+    "The addition of a small amount of histidine to the top agar allows all the plated bacteria (approximately 1×108 cells) to undergo between six and eight cell di- vision before the histidine is depleted. In many cases, this limited growth is essential for mutagenesis to oc- cur by allowing ﬁxation of the mutational lesions"
+  ],
+  "01jxn6hqv01rbmdvxy417mhans": [
+    "The basic strategy is to com- pare the distribution of disease between groups or between populations, looking for associations between hypothesized risk factors (genes, behaviours, lifestyles, environmental expo- sures) and health states.",
+    "Recall bias occurs when participants in a study are systemati- cally more or less likely to recall and relate information on exposure depending on their outcome status, or to recall infor- mation regarding their outcome dependent on their exposure.",
+    "Information bias can be reduced in case–control studies by keeping participants and observers blind to the hypotheses un- der investigation. This can be difficult, and some would argue may challenge the ethical principal of informed consent. How- ever, biased research results are wrong, misleading and a waste of subjects’ time. Blinding can be encouraged by making the title of the study non-specific, and by including irrelevant questions in the risk factor questionnaire to distract subjects from the cen- tral hypothesis under investigation.",
+    "Case–control ... studies aim to recruit, from a notional base population, a ran- dom sample of all persons with the disease under study (cases) and a random sample of persons without the disease (controls). The odds of being exposed for cases is compared with the odds of being exposed for controls."
+  ],
+  "01jxqyrp5s7f6nwa9exdaayhde": [
+    "America’s defense apparatus (and, by extension, the “liberal world order” itself) is built around standoff capability.",
+    "Eventually terror bombings in the West became geopolitically irrelevant. (They still happen, but they don’t motivate policy, except to drive radicalization against immigrants in Europe.)",
+    "The new technology fundamentally altered the returns to scale in defense.",
+    "We can credibly control nukes because enriched nuclear material has few deniable civilian applications.\n\nBut drone technology is too cheap, too modular, and with too many useful civilian applications for the big players to control their manufacture."
+  ],
+  "01jv2rvaktym1g04tnnvxbr5bt": [
+    "All else being equal, demand for a product increases when the prices of its complements decrease.",
+    "Every product in the marketplace has *substitutes* and *complements*. A substitute is another product you might buy if the first product is too expensive. ... A complement is a product that you usually buy together with another product.",
+    "“total cost of ownership.”",
+    "prima facie fallacy.",
+    "Smart companies try to commoditize their products’ complements."
+  ],
+  "01jxqxmw03qh8y0aj904a73jyk": [
+    "This amounts to a permanent tax imposed on Russia — a bureaucratic, economic, and psychological burden that forces them to treat every civilian vehicle as a potential weapons platform",
+    "American Humvees didn't face IEDs in every vehicle, but the possibility that any car, truck, or piece of trash might explode created permanent hypervigilance that degraded operational effectiveness and imposed massive defensive costs."
+  ],
+  "01jxn515e603cgfa8z3sz57y7q": [
+    "All inboxes should be at zero.",
+    "Turn off notifications, check comms as an explicit task.",
+    "Separating planning from doing can be useful. Firstly because planning/doing require different kinds of mental energy. When you’re too tired to do, you can often still plan. Secondly because by separating them you can look back and see how useful the plan was, how much you stuck to it, and then get better at planning.",
+    "A bad failure mode I have is: I have a task *T* that I have to do, but I can’t, because of some kind of aversion. But when I try to work on other things, the alarms are going off in my head, telling me to work on *T* because you’ve been putting this off for so long and life is finite and the years are short and all that. The end result is that because one thing is blocked, everything grinds to a halt. It’s a very annoying state to be in."
+  ],
+  "01jtrcactp1q7x006p4mj01tye": [
+    "CRISPR, generally considered to be an adaptive bacterial immune system since the 80s until, 25 years after its discovery, Jennifer Doudna and Emmanuelle Charpentier proposed to use it for something much broader and general: gene editing, leading to a Nobel prize.",
+    "If we want scientific breakthroughs, we should probably explore how we’re currently measuring the performance of AI models and move to a measure of knowledge and reasoning able to test if scientific AI models can for instance:\n\n•   Challenge their own training data knowledge\n•   Take bold counterfactual approaches\n•   Make general proposals based on tiny hints\n•   Ask non-obvious questions that lead to new research paths"
+  ],
+  "01jwb2wp69y8a8hxp9adw7zhsk": [
+    "At the center of the American mythos lies a grand promise: those who arrive on our shores seeking opportunity should be welcomed with open arms. Under the pretext of standing for American values, Trump has destroyed that very principle."
+  ],
+  "01jw7ax51g0j9bkj4hbv7crvfy": [
+    "truism",
+    "In fact, there are far more references to newspapers than to scientific journals, and she consistently treats an anecdote or an interview as if it has the same weight as a meta-analysis or a randomized clinical trial.",
+    "Neurological and psychological and social processes are inextricable.",
+    "in the psychological case even more than the physical one, what counts as a problem depends on the context. When nobody read, dyslexia wasn’t a problem. When most people had to hunt, a minor genetic variation in your ability to focus attention was hardly a problem, and may even have been an advantage. When most people have to make it through high school, the same variation can become a genuinely life-altering disease.",
+    "On balance, though, the evidence suggests that we should be conservative about prescribing drugs to children, and much more conservative than we actually are."
+  ],
+  "01jwjsreq7ky2z1trc9t85mgxx": [
+    "when knowledge is no longer scarce, what remains valuable? Wisdom.",
+    "tomorrow’s economy will prize wisdom workers",
+    "their three core skills: emotional clarity, discernment, and connection.",
+    "Obsessing over pros and cons lists? Finding yourself in a recurring pattern? Ruminating at night about how to avoid a company setback? These aren’t thinking problems; they’re feeling problems.",
+    "Chronic procrastination shows up less as a time-management failure and more as an *emotional* struggle—we delay to dodge anxiety, self-doubt, or fear of failure.",
+    "If you shut down your own desires, you’ll feel resentful of others’ wants.",
+    "Discernment"
+  ],
+  "01jwbf0jrh3wanmfybmzawwz6s": [
+    "‘Linear No Threshold’ (or LNT). LNT is the hypothesis that the relationship between radiation dose and cancer risk to humans is linear and that there is no truly ‘safe’ level of radiation.",
+    "the hypothesis holds that any amount of ionizing radiation increases cancer risk, and that the harm is cumulative, meaning that multiple small doses over time carry the same risk as a single large dose of the same total magnitude.",
+    "In 1930, Muller [had observed that](https://www.journals.uchicago.edu/doi/abs/10.1086/280313) *‘the frequency of mutations produced is exactly proportional to the energy of the dosage absorbed’,*",
+    "modern cytogenetics, the study of chromosomes.",
+    "ALARA – the goal of reducing background radiation from nuclear reactors to a level ‘as low as reasonably achievable’ – were sown. The principle combines the Linear No Threshold view that all ionizing radiation causes harm to humans with the view that it is never worth trading off some health costs against other benefits.",
+    "![](https://wip.gatspress.com/wp-content/uploads/2025/05/Nuclear-construction.png)",
+    "Muller was awarded the 1946 Nobel Prize in Medicine.",
+    "If the human body has ways of healing itself, then lower doses over a sustained period of time seem unlikely to have the same effect as the same size dose taken at once. The body will use the time to repair the damage caused by the low doses that it does not have when it experiences the high dose.",
+    "Scientists who believe in the existence of a safe threshold have the unenviable task of essentially proving a negative, definitively showing that no effect exists below a certain dose. Meanwhile, LNT advocates have a simple model that can always be defended using the precautionary principle.\n\nThese practical challenges make LNT borderline unfalsifiable. Whether its statistical limitations, the challenge of controlling for other factors, or difficulties in follow-up, it will always be possible to find a reason to dismiss any single study that contradicts it.",
+    "Meanwhile, the costs of ALARA only continue to stack up. The case of the banana-like levels of radiation exposure is just one example. Tens of billions of dollars are added to the lifetime costs of nuclear projects to bury waste underground in deep geological repositories, facilities 200 to 1,000 metres below the surface of the earth, on safety grounds. There have been no fatalities in the history of international nuclear energy waste management.",
+    "Linear No Threshold"
+  ],
+  "01jt8ztp2v30aa6jy9jdt3bbn1": [
+    "When a rare form of cancer is associated with a rare exposure, the link between the risk and the cancer stands out starkly.",
+    "a common exposure is associated with a common form of cancer",
+    "a common exposure is associated with a rare form of cancer.",
+    "Several cancers are strongly, often exponentially, age-dependent. An aging population will seem more cancer-afflicted, even if the real cancer incidence has not changed.",
+    "In the late 1940s, Sir Richard Doll and Sir Austin Bradford Hill, working in London, and Ernst Wynder and Evarts Graham, working in St. Louis, began investigating whether tobacco smoking increased the risk of lung cancer.",
+    "What if you perform a similar case-control study with cellphones — comparing men and women suffering from brain cancer (cases) and men and women without brain cancer (controls) — looking at their past cellphone use? In 2010, an enormous study, called Interphone, tried to accomplish this task.",
+    "The trouble is that even the largest, longest, best-designed retrospective studies that rely on memory are likely to be riddled by recall bias.",
+    "Radiation from microwaves, from cellular phones and from light bulbs are examples of nonionizing radiation."
+  ],
+  "01jm9rjn0n5k1qh2k0az57pyc1": [
+    "“commonplacing,” as it was called, involved transcribing interesting or inspirational passages from one’s reading, assembling a personalized encyclopedia of quotations.",
+    "I like to read two or three books concurrently—though one of them is usually a novel—precisely because I’m more likely to stumble up an interesting connection if I’ve just switched from one book to another, for the simple reason the ideas in book one are still fresh in my memory when I switch over to book two. (This is the argument for taking “reading sabbaticals”—made famous by Bill Gates—where you lock yourself up for two weeks and do nothing but read.)"
+  ],
+  "01jt8vebmxc0nm464bnkh8gmh8": [
+    "There are some public goods that should never be privatized."
+  ],
+  "01jt3j5y3926cqnqe3pnw7mbxk": [
+    "Consider a mathematical object like a cellular automaton - a set of simple rules that creates complex behavior. The most famous is [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life); the second most famous is the universe. After all, the universe is a starting condition (the Big Bang) and a set of simple rules determining how the starting condition evolves over time (the laws of physics).",
+    "Tegmark’s hypothesis says: all possible mathematical objects exist.",
+    "Teleological"
+  ],
+  "01jwh1hd2qa4h5tenpn1rysn9k": [
+    "Pauli exclusion principle",
+    "The nomological fine-tuning argument, then, is the conceptual argument that it’s very difficult to produce a physical system that produces anything interesting or valuable.",
+    "Call sets of laws fragile if changing them slightly would make it impossible for life to arise and nonfragile if they could be changed a lot. Proponents of this objection claim that our laws are fragile but there are vast islands of non-fragile laws in possibility space, making the probability of life-permitting laws not terribly low. Note that for this objection to work, there have to mostly be nonfragile laws—if they’re mostly fragile then that means that for every life-permitting laws, there are many that aren’t life-permitting.\n\nBut if most laws are nonfragile, then it’s inexplicable that our laws our fragile. Precisely as one ratchets up the share of life-permitting laws that aren’t fragile, by the same amount that they raise the probability of life-permitting laws existing at all, they lower the probability of having laws like ours, conditional on having life-permitting laws.\n\nMaking there be more laws different from ours may raise the odds that life-permitting laws would exist in the first place, but they don’t affect the odds of our life-permitting laws arising one bit!\n\nSo this objection isn’t just wrong about the physics, it’s wrong probabilistically. It also fails to deal with the nomological fine-tuning point, that laws capable of sustaining life are inherently rare. It’s hard to make a system that produces anything interesting!"
+  ],
+  "01jseatd0q6pnc60ex802vzak6": [
+    "A popular view about the future impact of AI on the economy is that it will be primarily mediated through AI automation of R&D.",
+    "economically valuable",
+    "was only used for this purpose, would be highly valuable",
+    "the most socially or economically valuable application of such a technology would in fact be to automate R&D.",
+    "Capital deepening",
+    "elasticity of output",
+    "total factor productivity (TFP) growth"
+  ],
+  "01jt6czmvt0k43xecr9c9ep4za": [
+    "Existing gene therapies rely on two fundamental approaches. The more common approach draws blood from the patient and reprograms specific cells within the laboratory before reinjecting them into the person’s body. The other method delivers gene treatments directly into the body, usually to easier-to-reach areas such as the eye.",
+    "When a disease results from a missing or dysfunctional gene, deliver a functional copy of the gene into affected cells. That, says Prashant Mali, a bioengineer at the University of California, San Diego, was the “version 1.0 definition of gene therapy.”",
+    "adeno-associated virus (AAV)",
+    "retrovirus",
+    "A few years later, in 2003, researchers reported that several people treated for immunodeficiency developed leukemias, an unfortunate result of the virus randomly inserting its cargo into cancer-promoting regions of the genome."
+  ],
+  "01jw1p0kzsvz5pma3s8hme9gac": [
+    "A small molecule such as glucose is cruising around a cell at about 250 miles per hour, while a large protein molecule is moving at [20 miles per hour](https://books.google.com/books?id=yd61229NHUgC&pg=PA4&dq=%22instantaneous+velocity%22+solution+diffusion&hl=en&ei=9J8OTve_EoS8sQOMn_GWDg&sa=X&oi=book_result&ct=result&resnum=5&ved=0CD8Q6AEwBA#v=onepage&q=%22instantaneous%20velocity%22%20solution%20diffusion&f=true). Note that these are actual speeds inside the cell, not scaled-up speeds. I'm not talking about driving through a crowded Times Square at 20 miles per hour; to scale this would be more like driving through Times Square at 20 million miles per hour!"
+  ],
+  "01jt3j3k3mwq3e46r4fwtp89aw": [
+    "I wish my high school biology teacher had asked the class how an embryo could possibly differentiate—and then paused to let us really think about it. The whole subject is in the answer to that question. A chemical gradient in the embryonic fluid is enough of a signal to slightly alter the gene expression program of some cells, not others; now the embryo knows “up” from “down”; cells at one end begin producing different proteins than cells at the other, and these, in turn, release more refined chemical signals; ...; soon, you have brain cells and foot cells.",
+    "the embryo—DNA making RNA, RNA making protein, protein regulating the transcription of DNA into RNA—was like a small Lisp program, with macros begetting macros begetting macros, the source code containing within it all of the instructions required for life on Earth.",
+    "Enormous subjects are best approached in thin, deep slices. I discovered this when first learning how to program. The textbooks never worked; it all only started to click when I started to do little projects for myself. The project wasn’t just motivation but an organizing principle,",
+    "school cheapens mathematics by robbing us of the questions.",
+    "Cohen found, and I have too, that in trying to acquire a reading knowledge of biology it’s almost more useful to study the methods than any individual facts. That’s because the methods are highly conserved across studies."
+  ],
+  "01jt35k4gem3nqfa9m9q2xbdxx": [
+    "Complaining is not a strategy."
+  ],
+  "01jskvxj13jntypja7mqmrnyq1": [
+    "Manipulation is the hard problem we need to solve to make humanoid robots useful, not locomotion."
+  ],
+  "01jt0tq8tzfq0rnrf17j0xg972": [
+    "I wasn’t yet mature enough to see the value of a person irrespective of the value they could confer to me."
+  ],
+  "01jvpeje8za02e32zzg8j8dr7r": [
+    "First, it keeps you awake. (And I don't mean merely conscious; I mean awake.) In the second place; reading, if it is active, is thinking, and thinking tends to express itself in words, spoken or written. The marked book is usually the thought-through book. Finally, writing helps you remember the thoughts you had, or the thoughts the author expressed.",
+    "Full ownership comes only when you have made it a part of yourself, and the best way to make yourself a part of it is by writing in it",
+    "If, when you've finished reading a book, the pages are filled with your notes, you know that you read actively.",
+    "reading a book should be: a conversation between you and the author.",
+    "use the end-papers at the back of the book to make a personal index of the author's points in the order of their appearance.",
+    "Most of us have been taken in by the notion that speed of reading is a measure of our intelligence. There is no such thing as the right speed for intelligent reading. Some things should be read quickly and effortlessly and some should be read slowly and even laboriously. The sign of intelligence in reading is the ability to read different things differently according to their worth. In the case of good books, the point is not to see how many of them you can get through, but rather how many can get through you -- how many you can make your own.",
+    "After I have finished reading the book and making my personal index on the back end-papers, I turn to the front and try to outline ... the book, not page by page or point by point (I've already done that at the back), but as an integrated structure, with a basic unity and an order of parts. This outline is, to me, the measure of my understanding of the work."
+  ],
+  "01js47t29byenh1d8znskh5dyp": [
+    "Bretton Woods System, which",
+    "This is a situation that, at least in theory, should not persist indefinitely; increased demand for Asian labor should push up both the cost of that labor and also the currency of the countries where that labor is in demand, making those countries less competitive over time. The former has certainly happened: Taiwan, where I live, is one of the richest countries in the world. And yet chip-making is centered here to a greater extent than ever before, in seeming defiance of theory.",
+    "(pioneers are usually vertically integrated)",
+    "exogenous",
+    "Moreover, that exportation was done with the help of the U.S. government. In 1962 the U.S. Congress passed the [Tariff Classification Act of 1962](https://www.congress.gov/87/statute/STATUTE-76/STATUTE-76-Pg72-3.pdf), which amended the Tariff Act of 1930 to implement new tariff schedules developed by the United States Tariff Commission; those [new schedules were implemented in 1963](https://www.usitc.gov/publications/tariff_affairs/pub103.pdf), and included Tariff Item 807.00, which read:\n\n> Articles assembled abroad in whole or in part of products of the United States which were exported for such purpose and which have not been advanced in value or improved in condition abroad by any means other than by the act of assembly:\n> \n> •   A duty upon the full value of the imported article, less the cost or value of such products of the United States.",
+    "The problem with theory is usually reality; in 1944 the U.S. led the way in establishing what came to be known as the Bretton Woods System, which pegged exchange rates to the U.S. dollar. This was a boon to the devastated economies of Europe and first Japan, and then later the rest of Asia: an influx of U.S. capital rebuilt their manufacturing capability by leveraging their relatively lower cost of labor. This did raise labor costs, but thanks to the currency peg, the U.S. currency couldn’t depreciate in response, which in turn made U.S. debt much more attractive than it might have been otherwise for those manufacturing profits, which in turn helped to fund both the Vietnam War and the 1960’s expansion in social programs.",
+    "This is where it matters that software is truly a zero marginal cost product. R&D costs for tech companies have skyrocketed for decades, but that increase has been more than offset by the value created by software and captured by scale",
+    "the big loser in the post World War 2 reconfiguration I described above was the American worker; yes, we have all of those service jobs, but what we have much less of are traditional manufacturing jobs"
+  ],
+  "01jrwjcrbk24jyjbven3f98zwj": [
+    "an Idea Machine: a network of operators, thinkers, and funders, centered around an ideology, that’s designed to turn ideas into outcomes."
+  ],
+  "01jqywf45jxzckz37zjj2ghwwr": [
+    "To this first generation of scientists using PET scans, the active rest state was viewed, in Buckner’s words, as “a confound, as troublesome.” A confound is an errant variable that prevents a scientist from doing a proper control study.",
+    "She called this mode the REST state, for Random Episodic Silent Thought.",
+    "Andreasen noted that most of the REST activity took place in what are called the association cortices of the brain, the regions of the brain that are most pronounced in Homo sapiens compared with other primates and that are often the last to become fully operational as the human brain develops through adolescence and early adulthood.",
+    "In 2001, Randy Buckner’s adviser at Washington University, Marcus Raichle, coined a new term for the phenomenon: the “default-mode network,” or just “the default network.”",
+    "A growing number of scholars, drawn from a wide swath of disciplines — neuroscience, philosophy, computer science — now argue that this aptitude for cognitive time travel, revealed by the discovery of the default network, may be the defining property of human intelligence.",
+    "the device was capable of predicting the behavior of the sun, the moon and five of the planets. The device was so advanced that it could even predict, with meaningful accuracy, solar or lunar eclipses that wouldn’t occur for decades.",
+    "The Antikythera mechanism",
+    "Andreasen noted that most of the REST activity took place in what are called the association cortices of the brain, the regions of the brain that are most pronounced in Homo sapiens compared with other primates and that are often the last to become fully operational as the human brain develops through adolescence and early adulthood.",
+    "emblematic",
+    "A confound is an errant variable that prevents a scientist from doing a proper control study."
+  ],
+  "01jts2kr3y96dp94vpqwy2x82p": [
+    "So let me tell you that story again with slightly more detail:\n\n1.  In the beginning, your DNA is relaxing in the nucleus.\n2.  Some parts of your DNA, called **promoters**, are designed so that if certain proteins are nearby, they'll stick to the DNA.\n3.  If that happens, then a hefty little enzyme called \"RNA polymerase\" will show up, crack open the two strands of DNA, and start transcribing the nucleotides on one side into \"pre-messenger RNA\" (pre-mRNA).\n4.  Eventually, for one of several reasons, the enzyme will decide it's time to stop transcribing, and the pre-mRNA will detach and float off into the nucleus. At this point, it's a few thousand or a few tens of thousands of nucleotides long.\n5.  Then, my personal favorite macromolecular complex, the \"spliceosome\", grabs the pre-mRNA, cuts away most of it, and throws those parts away. The sections of DNA that code for the parts that are kept are called **exons**, while the sections that code for parts that are thrown away are called **introns**.\n6.  Next, another enzyme called \"RNA guanylyltransferase\" (we can't all be beautiful) adds a \"cap\" to one end, and an enzyme called \"poly(A) polymerase\" adds a \"tail\" to the other end.\n7.  The pre-mRNA is now all grown up and has graduated to being regular mRNA. At this point, it is a few hundred or a few thousand nucleotides long.\n8.  Then, some proteins notice that the mRNA has a tail, grab it, and throw it out of the nucleus into the cytoplasm, where the noble ribosome lurks.\n9.  The ribosome grabs the mRNA and turns it into a protein. It does this by starting at one end and looking at chunks of three nucleotides at a time, called \"codons\". When it sees a certain \"start\" pattern, it starts translating each chunk into one of 20 amino acids and continues until it sees a chunk with a \"stop\" pattern.3\n10.  The resulting protein lives happily ever after.\n\nIt's thought that ~[1 percent](https://en.wikipedia.org/wiki/Exon) of your DNA is exons and ~[24 percent](https://www.ncbi.nlm.nih.gov/books/NBK595930/) is introns."
+  ],
+  "01jraepvs9nvjg07kvdytqtde2": [
+    "Looking forward, the continued diffusion of LLMs of course depends on continued performance improvement and its capability profile. The \"benefit distribution\" overall is particularly interesting to chart, and depends heavily on the dynamic range of the performance as a function of capital expenditure. Today, frontier-grade LLM performance is very accessible and cheap. Beyond this point, you cannot spend a marginal dollar to get better performance, reliability or autonomy. Money can't buy better ChatGPT. Bill Gates talks to GPT 4o just like you do. But can this be expected to last? Train-time scaling (increase parameters, data), test-time scaling (increase time) and model ensembles (increase batch) are forces increasing the dynamic range. On the other hand, model distillation (the ability to train disproportionately powerful small models by training to mimic the big model) has been a force decreasing dynamic range. Certainly, the moment money can buy dramatically better ChatGPT, things change. Large organizations get to concentrate their vast resources to buy more intelligence. And within the category of \"individual\" too, the elite may once again split away from the rest of society. Their child will be tutored by GPT-8-pro-max-high, yours by GPT-6 mini."
+  ],
+  "01jpsz1p44ssv0kdeqwb69c2pj": [
+    "And now we’re watching Musk, Trump, and their allies destroy these foundations. They operate under the dangerous delusion of the “great man” theory of innovation — the false belief that revolutionary changes come solely from lone geniuses, rather than from the complex interplay of open systems, diverse perspectives, and stable institutions that actually drives progress."
+  ],
+  "01jr07tdf64s7d4k2tr8z7yktn": [
+    "*Abundance* is also a deeper project that asks its readers to demand something different from government. The typical progressive goal is one of negation: anti-racism, de-growth, no-pollution, and so on. They are positions of scarcity with policy solutions that emphasize redistribution.",
+    "More importantly, the *Abundance* perspective is, who cares about antitrust? What matters is the number of houses.",
+    "vignettes"
+  ],
+  "01jr8d6me0hjd8j848zy6w7zce": [
+    "mercurial",
+    "internecine"
+  ],
+  "01jt5nqhzqrb4bc9qcx2avex3b": [
+    "apotheosis"
+  ],
+  "01jq1ag85xt27zag2ndmpr8myh": [
+    "addictive but unrewarding pastimes"
+  ],
+  "01jsj88551kd35fscp50r2kh3w": [
+    "This ability of the bacteria to switch from one metabolite to another was described by Jacques Monod as diauxic growth,2 a pattern observed when metabolites are used sequentially rather than simultaneously.",
+    "a virus can infect its host and replicate, producing hundreds of viral progeny",
+    "he virus takes up residence in the host, presumably integrating its DNA into the host chromosome, establishing a prophage",
+    "cytoplasmic factor.",
+    "Moreover, there appeared to be molecules in the cytosol that are responsible for regulating the expression of the structural genes."
+  ],
+  "01jsbyj3z0dkxe0dgrahnxnqjs": [
+    "There are three key characteristics of burnout:\n\n1.  Overwhelming exhaustion.\n2.  Feelings of cynicism.\n3.  And a sense of ineffectiveness.",
+    "**The three characteristics of burnout — exhaustion, cynicism, ineffectiveness — form a measurement known as the [Maslach Burnout Inventory](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4911781/?ref=commoncog.com) (MBI)**.",
+    "psychometric",
+    "burnout researchers believe that the opposite of burnout is something called ‘work engagement’, or simply ‘engagement’.",
+    "a highly engaged individual would have:\n\n1.  A state of high energy.\n2.  Strong involvement.\n3.  And a sense of efficacy.",
+    "To enhance work engagement we can:\n\n1.  **Collaborate**. Enhancing work engagement is something you do *with* someone, not *to* someone. Leaders should attempt to build a process that encourages work creativity and enthusiasm.\n2.  **Establish an ongoing process**. Work engagement is an ongoing process, not a one time event. Leaders should understand that it requires constant monitoring, adaptation, and action.\n3.  **Know your target**. Engagement has taken on many meanings, but what does it mean in your case?\n4.  **Be creative**. There are no hard-and-fast rules for building work engagement. Systematic research is still unfolding and [every company is different](https://commoncog.com/working-backwards/), which will determine what works to some extent. Adapt to your situation.\n5.  **Evaluate**. Gather feedback on the impact of work engagement initiatives, evaluate them and improve on it.\n6.  **Share**. Provide progress reports on work engagement.",
+    "ameliorate",
+    "As an employee, if you have constant high job demands that never seem to let up, you need to take advantage of the job resources that are available to you.\n\nMore specifically, you need to be given autonomy in your job, you need to receive fair and effective feedback, and you should have social support and high-quality relationships with your supervisor.",
+    "Lack of recognition (social reward) can devalue the work and the workers. It is closely associated with feelings of inefficacy.",
+    "a lack of social support or chronic conflict with coworkers remains a key factor in causing burnout.",
+    "researchers emphasise that burnout is not solely an individual phenomenon; it is also caused by social and organisational factors.",
+    "Burnout is about resentment",
+    "What we *do know* are [two things](https://www.sciencedirect.com/science/article/pii/S2213058616300596?ref=commoncog.com):\n\n1.  Individual interventions don’t work — and by individual interventions we mean interventions while the person continues to be at the workplace that caused the burnout.\n2.  If you remove yourself from that working environment, you will recover."
+  ],
+  "01jrkmr4b2rnq2dzdf5qr8z621": [
+    "no one in the administration can seem to agree about what exactly the goal is, or what success looks like.",
+    "ameliorate"
+  ],
+  "01jp0r1tcfx67z2a6b7k5xq4b0": [
+    "**Write a Splat Draft**. Alternatively, you can write your draft in one long, stream-of-thought rant. I call these “splat drafts” — you get everything in your head out on the page at once, without regard for form (hence the “splat”). Then you treat it as the raw material for a second, proper draft. Think of it as the act of dumping the puzzle pieces out on the table so you can sift through them and see what fits together. If you have trouble relaxing your inner editor, free online tools (like [The Most Dangerous Writing App](https://www.squibler.io/dangerous-writing-prompt-app)) can help.",
+    "**Outlining**. I used to avoid outlining. Whenever I tried, I wound up deviating from my outline, so it felt like a wasted step. Later, I recognized this is natural. New angles spring from an outline in the same way that new possibilities for artwork spring from a sketch. Even when you deviate, outlining is useful because it releases mental tension. Getting the big-scale composition on paper stops it from interfering with your other writing tasks. Outlining is a classic for a reason; it works.",
+    "The principle behind drafting is that complex and useful thoughts are grown like plants. They’re not squeezed from your brain like toothpaste from a tube.",
+    "•   Don’t be afraid to use fifty words where ten will do. Often, if you start by writing expansively, you can condense your writing in later phrases, until each sentence bears the weight of three or four. It’s easier to do when you have all of your big ideas on the page, instead of trimming them down as you go."
+  ],
+  "01jmg1dqzhsx7fkpz66a69gymd": [
+    "\"In an information-rich world, the wealth of information means a dearth of something else: a scarcity of whatever it is that information consumes. What information consumes is rather obvious: it consumes the attention of its recipients.”"
+  ],
+  "01jmx9mqyv4jkc4z0ayb291yt3": [
+    "“patterns over process,”",
+    "“all that exists is the artifact that’s on the table.”",
+    "You write the first draft for yourself, but you write the second draft for a stranger."
+  ],
+  "01jntg1gs7dya37htqy1pbwkyh": [
+    "The book points out that the major value in a flying car (as with [supersonic](https://www.youtube.com/watch?v=ynJs4bRwe8o)) would not be in taking the same trips you do now, only a bit faster. Instead, it would be in taking the trips you *don’t* take now, because they’re too inconvenient."
+  ],
+  "01jm9n0qsedp9kdvks6900ntcy": [
+    "A little more than a hundred years ago, at the end of the last global pandemic, human life expectancy stood at around 35 years. A hundred years later, it was more than 70.",
+    "this kind of progress is actually just a statistical illusion—that we only got better at reducing infant mortality, which was dragging the overall average down because so many people were dying after six days or six weeks.",
+    "centenarians are the fastest growing age demographic in the United States right now.",
+    "The key idea here is that no change this momentous is entirely positive in its downstream effects. Trying to anticipate those effects, and mitigate the negative ones, is going to take all of our powers of prospection."
+  ],
+  "01jmt2fzw4wgk6gd5f8382v6dx": [
+    "The United Nations created the Food and Agriculture Organization in 1945.",
+    "40 percent of our planet’s land is covered by cropland and pasture, the overwhelming majority of which is devoted to this type of agriculture.",
+    "the Green Revolution was a mix of two ancient technologies — or, rather, modernized versions of them — and one brand-new science. The old-but-updated technologies were *fertilization* and *irrigatio**n*; the new science was *genetics*.",
+    "plants primarily need nitrogen because it is an essential constituent of rubisco, the molecule at the heart of photosynthesis.",
+    "Early in the twentieth century, a German scientist named Fritz Haber found that he could break up nitrogen gas by heating and compressing it in the presence of special alloys that catalyze — facilitate — the process. The catalyzing alloys were Haber’s special contribution. Building on Haber’s work, a German chemical engineer named Carl Bosch then figured out how to produce ammonia on the industrial scale needed for farmers’ fields. Both men received Nobel Prizes.",
+    "Today more than 1 percent of the world’s industrial energy is devoted to making ammonia fertilizer.",
+    "The energy scientist Vaclav Smil [has calculated](https://www.google.com/books/edition/Enriching_the_Earth/G9FljcEASycC?hl=en&gbpv=0) that fertilizer from the Haber–Bosch process is responsible for about 40 percent of the world’s dietary protein.",
+    "even when better pumps became available, so much energy was required to pump the volume of water necessary to flood fields that more often than not irrigation was impractical.",
+    "quarter of the world’s cropland is irrigated — but it provides roughly [40 percent](https://www.nature.com/articles/s44221-024-00206-9#:~:text=While irrigated areas account for,from irrigated croplands6%2C7.) of all the food humans consume.",
+    "Norman Borlaug, to look at stem rust, an ancient disease that afflicted Mexico’s wheat crop.",
+    "Borlaug bred rust-resistant varieties of wheat. But he did more than that.",
+    "those high-yield ones would bear so much grain that they would become top-heavy and fall over, he bred varieties that had much shorter, stronger stalks — dwarf wheat, as it is called.",
+    "The foundations established a new laboratory in the Philippines for the rice project — the International Rice Research Institute.",
+    "In the 1970s, much of South and East Asia were plagued by hunger. By the twenty-first century, Asians had an average of [30 percent](https://ourworldindata.org/grapher/daily-per-capita-caloric-supply?country=~OWID_ASI) more calories in their diet."
+  ],
+  "01jqy8hbsdfdaf1v2d2kxp3zyb": [
+    "Annie Dillard captured this sentiment best in her haunting observation that “how we spend our days is, of course, how we spend our lives” — a poetic sentiment that, on a hectic day, becomes an indictment.",
+    "maybe it’s not that you’ve been cheated out of an unlimited supply of time; maybe it’s almost incomprehensibly miraculous to have been granted any time at all."
+  ],
+  "01jmb5nf4mt205cd6j02wac2e2": [
+    "Lynn Margulis ... argued that one-and-a-half billion years ago, a primitive eukaryotic cell engulfed an oxygen-utilizing bacterium. But rather than digesting this bacterium — or conversely, the bacterium destroying its newfound host — the two cells gradually entered into an endosymbiotic relationship; the host provided nutrients and protection to the bacterium, and the bacterium supplied energy to the host. Margulis argued that this endosymbiosis event was a seminal “innovation engine” for biological systems, ultimately leading to the modern mitochondrion and chloroplast."
+  ],
+  "01jpg3gapf1peey7ttnrrpaprm": [
+    "It starts with **writing**."
+  ],
+  "01jkxh878yfqxsjhmdmsy3hafd": [
+    "These successes challenge the notion that scientific leadership inevitably translates into industrial leadership.",
+    "Chinese firms dominate almost every segment of the solar value chain—from processing polysilicon used in solar cells to assembling solar panels. They have also advanced the technology itself. Chinese solar panels are not only the cheapest on the market; they are the most efficient. The breathtaking decline in solar costs over the past decade has been driven by manufacturing innovations in China.",
+    "CATL, a Chinese company founded in 2011, is now the biggest battery manufacturer in the world, partnering with major car companies such as BMW, Tesla, and Volkswagen. In addition to having far greater manufacturing capacity than its rivals—which matters for lowering costs—CATL has taken the lead in developing new and more efficient chemical mixtures, for example in its sodium-ion batteries, which can be produced without using scarce lithium and cobalt minerals.",
+    "In the 1990s, Stan Shih, the Taiwanese electronics entrepreneur, observed that most of the profits in tech industries are made at the beginning of the value chain—design, research, and development—and at the end, in marketing the product. The least amount of profit is made in actual manufacturing, which is the middle of the value chain. This so-called smiling curve is exemplified by Apple",
+    "Since 2000, the United States has lost around five million manufacturing jobs—about a quarter of its manufacturing workforce—prompting cascades of skill loss among not just line workers but also machinists, managers, and product designers."
+  ],
+  "01jm9p4gefg21bppv6f0d4cyts": [
+    "When the lifesaving AIDS cocktail first emerged in the 1990s it cost somewhere on the order of $14,000 a year; today, thanks to activism, philanthropy, government programs, and economies of scale, the treatment is now available in Sub-Saharan Africa for under $100 per year.",
+    "unprecedented growth in human population did not come from people having more babies—in fact, reproductive rates have fallen steadily throughout that period. We quadrupled our population for one primary reason: people stopped dying as frequently as they used to."
+  ],
+  "01jm9p3xp1s357rjhdm9vh1gqj": [
+    "Morgan ... Levine had been thinking about how we measure aging for more than a decade. As a graduate student at USC, with its lavish campus surrounded by the endemic poverty of South Central LA, Levine started investigating the connection between socio-economic conditions and health outcomes.",
+    "Her hunch was that the chronic stress of urban poverty was causing some people to age at a faster rate than adults living in less stressful environments — a process that is now sometimes called “weathering.”",
+    "Levine hit upon a combination of biomarkers that were better predictors of mortality than chronological age."
+  ],
+  "01jm9p3nrn5t73q386xha3rm5c": [
+    "maybe our bodies were *programmed* to age. Maybe aging itself could be thought of as a kind of disease that you could treat the way we were learning to treat diabetes or cancer.",
+    "Tom Johnson started ... a collection of *C. elegans* ... discovered a single mutation that enabled *C. elegans* to live 60% longer than a normal variant.",
+    "Cynthia Kenyon turned her focus to the genetics of aging. ... demonstrating that mutations in a gene known as DAF-2 could *double* the lifespan of *C. elegans*",
+    "research revealed that the DAF-2 gene produced a growth hormone known as IGF-1, which is crucial both to childhood growth and basic metabolism in adults."
+  ],
+  "01jm9p9hne9tda5461sstp0cxe": [
+    "(I remember being blown away in [my conversation last year with David Byrne](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjyrpTTz7v-AhXQq4kEHQRKAC8QtwJ6BAgUEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4Gr_BYvhU28&usg=AOvVaw01HbN6uvB0bk4EpzOK74D-) by his observation that in the days of vinyl LPs, if you wanted to squeeze a few extra tracks on your album and push past the 42 minute limit, you had to *remove bass frequencies from the mix* so that the physical grooves on the record would be smaller.)"
+  ],
+  "01jk6aetszrja8pzxvk3w4ess3": [
+    "Division by Zero",
+    "***The Lifecyle of Software Objects***",
+    "once in a while, an idea keeps coming back over a period of months or even years. I take that as a signal that I should pay attention and think about the idea in a more intentional way. What that usually means is that I start asking, “Is there an interesting philosophical question that might be illuminated by this idea?” If I can identify that philosophical question, then I can start thinking about different ways a story might help me dramatize it.",
+    "contemporary mimetic fiction",
+    "Understand",
+    "Umberto Eco ... The Search for the Perfect Language"
+  ],
+  "01jm9n863t13q4t8vqz3c24ya0": [
+    "Howard Rheingold",
+    "key questions you should ask yourself in designing that creative workflow. Questions like: how do you capture your own hunches? How do you capture ideas from other people? How do your ideas evolve over time? How do you engineer surprise and serendipitous discovery into your routine?"
+  ],
+  "01jm9s72ax16cv8gqdf3snh9tm": [
+    "“weak superhumanity.”",
+    "“strong superhumanity”",
+    "inimical",
+    "“hard takeoff”",
+    "“soft takeoff.”",
+    "Lynn Margulis (in Margulis and Sagan 1986 and elsewhere) has made strong arguments that mutualism is a great driving force in evolution.",
+    "de novo",
+    "Intelligence Amplification",
+    "Stent’s barrier",
+    "labile"
+  ],
+  "01jj9fb0y2eznh6ceej6na6bbh": [
+    "TB remains the deadliest infectious disease on Earth, killing about 1.2 million people every year.",
+    "ice crystals expand and shatter bacterial membranes, killing the microbes. To protect against this, Calmette and Guérin added a small amount of glycerin, a cryoprotectant, to slow ice crystal formation. Their mycobacteria cultures grew well in the amalgam and could be frozen and thawed time and time again. Finally, the team added ox bile, rich in fat-dissolving enzymes and bile salts, to [disperse clumps of bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3749764/).",
+    "attenuated",
+    "even in the face of the growing threat of drug resistance, research has moved away from antibiotic discovery efforts to explore more profitable medicines. Developing and launching a new antibiotic costs [$1.5 billion](https://pubs.acs.org/doi/10.1021/acsinfecdis.3c00189) U.S. dollars, whereas cancer therapies require only $640 million to make overall. Antibiotics also rake in less revenue, approximately $46 million per year, as compared to cancer treatments ($1.7 billion per year), leaving big pharma with little incentive to focus on this forgotten pandemic."
+  ],
+  "01jkr22zjahj9whmxqcz7h9mxb": [
+    "novels (and fictional narratives in general) were extensions of the human mind’s marvelous aptitude for building *simulations* of potential events ... But novels, I would argue, give you the richest simulation of the *interior life* of other people’s experiences: you get a ringside view of all that emotional and cognitive action.",
+    "caricature"
+  ],
+  "01jj9fae73q12ynbgtgcs0va3k": [
+    "From 2012 through 2021, the Food and Drug Administration’s Center for Drug Evaluation and Research approved [430 new medicines](https://www.fda.gov/drugs/drug-approvals-and-databases/compilation-cder-new-molecular-entity-nme-drug-and-new-biologic-approvals), up 73% from the preceding decade and 25% more than the one before that, once seen as a golden era for drug development.",
+    "He remembers that when he started it cost $10,000 per patient to conduct a clinical trial. Now it can cost $500,000,",
+    "We develop medicines that are too expensive for people to take, or ignore potential treatments that could help large groups of people."
+  ],
+  "01jhfwvv72xbe0ftcmnabpjqy5": [
+    "So ultimately, the glass box aesthetic became popular not only because modernist architects liked it, but because it made buildings cheaper to build, and because developers gradually realized that ornate, highly-detailed exteriors weren’t particularly compelling to renters or to their investors. And once that aesthetic was in place, risk aversion and cost considerations kept it in place."
+  ],
+  "01jhz9s9a323bd32zmmbwx40s4": [
+    "A basic four-stop elevator costs about $158,000 in New York City, compared with about $36,000 in Switzerland. A six-stop model will set you back more than three times as much in Pennsylvania as in Belgium."
+  ],
+  "01jhz9rth1dq20eggktj4831cg": [
+    "now research into artificial wombs is focused on continuing gestation of extremely premature infants born “at the cusp” of viability. Children born at this stage — between 22 and 28 weeks — have high mortality rates and carry high risks of disability if they survive.",
+    "artificial placenta",
+    "These tend to be unambiguously and reliably disabling — every individual with three copies of chromosome 21 will have Down syndrome."
+  ],
+  "01jhz97z5xhz6w41hts4f69hn2": [
+    "attention, self-control, and creativity.",
+    "Take Prodigy, a popular math game: it takes a staggering 888 questions for a student to show a 1-point improvement on a standardized test. Meanwhile, students are inundated with ads for paid upgrades, creating inequity between students whose parents can afford premium memberships and those who cannot. Imagine a classroom teacher assigning 888 math problems while handing out the best prizes only to students with paid memberships—it’s problematic, to say the least.",
+    "students using reading apps like Epic! can swipe through entire books in seconds to earn digital rewards, without actually reading. One parent told me her second grader “read” 40 books during 30 minutes of silent reading. The teacher’s goal was to use the iPad and practice reading. The child’s goal was to collect badges and unlock a new avatar in the app. What we ended up with is a child who had 30 minutes of pointless screen time and no reading practice.",
+    "The directive should be to use technology only when it enhances a lesson in ways traditional methods cannot.",
+    "The real question isn’t whether screens belong in schools—it’s about how to incorporate them in ways that teach unique skills or elevate learning while protecting students from negative outcomes.",
+    "technology oversaturation",
+    "panacea",
+    "specious",
+    "Screens in schools haven’t proven to be more effective than traditional methods. Instead, they may be contributing to academic and social-emotional challenges, while displacing the human connection students need most.",
+    "the benefit we see from utilizing technology to support math outcomes (14-point gain) is almost equal to the [decrease](https://www.oecd-ilibrary.org/sites/53f23881-en/1/3/9/index.html?itemId=/content/publication/53f23881-en&_csp_=de697f9ada06fe758fbc0d6d8d2c70fa&itemIGO=oecd&itemContentType=book) in test scores found when students are distracted by their devices (15-point loss). They note that distraction can come from merely having a device open to take notes. Even when there are potential gains from screens in schools, there is often a loss that comes hand-in-hand.",
+    "critical thinking, collaboration, communication, problem-solving, [interpersonal skills](https://www.wsj.com/lifestyle/careers/colleges-teach-chitchat-to-shy-students-81fe9db1), creativity, and even simple eye-contact.",
+    "Childhood and adolescence are not just irrelevant towns we pass through on the way to adulthood; they are profoundly critical stages for brain development.",
+    "With the best of intentions, we try to grab student attention through exciting means, but this sets the bar of entertainment in education at a place that is unsustainable when learning gets hard and requires self-governed focus and attention.",
+    "When devices dominate education, they displace essential activities that foster social-emotional growth. Instead of collaborating face-to-face, students often work silently and separately on their own devices. Instead of lively lunchtime conversations, they stare at screens. These moments of interaction are critical for learning life’s important lessons. As devices take over, we lose these little moments, eroding school culture and, more importantly, the connections that make us healthy and happy."
+  ],
+  "01jhaxnfdp7vvt26z6x9xt11d3": [
+    "These answers were not sound—but the questions were.",
+    "the concepts scientists use are the children of the questions they ask."
+  ],
+  "01jhq7nrnkhzrs17xdtjwzn58k": [
+    "You have to work hard, and you have to get done everything that has to be done"
+  ],
+  "01jhz9rhk5fxfye1evvq93yx2m": [
+    "effect size",
+    "hold each word in memory until the end of each sentence,",
+    "Data suggests that in order for students to maintain a 50th percentile rank nationwide, they must improve an average of [0.42 standard deviations](https://pmc.ncbi.nlm.nih.gov/articles/PMC4696502/) per year (calculated using standardized reading and math data across K-12); anything below this will likely lead to declining rank and vice versa.",
+    "Hattie reports the average value sits at a less conservative [effect size of 0.4](https://visible-learning.org/hattie-ranking-influences-effect-sizes-learning-achievement/). In fact, he calls this a ‘hinge-point’ and recommends that only those tools and/or strategies with values [above this level](https://www.visiblelearning.com/content/visible-learning-research) can be seen to ‘work best’ and should be considered for mass inclusion across education, as those have the greatest chance to deliver the greatest impact to the greatest number of students.",
+    "*multitasking is among the worst things that students can do for learning and memory*.",
+    "The primary function of any tool can be thought of as the main task or job said tool is believed to perform: or, as I often consider it, it’s the manner in which 80% of people spend 80% of their time employing said tool."
+  ],
+  "01jhf966qndkjvk5wa0dmp27an": [
+    "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation.",
+    "Seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thing that matters in the long run is the leveraging of computation.",
+    "the human-knowledge approach tends to complicate methods in ways that make them less suited to taking advantage of general methods leveraging computation",
+    "We want AI agents that can discover like we can, not which contain what we have discovered."
+  ],
+  "01jhmvksvqhcb0r3ejqhy00fb4": [
+    "“Each day, you need to do all of the things that are necessary for you to succeed.”",
+    "Most people will make a to-do list, do as many of the items as they can until they get tired, and then go home and go to bed. These people will never build successful companies. If you want to succeed, you need to do *all* of the items on your list. Some days, the list is short. Some days, the list is long. It doesn’t matter, in either case you just need to do it all, however long that takes. Then on the next day, you need to make a new list of all the things you need to do, and you need to complete every item on that list too. Repeat this process every single day of your life, or until you find a successor who is also capable of doing *every* item on their list, every day. If you slip up, your company will probably die. Good luck."
+  ],
+  "01jhaxjer4a04brf7jqmpmr8g2": [
+    "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose.",
+    "One of the more underrated insights you can get from reading self-help books is that the story you tell yourself about yourself matters.",
+    "In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent’s *strongest possible replies*. Weak players often play ‘hope chess’: they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don’t see how their attack might fail, and they lose."
+  ]
+}

@@ -60,7 +60,12 @@
 			@apply flex min-w-0 flex-col gap-1;
 
 			div.item {
-				@apply flex flex-col justify-items-start gap-0;
+				@apply -mx-0.5 gap-0 rounded px-0.5 transition-colors;
+
+				&:hover,
+				&:focus-within {
+					@apply bg-neutral-200/65 dark:bg-neutral-800/80;
+				}
 
 				div.links {
 					@apply w-full md:flex md:flex-row md:gap-0.5;
@@ -106,6 +111,49 @@
 					}
 				}
 			}
+		}
+	}
+
+	div.archive_wrapper {
+		@apply relative w-full;
+	}
+
+	aside.archive_highlights_pane {
+		@apply hidden;
+	}
+
+	@media (min-width: 64rem) {
+		aside.archive_highlights_pane[data-visible="true"] {
+			@apply absolute left-full block w-20 pl-4;
+		}
+
+		aside.archive_highlights_pane div.archive_highlights_content {
+			@apply max-h-none overflow-visible text-sm text-pretty;
+		}
+
+		aside.archive_highlights_pane .archive_highlights_heading {
+			@apply pb-1 text-sm font-semibold tracking-wide text-yellow-700 uppercase dark:text-yellow-600;
+		}
+
+		aside.archive_highlights_pane div.archive_highlights_group {
+			@apply hidden;
+		}
+
+		aside.archive_highlights_pane
+			div.archive_highlights_group[data-active="true"] {
+			@apply block;
+		}
+
+		aside.archive_highlights_pane div.archive_highlights_group ul {
+			@apply flex flex-col gap-1.5;
+		}
+
+		aside.archive_highlights_pane div.archive_highlights_group li {
+			@apply wrap-break-word;
+		}
+
+		aside.archive_highlights_pane div.archive_highlights_group li blockquote {
+			@apply m-0 border-l-2 border-neutral-400/75 pl-1;
 		}
 	}
 
