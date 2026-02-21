@@ -4,31 +4,29 @@
 const CACHE_DIR = ".readwise-cache";
 const CACHE_FILE = `${CACHE_DIR}/readwise-items.json`;
 
-/**
- * Readwise Reader location types
- */
-enum ReadwiseLocation {
-	NEW = "new",
-	LATER = "later",
-	SHORTLIST = "shortlist",
-	ARCHIVE = "archive",
-	FEED = "feed",
-}
+const ReadwiseLocation = {
+	NEW: "new",
+	LATER: "later",
+	SHORTLIST: "shortlist",
+	ARCHIVE: "archive",
+	FEED: "feed",
+} as const;
+type ReadwiseLocation =
+	(typeof ReadwiseLocation)[keyof typeof ReadwiseLocation];
 
-/**
- * Readwise Reader content categories
- */
-enum ReadwiseCategory {
-	ARTICLE = "article",
-	EMAIL = "email",
-	RSS = "rss",
-	HIGHLIGHT = "highlight",
-	NOTE = "note",
-	PDF = "pdf",
-	EPUB = "epub",
-	TWEET = "tweet",
-	VIDEO = "video",
-}
+const ReadwiseCategory = {
+	ARTICLE: "article",
+	EMAIL: "email",
+	RSS: "rss",
+	HIGHLIGHT: "highlight",
+	NOTE: "note",
+	PDF: "pdf",
+	EPUB: "epub",
+	TWEET: "tweet",
+	VIDEO: "video",
+} as const;
+type ReadwiseCategory =
+	(typeof ReadwiseCategory)[keyof typeof ReadwiseCategory];
 
 /**
  * Represents a simplified Readwise Reader document entry

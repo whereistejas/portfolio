@@ -60,7 +60,7 @@ const readwiseQueueSchema = z.object({
  */
 const readwiseArchive = defineCollection({
 	loader: async () => {
-		const token = import.meta.env.READWISE_TOKEN;
+		const token = import.meta.env["READWISE_TOKEN"];
 		if (!token) {
 			throw new Error("READWISE_TOKEN environment variable is required");
 		}

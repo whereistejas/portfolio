@@ -12,11 +12,11 @@ let images: Record<string, any>[] = Object.values(
 
 const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 	images.map(async (image_path) => {
-		const img = image_path.default;
+		const img = image_path["default"];
 		const path = img.fsPath;
 
 		const exif = await ExifReader.load(path, { async: true });
-		const caption = exif["title"].description;
+		const caption = exif["title"]?.description ?? "";
 		const image = (
 			await getImage({
 				src: img,

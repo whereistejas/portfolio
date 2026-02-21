@@ -33,6 +33,30 @@
 		"prettier-plugin-astro": "^0.13.0",
 		"prettier-plugin-tailwindcss": "^0.6.14"
 	},
+	"prettier": {
+		"printWidth": 80,
+		"tabWidth": 2,
+		"useTabs": true,
+		"semi": true,
+		"singleQuote": false,
+		"quoteProps": "as-needed",
+		"trailingComma": "es5",
+		"bracketSpacing": true,
+		"arrowParens": "always",
+		"endOfLine": "lf",
+		"plugins": [
+			"prettier-plugin-astro",
+			"prettier-plugin-tailwindcss"
+		],
+		"overrides": [
+			{
+				"files": "*.astro",
+				"options": {
+					"parser": "astro"
+				}
+			}
+		]
+	},
 	"private": true,
 	"peerDependencies": {
 		"typescript": "^5"
