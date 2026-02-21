@@ -1,24 +1,14 @@
 ---
-import "../styles/global.css";
-
 import Page from "./page.astro";
 import Textorlink from "../components/textorlink.astro";
 
 const { frontmatter } = Astro.props;
-
-const headers = [
-	{ type: "text", content: (frontmatter.title as string).toUpperCase() },
-	{ type: "link", content: "CLOSE", href: "/blog" },
-];
 ---
 
 <Page title={frontmatter.title as string}>
 	<Fragment slot="header">
-		{
-			headers.map((el) => (
-				<Textorlink type={el.type} content={el.content} href={el.href} />
-			))
-		}
+		<Textorlink content={(frontmatter.title as string).toUpperCase()} />
+		<Textorlink content="CLOSE" href="/blog" />
 	</Fragment>
 	<Fragment slot="main">
 		<meta

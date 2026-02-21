@@ -1,13 +1,7 @@
 ---
 import Page from "../layouts/page.astro";
-
 import Textorlink from "../components/textorlink.astro";
 import Row from "../components/row.astro";
-
-const headers = [
-	{ type: "text", content: "BLOG" },
-	{ type: "link", content: "CLOSE", href: "/" },
-];
 
 type Post = {
 	frontmatter: {
@@ -20,49 +14,46 @@ type Post = {
 const posts: Post[] = Object.values(
 	import.meta.glob("./posts/*.md", { eager: true })
 );
+
+posts.sort(
+	(a, b) =>
+		new Date(b.frontmatter.date).getTime() -
+		new Date(a.frontmatter.date).getTime()
+);
 ---
 
 <Page title="Blog">
 	<Fragment slot="header">
-		{
-			headers.map((el) => (
-				<Textorlink type={el.type} content={el.content} href={el.href} />
-			))
-		}
+		<Textorlink content="BLOG" />
+		<Textorlink content="CLOSE" href="/" />
 	</Fragment>
 	<Fragment slot="main">
 		<div class="archive_main" style="padding-top: 0;">
 			{
-				posts
-					.sort((a, b) => {
-						const dateA = new Date(a.frontmatter.date);
-						const dateB = new Date(b.frontmatter.date);
-						return dateB.getTime() - dateA.getTime();
-					})
-					.map((post) => (
-						<Row>
-							<Fragment slot="key">
-								{new Date(post.frontmatter.date)
-									.toLocaleDateString("en-GB", {
-										day: "2-digit",
-										month: "short",
-										year: "numeric",
-									})
-									.replace(/\//g, ".")}
-							</Fragment>
-							<Fragment slot="value">
-								<div class="items">
-									<div class="item">
-										<div class="links">
-											<a href={post.url} class="title">
-												{post.frontmatter.title}
-											</a>
-										</div>
+				posts.map((post) => (
+					<Row>
+						<Fragment slot="key">
+							{new Date(post.frontmatter.date)
+								.toLocaleDateString("en-GB", {
+									day: "2-digit",
+									month: "short",
+									year: "numeric",
+								})
+								.replace(/\//g, ".")}
+						</Fragment>
+						<Fragment slot="value">
+							<div class="items">
+								<div class="item">
+									<div class="links">
+										<a href={post.url} class="title">
+											{post.frontmatter.title}
+										</a>
 									</div>
 								</div>
-							</Fragment>
-						</Row>
-					))
+							</div>
+						</Fragment>
+					</Row>
+				))
 			}
 		</div>
 	</Fragment>

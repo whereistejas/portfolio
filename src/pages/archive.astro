@@ -4,11 +4,8 @@ import Page from "../layouts/page.astro";
 import Textorlink from "../components/textorlink.astro";
 import Row from "../components/row.astro";
 
-// Fetch archive items from the content collection
 const archiveEntries = await getCollection("readwise-archive");
 
-// Group archive items by their dateGroup field
-// Items are already sorted by date from the loader, so groups will be in correct order
 const items = new Map<string, (typeof archiveEntries)[0][]>();
 for (const entry of archiveEntries) {
 	const dateGroup = entry.data.dateGroup;
@@ -17,20 +14,12 @@ for (const entry of archiveEntries) {
 	}
 	items.get(dateGroup)?.push(entry);
 }
-
-const headers = [
-	{ type: "text", content: "READING ARCHIVE" },
-	{ type: "link", content: "CLOSE", href: "/" },
-];
 ---
 
 <Page title="Reading Archive">
 	<Fragment slot="header">
-		{
-			headers.map((el) => (
-				<Textorlink type={el.type} content={el.content} href={el.href} />
-			))
-		}
+		<Textorlink content="READING ARCHIVE" />
+		<Textorlink content="CLOSE" href="/" />
 	</Fragment>
 	<Fragment slot="main">
 		<div class="archive_main">

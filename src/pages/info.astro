@@ -2,20 +2,12 @@
 import Row from "../components/row.astro";
 import Textorlink from "../components/textorlink.astro";
 import Page from "../layouts/page.astro";
-
-const headers = [
-	{ type: "text", content: "INFO" },
-	{ type: "link", content: "CLOSE", href: "/" },
-];
 ---
 
 <Page title="Info">
 	<Fragment slot="header">
-		{
-			headers.map((el) => (
-				<Textorlink type={el.type} content={el.content} href={el.href} />
-			))
-		}
+		<Textorlink content="INFO" />
+		<Textorlink content="CLOSE" href="/" />
 	</Fragment>
 
 	<Fragment slot="main">
@@ -53,14 +45,14 @@ const headers = [
 						<p>
 							Most problems can only be solved if there is enough justification
 							for someone to invest in them. The likelihood of investment can be
-							understood in terms of “difficulty of solving” and “benefits from
-							solving”.
+							understood in terms of "difficulty of solving" and "benefits from
+							solving".
 						</p>
 						<p>
 							We can justify solving problems with no clear solutions if there
 							are enough benefits. We can also justify solving problems with
 							little benefits because of how easy they are to solve. We can
-							describe these two categories as the investor’s comfort zone.
+							describe these two categories as the investor's comfort zone.
 							However, our society has evolved to disincentivize investment in
 							problems outside this comfort zone.
 						</p>
@@ -79,8 +71,8 @@ const headers = [
 							improved.
 						</p>
 						<p>
-							The problems outside the comfort zone are often “not sexy”, they
-							won’t 10x the GDP nor will they create a future so abundant that
+							The problems outside the comfort zone are often "not sexy", they
+							won't 10x the GDP nor will they create a future so abundant that
 							none of us will have to work or worry again. We need to start
 							thinking about these problems in terms of improving the human
 							experience (HX). We can <a
