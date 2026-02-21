@@ -19,13 +19,6 @@ export default defineConfig({
 			cssMinify: "lightningcss",
 		},
 	},
-	image: {
-		domains: [],
-		remotePatterns: [],
-		service: {
-			entrypoint: "astro/assets/services/sharp",
-		},
-	},
 	experimental: {
 		headingIdCompat: true,
 	},
