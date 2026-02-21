@@ -1,6 +1,7 @@
 import { DISPLAY_CACHE_PATH, type DisplayDocument } from "./llm.ts";
 
-const CACHE_FILE = ".readwise-cache/readwise-items.json";
+const READER_ITEMS_CACHE_FILE = ".readwise-cache/readwise-items.json";
+const HIGHLIGHTS_CACHE_FILE = "src/content/cache-highlights.json";
 
 const ReadwiseLocation = {
 	NEW: "new",
@@ -69,6 +70,22 @@ type ReadwiseApiResponse = {
 	count: number;
 };
 
+type ReadwiseExportHighlight = {
+	text: string;
+	is_deleted: boolean;
+};
+
+type ReadwiseExportBook = {
+	source_url: string | null;
+	is_deleted: boolean;
+	highlights: ReadwiseExportHighlight[];
+};
+
+type ReadwiseExportResponse = {
+	results: ReadwiseExportBook[];
+	nextPageCursor: string | null;
+};
+
 /**
  * Options for fetching documents from Readwise Reader API
  */
@@ -91,6 +108,8 @@ type FetchReadwiseOptions = {
 type ReadwiseArchiveItem = ReadwiseItem & {
 	/** Date group for rendering (required for archive items) */
 	dateGroup: string;
+	/** Highlight text entries keyed to this article/document */
+	highlights: string[];
 };
 
 /**
@@ -116,7 +135,7 @@ async function saveToCache(
 			},
 		};
 
-		await Bun.write(CACHE_FILE, JSON.stringify(cacheData, null, 2));
+		await Bun.write(READER_ITEMS_CACHE_FILE, JSON.stringify(cacheData, null, 2));
 		console.log("✅ Cached Readwise data successfully");
 	} catch (error) {
 		console.warn("⚠️ Failed to save cache:", error);
@@ -125,7 +144,7 @@ async function saveToCache(
 
 async function loadFromCache(): Promise<ReadwiseItem[] | null> {
 	try {
-		const cacheFile = Bun.file(CACHE_FILE);
+		const cacheFile = Bun.file(READER_ITEMS_CACHE_FILE);
 		if (!(await cacheFile.exists())) {
 			console.log("📁 No cache file found");
 			return null;
@@ -155,6 +174,118 @@ async function loadFromCache(): Promise<ReadwiseItem[] | null> {
 		console.warn("⚠️ Failed to load cache:", error);
 		return null;
 	}
+}
+
+async function saveHighlightsCache(
+	highlightsById: Record<string, string[]>
+): Promise<void> {
+	try {
+		await Bun.write(
+			HIGHLIGHTS_CACHE_FILE,
+			JSON.stringify(highlightsById, null, 2)
+		);
+		console.log("✅ Cached highlights data successfully");
+	} catch (error) {
+		console.warn("⚠️ Failed to save highlights cache:", error);
+	}
+}
+
+async function loadHighlightsCache(): Promise<Record<string, string[]> | null> {
+	try {
+		const cacheFile = Bun.file(HIGHLIGHTS_CACHE_FILE);
+		if (!(await cacheFile.exists())) {
+			console.log("📁 No highlights cache file found");
+			return null;
+		}
+
+		const cacheContent = await cacheFile.text();
+		const parsed: unknown = JSON.parse(cacheContent);
+
+		if (parsed == null || typeof parsed !== "object") {
+			return null;
+		}
+
+		const highlightsById: Record<string, string[]> = {};
+		for (const [key, value] of Object.entries(parsed)) {
+			if (Array.isArray(value)) {
+				highlightsById[key] = value.filter(
+					(entry): entry is string => typeof entry === "string"
+				);
+			}
+		}
+
+		console.log(
+			`📦 Loaded highlights cache for ${Object.keys(highlightsById).length} items`
+		);
+		return highlightsById;
+	} catch (error) {
+		console.warn("⚠️ Failed to load highlights cache:", error);
+		return null;
+	}
+}
+
+function normalizeUrlForJoin(input: string): string {
+	try {
+		const url = new URL(input);
+		url.hash = "";
+		if (url.pathname.length > 1 && url.pathname.endsWith("/")) {
+			url.pathname = url.pathname.slice(0, -1);
+		}
+		return url.toString();
+	} catch {
+		return input.trim();
+	}
+}
+
+async function fetchAllReadwiseHighlightsBySourceUrl(
+	token: string
+): Promise<Map<string, string[]>> {
+	const baseUrl = "https://readwise.io/api/v2/export/";
+	const highlightsBySourceUrl = new Map<string, string[]>();
+	let nextPageCursor: string | null = null;
+
+	do {
+		const url = new URL(baseUrl);
+		if (nextPageCursor) {
+			url.searchParams.set("pageCursor", nextPageCursor);
+		}
+
+		const response = await fetch(url.toString(), {
+			headers: {
+				Authorization: `Token ${token}`,
+			},
+		});
+
+		if (!response.ok) {
+			throw new Error(
+				`Failed to fetch highlights from export API: ${response.status} ${response.statusText}`
+			);
+		}
+
+		const data: ReadwiseExportResponse = await response.json();
+		for (const book of data.results ?? []) {
+			if (book.is_deleted || !book.source_url) {
+				continue;
+			}
+
+			const key = normalizeUrlForJoin(book.source_url);
+			const highlightTexts = (book.highlights ?? [])
+				.filter((highlight) => !highlight.is_deleted)
+				.map((highlight) => highlight.text)
+				.filter((text) => text.length > 0);
+
+			if (highlightTexts.length === 0) {
+				continue;
+			}
+
+			const existing = highlightsBySourceUrl.get(key) ?? [];
+			highlightsBySourceUrl.set(key, [...existing, ...highlightTexts]);
+		}
+
+		nextPageCursor = data.nextPageCursor || null;
+	} while (nextPageCursor);
+
+	return highlightsBySourceUrl;
 }
 
 /**
@@ -259,6 +390,28 @@ export async function loadReadwiseArchive(
 			location: ReadwiseLocation.ARCHIVE,
 		});
 
+		let highlightsById: Record<string, string[]> = {};
+		try {
+			const highlightsBySourceUrl =
+				await fetchAllReadwiseHighlightsBySourceUrl(token);
+
+			for (const item of items) {
+				const joinKey = normalizeUrlForJoin(item.url.href);
+				const highlights = highlightsBySourceUrl.get(joinKey);
+				if (highlights && highlights.length > 0) {
+					highlightsById[item.id] = highlights;
+				}
+			}
+
+			await saveHighlightsCache(highlightsById);
+		} catch (error) {
+			console.warn(
+				"⚠️ Failed to fetch fresh highlights, attempting cache fallback:",
+				error
+			);
+			highlightsById = (await loadHighlightsCache()) ?? {};
+		}
+
 		// Return flat structure for Astro Content Collections
 		const entries = items.map((item) => ({
 			...item,
@@ -269,6 +422,7 @@ export async function loadReadwiseArchive(
 					year: "numeric",
 				})
 				.replace(/\//g, "."),
+			highlights: highlightsById[item.id] ?? [],
 		}));
 
 		console.log("Processed archive entries count:", entries.length);

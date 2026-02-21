@@ -39,6 +39,7 @@ const readwiseBaseSchema = z.object({
 const readwiseArchiveSchema = readwiseBaseSchema.extend({
 	// Archive items include date grouping information
 	dateGroup: z.string(), // Required for archive items
+	highlights: z.array(z.string()),
 });
 
 /**
