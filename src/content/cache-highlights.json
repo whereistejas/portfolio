@@ -1,4 +1,11 @@
 {
+  "01kjakz3wp9kz2pmfaggefwq3r": [
+    "Dynamic typing is but a *special case* of static typing,",
+    "To borrow an apt description from Dana Scott, the so-called *untyped* (that is “dynamically typed”) languages are, in fact*,* *unityped*. Rather than have a variety of types from which to choose, there is but one!",
+    "Even if in a particular situation we are absolutely certain that a particular value is, say, an integer, we have no choice but to regard it as a value of the “one true type” that is *classified*, not *typed*, as an integer.",
+    "you are depriving yourself of the ability to state and enforce the *invariant* that the value at a particular program point must be an integer",
+    "The goal of (static, there is no other kind) type systems is precisely to provide the expressive power to capture *all* computational phenonema, including dynamic dispatch and dynamically extensible classification, within the rich framework of a static type discipline."
+  ],
   "01kappxy9paxg48egatjf62n4j": [
     "I spent some time looking at how to implement it manually, and came away from it with the understanding that I’d have to maintain separate implementations for Windows and Unix. Not only that, I’d just be duplicating a lot of the work Tokio had already done to abstract over platform differences. So I started looking at porting over nextest to Tokio."
   ],
