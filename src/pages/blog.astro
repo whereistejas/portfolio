@@ -25,10 +25,9 @@ posts.sort(
 <Page title="Blog">
 	<Fragment slot="header">
 		<Textorlink content="BLOG" />
-		<Textorlink content="CLOSE" href="/" />
 	</Fragment>
 	<Fragment slot="main">
-		<div class="archive_main" style="padding-top: 0;">
+		<div class="archive_main">
 			{
 				posts.map((post) => (
 					<Row>

@@ -8,7 +8,6 @@ const { frontmatter } = Astro.props;
 <Page title={frontmatter.title as string}>
 	<Fragment slot="header">
 		<Textorlink content={(frontmatter.title as string).toUpperCase()} />
-		<Textorlink content="CLOSE" href="/blog" />
 	</Fragment>
 	<Fragment slot="main">
 		<meta
@@ -16,7 +15,7 @@ const { frontmatter } = Astro.props;
 			content="@whereistejas@hachyderm.io"
 			hidden
 		/>
-		<article class="blog-article leading-1.5">
+		<article class="blog-article">
 			<slot />
 		</article>
 	</Fragment>

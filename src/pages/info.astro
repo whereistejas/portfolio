@@ -7,7 +7,6 @@ import Page from "../layouts/page.astro";
 <Page title="Info">
 	<Fragment slot="header">
 		<Textorlink content="INFO" />
-		<Textorlink content="CLOSE" href="/" />
 	</Fragment>
 
 	<Fragment slot="main">
@@ -17,19 +16,22 @@ import Page from "../layouts/page.astro";
 					<div class="min-w-8">Profile</div>
 				</Fragment>
 				<Fragment slot="value">
-					<p>
-						My name is Tejas Sanap. I live in London (arguably, one of the best
-						cities in the world). I work as a Rust engineer at a startup. Apart
-						from software and functional programming, I'm also an amateur street
-						photographer. I am an avid reader and am currently reading
-						<span class="text-nowrap italic">
-							<a
-								href="https://www.goodreads.com/book/show/220337366-use-of-weapons"
-								class="underline">Use of Weapons</a
-							>
-						</span>
-						by Iain M. Banks.
-					</p>
+					<article class="blog-article first:pt-0 last:pb-0">
+						<p class="mt-0 mb-0">
+							My name is Tejas Sanap. I live in London (arguably, one of the
+							best cities in the world). I work as a Rust engineer at a startup.
+							Apart from software and functional programming, I'm also an
+							amateur street photographer. I am an avid reader and am currently
+							reading
+							<span class="text-nowrap italic">
+								<a
+									href="https://www.goodreads.com/book/show/220337366-use-of-weapons"
+									class="underline">Use of Weapons</a
+								>
+							</span>
+							by Iain M. Banks.
+						</p>
+					</article>
 				</Fragment>
 			</Row>
 			<Row>
@@ -37,22 +39,22 @@ import Page from "../layouts/page.astro";
 					<div class="min-w-8">Beliefs</div>
 				</Fragment>
 				<Fragment slot="value">
-					<article class="blog-article text-lg first:pt-0 last:pb-0">
-						<p style="margin-top: 0;">
+					<article class="blog-article first:pt-0 last:pb-0">
+						<p class="mt-0">
 							We are here to make the world a better place either by: solving
 							new problems or improving existing solutions.
 						</p>
 						<p>
 							Most problems can only be solved if there is enough justification
 							for someone to invest in them. The likelihood of investment can be
-							understood in terms of "difficulty of solving" and "benefits from
-							solving".
+							understood in terms of “difficulty of solving” and “benefits from
+							solving”.
 						</p>
 						<p>
 							We can justify solving problems with no clear solutions if there
 							are enough benefits. We can also justify solving problems with
 							little benefits because of how easy they are to solve. We can
-							describe these two categories as the investor's comfort zone.
+							describe these two categories as the investor’s comfort zone.
 							However, our society has evolved to disincentivize investment in
 							problems outside this comfort zone.
 						</p>
@@ -71,8 +73,8 @@ import Page from "../layouts/page.astro";
 							improved.
 						</p>
 						<p>
-							The problems outside the comfort zone are often "not sexy", they
-							won't 10x the GDP nor will they create a future so abundant that
+							The problems outside the comfort zone are often “not sexy”, they
+							won’t 10x the GDP nor will they create a future so abundant that
 							none of us will have to work or worry again. We need to start
 							thinking about these problems in terms of improving the human
 							experience (HX). We can <a
@@ -87,7 +89,7 @@ import Page from "../layouts/page.astro";
 							simplified governmental services, clean air and water, access to
 							green spaces.
 						</p>
-						<p style="margin-bottom: 0;">
+						<p class="mb-0">
 							If this resonates with you, feel free to reach out at <a
 								class="underline"
 								href="mailto:email@whereistejas.xyz">email@whereistejas.xyz</a
@@ -102,12 +104,13 @@ import Page from "../layouts/page.astro";
 					<div class="min-w-8">Work</div>
 				</Fragment>
 				<Fragment slot="value">
-					<p>
-						<a href="https://tably.com">Tably</a>, 2021 &mdash; Present
-					</p>
-					<p>
-						<a href="https://wipro.com">Wipro</a>, 2019 &mdash; 2021
-					</p>
+					<article class="blog-article first:pt-0 last:pb-0">
+						<p class="mt-0 mb-0">
+							<a href="https://tably.com">Tably</a>, 2021 &mdash; Present
+							<br />
+							<a href="https://wipro.com">Wipro</a>, 2019 &mdash; 2021
+						</p>
+					</article>
 				</Fragment>
 			</Row>
 			<Row>
@@ -115,10 +118,12 @@ import Page from "../layouts/page.astro";
 					<div class="min-w-8">University</div>
 				</Fragment>
 				<Fragment slot="value">
-					<p>
-						Bachelors in Mechanical Engineering,
-						<a href="https://www.unipune.ac.in">SPPU</a>, 2016 &mdash; 2019
-					</p>
+					<article class="blog-article first:pt-0 last:pb-0">
+						<p class="mt-0 mb-0">
+							Bachelors in Mechanical Engineering,
+							<a href="https://www.unipune.ac.in">SPPU</a>, 2016 &mdash; 2019
+						</p>
+					</article>
 				</Fragment>
 			</Row>
 			<Row>
@@ -126,18 +131,20 @@ import Page from "../layouts/page.astro";
 					<div class="min-w-8">Socials</div>
 				</Fragment>
 				<Fragment slot="value">
-					<p>
-						<a href="https://www.github.com/whereistejas">Github</a>,
-						<a href="https://www.goodreads.com/whereistejas">Goodreads</a>,
-						<a href="https://www.are.na/whereistejas">Are.na</a>,
-						<a href="https://www.x.com/whereistejas">X</a>,
-						<a href="https://bsky.app/profile/whereistejas.bsky.social"
-							>Bluesky</a
-						>,
-						<a href="https://hachyderm.io/@whereistejas">Mastodon</a>,
-						<a href="https://www.instagram.com/whereistejas">Instagram</a>,
-						<a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>
-					</p>
+					<article class="blog-article first:pt-0 last:pb-0">
+						<p class="mt-0 mb-0">
+							<a href="https://www.github.com/whereistejas">Github</a>,
+							<a href="https://www.goodreads.com/whereistejas">Goodreads</a>,
+							<a href="https://www.are.na/whereistejas">Are.na</a>,
+							<a href="https://www.x.com/whereistejas">X</a>,
+							<a href="https://bsky.app/profile/whereistejas.bsky.social"
+								>Bluesky</a
+							>,
+							<a href="https://hachyderm.io/@whereistejas">Mastodon</a>,
+							<a href="https://www.instagram.com/whereistejas">Instagram</a>,
+							<a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>
+						</p>
+					</article>
 				</Fragment>
 			</Row>
 		</div>

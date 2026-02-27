@@ -4,9 +4,10 @@ import "../styles/global.css";
 
 interface Props {
 	title: string | undefined;
+	bodyClass?: string;
 }
 
-const { title } = Astro.props;
+const { title, bodyClass } = Astro.props;
 ---
 
 <html lang="en">
@@ -45,7 +46,7 @@ const { title } = Astro.props;
 		</title>
 	</head>
 
-	<body>
+	<body class={bodyClass}>
 		<!-- Like to view source? We might get along email@whereistejas.xyz -->
 		<a rel="me" href="https://hachyderm.io/@whereistejas" hidden>Mastodon</a>
 

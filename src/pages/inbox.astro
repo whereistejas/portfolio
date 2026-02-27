@@ -10,7 +10,6 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 <Page title="Reading Inbox">
 	<Fragment slot="header">
 		<Textorlink content="READING INBOX" />
-		<Textorlink content="CLOSE" href="/" />
 	</Fragment>
 	<Fragment slot="main">
 		<div class="archive_main">
@@ -52,7 +51,9 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 									class="toggle"
 								/>
 								<div class="summary">
-									<div> {item.data.summary} </div>
+									<article class="blog-article">
+										<p class="mt-0 mb-0">{item.data.summary}</p>
+									</article>
 								</div>
 							</div>
 						</div>

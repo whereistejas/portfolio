@@ -35,7 +35,7 @@
 
 	header,
 	footer {
-		@apply left-0 flex w-full flex-row justify-between px-1 text-xl font-semibold tracking-tight md:w-48 md:max-w-full md:px-0 md:text-3xl;
+		@apply left-0 flex w-full flex-row justify-between px-1 text-2xl font-semibold tracking-tight md:w-48 md:max-w-full md:px-0 md:text-3xl;
 	}
 	header {
 		@apply top-0 pt-1;
@@ -45,7 +45,7 @@
 	}
 
 	main {
-		@apply flex w-full flex-col px-1 md:w-48 md:max-w-full md:px-0;
+		@apply flex h-full w-full flex-col px-1 md:w-48 md:max-w-full md:px-0;
 		@apply text-lg text-pretty;
 	}
 
@@ -54,18 +54,17 @@
 	}
 
 	div.archive_main {
-		@apply flex w-full flex-col gap-1.5 first:pt-1.5 md:gap-1.5 md:first:pt-2;
+		@apply flex flex-col gap-1.5 first:pt-1.5 md:gap-1.5 md:first:pt-2;
+
+		a {
+			@apply transition-none;
+		}
 
 		div.items {
 			@apply flex min-w-0 flex-col gap-1;
 
 			div.item {
-				@apply -mx-0.5 gap-0 rounded px-0.5 transition-colors;
-
-				&:hover,
-				&:focus-within {
-					@apply bg-neutral-200/65 dark:bg-neutral-800/80;
-				}
+				@apply flex flex-col justify-items-start gap-0;
 
 				div.links {
 					@apply w-full md:flex md:flex-row md:gap-0.5;
@@ -88,7 +87,7 @@
 
 					div.summary {
 						@apply max-h-0 overflow-hidden text-sm opacity-0 md:max-h-full md:overflow-hidden md:text-base md:opacity-100 md:duration-150 md:ease-in-out;
-						div {
+						article.blog-article {
 							@apply pt-0.5;
 						}
 					}
@@ -158,8 +157,8 @@
 	}
 
 	article.blog-article {
-		@apply prose prose-base dark:prose-invert;
-		@apply text-pretty hyphens-auto;
+		@apply prose prose-base dark:prose-invert first:pt-1.5 md:first:pt-2;
+		@apply text-lg leading-1.5 font-normal text-pretty hyphens-auto;
 		@apply text-neutral-950 marker:text-yellow-700 dark:text-neutral-100 marker:dark:text-yellow-600;
 		@apply w-full max-w-full;
 
