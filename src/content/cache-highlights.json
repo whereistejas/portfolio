@@ -1,4 +1,15 @@
 {
+  "01kjwpn0v6kn185efqcnysdp3q": [
+    "\"Zero-cost\" promises that an abstraction compiles away, not that it has no side effects. Rust's iterator compiled each call to code similar to what you'd write by hand, but the abstraction boundary between calls hid the loop shape the compiler needs to apply SIMD and unrolling across calls."
+  ],
+  "01kjw5hbrajgbdz1w9bghk743m": [
+    "The bit itself has no intrinsic meaning; I must associate a *provenance* with that bit in order to give it meaning",
+    "But then, as was mentioned earlier, we must link it up with a proposition expressing *what the Boolean means*, which is to specify its provenance.  And as soon as we do that, we realize that *Booleans have no special status,* and are usually a poor choice of data structure anyway because they lead to a condition that Dan Licata calls *Boolean blindness*.",
+    "As Conor McBride puts it, to make use of a Boolean you have to know its *provenance* so that you can know what it *means.*"
+  ],
+  "01jjv9mbtdvpnckcp5cgfmzska": [
+    "these types are “implicit”."
+  ],
   "01kjqt8per4qvtgtnvvnfvghk2": [
     "wont",
     "With each passing presidential administration, American policymaking becomes yet more unpredictable, thuggish, arbitrary, and capricious—a gradual descent into madness."
