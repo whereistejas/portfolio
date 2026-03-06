@@ -1,4 +1,9 @@
 {
+  "01kjyp6pcssebd3y3kzes0kq5q": [
+    "The most effective engineers will not compete with AI at producing code, but will learn to collaborate with it, by using AI to explore ideas faster, iterate more broadly, and focus human effort on direction and design.",
+    "architectural evolution is no longer limited by how fast humans can rewrite software, but by how clearly we can define where systems should go next.",
+    "Well-documented systems become dramatically easier to extend and evolve, and poorly structured systems scale into confusion faster than ever. Documentation, clear interfaces, and explicit design intent are now operational leverage, not optional overhead."
+  ],
   "01kjwpn0v6kn185efqcnysdp3q": [
     "\"Zero-cost\" promises that an abstraction compiles away, not that it has no side effects. Rust's iterator compiled each call to code similar to what you'd write by hand, but the abstraction boundary between calls hid the loop shape the compiler needs to apply SIMD and unrolling across calls."
   ],
