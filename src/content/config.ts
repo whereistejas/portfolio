@@ -2,6 +2,12 @@ import { defineCollection, z } from "astro:content";
 import { loadReadwiseArchive, loadReadwiseQueue } from "./readwise.ts";
 
 /**
+ * Readwise collections load from cache-processed.json. Run `bun run build:queue`
+ * before `bun run build` to populate the cache (requires READWISE_TOKEN and
+ * ANTHROPIC_API_KEY).
+ */
+
+/**
  * Schema for Readwise Archive items
  * Items from archive location, grouped by date
  */
