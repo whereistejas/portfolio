@@ -1,20 +1,23 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { z } from "zod";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import type { Message } from "@anthropic-ai/sdk/resources";
+import { copyFile } from "fs/promises";
+import { z } from "zod";
+
+import { buildUnfinishedProcessedCache } from "./readwise.ts";
 import type { ProcessedItem } from "./types.ts";
 import { readJsonCache, writeJsonCache } from "./utils.ts";
 
 const DUMB_MODEL = "claude-haiku-4-5";
 const SMART_MODEL = "claude-sonnet-4-5";
 
-interface InputDocument {
+type InputDocument = {
 	id: string;
 	title: string;
 	author: string;
 	source: string;
 	content: string;
-}
+};
 
 const DocumentSummarySchema = z.object({
 	id: z.string().describe("The document ID (must match the input document ID)"),
@@ -179,15 +182,13 @@ async function tagAndGroupDocuments(
 			throw new Error("No parsed output received from API");
 		}
 
-		// Read and validate the message as { index, tags }[]
-		type TextBlock = { type: "text"; text: string };
 		const responseContent =
 			typeof response.content === "string"
 				? response.content
 				: response.content
 						.map((block) =>
 							typeof block === "object" && block && "text" in block
-								? (block as TextBlock).text
+								? (block as { text: string }).text
 								: ""
 						)
 						.join("");
@@ -222,9 +223,7 @@ async function tagAndGroupDocuments(
 	});
 }
 
-// Cache file paths
 const READWISE_CACHE_DIR = ".readwise-cache";
-const RAW_CACHE_PATH = `${READWISE_CACHE_DIR}/readwise-raw.json`;
 const SUMMARY_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-summary.json`;
 const GROUPED_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-group.json`;
 const PROCESSED_CACHE_PATH = "src/content/cache-processed.json";
@@ -356,34 +355,10 @@ if (import.meta.main) {
 		}
 
 		try {
-			const {
-				fetchAllReadwiseReaderItems,
-				fetchAllReadwiseHighlightsBySourceUrl,
-				normalizeUrlForJoin,
-			} = await import("./readwise");
+			console.log("🔄 Building cache (items + highlights)...");
+			const items = await buildUnfinishedProcessedCache(readwiseToken);
+			console.log(`📚 Found ${items.length} items`);
 
-			// 1. Fetch ALL Readwise items (no location filter)
-			console.log("🔄 Fetching all documents from Readwise...");
-			const allItems = await fetchAllReadwiseReaderItems({
-				token: readwiseToken,
-				withHtmlContent: true,
-			});
-			console.log(`📚 Found ${allItems.length} items across all locations`);
-
-			// 2. Fetch all highlights
-			console.log("🔄 Fetching highlights from Readwise export API...");
-			const highlightsBySourceUrl =
-				await fetchAllReadwiseHighlightsBySourceUrl(readwiseToken);
-			const highlightsMap = Object.fromEntries(highlightsBySourceUrl);
-			console.log(
-				`📚 Found highlights for ${highlightsBySourceUrl.size} sources`
-			);
-
-			// 3. Write raw cache
-			const { mkdir, copyFile } = await import("fs/promises");
-			await mkdir(READWISE_CACHE_DIR, { recursive: true });
-
-			// Migrate LLM caches from old location if they exist
 			const oldSummary = "src/content/cache-summary.json";
 			const oldGroup = "src/content/cache-group.json";
 			for (const [src, dest] of [
@@ -398,23 +373,7 @@ if (import.meta.main) {
 				}
 			}
 
-			const rawCache = {
-				items: allItems.map((item) => ({
-					id: item.id,
-					url: item.url.href,
-					last_moved_at: item.last_moved_at.toISOString(),
-					title: item.title,
-					summary: item.summary,
-					location: item.location,
-					category: item.category ?? "",
-				})),
-				highlightsBySourceUrl: highlightsMap,
-			};
-			await writeJsonCache(RAW_CACHE_PATH, rawCache);
-			console.log("✅ Wrote raw cache to", RAW_CACHE_PATH);
-
-			// 4. For queue articles: run LLM summarize + group
-			const queueArticles = allItems.filter(
+			const queueArticles = items.filter(
 				(item) =>
 					item.location === "new" &&
 					(item.category === "article" || !item.category)
@@ -422,17 +381,16 @@ if (import.meta.main) {
 
 			if (queueArticles.length > 0) {
 				const documents: InputDocument[] = queueArticles.map((doc) => ({
-					id: doc.id,
+					id: doc.readwise_id,
 					title: doc.title,
 					author: "",
-					source: doc.url.href,
+					source: doc.url,
 					content: doc.summary,
 				}));
 				const anthropic = getAnthropicClient(anthropicApiKey);
 				await processDocuments(anthropic, documents);
 			}
 
-			// 5. Build unified ProcessedItem[] for ALL items
 			const summaryCache: SummaryCache = await readJsonCache(
 				SUMMARY_CACHE_PATH,
 				{}
@@ -442,33 +400,18 @@ if (import.meta.main) {
 				{}
 			);
 
-			const processed: ProcessedItem[] = allItems.map((item) => {
-				const joinKey = normalizeUrlForJoin(item.url.href);
-				const highlights = highlightsMap[joinKey] ?? [];
-				const dateGroup = item.last_moved_at.toLocaleDateString("en-GB", {
-					day: "2-digit",
-					month: "short",
-					year: "numeric",
-				}).replace(/\//g, ".");
-
+			const processed: ProcessedItem[] = items.map((item) => {
 				const isQueueArticle =
 					item.location === "new" &&
 					(item.category === "article" || !item.category);
-				const summaryData = summaryCache[item.id];
-				const groupData = groupCache[item.id];
+				const summaryData = summaryCache[item.readwise_id];
+				const groupData = groupCache[item.readwise_id];
 
 				return {
-					readwise_id: item.id,
-					title: item.title,
-					url: item.url.href,
+					...item,
 					tags: isQueueArticle && summaryData ? summaryData.tags : [],
 					display_tags:
 						isQueueArticle && groupData ? groupData.tags : [],
-					category: item.category ?? "article",
-					location: item.location,
-					last_moved_at: item.last_moved_at.toISOString(),
-					date_group: dateGroup,
-					highlights,
 					summary: isQueueArticle && summaryData ? summaryData.summary : "",
 					order: isQueueArticle && groupData ? groupData.order : 0,
 				};
