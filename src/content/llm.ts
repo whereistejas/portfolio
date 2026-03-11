@@ -518,15 +518,16 @@ if (import.meta.main) {
 
 // Cache helper functions
 async function readJsonCache<T>(path: string, defaultValue: T): Promise<T> {
+	const file = Bun.file(path);
+	if (!(await file.exists())) {
+		return defaultValue;
+	}
 	try {
-		const file = Bun.file(path);
-		if (!(await file.exists())) {
-			return defaultValue;
-		}
 		const data = await file.text();
 		return JSON.parse(data);
-	} catch {
-		return defaultValue;
+	} catch (err) {
+		console.error(`[LLM] Failed to parse ${path}:`, err);
+		throw err;
 	}
 }
 

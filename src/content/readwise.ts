@@ -229,18 +229,27 @@ export async function fetchAllReadwiseReaderItems(
 
 /**
  * Loads the unified processed cache from disk.
+ * Returns [] if file is missing or invalid (e.g. corrupt JSON).
  */
 export async function loadProcessedCache(): Promise<ProcessedItem[]> {
 	const file = Bun.file(PROCESSED_CACHE_PATH);
 	if (!(await file.exists())) {
 		return [];
 	}
-	const content = await file.text();
-	const parsed: unknown = JSON.parse(content);
-	if (!Array.isArray(parsed)) {
+	try {
+		const content = await file.text();
+		const parsed: unknown = JSON.parse(content);
+		if (!Array.isArray(parsed)) {
+			return [];
+		}
+		return parsed as ProcessedItem[];
+	} catch (err) {
+		console.warn(
+			`[readwise] Failed to parse ${PROCESSED_CACHE_PATH}, returning empty:`,
+			err
+		);
 		return [];
 	}
-	return parsed as ProcessedItem[];
 }
 
 /**
