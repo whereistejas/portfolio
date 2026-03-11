@@ -76,6 +76,8 @@ export const processedItemSchema = z.object({
 	highlights: z.array(z.string()),
 	summary: z.string(),
 	order: z.number(),
+	needs_summarizing: z.boolean().default(false),
+	needs_grouping: z.boolean().default(false),
 });
 export type ProcessedItem = z.infer<typeof processedItemSchema>;
 
