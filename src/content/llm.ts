@@ -1,11 +1,8 @@
-// llm.ts
-// LLM-powered Readwise queue processing (summarization, tagging, reordering)
-// This file is used at build time to generate JSON caches for Astro content collections
-
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import type { Message } from "@anthropic-ai/sdk/resources";
+import type { ProcessedItem } from "./types.ts";
 
 const DUMB_MODEL = "claude-haiku-4-5";
 const SMART_MODEL = "claude-sonnet-4-5";
@@ -236,22 +233,6 @@ type DisplayDocument = {
 	title: string;
 	url: string;
 	tags: string[];
-	summary: string;
-	order: number;
-};
-
-// Unified processed cache item schema (used by Astro at build time)
-export type ProcessedItem = {
-	readwise_id: string;
-	title: string;
-	url: string;
-	tags: string[];
-	display_tags: string[];
-	category: string;
-	location: string;
-	last_moved_at: string;
-	date_group: string;
-	highlights: string[];
 	summary: string;
 	order: number;
 };
