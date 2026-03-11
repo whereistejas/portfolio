@@ -26,16 +26,12 @@ const ReadwiseCategory = {
 type ReadwiseCategory =
 	(typeof ReadwiseCategory)[keyof typeof ReadwiseCategory];
 
-/**
- * Represents a simplified Readwise Reader document entry
- * for use in Astro content collections.
- */
 type ReadwiseItem = {
+	id: string;
 	url: URL;
 	last_moved_at: Date;
 	title: string;
 	summary: string;
-	id: string;
 	location: ReadwiseLocation;
 	category?: ReadwiseCategory;
 };

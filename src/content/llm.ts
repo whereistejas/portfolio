@@ -10,8 +10,7 @@ import type { Message } from "@anthropic-ai/sdk/resources";
 const DUMB_MODEL = "claude-haiku-4-5";
 const SMART_MODEL = "claude-sonnet-4-5";
 
-// Types for document input and LLM output
-export interface InputDocument {
+interface InputDocument {
 	id: string;
 	title: string;
 	author: string;
@@ -19,7 +18,6 @@ export interface InputDocument {
 	content: string;
 }
 
-// Zod schema for structured output matching DocumentSummary interface
 const DocumentSummarySchema = z.object({
 	id: z.string().describe("The document ID (must match the input document ID)"),
 	summary: z
@@ -35,11 +33,9 @@ const DocumentSummarySchema = z.object({
 		),
 });
 
-// Infer TypeScript type from Zod schema
-export type DocumentSummary = z.infer<typeof DocumentSummarySchema>;
+type DocumentSummary = z.infer<typeof DocumentSummarySchema>;
 
-// Anthropic client setup
-export function getAnthropicClient(apiKey: string) {
+function getAnthropicClient(apiKey: string) {
 	return new Anthropic({
 		apiKey,
 		timeout: 240000, // 240 seconds = 4 minutes (matching Rust implementation)
@@ -86,8 +82,7 @@ Strictly follow the given instructions at all times. Especially the instructions
 
 Here is the document:`;
 
-// Summarize a single document using Anthropic LLM
-export async function summariseDocument(
+async function summariseDocument(
 	anthropic: Anthropic,
 	document: InputDocument
 ): Promise<DocumentSummary> {
@@ -147,11 +142,8 @@ Thinking steps (inside your thinking block before final output):
 6) Verify every index is present exactly once in the final array.
 `;
 
-// Type for summary cache (matches cache-summary.json structure)
-export type SummaryCache = Record<string, { summary: string; tags: string[] }>;
-
-// Type for grouped documents cache (matches cache-group.json structure)
-export type GroupCache = Record<string, { tags: string[]; order: number }>;
+type SummaryCache = Record<string, { summary: string; tags: string[] }>;
+type GroupCache = Record<string, { tags: string[]; order: number }>;
 
 // Schema and type for reorder response: array ordered by desired sequence
 const ReorderItemSchema = z.object({
@@ -161,8 +153,7 @@ const ReorderItemSchema = z.object({
 const ReorderResponseSchema = z.array(ReorderItemSchema);
 type ReorderResponse = z.infer<typeof ReorderResponseSchema>;
 
-// Reorder and tag documents using Anthropic LLM
-export async function tagAndGroupDocuments(
+async function tagAndGroupDocuments(
 	anthropic: Anthropic,
 	summaries: SummaryCache
 ): Promise<GroupCache> {
@@ -240,8 +231,7 @@ const SUMMARY_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-summary.json`;
 const GROUPED_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-group.json`;
 const PROCESSED_CACHE_PATH = "src/content/cache-processed.json";
 
-// Final display document structure (legacy, used during LLM processing)
-export type DisplayDocument = {
+type DisplayDocument = {
 	id: string;
 	title: string;
 	url: string;
@@ -278,8 +268,7 @@ function assertNoMissing(
 	}
 }
 
-// Main function to process documents (equivalent to tag_documents in Rust)
-export async function processDocuments(
+async function processDocuments(
 	llm_client: Anthropic,
 	documents: InputDocument[]
 ): Promise<DisplayDocument[]> {
