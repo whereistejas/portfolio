@@ -24,3 +24,9 @@ bun-debug.log*
 # cache
 tmp/
 .readwise-cache/
+
+# deprecated readwise caches (replaced by cache-processed.json)
+src/content/cache-highlights.json
+src/content/cache-summary.json
+src/content/cache-group.json
+src/content/cache-display.json

@@ -1,25 +1,30 @@
-// llm.ts
-// LLM-powered Readwise queue processing (summarization, tagging, reordering)
-// This file is used at build time to generate JSON caches for Astro content collections
-
 import Anthropic from "@anthropic-ai/sdk";
-import { z } from "zod";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import type { Message } from "@anthropic-ai/sdk/resources";
+import { copyFile } from "fs/promises";
+import { z } from "astro/zod";
+
+import { buildUnfinishedProcessedCache } from "./readwise.ts";
+import type { ProcessedItem } from "./types.ts";
+import {
+	GROUPED_CACHE_PATH,
+	PROCESSED_CACHE_PATH,
+	readJsonCache,
+	SUMMARY_CACHE_PATH,
+	writeJsonCache,
+} from "./utils.ts";
 
 const DUMB_MODEL = "claude-haiku-4-5";
 const SMART_MODEL = "claude-sonnet-4-5";
 
-// Types for document input and LLM output
-export interface InputDocument {
+type InputDocument = {
 	id: string;
 	title: string;
 	author: string;
 	source: string;
 	content: string;
-}
+};
 
-// Zod schema for structured output matching DocumentSummary interface
 const DocumentSummarySchema = z.object({
 	id: z.string().describe("The document ID (must match the input document ID)"),
 	summary: z
@@ -35,11 +40,9 @@ const DocumentSummarySchema = z.object({
 		),
 });
 
-// Infer TypeScript type from Zod schema
-export type DocumentSummary = z.infer<typeof DocumentSummarySchema>;
+type DocumentSummary = z.infer<typeof DocumentSummarySchema>;
 
-// Anthropic client setup
-export function getAnthropicClient(apiKey: string) {
+function getAnthropicClient(apiKey: string) {
 	return new Anthropic({
 		apiKey,
 		timeout: 240000, // 240 seconds = 4 minutes (matching Rust implementation)
@@ -86,8 +89,7 @@ Strictly follow the given instructions at all times. Especially the instructions
 
 Here is the document:`;
 
-// Summarize a single document using Anthropic LLM
-export async function summariseDocument(
+async function summariseDocument(
 	anthropic: Anthropic,
 	document: InputDocument
 ): Promise<DocumentSummary> {
@@ -105,7 +107,7 @@ export async function summariseDocument(
 				},
 			],
 			betas: ["structured-outputs-2025-11-13"],
-			output_format: betaZodOutputFormat(DocumentSummarySchema),
+			output_format: betaZodOutputFormat(DocumentSummarySchema as never),
 		});
 
 		// Automatically parsed and validated by Zod
@@ -147,11 +149,8 @@ Thinking steps (inside your thinking block before final output):
 6) Verify every index is present exactly once in the final array.
 `;
 
-// Type for summary cache (matches cache-summary.json structure)
-export type SummaryCache = Record<string, { summary: string; tags: string[] }>;
-
-// Type for grouped documents cache (matches cache-group.json structure)
-export type GroupCache = Record<string, { tags: string[]; order: number }>;
+type SummaryCache = Record<string, { summary: string; tags: string[] }>;
+type GroupCache = Record<string, { tags: string[]; order: number }>;
 
 // Schema and type for reorder response: array ordered by desired sequence
 const ReorderItemSchema = z.object({
@@ -161,8 +160,7 @@ const ReorderItemSchema = z.object({
 const ReorderResponseSchema = z.array(ReorderItemSchema);
 type ReorderResponse = z.infer<typeof ReorderResponseSchema>;
 
-// Reorder and tag documents using Anthropic LLM
-export async function tagAndGroupDocuments(
+async function tagAndGroupDocuments(
 	anthropic: Anthropic,
 	summaries: SummaryCache
 ): Promise<GroupCache> {
@@ -190,15 +188,13 @@ export async function tagAndGroupDocuments(
 			throw new Error("No parsed output received from API");
 		}
 
-		// Read and validate the message as { index, tags }[]
-		type TextBlock = { type: "text"; text: string };
 		const responseContent =
 			typeof response.content === "string"
 				? response.content
 				: response.content
 						.map((block) =>
 							typeof block === "object" && block && "text" in block
-								? (block as TextBlock).text
+								? (block as { text: string }).text
 								: ""
 						)
 						.join("");
@@ -233,13 +229,7 @@ export async function tagAndGroupDocuments(
 	});
 }
 
-// Cache file paths (in src/content/ for use by Astro collections)
-const SUMMARY_CACHE_PATH = "src/content/cache-summary.json";
-const GROUPED_CACHE_PATH = "src/content/cache-group.json";
-export const DISPLAY_CACHE_PATH = "src/content/cache-display.json";
-
-// Final display document structure
-export type DisplayDocument = {
+type DisplayDocument = {
 	id: string;
 	title: string;
 	url: string;
@@ -260,8 +250,7 @@ function assertNoMissing(
 	}
 }
 
-// Main function to process documents (equivalent to tag_documents in Rust)
-export async function processDocuments(
+async function processDocuments(
 	llm_client: Anthropic,
 	documents: InputDocument[]
 ): Promise<DisplayDocument[]> {
@@ -317,9 +306,7 @@ export async function processDocuments(
 			);
 			if (stillMissing.length > 0) {
 				const titles = stillMissing.map((d) => d.title);
-				throw new Error(
-					`[LLM][Reordering] Missing after update: ${titles}`
-				);
+				throw new Error(`[LLM][Reordering] Missing after update: ${titles}`);
 			}
 
 			await writeJsonCache(GROUPED_CACHE_PATH, groupedDocuments);
@@ -346,16 +333,13 @@ export async function processDocuments(
 		});
 	}
 
-	await writeJsonCache(DISPLAY_CACHE_PATH, result);
 	console.log(`[LLM] Processed ${result.length} documents successfully.`);
-
 	return result;
 }
 
 // CLI script entry point (when run directly with bun)
 if (import.meta.main) {
 	async function main() {
-		// Bun automatically loads environment variables from .env file
 		const anthropicApiKey = process.env["ANTHROPIC_API_KEY"];
 		const readwiseToken = process.env["READWISE_TOKEN"];
 
@@ -370,82 +354,84 @@ if (import.meta.main) {
 		}
 
 		try {
-			// Import Readwise functions
-			const { fetchAllReadwiseReaderItems } = await import("./readwise");
+			console.log("🔄 Building cache (items + highlights)...");
+			const items = await buildUnfinishedProcessedCache(readwiseToken);
+			console.log(`📚 Found ${items.length} items`);
 
-			console.log("🔄 Fetching documents from Readwise...");
-			const readwiseDocuments = await fetchAllReadwiseReaderItems({
-				token: readwiseToken,
-				location: "new",
-				category: "article",
-				withHtmlContent: true,
-			});
-
-			console.log(`📚 Found ${readwiseDocuments.length} documents`);
-
-			if (readwiseDocuments.length === 0) {
-				console.log("✅ No new documents to process");
-				return;
+			const oldSummary = "src/content/cache-summary.json";
+			const oldGroup = "src/content/cache-group.json";
+			for (const [src, dest] of [
+				[oldSummary, SUMMARY_CACHE_PATH],
+				[oldGroup, GROUPED_CACHE_PATH],
+			] as const) {
+				try {
+					await copyFile(src, dest);
+					console.log(`📦 Migrated ${src} to ${dest}`);
+				} catch {
+					// source may not exist, ignore
+				}
 			}
 
-			// Convert to LLM input format
-			const documents: InputDocument[] = readwiseDocuments.map((doc) => ({
-				id: doc.id,
-				title: doc.title,
-				author: "", // Readwise doesn't always have author info
-				source: doc.url.href,
-				content: doc.summary, // Use existing summary as content for now
-			}));
+			const queueArticles = items.filter(
+				(item) =>
+					item.location === "new" &&
+					(item.category === "article" || !item.category) &&
+					(item.needs_summarizing || item.needs_grouping)
+			);
 
-			// Process with LLM
-			const anthropic = getAnthropicClient(anthropicApiKey);
-			const result = await processDocuments(anthropic, documents);
+			if (queueArticles.length > 0) {
+				const documents: InputDocument[] = queueArticles.map((doc) => ({
+					id: doc.readwise_id,
+					title: doc.title,
+					author: "",
+					source: doc.url,
+					content: doc.summary,
+				}));
+				const anthropic = getAnthropicClient(anthropicApiKey);
+				await processDocuments(anthropic, documents);
+			}
 
-			console.log(`✅ Successfully processed ${result.length} documents`);
+			const summaryCache: SummaryCache = await readJsonCache(
+				SUMMARY_CACHE_PATH,
+				{}
+			);
+			const groupCache: GroupCache = await readJsonCache(
+				GROUPED_CACHE_PATH,
+				{}
+			);
+
+			const processedIds = new Set(queueArticles.map((d) => d.readwise_id));
+
+			const processed: ProcessedItem[] = items.map((item) => {
+				const isQueueArticle =
+					item.location === "new" &&
+					(item.category === "article" || !item.category);
+				const summaryData = summaryCache[item.readwise_id];
+				const groupData = groupCache[item.readwise_id];
+				const wasProcessed = processedIds.has(item.readwise_id);
+
+				return {
+					...item,
+					tags: isQueueArticle && summaryData ? summaryData.tags : [],
+					display_tags: isQueueArticle && groupData ? groupData.tags : [],
+					summary: isQueueArticle && summaryData ? summaryData.summary : "",
+					order: isQueueArticle && groupData ? groupData.order : 0,
+					needs_summarizing: wasProcessed ? false : item.needs_summarizing,
+					needs_grouping: wasProcessed ? false : item.needs_grouping,
+				};
+			});
+
+			await writeJsonCache(PROCESSED_CACHE_PATH, processed);
+			console.log(
+				`✅ Wrote processed cache (${processed.length} items) to ${PROCESSED_CACHE_PATH}`
+			);
 		} catch (error) {
-			console.error("❌ Error processing documents:", error);
+			console.error("❌ Error:", error);
 			process.exit(1);
 		}
 	}
 
 	main().catch(console.error);
-}
-
-// Cache helper functions
-async function readJsonCache<T>(path: string, defaultValue: T): Promise<T> {
-	try {
-		const file = Bun.file(path);
-		if (!(await file.exists())) {
-			return defaultValue;
-		}
-		const data = await file.text();
-		return JSON.parse(data);
-	} catch {
-		return defaultValue;
-	}
-}
-
-async function writeJsonCache<T>(path: string, data: T): Promise<void> {
-	const sortKeys = (obj: unknown): unknown => {
-		if (obj === null || typeof obj !== "object") {
-			return obj;
-		}
-
-		if (Array.isArray(obj)) {
-			return obj.map(sortKeys);
-		}
-
-		const record = obj as Record<string, unknown>;
-		const sortedObj: Record<string, unknown> = {};
-		const keys = Object.keys(record).sort();
-		for (const key of keys) {
-			sortedObj[key] = sortKeys(record[key]);
-		}
-		return sortedObj;
-	};
-
-	const sortedData = sortKeys(data);
-	await Bun.write(path, JSON.stringify(sortedData, null, 2));
 }
 
 async function retry<T>(

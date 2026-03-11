@@ -4,26 +4,27 @@ overview: "Collapse the current 5 cache files into 2: a raw cache for dev workfl
 todos:
   - id: raw-cache
     content: Create raw cache structure in `.readwise-cache/readwise-raw.json` -- modify `llm.ts` main() to fetch all items + highlights and write the unified raw cache
-    status: pending
+    status: completed
   - id: llm-intermediate
     content: Move LLM intermediate caches (`cache-summary.json`, `cache-group.json`) from `src/content/` to `.readwise-cache/llm-summary.json` and `.readwise-cache/llm-group.json`
-    status: pending
+    status: completed
   - id: processed-cache
     content: Build unified `ProcessedItem[]` in `llm.ts` -- merge archive items (with highlights, dateGroup) and queue items (with LLM tags, summary, order) into single `cache-processed.json`
-    status: pending
+    status: completed
   - id: simplify-readwise
     content: Rewrite `readwise.ts` -- remove all old cache functions, add `loadProcessedCache()` and two thin filter-based loaders for archive and queue
-    status: pending
+    status: completed
   - id: update-config
     content: Update `config.ts` schemas and collection loaders to use the new ProcessedItem shape
-    status: pending
+    status: completed
   - id: update-pages
     content: Update `archive.astro` and `inbox.astro` field references to match new schema
-    status: pending
+    status: completed
   - id: cleanup
     content: Delete old cache files (`cache-highlights.json`, `cache-summary.json`, `cache-group.json`, `cache-display.json`) and update `.gitignore`
-    status: pending
+    status: completed
 isProject: false
+status: implemented
 ---
 
 # Unify Readwise Caches
