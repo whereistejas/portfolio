@@ -376,7 +376,8 @@ if (import.meta.main) {
 			const queueArticles = items.filter(
 				(item) =>
 					item.location === "new" &&
-					(item.category === "article" || !item.category)
+					(item.category === "article" || !item.category) &&
+					(item.needs_summarizing || item.needs_grouping)
 			);
 
 			if (queueArticles.length > 0) {
@@ -400,12 +401,15 @@ if (import.meta.main) {
 				{}
 			);
 
+			const processedIds = new Set(queueArticles.map((d) => d.readwise_id));
+
 			const processed: ProcessedItem[] = items.map((item) => {
 				const isQueueArticle =
 					item.location === "new" &&
 					(item.category === "article" || !item.category);
 				const summaryData = summaryCache[item.readwise_id];
 				const groupData = groupCache[item.readwise_id];
+				const wasProcessed = processedIds.has(item.readwise_id);
 
 				return {
 					...item,
@@ -414,6 +418,8 @@ if (import.meta.main) {
 						isQueueArticle && groupData ? groupData.tags : [],
 					summary: isQueueArticle && summaryData ? summaryData.summary : "",
 					order: isQueueArticle && groupData ? groupData.order : 0,
+					needs_summarizing: wasProcessed ? false : item.needs_summarizing,
+					needs_grouping: wasProcessed ? false : item.needs_grouping,
 				};
 			});
 
