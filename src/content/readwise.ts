@@ -191,6 +191,8 @@ export async function buildUnfinishedProcessedCache(
 			highlights,
 			summary: isQueueArticle ? item.summary : "",
 			order: 0,
+			needs_summarizing: isQueueArticle,
+			needs_grouping: isQueueArticle,
 		};
 	});
 }
