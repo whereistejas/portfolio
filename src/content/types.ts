@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "astro/zod";
 
 export const readwiseLocationSchema = z.enum([
 	"new",
@@ -82,6 +82,7 @@ export const processedItemSchema = z.object({
 export type ProcessedItem = z.infer<typeof processedItemSchema>;
 
 export const readwiseArchiveSchema = z.object({
+	id: z.string(),
 	readwise_id: z.string(),
 	title: z.string(),
 	url: z.string(),
@@ -95,6 +96,7 @@ export const readwiseArchiveSchema = z.object({
 export type ReadwiseArchiveItem = z.infer<typeof readwiseArchiveSchema>;
 
 export const readwiseQueueSchema = z.object({
+	id: z.string(),
 	readwise_id: z.string(),
 	title: z.string(),
 	url: z.string(),

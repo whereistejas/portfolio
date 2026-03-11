@@ -2,11 +2,17 @@ import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import type { Message } from "@anthropic-ai/sdk/resources";
 import { copyFile } from "fs/promises";
-import { z } from "zod";
+import { z } from "astro/zod";
 
 import { buildUnfinishedProcessedCache } from "./readwise.ts";
 import type { ProcessedItem } from "./types.ts";
-import { readJsonCache, writeJsonCache } from "./utils.ts";
+import {
+	GROUPED_CACHE_PATH,
+	PROCESSED_CACHE_PATH,
+	readJsonCache,
+	SUMMARY_CACHE_PATH,
+	writeJsonCache,
+} from "./utils.ts";
 
 const DUMB_MODEL = "claude-haiku-4-5";
 const SMART_MODEL = "claude-sonnet-4-5";
@@ -101,7 +107,7 @@ async function summariseDocument(
 				},
 			],
 			betas: ["structured-outputs-2025-11-13"],
-			output_format: betaZodOutputFormat(DocumentSummarySchema),
+			output_format: betaZodOutputFormat(DocumentSummarySchema as never),
 		});
 
 		// Automatically parsed and validated by Zod
@@ -223,11 +229,6 @@ async function tagAndGroupDocuments(
 	});
 }
 
-const READWISE_CACHE_DIR = ".readwise-cache";
-const SUMMARY_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-summary.json`;
-const GROUPED_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-group.json`;
-const PROCESSED_CACHE_PATH = "src/content/cache-processed.json";
-
 type DisplayDocument = {
 	id: string;
 	title: string;
@@ -305,9 +306,7 @@ async function processDocuments(
 			);
 			if (stillMissing.length > 0) {
 				const titles = stillMissing.map((d) => d.title);
-				throw new Error(
-					`[LLM][Reordering] Missing after update: ${titles}`
-				);
+				throw new Error(`[LLM][Reordering] Missing after update: ${titles}`);
 			}
 
 			await writeJsonCache(GROUPED_CACHE_PATH, groupedDocuments);
@@ -414,8 +413,7 @@ if (import.meta.main) {
 				return {
 					...item,
 					tags: isQueueArticle && summaryData ? summaryData.tags : [],
-					display_tags:
-						isQueueArticle && groupData ? groupData.tags : [],
+					display_tags: isQueueArticle && groupData ? groupData.tags : [],
 					summary: isQueueArticle && summaryData ? summaryData.summary : "",
 					order: isQueueArticle && groupData ? groupData.order : 0,
 					needs_summarizing: wasProcessed ? false : item.needs_summarizing,

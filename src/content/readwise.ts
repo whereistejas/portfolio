@@ -10,13 +10,14 @@ import type {
 	ReadwiseQueueItem,
 } from "./types.ts";
 import { processedItemSchema, readwiseExportResponseSchema } from "./types.ts";
-import { writeJsonCache } from "./utils.ts";
+import {
+	PROCESSED_CACHE_PATH,
+	RAW_CACHE_PATH,
+	READWISE_CACHE_DIR,
+	writeJsonCache,
+} from "./utils.ts";
 
-const READWISE_CACHE_DIR = ".readwise-cache";
-const RAW_CACHE_PATH = `${READWISE_CACHE_DIR}/readwise-raw.json`;
-const PROCESSED_CACHE_PATH = "src/content/cache-processed.json";
-
-export function normalizeUrlForJoin(input: string): string {
+function normalizeUrlForJoin(input: string): string {
 	try {
 		const url = new URL(input);
 		url.hash = "";
@@ -29,7 +30,7 @@ export function normalizeUrlForJoin(input: string): string {
 	}
 }
 
-export async function fetchAllReadwiseHighlightsBySourceUrl(
+async function fetchAllReadwiseHighlightsBySourceUrl(
 	token: string
 ): Promise<Map<string, string[]>> {
 	const baseUrl = "https://readwise.io/api/v2/export/";
@@ -80,7 +81,7 @@ export async function fetchAllReadwiseHighlightsBySourceUrl(
 	return highlightsBySourceUrl;
 }
 
-export async function fetchAllReadwiseReaderItems(
+async function fetchAllReadwiseReaderItems(
 	options: FetchReadwiseOptions
 ): Promise<ReadwiseItem[]> {
 	const { token, location, category, updatedAfter, withHtmlContent } = options;
@@ -168,11 +169,13 @@ export async function buildUnfinishedProcessedCache(
 	return allItems.map((item) => {
 		const joinKey = normalizeUrlForJoin(item.url.href);
 		const highlights = highlightsMap[joinKey] ?? [];
-		const dateGroup = item.last_moved_at.toLocaleDateString("en-GB", {
-			day: "2-digit",
-			month: "short",
-			year: "numeric",
-		}).replace(/\//g, ".");
+		const dateGroup = item.last_moved_at
+			.toLocaleDateString("en-GB", {
+				day: "2-digit",
+				month: "short",
+				year: "numeric",
+			})
+			.replace(/\//g, ".");
 
 		const isQueueArticle =
 			item.location === "new" &&
@@ -197,7 +200,7 @@ export async function buildUnfinishedProcessedCache(
 	});
 }
 
-export async function loadProcessedCache(): Promise<ProcessedItem[]> {
+async function loadProcessedCache(): Promise<ProcessedItem[]> {
 	const file = Bun.file(PROCESSED_CACHE_PATH);
 	if (!(await file.exists())) {
 		return [];
@@ -226,6 +229,7 @@ export async function loadReadwiseArchive(): Promise<ReadwiseArchiveItem[]> {
 	const archive = items.filter((item) => item.location === "archive");
 
 	return archive.map((item) => ({
+		id: item.readwise_id,
 		readwise_id: item.readwise_id,
 		title: item.title,
 		url: item.url,
@@ -243,6 +247,7 @@ export async function loadReadwiseQueue(): Promise<ReadwiseQueueItem[]> {
 	const queue = items.filter((item) => item.location === "new");
 
 	return queue.map((item) => ({
+		id: item.readwise_id,
 		readwise_id: item.readwise_id,
 		title: item.title,
 		url: item.url,

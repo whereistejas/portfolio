@@ -33,7 +33,7 @@ const highlightsByEntry = await Promise.all(
 		.map(async (entry) => ({
 			id: entry.data.readwise_id,
 			highlights: await Promise.all(
-				entry.data.highlights.map(async (highlight) =>
+				entry.data.highlights.map(async (highlight: string) =>
 					String(await markdownProcessor.process(highlight))
 				)
 			),
