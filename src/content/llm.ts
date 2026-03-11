@@ -3,6 +3,7 @@ import { z } from "zod";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import type { Message } from "@anthropic-ai/sdk/resources";
 import type { ProcessedItem } from "./types.ts";
+import { readJsonCache, writeJsonCache } from "./utils.ts";
 
 const DUMB_MODEL = "claude-haiku-4-5";
 const SMART_MODEL = "claude-sonnet-4-5";
@@ -484,44 +485,6 @@ if (import.meta.main) {
 	}
 
 	main().catch(console.error);
-}
-
-// Cache helper functions
-async function readJsonCache<T>(path: string, defaultValue: T): Promise<T> {
-	const file = Bun.file(path);
-	if (!(await file.exists())) {
-		return defaultValue;
-	}
-	try {
-		const data = await file.text();
-		return JSON.parse(data);
-	} catch (err) {
-		console.error(`[LLM] Failed to parse ${path}:`, err);
-		throw err;
-	}
-}
-
-async function writeJsonCache<T>(path: string, data: T): Promise<void> {
-	const sortKeys = (obj: unknown): unknown => {
-		if (obj === null || typeof obj !== "object") {
-			return obj;
-		}
-
-		if (Array.isArray(obj)) {
-			return obj.map(sortKeys);
-		}
-
-		const record = obj as Record<string, unknown>;
-		const sortedObj: Record<string, unknown> = {};
-		const keys = Object.keys(record).sort();
-		for (const key of keys) {
-			sortedObj[key] = sortKeys(record[key]);
-		}
-		return sortedObj;
-	};
-
-	const sortedData = sortKeys(data);
-	await Bun.write(path, JSON.stringify(sortedData, null, 2));
 }
 
 async function retry<T>(
