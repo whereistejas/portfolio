@@ -46,7 +46,7 @@ export type ReadwiseExportBook = z.infer<typeof readwiseExportBookSchema>;
 
 export const readwiseExportResponseSchema = z.object({
 	results: z.array(readwiseExportBookSchema),
-	nextPageCursor: z.string().nullable(),
+	nextPageCursor: z.coerce.string().nullable(),
 });
 
 export const rawCacheItemSchema = z.object({

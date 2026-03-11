@@ -224,11 +224,65 @@ async function loadProcessedCache(): Promise<ProcessedItem[]> {
 	}
 }
 
-export async function loadReadwiseArchive(): Promise<ReadwiseArchiveItem[]> {
-	const items = await loadProcessedCache();
-	const archive = items.filter((item) => item.location === "archive");
+async function fetchAndCacheArchiveItems(): Promise<ProcessedItem[]> {
+	const token = process.env["READWISE_TOKEN"];
+	if (!token) {
+		console.warn(
+			"[readwise] No READWISE_TOKEN set — cannot fetch archive items from API"
+		);
+		return [];
+	}
 
-	return archive.map((item) => ({
+	console.log("[readwise] Fetching archive items from Readwise API...");
+	const archiveItems = await fetchAllReadwiseReaderItems({
+		token,
+		location: "archive",
+	});
+	const highlightsBySourceUrl =
+		await fetchAllReadwiseHighlightsBySourceUrl(token);
+	const highlightsMap = Object.fromEntries(highlightsBySourceUrl);
+
+	const archiveProcessed: ProcessedItem[] = archiveItems.map((item) => {
+		const joinKey = normalizeUrlForJoin(item.url.href);
+		const highlights = highlightsMap[joinKey] ?? [];
+		const dateGroup = item.last_moved_at
+			.toLocaleDateString("en-GB", {
+				day: "2-digit",
+				month: "short",
+				year: "numeric",
+			})
+			.replace(/\//g, ".");
+
+		return {
+			readwise_id: item.id,
+			title: item.title,
+			url: item.url.href,
+			tags: [],
+			display_tags: [],
+			category: item.category ?? "article",
+			location: item.location,
+			last_moved_at: item.last_moved_at.toISOString(),
+			date_group: dateGroup,
+			highlights,
+			summary: item.summary,
+			order: 0,
+			needs_summarizing: false,
+			needs_grouping: false,
+		};
+	});
+
+	const existing = await loadProcessedCache();
+	const merged = [...existing, ...archiveProcessed];
+	await writeJsonCache(PROCESSED_CACHE_PATH, merged);
+	console.log(
+		`[readwise] Cached ${archiveProcessed.length} archive items (${merged.length} total)`
+	);
+
+	return archiveProcessed;
+}
+
+function processedToArchive(item: ProcessedItem): ReadwiseArchiveItem {
+	return {
 		id: item.readwise_id,
 		readwise_id: item.readwise_id,
 		title: item.title,
@@ -239,7 +293,19 @@ export async function loadReadwiseArchive(): Promise<ReadwiseArchiveItem[]> {
 		category: item.category,
 		dateGroup: item.date_group,
 		highlights: item.highlights,
-	}));
+	};
+}
+
+export async function loadReadwiseArchive(): Promise<ReadwiseArchiveItem[]> {
+	const items = await loadProcessedCache();
+	const archive = items.filter((item) => item.location === "archive");
+
+	if (archive.length > 0) {
+		return archive.map(processedToArchive);
+	}
+
+	const fetched = await fetchAndCacheArchiveItems();
+	return fetched.map(processedToArchive);
 }
 
 export async function loadReadwiseQueue(): Promise<ReadwiseQueueItem[]> {
