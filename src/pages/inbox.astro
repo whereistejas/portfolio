@@ -27,7 +27,7 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 									{item.data.title}
 								</a>
 								<a
-									href={`https://read.readwise.io/new/read/${item.data.id}`}
+									href={`https://read.readwise.io/new/read/${item.data.readwise_id}`}
 									target="_blank"
 									rel="noopener noreferrer"
 									class="readwise"
@@ -37,7 +37,7 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 							</div>
 							<div class="info">
 								<label class="tags" for={`toggle-summary-${idx}`}>
-									{[...item.data.tags]
+									{[...item.data.display_tags]
 										.sort((a, b) =>
 											a.toLowerCase().localeCompare(b.toLowerCase())
 										)

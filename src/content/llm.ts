@@ -233,17 +233,35 @@ export async function tagAndGroupDocuments(
 	});
 }
 
-// Cache file paths (in src/content/ for use by Astro collections)
-const SUMMARY_CACHE_PATH = "src/content/cache-summary.json";
-const GROUPED_CACHE_PATH = "src/content/cache-group.json";
-export const DISPLAY_CACHE_PATH = "src/content/cache-display.json";
+// Cache file paths
+const READWISE_CACHE_DIR = ".readwise-cache";
+const RAW_CACHE_PATH = `${READWISE_CACHE_DIR}/readwise-raw.json`;
+const SUMMARY_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-summary.json`;
+const GROUPED_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-group.json`;
+const PROCESSED_CACHE_PATH = "src/content/cache-processed.json";
 
-// Final display document structure
+// Final display document structure (legacy, used during LLM processing)
 export type DisplayDocument = {
 	id: string;
 	title: string;
 	url: string;
 	tags: string[];
+	summary: string;
+	order: number;
+};
+
+// Unified processed cache item schema (used by Astro at build time)
+export type ProcessedItem = {
+	readwise_id: string;
+	title: string;
+	url: string;
+	tags: string[];
+	display_tags: string[];
+	category: string;
+	location: string;
+	last_moved_at: string;
+	date_group: string;
+	highlights: string[];
 	summary: string;
 	order: number;
 };
@@ -346,16 +364,13 @@ export async function processDocuments(
 		});
 	}
 
-	await writeJsonCache(DISPLAY_CACHE_PATH, result);
 	console.log(`[LLM] Processed ${result.length} documents successfully.`);
-
 	return result;
 }
 
 // CLI script entry point (when run directly with bun)
 if (import.meta.main) {
 	async function main() {
-		// Bun automatically loads environment variables from .env file
 		const anthropicApiKey = process.env["ANTHROPIC_API_KEY"];
 		const readwiseToken = process.env["READWISE_TOKEN"];
 
@@ -370,40 +385,130 @@ if (import.meta.main) {
 		}
 
 		try {
-			// Import Readwise functions
-			const { fetchAllReadwiseReaderItems } = await import("./readwise");
+			const {
+				fetchAllReadwiseReaderItems,
+				fetchAllReadwiseHighlightsBySourceUrl,
+				normalizeUrlForJoin,
+			} = await import("./readwise");
 
-			console.log("🔄 Fetching documents from Readwise...");
-			const readwiseDocuments = await fetchAllReadwiseReaderItems({
+			// 1. Fetch ALL Readwise items (no location filter)
+			console.log("🔄 Fetching all documents from Readwise...");
+			const allItems = await fetchAllReadwiseReaderItems({
 				token: readwiseToken,
-				location: "new",
-				category: "article",
 				withHtmlContent: true,
 			});
+			console.log(`📚 Found ${allItems.length} items across all locations`);
 
-			console.log(`📚 Found ${readwiseDocuments.length} documents`);
+			// 2. Fetch all highlights
+			console.log("🔄 Fetching highlights from Readwise export API...");
+			const highlightsBySourceUrl =
+				await fetchAllReadwiseHighlightsBySourceUrl(readwiseToken);
+			const highlightsMap = Object.fromEntries(highlightsBySourceUrl);
+			console.log(
+				`📚 Found highlights for ${highlightsBySourceUrl.size} sources`
+			);
 
-			if (readwiseDocuments.length === 0) {
-				console.log("✅ No new documents to process");
-				return;
+			// 3. Write raw cache
+			const { mkdir, copyFile } = await import("fs/promises");
+			await mkdir(READWISE_CACHE_DIR, { recursive: true });
+
+			// Migrate LLM caches from old location if they exist
+			const oldSummary = "src/content/cache-summary.json";
+			const oldGroup = "src/content/cache-group.json";
+			for (const [src, dest] of [
+				[oldSummary, SUMMARY_CACHE_PATH],
+				[oldGroup, GROUPED_CACHE_PATH],
+			] as const) {
+				try {
+					await copyFile(src, dest);
+					console.log(`📦 Migrated ${src} to ${dest}`);
+				} catch {
+					// source may not exist, ignore
+				}
 			}
 
-			// Convert to LLM input format
-			const documents: InputDocument[] = readwiseDocuments.map((doc) => ({
-				id: doc.id,
-				title: doc.title,
-				author: "", // Readwise doesn't always have author info
-				source: doc.url.href,
-				content: doc.summary, // Use existing summary as content for now
-			}));
+			const rawCache = {
+				items: allItems.map((item) => ({
+					id: item.id,
+					url: item.url.href,
+					last_moved_at: item.last_moved_at.toISOString(),
+					title: item.title,
+					summary: item.summary,
+					location: item.location,
+					category: item.category ?? "",
+				})),
+				highlightsBySourceUrl: highlightsMap,
+			};
+			await writeJsonCache(RAW_CACHE_PATH, rawCache);
+			console.log("✅ Wrote raw cache to", RAW_CACHE_PATH);
 
-			// Process with LLM
-			const anthropic = getAnthropicClient(anthropicApiKey);
-			const result = await processDocuments(anthropic, documents);
+			// 4. For queue articles: run LLM summarize + group
+			const queueArticles = allItems.filter(
+				(item) =>
+					item.location === "new" &&
+					(item.category === "article" || !item.category)
+			);
 
-			console.log(`✅ Successfully processed ${result.length} documents`);
+			if (queueArticles.length > 0) {
+				const documents: InputDocument[] = queueArticles.map((doc) => ({
+					id: doc.id,
+					title: doc.title,
+					author: "",
+					source: doc.url.href,
+					content: doc.summary,
+				}));
+				const anthropic = getAnthropicClient(anthropicApiKey);
+				await processDocuments(anthropic, documents);
+			}
+
+			// 5. Build unified ProcessedItem[] for ALL items
+			const summaryCache: SummaryCache = await readJsonCache(
+				SUMMARY_CACHE_PATH,
+				{}
+			);
+			const groupCache: GroupCache = await readJsonCache(
+				GROUPED_CACHE_PATH,
+				{}
+			);
+
+			const processed: ProcessedItem[] = allItems.map((item) => {
+				const joinKey = normalizeUrlForJoin(item.url.href);
+				const highlights = highlightsMap[joinKey] ?? [];
+				const dateGroup = item.last_moved_at.toLocaleDateString("en-GB", {
+					day: "2-digit",
+					month: "short",
+					year: "numeric",
+				}).replace(/\//g, ".");
+
+				const isQueueArticle =
+					item.location === "new" &&
+					(item.category === "article" || !item.category);
+				const summaryData = summaryCache[item.id];
+				const groupData = groupCache[item.id];
+
+				return {
+					readwise_id: item.id,
+					title: item.title,
+					url: item.url.href,
+					tags: isQueueArticle && summaryData ? summaryData.tags : [],
+					display_tags:
+						isQueueArticle && groupData ? groupData.tags : [],
+					category: item.category ?? "article",
+					location: item.location,
+					last_moved_at: item.last_moved_at.toISOString(),
+					date_group: dateGroup,
+					highlights,
+					summary: isQueueArticle && summaryData ? summaryData.summary : "",
+					order: isQueueArticle && groupData ? groupData.order : 0,
+				};
+			});
+
+			await writeJsonCache(PROCESSED_CACHE_PATH, processed);
+			console.log(
+				`✅ Wrote processed cache (${processed.length} items) to ${PROCESSED_CACHE_PATH}`
+			);
 		} catch (error) {
-			console.error("❌ Error processing documents:", error);
+			console.error("❌ Error:", error);
 			process.exit(1);
 		}
 	}

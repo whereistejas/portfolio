@@ -31,7 +31,7 @@ const highlightsByEntry = await Promise.all(
 	archiveEntries
 		.filter((entry) => entry.data.highlights.length > 0)
 		.map(async (entry) => ({
-			id: entry.data.id,
+			id: entry.data.readwise_id,
 			highlights: await Promise.all(
 				entry.data.highlights.map(async (highlight) =>
 					String(await markdownProcessor.process(highlight))
@@ -59,13 +59,13 @@ const highlightsByEntry = await Promise.all(
 											class="item"
 											data-highlight-id={
 												item.data.highlights.length > 0
-													? item.data.id
+													? item.data.readwise_id
 													: undefined
 											}
 										>
 											<div class="links">
 												<a
-													href={item.data.url.href}
+													href={item.data.url}
 													target="_blank"
 													rel="noopener noreferrer"
 													class="title"
