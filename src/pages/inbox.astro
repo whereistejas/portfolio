@@ -12,54 +12,43 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 		<Textorlink content="READING INBOX" />
 	</Fragment>
 	<Fragment slot="main">
-		<div class="archive_main">
-			<div class="items">
-				{
-					queueEntries.map((item, idx) => (
-						<div class="item">
-							<div class="links">
-								<a
-									href={item.data.url}
-									target="_blank"
-									rel="noopener noreferrer"
-									class="title"
-								>
-									{item.data.title}
-								</a>
-								<a
-									href={`https://read.readwise.io/new/read/${item.data.readwise_id}`}
-									target="_blank"
-									rel="noopener noreferrer"
-									class="readwise"
-								>
-									Ⓡ
-								</a>
-							</div>
-							<div class="info">
-								<label class="tags" for={`toggle-summary-${idx}`}>
-									{[...item.data.display_tags]
-										.sort((a, b) =>
-											a.toLowerCase().localeCompare(b.toLowerCase())
-										)
-										.map((tag) => (
-											<span class="tag">{tag}</span>
-										))}
-								</label>
-								<input
-									type="checkbox"
-									id={`toggle-summary-${idx}`}
-									class="toggle"
-								/>
-								<div class="summary">
-									<article class="blog-article">
-										<p class="mt-0 mb-0">{item.data.summary}</p>
-									</article>
-								</div>
-							</div>
+		<div class="feed">
+			{
+				queueEntries.map((item) => (
+					<div class="feed-item">
+						<div class="flex items-baseline gap-0.5">
+							<a
+								href={item.data.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="feed-title min-w-0"
+							>
+								{item.data.title}
+							</a>
+							<a
+								href={`https://read.readwise.io/new/read/${item.data.readwise_id}`}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="feed-readwise shrink-0"
+							>
+								Ⓡ
+							</a>
 						</div>
-					))
-				}
-			</div>
+						{item.data.summary && (
+							<span class="feed-desc">{item.data.summary}</span>
+						)}
+						<span class="feed-tags">
+							{[...item.data.display_tags]
+								.sort((a, b) =>
+									a.toLowerCase().localeCompare(b.toLowerCase())
+								)
+								.map((tag) => (
+									<span class="tag">{tag}</span>
+								))}
+						</span>
+					</div>
+				))
+			}
 		</div>
 	</Fragment>
 </Page>

@@ -6,7 +6,6 @@ import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import Textorlink from "../components/textorlink.astro";
-import Row from "../components/row.astro";
 import { unified } from "unified";
 
 const archiveEntries = await getCollection("readwise-archive");
@@ -47,38 +46,39 @@ const highlightsByEntry = await Promise.all(
 	</Fragment>
 	<Fragment slot="main">
 		<div class="archive_wrapper" id="archive-wrapper">
-			<div class="archive_main">
+			<div class="feed">
 				{
-					Array.from(itemsByDate.entries()).map(([date, groupItems]) => (
-						<Row>
-							<Fragment slot="key">{date === "" ? "XYZ" : date}</Fragment>
-							<Fragment slot="value">
-								<div class="items">
-									{groupItems.map((item) => (
-										<div
-											class="item"
-											data-highlight-id={
-												item.data.highlights.length > 0
-													? item.data.readwise_id
-													: undefined
-											}
-										>
-											<div class="links">
-												<a
-													href={item.data.url}
-													target="_blank"
-													rel="noopener noreferrer"
-													class="title"
-												>
-													{item.data.title}
-												</a>
-											</div>
-										</div>
-									))}
-								</div>
-							</Fragment>
-						</Row>
-					))
+					Array.from(itemsByDate.entries()).map(([date, groupItems]) =>
+						groupItems.map((item) => (
+							<div
+								class="feed-item"
+								data-highlight-id={
+									item.data.highlights.length > 0
+										? item.data.readwise_id
+										: undefined
+								}
+							>
+								<a
+									href={item.data.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="feed-title"
+								>
+									{item.data.title}
+								</a>
+								{item.data.summary && (
+									<span class="feed-desc">
+										{item.data.summary}
+									</span>
+								)}
+								<span class="feed-meta">
+									{[item.data.category, date]
+										.filter(Boolean)
+										.join(" · ")}
+								</span>
+							</div>
+						))
+					)
 				}
 			</div>
 
@@ -118,7 +118,7 @@ const highlightsByEntry = await Promise.all(
 				const groups = Array.from(
 					pane.querySelectorAll("[data-highlight-group]")
 				);
-				const items = Array.from(wrapper.querySelectorAll(".item"));
+				const items = Array.from(wrapper.querySelectorAll(".feed-item"));
 				let activeItem = null;
 				let activeId = null;
 
