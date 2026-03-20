@@ -8,11 +8,19 @@ type Post = {
 		date: Date;
 	};
 	url: string;
+	rawContent: () => string;
 };
 
 const posts: Post[] = Object.values(
 	import.meta.glob("./posts/*.md", { eager: true })
 );
+
+function firstParagraph(post: Post): string {
+	const raw = post.rawContent?.();
+	if (!raw) return "";
+	const blocks = raw.split(/\n\n+/);
+	return blocks.find((b) => b.trim() && !b.trim().startsWith("#"))?.trim() ?? "";
+}
 
 posts.sort(
 	(a, b) =>
@@ -33,6 +41,11 @@ posts.sort(
 						<span class="feed-title">
 							{post.frontmatter.title}
 						</span>
+						{firstParagraph(post) && (
+							<span class="feed-desc">
+								{firstParagraph(post)}
+							</span>
+						)}
 						<span class="feed-meta">
 							{new Date(post.frontmatter.date).toLocaleDateString(
 								"en-GB",
