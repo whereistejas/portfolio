@@ -7,6 +7,7 @@
 	font-style: normal;
 	font-weight: 100 900;
 	font-display: swap;
+	font-feature-settings: 'liga' 1, 'calt' 1;
 	src: url("/InterVariable.woff2") format("woff2");
 }
 @font-face {
@@ -14,7 +15,11 @@
 	font-style: italic;
 	font-weight: 100 900;
 	font-display: swap;
+	font-feature-settings: 'liga' 1, 'calt' 1;
 	src: url("/InterVariable-Italic.woff2") format("woff2");
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
 }
 
 @theme {
@@ -22,10 +27,6 @@
 	--font-serif: InterVariable, sans-serif;
 	--default-font-feature-settings: "calt", "tnum", "ss03";
 	--spacing: 1rem;
-
-	--font-weight-normal: 380;
-	--text-md: 1rem;
-	--text-lg: 1.1rem;
 }
 
 @layer components {
@@ -35,7 +36,7 @@
 
 	header,
 	footer {
-		@apply left-0 flex w-full flex-row justify-between px-1 text-2xl font-semibold tracking-tight md:w-48 md:max-w-full md:px-0 md:text-3xl;
+		@apply left-0 flex w-full flex-row justify-between px-1 text-2xl font-semibold tracking-tight md:w-48 md:max-w-full md:px-0;
 	}
 	header {
 		@apply top-0 pt-1;
@@ -46,7 +47,7 @@
 
 	main {
 		@apply flex h-full w-full flex-col px-1 md:w-48 md:max-w-full md:px-0;
-		@apply text-lg text-pretty;
+		@apply text-base text-pretty;
 	}
 
 	div.info_main {
@@ -57,20 +58,20 @@
 		@apply flex flex-col first:pt-1.5 md:first:pt-2;
 
 		.feed-item {
-			@apply flex flex-col gap-0.25 rounded-xl px-1 py-0.75 -mx-1;
+			@apply flex flex-col gap-0.5 rounded-xl px-1 py-0.75 -mx-1;
 			@apply transition-colors duration-150;
 			@apply hover:bg-neutral-100 dark:hover:bg-neutral-800/50;
 
 			.feed-title {
-				@apply truncate text-lg leading-snug md:text-xl;
+				@apply truncate;
 			}
 
 			.feed-desc {
-				@apply line-clamp-1 text-xs text-neutral-600 md:text-sm dark:text-neutral-400;
+				@apply line-clamp-1 opacity-75 text-neutral-600 dark:text-neutral-400;
 			}
 
 			.feed-meta {
-				@apply text-xs text-neutral-400 dark:text-neutral-500;
+				@apply opacity-60 text-neutral-400 dark:text-neutral-500;
 			}
 
 			.feed-readwise {
@@ -78,7 +79,7 @@
 			}
 
 			.feed-tags {
-				@apply flex flex-wrap gap-0.5 gap-y-[0.125rem] text-xs text-neutral-400 uppercase dark:text-neutral-500;
+				@apply flex flex-wrap gap-0.5 gap-y-[0.125rem] opacity-60 text-neutral-400 uppercase dark:text-neutral-500;
 
 				span.tag::before {
 					content: "#";
@@ -101,11 +102,11 @@
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_content {
-			@apply max-h-none overflow-visible text-sm text-pretty;
+			@apply max-h-none overflow-visible opacity-75 text-pretty;
 		}
 
 		aside.archive_highlights_pane .archive_highlights_heading {
-			@apply pb-1 text-sm font-semibold tracking-wide text-yellow-700 uppercase dark:text-yellow-600;
+			@apply pb-1 font-semibold tracking-wide text-yellow-700 uppercase dark:text-yellow-600;
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_group {
@@ -131,8 +132,8 @@
 	}
 
 	article.blog-article {
-		@apply prose prose-base dark:prose-invert first:pt-1.5 md:first:pt-2;
-		@apply text-lg leading-1.5 font-normal text-pretty hyphens-auto;
+		@apply prose dark:prose-invert first:pt-1.5 md:first:pt-2;
+		@apply text-pretty hyphens-auto;
 		@apply text-neutral-950 marker:text-yellow-700 dark:text-neutral-100 marker:dark:text-yellow-600;
 		@apply w-full max-w-full;
 
@@ -166,6 +167,6 @@ html {
 
 	li,
 	p {
-		@apply text-sm;
+		@apply opacity-60;
 	}
 }
