@@ -1,7 +1,6 @@
 ---
 import Page from "../layouts/page.astro";
 import Textorlink from "../components/textorlink.astro";
-import Row from "../components/row.astro";
 
 type Post = {
 	frontmatter: {
@@ -27,31 +26,24 @@ posts.sort(
 		<Textorlink content="BLOG" />
 	</Fragment>
 	<Fragment slot="main">
-		<div class="archive_main">
+		<div class="feed">
 			{
 				posts.map((post) => (
-					<Row>
-						<Fragment slot="key">
-							{new Date(post.frontmatter.date)
-								.toLocaleDateString("en-GB", {
+					<a href={post.url} class="feed-item">
+						<span class="feed-title">
+							{post.frontmatter.title}
+						</span>
+						<span class="feed-meta">
+							{new Date(post.frontmatter.date).toLocaleDateString(
+								"en-GB",
+								{
 									day: "2-digit",
 									month: "short",
 									year: "numeric",
-								})
-								.replace(/\//g, ".")}
-						</Fragment>
-						<Fragment slot="value">
-							<div class="items">
-								<div class="item">
-									<div class="links">
-										<a href={post.url} class="title">
-											{post.frontmatter.title}
-										</a>
-									</div>
-								</div>
-							</div>
-						</Fragment>
-					</Row>
+								}
+							)}
+						</span>
+					</a>
 				))
 			}
 		</div>
