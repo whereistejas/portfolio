@@ -24,7 +24,6 @@
 
 @theme {
 	--font-sans: InterVariable, sans-serif;
-	--font-serif: InterVariable, sans-serif;
 	--default-font-feature-settings: "calt", "tnum", "ss03";
 	--spacing: 1rem;
 }
@@ -36,13 +35,13 @@
 
 	header,
 	footer {
-		@apply left-0 flex w-full flex-row justify-between px-1 text-2xl font-semibold tracking-tight md:w-48 md:max-w-full md:px-0;
+		@apply flex w-full flex-row justify-between px-1 text-2xl font-semibold tracking-tight md:w-48 md:max-w-full md:px-0;
 	}
 	header {
-		@apply top-0 pt-1;
+		@apply pt-1;
 	}
 	footer {
-		@apply bottom-0 pb-1;
+		@apply pb-1;
 	}
 
 	main {
@@ -79,11 +78,7 @@
 			}
 
 			.feed-tags {
-				@apply flex flex-wrap gap-0.5 gap-y-[0.125rem] opacity-60 text-neutral-400 uppercase dark:text-neutral-500;
-
-				span.tag::before {
-					content: "#";
-				}
+				@apply opacity-60 text-neutral-400 dark:text-neutral-500;
 			}
 		}
 	}

@@ -42,9 +42,8 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 								.sort((a, b) =>
 									a.toLowerCase().localeCompare(b.toLowerCase())
 								)
-								.map((tag) => (
-									<span class="tag">{tag}</span>
-								))}
+								.map((tag) => tag.toLowerCase())
+								.join(" · ")}
 						</span>
 					</div>
 				))
