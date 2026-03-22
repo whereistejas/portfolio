@@ -49,10 +49,6 @@
 		@apply text-base text-pretty;
 	}
 
-	div.info_main {
-		@apply flex flex-col gap-1.5 first:pt-1.5 last:pb-1.5 md:gap-2 md:first:pt-2;
-	}
-
 	div.feed {
 		@apply flex flex-col first:pt-1.5 pb-1.5 md:first:pt-2 md:pb-2;
 
@@ -138,15 +134,13 @@
 		--tw-prose-invert-quote-borders: var(--color-yellow-700);
 
 		h1, h2, h3, h4, h5, h6 {
-			@apply text-base opacity-75;
+			@apply text-base uppercase opacity-75;
 		}
 
-		h1::before { content: "# "; }
-		h2::before { content: "## "; }
-		h3::before { content: "### "; }
-		h4::before { content: "#### "; }
-		h5::before { content: "##### "; }
-		h6::before { content: "###### "; }
+		h3::before { content: "# "; }
+		h4::before { content: "## "; }
+		h5::before { content: "### "; }
+		h6::before { content: "#### "; }
 	}
 
 	a {
