@@ -133,8 +133,20 @@
 		@apply w-full max-w-full;
 
 		--tw-prose-headings: var(--color-neutral-600);
+		--tw-prose-invert-headings: var(--color-neutral-400);
 		--tw-prose-quote-borders: var(--color-yellow-700);
 		--tw-prose-invert-quote-borders: var(--color-yellow-700);
+
+		h1, h2, h3, h4, h5, h6 {
+			@apply text-base opacity-75;
+		}
+
+		h1::before { content: "# "; }
+		h2::before { content: "## "; }
+		h3::before { content: "### "; }
+		h4::before { content: "#### "; }
+		h5::before { content: "##### "; }
+		h6::before { content: "###### "; }
 	}
 
 	a {
