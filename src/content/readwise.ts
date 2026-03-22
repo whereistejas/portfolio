@@ -338,22 +338,26 @@ export async function loadReadwiseArchive(): Promise<ReadwiseArchiveItem[]> {
 	return archive.map(processedToArchive);
 }
 
-async function fetchAndCacheQueueItems(): Promise<ProcessedItem[]> {
-	const token = process.env["READWISE_TOKEN"];
-	if (!token) {
-		console.warn(
-			"[readwise] No READWISE_TOKEN set — cannot fetch queue items from API"
-		);
-		return [];
-	}
-
+/**
+ * Fetches the current queue item IDs from the API, then merges fresh metadata
+ * (title, url, timestamp) with LLM-enriched fields from the cache. Does NOT
+ * write to the processed cache to avoid racing with the archive loader.
+ */
+async function fetchQueueItems(token: string): Promise<ProcessedItem[]> {
 	console.log("[readwise] Fetching queue items from Readwise API...");
 	const queueItems = await fetchAllReadwiseReaderItems({
 		token,
 		location: "new",
 	});
 
-	const queueProcessed: ProcessedItem[] = queueItems.map((item) => {
+	const cached = await loadProcessedCache();
+	const cacheMap = new Map<string, ProcessedItem>();
+	for (const item of cached) {
+		cacheMap.set(item.readwise_id, item);
+	}
+
+	return queueItems.map((item) => {
+		const existing = cacheMap.get(item.id);
 		const dateGroup = item.last_moved_at
 			.toLocaleDateString("en-GB", {
 				day: "2-digit",
@@ -361,6 +365,16 @@ async function fetchAndCacheQueueItems(): Promise<ProcessedItem[]> {
 				year: "numeric",
 			})
 			.replace(/\//g, ".");
+
+		if (existing && existing.location === "new") {
+			return {
+				...existing,
+				title: item.title,
+				url: item.url.href,
+				last_moved_at: item.last_moved_at.toISOString(),
+				date_group: dateGroup,
+			};
+		}
 
 		return {
 			readwise_id: item.id,
@@ -379,40 +393,6 @@ async function fetchAndCacheQueueItems(): Promise<ProcessedItem[]> {
 			needs_grouping: true,
 		};
 	});
-
-	const existing = await loadProcessedCache();
-	const mergedMap = new Map<string, ProcessedItem>();
-	for (const item of existing) {
-		mergedMap.set(item.readwise_id, item);
-	}
-	for (const item of queueProcessed) {
-		const cached = mergedMap.get(item.readwise_id);
-		if (cached && cached.location === "new") {
-			mergedMap.set(item.readwise_id, {
-				...cached,
-				title: item.title,
-				url: item.url,
-				last_moved_at: item.last_moved_at,
-			});
-		} else {
-			mergedMap.set(item.readwise_id, item);
-		}
-	}
-	for (const [id, item] of mergedMap) {
-		if (
-			item.location === "new" &&
-			!queueProcessed.some((q) => q.readwise_id === id)
-		) {
-			mergedMap.delete(id);
-		}
-	}
-	const merged = Array.from(mergedMap.values());
-	await writeJsonCache(PROCESSED_CACHE_PATH, merged);
-	console.log(
-		`[readwise] Cached ${queueProcessed.length} queue items (${merged.length} total)`
-	);
-
-	return merged.filter((item) => item.location === "new");
 }
 
 export async function loadReadwiseQueue(): Promise<ReadwiseQueueItem[]> {
@@ -421,7 +401,7 @@ export async function loadReadwiseQueue(): Promise<ReadwiseQueueItem[]> {
 
 	if (token) {
 		try {
-			queue = await fetchAndCacheQueueItems();
+			queue = await fetchQueueItems(token);
 		} catch (err) {
 			console.warn(
 				"[readwise] Failed to fetch queue from API, falling back to cache:",
