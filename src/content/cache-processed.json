@@ -1,22 +1,18 @@
 [
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "artificial_intelligence",
-      "writing",
-      "creativity",
-      "authenticity",
-      "ethics"
+    "date_group": "29 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "Nick pointed out the same applies to a writer struggling when creating a piece. “When you’re stuck and sit there, thinking, trying to come up with what’s next, that’s the valuable part of writing. It’s tempting to use AI to remove that stuck-ness, but it’s basically cheating—and leads to a very different result.”"
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-29T17:14:00.966Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 45,
+    "order": 0,
     "readwise_id": "01kern87298zrhhx8m9rattwyd",
-    "summary": "AI can mimic writing but lacks the authentic thinking process. Skipping difficult parts of writing through AI use prevents gaining insights and growth from struggle. True craft and lasting value emerge from the challenging aspects of creative work.",
+    "summary": "AI can mimic writing but often feels off and misses the real thinking behind a piece.  \nUsing AI to skip the hard parts of writing robs you of the insight and growth gained from struggle.  \nThe struggle—the “suck”—is where true craft and lasting value are made.",
     "tags": [],
     "title": "The Suck Is Why We’re Here",
     "url": "https://nik.art/the-suck-is-why-were-here/"
@@ -199,7 +195,7 @@
   },
   {
     "category": "article",
-    "date_group": "",
+    "date_group": "16 Mar 2026",
     "display_tags": [
       "tools",
       "software_engineering",
@@ -208,8 +204,8 @@
       "development"
     ],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-03-16T13:41:04.732Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
     "order": 70,
@@ -221,22 +217,22 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "artificial_intelligence",
-      "investment",
-      "economics",
-      "speculation",
-      "risk"
+    "date_group": "20 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "**Struggling with whether to apply the “bubble” label can bog you down and interfere with proper judgment; we can accomplish a great deal by merely assessing what’s going on around us and drawing inferences with regard to proper behavior.**",
+      "the speculative mania enabled what Perez called the “Installation Phase,” where necessary but not necessarily financially wise investments laid the groundwork for the “Deployment Period.” What marked the shift to the deployment period was the popping of the bubble; what enabled the deployment period were the money-losing investments.",
+      ". . . “Inflection Bubbles” – the good kind of bubbles, as opposed to the much more damaging “Mean-reversion Bubbles” like the 2000’s subprime mortgage bubble.",
+      "The key realization seems to be that if people remained patient, prudent, analytical, and value-insistent, novel technologies would take many years and perhaps decades to be built out. Instead, the hysteria of the bubble causes the process to be compressed into a very short period – with some of the money going into life-changing investment in the winners but a lot of it being incinerated.",
+      "The foregoing is what I call “lottery-ticket thinking,” in which the dream of an enormous payoff justifies – no, compels – participation in an endeavor with an overwhelming probability of failing."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-20T10:13:53.876Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 43,
+    "order": 0,
     "readwise_id": "01kcvb6pvb2g5bwpd19ek3htrp",
-    "summary": "Investors debate whether AI enthusiasm reflects genuine opportunity or financial bubble, as massive debt funding AI infrastructure risks overbuilding amid uncertain demand and unclear profit distribution.",
+    "summary": "Investors are excited about AI but it’s unclear if that excitement is creating a financial bubble. Big tech and lenders are pouring debt into AI infrastructure, risking overbuilding and losses if demand falls. AI could transform productivity and jobs, but the outcomes and who will profit are highly uncertain.",
     "tags": [],
     "title": "Is It a Bubble?",
     "url": "https://www.oaktreecapital.com/insights/memo/is-it-a-bubble"
@@ -287,22 +283,23 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "artificial_intelligence",
-      "environment",
-      "data_centers",
-      "criticism",
-      "analysis"
+    "date_group": "21 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "Read in this light, the chapter becomes somewhat ridiculous, because the rest includes descriptions of brutal acts of torture and plunder under colonialism, and then frames data center water use as a continuation of that same colonialism.",
+      "![](https://substackcdn.com/image/fetch/$s_!LYqG!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe376c4d-77f8-4e7f-bd53-f9c2550427ac_1528x700.png)",
+      "The vast majority of water that power plants use is withdrawn and then returned to the local source (non-consumptive use on this graph).",
+      "So the study Hao is citing is not only saying AI will consume just 10% as much water as she says, only 15% of that 10% will be drinking water.",
+      "[I also argue here](https://andymasley.substack.com/p/the-ai-water-issue-is-fake?open=false#%C2%A7how-big-of-a-deal-is-it-that-data-centers-use-potable-water) that whether water is potable doesn’t really matter, because what actually harms the availability of drinkable water is access to total freshwater, not potable water. It’s relatively easy to turn freshwater potable.",
+      "The reason I think this is strange is that in basically every country, including the US, 80% of water is used on industry and commercial buildings rather than household consumption."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-21T23:16:40.912Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 42,
+    "order": 0,
     "readwise_id": "01kcqy89v0c6wb7gbrcs5jscrq",
-    "summary": "Critique of exaggerated claims about AI data center water consumption, showing actual usage is far lower than stated and mostly non-potable water, contradicting assertions about environmental harm to communities.",
+    "summary": "The book Empire of AI wildly overstates how much water AI data centers use, often by hundreds to thousands of times. Careful reading of the sources shows most water stays offsite, much of it non-potable, and data centers typically use only a few percent of local supplies. As a result, the book’s claims about AI harming water access and draining communities are misleading.",
     "tags": [],
     "title": "Empire of AI is wildly misleading about AI water use",
     "url": "https://andymasley.substack.com/p/empire-of-ai-is-wildly-misleading?r=1gvqcg&utm_medium=ios&triedRedirect=true"
@@ -441,22 +438,16 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "business",
-      "investment",
-      "biography",
-      "leadership",
-      "finance"
-    ],
+    "date_group": "02 Feb 2026",
+    "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-02-02T17:54:35.108Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 14,
+    "order": 0,
     "readwise_id": "01kb49j14w99ghhy405spv48yn",
-    "summary": "Charlie Munger remained intellectually active and involved in investments and mentoring during his final years before his death at nearly 100, despite health challenges.",
+    "summary": "Charlie Munger spent his final years making bold investments, mentoring young partners, and staying mentally sharp. He remained active in deals and friendships despite health problems and fading eyesight. Until his death just before turning 100, he kept learning, joking, and shaping Berkshire’s future.",
     "tags": [],
     "title": "Exclusive | The Untold Story of Charlie Munger’s Final Years",
     "url": "https://www.wsj.com/finance/investing/charlie-munger-life-final-years-berkshire-7c20c18e?st=AGyyuQ&reflink=desktopwebshare_permalink"
@@ -507,22 +498,18 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "programming",
-      "rust",
-      "testing",
-      "tools",
-      "software_engineering"
+    "date_group": "25 Feb 2026",
+    "display_tags": [],
+    "highlights": [
+      "I spent some time looking at how to implement it manually, and came away from it with the understanding that I’d have to maintain separate implementations for Windows and Unix. Not only that, I’d just be duplicating a lot of the work Tokio had already done to abstract over platform differences. So I started looking at porting over nextest to Tokio."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-02-25T00:56:28.329Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 63,
+    "order": 0,
     "readwise_id": "01kappxy9paxg48egatjf62n4j",
-    "summary": "Nextest, a Rust test runner, leverages Tokio async runtime to manage concurrent test execution, retries, and partitioning. Async runtimes handle I/O-bound operations efficiently across multiple concurrent tasks.",
+    "summary": "Nextest, a test runner for Rust, uses Tokio, a leading Rust async runtime, to power its features such as test retries, reusing builds, and partitioning test runs. Even though Nextest is not a network app, it benefits from an async runtime because it needs to handle multiple concurrent tests with various events. Async runtimes like Tokio are ideal for I/O-bound applications, where most time is spent waiting for other parts of the system to respond. Tokio solves the challenges of waiting on different types of sources and provides cross-platform support. By using Tokio, Nextest was able to simplify its architecture and improve its functionality.",
     "tags": [],
     "title": "How (and why) nextest uses tokio",
     "url": "https://sunshowers.io/posts/nextest-and-tokio/#what-are-heterogenous-selects"
@@ -595,44 +582,41 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "personal_development",
-      "philosophy",
-      "wellness",
-      "life_advice",
-      "fulfillment"
+    "date_group": "27 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "facetiousness",
+      "The only viable solution is to make a shift: from a life spent trying not to neglect anything, to one spent proactively and consciously choosing what to neglect, in favour of what matters most.",
+      "decisions should be made not by asking, “Will this make me happy?”, but “Will this choice enlarge me or diminish me?”",
+      "(Relatedly, don’t worry about burning bridges: irreversible decisions tend to be more satisfying, because now there’s only one direction to travel – forward into whatever choice you made.)",
+      "It’s possible, instead, to make a game of gradually increasing your capacity for discomfort, like weight training at the gym. When you expect that an action will be accompanied by feelings of irritability, anxiety or boredom, it’s usually possible to let that feeling arise and fade, while doing the action anyway.",
+      "**The capacity to tolerate minor discomfort is a superpower****.**",
+      "One good question to ask is what kind of practices strike you as intolerably cheesy or self-indulgent: gratitude journals, mindfulness meditation, seeing a therapist? That might mean they are worth pursuing.",
+      "**The future will never provide the reassurance you seek from it****.** As the ancient Greek and Roman Stoics understood, much of our suffering arises from attempting to control what is not in our control."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-27T22:48:16.772Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 1,
+    "order": 0,
     "readwise_id": "01ka423qhpxetjkpqdrqwbebaq",
-    "summary": "Life wisdom column sharing practical lessons on fulfillment through prioritization, accepting limitations, choosing growth over comfort, and tolerating discomfort while knowing when to move forward.",
+    "summary": "Oliver Burkeman ends his column after sharing simple life lessons he learned.  \nPick what to focus on and accept you cannot do everything.  \nChoose growth over comfort, tolerate small discomforts, and know when to move on.",
     "tags": [],
     "title": "Oliver Burkeman's last column: the eight secrets to a (fairly) fulfilled life",
     "url": "https://www.theguardian.com/lifeandstyle/2020/sep/04/oliver-burkemans-last-column-the-eight-secrets-to-a-fairly-fulfilled-life"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "energy",
-      "nuclear",
-      "personal_development",
-      "ambition",
-      "future"
-    ],
+    "date_group": "31 Jan 2026",
+    "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-31T23:11:57.612Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 24,
+    "order": 0,
     "readwise_id": "01k9zsg3y69nmp01fgg6e3320c",
-    "summary": "A young person inspired by nuclear engineering's potential for abundance rejects superficial fame at age twenty, committing to meaningful pursuits in rowing, love, and building massive nuclear power capacity.",
+    "summary": "A lone neutron can split uranium and unleash enormous energy that could power a future of abundance. The author, newly inspired by nuclear engineering, rejects fame for its own sake and seeks meaningful quests. At twenty he vows to pursue greatness — in rowing, love, and building terawatts of nuclear power.",
     "tags": [],
     "title": "Fission // 20",
     "url": "https://wavage.substack.com/p/fission-20?r=1gvqcg&utm_medium=ios&triedRedirect=true"
@@ -661,22 +645,16 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "productivity",
-      "management",
-      "work_culture",
-      "time_management",
-      "focus"
-    ],
+    "date_group": "30 Jan 2026",
+    "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-30T12:37:08.781Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 11,
+    "order": 0,
     "readwise_id": "01k9md327xf3s138wsjgzvd1nm",
-    "summary": "Contrasts two types of schedules: manager's schedule with hourly meetings vs maker's schedule requiring long uninterrupted blocks for deep work. Meetings disrupt makers' productivity and flow.",
+    "summary": "There are two kinds of schedules: the manager's schedule (hourly, meeting-friendly) and the maker's schedule (long blocks for deep work). Meetings fragment makers' time and can ruin their productivity. If managers understood this cost, they could avoid disrupting makers or use solutions like office hours.",
     "tags": [],
     "title": "Maker's Schedule, Manager's Schedule",
     "url": "https://paulgraham.com/makersschedule.html"
@@ -727,44 +705,40 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "databases",
-      "algorithms",
-      "computer_science",
-      "performance",
-      "concurrency"
+    "date_group": "18 Feb 2026",
+    "display_tags": [],
+    "highlights": [
+      "The storage engine provides durability (once a document is inserted, it remains available until it is removed by the user) and facilitates concurrent reads and writes.",
+      "BerkeleyDB attempted to address this by progressively reducing locking granularity, which increased the number of locks and made lock management a bottleneck.",
+      "describes how read operations use hazard pointers and write operations use lock-free skip lists to maximize the value our customers get from their hardware.",
+      "WiredTiger is a B+tree, which means that the root and internal pages only contain keys, and only leaf pages contain values. An interesting characteristic of the WiredTiger B+tree, which is relevant to our ability to implement lock-free algorithms, is that the on-disk and in-memory representations of the tree are different.",
+      "The goal of a hazard pointer is for it to be as cheap as possible for shared access, with the trade-off that it can be more expensive to acquire exclusive access.",
+      "The key to implementing a lock-free skip list is for any operation wanting to change the content on the page to construct the change to the data structure, and then atomic-compare-and-swap (CAS) the change in place. If the atomic CAS operation fails, discard the changes and try again. If it has succeeded, then the change has been made and is visible to other operations.",
+      "a skip list, which can be thought of as a search-optimized singly linked list."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-02-18T16:31:07.694Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 66,
+    "order": 0,
     "readwise_id": "01k9fydx0pb1j6f91hjb89pe2n",
-    "summary": "MongoDB's WiredTiger storage engine implements lock-free B+tree algorithms using hazard pointers for reads and skip lists for writes, achieving 50% faster reads and up to 4x faster updates compared to traditional locking mechanisms.",
+    "summary": "MongoDB’s WiredTiger uses lock-free algorithms in its B+tree to let many threads read and write without heavy locking. This uses hazard pointers for reads and lock-free skip lists for writes. The result is much higher throughput—about 50% faster reads and up to 4x faster updates in tests.",
     "tags": [],
     "title": "To Lock or Not: MongoDB’s Lock-Free B-Tree Unlocks Throughput",
     "url": "https://www.mongodb.com/company/blog/engineering/to-lock-or-not-mongodbs-lock-free-b-tree-unlocks-throughput"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "career",
-      "hiring",
-      "management",
-      "engineering",
-      "talent"
-    ],
+    "date_group": "29 Jan 2026",
+    "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-29T16:47:07.123Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 8,
+    "order": 0,
     "readwise_id": "01k9dycmjq1vjfns37vbqf3e9t",
-    "summary": "Hiring engineers requires a sales approach with transparency about roles, compensation, and career progression. Focus on underserved experienced candidates through systematic recruiting processes.",
+    "summary": "Hiring engineers is a sales job: sell a clear product that matches what candidates want.  \nBe transparent about role, pay, and career paths with fixed salaries and a public handbook.  \nTarget under-served, experienced talent and build a repeatable, pipeline-driven recruiting process.",
     "tags": [],
     "title": "The Talent Machine",
     "url": "https://paoramen.fika.bar/the-talent-machine-01K94NER8BZH9G9GYHR7TMFRES"
@@ -859,22 +833,21 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "artificial_intelligence",
-      "business",
-      "investment",
-      "economics",
-      "technology"
+    "date_group": "23 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "The first is that the deals will *artificially inflate companies’ revenue*, tricking investors into overvaluing their stock or lending them too much money. The second is that the deals *increase systemic risk* by tying all of the AI companies’ fortunes to each other.",
+      "In fact, I suspect that this is what’s actually going on with these circular deals — *diversification*. All of these companies are existentially dependent on AI itself, but they don’t want the added vulnerability of being dependent on specific AI companies.",
+      "We’ll end up with a system that’s more vulnerable to an AI crash, but *less* vulnerable to the failure of any specific AI company.",
+      "it’s not clear that the circular deals make things worse — instead, they might be letting AI companies *diversify* their dependencies. In the first quarter of this year, more than half of Nvidia’s revenue came from [just four big mysterious customers](https://finance.yahoo.com/news/54-nvidias-q1-revenue-came-093700382.html) — probably Amazon, Microsoft, and Google, and possibly Meta. Building up demand from OpenAI could help Nvidia be *less* dependent on those big customers."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-23T01:39:15.260Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 39,
+    "order": 0,
     "readwise_id": "01k93cdtwr1w9r40fq02kk1nf7",
-    "summary": "Examines intertwined business deals between AI companies, chipmakers, and cloud providers. Critics fear revenue inflation and systemic risk, but author suggests these are vendor financing arrangements that may actually diversify risk.",
+    "summary": "AI firms, chipmakers, and cloud providers are making intertwined deals where money and chips flow between them. Critics worry this could inflate revenues and increase systemic risk if AI demand collapses. The author argues most of these deals look like vendor financing and may diversify risk rather than create a new kind of fraud.",
     "tags": [],
     "title": "Should we worry about AI's circular deals?",
     "url": "https://www.noahpinion.blog/p/should-we-worry-about-ais-circular?utm_source=post-email-title&publication_id=35345&post_id=176711855&utm_campaign=email-post-title&isFreemail=false&r=6g77v&triedRedirect=true&utm_medium=email"
@@ -903,66 +876,55 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "health",
-      "wellness",
-      "lifestyle",
-      "nutrition",
-      "prevention"
-    ],
+    "date_group": "29 Jan 2026",
+    "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-29T22:41:53.427Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 25,
+    "order": 0,
     "readwise_id": "01k8nxbnxpm3ehresv69xwpe90",
-    "summary": "Argues that everyday toxins in food, clothing, and products harm health due to weak regulation. Recommends nutrient-dense whole foods, supplements, low-toxin brands, and an 80/20 approach to reduce exposures.",
+    "summary": "Justin Mares argues that everyday toxins in food, clothing, and products are quietly harming our health because regulation is weak.  \nHe recommends focusing on nutrient-dense whole foods, sensible supplements, and low-toxin brands to fill gaps.  \nUse an 80/20 approach: reduce common exposures and use detox tools for the rest.",
     "tags": [],
     "title": "A builder’s guide to living a long and healthy life",
     "url": "https://www.lennysnewsletter.com/p/a-builders-guide-to-living-a-long"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "management",
-      "leadership",
-      "career",
-      "communication",
-      "productivity"
-    ],
+    "date_group": "17 Feb 2026",
+    "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-02-17T18:31:01.038Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 10,
+    "order": 0,
     "readwise_id": "01k8hr8h4vevbdqnpgrphy3ta3",
-    "summary": "Guide for engineering managers on conducting effective 1:1 meetings using three key topics: people, product, and process. Emphasizes regular feedback, career development, early problem detection, and note-taking.",
+    "summary": "Good 1:1 meetings help managers give regular feedback, support career growth, and catch problems early. The meetings follow three topics: people, product, and process, to guide meaningful conversation. Treat these meetings seriously, listen well, and always write notes to show you care.",
     "tags": [],
     "title": "How to Run 1:1s as an Engineering Manager",
     "url": "https://justoffbyone.com/posts/how-to-run-11s/"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "education",
-      "research",
-      "methodology",
-      "learning",
-      "psychology"
+    "date_group": "22 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "Tutors, Bloom claimed, could raise student achievement by two full standard deviations—or, in statistical parlance, two “sigmas.” In Bloom’s view, this extraordinary effect proved that most students were capable of much greater learning than they typically achieved, but most of their potential went untapped because it was impractical to assign an individual tutor to every student.",
+      "Cohen, Kulik, and Kulik’s 1982 meta-analysis reported that tutoring effects averaged 0.84 standard deviations when measured on narrow tests developed by the study authors, versus just 0.27 standard deviations when measured on broader standardized tests.",
+      "Indeed, Burke [wrote](https://www.proquest.com/docview/252076952?parentSessionId=eZh%2FxLty5zFIQRLoBINVaDRSpQEONbvK7WA%2BPN%2FYMBw%3D&sourcetype=Dissertations%20&%20Theses), “perhaps the most important part of the tutors’ training was learning to manage feedback and correction effectively.”",
+      "Finally, “tutors were urged to be appropriately generous with praise and encouragement whenever a student made progress. The purpose of this training was to help the tutor make learning a rewarding experience for each student.”",
+      "The benefits of tutoring depend on how much individualized instruction and feedback students get, how much they practice the tutored skills, and on the type of test used to measure tutoring’s effects.",
+      "Producing benefits of one-third of a standard deviation would be a huge triumph if it could be done at low cost, on a large scale, and on a broad test—all without requiring an army of human tutors"
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-22T22:14:10.748Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 71,
+    "order": 0,
     "readwise_id": "01k88yvygrenzpysy3mjvd7qf9",
-    "summary": "Examines Bloom's famous claim that one-on-one tutoring improves learning by two standard deviations, but rigorous reviews show actual gains are much smaller at 0.33-0.37 SD due to methodological factors.",
+    "summary": "Bloom said one-to-one tutoring raises learning by two standard deviations.  \nLater rigorous reviews find average gains of only about 0.33–0.37 SD.  \nThe big two-sigma findings came from extra testing, feedback, narrow tests, and replacing class time, so tutoring usually helps but rarely reaches two sigmas.",
     "tags": [],
     "title": "Two-Sigma Tutoring: Separating Science Fiction from Science Fact",
     "url": "https://www.educationnext.org/two-sigma-tutoring-separating-science-fiction-from-science-fact/"
@@ -1035,66 +997,52 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "programming",
-      "type_systems",
-      "computer_science",
-      "theory",
-      "education"
-    ],
+    "date_group": "20 Feb 2026",
+    "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-02-20T23:01:42.211Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 53,
+    "order": 0,
     "readwise_id": "01k7vfh5rthxt5r6awxag07sga",
-    "summary": "Explains algebraic types as simple concepts combining types through addition and multiplication. Sum types allow values from multiple types, enabling safe handling of errors and nulls while reducing bugs.",
+    "summary": "Algebraic types are simple concepts that combine types like sets using addition and multiplication. Sum types let a value be from one type or another, helping handle cases like errors or nulls safely. Using algebraic types makes programming clearer and can reduce bugs compared to traditional methods.",
     "tags": [],
     "title": "Algebraic Types are not Scary, Actually",
     "url": "https://blog.aiono.dev/posts/algebraic-types-are-not-scary,-actually.html"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "programming",
-      "type_systems",
-      "computer_science",
-      "history",
-      "theory"
+    "date_group": "02 Feb 2026",
+    "display_tags": [],
+    "highlights": [
+      "For example: Addition over numbers is associative, meaning `a + (b + c) == (a + b) + c`. This tells us that `Int + (String + Null)` is isomorphic (≅) to `(Int + String) + Null`: we can convert values between the two types without losing any useful information.\n\nA more interesting example is that AlgDTs follow the distributive property `a*(b + c) == a*b + a*c`. If we have a value of type `Account(name: str, contact: (Email + Phone))`, we can transform it into a value of type `EmailAccount(name, email) + PhoneAccount(name, number)`."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-02-02T08:43:19.565Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 52,
+    "order": 0,
     "readwise_id": "01k7vfh217js8xtyrw23yfjq4g",
-    "summary": "Traces the evolution of algebraic data types from McCarthy's early cartesian and union types through Hoare's contributions to ML's tagged unions and compiler checks, culminating in 1980s languages like HOPE and Miranda standardizing pattern matching.",
+    "summary": "The article traces algebraic data types back to McCarthy, who proposed cartesian and union types early on. Hoare and later ML researchers added tagged discriminated unions, compiler checks, and the terms \"sum\" and \"product.\" By the 1980s languages like HOPE and Miranda made pattern matching and the name \"algebraic data type\" standard in functional programming.",
     "tags": [],
     "title": "A Very Early History of Algebraic Data Types",
     "url": "https://www.hillelwayne.com/post/algdt-history/"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "algorithms",
-      "programming",
-      "computer_science",
-      "optimization",
-      "education"
+    "date_group": "29 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "The key in dynamic programming is to define, whether for an array index or a recursive call, exactly what a “partial” solution means"
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-29T20:02:10.645Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 64,
+    "order": 0,
     "readwise_id": "01k7jjdybfs76qndt357am4n6e",
-    "summary": "Explains dynamic programming through House Robber problem - selecting nonadjacent houses to maximize loot. Shows space-efficient approach tracking last robbed/unrobbed values with Haskell and Rust implementations.",
+    "summary": "The post explains dynamic programming using the House Robber problem: pick nonadjacent houses to maximize loot. It shows a space-efficient DP approach that tracks only \"last robbed\" and \"last unrobbed\" values. Implementations are given in Haskell (recursive loop) and Rust (iterative loop).",
     "tags": [],
     "title": "Dynamic Programming Introduction",
     "url": "https://mmhaskell.com/blog/2025/10/6/dynamic-programming-primer"
@@ -1123,176 +1071,154 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "business",
-      "strategy",
-      "consulting",
-      "technology",
-      "innovation"
+    "date_group": "26 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "The product thesis for Gotham was to provide enhanced security *and* enhanced civil liberties. Karp believed society would not work with constant terror attacks and would not work if we were forced to forfeit our privacy in exchange for stopping them; the only way to push out the efficient frontier of that tradeoff is through technology.",
+      "The FDE role was famously inspired by Karp’s observation of how excellent French restaurants operate. The waitstaff is an intrinsic part of the kitchen. If you want to order the wrong wine with the fish, the wait staff will simply tell you no.",
+      "FDE’s are trained to view themselves as owners of their customers’ businesses. You must hold yourself accountable to the end results of the customers business and try to act as if you are the CEO, but with zero authority. This alignment constantly demands more of our product. We have a visceral connection to how much more a customer could win if the product could just do a little bit more for them.",
+      "For Palantir the problem statement is can you build a product that provides substantial technical leverage to solve the next problem we have never seen before."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-26T01:20:40.047Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 16,
+    "order": 0,
     "readwise_id": "01k7h45yh2z9kwre69wx4pn0h8",
-    "summary": "Palantir's FDE role combines customer alignment with strategy to solve complex problems. Imitators copy the structure without commitment, producing inferior results. Organizations should rethink assumptions before adopting models.",
+    "summary": "Palantir’s FDE role pairs deep customer alignment with product and business strategy to solve impossible, evolving problems. Copycats mimic the form but avoid the full commitment, yielding limited products and outcomes. The lesson: don’t copy the surface—rethink your company’s assumptions before imitating the model.",
     "tags": [],
     "title": "Sorry, that isn't an FDE",
     "url": "https://tedmabrey.substack.com/p/sorry-that-isnt-an-fde?utm_source=substack&utm_campaign=post_embed&utm_medium=web"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "data",
-      "artificial_intelligence",
-      "business",
-      "integration",
-      "automation"
+    "date_group": "26 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "You cannot, in general, assume it is possible to go into a factory and find a single dataset that is “all the process logs from all the machines, end to end”.",
+      "This is why I disagree with a lot of people who imagine an “AI transformation” in the economic productivity sense happening instantaneously once the models are sufficiently advanced.",
+      "So too with AI. You can’t skip over the work of convincing customers that the tool will be worth the setup costs, overcoming internal friction to actually change the way companies operate, and testing and adapting the tool for different contexts."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-26T01:09:00.615Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 38,
+    "order": 0,
     "readwise_id": "01k7h464drvvxkbd4yrdjkwmmv",
-    "summary": "Companies struggle to gather scattered data from various sources into unified systems. The labor-intensive process of cleaning, accessing, and standardizing data creates bottlenecks that slow AI adoption and business impact.",
+    "summary": "Getting useful insights requires gathering a company’s scattered, often paper or siloed machine data into one place. This data work—cleaning, negotiating access, and standardizing—takes lots of human labor and slows AI adoption. Real economic AI impact depends on solving this hard integration problem inside businesses.",
     "tags": [],
     "title": "The Great Data Integration Schlep",
     "url": "https://sarahconstantin.substack.com/p/the-great-data-integration-schlep?utm_source=substack&utm_campaign=post_embed&utm_medium=web"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "software_engineering",
-      "artificial_intelligence",
-      "development",
-      "automation",
-      "tools"
-    ],
+    "date_group": "29 Jan 2026",
+    "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-29T17:22:34.253Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 37,
+    "order": 0,
     "readwise_id": "01k7f54eg5kr8f6q2e236kc4d6",
-    "summary": "Developer uses AI agents to build macOS auto-update feature, sharing unedited sessions. Emphasizes iterative process of reviewing, cleaning, and fixing AI-generated code with thorough manual review before shipping.",
+    "summary": "Mitchell Hashimoto used AI agents extensively to design and build a non-trivial macOS auto-update feature, sharing every agentic session unedited. He iterated by reviewing, cleaning up, and sometimes redoing AI-generated code to fix bugs and improve structure. He stresses saving plans, running simulations, and never shipping AI code without thorough manual review.",
     "tags": [],
     "title": "Vibing a Non-Trivial Ghostty Feature",
     "url": "https://mitchellh.com/writing/non-trivial-vibing"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "strategy",
-      "optimization",
-      "innovation",
-      "decision_making",
-      "growth"
+    "date_group": "29 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "exploit and explore",
+      "Balancing the desire to improve your own skills versus being less productive while you learn new skills is one example at the personal level.",
+      "“innovator’s dilemma.”",
+      "base creativity",
+      "disruptive Creativity",
+      "Hill-making demands huge inefficiencies."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-29T19:10:15.002Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 2,
+    "order": 0,
     "readwise_id": "01k7d30sekn3twp4x8t3xjamrd",
-    "summary": "Contrasts two improvement strategies: optimizing existing methods (hill-climbing) which is efficient but has limits, versus creating new possibilities (hill-making) which is risky but offers greater potential rewards.",
+    "summary": "There are two ways to get better: climb a hill by optimizing what already works, or make a new hill by inventing new possibilities. Climbing is efficient and low risk but has diminishing returns. Hill-making is risky and wasteful but can create huge, lasting gains.",
     "tags": [],
     "title": "Hill-Making vs Hill-Climbing",
     "url": "https://kevinkelly.substack.com/p/hill-making-vs-hill-climbing"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "machine_learning",
-      "methodology",
-      "modeling",
-      "epistemology",
-      "science"
+    "date_group": "17 Feb 2026",
+    "display_tags": [],
+    "highlights": [
+      "That’s the key feature of gears-level models: they make falsifiable predictions about the internals of a system, separate from the externally-visible behavior.",
+      "All that said, if we have abundant data and aren’t worried about distribution shifts or system changes, non-gears models can still give us great predictive power."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-02-17T08:43:27.000Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 47,
+    "order": 0,
     "readwise_id": "01k79byqsjx6wqh2fesc9960gk",
-    "summary": "Contrasts behavioral prediction with mechanistic understanding. Behavioral models fit data but lack insight into internal workings, while gears-level models reveal mechanisms and handle changes better.",
+    "summary": "Predicting input-output behavior (no gears) can fit data but tells you nothing about a system’s internals.  \nGears-level models specify internal mechanisms and make falsifiable predictions that handle changes and distribution shifts.  \nYou cannot fully learn gears from behavior alone, though causal tests and prior knowledge can sometimes reveal internal structure.",
     "tags": [],
     "title": "Gears vs Behavior",
     "url": "https://www.lesswrong.com/s/xEFeCwk3pdYdeG2rL/p/gvK5QWRLk3H8iqcNy"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "transportation",
-      "infrastructure",
-      "logistics",
-      "planning",
-      "systems"
-    ],
+    "date_group": "28 Jan 2026",
+    "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-28T15:55:51.266Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 51,
+    "order": 0,
     "readwise_id": "01k76nwzj83c8p10nvhwq5rdhe",
-    "summary": "Railways' primary product is their timetable, which requires precise planning to transport people efficiently. Quality timetables improve speed, reliability, capacity, and connectivity. Infrastructure should support timetables.",
+    "summary": "A railway’s product is its timetable, because trains must be planned precisely to move people from A to B. Good timetables make travel faster, more reliable, less crowded, and better connected across the network. Infrastructure and trains should be designed to serve the timetable, not the other way around.",
     "tags": [],
     "title": "The product of the railways is the timetable",
     "url": "https://springbett.substack.com/p/the-product-of-the-railways-is-the"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "business",
-      "technology",
-      "ethics",
-      "data",
-      "governance"
+    "date_group": "26 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "Cults are high-variance. You can get superior growth and focused pursuit of a variant thesis. Or you can get fraud that’s ostensibly perpetrated for the greater good.",
+      "Deferring to voters is not exactly an ideal standard, but it’s a consistent one: the object-level debates are complex and challenging, but the meta question is whether policy should be made by technology executives or by the established institutions that are designed to make such decisions",
+      "Politics is the art of determining which difficult moral tradeoff you make, and Palantir’s job is, as much as possible, to minimize the extent to which it’s a tradeoff at all."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-26T00:51:37.287Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 17,
+    "order": 0,
     "readwise_id": "01k6z1cjetsqy8ev7j7ffnznfn",
-    "summary": "Examines a data software company working with governments and businesses, highlighting its high revenue margins, controversial nature, public perception challenges, and efforts to navigate complex political and ethical issues.",
+    "summary": "Palantir is a data software company that works with governments and businesses, but its approach raises moral questions about its contracts and practices. The company has high revenue margins with its largest customers but struggles with public perception due to its controversial nature. Palantir aims to navigate complex political and ethical challenges while improving the tradeoffs in its work.",
     "tags": [],
     "title": "Palantir: On Business, Cults, and Politics",
     "url": "https://www.thediff.co/archive/palantir-on-business-cults-and-politics/#conclusion"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "education",
-      "artificial_intelligence",
-      "learning",
-      "technology",
-      "productivity"
+    "date_group": "29 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "learning methods that once felt too time-consuming to attempt have suddenly become feasible",
+      "or example, when I was reading the card on *Gaussian distribution*, one passage in it left me confused. At that moment:\n\n•   I could right-click the card to start a chat with AI, quote the confusing passage, and ask it to explain. The AI would answer my question using the full content of the card as context.\n•   I could ask the AI to give me a simple, concrete example to explain that passage, or to design a hypothetical problem and solve it using the knowledge described there.\n•   I could share my current understanding of the passage with the AI, ask it to judge whether I was correct, and even have it quiz me to test my comprehension.\n•   I could even have the AI read the original textbook PDF, so that with the full context it could tell me what the author intended in writing that passage, and whether those details would become important in later chapters I hadn’t yet reached."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-29T17:09:25.247Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 35,
+    "order": 0,
     "readwise_id": "01k6va67563cax8s7f324ygv1t",
-    "summary": "Demonstrates how AI transforms difficult textbooks into interactive lessons through PDF parsing, summarization, and digital organization, enabling faster deep learning with contextual Q&A and testing capabilities.",
+    "summary": "The author shows how AI can turn hard textbooks into easy, interactive lessons by parsing PDFs, making summaries, and organizing content on a digital whiteboard. This setup lets you read, ask questions, get examples, and test understanding with full context. Using AI this way speeds deep learning and helps you spend more time thinking.",
     "tags": [],
     "title": "The Best Way to Use AI for Learning",
     "url": "https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1#fe23"
@@ -1321,66 +1247,70 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "education",
-      "policy",
-      "economics",
-      "development",
-      "teaching"
+    "date_group": "29 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "There's no doubt that teachers in, say, India earn much less than teachers in Ireland, but relative to context, they tend to be very well paid.",
+      "There is a second explanation though, that seems to fit the evidence better. Public school teachers in many developing countries earn civil service salaries that are far higher than market wages. This is what economists traditionally refer to as “rents.” The graph below highlights four examples.",
+      "Our paper joins a number of recent studies with very underwhelming findings about the impact of teacher pay. In India, Karthik Muralidharan and Venkatesh Sundararaman found that low-cost private schools produce similar learning levels while [paying one-fifth as much](http://www.nber.org/papers/w19441).",
+      "Because for all the hype around disruption and automation, the current evidence is equally consistent with the idea that investing significantly more money to train, recruit, and retain the highest quality teachers in public education systems is even better value for money."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-29T17:01:26.795Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 20,
+    "order": 0,
     "readwise_id": "01k3nxs3gwjfacac4apze81zqr",
-    "summary": "Children in poor countries attend school but lack basic literacy and numeracy. Public teachers earn high wages relative to GDP through civil service pay, not market forces. Pay increases don't improve learning outcomes, but teacher quality remains crucial.",
+    "summary": "Millions of children in poor countries go to school but still do not learn basic reading or math. Public teachers in some low‑income countries earn high wages relative to GDP, often due to civil‑service pay rather than market forces. Research shows pay hikes often do not raise learning, yet teacher quality matters a lot, so cutting or de‑skilling teachers may backfire.",
     "tags": [],
     "title": "Chart of the Week: Teacher Pay around the World: Beyond “Disruption” and “De-skilling”",
     "url": "https://riseprogramme.org/blog/teacher_pay_around_world.html"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "economics",
-      "policy",
-      "development",
-      "comparative_analysis",
-      "Asia"
+    "date_group": "21 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "One of the most obvious economic contrasts between India and China is that China has followed the East Asian model of export-led manufacturing, like Japan, South Korea and Taiwan (albeit at much greater scale), and India has not",
+      "In recent years India’s manufacturing share of GDP has been around 13%, about half of the level in China, and historically it has never exceeded 18%. One of the central debates among Indian economists is how much of a problem the relative weakness in manufacturing is, and what should or could be done about it.",
+      "If India does not have a manufacturing boom, it probably will not have a broader investment boom.",
+      "dearth",
+      "As Wang Feng’s recent book [*China’s Age Of Abundance*](https://amzn.to/4lOul2k) emphasized, China was able to seize the opportunity presented by labor-intensive export manufacturing in the 1980s because it had made substantial improvements in health, education and gender equality in prior decades.",
+      "One reason why manufacturing has not taken off in India may well be that India does not have a mass workforce equipped with the basic skills to perform manufacturing jobs.",
+      "This points to an even more fundamental contrast between India and China, which is in state capacity",
+      "The significant increase in economic resources available to the state government does not seem to have translated into better outcomes for much of its population.",
+      "In any case, a government that struggles to deliver basic public services is unlikely to be able to execute interventionist industrial policies effectively. Even China has plenty of waste and corruption scandals alongside the success stories.",
+      "India’s cycle is mostly in services, which have fewer spillovers to the rest of the economy than manufacturing."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-21T23:08:41.282Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 19,
+    "order": 0,
     "readwise_id": "01k2j40tf05d83f02kjh422fnt",
-    "summary": "Explores how India's service-driven economic growth differs from China's export-led manufacturing model, highlighting India's unique challenges and strengths in pursuing its own development path.",
+    "summary": "Many compare India’s economy to China’s, expecting India to follow China’s export-led manufacturing path, but India’s growth is driven mostly by services. India faces challenges like low manufacturing and investment shares and weaker state capacity compared to China. However, India’s fast growth shows it can succeed by building on its own strengths rather than copying China’s model.",
     "tags": [],
     "title": "India and the invidious comparison with China",
     "url": "https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/?ref=thediff.co"
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "film",
-      "entertainment",
-      "business",
-      "culture",
-      "media"
+    "date_group": "27 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "Fans interpret A24 as a champion of cinema that believes in the mass appeal of challenging projects. Detractors see a zeitgeist-chasing machine that hawks products rather than art.",
+      "Thrive Capital founder Josh Kushner will sit on A24’s board.",
+      "In large part because A24 is adept not only at selling itself but making its audience feel good about the purchase. A24’s most enduring accomplishment is the creation of this feeling: everything it produces not only belongs in its roster but can’t be found anywhere else. The scarcity of recent quality mainstream films contributes to the sense that each A24 release, regardless of actual merit, is an event",
+      "Instead, it recalls James Baldwin’s invective against “the ostentatious parading of excessive and spurious emotion” that clouds the “wet eyes of the sentimentalist.”",
+      "Instead, what the company has created is akin to a [signature scent](https://dirt.fyi/article/2025/04/brand-sillage), the trail of which is easily pointed to until whatever distinctive original source it came from dissipates into the ether."
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-27T11:30:26.053Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 50,
+    "order": 0,
     "readwise_id": "01k228ps97vg5bwhhv6433c1tm",
-    "summary": "A24 has established itself as a prominent filmmaker known for unique, challenging movies with dedicated fans. Despite marketing quality cinema as events, the company struggles with consistency in ambitious projects.",
+    "summary": "A24 has become a prominent name in filmmaking, known for its unique and challenging movies that attract a dedicated fan base. The company markets itself as a champion of quality cinema, making each release feel like a significant event. However, despite its reputation, A24 struggles with consistency and sometimes misses the mark on its more ambitious projects.",
     "tags": [],
     "title": "The Popular Alternative",
     "url": "https://dirt.fyi/article/2025/05/the-popular-alternative"
@@ -1431,22 +1361,23 @@
   },
   {
     "category": "article",
-    "date_group": "",
-    "display_tags": [
-      "economics",
-      "policy",
-      "free_markets",
-      "regulation",
-      "trade"
+    "date_group": "19 Jan 2026",
+    "display_tags": [],
+    "highlights": [
+      "governments can limit the rents landlords can charge for their apartments, but they can’t make developers build new ones.",
+      "“protectionism,” because tariffs protect domestic industries from encroachment from abroad",
+      "There were a number of reasons for the success of the foreign manufacturers, including quality, engineering and marketing, but one main reason was that consumers concluded that cars made in the U.S. were more expensive than foreign cars but not correspondingly better.",
+      "In other words, progress takes countries up the curve from subsistence to prosperity, and along the way they transition from agriculture- to manufacturing- to service-based economics.",
+      "he idea that spending shouldn’t exceed revenues is completely out the window. George F. Will listed nine tenets of progressivism in a May 28 article in *The Washington Post*, and one was as follows: “limitless borrowing from future Americans to fund today’s Americans’ consumption of government goods and services.”",
+      "**The bottom line on all the above is that free-market economies don’t produce perfect solutions, but efforts to significantly control them make things much worse. There can be no solution that gives everyone what they want. All things considered, however, the laws of economics lead to the best solutions that can be attained.**"
     ],
-    "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-01-19T15:47:55.121Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
-    "order": 18,
+    "order": 0,
     "readwise_id": "01jy6rem6wbkfj90g95gazpq5p",
-    "summary": "Discusses how government interference in free markets through rules like tariffs can lead to negative consequences such as higher consumer prices and reduced competition, arguing that free markets generally produce better outcomes than controlled ones.",
+    "summary": "Governments often create rules that interfere with free markets, leading to negative economic consequences. For example, tariffs can protect domestic industries but raise prices for consumers and reduce competition. Overall, allowing markets to function freely is generally better than trying to control them, as government interventions can worsen outcomes.",
     "tags": [],
     "title": "More on Repealing the Laws of Economics",
     "url": "https://www.oaktreecapital.com/insights/memo/more-on-repealing-the-laws-of-economics"
@@ -1732,24 +1663,6 @@
   },
   {
     "category": "article",
-    "date_group": "25 Feb 2026",
-    "display_tags": [],
-    "highlights": [
-      "I spent some time looking at how to implement it manually, and came away from it with the understanding that I’d have to maintain separate implementations for Windows and Unix. Not only that, I’d just be duplicating a lot of the work Tokio had already done to abstract over platform differences. So I started looking at porting over nextest to Tokio."
-    ],
-    "last_moved_at": "2026-02-25T00:56:28.329Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01kappxy9paxg48egatjf62n4j",
-    "summary": "Nextest, a test runner for Rust, uses Tokio, a leading Rust async runtime, to power its features such as test retries, reusing builds, and partitioning test runs. Even though Nextest is not a network app, it benefits from an async runtime because it needs to handle multiple concurrent tests with various events. Async runtimes like Tokio are ideal for I/O-bound applications, where most time is spent waiting for other parts of the system to respond. Tokio solves the challenges of waiting on different types of sources and provides cross-platform support. By using Tokio, Nextest was able to simplify its architecture and improve its functionality.",
-    "tags": [],
-    "title": "How (and why) nextest uses tokio",
-    "url": "https://sunshowers.io/posts/nextest-and-tokio/#what-are-heterogenous-selects"
-  },
-  {
-    "category": "article",
     "date_group": "24 Feb 2026",
     "display_tags": [],
     "highlights": [],
@@ -1833,22 +1746,6 @@
     "date_group": "20 Feb 2026",
     "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-02-20T23:01:42.211Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k7vfh5rthxt5r6awxag07sga",
-    "summary": "Algebraic types are simple concepts that combine types like sets using addition and multiplication. Sum types let a value be from one type or another, helping handle cases like errors or nulls safely. Using algebraic types makes programming clearer and can reduce bugs compared to traditional methods.",
-    "tags": [],
-    "title": "Algebraic Types are not Scary, Actually",
-    "url": "https://blog.aiono.dev/posts/algebraic-types-are-not-scary,-actually.html"
-  },
-  {
-    "category": "article",
-    "date_group": "20 Feb 2026",
-    "display_tags": [],
-    "highlights": [],
     "last_moved_at": "2026-02-20T23:00:25.271Z",
     "location": "archive",
     "needs_grouping": false,
@@ -1859,46 +1756,6 @@
     "tags": [],
     "title": "Coding Agents in Feb 2026",
     "url": "https://calv.info/agents-feb-2026"
-  },
-  {
-    "category": "article",
-    "date_group": "18 Feb 2026",
-    "display_tags": [],
-    "highlights": [
-      "The storage engine provides durability (once a document is inserted, it remains available until it is removed by the user) and facilitates concurrent reads and writes.",
-      "BerkeleyDB attempted to address this by progressively reducing locking granularity, which increased the number of locks and made lock management a bottleneck.",
-      "describes how read operations use hazard pointers and write operations use lock-free skip lists to maximize the value our customers get from their hardware.",
-      "WiredTiger is a B+tree, which means that the root and internal pages only contain keys, and only leaf pages contain values. An interesting characteristic of the WiredTiger B+tree, which is relevant to our ability to implement lock-free algorithms, is that the on-disk and in-memory representations of the tree are different.",
-      "The goal of a hazard pointer is for it to be as cheap as possible for shared access, with the trade-off that it can be more expensive to acquire exclusive access.",
-      "The key to implementing a lock-free skip list is for any operation wanting to change the content on the page to construct the change to the data structure, and then atomic-compare-and-swap (CAS) the change in place. If the atomic CAS operation fails, discard the changes and try again. If it has succeeded, then the change has been made and is visible to other operations.",
-      "a skip list, which can be thought of as a search-optimized singly linked list."
-    ],
-    "last_moved_at": "2026-02-18T16:31:07.694Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k9fydx0pb1j6f91hjb89pe2n",
-    "summary": "MongoDB’s WiredTiger uses lock-free algorithms in its B+tree to let many threads read and write without heavy locking. This uses hazard pointers for reads and lock-free skip lists for writes. The result is much higher throughput—about 50% faster reads and up to 4x faster updates in tests.",
-    "tags": [],
-    "title": "To Lock or Not: MongoDB’s Lock-Free B-Tree Unlocks Throughput",
-    "url": "https://www.mongodb.com/company/blog/engineering/to-lock-or-not-mongodbs-lock-free-b-tree-unlocks-throughput"
-  },
-  {
-    "category": "article",
-    "date_group": "17 Feb 2026",
-    "display_tags": [],
-    "highlights": [],
-    "last_moved_at": "2026-02-17T18:31:01.038Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k8hr8h4vevbdqnpgrphy3ta3",
-    "summary": "Good 1:1 meetings help managers give regular feedback, support career growth, and catch problems early. The meetings follow three topics: people, product, and process, to guide meaningful conversation. Treat these meetings seriously, listen well, and always write notes to show you care.",
-    "tags": [],
-    "title": "How to Run 1:1s as an Engineering Manager",
-    "url": "https://justoffbyone.com/posts/how-to-run-11s/"
   },
   {
     "category": "pdf",
@@ -1936,25 +1793,6 @@
     "tags": [],
     "title": "Timing It Right - by Steven Johnson - Adjacent Possible",
     "url": "https://adjacentpossible.substack.com/p/timing-it-right"
-  },
-  {
-    "category": "article",
-    "date_group": "17 Feb 2026",
-    "display_tags": [],
-    "highlights": [
-      "That’s the key feature of gears-level models: they make falsifiable predictions about the internals of a system, separate from the externally-visible behavior.",
-      "All that said, if we have abundant data and aren’t worried about distribution shifts or system changes, non-gears models can still give us great predictive power."
-    ],
-    "last_moved_at": "2026-02-17T08:43:27.000Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k79byqsjx6wqh2fesc9960gk",
-    "summary": "Predicting input-output behavior (no gears) can fit data but tells you nothing about a system’s internals.  \nGears-level models specify internal mechanisms and make falsifiable predictions that handle changes and distribution shifts.  \nYou cannot fully learn gears from behavior alone, though causal tests and prior knowledge can sometimes reveal internal structure.",
-    "tags": [],
-    "title": "Gears vs Behavior",
-    "url": "https://www.lesswrong.com/s/xEFeCwk3pdYdeG2rL/p/gvK5QWRLk3H8iqcNy"
   },
   {
     "category": "article",
@@ -2196,106 +2034,6 @@
     "url": "https://www.hillelwayne.com/post/graph-types/"
   },
   {
-    "category": "article",
-    "date_group": "02 Feb 2026",
-    "display_tags": [],
-    "highlights": [],
-    "last_moved_at": "2026-02-02T17:54:35.108Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01kb49j14w99ghhy405spv48yn",
-    "summary": "Charlie Munger spent his final years making bold investments, mentoring young partners, and staying mentally sharp. He remained active in deals and friendships despite health problems and fading eyesight. Until his death just before turning 100, he kept learning, joking, and shaping Berkshire’s future.",
-    "tags": [],
-    "title": "Exclusive | The Untold Story of Charlie Munger’s Final Years",
-    "url": "https://www.wsj.com/finance/investing/charlie-munger-life-final-years-berkshire-7c20c18e?st=AGyyuQ&reflink=desktopwebshare_permalink"
-  },
-  {
-    "category": "article",
-    "date_group": "02 Feb 2026",
-    "display_tags": [],
-    "highlights": [
-      "For example: Addition over numbers is associative, meaning `a + (b + c) == (a + b) + c`. This tells us that `Int + (String + Null)` is isomorphic (≅) to `(Int + String) + Null`: we can convert values between the two types without losing any useful information.\n\nA more interesting example is that AlgDTs follow the distributive property `a*(b + c) == a*b + a*c`. If we have a value of type `Account(name: str, contact: (Email + Phone))`, we can transform it into a value of type `EmailAccount(name, email) + PhoneAccount(name, number)`."
-    ],
-    "last_moved_at": "2026-02-02T08:43:19.565Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k7vfh217js8xtyrw23yfjq4g",
-    "summary": "The article traces algebraic data types back to McCarthy, who proposed cartesian and union types early on. Hoare and later ML researchers added tagged discriminated unions, compiler checks, and the terms \"sum\" and \"product.\" By the 1980s languages like HOPE and Miranda made pattern matching and the name \"algebraic data type\" standard in functional programming.",
-    "tags": [],
-    "title": "A Very Early History of Algebraic Data Types",
-    "url": "https://www.hillelwayne.com/post/algdt-history/"
-  },
-  {
-    "category": "article",
-    "date_group": "31 Jan 2026",
-    "display_tags": [],
-    "highlights": [],
-    "last_moved_at": "2026-01-31T23:11:57.612Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k9zsg3y69nmp01fgg6e3320c",
-    "summary": "A lone neutron can split uranium and unleash enormous energy that could power a future of abundance. The author, newly inspired by nuclear engineering, rejects fame for its own sake and seeks meaningful quests. At twenty he vows to pursue greatness — in rowing, love, and building terawatts of nuclear power.",
-    "tags": [],
-    "title": "Fission // 20",
-    "url": "https://wavage.substack.com/p/fission-20?r=1gvqcg&utm_medium=ios&triedRedirect=true"
-  },
-  {
-    "category": "article",
-    "date_group": "30 Jan 2026",
-    "display_tags": [],
-    "highlights": [],
-    "last_moved_at": "2026-01-30T12:37:08.781Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k9md327xf3s138wsjgzvd1nm",
-    "summary": "There are two kinds of schedules: the manager's schedule (hourly, meeting-friendly) and the maker's schedule (long blocks for deep work). Meetings fragment makers' time and can ruin their productivity. If managers understood this cost, they could avoid disrupting makers or use solutions like office hours.",
-    "tags": [],
-    "title": "Maker's Schedule, Manager's Schedule",
-    "url": "https://paulgraham.com/makersschedule.html"
-  },
-  {
-    "category": "article",
-    "date_group": "29 Jan 2026",
-    "display_tags": [],
-    "highlights": [],
-    "last_moved_at": "2026-01-29T22:41:53.427Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k8nxbnxpm3ehresv69xwpe90",
-    "summary": "Justin Mares argues that everyday toxins in food, clothing, and products are quietly harming our health because regulation is weak.  \nHe recommends focusing on nutrient-dense whole foods, sensible supplements, and low-toxin brands to fill gaps.  \nUse an 80/20 approach: reduce common exposures and use detox tools for the rest.",
-    "tags": [],
-    "title": "A builder’s guide to living a long and healthy life",
-    "url": "https://www.lennysnewsletter.com/p/a-builders-guide-to-living-a-long"
-  },
-  {
-    "category": "article",
-    "date_group": "29 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "The key in dynamic programming is to define, whether for an array index or a recursive call, exactly what a “partial” solution means"
-    ],
-    "last_moved_at": "2026-01-29T20:02:10.645Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k7jjdybfs76qndt357am4n6e",
-    "summary": "The post explains dynamic programming using the House Robber problem: pick nonadjacent houses to maximize loot. It shows a space-efficient DP approach that tracks only \"last robbed\" and \"last unrobbed\" values. Implementations are given in Haskell (recursive loop) and Rust (iterative loop).",
-    "tags": [],
-    "title": "Dynamic Programming Introduction",
-    "url": "https://mmhaskell.com/blog/2025/10/6/dynamic-programming-primer"
-  },
-  {
     "category": "pdf",
     "date_group": "29 Jan 2026",
     "display_tags": [],
@@ -2324,135 +2062,6 @@
   },
   {
     "category": "article",
-    "date_group": "29 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "exploit and explore",
-      "Balancing the desire to improve your own skills versus being less productive while you learn new skills is one example at the personal level.",
-      "“innovator’s dilemma.”",
-      "base creativity",
-      "disruptive Creativity",
-      "Hill-making demands huge inefficiencies."
-    ],
-    "last_moved_at": "2026-01-29T19:10:15.002Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k7d30sekn3twp4x8t3xjamrd",
-    "summary": "There are two ways to get better: climb a hill by optimizing what already works, or make a new hill by inventing new possibilities. Climbing is efficient and low risk but has diminishing returns. Hill-making is risky and wasteful but can create huge, lasting gains.",
-    "tags": [],
-    "title": "Hill-Making vs Hill-Climbing",
-    "url": "https://kevinkelly.substack.com/p/hill-making-vs-hill-climbing"
-  },
-  {
-    "category": "article",
-    "date_group": "29 Jan 2026",
-    "display_tags": [],
-    "highlights": [],
-    "last_moved_at": "2026-01-29T17:22:34.253Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k7f54eg5kr8f6q2e236kc4d6",
-    "summary": "Mitchell Hashimoto used AI agents extensively to design and build a non-trivial macOS auto-update feature, sharing every agentic session unedited. He iterated by reviewing, cleaning up, and sometimes redoing AI-generated code to fix bugs and improve structure. He stresses saving plans, running simulations, and never shipping AI code without thorough manual review.",
-    "tags": [],
-    "title": "Vibing a Non-Trivial Ghostty Feature",
-    "url": "https://mitchellh.com/writing/non-trivial-vibing"
-  },
-  {
-    "category": "article",
-    "date_group": "29 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "Nick pointed out the same applies to a writer struggling when creating a piece. “When you’re stuck and sit there, thinking, trying to come up with what’s next, that’s the valuable part of writing. It’s tempting to use AI to remove that stuck-ness, but it’s basically cheating—and leads to a very different result.”"
-    ],
-    "last_moved_at": "2026-01-29T17:14:00.966Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01kern87298zrhhx8m9rattwyd",
-    "summary": "AI can mimic writing but often feels off and misses the real thinking behind a piece.  \nUsing AI to skip the hard parts of writing robs you of the insight and growth gained from struggle.  \nThe struggle—the “suck”—is where true craft and lasting value are made.",
-    "tags": [],
-    "title": "The Suck Is Why We’re Here",
-    "url": "https://nik.art/the-suck-is-why-were-here/"
-  },
-  {
-    "category": "article",
-    "date_group": "29 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "learning methods that once felt too time-consuming to attempt have suddenly become feasible",
-      "or example, when I was reading the card on *Gaussian distribution*, one passage in it left me confused. At that moment:\n\n•   I could right-click the card to start a chat with AI, quote the confusing passage, and ask it to explain. The AI would answer my question using the full content of the card as context.\n•   I could ask the AI to give me a simple, concrete example to explain that passage, or to design a hypothetical problem and solve it using the knowledge described there.\n•   I could share my current understanding of the passage with the AI, ask it to judge whether I was correct, and even have it quiz me to test my comprehension.\n•   I could even have the AI read the original textbook PDF, so that with the full context it could tell me what the author intended in writing that passage, and whether those details would become important in later chapters I hadn’t yet reached."
-    ],
-    "last_moved_at": "2026-01-29T17:09:25.247Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k6va67563cax8s7f324ygv1t",
-    "summary": "The author shows how AI can turn hard textbooks into easy, interactive lessons by parsing PDFs, making summaries, and organizing content on a digital whiteboard. This setup lets you read, ask questions, get examples, and test understanding with full context. Using AI this way speeds deep learning and helps you spend more time thinking.",
-    "tags": [],
-    "title": "The Best Way to Use AI for Learning",
-    "url": "https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1#fe23"
-  },
-  {
-    "category": "article",
-    "date_group": "29 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "There's no doubt that teachers in, say, India earn much less than teachers in Ireland, but relative to context, they tend to be very well paid.",
-      "There is a second explanation though, that seems to fit the evidence better. Public school teachers in many developing countries earn civil service salaries that are far higher than market wages. This is what economists traditionally refer to as “rents.” The graph below highlights four examples.",
-      "Our paper joins a number of recent studies with very underwhelming findings about the impact of teacher pay. In India, Karthik Muralidharan and Venkatesh Sundararaman found that low-cost private schools produce similar learning levels while [paying one-fifth as much](http://www.nber.org/papers/w19441).",
-      "Because for all the hype around disruption and automation, the current evidence is equally consistent with the idea that investing significantly more money to train, recruit, and retain the highest quality teachers in public education systems is even better value for money."
-    ],
-    "last_moved_at": "2026-01-29T17:01:26.795Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k3nxs3gwjfacac4apze81zqr",
-    "summary": "Millions of children in poor countries go to school but still do not learn basic reading or math. Public teachers in some low‑income countries earn high wages relative to GDP, often due to civil‑service pay rather than market forces. Research shows pay hikes often do not raise learning, yet teacher quality matters a lot, so cutting or de‑skilling teachers may backfire.",
-    "tags": [],
-    "title": "Chart of the Week: Teacher Pay around the World: Beyond “Disruption” and “De-skilling”",
-    "url": "https://riseprogramme.org/blog/teacher_pay_around_world.html"
-  },
-  {
-    "category": "article",
-    "date_group": "29 Jan 2026",
-    "display_tags": [],
-    "highlights": [],
-    "last_moved_at": "2026-01-29T16:47:07.123Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k9dycmjq1vjfns37vbqf3e9t",
-    "summary": "Hiring engineers is a sales job: sell a clear product that matches what candidates want.  \nBe transparent about role, pay, and career paths with fixed salaries and a public handbook.  \nTarget under-served, experienced talent and build a repeatable, pipeline-driven recruiting process.",
-    "tags": [],
-    "title": "The Talent Machine",
-    "url": "https://paoramen.fika.bar/the-talent-machine-01K94NER8BZH9G9GYHR7TMFRES"
-  },
-  {
-    "category": "article",
-    "date_group": "28 Jan 2026",
-    "display_tags": [],
-    "highlights": [],
-    "last_moved_at": "2026-01-28T15:55:51.266Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k76nwzj83c8p10nvhwq5rdhe",
-    "summary": "A railway’s product is its timetable, because trains must be planned precisely to move people from A to B. Good timetables make travel faster, more reliable, less crowded, and better connected across the network. Infrastructure and trains should be designed to serve the timetable, not the other way around.",
-    "tags": [],
-    "title": "The product of the railways is the timetable",
-    "url": "https://springbett.substack.com/p/the-product-of-the-railways-is-the"
-  },
-  {
-    "category": "article",
     "date_group": "28 Jan 2026",
     "display_tags": [],
     "highlights": [
@@ -2470,253 +2079,6 @@
     "tags": [],
     "title": "A Spring in Every Kitchen",
     "url": "https://archive.ph/BPPyf"
-  },
-  {
-    "category": "article",
-    "date_group": "27 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "facetiousness",
-      "The only viable solution is to make a shift: from a life spent trying not to neglect anything, to one spent proactively and consciously choosing what to neglect, in favour of what matters most.",
-      "decisions should be made not by asking, “Will this make me happy?”, but “Will this choice enlarge me or diminish me?”",
-      "(Relatedly, don’t worry about burning bridges: irreversible decisions tend to be more satisfying, because now there’s only one direction to travel – forward into whatever choice you made.)",
-      "It’s possible, instead, to make a game of gradually increasing your capacity for discomfort, like weight training at the gym. When you expect that an action will be accompanied by feelings of irritability, anxiety or boredom, it’s usually possible to let that feeling arise and fade, while doing the action anyway.",
-      "**The capacity to tolerate minor discomfort is a superpower****.**",
-      "One good question to ask is what kind of practices strike you as intolerably cheesy or self-indulgent: gratitude journals, mindfulness meditation, seeing a therapist? That might mean they are worth pursuing.",
-      "**The future will never provide the reassurance you seek from it****.** As the ancient Greek and Roman Stoics understood, much of our suffering arises from attempting to control what is not in our control."
-    ],
-    "last_moved_at": "2026-01-27T22:48:16.772Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01ka423qhpxetjkpqdrqwbebaq",
-    "summary": "Oliver Burkeman ends his column after sharing simple life lessons he learned.  \nPick what to focus on and accept you cannot do everything.  \nChoose growth over comfort, tolerate small discomforts, and know when to move on.",
-    "tags": [],
-    "title": "Oliver Burkeman's last column: the eight secrets to a (fairly) fulfilled life",
-    "url": "https://www.theguardian.com/lifeandstyle/2020/sep/04/oliver-burkemans-last-column-the-eight-secrets-to-a-fairly-fulfilled-life"
-  },
-  {
-    "category": "article",
-    "date_group": "27 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "Fans interpret A24 as a champion of cinema that believes in the mass appeal of challenging projects. Detractors see a zeitgeist-chasing machine that hawks products rather than art.",
-      "Thrive Capital founder Josh Kushner will sit on A24’s board.",
-      "In large part because A24 is adept not only at selling itself but making its audience feel good about the purchase. A24’s most enduring accomplishment is the creation of this feeling: everything it produces not only belongs in its roster but can’t be found anywhere else. The scarcity of recent quality mainstream films contributes to the sense that each A24 release, regardless of actual merit, is an event",
-      "Instead, it recalls James Baldwin’s invective against “the ostentatious parading of excessive and spurious emotion” that clouds the “wet eyes of the sentimentalist.”",
-      "Instead, what the company has created is akin to a [signature scent](https://dirt.fyi/article/2025/04/brand-sillage), the trail of which is easily pointed to until whatever distinctive original source it came from dissipates into the ether."
-    ],
-    "last_moved_at": "2026-01-27T11:30:26.053Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k228ps97vg5bwhhv6433c1tm",
-    "summary": "A24 has become a prominent name in filmmaking, known for its unique and challenging movies that attract a dedicated fan base. The company markets itself as a champion of quality cinema, making each release feel like a significant event. However, despite its reputation, A24 struggles with consistency and sometimes misses the mark on its more ambitious projects.",
-    "tags": [],
-    "title": "The Popular Alternative",
-    "url": "https://dirt.fyi/article/2025/05/the-popular-alternative"
-  },
-  {
-    "category": "article",
-    "date_group": "26 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "The product thesis for Gotham was to provide enhanced security *and* enhanced civil liberties. Karp believed society would not work with constant terror attacks and would not work if we were forced to forfeit our privacy in exchange for stopping them; the only way to push out the efficient frontier of that tradeoff is through technology.",
-      "The FDE role was famously inspired by Karp’s observation of how excellent French restaurants operate. The waitstaff is an intrinsic part of the kitchen. If you want to order the wrong wine with the fish, the wait staff will simply tell you no.",
-      "FDE’s are trained to view themselves as owners of their customers’ businesses. You must hold yourself accountable to the end results of the customers business and try to act as if you are the CEO, but with zero authority. This alignment constantly demands more of our product. We have a visceral connection to how much more a customer could win if the product could just do a little bit more for them.",
-      "For Palantir the problem statement is can you build a product that provides substantial technical leverage to solve the next problem we have never seen before."
-    ],
-    "last_moved_at": "2026-01-26T01:20:40.047Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k7h45yh2z9kwre69wx4pn0h8",
-    "summary": "Palantir’s FDE role pairs deep customer alignment with product and business strategy to solve impossible, evolving problems. Copycats mimic the form but avoid the full commitment, yielding limited products and outcomes. The lesson: don’t copy the surface—rethink your company’s assumptions before imitating the model.",
-    "tags": [],
-    "title": "Sorry, that isn't an FDE",
-    "url": "https://tedmabrey.substack.com/p/sorry-that-isnt-an-fde?utm_source=substack&utm_campaign=post_embed&utm_medium=web"
-  },
-  {
-    "category": "article",
-    "date_group": "26 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "You cannot, in general, assume it is possible to go into a factory and find a single dataset that is “all the process logs from all the machines, end to end”.",
-      "This is why I disagree with a lot of people who imagine an “AI transformation” in the economic productivity sense happening instantaneously once the models are sufficiently advanced.",
-      "So too with AI. You can’t skip over the work of convincing customers that the tool will be worth the setup costs, overcoming internal friction to actually change the way companies operate, and testing and adapting the tool for different contexts."
-    ],
-    "last_moved_at": "2026-01-26T01:09:00.615Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k7h464drvvxkbd4yrdjkwmmv",
-    "summary": "Getting useful insights requires gathering a company’s scattered, often paper or siloed machine data into one place. This data work—cleaning, negotiating access, and standardizing—takes lots of human labor and slows AI adoption. Real economic AI impact depends on solving this hard integration problem inside businesses.",
-    "tags": [],
-    "title": "The Great Data Integration Schlep",
-    "url": "https://sarahconstantin.substack.com/p/the-great-data-integration-schlep?utm_source=substack&utm_campaign=post_embed&utm_medium=web"
-  },
-  {
-    "category": "article",
-    "date_group": "26 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "Cults are high-variance. You can get superior growth and focused pursuit of a variant thesis. Or you can get fraud that’s ostensibly perpetrated for the greater good.",
-      "Deferring to voters is not exactly an ideal standard, but it’s a consistent one: the object-level debates are complex and challenging, but the meta question is whether policy should be made by technology executives or by the established institutions that are designed to make such decisions",
-      "Politics is the art of determining which difficult moral tradeoff you make, and Palantir’s job is, as much as possible, to minimize the extent to which it’s a tradeoff at all."
-    ],
-    "last_moved_at": "2026-01-26T00:51:37.287Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k6z1cjetsqy8ev7j7ffnznfn",
-    "summary": "Palantir is a data software company that works with governments and businesses, but its approach raises moral questions about its contracts and practices. The company has high revenue margins with its largest customers but struggles with public perception due to its controversial nature. Palantir aims to navigate complex political and ethical challenges while improving the tradeoffs in its work.",
-    "tags": [],
-    "title": "Palantir: On Business, Cults, and Politics",
-    "url": "https://www.thediff.co/archive/palantir-on-business-cults-and-politics/#conclusion"
-  },
-  {
-    "category": "article",
-    "date_group": "23 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "The first is that the deals will *artificially inflate companies’ revenue*, tricking investors into overvaluing their stock or lending them too much money. The second is that the deals *increase systemic risk* by tying all of the AI companies’ fortunes to each other.",
-      "In fact, I suspect that this is what’s actually going on with these circular deals — *diversification*. All of these companies are existentially dependent on AI itself, but they don’t want the added vulnerability of being dependent on specific AI companies.",
-      "We’ll end up with a system that’s more vulnerable to an AI crash, but *less* vulnerable to the failure of any specific AI company.",
-      "it’s not clear that the circular deals make things worse — instead, they might be letting AI companies *diversify* their dependencies. In the first quarter of this year, more than half of Nvidia’s revenue came from [just four big mysterious customers](https://finance.yahoo.com/news/54-nvidias-q1-revenue-came-093700382.html) — probably Amazon, Microsoft, and Google, and possibly Meta. Building up demand from OpenAI could help Nvidia be *less* dependent on those big customers."
-    ],
-    "last_moved_at": "2026-01-23T01:39:15.260Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k93cdtwr1w9r40fq02kk1nf7",
-    "summary": "AI firms, chipmakers, and cloud providers are making intertwined deals where money and chips flow between them. Critics worry this could inflate revenues and increase systemic risk if AI demand collapses. The author argues most of these deals look like vendor financing and may diversify risk rather than create a new kind of fraud.",
-    "tags": [],
-    "title": "Should we worry about AI's circular deals?",
-    "url": "https://www.noahpinion.blog/p/should-we-worry-about-ais-circular?utm_source=post-email-title&publication_id=35345&post_id=176711855&utm_campaign=email-post-title&isFreemail=false&r=6g77v&triedRedirect=true&utm_medium=email"
-  },
-  {
-    "category": "article",
-    "date_group": "22 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "Tutors, Bloom claimed, could raise student achievement by two full standard deviations—or, in statistical parlance, two “sigmas.” In Bloom’s view, this extraordinary effect proved that most students were capable of much greater learning than they typically achieved, but most of their potential went untapped because it was impractical to assign an individual tutor to every student.",
-      "Cohen, Kulik, and Kulik’s 1982 meta-analysis reported that tutoring effects averaged 0.84 standard deviations when measured on narrow tests developed by the study authors, versus just 0.27 standard deviations when measured on broader standardized tests.",
-      "Indeed, Burke [wrote](https://www.proquest.com/docview/252076952?parentSessionId=eZh%2FxLty5zFIQRLoBINVaDRSpQEONbvK7WA%2BPN%2FYMBw%3D&sourcetype=Dissertations%20&%20Theses), “perhaps the most important part of the tutors’ training was learning to manage feedback and correction effectively.”",
-      "Finally, “tutors were urged to be appropriately generous with praise and encouragement whenever a student made progress. The purpose of this training was to help the tutor make learning a rewarding experience for each student.”",
-      "The benefits of tutoring depend on how much individualized instruction and feedback students get, how much they practice the tutored skills, and on the type of test used to measure tutoring’s effects.",
-      "Producing benefits of one-third of a standard deviation would be a huge triumph if it could be done at low cost, on a large scale, and on a broad test—all without requiring an army of human tutors"
-    ],
-    "last_moved_at": "2026-01-22T22:14:10.748Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k88yvygrenzpysy3mjvd7qf9",
-    "summary": "Bloom said one-to-one tutoring raises learning by two standard deviations.  \nLater rigorous reviews find average gains of only about 0.33–0.37 SD.  \nThe big two-sigma findings came from extra testing, feedback, narrow tests, and replacing class time, so tutoring usually helps but rarely reaches two sigmas.",
-    "tags": [],
-    "title": "Two-Sigma Tutoring: Separating Science Fiction from Science Fact",
-    "url": "https://www.educationnext.org/two-sigma-tutoring-separating-science-fiction-from-science-fact/"
-  },
-  {
-    "category": "article",
-    "date_group": "21 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "Read in this light, the chapter becomes somewhat ridiculous, because the rest includes descriptions of brutal acts of torture and plunder under colonialism, and then frames data center water use as a continuation of that same colonialism.",
-      "![](https://substackcdn.com/image/fetch/$s_!LYqG!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffe376c4d-77f8-4e7f-bd53-f9c2550427ac_1528x700.png)",
-      "The vast majority of water that power plants use is withdrawn and then returned to the local source (non-consumptive use on this graph).",
-      "So the study Hao is citing is not only saying AI will consume just 10% as much water as she says, only 15% of that 10% will be drinking water.",
-      "[I also argue here](https://andymasley.substack.com/p/the-ai-water-issue-is-fake?open=false#%C2%A7how-big-of-a-deal-is-it-that-data-centers-use-potable-water) that whether water is potable doesn’t really matter, because what actually harms the availability of drinkable water is access to total freshwater, not potable water. It’s relatively easy to turn freshwater potable.",
-      "The reason I think this is strange is that in basically every country, including the US, 80% of water is used on industry and commercial buildings rather than household consumption."
-    ],
-    "last_moved_at": "2026-01-21T23:16:40.912Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01kcqy89v0c6wb7gbrcs5jscrq",
-    "summary": "The book Empire of AI wildly overstates how much water AI data centers use, often by hundreds to thousands of times. Careful reading of the sources shows most water stays offsite, much of it non-potable, and data centers typically use only a few percent of local supplies. As a result, the book’s claims about AI harming water access and draining communities are misleading.",
-    "tags": [],
-    "title": "Empire of AI is wildly misleading about AI water use",
-    "url": "https://andymasley.substack.com/p/empire-of-ai-is-wildly-misleading?r=1gvqcg&utm_medium=ios&triedRedirect=true"
-  },
-  {
-    "category": "article",
-    "date_group": "21 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "One of the most obvious economic contrasts between India and China is that China has followed the East Asian model of export-led manufacturing, like Japan, South Korea and Taiwan (albeit at much greater scale), and India has not",
-      "In recent years India’s manufacturing share of GDP has been around 13%, about half of the level in China, and historically it has never exceeded 18%. One of the central debates among Indian economists is how much of a problem the relative weakness in manufacturing is, and what should or could be done about it.",
-      "If India does not have a manufacturing boom, it probably will not have a broader investment boom.",
-      "dearth",
-      "As Wang Feng’s recent book [*China’s Age Of Abundance*](https://amzn.to/4lOul2k) emphasized, China was able to seize the opportunity presented by labor-intensive export manufacturing in the 1980s because it had made substantial improvements in health, education and gender equality in prior decades.",
-      "One reason why manufacturing has not taken off in India may well be that India does not have a mass workforce equipped with the basic skills to perform manufacturing jobs.",
-      "This points to an even more fundamental contrast between India and China, which is in state capacity",
-      "The significant increase in economic resources available to the state government does not seem to have translated into better outcomes for much of its population.",
-      "In any case, a government that struggles to deliver basic public services is unlikely to be able to execute interventionist industrial policies effectively. Even China has plenty of waste and corruption scandals alongside the success stories.",
-      "India’s cycle is mostly in services, which have fewer spillovers to the rest of the economy than manufacturing."
-    ],
-    "last_moved_at": "2026-01-21T23:08:41.282Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01k2j40tf05d83f02kjh422fnt",
-    "summary": "Many compare India’s economy to China’s, expecting India to follow China’s export-led manufacturing path, but India’s growth is driven mostly by services. India faces challenges like low manufacturing and investment shares and weaker state capacity compared to China. However, India’s fast growth shows it can succeed by building on its own strengths rather than copying China’s model.",
-    "tags": [],
-    "title": "India and the invidious comparison with China",
-    "url": "https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/?ref=thediff.co"
-  },
-  {
-    "category": "article",
-    "date_group": "20 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "**Struggling with whether to apply the “bubble” label can bog you down and interfere with proper judgment; we can accomplish a great deal by merely assessing what’s going on around us and drawing inferences with regard to proper behavior.**",
-      "the speculative mania enabled what Perez called the “Installation Phase,” where necessary but not necessarily financially wise investments laid the groundwork for the “Deployment Period.” What marked the shift to the deployment period was the popping of the bubble; what enabled the deployment period were the money-losing investments.",
-      ". . . “Inflection Bubbles” – the good kind of bubbles, as opposed to the much more damaging “Mean-reversion Bubbles” like the 2000’s subprime mortgage bubble.",
-      "The key realization seems to be that if people remained patient, prudent, analytical, and value-insistent, novel technologies would take many years and perhaps decades to be built out. Instead, the hysteria of the bubble causes the process to be compressed into a very short period – with some of the money going into life-changing investment in the winners but a lot of it being incinerated.",
-      "The foregoing is what I call “lottery-ticket thinking,” in which the dream of an enormous payoff justifies – no, compels – participation in an endeavor with an overwhelming probability of failing."
-    ],
-    "last_moved_at": "2026-01-20T10:13:53.876Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01kcvb6pvb2g5bwpd19ek3htrp",
-    "summary": "Investors are excited about AI but it’s unclear if that excitement is creating a financial bubble. Big tech and lenders are pouring debt into AI infrastructure, risking overbuilding and losses if demand falls. AI could transform productivity and jobs, but the outcomes and who will profit are highly uncertain.",
-    "tags": [],
-    "title": "Is It a Bubble?",
-    "url": "https://www.oaktreecapital.com/insights/memo/is-it-a-bubble"
-  },
-  {
-    "category": "article",
-    "date_group": "19 Jan 2026",
-    "display_tags": [],
-    "highlights": [
-      "governments can limit the rents landlords can charge for their apartments, but they can’t make developers build new ones.",
-      "“protectionism,” because tariffs protect domestic industries from encroachment from abroad",
-      "There were a number of reasons for the success of the foreign manufacturers, including quality, engineering and marketing, but one main reason was that consumers concluded that cars made in the U.S. were more expensive than foreign cars but not correspondingly better.",
-      "In other words, progress takes countries up the curve from subsistence to prosperity, and along the way they transition from agriculture- to manufacturing- to service-based economics.",
-      "he idea that spending shouldn’t exceed revenues is completely out the window. George F. Will listed nine tenets of progressivism in a May 28 article in *The Washington Post*, and one was as follows: “limitless borrowing from future Americans to fund today’s Americans’ consumption of government goods and services.”",
-      "**The bottom line on all the above is that free-market economies don’t produce perfect solutions, but efforts to significantly control them make things much worse. There can be no solution that gives everyone what they want. All things considered, however, the laws of economics lead to the best solutions that can be attained.**"
-    ],
-    "last_moved_at": "2026-01-19T15:47:55.121Z",
-    "location": "archive",
-    "needs_grouping": false,
-    "needs_summarizing": false,
-    "order": 0,
-    "readwise_id": "01jy6rem6wbkfj90g95gazpq5p",
-    "summary": "Governments often create rules that interfere with free markets, leading to negative economic consequences. For example, tariffs can protect domestic industries but raise prices for consumers and reduce competition. Overall, allowing markets to function freely is generally better than trying to control them, as government interventions can worsen outcomes.",
-    "tags": [],
-    "title": "More on Repealing the Laws of Economics",
-    "url": "https://www.oaktreecapital.com/insights/memo/more-on-repealing-the-laws-of-economics"
   },
   {
     "category": "article",
@@ -3623,7 +2985,7 @@
   },
   {
     "category": "article",
-    "date_group": "22 Oct 2025",
+    "date_group": "21 Oct 2025",
     "display_tags": [],
     "highlights": [
       "the four classic symptoms of inflammation articulated by the Roman medical writer Celsus in the first century: *rubor*, redness; *tumor*, swelling; *calor*, heat; and *dolor*, pain. In Latin, *inflammatio* means “setting on fire,”",
@@ -3818,7 +3180,7 @@
   },
   {
     "category": "article",
-    "date_group": "03 Oct 2025",
+    "date_group": "02 Oct 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-10-02T23:55:54.336Z",
@@ -3834,7 +3196,7 @@
   },
   {
     "category": "article",
-    "date_group": "03 Oct 2025",
+    "date_group": "02 Oct 2025",
     "display_tags": [],
     "highlights": [
       "What I’d like to do is to write 30 separate $50 billion checks. I’d like to write a small number of huge checks. And this is a dynamic in private equity that people don’t understand. Capital can be allocated in lots of different ways, but the partners at these firms do not want to write a bunch of small checks to a bunch of small manufacturers, even if the hurdle rate is competitive. I’m a human, I don’t want to sit on 40 boards. And so you have this other perverse dynamic that even if everything else is equal, it’s not equal. So we’ve put manufacturers who might otherwise benefit from the onshoring phenomenon at an even worse position in part because of the internal dynamics of capital."
@@ -3884,7 +3246,7 @@
   },
   {
     "category": "article",
-    "date_group": "30 Sep 2025",
+    "date_group": "30 Sept 2025",
     "display_tags": [],
     "highlights": [
       "We inherit our mitochondria from our mother—from the egg cell, to be precise. Mitochondria have their own DNA, which consists of only 37 genes, compared with the thousands of genes in the spiraling chromosomes inside the cell nucleus. This ring of mitochondrial DNA, or mtDNA, is sheltered within two membranes. The outer shell, shaped like the skin of a sausage, encases the mitochondrion and selectively allows molecules to enter or exit. The inner membrane is made of densely packed proteins and has many folds, called cristae, which serve as a site for chemical reactions, much like the plates suspended inside a battery.",
@@ -3910,7 +3272,7 @@
   },
   {
     "category": "article",
-    "date_group": "28 Sep 2025",
+    "date_group": "28 Sept 2025",
     "display_tags": [],
     "highlights": [
       "A lot of painstaking work over the years in fruit flies (Drosophila) has pointed to the [dorsal fan-shaped body](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003014) (and particularly neurons that project to it) as the important sleep-regulating center. The new paper linked above looks at such neurons after extended sleep deprivation in flies and does single-cell analyses on these neurons. 122 gene transcripts were elevated under these conditions, with clusters around two processes (mitochondrial function and synaptic transmission) standing out. That ties in with [earlier reports](https://www.nature.com/articles/s41586-019-1034-5) about mitochondrial activity being tied to sleep function in these cells, and a close examination of the cells showed that as sleep deprivation increases there are increased signs of mitochondrial fragmentation, mitophagy, and outright contacts between mitochondria and the endoplasmic reticulum (the last of which is thought to be a way to take on fresh lipids as existing ones become damaged by reactive oxygen species)."
@@ -3928,7 +3290,7 @@
   },
   {
     "category": "article",
-    "date_group": "28 Sep 2025",
+    "date_group": "28 Sept 2025",
     "display_tags": [],
     "highlights": [
       "The smart move is to combine the channels into a single bundle offering at $13. Buyers overall get *more product*, at a price they happily pay, with more consumer surplus on top of it. Sellers overall get to *sell more product*, and minimize deadweight loss due to non-consumption.",
@@ -3949,7 +3311,7 @@
   },
   {
     "category": "article",
-    "date_group": "28 Sep 2025",
+    "date_group": "28 Sept 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-09-28T20:33:17.236Z",
@@ -3965,7 +3327,7 @@
   },
   {
     "category": "article",
-    "date_group": "18 Sep 2025",
+    "date_group": "18 Sept 2025",
     "display_tags": [],
     "highlights": [
       "The y-axis is the students’ “willingness-to-pay” and the x-axis is the students sorted from highest to lowest bids. The line is known as the demand curve.",
@@ -3986,7 +3348,7 @@
   },
   {
     "category": "article",
-    "date_group": "18 Sep 2025",
+    "date_group": "18 Sept 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-09-18T08:26:09.092Z",
@@ -4002,7 +3364,7 @@
   },
   {
     "category": "article",
-    "date_group": "15 Sep 2025",
+    "date_group": "15 Sept 2025",
     "display_tags": [],
     "highlights": [
       "“The average Indian civil servant still sees himself primarily as a regulator and not as a facilitator. The average Indian bureaucrat has not yet accepted that it is not a sin to make profits and become rich. The average Indian bureaucrat has little trust in India’s business community. They view Indian businesspeople as money-grabbing opportunists who do not have the welfare of the country at heart, and all the more so if they are foreign.”"
@@ -4020,7 +3382,7 @@
   },
   {
     "category": "article",
-    "date_group": "15 Sep 2025",
+    "date_group": "15 Sept 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-09-15T18:40:23.068Z",
@@ -4036,7 +3398,7 @@
   },
   {
     "category": "article",
-    "date_group": "15 Sep 2025",
+    "date_group": "15 Sept 2025",
     "display_tags": [],
     "highlights": [
       "The Prague Spring, in contrast, which was a top-down process and not a popular revolt, had the exact opposite agenda – namely, removing the social net from workers and the poor, reducing the institutional protections of workers, seeking alliances with the West, promoting local anti-federalist nationalism, refusing solidarity with popular struggles, liberalising the media, the arts and public expression to allow more western influence in the country and to end agitation on behalf of the working class and, not least, enriching and privileging the new dominant managerial class.",
@@ -4056,7 +3418,7 @@
   },
   {
     "category": "article",
-    "date_group": "15 Sep 2025",
+    "date_group": "15 Sept 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-09-15T09:48:49.070Z",
@@ -4072,7 +3434,7 @@
   },
   {
     "category": "article",
-    "date_group": "15 Sep 2025",
+    "date_group": "15 Sept 2025",
     "display_tags": [],
     "highlights": [
       "“But when we put off things that are really in our best interest to complete and we do it habitually, then that’s more than just a bad habit or a lifestyle issue.”",
@@ -4097,7 +3459,7 @@
   },
   {
     "category": "article",
-    "date_group": "10 Sep 2025",
+    "date_group": "10 Sept 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-09-10T08:38:34.051Z",
@@ -4113,7 +3475,7 @@
   },
   {
     "category": "article",
-    "date_group": "09 Sep 2025",
+    "date_group": "09 Sept 2025",
     "display_tags": [],
     "highlights": [
       "Defining consolation as “an argument about why life is the way it is and why we must keep going,”",
@@ -4134,7 +3496,7 @@
   },
   {
     "category": "article",
-    "date_group": "09 Sep 2025",
+    "date_group": "09 Sept 2025",
     "display_tags": [],
     "highlights": [
       "Often, the attempt to be comprehensive can lead to an inability to say anything concrete.",
@@ -4153,7 +3515,7 @@
   },
   {
     "category": "article",
-    "date_group": "09 Sep 2025",
+    "date_group": "09 Sept 2025",
     "display_tags": [],
     "highlights": [
       "I plan to become a billionaire by age 30. Then I will have the time and resources to tackle problems close to my heart like climate change, species extinction and economic inequality. The formula is simple: Sacrifices I make now are an investment in decades of choice later."
@@ -4171,7 +3533,7 @@
   },
   {
     "category": "pdf",
-    "date_group": "08 Sep 2025",
+    "date_group": "08 Sept 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-09-08T20:36:25.823Z",
@@ -4187,7 +3549,7 @@
   },
   {
     "category": "pdf",
-    "date_group": "08 Sep 2025",
+    "date_group": "08 Sept 2025",
     "display_tags": [],
     "highlights": [
       "Bacteria regulate gene expression by controlling genetic units called operons.",
@@ -4207,7 +3569,7 @@
   },
   {
     "category": "article",
-    "date_group": "08 Sep 2025",
+    "date_group": "08 Sept 2025",
     "display_tags": [],
     "highlights": [
       "*Re-read your code frequently.* After writing a few lines of code (3 to 6 lines, a short block within a function), re-read them. That habit will save you more time than any other simple change you can make."
@@ -4225,7 +3587,7 @@
   },
   {
     "category": "article",
-    "date_group": "04 Sep 2025",
+    "date_group": "04 Sept 2025",
     "display_tags": [],
     "highlights": [
       "Certain CRISPR components can [add short DNA sequences](https://www.nature.com/articles/nsmb.2820) from the genomes of defeated viruses into the bacterium’s own genome, creating a type of protective “memory.” These sequences, known as protospacers,",
@@ -4463,7 +3825,7 @@
   },
   {
     "category": "article",
-    "date_group": "22 Aug 2025",
+    "date_group": "21 Aug 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-08-21T23:33:27.630Z",
@@ -4479,7 +3841,7 @@
   },
   {
     "category": "article",
-    "date_group": "22 Aug 2025",
+    "date_group": "21 Aug 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-08-21T23:25:40.646Z",
@@ -4495,7 +3857,7 @@
   },
   {
     "category": "article",
-    "date_group": "22 Aug 2025",
+    "date_group": "21 Aug 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-08-21T23:15:54.173Z",
@@ -4511,7 +3873,7 @@
   },
   {
     "category": "article",
-    "date_group": "22 Aug 2025",
+    "date_group": "21 Aug 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-08-21T23:10:23.448Z",
@@ -4543,7 +3905,7 @@
   },
   {
     "category": "article",
-    "date_group": "21 Aug 2025",
+    "date_group": "20 Aug 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-08-20T23:48:41.966Z",
@@ -4639,7 +4001,7 @@
   },
   {
     "category": "article",
-    "date_group": "15 Aug 2025",
+    "date_group": "14 Aug 2025",
     "display_tags": [],
     "highlights": [
       "identity anchoring"
@@ -4852,7 +4214,7 @@
   },
   {
     "category": "article",
-    "date_group": "10 Aug 2025",
+    "date_group": "09 Aug 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-08-09T23:43:45.279Z",
@@ -5611,7 +4973,7 @@
   },
   {
     "category": "article",
-    "date_group": "20 Jun 2025",
+    "date_group": "19 Jun 2025",
     "display_tags": [],
     "highlights": [
       "Using a panel of mutated bacteria that have trouble repairing damage to their DNA, the Ames test looks to see if your compound is causing any. A positive Ames isn’t all that common, but it will cast an immediate shadow over a drug candidate in most organisations.",
@@ -6018,7 +5380,7 @@
   },
   {
     "category": "article",
-    "date_group": "09 Jun 2025",
+    "date_group": "08 Jun 2025",
     "display_tags": [],
     "highlights": [
       "‘Linear No Threshold’ (or LNT). LNT is the hypothesis that the relationship between radiation dose and cancer risk to humans is linear and that there is no truly ‘safe’ level of radiation.",
@@ -6046,7 +5408,7 @@
   },
   {
     "category": "article",
-    "date_group": "09 Jun 2025",
+    "date_group": "08 Jun 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-06-08T23:32:40.784Z",
@@ -6062,7 +5424,7 @@
   },
   {
     "category": "article",
-    "date_group": "09 Jun 2025",
+    "date_group": "08 Jun 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-06-08T23:23:02.272Z",
@@ -6138,7 +5500,7 @@
   },
   {
     "category": "article",
-    "date_group": "03 Jun 2025",
+    "date_group": "02 Jun 2025",
     "display_tags": [],
     "highlights": [
       "There are some public goods that should never be privatized."
@@ -6156,7 +5518,7 @@
   },
   {
     "category": "article",
-    "date_group": "03 Jun 2025",
+    "date_group": "02 Jun 2025",
     "display_tags": [],
     "highlights": [
       "Consider a mathematical object like a cellular automaton - a set of simple rules that creates complex behavior. The most famous is [Conway’s Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life); the second most famous is the universe. After all, the universe is a starting condition (the Big Bang) and a set of simple rules determining how the starting condition evolves over time (the laws of physics).",
@@ -6244,7 +5606,7 @@
   },
   {
     "category": "article",
-    "date_group": "28 May 2025",
+    "date_group": "27 May 2025",
     "display_tags": [],
     "highlights": [
       "A popular view about the future impact of AI on the economy is that it will be primarily mediated through AI automation of R&D.",
@@ -6576,7 +5938,7 @@
   },
   {
     "category": "article",
-    "date_group": "09 May 2025",
+    "date_group": "08 May 2025",
     "display_tags": [],
     "highlights": [],
     "last_moved_at": "2025-05-08T23:10:16.112Z",
@@ -7051,7 +6413,7 @@
   },
   {
     "category": "rss",
-    "date_group": "12 Apr 2025",
+    "date_group": "11 Apr 2025",
     "display_tags": [],
     "highlights": [
       "\"In an information-rich world, the wealth of information means a dearth of something else: a scarcity of whatever it is that information consumes. What information consumes is rather obvious: it consumes the attention of its recipients.”"
@@ -7089,7 +6451,7 @@
   },
   {
     "category": "article",
-    "date_group": "05 Apr 2025",
+    "date_group": "04 Apr 2025",
     "display_tags": [],
     "highlights": [
       "The book points out that the major value in a flying car (as with [supersonic](https://www.youtube.com/watch?v=ynJs4bRwe8o)) would not be in taking the same trips you do now, only a bit faster. Instead, it would be in taking the trips you *don’t* take now, because they’re too inconvenient."
@@ -7953,5 +7315,64 @@
     "tags": [],
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "category": "article",
+    "date_group": "20 Mar 2026",
+    "display_tags": [],
+    "highlights": [],
+    "last_moved_at": "2026-03-20T18:20:29.330Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01km4cs9jn5376etkcv5q834vg",
+    "summary": "Higher Kinded Types (HKTs) let generics have generics, but Rust does not fully support them yet. Trying to emulate HKTs in Rust can cause complex errors and infinite cycles in the compiler's trait solver. Learning about this led the author to explore logic, proofs, and why supporting HKTs would make Rust more complicated.",
+    "tags": [],
+    "title": "Torturing rustc by Emulating HKTs, Causing an Inductive Cycle and Borking the Compiler",
+    "url": "https://harudagondi.space/blog/torturing-rustc-by-emulating-hkts/"
+  },
+  {
+    "category": "article",
+    "date_group": "18 Mar 2026",
+    "display_tags": [],
+    "highlights": [],
+    "last_moved_at": "2026-03-18T12:54:19.955Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01km0g5ph1bfzb3j9pja29he69",
+    "summary": "Generating code purely from specification documents is unrealistic because detailed specs end up looking like code themselves. Writing clear and thoughtful specifications takes as much effort as coding, so skipping coding for specs doesn’t save work. Poorly made specs lead to unreliable code, and coding agents cannot fix unclear or incomplete instructions.",
+    "tags": [],
+    "title": "A sufficiently detailed spec is code",
+    "url": "https://haskellforall.com/2026/03/a-sufficiently-detailed-spec-is-code"
+  },
+  {
+    "category": "pdf",
+    "date_group": "15 Mar 2026",
+    "display_tags": [],
+    "highlights": [
+      "medium of human expression. Likewise, if your science teacher tried to convince you that astronomy is about predicting a person’s future based on their date of birth, you would know she was crazy— science has seeped into the culture to such an extent that almost everyone knows about atoms and galaxies and laws of nature. But if your math teacher gives you the impression, either expressly or by default, that mathematics is about formulas and definitions and memorizing algorithms, who will set you straight?",
+      "I\nf your art teacher were to tell you that painting is all about filling in numbered regions, you would know that something was wrong. The culture informs you— there are museums and\ngalleries, as well as the art in your own home. Painting is well understood by society as a",
+      "The mathematics curriculum doesn’t need to be reformed, it needs to be scrapped.",
+      "We don’t need to bend over backwards to give mathematics relevance. It has relevance in the same way that any art does: that of being a meaningful human experience.",
+      "Teaching is not about information. It’s about having an honest intellectual relationship with\nyour students. It requires no method, no tools, and no training. Just the ability to be real.",
+      "we have a math curriculum with no historical perspective or thematic coherence, a fragmented collection of assorted topics and techniques, united only by the ease in which they can be reduced to step-by- step procedures.",
+      "In practice, the curriculum is not even so much a sequence of topics, or ideas, as it is a\nsequence of notations. Apparently mathematics consists of a secret list of mystical symbols and rules for their manipulation.",
+      "Mathematics is about problems, and problems must be made the focus of a students\nmathematical life. Painful and creatively frustrating as it may be, students and their teachers should at all times be engaged in the process— having ideas, not having ideas, discovering patterns, making conjectures, constructing examples and counterexamples, devising arguments, and critiquing each other’s work.",
+      "The result is that the student becomes a passive participant in the creative act. Students are making statements to fit a preexisting proof-pattern, not because they mean them. They are being trained to ape arguments, not to intend them. So not only do they have no idea what their teacher is saying, they have no idea what they themselves are saying.",
+      "Efficiency and economy simply do not make good pedagogy."
+    ],
+    "last_moved_at": "2026-03-15T20:32:24.526Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01jw0xt4y7sdad8063c9pas1p9",
+    "summary": "The author criticizes current mathematics education for stifling children's curiosity and creativity by focusing solely on facts and formulas. He believes that math should be taught as an art form, allowing students to explore, create, and appreciate its beauty. The lack of engaging and meaningful mathematical experiences in schools leads to a disconnection from the true essence of mathematics.",
+    "tags": [],
+    "title": "A Mathematician’s Lament",
+    "url": "https://worrydream.com/refs/Lockhart_2002_-_A_Mathematician's_Lament.pdf"
   }
 ]
