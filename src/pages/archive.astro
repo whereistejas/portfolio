@@ -71,11 +71,20 @@ const highlightsByEntry = await Promise.all(
 										{item.data.summary}
 									</span>
 								)}
-								<span class="feed-meta">
-									{[item.data.category, date]
-										.filter(Boolean)
-										.join(" · ")}
-								</span>
+							<span class="feed-meta">
+								{[item.data.category, date]
+									.filter(Boolean)
+									.map((part, i) => (
+										<>
+											{i > 0 && (
+												<span class="text-yellow-700 dark:text-yellow-600">
+													{" · "}
+												</span>
+											)}
+											{part}
+										</>
+									))}
+							</span>
 							</div>
 						))
 					)

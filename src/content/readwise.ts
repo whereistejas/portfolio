@@ -272,7 +272,28 @@ async function fetchAndCacheArchiveItems(): Promise<ProcessedItem[]> {
 	});
 
 	const existing = await loadProcessedCache();
-	const merged = [...existing, ...archiveProcessed];
+	const mergedMap = new Map<string, ProcessedItem>();
+	for (const item of existing) {
+		mergedMap.set(item.readwise_id, item);
+	}
+	for (const item of archiveProcessed) {
+		const cached = mergedMap.get(item.readwise_id);
+		if (cached) {
+			mergedMap.set(item.readwise_id, {
+				...item,
+				tags: cached.tags.length > 0 ? cached.tags : item.tags,
+				display_tags:
+					cached.display_tags.length > 0
+						? cached.display_tags
+						: item.display_tags,
+				summary: cached.summary || item.summary,
+				order: cached.order || item.order,
+			});
+		} else {
+			mergedMap.set(item.readwise_id, item);
+		}
+	}
+	const merged = Array.from(mergedMap.values());
 	await writeJsonCache(PROCESSED_CACHE_PATH, merged);
 	console.log(
 		`[readwise] Cached ${archiveProcessed.length} archive items (${merged.length} total)`
@@ -297,20 +318,102 @@ function processedToArchive(item: ProcessedItem): ReadwiseArchiveItem {
 }
 
 export async function loadReadwiseArchive(): Promise<ReadwiseArchiveItem[]> {
-	const items = await loadProcessedCache();
-	const archive = items.filter((item) => item.location === "archive");
-
-	if (archive.length > 0) {
-		return archive.map(processedToArchive);
+	const token = process.env["READWISE_TOKEN"];
+	if (token) {
+		try {
+			const fetched = await fetchAndCacheArchiveItems();
+			if (fetched.length > 0) {
+				return fetched.map(processedToArchive);
+			}
+		} catch (err) {
+			console.warn(
+				"[readwise] Failed to fetch archive from API, falling back to cache:",
+				err
+			);
+		}
 	}
 
-	const fetched = await fetchAndCacheArchiveItems();
-	return fetched.map(processedToArchive);
+	const items = await loadProcessedCache();
+	const archive = items.filter((item) => item.location === "archive");
+	return archive.map(processedToArchive);
+}
+
+/**
+ * Fetches the current queue item IDs from the API, then merges fresh metadata
+ * (title, url, timestamp) with LLM-enriched fields from the cache. Does NOT
+ * write to the processed cache to avoid racing with the archive loader.
+ */
+async function fetchQueueItems(token: string): Promise<ProcessedItem[]> {
+	console.log("[readwise] Fetching queue items from Readwise API...");
+	const queueItems = await fetchAllReadwiseReaderItems({
+		token,
+		location: "new",
+	});
+
+	const cached = await loadProcessedCache();
+	const cacheMap = new Map<string, ProcessedItem>();
+	for (const item of cached) {
+		cacheMap.set(item.readwise_id, item);
+	}
+
+	return queueItems.map((item) => {
+		const existing = cacheMap.get(item.id);
+		const dateGroup = item.last_moved_at
+			.toLocaleDateString("en-GB", {
+				day: "2-digit",
+				month: "short",
+				year: "numeric",
+			})
+			.replace(/\//g, ".");
+
+		if (existing && existing.location === "new") {
+			return {
+				...existing,
+				title: item.title,
+				url: item.url.href,
+				last_moved_at: item.last_moved_at.toISOString(),
+				date_group: dateGroup,
+			};
+		}
+
+		return {
+			readwise_id: item.id,
+			title: item.title,
+			url: item.url.href,
+			tags: [],
+			display_tags: [],
+			category: item.category ?? "article",
+			location: item.location,
+			last_moved_at: item.last_moved_at.toISOString(),
+			date_group: dateGroup,
+			highlights: [],
+			summary: item.summary,
+			order: 0,
+			needs_summarizing: true,
+			needs_grouping: true,
+		};
+	});
 }
 
 export async function loadReadwiseQueue(): Promise<ReadwiseQueueItem[]> {
-	const items = await loadProcessedCache();
-	const queue = items.filter((item) => item.location === "new");
+	const token = process.env["READWISE_TOKEN"];
+	let queue: ProcessedItem[];
+
+	if (token) {
+		try {
+			queue = await fetchQueueItems(token);
+		} catch (err) {
+			console.warn(
+				"[readwise] Failed to fetch queue from API, falling back to cache:",
+				err
+			);
+			const items = await loadProcessedCache();
+			queue = items.filter((item) => item.location === "new");
+		}
+	} else {
+		const items = await loadProcessedCache();
+		queue = items.filter((item) => item.location === "new");
+	}
 
 	return queue.map((item) => ({
 		id: item.readwise_id,

@@ -37,14 +37,22 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 						{item.data.summary && (
 							<span class="feed-desc">{item.data.summary}</span>
 						)}
-						<span class="feed-tags">
-							{[...item.data.display_tags]
-								.sort((a, b) =>
-									a.toLowerCase().localeCompare(b.toLowerCase())
-								)
-								.map((tag) => tag.toLowerCase())
-								.join(" · ")}
-						</span>
+					<span class="feed-tags">
+						{[...item.data.display_tags]
+							.sort((a, b) =>
+								a.toLowerCase().localeCompare(b.toLowerCase())
+							)
+							.map((tag, i) => (
+								<>
+									{i > 0 && (
+										<span class="text-yellow-700 dark:text-yellow-600">
+											{" · "}
+										</span>
+									)}
+									{tag.toLowerCase()}
+								</>
+							))}
+					</span>
 					</div>
 				))
 			}

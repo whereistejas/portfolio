@@ -65,9 +65,9 @@
 				@apply truncate;
 			}
 
-			.feed-desc {
-				@apply line-clamp-1 opacity-75 text-neutral-600 dark:text-neutral-400;
-			}
+		.feed-desc {
+			@apply line-clamp-2 opacity-75 text-neutral-600 dark:text-neutral-400;
+		}
 
 			.feed-meta {
 				@apply opacity-60 text-neutral-400 dark:text-neutral-500;
@@ -101,7 +101,7 @@
 		}
 
 		aside.archive_highlights_pane .archive_highlights_heading {
-			@apply pb-1 font-semibold tracking-wide text-yellow-700 uppercase dark:text-yellow-600;
+			@apply pb-1 font-semibold tracking-wide text-neutral-600 uppercase dark:text-neutral-400;
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_group {
@@ -132,6 +132,7 @@
 		@apply text-neutral-950 marker:text-yellow-700 dark:text-neutral-100 marker:dark:text-yellow-600;
 		@apply w-full max-w-full;
 
+		--tw-prose-headings: var(--color-neutral-600);
 		--tw-prose-quote-borders: var(--color-yellow-700);
 		--tw-prose-invert-quote-borders: var(--color-yellow-700);
 	}
