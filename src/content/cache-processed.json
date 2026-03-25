@@ -789,7 +789,7 @@
   },
   {
     "category": "article",
-    "date_group": "",
+    "date_group": "24 Mar 2026",
     "display_tags": [
       "books",
       "leadership",
@@ -798,8 +798,8 @@
       "development"
     ],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-03-24T22:42:21.063Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
     "order": 15,
@@ -7390,5 +7390,29 @@
     "tags": [],
     "title": "It’s hard to justify Tahoe icons",
     "url": "https://tonsky.me/blog/tahoe-icons/"
+  },
+  {
+    "category": "pdf",
+    "date_group": "24 Mar 2026",
+    "display_tags": [],
+    "highlights": [
+      "tendentiously",
+      "The first proposition is that a tax on imports is equivalent to a tax on exports. Any restraint on imports also acts, in effect, as a restraint on exports. The converse ofthis proposition is also true: when a government undertakes policies to expand the volume of exports, it cannot help but to expand the volume ofimports as well.",
+      "Ifone can augment the statement that protection will cost consumers more with the message that it will reduce employment in related industries, one has a politically more potent argument.",
+      "One aspect of the answer is that both policies drive domestic resource allocation in the same direction.",
+      "By viewing imports not as final consumer goods but as inputs to U.S. production, policy makers can more clearly recognize that the issue is not so much one of\"sav- ing\" jobs but of \"trading off' jobs between sectors.",
+      "One of the main lessons of international finance is that trade imbalances reflect net capital flows between countries. ... The United States may have a relatively open mar- ket and foreign markets may be more closed, but these facts would not manifest themselves in the trade balance.",
+      "Exports - Imports = Savings - Investment."
+    ],
+    "last_moved_at": "2026-03-24T22:41:28.243Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01jt5n4br6r1q82xmexhcvd6c1",
+    "summary": "Import restrictions can hurt exports because countries need to sell goods to earn money to buy from others. Historically, writers have recognized that exports and imports are closely linked, and limiting imports could lead to reduced exports as well. Trade imbalances often reflect capital flows, and trade policies alone cannot effectively change a country's balance of trade without considering overall savings and investment.",
+    "tags": [],
+    "title": "Three Simple Principles of Trade Policy",
+    "url": "https://readwise.io/reader/document_raw_content/267450121"
   }
 ]
