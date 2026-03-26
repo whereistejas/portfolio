@@ -6,6 +6,11 @@ const { frontmatter } = Astro.props;
 ---
 
 <Page title={frontmatter.title as string}>
+	<link
+		slot="head"
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"
+	/>
 	<Fragment slot="header">
 		<Textorlink content={(frontmatter.title as string).toUpperCase()} />
 	</Fragment>

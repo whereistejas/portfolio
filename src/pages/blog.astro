@@ -31,13 +31,13 @@ posts.sort(
 
 <Page title="Blog">
 	<Fragment slot="header">
-		<Textorlink content="BLOG" />
+		<Textorlink content="BLOG" transitionName="nav-blog" />
 	</Fragment>
 	<Fragment slot="main">
 		<div class="feed">
 			{
-				posts.map((post) => (
-					<a href={post.url} class="feed-item">
+				posts.map((post, idx) => (
+					<a href={post.url} class="feed-item" style={`--i: ${idx}`}>
 						<span class="feed-title">
 							{post.frontmatter.title}
 						</span>
