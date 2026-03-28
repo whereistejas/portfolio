@@ -975,7 +975,7 @@
   },
   {
     "category": "article",
-    "date_group": "",
+    "date_group": "27 Mar 2026",
     "display_tags": [
       "programming",
       "rust",
@@ -984,8 +984,8 @@
       "systems"
     ],
     "highlights": [],
-    "last_moved_at": "2026-03-11T11:59:53.234Z",
-    "location": "new",
+    "last_moved_at": "2026-03-27T23:39:07.232Z",
+    "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
     "order": 59,
@@ -7430,5 +7430,46 @@
     "tags": [],
     "title": "A eulogy for Vim",
     "url": "https://drewdevault.com/2026/03/25/2026-03-25-Forking-vim.html"
+  },
+  {
+    "category": "article",
+    "date_group": "28 Mar 2026",
+    "display_tags": [],
+    "highlights": [
+      "Graphs can be represented by adjacency lists or adjacency matrices.",
+      "Since Rust has no cycle collection of `Rc` pointers, if there is a cycle in your graph, the ref counts will never fall to zero, and the graph will never be deallocated. You can solve this by using `Weak` pointers in your graph or by manually breaking cycles when you know the graph should be destroyed."
+    ],
+    "last_moved_at": "2026-03-28T00:29:42.911Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kmrtmmnkdvvpq73tbtx22076",
+    "summary": "Constructing graphs in Rust can be challenging due to strict lifetime and mutability rules. The recommended approach involves using arena allocation and managing node pointers carefully to avoid cyclic ownership issues. This method allows for mutable graphs where nodes can be reused outside the graph structure, but requires attention to memory management and lifetimes.",
+    "tags": [],
+    "title": "Graphs and arena allocation",
+    "url": "https://github.com/nrc/r4cppp/blob/master/graphs/README.md"
+  },
+  {
+    "category": "article",
+    "date_group": "27 Mar 2026",
+    "display_tags": [],
+    "highlights": [
+      "When deciding whether to implement a tray or full screen flow, we decided to utilise trays for transient actions that don't need to be permanently on display within the app.",
+      "Trays can also function as the starting point for more elaborate flows that ultimately transition to a full screen format.",
+      "By encapsulating complex flows or information within compact, step-by-step trays, we distil *overwhelming actions into manageable interactions*.",
+      "In designing the dynamic tray system, our goal was not just to streamline the user interface but to acknowledge that users deserve an uncluttered and focused experience.\n\nBy presenting information and options as they become relevant, we respect the user's journey and cognitive load. We ensure that Family simplifies actions rather than complicates them.",
+      "Building a great product means respecting not just what someone does, but how they *feel* while doing it."
+    ],
+    "last_moved_at": "2026-03-27T14:49:17.144Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kmmpprcrw358dkrhmf2avk5y",
+    "summary": "The Family app focuses on fluidity and seamless transitions to enhance user experience and keep interactions smooth. It aims to create delightful moments that resonate personally, making the app feel responsive and human. By ensuring every interaction is meaningful, the app respects users' time and intelligence while guiding them effortlessly through their journey.",
+    "tags": [],
+    "title": "Family Values",
+    "url": "https://benji.org/family-values"
   }
 ]
