@@ -16,24 +16,14 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 			{
 				queueEntries.map((item) => (
 					<div class="feed-item">
-						<div class="flex items-baseline gap-0.5">
-							<a
-								href={item.data.url}
-								target="_blank"
-								rel="noopener noreferrer"
-								class="feed-title min-w-0"
-							>
-								{item.data.title}
-							</a>
-							<a
-								href={`https://read.readwise.io/new/read/${item.data.readwise_id}`}
-								target="_blank"
-								rel="noopener noreferrer"
-								class="feed-readwise shrink-0"
-							>
-								Ⓡ
-							</a>
-						</div>
+					<a
+						href={item.data.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="feed-title"
+					>
+						{item.data.title}
+					</a>
 						{item.data.summary && (
 							<span class="feed-desc">{item.data.summary}</span>
 						)}

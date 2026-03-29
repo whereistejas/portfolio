@@ -26,11 +26,20 @@
 	--font-sans: InterVariable, sans-serif;
 	--default-font-feature-settings: "calt", "tnum", "ss03";
 	--spacing: 1rem;
+
+	--color-fg: var(--color-neutral-950);
+	--color-fg-dark: var(--color-neutral-50);
+	--color-fg-muted: var(--color-neutral-600);
+	--color-fg-muted-dark: var(--color-neutral-400);
+	--color-fg-faint: var(--color-neutral-400);
+	--color-fg-faint-dark: var(--color-neutral-500);
+	--color-fg-accent: var(--color-yellow-700);
+	--color-fg-accent-dark: var(--color-yellow-600);
 }
 
 @layer components {
 	body {
-		@apply flex h-dvh flex-col items-center justify-between bg-neutral-50 text-neutral-950 dark:bg-neutral-900 dark:text-neutral-50;
+		@apply flex h-dvh flex-col items-center justify-between bg-neutral-50 text-fg dark:bg-neutral-900 dark:text-fg-dark;
 	}
 
 	header,
@@ -57,24 +66,28 @@
 			@apply transition-colors duration-150;
 			@apply hover:bg-neutral-100 dark:hover:bg-neutral-800/50;
 
+		&a {
+			@apply hover:text-fg hover:dark:text-fg-dark;
+		}
+
 			.feed-title {
 				@apply truncate;
 			}
 
 		.feed-desc {
-			@apply line-clamp-2 opacity-75 text-neutral-600 dark:text-neutral-400;
+			@apply line-clamp-2 opacity-75 text-fg-muted dark:text-fg-muted-dark;
 		}
 
 			.feed-meta {
-				@apply opacity-60 text-neutral-400 dark:text-neutral-500;
+				@apply opacity-60 text-fg-faint dark:text-fg-faint-dark;
 			}
 
 			.feed-readwise {
-				@apply text-yellow-700 dark:text-yellow-600;
+				@apply text-fg-accent dark:text-fg-accent-dark;
 			}
 
 			.feed-tags {
-				@apply opacity-60 text-neutral-400 dark:text-neutral-500;
+				@apply opacity-60 text-fg-faint dark:text-fg-faint-dark;
 			}
 		}
 	}
@@ -93,11 +106,11 @@
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_content {
-			@apply max-h-none overflow-visible opacity-75 text-pretty;
+			@apply max-h-none overflow-visible text-pretty text-fg-muted dark:text-fg-muted-dark;
 		}
 
 		aside.archive_highlights_pane .archive_highlights_heading {
-			@apply pb-1 font-semibold tracking-wide text-neutral-600 uppercase dark:text-neutral-400;
+			@apply pb-1 font-semibold tracking-wide text-fg uppercase dark:text-fg-dark;
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_group {
@@ -110,7 +123,7 @@
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_group ul {
-			@apply flex flex-col gap-1.5;
+			@apply flex flex-col gap-1.5 opacity-75;
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_group li {
@@ -124,17 +137,23 @@
 
 	article.blog-article {
 		@apply prose dark:prose-invert first:pt-1.5 pb-1.5 md:first:pt-2 md:pb-2;
-		@apply text-pretty hyphens-auto;
-		@apply text-neutral-950 marker:text-yellow-700 dark:text-neutral-100 marker:dark:text-yellow-600;
+		@apply text-pretty hyphens-auto text-base;
+		@apply text-fg-muted marker:text-fg-accent dark:text-fg-muted-dark marker:dark:text-fg-accent-dark;
 		@apply w-full max-w-full;
 
-		--tw-prose-headings: var(--color-neutral-600);
-		--tw-prose-invert-headings: var(--color-neutral-400);
-		--tw-prose-quote-borders: var(--color-yellow-700);
-		--tw-prose-invert-quote-borders: var(--color-yellow-700);
+		a {
+			@apply underline underline-offset-2 font-normal;
+		}
+
+		sup { a { @apply no-underline; } }
+
+		--tw-prose-headings: var(--color-fg);
+		--tw-prose-invert-headings: var(--color-fg-dark);
+		--tw-prose-quote-borders: var(--color-fg-accent);
+		--tw-prose-invert-quote-borders: var(--color-fg-accent);
 
 		h1, h2, h3, h4, h5, h6 {
-			@apply text-base uppercase opacity-75;
+			@apply uppercase text-fg dark:text-fg-dark;
 		}
 
 		h3::before { content: "# "; }
@@ -144,7 +163,7 @@
 	}
 
 	a {
-		@apply z-1 text-neutral-950 transition-colors duration-200 ease-in hover:text-neutral-500 dark:text-neutral-50 hover:dark:text-neutral-400;
+		@apply z-1 text-fg transition-colors duration-200 ease-in hover:text-neutral-500 dark:text-fg-dark hover:dark:text-fg-muted-dark;
 	}
 }
 
@@ -169,6 +188,6 @@ html {
 
 	li,
 	p {
-		@apply opacity-60;
+		@apply text-fg-muted dark:text-fg-muted-dark;
 	}
 }
