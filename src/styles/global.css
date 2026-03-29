@@ -46,7 +46,7 @@
 
 	main {
 		@apply flex h-full w-full flex-col px-1 md:w-48 md:max-w-full md:px-0;
-		@apply text-base text-pretty;
+		@apply text-base wrap-break-word;
 	}
 
 	div.feed {
@@ -62,7 +62,7 @@
 			}
 
 		.feed-desc {
-			@apply line-clamp-2 opacity-75 text-neutral-600 dark:text-neutral-400;
+			@apply text-pretty opacity-75 text-neutral-600 dark:text-neutral-400;
 		}
 
 			.feed-meta {
@@ -93,7 +93,7 @@
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_content {
-			@apply max-h-none overflow-visible opacity-75 text-pretty;
+			@apply max-h-none overflow-visible opacity-75 text-neutral-600 dark:text-neutral-400;
 		}
 
 		aside.archive_highlights_pane .archive_highlights_heading {
@@ -124,17 +124,16 @@
 
 	article.blog-article {
 		@apply prose dark:prose-invert first:pt-1.5 pb-1.5 md:first:pt-2 md:pb-2;
-		@apply text-pretty hyphens-auto;
-		@apply text-neutral-950 marker:text-yellow-700 dark:text-neutral-100 marker:dark:text-yellow-600;
+		@apply text-neutral-600 opacity-75 marker:text-yellow-700 dark:text-neutral-400 marker:dark:text-yellow-600;
 		@apply w-full max-w-full;
 
-		--tw-prose-headings: var(--color-neutral-600);
-		--tw-prose-invert-headings: var(--color-neutral-400);
+		--tw-prose-headings: var(--color-neutral-950);
+		--tw-prose-invert-headings: var(--color-neutral-50);
 		--tw-prose-quote-borders: var(--color-yellow-700);
 		--tw-prose-invert-quote-borders: var(--color-yellow-700);
 
 		h1, h2, h3, h4, h5, h6 {
-			@apply text-base uppercase opacity-75;
+			@apply text-base uppercase opacity-100 text-neutral-950 dark:text-neutral-50;
 		}
 
 		h3::before { content: "# "; }
