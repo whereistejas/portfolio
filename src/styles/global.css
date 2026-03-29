@@ -28,6 +28,69 @@
 	--spacing: 1rem;
 }
 
+@keyframes surface {
+	from {
+		opacity: 0;
+		transform: translateY(1rem);
+		filter: blur(2px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+		filter: blur(0);
+	}
+}
+
+@keyframes fade-out {
+	to { opacity: 0; }
+}
+
+@keyframes fade-in {
+	from { opacity: 0; }
+}
+
+@keyframes sink {
+	to {
+		opacity: 0;
+		transform: translateY(1rem);
+		filter: blur(2px);
+	}
+}
+
+/* Shared nav elements: slow-fast-slow easing */
+::view-transition-group(nav-inbox),
+::view-transition-group(nav-blog),
+::view-transition-group(nav-archive),
+::view-transition-group(nav-info) {
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Forward: old page fades out, new page hidden (CSS surface animation handles entry) */
+::view-transition-old(root) {
+	animation: fade-out 0.4s ease-out both;
+}
+::view-transition-new(root) {
+	animation: none;
+	opacity: 0;
+}
+
+/* Back: old page sinks, new page and nav elements fade in after 25% of nav float (125ms) */
+html[data-astro-transition="back"]::view-transition-old(root) {
+	animation: sink 0.4s ease-in both;
+}
+html[data-astro-transition="back"]::view-transition-new(root) {
+	animation: fade-in 0.4s ease-out both;
+	animation-delay: 125ms;
+}
+html[data-astro-transition="back"]::view-transition-new(nav-inbox),
+html[data-astro-transition="back"]::view-transition-new(nav-blog),
+html[data-astro-transition="back"]::view-transition-new(nav-archive),
+html[data-astro-transition="back"]::view-transition-new(nav-info) {
+	animation: fade-in 0.35s ease-out both;
+	animation-delay: 125ms;
+}
+
 @layer components {
 	body {
 		@apply flex h-dvh flex-col items-center justify-between bg-neutral-50 text-neutral-950 dark:bg-neutral-900 dark:text-neutral-50;
@@ -56,6 +119,8 @@
 			@apply flex flex-col gap-0.5 rounded-xl px-1 py-0.75 -mx-1;
 			@apply transition-colors duration-150;
 			@apply hover:bg-neutral-100 dark:hover:bg-neutral-800/50;
+			animation: surface 0.4s ease-out both;
+			animation-delay: calc(min(var(--i, 0), 12) * 60ms);
 
 			.feed-title {
 				@apply truncate;
@@ -107,6 +172,13 @@
 		aside.archive_highlights_pane
 			div.archive_highlights_group[data-active="true"] {
 			@apply block;
+			animation: surface 0.3s ease-out both;
+		}
+
+		aside.archive_highlights_pane
+			div.archive_highlights_group[data-sinking="true"] {
+			@apply block;
+			animation: sink 0.3s ease-in both;
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_group ul {
@@ -124,6 +196,7 @@
 
 	article.blog-article {
 		@apply prose dark:prose-invert first:pt-1.5 pb-1.5 md:first:pt-2 md:pb-2;
+		animation: surface 0.5s ease-out both;
 		@apply text-pretty hyphens-auto;
 		@apply text-neutral-950 marker:text-yellow-700 dark:text-neutral-100 marker:dark:text-yellow-600;
 		@apply w-full max-w-full;

@@ -6,8 +6,8 @@ import Page from "../layouts/page.astro";
 
 <Page title={undefined}>
 	<Fragment slot="header">
-		<Textorlink content="INBOX" href="/inbox" />
-		<Textorlink content="BLOG" href="/blog" />
+		<Textorlink content="INBOX" href="/inbox" transitionName="nav-inbox" />
+		<Textorlink content="BLOG" href="/blog" transitionName="nav-blog" />
 	</Fragment>
 
 	<Fragment slot="main">
@@ -15,7 +15,7 @@ import Page from "../layouts/page.astro";
 	</Fragment>
 
 	<Fragment slot="footer">
-		<Textorlink content="ARCHIVE" href="/archive" />
-		<Textorlink content="INFO" href="/info" />
+		<Textorlink content="ARCHIVE" href="/archive" transitionName="nav-archive" />
+		<Textorlink content="INFO" href="/info" transitionName="nav-info" />
 	</Fragment>
 </Page>

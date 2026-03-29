@@ -9,13 +9,13 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 
 <Page title="Reading Inbox">
 	<Fragment slot="header">
-		<Textorlink content="READING INBOX" />
+		<Textorlink content="INBOX" transitionName="nav-inbox" />
 	</Fragment>
 	<Fragment slot="main">
 		<div class="feed">
 			{
-				queueEntries.map((item) => (
-					<div class="feed-item">
+				queueEntries.map((item, idx) => (
+					<div class="feed-item" style={`--i: ${idx}`}>
 						<div class="flex items-baseline gap-0.5">
 							<a
 								href={item.data.url}

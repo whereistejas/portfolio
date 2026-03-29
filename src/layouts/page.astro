@@ -1,5 +1,5 @@
 ---
-import PostHog from "../components/posthog.astro";
+import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
 
 interface Props {
@@ -11,7 +11,7 @@ const { title } = Astro.props;
 
 <html lang="en">
 	<head>
-		<PostHog />
+		<ClientRouter />
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,10 +40,7 @@ const { title } = Astro.props;
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/site.webmanifest" />
 
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"
-		/>
+		<slot name="head" />
 
 		<title>
 			{title === undefined ? "Tejas Sanap" : `${title} | Tejas Sanap`}
@@ -65,5 +62,6 @@ const { title } = Astro.props;
 		<footer>
 			<slot name="footer" />
 		</footer>
+
 	</body>
 </html>

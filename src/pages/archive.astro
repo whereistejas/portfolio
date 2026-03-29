@@ -42,16 +42,17 @@ const highlightsByEntry = await Promise.all(
 
 <Page title="Reading Archive">
 	<Fragment slot="header">
-		<Textorlink content="READING ARCHIVE" />
+		<Textorlink content="ARCHIVE" transitionName="nav-archive" />
 	</Fragment>
 	<Fragment slot="main">
 		<div class="archive_wrapper" id="archive-wrapper">
 			<div class="feed">
 				{
 					Array.from(itemsByDate.entries()).map(([date, groupItems]) =>
-						groupItems.map((item) => (
+						groupItems.map((item, idx) => (
 							<div
 								class="feed-item"
+								style={`--i: ${idx}`}
 								data-highlight-id={
 									item.data.highlights.length > 0
 										? item.data.readwise_id
@@ -130,6 +131,7 @@ const highlightsByEntry = await Promise.all(
 				const items = Array.from(wrapper.querySelectorAll(".feed-item"));
 				let activeItem = null;
 				let activeId = null;
+				let sinkTimeout = null;
 
 				const setPaneTop = (item) => {
 					const wrapperRect = wrapper.getBoundingClientRect();
@@ -141,16 +143,32 @@ const highlightsByEntry = await Promise.all(
 				const hidePane = () => {
 					activeItem = null;
 					activeId = null;
-					pane.removeAttribute("data-visible");
-					pane.style.removeProperty("top");
-					for (const group of groups) {
-						group.removeAttribute("data-active");
+					const activeGroup = pane.querySelector('[data-active="true"]');
+					if (activeGroup) {
+						activeGroup.setAttribute("data-sinking", "true");
+						sinkTimeout = setTimeout(() => {
+							pane.removeAttribute("data-visible");
+							pane.style.removeProperty("top");
+							for (const group of groups) {
+								group.removeAttribute("data-active");
+								group.removeAttribute("data-sinking");
+							}
+							sinkTimeout = null;
+						}, 300);
+					} else {
+						pane.removeAttribute("data-visible");
+						pane.style.removeProperty("top");
 					}
 				};
 
 				const showPane = (id, item) => {
+					if (sinkTimeout) {
+						clearTimeout(sinkTimeout);
+						sinkTimeout = null;
+					}
 					let hasActiveGroup = false;
 					for (const group of groups) {
+						group.removeAttribute("data-sinking");
 						if (group.dataset.highlightGroup === id) {
 							group.setAttribute("data-active", "true");
 							hasActiveGroup = true;

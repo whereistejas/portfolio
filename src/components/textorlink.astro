@@ -1,8 +1,8 @@
 ---
-const { content, href } = Astro.props;
+const { content, href, transitionName } = Astro.props;
 ---
 
-<div class="inline-block">
+<div class="inline-block" transition:name={transitionName}>
 	<h4>
 		{href ? <a href={href}>{content}</a> : content}
 	</h4>
