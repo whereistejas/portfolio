@@ -111,5 +111,14 @@ import Page from "../layouts/page.astro";
 				<a href="https://www.linkedin.com/in/whereistejas">Linkedin</a>
 			</p>
 		</article>
+		<script>
+			import { initBlogArticlePretext } from "../scripts/pretext-blog-articles";
+
+			async function runBlogPretext() {
+				await initBlogArticlePretext();
+			}
+			void runBlogPretext();
+			document.addEventListener("astro:after-swap", () => void runBlogPretext());
+		</script>
 	</Fragment>
 </Page>

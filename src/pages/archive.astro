@@ -116,94 +116,17 @@ const highlightsByEntry = await Promise.all(
 			</aside>
 		</div>
 
-		<script is:inline>
-			(() => {
-				const wrapper = document.getElementById("archive-wrapper");
-				const pane = document.getElementById("archive-highlights-pane");
-				if (!wrapper || !pane) {
-					return;
-				}
+		<script>
+			import { initArchivePagePretext } from "../scripts/archive-pane-pretext";
 
-				const groups = Array.from(
-					pane.querySelectorAll("[data-highlight-group]")
-				);
-				const items = Array.from(wrapper.querySelectorAll(".feed-item"));
-				let activeItem = null;
-				let activeId = null;
-
-				const setPaneTop = (item) => {
-					const wrapperRect = wrapper.getBoundingClientRect();
-					const itemRect = item.getBoundingClientRect();
-					const top = Math.max(itemRect.top - wrapperRect.top, 0);
-					pane.style.top = `${top}px`;
-				};
-
-				const hidePane = () => {
-					activeItem = null;
-					activeId = null;
-					pane.removeAttribute("data-visible");
-					pane.style.removeProperty("top");
-					for (const group of groups) {
-						group.removeAttribute("data-active");
-					}
-				};
-
-				const showPane = (id, item) => {
-					let hasActiveGroup = false;
-					for (const group of groups) {
-						if (group.dataset.highlightGroup === id) {
-							group.setAttribute("data-active", "true");
-							hasActiveGroup = true;
-						} else {
-							group.removeAttribute("data-active");
-						}
-					}
-
-					if (!hasActiveGroup) {
-						hidePane();
-						return;
-					}
-
-					activeItem = item;
-					activeId = id;
-					pane.setAttribute("data-visible", "true");
-					setPaneTop(item);
-				};
-
-				const refreshPanePosition = () => {
-					if (!activeItem || !activeId) {
-						return;
-					}
-					showPane(activeId, activeItem);
-				};
-
-				for (const item of items) {
-					const activate = () => {
-						const highlightId = item.dataset.highlightId;
-						if (!highlightId) {
-							hidePane();
-							return;
-						}
-						showPane(highlightId, item);
-					};
-
-					item.addEventListener("mouseenter", activate);
-					item.addEventListener("focusin", activate);
-				}
-
-				wrapper.addEventListener("mouseleave", hidePane);
-				wrapper.addEventListener("focusout", (event) => {
-					const nextFocus = event.relatedTarget;
-					if (nextFocus instanceof Node && wrapper.contains(nextFocus)) {
-						return;
-					}
-					hidePane();
-				});
-				window.addEventListener("scroll", refreshPanePosition, {
-					passive: true,
-				});
-				window.addEventListener("resize", refreshPanePosition);
-			})();
+			async function runArchivePretext() {
+				await initArchivePagePretext();
+			}
+			void runArchivePretext();
+			document.addEventListener(
+				"astro:after-swap",
+				() => void runArchivePretext()
+			);
 		</script>
 	</Fragment>
 </Page>
