@@ -44,7 +44,7 @@
 
 	header,
 	footer {
-		@apply flex w-full flex-row justify-between px-1 text-2xl font-semibold tracking-tight md:w-48 md:max-w-full md:px-0;
+		@apply flex w-full flex-row justify-between px-1 text-2xl font-medium tracking-tight md:w-48 md:max-w-full md:px-0;
 	}
 	header {
 		@apply pt-1;
@@ -110,7 +110,7 @@
 		}
 
 		aside.archive_highlights_pane .archive_highlights_heading {
-			@apply pb-1 font-semibold tracking-wide text-fg uppercase dark:text-fg-dark;
+			@apply pb-1 font-medium tracking-wide text-fg uppercase dark:text-fg-dark;
 		}
 
 		aside.archive_highlights_pane div.archive_highlights_group {
@@ -153,7 +153,7 @@
 		--tw-prose-invert-quote-borders: var(--color-fg-accent);
 
 		h1, h2, h3, h4, h5, h6 {
-			@apply uppercase text-fg dark:text-fg-dark;
+			@apply text-base font-medium uppercase text-fg dark:text-fg-dark;
 		}
 
 		h3::before { content: "# "; }
