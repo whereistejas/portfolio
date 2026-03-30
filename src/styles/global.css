@@ -199,6 +199,10 @@
 		@apply m-0 border-l-2 border-neutral-400/75 pl-1;
 	}
 
+	div.feed .feed-highlights-list a {
+		@apply underline underline-offset-2 font-normal;
+	}
+
 	/* ── Highlight item stagger (enter / exit) ────────────────────── */
 
 	div.feed .feed-highlights-body li {
