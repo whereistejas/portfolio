@@ -94,7 +94,7 @@ for (const entry of archiveEntries) {
 													aria-controls={paneId}
 													data-highlight-toggle
 												>
-													{highlightCount} highlights
+													{highlightCount} {highlightCount === 1 ? "highlight" : "highlights"}
 												</button>
 											</span>
 											<div class="feed-highlights-body" id={paneId}>
