@@ -44,7 +44,7 @@
 
 	header,
 	footer {
-		@apply flex w-full flex-row justify-between px-1 text-2xl font-medium tracking-tight md:w-48 md:max-w-full md:px-0;
+		@apply flex w-full flex-row justify-between px-1.5 text-2xl font-medium tracking-tight md:w-48 md:max-w-full md:px-0;
 	}
 	header {
 		@apply pt-1;
@@ -54,32 +54,39 @@
 	}
 
 	main {
-		@apply flex h-full w-full flex-col px-1 md:w-48 md:max-w-full md:px-0;
+		@apply flex h-full w-full flex-col px-1.5 md:w-48 md:max-w-full md:px-0;
 		@apply text-base text-pretty;
 	}
 
 	div.feed {
-		@apply flex flex-col first:pt-1.5 pb-1.5 md:first:pt-2 md:pb-2;
+		@apply flex flex-col pt-1.5 pb-1.5 md:pt-2 md:pb-2;
 
 		.feed-item {
-			@apply flex flex-col gap-0.5 rounded-xl px-1 py-0.75 -mx-1;
+			@apply flex flex-col gap-0.5 rounded-xl px-0.75 py-0.75 -mx-0.75 md:px-1 md:-mx-1;
 			@apply transition-colors duration-150;
-			@apply hover:bg-neutral-100 dark:hover:bg-neutral-800/50;
 
-		&a {
-			@apply hover:text-fg hover:dark:text-fg-dark;
-		}
+			@media (hover: hover) {
+				@apply hover:bg-neutral-100 dark:hover:bg-neutral-800/50;
+			}
 
 			.feed-title {
 				@apply truncate;
 			}
 
-		.feed-desc {
-			@apply line-clamp-2 opacity-75 text-fg-muted dark:text-fg-muted-dark;
-		}
+			.feed-desc {
+				@apply line-clamp-2 opacity-75 text-fg-muted dark:text-fg-muted-dark;
+			}
 
 			.feed-meta {
 				@apply opacity-60 text-fg-faint dark:text-fg-faint-dark;
+			}
+
+			.feed-meta-row {
+				@apply flex min-w-0 flex-row flex-wrap items-center justify-between gap-x-2 gap-y-0.5;
+			}
+
+			.feed-meta-row .feed-meta {
+				@apply min-w-0 flex-1;
 			}
 
 			.feed-readwise {
@@ -92,51 +99,156 @@
 		}
 	}
 
+	/* ── Archive wrapper & overlay scrim ─────────────────────────── */
+
 	div.archive_wrapper {
 		@apply relative w-full;
 	}
 
-	aside.archive_highlights_pane {
-		@apply hidden;
+	div.archive-overlay {
+		@apply fixed inset-0 z-40 bg-transparent pointer-events-none;
+		transition: background-color var(--overlay-duration, 200ms) ease;
 	}
 
-	@media (min-width: 64rem) {
-		aside.archive_highlights_pane[data-visible="true"] {
-			@apply absolute left-full block w-20 pl-4;
+	div.archive-overlay[data-visible="true"] {
+		@apply bg-transparent pointer-events-auto;
+	}
+
+	/* ── Highlight card (wrapper row + card surface) ──────────────── */
+
+	div.feed .feed-item.feed-item--with-highlights {
+		@apply mx-0 rounded-none bg-transparent px-0 py-0 hover:bg-transparent dark:hover:bg-transparent;
+	}
+
+	div.feed .feed-item--with-highlights .feed-item-card {
+		@apply box-border flex flex-col gap-0.5 rounded-xl px-0.75 py-0.75 -mx-0.75 md:px-1 md:-mx-1 bg-transparent;
+		transition: background-color 380ms ease;
+	}
+
+	div.feed .feed-item--with-highlights.feed-item[data-expanded="true"] .feed-item-card {
+		@apply bg-neutral-100 dark:bg-neutral-800/50;
+	}
+
+	@media (hover: hover) {
+		div.feed .feed-item--with-highlights:hover .feed-item-card {
+			@apply bg-neutral-100 dark:bg-neutral-800/50;
+		}
+	}
+
+	div.feed .feed-item--with-highlights.feed-item[data-expanded="true"] {
+		@apply relative z-50;
+	}
+
+	div.feed .feed-item--with-highlights.feed-item[data-expanded="true"] .feed-item-card {
+		@apply overflow-hidden;
+	}
+
+	/* ── Highlight count button ──────────────────────────────────── */
+
+	button.feed-highlight-btn {
+		@apply relative box-border flex shrink-0 justify-end items-center;
+		@apply text-xs font-[460] h-1.25 min-h-1.25 px-0.5 rounded-[2.375rem] font-[inherit];
+		@apply cursor-pointer border border-neutral-300/90 bg-transparent text-fg-faint/60 dark:border-neutral-600 dark:text-fg-faint-dark/60;
+		transition:
+			background-color 0.2s ease,
+			border-color 0.2s ease,
+			color 0.2s ease;
+	}
+
+	button.feed-highlight-btn:focus-visible,
+	div.feed .feed-item[data-expanded="true"] .feed-highlight-btn {
+		@apply bg-neutral-300 text-fg-faint dark:bg-neutral-600 dark:text-fg-faint-dark;
+	}
+
+	@media (hover: hover) {
+		div.feed .feed-item:hover .feed-highlight-btn {
+			@apply bg-neutral-100 dark:bg-neutral-800/50;
 		}
 
-		aside.archive_highlights_pane div.archive_highlights_content {
-			@apply max-h-none overflow-visible text-pretty text-fg-muted dark:text-fg-muted-dark;
+		div.feed .feed-item:hover .feed-highlight-btn:hover,
+		button.feed-highlight-btn:hover {
+			@apply bg-neutral-300 text-fg-faint dark:bg-neutral-600 dark:text-fg-faint-dark;
+		}
+	}
+
+	/* ── Highlights body (collapsible pane) ───────────────────────── */
+
+	div.feed .feed-highlights-body {
+		@apply text-pretty text-fg-muted dark:text-fg-muted-dark max-h-0 opacity-0 overflow-hidden pointer-events-none -mt-0.5;
+		transition:
+			max-height var(--body-duration, 440ms) ease,
+			margin-top var(--body-duration, 440ms) ease,
+			opacity 300ms ease;
+	}
+
+	div.feed .feed-item[data-expanded="true"] .feed-highlights-body[data-open="true"] {
+		@apply max-h-[var(--body-max-h,100rem)] opacity-100 overflow-x-hidden pointer-events-auto mt-0;
+	}
+
+	/* ── Highlight list items & blockquotes ───────────────────────── */
+
+	div.feed .feed-highlights-list {
+		@apply flex flex-col gap-1.5 pt-1 opacity-75;
+	}
+
+	div.feed .feed-highlights-list li {
+		@apply wrap-break-word;
+	}
+
+	div.feed .feed-highlights-list li blockquote {
+		@apply m-0 border-l-2 border-neutral-400/75 pl-1;
+	}
+
+	/* ── Highlight item stagger (enter / exit) ────────────────────── */
+
+	div.feed .feed-highlights-body li {
+		@apply opacity-0 translate-y-0.5;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		div.feed .feed-highlights-body li {
+			transition:
+				opacity 340ms ease,
+				transform 340ms ease;
 		}
 
-		aside.archive_highlights_pane .archive_highlights_heading {
-			@apply pb-1 font-medium tracking-wide text-fg uppercase dark:text-fg-dark;
+		div.feed
+			.feed-item[data-expanded="true"]
+			.feed-highlights-body[data-open="true"]
+			li {
+			@apply opacity-100 translate-y-0;
+			transition-delay: calc(260ms + var(--i, 0) * 42ms);
 		}
 
-		aside.archive_highlights_pane div.archive_highlights_group {
-			@apply hidden;
+		div.feed
+			.feed-item.is-highlight-pane-closing
+			.feed-highlights-body
+			li {
+			@apply opacity-0 translate-y-0;
+			transition-delay: calc(var(--reverse-i, 0) * 44ms);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		div.feed .feed-highlights-body li {
+			@apply opacity-100 transform-none;
 		}
 
-		aside.archive_highlights_pane
-			div.archive_highlights_group[data-active="true"] {
-			@apply block;
+		div.feed .feed-item[data-expanded="true"] .feed-highlights-body[data-open="true"] {
+			transition-delay: 0ms;
 		}
 
-		aside.archive_highlights_pane div.archive_highlights_group ul {
-			@apply flex flex-col gap-1.5 opacity-75;
+		div.feed .feed-item--with-highlights .feed-item-card {
+			transition-duration: 0ms;
 		}
 
-		aside.archive_highlights_pane div.archive_highlights_group li {
-			@apply wrap-break-word;
-		}
-
-		aside.archive_highlights_pane div.archive_highlights_group li blockquote {
-			@apply m-0 border-l-2 border-neutral-400/75 pl-1;
+		div.feed .feed-highlights-body {
+			transition-duration: 0ms;
 		}
 	}
 
 	article.blog-article {
-		@apply prose dark:prose-invert first:pt-1.5 pb-1.5 md:first:pt-2 md:pb-2;
+		@apply prose dark:prose-invert pt-1.5 pb-1.5 md:pt-2 md:pb-2;
 		@apply text-pretty hyphens-auto text-base;
 		@apply text-fg-muted marker:text-fg-accent dark:text-fg-muted-dark marker:dark:text-fg-accent-dark;
 		@apply w-full max-w-full;
@@ -156,6 +268,10 @@
 			@apply text-base font-medium uppercase text-fg dark:text-fg-dark;
 		}
 
+		> :first-child {
+			@apply mt-0;
+		}
+
 		h3::before { content: "# "; }
 		h4::before { content: "## "; }
 		h5::before { content: "### "; }
@@ -163,7 +279,13 @@
 	}
 
 	a {
-		@apply z-1 text-fg transition-colors duration-200 ease-in hover:text-neutral-500 dark:text-fg-dark hover:dark:text-fg-muted-dark;
+		@apply z-1 text-fg transition-colors duration-200 ease-in dark:text-fg-dark;
+
+		@media (hover: hover) {
+			&:not(.feed-item):hover {
+				@apply text-neutral-500 dark:text-fg-muted-dark;
+			}
+		}
 	}
 }
 
