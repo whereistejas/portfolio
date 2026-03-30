@@ -148,12 +148,12 @@ for (const entry of archiveEntries) {
 				/** @type {HTMLButtonElement | null} */
 				let activeButton = null;
 
-				const ENTER_BASE_DELAY_MS = 260;
-				const ENTER_STAGGER_MS = 42;
-				const ENTER_ITEM_MS = 340;
-				const EXIT_STAGGER_MS = 44;
-				const EXIT_ITEM_MS = 280;
-				const EXIT_MIN_MS = 220;
+				const ENTER_BASE_DELAY_MS = 120;
+				const ENTER_STAGGER_MS = 50;
+				const ENTER_ITEM_MS = 400;
+				const EXIT_STAGGER_MS = 40;
+				const EXIT_ITEM_MS = 320;
+				const EXIT_MIN_MS = 280;
 
 				const entryDuration = (count) =>
 					ENTER_BASE_DELAY_MS + Math.max(count - 1, 0) * ENTER_STAGGER_MS + ENTER_ITEM_MS;
@@ -216,6 +216,7 @@ for (const entry of archiveEntries) {
 					if (activeItem && activeItem !== item) closePaneImmediate();
 					activeItem = item;
 					activeButton = button;
+
 					item.setAttribute("data-expanded", "true");
 					button.setAttribute("aria-expanded", "true");
 
