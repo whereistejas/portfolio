@@ -21,8 +21,9 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 							.map((a: string) => a.trim())
 							.filter((a: string) => a && a.toLowerCase() !== "unknown" && !/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(a))
 					)];
+					const displayCategory = category === "epub" ? "book" : category;
 					const sortedTags = [...item.data.display_tags].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
-					const metaParts = [category, dateGroup, ...authors].filter(Boolean);
+					const metaParts = [dateGroup, ...authors].filter(Boolean);
 
 					return (
 						<div class="feed-item">
@@ -38,6 +39,14 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 								<span class="feed-desc">{item.data.summary}</span>
 							)}
 						<span class="feed-meta">
+							{displayCategory && (
+								<span class="hidden md:inline">
+									{displayCategory}
+									<span class="text-yellow-700 dark:text-yellow-600">
+										{" · "}
+									</span>
+								</span>
+							)}
 							{metaParts.map((part, i) => (
 								<>
 									{i > 0 && (

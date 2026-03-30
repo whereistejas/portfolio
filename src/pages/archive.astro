@@ -66,7 +66,8 @@ for (const entry of archiveEntries) {
 									.map((a: string) => a.trim())
 									.filter((a: string) => a && a.toLowerCase() !== "unknown" && !/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(a))
 							)];
-							const metaParts = [category, date, ...authors].filter(Boolean);
+							const displayCategory = category === "epub" ? "book" : category;
+							const metaParts = [date, ...authors].filter(Boolean);
 
 							return (
 								<div
@@ -83,6 +84,12 @@ for (const entry of archiveEntries) {
 											</a>
 											{summary && <span class="feed-desc">{summary}</span>}
 											<span class="feed-meta">
+												{displayCategory && (
+													<span class="hidden md:inline">
+														{displayCategory}
+														<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
+													</span>
+												)}
 												{metaParts.map((part, i) => (
 													<>
 														{i > 0 && (
@@ -119,6 +126,12 @@ for (const entry of archiveEntries) {
 											</a>
 											{summary && <span class="feed-desc">{summary}</span>}
 											<span class="feed-meta">
+												{displayCategory && (
+													<span class="hidden md:inline">
+														{displayCategory}
+														<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
+													</span>
+												)}
 												{metaParts.map((part, i) => (
 													<>
 														{i > 0 && (
