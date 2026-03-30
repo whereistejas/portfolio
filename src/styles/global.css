@@ -161,11 +161,11 @@
 	}
 
 	@media (hover: hover) {
-		div.feed .feed-item:hover .feed-highlight-btn {
+		div.feed .feed-item:not([data-expanded="true"]):hover .feed-highlight-btn {
 			@apply bg-neutral-100 dark:bg-neutral-800/50;
 		}
 
-		div.feed .feed-item:hover .feed-highlight-btn:hover,
+		div.feed .feed-item:not([data-expanded="true"]):hover .feed-highlight-btn:hover,
 		button.feed-highlight-btn:hover {
 			@apply bg-neutral-300 text-fg-faint dark:bg-neutral-600 dark:text-fg-faint-dark;
 		}
