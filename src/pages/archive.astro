@@ -55,13 +55,18 @@ for (const entry of archiveEntries) {
 				{
 					Array.from(itemsByDate.entries()).map(([date, groupItems]) =>
 						groupItems.map((item) => {
-							const { title, url, summary, category, readwise_id, highlights } = item.data;
+							const { title, url, summary, category, readwise_id, highlights, author } = item.data;
 							const hasHighlights = highlights.length > 0;
 							const highlightId = readwise_id;
 							const highlightsHtml = highlightHtmlById.get(highlightId) ?? [];
 							const paneId = `archive-highlights-${highlightId}`;
 							const highlightCount = highlights.length;
-							const metaParts = [category, date].filter(Boolean);
+							const authors = [...new Set(
+								author.split(/\s*[,&]\s*/)
+									.map((a: string) => a.trim())
+									.filter((a: string) => a && a.toLowerCase() !== "unknown" && !/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(a))
+							)];
+							const metaParts = [category, date, ...authors].filter(Boolean);
 
 							return (
 								<div

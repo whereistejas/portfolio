@@ -17,6 +17,14 @@ import {
 	writeJsonCache,
 } from "./utils.ts";
 
+function cleanAuthor(raw: string | null | undefined): string {
+	if (!raw) return "";
+	const trimmed = raw.trim();
+	if (!trimmed || trimmed.toLowerCase() === "unknown") return "";
+	if (/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(trimmed)) return "";
+	return trimmed;
+}
+
 function normalizeUrlForJoin(input: string): string {
 	try {
 		const url = new URL(input);
@@ -121,6 +129,7 @@ async function fetchAllReadwiseReaderItems(
 				last_moved_at: new Date(doc.last_moved_at),
 				title: doc.title,
 				summary: doc.summary,
+				author: cleanAuthor(doc.author),
 				location: doc.location as ReadwiseLocation,
 				category: doc.category as ReadwiseCategory,
 			});
@@ -159,6 +168,7 @@ export async function buildUnfinishedProcessedCache(
 			last_moved_at: item.last_moved_at.toISOString(),
 			title: item.title,
 			summary: item.summary,
+			author: item.author ?? "",
 			location: item.location,
 			category: item.category ?? "",
 		})),
@@ -193,6 +203,7 @@ export async function buildUnfinishedProcessedCache(
 			date_group: dateGroup,
 			highlights,
 			summary: isQueueArticle ? item.summary : "",
+			author: item.author ?? "",
 			order: 0,
 			needs_summarizing: isQueueArticle,
 			needs_grouping: isQueueArticle,
@@ -265,6 +276,7 @@ async function fetchAndCacheArchiveItems(): Promise<ProcessedItem[]> {
 			date_group: dateGroup,
 			highlights,
 			summary: item.summary,
+			author: item.author ?? "",
 			order: 0,
 			needs_summarizing: false,
 			needs_grouping: false,
@@ -287,6 +299,7 @@ async function fetchAndCacheArchiveItems(): Promise<ProcessedItem[]> {
 						? cached.display_tags
 						: item.display_tags,
 				summary: cached.summary || item.summary,
+				author: cached.author || item.author,
 				order: cached.order || item.order,
 			});
 		} else {
@@ -310,6 +323,7 @@ function processedToArchive(item: ProcessedItem): ReadwiseArchiveItem {
 		url: item.url,
 		last_moved_at: new Date(item.last_moved_at),
 		summary: item.summary,
+		author: item.author,
 		location: item.location,
 		category: item.category,
 		dateGroup: item.date_group,
@@ -388,6 +402,7 @@ async function fetchQueueItems(token: string): Promise<ProcessedItem[]> {
 			date_group: dateGroup,
 			highlights: [],
 			summary: item.summary,
+			author: item.author ?? "",
 			order: 0,
 			needs_summarizing: true,
 			needs_grouping: true,
@@ -422,6 +437,9 @@ export async function loadReadwiseQueue(): Promise<ReadwiseQueueItem[]> {
 		url: item.url,
 		display_tags: item.display_tags,
 		summary: item.summary,
+		author: item.author,
+		category: item.category,
+		dateGroup: item.date_group,
 		order: item.order,
 	}));
 }

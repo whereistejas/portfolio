@@ -14,37 +14,58 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 	<Fragment slot="main">
 		<div class="feed">
 			{
-				queueEntries.map((item) => (
-					<div class="feed-item">
-					<a
-						href={item.data.url}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="feed-title"
-					>
-						{item.data.title}
-					</a>
-						{item.data.summary && (
-							<span class="feed-desc">{item.data.summary}</span>
-						)}
-					<span class="feed-tags">
-						{[...item.data.display_tags]
-							.sort((a, b) =>
-								a.toLowerCase().localeCompare(b.toLowerCase())
-							)
-							.map((tag, i) => (
+				queueEntries.map((item) => {
+					const { author, category, dateGroup } = item.data;
+					const authors = [...new Set(
+						author.split(/\s*[,&]\s*/)
+							.map((a: string) => a.trim())
+							.filter((a: string) => a && a.toLowerCase() !== "unknown" && !/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(a))
+					)];
+					const sortedTags = [...item.data.display_tags].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+					const metaParts = [category, dateGroup, ...authors].filter(Boolean);
+
+					return (
+						<div class="feed-item">
+						<a
+							href={item.data.url}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="feed-title"
+						>
+							{item.data.title}
+						</a>
+							{item.data.summary && (
+								<span class="feed-desc">{item.data.summary}</span>
+							)}
+						<span class="feed-meta">
+							{metaParts.map((part, i) => (
 								<>
 									{i > 0 && (
 										<span class="text-yellow-700 dark:text-yellow-600">
 											{" · "}
 										</span>
 									)}
-									{tag.toLowerCase()}
+									{part}
 								</>
 							))}
-					</span>
-					</div>
-				))
+						</span>
+						{sortedTags.length > 0 && (
+							<span class="feed-tags">
+								{sortedTags.map((tag, i) => (
+									<>
+										{i > 0 && (
+											<span class="text-yellow-700 dark:text-yellow-600">
+												{" · "}
+											</span>
+										)}
+										{tag.toLowerCase()}
+									</>
+								))}
+							</span>
+						)}
+						</div>
+					);
+				})
 			}
 		</div>
 	</Fragment>

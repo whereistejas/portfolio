@@ -28,6 +28,7 @@ export const readwiseApiDocumentSchema = z.object({
 	last_moved_at: z.string(),
 	title: z.string(),
 	summary: z.string(),
+	author: z.string().nullable(),
 	location: readwiseLocationSchema,
 	category: readwiseCategorySchema,
 });
@@ -55,6 +56,7 @@ export const rawCacheItemSchema = z.object({
 	last_moved_at: z.string(),
 	title: z.string(),
 	summary: z.string(),
+	author: z.string(),
 	location: readwiseLocationSchema,
 	category: z.string(),
 });
@@ -75,6 +77,7 @@ export const processedItemSchema = z.object({
 	date_group: z.string(),
 	highlights: z.array(z.string()),
 	summary: z.string(),
+	author: z.string(),
 	order: z.number(),
 	needs_summarizing: z.boolean().default(false),
 	needs_grouping: z.boolean().default(false),
@@ -88,6 +91,7 @@ export const readwiseArchiveSchema = z.object({
 	url: z.string(),
 	last_moved_at: z.date(),
 	summary: z.string(),
+	author: z.string(),
 	location: z.string(),
 	category: z.string(),
 	dateGroup: z.string(),
@@ -102,6 +106,9 @@ export const readwiseQueueSchema = z.object({
 	url: z.string(),
 	display_tags: z.array(z.string()),
 	summary: z.string(),
+	author: z.string(),
+	category: z.string(),
+	dateGroup: z.string(),
 	order: z.number(),
 });
 export type ReadwiseQueueItem = z.infer<typeof readwiseQueueSchema>;
@@ -112,6 +119,7 @@ export type ReadwiseItem = {
 	last_moved_at: Date;
 	title: string;
 	summary: string;
+	author: string;
 	location: ReadwiseLocation;
 	category?: ReadwiseCategory;
 };
