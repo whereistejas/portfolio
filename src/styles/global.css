@@ -78,15 +78,7 @@
 			}
 
 			.feed-meta {
-				@apply opacity-60 text-fg-faint dark:text-fg-faint-dark;
-			}
-
-			.feed-meta-row {
-				@apply flex min-w-0 flex-row flex-wrap items-center justify-between gap-x-2 gap-y-0.5;
-			}
-
-			.feed-meta-row .feed-meta {
-				@apply min-w-0 flex-1;
+				@apply text-fg-faint/60 dark:text-fg-faint-dark/60;
 			}
 
 			.feed-readwise {
@@ -146,28 +138,20 @@
 	/* ── Highlight count button ──────────────────────────────────── */
 
 	button.feed-highlight-btn {
-		@apply relative box-border flex shrink-0 justify-end items-center;
-		@apply text-xs font-[460] h-1.25 min-h-1.25 px-0.5 rounded-[2.375rem] font-[inherit];
-		@apply cursor-pointer border border-neutral-300/90 bg-transparent text-fg-faint/60 dark:border-neutral-600 dark:text-fg-faint-dark/60;
+		@apply inline cursor-pointer border-0 bg-transparent p-0 font-[inherit] text-[inherit] rounded-sm;
 		transition:
 			background-color 0.2s ease,
-			border-color 0.2s ease,
 			color 0.2s ease;
 	}
 
 	button.feed-highlight-btn:focus-visible,
 	div.feed .feed-item[data-expanded="true"] .feed-highlight-btn {
-		@apply bg-neutral-300 text-fg-faint dark:bg-neutral-600 dark:text-fg-faint-dark;
+		@apply text-fg-muted dark:text-fg-muted-dark;
 	}
 
 	@media (hover: hover) {
-		div.feed .feed-item:not([data-expanded="true"]):hover .feed-highlight-btn {
-			@apply bg-neutral-100 dark:bg-neutral-800/50;
-		}
-
-		div.feed .feed-item:not([data-expanded="true"]):hover .feed-highlight-btn:hover,
 		button.feed-highlight-btn:hover {
-			@apply bg-neutral-300 text-fg-faint dark:bg-neutral-600 dark:text-fg-faint-dark;
+			@apply text-fg-muted dark:text-fg-muted-dark;
 		}
 	}
 

@@ -77,17 +77,16 @@ for (const entry of archiveEntries) {
 												{title}
 											</a>
 											{summary && <span class="feed-desc">{summary}</span>}
-											<div class="feed-meta-row">
-												<span class="feed-meta">
-													{metaParts.map((part, i) => (
-														<>
-															{i > 0 && (
-																<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
-															)}
-															{part}
-														</>
-													))}
-												</span>
+											<span class="feed-meta">
+												{metaParts.map((part, i) => (
+													<>
+														{i > 0 && (
+															<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
+														)}
+														{part}
+													</>
+												))}
+												<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
 												<button
 													type="button"
 													class="feed-highlight-btn"
@@ -95,9 +94,9 @@ for (const entry of archiveEntries) {
 													aria-controls={paneId}
 													data-highlight-toggle
 												>
-													{highlightCount}
+													{highlightCount} highlights
 												</button>
-											</div>
+											</span>
 											<div class="feed-highlights-body" id={paneId}>
 												<ul class="feed-highlights-list">
 													{highlightsHtml.map((html, i, arr) => (
