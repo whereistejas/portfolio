@@ -7,7 +7,9 @@
 	font-style: normal;
 	font-weight: 100 900;
 	font-display: swap;
-	font-feature-settings: 'liga' 1, 'calt' 1;
+	font-feature-settings:
+		"liga" 1,
+		"calt" 1;
 	src: url("/InterVariable.woff2") format("woff2");
 }
 @font-face {
@@ -15,11 +17,15 @@
 	font-style: italic;
 	font-weight: 100 900;
 	font-display: swap;
-	font-feature-settings: 'liga' 1, 'calt' 1;
+	font-feature-settings:
+		"liga" 1,
+		"calt" 1;
 	src: url("/InterVariable-Italic.woff2") format("woff2");
 }
 @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
+	:root {
+		font-family: InterVariable, sans-serif;
+	}
 }
 
 @theme {
@@ -39,7 +45,7 @@
 
 @layer components {
 	body {
-		@apply flex h-dvh flex-col items-center justify-between bg-neutral-50 text-fg dark:bg-neutral-900 dark:text-fg-dark;
+		@apply text-fg dark:text-fg-dark flex h-dvh flex-col items-center justify-between bg-neutral-50 dark:bg-neutral-900;
 	}
 
 	header,
@@ -62,7 +68,7 @@
 		@apply flex flex-col pt-1.5 pb-1.5 md:pt-2 md:pb-2;
 
 		.feed-item {
-			@apply flex flex-col gap-0.5 rounded-xl px-0.75 py-0.75 -mx-0.75 md:px-1 md:-mx-1;
+			@apply -mx-0.75 flex flex-col gap-0.5 rounded-xl px-0.75 py-0.75 md:-mx-1 md:px-1;
 			@apply transition-colors duration-150;
 
 			@media (hover: hover) {
@@ -74,7 +80,7 @@
 			}
 
 			.feed-desc {
-				@apply line-clamp-2 opacity-75 text-fg-muted dark:text-fg-muted-dark;
+				@apply text-fg-muted dark:text-fg-muted-dark line-clamp-2 opacity-75;
 				max-height: 3.2em;
 				transition: max-height 400ms ease;
 			}
@@ -88,7 +94,7 @@
 			}
 
 			.feed-tags {
-				@apply opacity-60 text-fg-faint dark:text-fg-faint-dark;
+				@apply text-fg-faint dark:text-fg-faint-dark opacity-60;
 			}
 		}
 	}
@@ -100,12 +106,12 @@
 	}
 
 	div.archive-overlay {
-		@apply fixed inset-0 z-40 bg-transparent pointer-events-none;
+		@apply pointer-events-none fixed inset-0 z-40 bg-transparent;
 		transition: background-color var(--overlay-duration, 200ms) ease;
 	}
 
 	div.archive-overlay[data-visible="true"] {
-		@apply bg-transparent pointer-events-auto;
+		@apply pointer-events-auto bg-transparent;
 	}
 
 	/* ── Highlight card (wrapper row + card surface) ──────────────── */
@@ -115,11 +121,13 @@
 	}
 
 	div.feed .feed-item--with-highlights .feed-item-card {
-		@apply box-border flex flex-col gap-0.5 rounded-xl px-0.75 py-0.75 -mx-0.75 md:px-1 md:-mx-1 bg-transparent;
+		@apply -mx-0.75 box-border flex flex-col gap-0.5 rounded-xl bg-transparent px-0.75 py-0.75 md:-mx-1 md:px-1;
 		transition: background-color 380ms ease;
 	}
 
-	div.feed .feed-item--with-highlights.feed-item[data-expanded="true"] .feed-item-card {
+	div.feed
+		.feed-item--with-highlights.feed-item[data-expanded="true"]
+		.feed-item-card {
 		@apply bg-neutral-100 dark:bg-neutral-800/50;
 	}
 
@@ -133,11 +141,15 @@
 		@apply relative z-50;
 	}
 
-	div.feed .feed-item--with-highlights.feed-item[data-expanded="true"] .feed-item-card {
+	div.feed
+		.feed-item--with-highlights.feed-item[data-expanded="true"]
+		.feed-item-card {
 		@apply overflow-hidden;
 	}
 
-	div.feed .feed-item[data-expanded="true"]:not(.is-highlight-pane-closing) .feed-desc {
+	div.feed
+		.feed-item[data-expanded="true"]:not(.is-highlight-pane-closing)
+		.feed-desc {
 		-webkit-line-clamp: unset;
 		max-height: 20rem;
 	}
@@ -145,7 +157,7 @@
 	/* ── Highlight count button ──────────────────────────────────── */
 
 	button.feed-highlight-btn {
-		@apply inline cursor-pointer border-0 bg-transparent p-0 font-[inherit] text-[inherit] rounded-sm;
+		@apply inline cursor-pointer rounded-sm border-0 bg-transparent p-0 font-[inherit] text-[inherit];
 		transition:
 			background-color 0.2s ease,
 			color 0.2s ease;
@@ -154,6 +166,13 @@
 	button.feed-highlight-btn:focus-visible,
 	div.feed .feed-item[data-expanded="true"] .feed-highlight-btn {
 		@apply text-fg-muted dark:text-fg-muted-dark;
+	}
+
+	div.feed
+		.feed-item[data-expanded="true"].is-highlight-pane-closing
+		.feed-highlight-btn {
+		color: inherit;
+		transition: color var(--body-duration, 320ms) ease;
 	}
 
 	@media (hover: hover) {
@@ -165,14 +184,16 @@
 	/* ── Highlights body (collapsible pane) ───────────────────────── */
 
 	div.feed .feed-highlights-body {
-		@apply text-pretty text-fg-muted dark:text-fg-muted-dark max-h-0 opacity-0 overflow-hidden pointer-events-none -mt-0.5;
+		@apply text-fg-muted dark:text-fg-muted-dark pointer-events-none -mt-0.5 max-h-0 overflow-hidden text-pretty opacity-0;
 		transition:
 			max-height var(--body-duration, 440ms) ease,
 			opacity 300ms ease;
 	}
 
-	div.feed .feed-item[data-expanded="true"] .feed-highlights-body[data-open="true"] {
-		@apply max-h-[var(--body-max-h,100rem)] opacity-100 overflow-x-hidden pointer-events-auto mt-0;
+	div.feed
+		.feed-item[data-expanded="true"]
+		.feed-highlights-body[data-open="true"] {
+		@apply pointer-events-auto mt-0 max-h-[var(--body-max-h,100rem)] overflow-x-hidden opacity-100;
 	}
 
 	/* ── Highlight list items & blockquotes ───────────────────────── */
@@ -190,7 +211,7 @@
 	}
 
 	div.feed .feed-highlights-list a {
-		@apply underline underline-offset-2 font-normal;
+		@apply font-normal underline underline-offset-2;
 	}
 
 	/* ── Highlight item stagger (enter / exit) ────────────────────── */
@@ -212,10 +233,7 @@
 			transition-delay: calc(120ms + var(--i, 0) * 50ms);
 		}
 
-		div.feed
-			.feed-item.is-highlight-pane-closing
-			.feed-highlights-body
-			li {
+		div.feed .feed-item.is-highlight-pane-closing .feed-highlights-body li {
 			@apply opacity-0;
 			transition: opacity 320ms ease;
 			transition-delay: calc(var(--reverse-i, 0) * 40ms);
@@ -227,7 +245,9 @@
 			@apply opacity-100;
 		}
 
-		div.feed .feed-item[data-expanded="true"] .feed-highlights-body[data-open="true"] {
+		div.feed
+			.feed-item[data-expanded="true"]
+			.feed-highlights-body[data-open="true"] {
 			transition-delay: 0ms;
 		}
 
@@ -242,41 +262,58 @@
 
 	article.blog-article {
 		@apply prose dark:prose-invert pt-1.5 pb-1.5 md:pt-2 md:pb-2;
-		@apply text-pretty hyphens-auto text-base;
+		@apply text-base text-pretty hyphens-auto;
 		@apply text-fg-muted marker:text-fg-accent dark:text-fg-muted-dark marker:dark:text-fg-accent-dark;
 		@apply w-full max-w-full;
 
 		a {
-			@apply underline underline-offset-2 font-normal;
+			@apply font-normal underline underline-offset-2;
 		}
 
-		sup { a { @apply no-underline; } }
+		sup {
+			a {
+				@apply no-underline;
+			}
+		}
 
 		--tw-prose-headings: var(--color-fg);
 		--tw-prose-invert-headings: var(--color-fg-dark);
 		--tw-prose-quote-borders: var(--color-fg-accent);
 		--tw-prose-invert-quote-borders: var(--color-fg-accent);
 
-		h1, h2, h3, h4, h5, h6 {
-			@apply text-base font-medium uppercase text-fg dark:text-fg-dark;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			@apply text-fg dark:text-fg-dark text-base font-medium uppercase;
 		}
 
 		> :first-child {
 			@apply mt-0;
 		}
 
-		h3::before { content: "# "; }
-		h4::before { content: "## "; }
-		h5::before { content: "### "; }
-		h6::before { content: "#### "; }
+		h3::before {
+			content: "# ";
+		}
+		h4::before {
+			content: "## ";
+		}
+		h5::before {
+			content: "### ";
+		}
+		h6::before {
+			content: "#### ";
+		}
 	}
 
 	a {
-		@apply z-1 text-fg transition-colors duration-200 ease-in dark:text-fg-dark;
+		@apply text-fg dark:text-fg-dark z-1 transition-colors duration-200 ease-in;
 
 		@media (hover: hover) {
 			&:not(.feed-item):hover {
-				@apply text-neutral-500 dark:text-fg-muted-dark;
+				@apply dark:text-fg-muted-dark text-neutral-500;
 			}
 		}
 	}

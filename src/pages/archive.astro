@@ -191,6 +191,7 @@ for (const entry of archiveEntries) {
 
 				const clearOpenState = (item, body, btn) => {
 					item.removeAttribute("data-expanded");
+					item.style.removeProperty("--body-duration");
 					overlay.removeAttribute("data-visible");
 					item.classList.remove("is-highlight-pane-closing");
 					if (body) {
@@ -219,6 +220,7 @@ for (const entry of archiveEntries) {
 					const ms = exitDuration(count);
 
 					setDurations(ms, body, ms);
+					item.style.setProperty("--body-duration", ms + "ms");
 					item.classList.add("is-highlight-pane-closing");
 					overlay.removeAttribute("data-visible");
 					if (body) body.removeAttribute("data-open");
