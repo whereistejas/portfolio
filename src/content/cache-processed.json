@@ -7153,7 +7153,7 @@
     "readwise_id": "01kdf16nfa5xqk708sz4csg4zp",
     "summary": "Studying history helps us understand that events often don't go as planned, and actions can have unintended consequences. It teaches humility and encourages us to approach problems with caution, rather than aggression. By learning from the past, we can avoid repeating mistakes and better navigate present challenges.",
     "tags": [],
-    "title": "Does It Help to Know History? | The New Yorker",
+    "title": "Does It Help to Know History?",
     "url": "https://www.newyorker.com/news/daily-comment/help-know-history"
   },
   {
@@ -7174,7 +7174,7 @@
     "readwise_id": "01kcar3a4cj8xwzfwycy0b57aj",
     "summary": "Quitting social media helped the author finish work but did not make him read many more books. The internet changes how we find and choose books, often making reading more efficient but narrower. Online communities can both broaden access and create filter bubbles that replace slower, shared reading experiences.",
     "tags": [],
-    "title": "If You Quit Social Media, Will You Read More Books? | The New Yorker",
+    "title": "If You Quit Social Media, Will You Read More Books?",
     "url": "https://www.newyorker.com/news/fault-lines/if-you-quit-social-media-will-you-read-more-books?utm_source=nl&utm_brand=tny&utm_mailing=TNY_Daily_120925&utm_campaign=aud-dev&utm_medium=email&utm_term=tny_daily_digest&bxid=5bd66fd02ddf9c6194389d0a&cndid=22300418&hasha=268e3cc9cd4f93e81125ff99bc15edb0&hashb=f8df4272800edcc1fe2e8ce7e5c53aa6c2b79fe9&hashc=5906abdd2530ce567de22e52d1c561df763a24583893148a04c39e9a87bfced3&esrc=AUTO_OTHER"
   },
   {
@@ -7193,5 +7193,22 @@
     "tags": [],
     "title": "The Bet On Juniors Just Got Better",
     "url": "https://tidyfirst.substack.com/p/the-bet-on-juniors-just-got-better?r=1gvqcg&utm_medium=ios&triedRedirect=true"
+  },
+  {
+    "author": "https://indieweb.social/@tg",
+    "category": "article",
+    "date_group": "01 Apr 2026",
+    "display_tags": [],
+    "highlights": [],
+    "last_moved_at": "2026-04-01T23:29:01.191Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01khvej1h4eww1mqda8d91xy3w",
+    "summary": "RSS readers copied email's inbox design, making unread counts feel like real obligations. This causes guilt over articles, even though no one is truly waiting for a response. Interfaces shape how we feel, and maybe we should find new ways to experience content without phantom pressure.",
+    "tags": [],
+    "title": "PHANTOM OBLIGATION",
+    "url": "https://www.terrygodier.com/phantom-obligation/ascii"
   }
 ]
