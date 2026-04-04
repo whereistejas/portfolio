@@ -7197,10 +7197,10 @@
   {
     "author": "https://indieweb.social/@tg",
     "category": "article",
-    "date_group": "01 Apr 2026",
+    "date_group": "31 Mar 2026",
     "display_tags": [],
     "highlights": [],
-    "last_moved_at": "2026-04-01T23:29:01.191Z",
+    "last_moved_at": "2026-03-31T17:19:59.461Z",
     "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
@@ -7210,5 +7210,22 @@
     "tags": [],
     "title": "PHANTOM OBLIGATION",
     "url": "https://www.terrygodier.com/phantom-obligation/ascii"
+  },
+  {
+    "author": "Sam Rinko",
+    "category": "article",
+    "date_group": "03 Apr 2026",
+    "display_tags": [],
+    "highlights": [],
+    "last_moved_at": "2026-04-03T16:55:12.205Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kj3rg2kwh3jgq8bp17smp76s",
+    "summary": "Reading hard books is tough because the benefits are often invisible and slow to show. Creative intellectual projects, like writing essays or joining discussions, make reading feel rewarding and motivate you to keep going. These projects also help you remember what you read and turn reading into a fun, fulfilling habit.",
+    "tags": [],
+    "title": "How to make yourself crave hard books (not just want to want to read them)",
+    "url": "https://samuelrinko.substack.com/p/how-to-make-yourself-want-to-read"
   }
 ]
