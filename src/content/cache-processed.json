@@ -7214,10 +7214,13 @@
   {
     "author": "Sam Rinko",
     "category": "article",
-    "date_group": "03 Apr 2026",
+    "date_group": "31 Mar 2026",
     "display_tags": [],
-    "highlights": [],
-    "last_moved_at": "2026-04-03T16:55:12.205Z",
+    "highlights": [
+      "Attach your reading to exciting, creative intellectual projects. A project is one of the best ways to increase a book’s gravitational pull on your psyche.",
+      "After all, doing an intellectual creative project is a form of [self-testing](https://www.inc.com/jeff-haden/cognitive-science-says-this-is-the-best-way-to-learn-faster-increase-recall-and-improve-your-memory/91247591)—one of the best learning techniques for moving information into your long-term memory."
+    ],
+    "last_moved_at": "2026-03-31T17:25:33.441Z",
     "location": "archive",
     "needs_grouping": false,
     "needs_summarizing": false,
@@ -7227,5 +7230,42 @@
     "tags": [],
     "title": "How to make yourself crave hard books (not just want to want to read them)",
     "url": "https://samuelrinko.substack.com/p/how-to-make-yourself-want-to-read"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "31 Mar 2026",
+    "display_tags": [],
+    "highlights": [],
+    "last_moved_at": "2026-03-31T17:32:05.930Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kkp3wc7pj4xhn4xt09n0ddyv",
+    "summary": "The author loves Grist because it uses open sqlite files that you truly own and can edit anytime. Grist supports collaboration and data control better than many similar tools. Although not perfect, it offers strong data freedom and long-term trustworthiness.",
+    "tags": [],
+    "title": "A Love Letter to Grist",
+    "url": "https://alsuren.github.io/2026/03/09/a-love-letter-to-grist"
+  },
+  {
+    "author": "Bram Adams",
+    "category": "article",
+    "date_group": "31 Mar 2026",
+    "display_tags": [],
+    "highlights": [
+      "lambasted",
+      "freneticism"
+    ],
+    "last_moved_at": "2026-03-31T17:31:45.511Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kjrc6zrq4n05xsnk0wjh981a",
+    "summary": "Readers fall into three groups based on books read per year: lower, middle, and upper class. Consistent reading habit (inertia) matters more than reading many books quickly (density). Being an upper class reader broadens your knowledge and builds mental focus over time.",
+    "tags": [],
+    "title": "Issue 45: Is Being Well Read Actually A Thing? Pt II: The Upper Class of Readers",
+    "url": "https://www.bramadams.dev/issue-45/"
   }
 ]
