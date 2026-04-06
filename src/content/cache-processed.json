@@ -7284,5 +7284,28 @@
     "tags": [],
     "title": "Eight years of wanting, three months of building with AI",
     "url": "https://lalitm.com/post/building-syntaqlite-ai/#sn-ref-wadler-lindig"
+  },
+  {
+    "author": "Francisco J. M. Mojica, Roger A. Garrett",
+    "category": "pdf",
+    "date_group": "06 Apr 2026",
+    "display_tags": [],
+    "highlights": [
+      "In addition, a literature survey revealed that viruses and plasmids harbouring the protospacers did not infect hosts carrying matching CRISPR spacers (Mojica et al. 2005). Moreover, it was shown that when such viruses were integrated as proviruses in genomes carrying matching spacers, the corresponding protospacer was either altered in sequence or absent. All these lines of evidence provided the basis for the hypothesis that CRISPR arrays are constituents of an adaptable defence system that confers speciﬁc immunity against invading DNA elements by a novel defence mechanism",
+      "Remarkably, phage-insensitive mutants could be selected during these experiments, implying that a reciprocal adaptation between CRISPR and targeted virus populations may occur.",
+      "Importantly, these genes were absent from genomes lacking CRISPR ... loci.",
+      "homologous",
+      "Apart from immunity, recent reports appear to implicate CRISPR-Cas systems in other cellular functions including DNA-repair in E. coli"
+    ],
+    "last_moved_at": "2026-04-06T22:15:48.976Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01knck7cpz6ayt8g8427fa6ntq",
+    "summary": "CRISPR systems were discovered in bacteria and archaea in the late 1980s and early 1990s. They consist of repeating DNA sequences, spacers, and Cas proteins that work together to defend against invading genetic elements. Over time, scientists have uncovered how these components function and vary across different species.",
+    "tags": [],
+    "title": "Discovery And Seminal Developments In The Crispr Field",
+    "url": "https://readwise.io/reader/document_raw_content/440544057"
   }
 ]
