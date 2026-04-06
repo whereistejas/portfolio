@@ -7232,7 +7232,7 @@
     "url": "https://samuelrinko.substack.com/p/how-to-make-yourself-want-to-read"
   },
   {
-    "author": "",
+    "author": "David Laban",
     "category": "article",
     "date_group": "31 Mar 2026",
     "display_tags": [],
@@ -7267,5 +7267,22 @@
     "tags": [],
     "title": "Issue 45: Is Being Well Read Actually A Thing? Pt II: The Upper Class of Readers",
     "url": "https://www.bramadams.dev/issue-45/"
+  },
+  {
+    "author": "Lalit Maganti",
+    "category": "article",
+    "date_group": "05 Apr 2026",
+    "display_tags": [],
+    "highlights": [],
+    "last_moved_at": "2026-04-05T19:38:30.722Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01knfjencc01btr2655pev1ajp",
+    "summary": "AI helped the author build a complex project quickly by generating lots of code and speeding research. However, AI struggled with design and caused confusion, so the author had to guide and fix many parts manually. Overall, AI is great for coding but cannot replace careful planning and decision-making.",
+    "tags": [],
+    "title": "Eight years of wanting, three months of building with AI",
+    "url": "https://lalitm.com/post/building-syntaqlite-ai/#sn-ref-wadler-lindig"
   }
 ]
