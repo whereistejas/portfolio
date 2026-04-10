@@ -1,4 +1,4 @@
-import React, {
+import {
 	useState,
 	useCallback,
 	useMemo,
@@ -47,7 +47,7 @@ const instantVariants = {
 	exit: { opacity: 1 },
 };
 
-/* ── Separator ──────────────────────────────────────────────────── */
+/* ── Separator ───────────────────────────────────────────────────── */
 
 function Dot() {
 	return (
@@ -148,9 +148,7 @@ export default function HighlightsAccordion({
 	const reducedMotion = useReducedMotion();
 	const rootRef = useRef<HTMLDivElement>(null);
 
-	const toggle = useCallback(() => {
-		setIsOpen((prev) => !prev);
-	}, []);
+	const toggle = useCallback(() => setIsOpen((prev) => !prev), []);
 
 	useEffect(() => {
 		const feedItem = rootRef.current?.closest(".feed-item");
@@ -201,10 +199,10 @@ export default function HighlightsAccordion({
 					</>
 				)}
 				{metaParts.map((part, i) => (
-					<React.Fragment key={i}>
+					<>
 						{i > 0 && <Dot />}
-						<span>{part}</span>
-					</React.Fragment>
+						<span key={i}>{part}</span>
+					</>
 				))}
 				<Dot />
 				<button

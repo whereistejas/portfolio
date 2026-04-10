@@ -110,7 +110,7 @@
 			@apply text-fg-faint dark:text-fg-faint-dark opacity-60;
 		}
 
-		/* ── Decorative glyphs (separator ✦ · chevron ▼) ────────── */
+		/* ── Decorative glyphs ───────────────────────────────────── */
 
 		.feed-separator {
 			@apply text-fg-accent dark:text-fg-accent-dark leading-none;
