@@ -96,20 +96,7 @@ for (const entry of archiveEntries) {
 											</a>
 											{summary && <span class="feed-desc">{summary}</span>}
 											<span class="feed-meta">
-												{displayCategory && (
-													<span class="hidden md:inline">
-														{displayCategory}
-														<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
-													</span>
-												)}
-												{metaParts.map((part, i) => (
-													<>
-														{i > 0 && (
-															<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
-														)}
-														{part}
-													</>
-												))}
+												{displayCategory && (<><span class="hidden md:inline">{displayCategory}</span><span class="hidden md:inline"><span class="feed-separator">{"\u2726"}</span></span></>)}{metaParts.map((part, i) => (<>{i > 0 && (<span class="feed-separator">{"\u2726"}</span>)}<span>{part}</span></>))}
 											</span>
 										</>
 									)}

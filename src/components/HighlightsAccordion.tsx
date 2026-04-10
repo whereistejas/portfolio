@@ -1,4 +1,4 @@
-import {
+import React, {
 	useState,
 	useCallback,
 	useMemo,
@@ -51,7 +51,7 @@ const instantVariants = {
 
 function Dot() {
 	return (
-		<span className="text-yellow-700 dark:text-yellow-600">{" · "}</span>
+		<span className="feed-separator">✦</span>
 	);
 }
 
@@ -193,16 +193,18 @@ export default function HighlightsAccordion({
 			)}
 			<span className="feed-meta">
 				{displayCategory && (
-					<span className="hidden md:inline">
-						{displayCategory}
-						<Dot />
-					</span>
+					<>
+						<span className="hidden md:inline-flex items-center">
+							{displayCategory}
+						</span>
+						<span className="hidden md:inline-flex"><Dot /></span>
+					</>
 				)}
 				{metaParts.map((part, i) => (
-					<span key={i}>
+					<React.Fragment key={i}>
 						{i > 0 && <Dot />}
-						{part}
-					</span>
+						<span>{part}</span>
+					</React.Fragment>
 				))}
 				<Dot />
 				<button

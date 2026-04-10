@@ -99,7 +99,7 @@
 			}
 
 			.feed-meta {
-				@apply text-fg-faint/60 dark:text-fg-faint-dark/60;
+				@apply text-fg-faint/60 dark:text-fg-faint-dark/60 inline-flex flex-wrap items-center gap-x-[0.5em];
 			}
 
 			.feed-readwise {
@@ -107,7 +107,7 @@
 			}
 
 			.feed-tags {
-				@apply text-fg-faint dark:text-fg-faint-dark opacity-60;
+				@apply text-fg-faint dark:text-fg-faint-dark opacity-60 inline-flex flex-wrap items-center gap-x-[0.5em];
 			}
 		}
 	}
@@ -187,7 +187,12 @@
 	}
 
 	.feed-highlight-chevron {
-		@apply ml-0.25 text-[0.65em] leading-none;
+		@apply ml-0.25 inline-flex items-center text-[0.5em] leading-none;
+	}
+
+	.feed-separator {
+		@apply text-fg-accent dark:text-fg-accent-dark text-[0.45em] leading-none;
+		vertical-align: 0.15em;
 	}
 
 	button.feed-highlight-btn:focus-visible {
