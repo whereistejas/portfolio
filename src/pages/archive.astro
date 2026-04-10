@@ -9,7 +9,9 @@ import Textorlink from "../components/textorlink.astro";
 import { unified } from "unified";
 import HighlightsAccordion from "../components/HighlightsAccordion";
 
-const archiveEntries = await getCollection("readwise-archive");
+const archiveEntries = (await getCollection("readwise-archive")).sort(
+	(a, b) => b.data.last_moved_at.getTime() - a.data.last_moved_at.getTime()
+);
 
 const markdownProcessor = unified()
 	.use(remarkParse)
@@ -92,13 +94,14 @@ for (const entry of archiveEntries) {
 														{part}
 													</>
 												))}
-												</span>
-											<HighlightsAccordion
-												client:load
-												highlightsHtml={highlightsHtml}
-												highlightId={highlightId}
-												paneId={paneId}
-											/>
+												<HighlightsAccordion
+													client:load
+													highlightsHtml={highlightsHtml}
+													highlightId={highlightId}
+													paneId={paneId}
+													count={highlights.length}
+												/>
+											</span>
 										</div>
 									) : (
 										<>

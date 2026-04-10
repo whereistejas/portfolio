@@ -5,6 +5,7 @@ interface HighlightsAccordionProps {
 	highlightsHtml: string[];
 	highlightId: string;
 	paneId: string;
+	count: number;
 }
 
 const useReducedMotion = () => {
@@ -50,10 +51,11 @@ export default function HighlightsAccordion({
 	highlightsHtml,
 	highlightId,
 	paneId,
+	count,
 }: HighlightsAccordionProps) {
 	const [isOpen, setIsOpen] = useState(false);
 	const reducedMotion = useReducedMotion();
-	const rootRef = useRef<HTMLDivElement>(null);
+	const rootRef = useRef<HTMLSpanElement>(null);
 
 	const toggle = useCallback(() => {
 		setIsOpen((prev) => !prev);
@@ -69,8 +71,6 @@ export default function HighlightsAccordion({
 			feedItem.removeAttribute("data-expanded");
 		}
 	}, [isOpen]);
-
-	const count = highlightsHtml.length;
 
 	const bodyTransition = useMemo(
 		() =>
@@ -95,21 +95,19 @@ export default function HighlightsAccordion({
 	const liVariants = reducedMotion ? instantVariants : itemVariants;
 
 	return (
-		<div ref={rootRef} style={{ display: "contents" }}>
-			<span className="feed-meta">
-				<span className="text-yellow-700 dark:text-yellow-600">
-					{" · "}
-				</span>
-				<button
-					type="button"
-					className="feed-highlight-btn"
-					aria-expanded={isOpen}
-					aria-controls={paneId}
-					onClick={toggle}
-				>
-					{count} {count === 1 ? "highlight" : "highlights"}
-				</button>
+		<span ref={rootRef}>
+			<span className="text-yellow-700 dark:text-yellow-600">
+				{" · "}
 			</span>
+			<button
+				type="button"
+				className="feed-highlight-btn"
+				aria-expanded={isOpen}
+				aria-controls={paneId}
+				onClick={toggle}
+			>
+				{count} {count === 1 ? "highlight" : "highlights"}
+			</button>
 			<AnimatePresence initial={false}>
 				{isOpen && (
 					<motion.div
@@ -146,6 +144,6 @@ export default function HighlightsAccordion({
 					</motion.div>
 				)}
 			</AnimatePresence>
-		</div>
+		</span>
 	);
 }

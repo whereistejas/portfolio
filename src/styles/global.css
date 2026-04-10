@@ -119,7 +119,7 @@
 	div.feed
 		.feed-item--with-highlights.feed-item[data-expanded="true"]
 		.feed-item-card {
-		@apply overflow-hidden bg-neutral-100 dark:bg-neutral-800/50;
+		@apply mb-0.5 overflow-hidden bg-neutral-100 dark:bg-neutral-800/50;
 	}
 
 	@media (hover: hover) {
