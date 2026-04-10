@@ -46,12 +46,6 @@ for (const entry of archiveEntries) {
 	</Fragment>
 	<Fragment slot="main">
 		<div class="archive_wrapper" id="archive-wrapper">
-			<div
-				class="archive-overlay"
-				id="archive-overlay"
-				aria-hidden="true"
-				tabindex="-1"
-			/>
 			<div class="feed">
 				{
 					Array.from(itemsByDate.entries()).map(([date, groupItems]) =>
@@ -61,7 +55,6 @@ for (const entry of archiveEntries) {
 							const highlightId = readwise_id;
 							const highlightsHtml = highlightHtmlById.get(highlightId) ?? [];
 							const paneId = `archive-highlights-${highlightId}`;
-							const highlightCount = highlights.length;
 							const authors = [...new Set(
 								author.split(/\s*[,&]\s*/)
 									.map((a: string) => a.trim())

@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 interface HighlightsAccordionProps {
@@ -53,10 +53,22 @@ export default function HighlightsAccordion({
 }: HighlightsAccordionProps) {
 	const [isOpen, setIsOpen] = useState(false);
 	const reducedMotion = useReducedMotion();
+	const rootRef = useRef<HTMLDivElement>(null);
 
 	const toggle = useCallback(() => {
 		setIsOpen((prev) => !prev);
 	}, []);
+
+	// Sync data-expanded on the closest .feed-item ancestor for CSS
+	useEffect(() => {
+		const feedItem = rootRef.current?.closest(".feed-item");
+		if (!feedItem) return;
+		if (isOpen) {
+			feedItem.setAttribute("data-expanded", "true");
+		} else {
+			feedItem.removeAttribute("data-expanded");
+		}
+	}, [isOpen]);
 
 	const count = highlightsHtml.length;
 
@@ -83,7 +95,7 @@ export default function HighlightsAccordion({
 	const liVariants = reducedMotion ? instantVariants : itemVariants;
 
 	return (
-		<>
+		<div ref={rootRef} style={{ display: "contents" }}>
 			<span className="feed-meta">
 				<span className="text-yellow-700 dark:text-yellow-600">
 					{" · "}
@@ -134,6 +146,6 @@ export default function HighlightsAccordion({
 					</motion.div>
 				)}
 			</AnimatePresence>
-		</>
+		</div>
 	);
 }

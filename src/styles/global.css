@@ -99,19 +99,10 @@
 		}
 	}
 
-	/* ── Archive wrapper & overlay scrim ─────────────────────────── */
+	/* ── Archive wrapper ─────────────────────────────────────────── */
 
 	div.archive_wrapper {
 		@apply relative w-full;
-	}
-
-	div.archive-overlay {
-		@apply pointer-events-none fixed inset-0 z-40 bg-transparent;
-		transition: background-color var(--overlay-duration, 200ms) ease;
-	}
-
-	div.archive-overlay[data-visible="true"] {
-		@apply pointer-events-auto bg-transparent;
 	}
 
 	/* ── Highlight card (wrapper row + card surface) ──────────────── */
@@ -128,7 +119,7 @@
 	div.feed
 		.feed-item--with-highlights.feed-item[data-expanded="true"]
 		.feed-item-card {
-		@apply bg-neutral-100 dark:bg-neutral-800/50;
+		@apply overflow-hidden bg-neutral-100 dark:bg-neutral-800/50;
 	}
 
 	@media (hover: hover) {
@@ -137,18 +128,8 @@
 		}
 	}
 
-	div.feed .feed-item--with-highlights.feed-item[data-expanded="true"] {
-		@apply relative z-50;
-	}
-
 	div.feed
-		.feed-item--with-highlights.feed-item[data-expanded="true"]
-		.feed-item-card {
-		@apply overflow-hidden;
-	}
-
-	div.feed
-		.feed-item[data-expanded="true"]:not(.is-highlight-pane-closing)
+		.feed-item[data-expanded="true"]
 		.feed-desc {
 		-webkit-line-clamp: unset;
 		max-height: 20rem;
@@ -163,16 +144,8 @@
 			color 0.2s ease;
 	}
 
-	button.feed-highlight-btn:focus-visible,
-	div.feed .feed-item[data-expanded="true"] .feed-highlight-btn {
+	button.feed-highlight-btn:focus-visible {
 		@apply text-fg-muted dark:text-fg-muted-dark;
-	}
-
-	div.feed
-		.feed-item[data-expanded="true"].is-highlight-pane-closing
-		.feed-highlight-btn {
-		color: inherit;
-		transition: color var(--body-duration, 320ms) ease;
 	}
 
 	@media (hover: hover) {
@@ -184,13 +157,7 @@
 	/* ── Highlights body (collapsible pane) ───────────────────────── */
 
 	div.feed .feed-highlights-body {
-		@apply text-fg-muted dark:text-fg-muted-dark pointer-events-none text-pretty;
-	}
-
-	div.feed
-		.feed-item[data-expanded="true"]
-		.feed-highlights-body[data-open="true"] {
-		@apply pointer-events-auto overflow-x-hidden;
+		@apply text-fg-muted dark:text-fg-muted-dark text-pretty;
 	}
 
 	/* ── Highlight list items & blockquotes ───────────────────────── */
