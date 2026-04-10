@@ -228,7 +228,7 @@ export default function HighlightsAccordion({
 						}
 						style={{ display: "inline-block" }}
 					>
-						&#x25BE;
+						&#x25BC;
 					</motion.span>
 				</button>
 			</span>
