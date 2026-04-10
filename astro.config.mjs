@@ -23,8 +23,5 @@ export default defineConfig({
 			cssMinify: "lightningcss",
 		},
 	},
-	experimental: {
-		headingIdCompat: true,
-	},
 	compressHTML: true,
 });

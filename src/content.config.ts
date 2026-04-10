@@ -1,7 +1,7 @@
 import { defineCollection } from "astro:content";
 
-import { loadReadwiseArchive, loadReadwiseQueue } from "./readwise.ts";
-import { readwiseArchiveSchema, readwiseQueueSchema } from "./types.ts";
+import { loadReadwiseArchive, loadReadwiseQueue } from "./content/readwise.ts";
+import { readwiseArchiveSchema, readwiseQueueSchema } from "./content/types.ts";
 
 export const collections = {
 	"readwise-archive": defineCollection({
