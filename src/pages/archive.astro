@@ -7,6 +7,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import Textorlink from "../components/textorlink.astro";
 import { unified } from "unified";
+import HighlightsAccordion from "../components/HighlightsAccordion";
 
 const archiveEntries = await getCollection("readwise-archive");
 
@@ -98,26 +99,13 @@ for (const entry of archiveEntries) {
 														{part}
 													</>
 												))}
-												<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
-												<button
-													type="button"
-													class="feed-highlight-btn"
-													aria-expanded="false"
-													aria-controls={paneId}
-													data-highlight-toggle
-												>
-													{highlightCount} {highlightCount === 1 ? "highlight" : "highlights"}
-												</button>
-											</span>
-											<div class="feed-highlights-body" id={paneId}>
-												<ul class="feed-highlights-list">
-													{highlightsHtml.map((html, i, arr) => (
-														<li style={`--i: ${i}; --reverse-i: ${arr.length - 1 - i}`}>
-															<blockquote><Fragment set:html={html} /></blockquote>
-														</li>
-													))}
-												</ul>
-											</div>
+												</span>
+											<HighlightsAccordion
+												client:load
+												highlightsHtml={highlightsHtml}
+												highlightId={highlightId}
+												paneId={paneId}
+											/>
 										</div>
 									) : (
 										<>
@@ -151,130 +139,6 @@ for (const entry of archiveEntries) {
 			</div>
 		</div>
 
-		<script is:inline>
-			(() => {
-				const wrapper = document.getElementById("archive-wrapper");
-				const overlay = document.getElementById("archive-overlay");
-				if (!wrapper || !overlay) return;
 
-				const reducedMotion = window.matchMedia(
-					"(prefers-reduced-motion: reduce)"
-				).matches;
-
-				/** @type {HTMLElement | null} */
-				let activeItem = null;
-				/** @type {HTMLButtonElement | null} */
-				let activeButton = null;
-
-				const ENTER_BASE_DELAY_MS = 120;
-				const ENTER_STAGGER_MS = 50;
-				const ENTER_ITEM_MS = 400;
-				const EXIT_STAGGER_MS = 40;
-				const EXIT_ITEM_MS = 320;
-				const EXIT_MIN_MS = 280;
-
-				const entryDuration = (count) =>
-					ENTER_BASE_DELAY_MS + Math.max(count - 1, 0) * ENTER_STAGGER_MS + ENTER_ITEM_MS;
-
-				const exitDuration = (count) =>
-					Math.max((count - 1) * EXIT_STAGGER_MS + EXIT_ITEM_MS, EXIT_MIN_MS);
-
-				const setDurations = (overlayMs, body, bodyMs) => {
-					overlay.style.setProperty("--overlay-duration", overlayMs + "ms");
-					if (body) body.style.setProperty("--body-duration", bodyMs + "ms");
-				};
-
-				const clearDurations = (body) => {
-					overlay.style.removeProperty("--overlay-duration");
-					if (body) body.style.removeProperty("--body-duration");
-				};
-
-				const clearOpenState = (item, body, btn) => {
-					item.removeAttribute("data-expanded");
-					item.style.removeProperty("--body-duration");
-					overlay.removeAttribute("data-visible");
-					item.classList.remove("is-highlight-pane-closing");
-					if (body) {
-						body.removeAttribute("data-open");
-						body.style.removeProperty("--body-max-h");
-					}
-					if (btn) btn.setAttribute("aria-expanded", "false");
-					activeItem = null;
-					activeButton = null;
-				};
-
-				const closePaneImmediate = () => {
-					if (!activeItem) return;
-					const body = activeItem.querySelector(".feed-highlights-body");
-					clearOpenState(activeItem, body, activeButton);
-				};
-
-				const closePaneAnimated = () => {
-					if (!activeItem) return;
-					if (reducedMotion) { closePaneImmediate(); return; }
-
-					const item = activeItem;
-					const btn = activeButton;
-					const body = item.querySelector(".feed-highlights-body");
-					const count = body ? body.querySelectorAll("li").length : 0;
-					const ms = exitDuration(count);
-
-					setDurations(ms, body, ms);
-					item.style.setProperty("--body-duration", ms + "ms");
-					item.classList.add("is-highlight-pane-closing");
-					overlay.removeAttribute("data-visible");
-					if (body) body.removeAttribute("data-open");
-
-					window.setTimeout(() => {
-						clearOpenState(item, body, btn);
-						clearDurations(body);
-					}, ms);
-				};
-
-				/** @param {HTMLElement} item  @param {HTMLButtonElement} button */
-				const openPane = (item, button) => {
-					if (activeItem && activeItem !== item) closePaneImmediate();
-					activeItem = item;
-					activeButton = button;
-
-					item.setAttribute("data-expanded", "true");
-					button.setAttribute("aria-expanded", "true");
-
-					const body = item.querySelector(".feed-highlights-body");
-					if (!body) return;
-
-					const count = body.querySelectorAll("li").length;
-					const bodyMs = entryDuration(count);
-					setDurations(bodyMs, body, bodyMs);
-
-					body.style.setProperty("--body-max-h", body.scrollHeight + "px");
-					overlay.setAttribute("data-visible", "true");
-
-					if (reducedMotion) { body.setAttribute("data-open", "true"); return; }
-					window.requestAnimationFrame(() => {
-						body.setAttribute("data-open", "true");
-					});
-				};
-
-				for (const btn of wrapper.querySelectorAll("[data-highlight-toggle]")) {
-					if (!(btn instanceof HTMLButtonElement)) continue;
-					btn.addEventListener("click", (event) => {
-						event.preventDefault();
-						const item = btn.closest(".feed-item");
-						if (!(item instanceof HTMLElement)) return;
-						if (activeItem === item && item.hasAttribute("data-expanded")) {
-							closePaneAnimated();
-							return;
-						}
-						openPane(item, btn);
-					});
-				}
-
-				overlay.addEventListener("click", () => closePaneAnimated());
-				window.addEventListener("keydown", (e) => {
-					if (e.key === "Escape" && activeItem) closePaneAnimated();
-				});
-			})();
-		</script>
 	</Fragment>
 </Page>
