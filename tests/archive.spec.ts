@@ -111,4 +111,122 @@ test.describe("Archive page – highlights accordion", () => {
 			expect(dates[i].getTime()).toBeLessThanOrEqual(dates[i - 1].getTime());
 		}
 	});
+
+	test("hovered item adjacent to expanded item has proper gap", async ({
+		page,
+	}) => {
+		// Find the first highlight item and expand it
+		const highlightItems = page.locator(".feed-item--with-highlights");
+		const firstHL = highlightItems.nth(0);
+		await firstHL.locator(".feed-highlight-btn").click();
+		await page.waitForTimeout(600);
+		await expect(firstHL.locator(".feed-highlights-body")).toBeVisible();
+
+		// Find the feed-item immediately after the expanded one in the DOM
+		const expandedCard = firstHL.locator(".feed-item-card");
+		const nextItem = firstHL.locator("~ .feed-item").first();
+		await expect(nextItem).toBeVisible();
+
+		// Hover the next item to trigger hover background
+		await nextItem.hover();
+		await page.waitForTimeout(100);
+
+		const expandedBox = await expandedCard.boundingBox();
+		// For non-highlight items there's no .feed-item-card, use the item itself
+		const nextHasCard = (await nextItem.locator(".feed-item-card").count()) > 0;
+		const nextTarget = nextHasCard
+			? nextItem.locator(".feed-item-card")
+			: nextItem;
+		const nextBox = await nextTarget.boundingBox();
+
+		expect(expandedBox).not.toBeNull();
+		expect(nextBox).not.toBeNull();
+
+		const gap = nextBox!.y - (expandedBox!.y + expandedBox!.height);
+		expect(gap).toBeGreaterThanOrEqual(4);
+	});
+
+	test("hovered item above expanded item has proper gap", async ({
+		page,
+	}) => {
+		const allItems = page.locator(".feed-item");
+		const allCount = await allItems.count();
+
+		// Find a highlight item that isn't the first feed-item
+		let hlIndex = -1;
+		for (let i = 1; i < allCount; i++) {
+			const item = allItems.nth(i);
+			if (await item.locator(".feed-highlight-btn").count() > 0) {
+				hlIndex = i;
+				break;
+			}
+		}
+		expect(hlIndex).toBeGreaterThan(0);
+
+		const hlItem = allItems.nth(hlIndex);
+		const prevItem = allItems.nth(hlIndex - 1);
+
+		// Expand the highlight item
+		await hlItem.locator(".feed-highlight-btn").click();
+		await page.waitForTimeout(600);
+		await expect(hlItem.locator(".feed-highlights-body")).toBeVisible();
+
+		// Hover the item above
+		await prevItem.hover();
+		await page.waitForTimeout(100);
+
+		const prevHasCard = (await prevItem.locator(".feed-item-card").count()) > 0;
+		const prevTarget = prevHasCard
+			? prevItem.locator(".feed-item-card")
+			: prevItem;
+		const prevBox = await prevTarget.boundingBox();
+
+		const hlCard = hlItem.locator(".feed-item-card");
+		const hlBox = await hlCard.boundingBox();
+
+		expect(prevBox).not.toBeNull();
+		expect(hlBox).not.toBeNull();
+
+		const gap = hlBox!.y - (prevBox!.y + prevBox!.height);
+		expect(gap).toBeGreaterThanOrEqual(4);
+	});
+
+	test("highlight button has a chevron that rotates when expanded", async ({
+		page,
+	}) => {
+		const firstCard = page.locator(".feed-item--with-highlights").first();
+		const chevron = firstCard.locator(".feed-highlight-chevron");
+
+		// Chevron should exist
+		await expect(chevron).toBeVisible();
+
+		// Get initial rotation (should be 0)
+		const getRotation = async () => {
+			return chevron.evaluate((el) => {
+				const transform = window.getComputedStyle(el).transform;
+				if (!transform || transform === "none") return 0;
+				// matrix(a, b, c, d, tx, ty) — rotation = atan2(b, a)
+				const match = transform.match(/matrix\(([^)]+)\)/);
+				if (!match) return 0;
+				const [a, b] = match[1].split(",").map(Number);
+				return Math.round(Math.atan2(b, a) * (180 / Math.PI));
+			});
+		};
+
+		expect(await getRotation()).toBe(0);
+
+		// Expand
+		await firstCard.locator(".feed-highlight-btn").click();
+		await page.waitForTimeout(600);
+
+		// Should be rotated 180 degrees
+		expect(await getRotation()).toBe(180);
+
+		// Collapse
+		await firstCard.locator(".feed-highlight-btn").click();
+		await page.waitForTimeout(600);
+
+		// Should be back to 0
+		expect(await getRotation()).toBe(0);
+	});
 });
