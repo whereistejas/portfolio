@@ -211,51 +211,6 @@
 		@apply font-normal underline underline-offset-2;
 	}
 
-	/* ── Highlight item stagger (enter / exit) ────────────────────── */
-
-	div.feed .feed-highlights-body li {
-		@apply opacity-0;
-	}
-
-	@media (prefers-reduced-motion: no-preference) {
-		div.feed .feed-highlights-body li {
-			transition: opacity 400ms ease;
-		}
-
-		div.feed
-			.feed-item[data-expanded="true"]
-			.feed-highlights-body[data-open="true"]
-			li {
-			@apply opacity-100;
-			transition-delay: calc(120ms + var(--i, 0) * 50ms);
-		}
-
-		div.feed .feed-item.is-highlight-pane-closing .feed-highlights-body li {
-			@apply opacity-0;
-			transition: opacity 320ms ease;
-			transition-delay: calc(var(--reverse-i, 0) * 40ms);
-		}
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		div.feed .feed-highlights-body li {
-			@apply opacity-100;
-		}
-
-		div.feed
-			.feed-item[data-expanded="true"]
-			.feed-highlights-body[data-open="true"] {
-			transition-delay: 0ms;
-		}
-
-		div.feed .feed-item--with-highlights .feed-item-card {
-			transition-duration: 0ms;
-		}
-
-		div.feed .feed-highlights-body {
-			transition-duration: 0ms;
-		}
-	}
 
 	article.blog-article {
 		@apply prose dark:prose-invert pt-1.5 pb-1.5 md:pt-2 md:pb-2;

@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useMemo } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 interface HighlightsAccordionProps {
@@ -7,12 +7,52 @@ interface HighlightsAccordionProps {
 	paneId: string;
 }
 
+const useReducedMotion = () => {
+	if (typeof window === "undefined") return false;
+	return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+};
+
+const containerVariants = {
+	hidden: {},
+	visible: {
+		transition: {
+			staggerChildren: 0.05,
+			delayChildren: 0.12,
+		},
+	},
+	exit: {
+		transition: {
+			staggerChildren: 0.04,
+			staggerDirection: -1,
+		},
+	},
+};
+
+const itemVariants = {
+	hidden: { opacity: 0 },
+	visible: {
+		opacity: 1,
+		transition: { duration: 0.35, ease: "easeOut" },
+	},
+	exit: {
+		opacity: 0,
+		transition: { duration: 0.25, ease: "easeIn" },
+	},
+};
+
+const instantVariants = {
+	hidden: { opacity: 1 },
+	visible: { opacity: 1 },
+	exit: { opacity: 1 },
+};
+
 export default function HighlightsAccordion({
 	highlightsHtml,
 	highlightId,
 	paneId,
 }: HighlightsAccordionProps) {
 	const [isOpen, setIsOpen] = useState(false);
+	const reducedMotion = useReducedMotion();
 
 	const toggle = useCallback(() => {
 		setIsOpen((prev) => !prev);
@@ -20,10 +60,34 @@ export default function HighlightsAccordion({
 
 	const count = highlightsHtml.length;
 
+	const bodyTransition = useMemo(
+		() =>
+			reducedMotion
+				? { duration: 0 }
+				: {
+						height: {
+							type: "spring" as const,
+							stiffness: 300,
+							damping: 30,
+							mass: 0.8,
+						},
+						opacity: { duration: 0.25, ease: "easeInOut" as const },
+					},
+		[reducedMotion],
+	);
+
+	const listVariants = reducedMotion
+		? { hidden: {}, visible: {}, exit: {} }
+		: containerVariants;
+
+	const liVariants = reducedMotion ? instantVariants : itemVariants;
+
 	return (
 		<>
 			<span className="feed-meta">
-				<span className="text-yellow-700 dark:text-yellow-600">{" · "}</span>
+				<span className="text-yellow-700 dark:text-yellow-600">
+					{" · "}
+				</span>
 				<button
 					type="button"
 					className="feed-highlight-btn"
@@ -44,37 +108,29 @@ export default function HighlightsAccordion({
 						initial={{ height: 0, opacity: 0 }}
 						animate={{ height: "auto", opacity: 1 }}
 						exit={{ height: 0, opacity: 0 }}
-						transition={{
-							height: {
-								type: "spring",
-								stiffness: 300,
-								damping: 30,
-								mass: 0.8,
-							},
-							opacity: { duration: 0.25, ease: "easeInOut" },
-						}}
+						transition={bodyTransition}
 						style={{ overflow: "hidden" }}
 					>
-						<ul className="feed-highlights-list">
+						<motion.ul
+							className="feed-highlights-list"
+							variants={listVariants}
+							initial="hidden"
+							animate="visible"
+							exit="exit"
+						>
 							{highlightsHtml.map((html, i) => (
-								<li
+								<motion.li
 									key={`${highlightId}-${i}`}
-									style={
-										{
-											"--i": i,
-											"--reverse-i":
-												highlightsHtml.length - 1 - i,
-										} as React.CSSProperties
-									}
+									variants={liVariants}
 								>
 									<blockquote
 										dangerouslySetInnerHTML={{
 											__html: html,
 										}}
 									/>
-								</li>
+								</motion.li>
 							))}
-						</ul>
+						</motion.ul>
 					</motion.div>
 				)}
 			</AnimatePresence>
