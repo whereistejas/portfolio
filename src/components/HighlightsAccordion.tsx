@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface HighlightsAccordionProps {
 	highlightsHtml: string[];
@@ -33,27 +34,50 @@ export default function HighlightsAccordion({
 					{count} {count === 1 ? "highlight" : "highlights"}
 				</button>
 			</span>
-			{isOpen && (
-				<div className="feed-highlights-body" id={paneId} data-open="true">
-					<ul className="feed-highlights-list">
-						{highlightsHtml.map((html, i) => (
-							<li
-								key={`${highlightId}-${i}`}
-								style={
-									{
-										"--i": i,
-										"--reverse-i": highlightsHtml.length - 1 - i,
-									} as React.CSSProperties
-								}
-							>
-								<blockquote
-									dangerouslySetInnerHTML={{ __html: html }}
-								/>
-							</li>
-						))}
-					</ul>
-				</div>
-			)}
+			<AnimatePresence initial={false}>
+				{isOpen && (
+					<motion.div
+						key={paneId}
+						id={paneId}
+						className="feed-highlights-body"
+						data-open="true"
+						initial={{ height: 0, opacity: 0 }}
+						animate={{ height: "auto", opacity: 1 }}
+						exit={{ height: 0, opacity: 0 }}
+						transition={{
+							height: {
+								type: "spring",
+								stiffness: 300,
+								damping: 30,
+								mass: 0.8,
+							},
+							opacity: { duration: 0.25, ease: "easeInOut" },
+						}}
+						style={{ overflow: "hidden" }}
+					>
+						<ul className="feed-highlights-list">
+							{highlightsHtml.map((html, i) => (
+								<li
+									key={`${highlightId}-${i}`}
+									style={
+										{
+											"--i": i,
+											"--reverse-i":
+												highlightsHtml.length - 1 - i,
+										} as React.CSSProperties
+									}
+								>
+									<blockquote
+										dangerouslySetInnerHTML={{
+											__html: html,
+										}}
+									/>
+								</li>
+							))}
+						</ul>
+					</motion.div>
+				)}
+			</AnimatePresence>
 		</>
 	);
 }

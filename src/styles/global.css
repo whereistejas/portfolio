@@ -184,16 +184,13 @@
 	/* ── Highlights body (collapsible pane) ───────────────────────── */
 
 	div.feed .feed-highlights-body {
-		@apply text-fg-muted dark:text-fg-muted-dark pointer-events-none -mt-0.5 max-h-0 overflow-hidden text-pretty opacity-0;
-		transition:
-			max-height var(--body-duration, 440ms) ease,
-			opacity 300ms ease;
+		@apply text-fg-muted dark:text-fg-muted-dark pointer-events-none text-pretty;
 	}
 
 	div.feed
 		.feed-item[data-expanded="true"]
 		.feed-highlights-body[data-open="true"] {
-		@apply pointer-events-auto mt-0 max-h-[var(--body-max-h,100rem)] overflow-x-hidden opacity-100;
+		@apply pointer-events-auto overflow-x-hidden;
 	}
 
 	/* ── Highlight list items & blockquotes ───────────────────────── */
