@@ -91,8 +91,43 @@ test.describe("Archive page – highlights accordion", () => {
 		await expect(firstCard.locator(".feed-highlights-body")).not.toBeVisible();
 	});
 
+	test("description text expands when accordion is opened", async ({
+		page,
+	}) => {
+		// Find a highlight card whose description is clamped
+		const items = page.locator(".feed-item--with-highlights");
+		const count = await items.count();
+		let targetItem = null;
+		let collapsedWrapperH = 0;
+
+		for (let i = 0; i < count; i++) {
+			const item = items.nth(i);
+			const wrapper = item.locator(".feed-desc-wrapper");
+			if ((await wrapper.count()) === 0) continue;
+
+			const box = await wrapper.boundingBox();
+			if (!box) continue;
+
+			targetItem = item;
+			collapsedWrapperH = box.height;
+			break;
+		}
+
+		if (!targetItem) return; // no clamped descriptions
+
+		await targetItem.locator(".feed-highlight-btn").click();
+		await page.waitForTimeout(800);
+
+		const wrapper = targetItem.locator(".feed-desc-wrapper");
+		const expandedBox = await wrapper.boundingBox();
+		expect(expandedBox).not.toBeNull();
+		expect(expandedBox!.height).toBeGreaterThan(collapsedWrapperH);
+	});
+
 	test("archive items are ordered newest to oldest", async ({ page }) => {
-		const metaTexts = await page.locator(".feed-item .feed-meta").allTextContents();
+		const metaTexts = await page
+			.locator(".feed-item .feed-meta")
+			.allTextContents();
 
 		// Extract dates — format is like "article · 28 Mar 2026 · Author"
 		const dateRegex = /(\d{1,2}\s+\w+\s+\d{4})/;
@@ -108,32 +143,33 @@ test.describe("Archive page – highlights accordion", () => {
 
 		// Verify dates are in descending order (newest first)
 		for (let i = 1; i < dates.length; i++) {
-			expect(dates[i].getTime()).toBeLessThanOrEqual(dates[i - 1].getTime());
+			expect(dates[i].getTime()).toBeLessThanOrEqual(
+				dates[i - 1].getTime(),
+			);
 		}
 	});
 
 	test("hovered item adjacent to expanded item has proper gap", async ({
 		page,
 	}) => {
-		// Find the first highlight item and expand it
 		const highlightItems = page.locator(".feed-item--with-highlights");
 		const firstHL = highlightItems.nth(0);
 		await firstHL.locator(".feed-highlight-btn").click();
 		await page.waitForTimeout(600);
 		await expect(firstHL.locator(".feed-highlights-body")).toBeVisible();
 
-		// Find the feed-item immediately after the expanded one in the DOM
 		const expandedCard = firstHL.locator(".feed-item-card");
 		const nextItem = firstHL.locator("~ .feed-item").first();
 		await expect(nextItem).toBeVisible();
 
 		// Hover the next item to trigger hover background
 		await nextItem.hover();
-		await page.waitForTimeout(100);
+		// Wait for margin transition to complete
+		await page.waitForTimeout(500);
 
 		const expandedBox = await expandedCard.boundingBox();
-		// For non-highlight items there's no .feed-item-card, use the item itself
-		const nextHasCard = (await nextItem.locator(".feed-item-card").count()) > 0;
+		const nextHasCard =
+			(await nextItem.locator(".feed-item-card").count()) > 0;
 		const nextTarget = nextHasCard
 			? nextItem.locator(".feed-item-card")
 			: nextItem;
@@ -156,7 +192,7 @@ test.describe("Archive page – highlights accordion", () => {
 		let hlIndex = -1;
 		for (let i = 1; i < allCount; i++) {
 			const item = allItems.nth(i);
-			if (await item.locator(".feed-highlight-btn").count() > 0) {
+			if ((await item.locator(".feed-highlight-btn").count()) > 0) {
 				hlIndex = i;
 				break;
 			}
@@ -173,9 +209,11 @@ test.describe("Archive page – highlights accordion", () => {
 
 		// Hover the item above
 		await prevItem.hover();
-		await page.waitForTimeout(100);
+		// Wait for margin transition to complete
+		await page.waitForTimeout(500);
 
-		const prevHasCard = (await prevItem.locator(".feed-item-card").count()) > 0;
+		const prevHasCard =
+			(await prevItem.locator(".feed-item-card").count()) > 0;
 		const prevTarget = prevHasCard
 			? prevItem.locator(".feed-item-card")
 			: prevItem;
@@ -197,15 +235,12 @@ test.describe("Archive page – highlights accordion", () => {
 		const firstCard = page.locator(".feed-item--with-highlights").first();
 		const chevron = firstCard.locator(".feed-highlight-chevron");
 
-		// Chevron should exist
 		await expect(chevron).toBeVisible();
 
-		// Get initial rotation (should be 0)
 		const getRotation = async () => {
 			return chevron.evaluate((el) => {
 				const transform = window.getComputedStyle(el).transform;
 				if (!transform || transform === "none") return 0;
-				// matrix(a, b, c, d, tx, ty) — rotation = atan2(b, a)
 				const match = transform.match(/matrix\(([^)]+)\)/);
 				if (!match) return 0;
 				const [a, b] = match[1].split(",").map(Number);
@@ -215,18 +250,108 @@ test.describe("Archive page – highlights accordion", () => {
 
 		expect(await getRotation()).toBe(0);
 
-		// Expand
 		await firstCard.locator(".feed-highlight-btn").click();
 		await page.waitForTimeout(600);
-
-		// Should be rotated 180 degrees
 		expect(await getRotation()).toBe(180);
 
-		// Collapse
 		await firstCard.locator(".feed-highlight-btn").click();
 		await page.waitForTimeout(600);
-
-		// Should be back to 0
 		expect(await getRotation()).toBe(0);
+	});
+
+	test("no sudden layout shift when expanding accordion", async ({
+		page,
+	}) => {
+		// Use requestAnimationFrame to sample at render-frame rate
+		const positions = await page.evaluate(async () => {
+			const el = document.querySelector(
+				".feed-item--with-highlights ~ .feed-item",
+			) as HTMLElement;
+			if (!el) return [];
+
+			const samples: number[] = [el.getBoundingClientRect().y];
+
+			const btn = document.querySelector(
+				".feed-item--with-highlights .feed-highlight-btn",
+			) as HTMLButtonElement;
+			btn?.click();
+
+			await new Promise<void>((resolve) => {
+				const start = performance.now();
+				function tick() {
+					samples.push(el.getBoundingClientRect().y);
+					if (performance.now() - start < 500) {
+						requestAnimationFrame(tick);
+					} else {
+						resolve();
+					}
+				}
+				requestAnimationFrame(tick);
+			});
+
+			return samples;
+		});
+
+		expect(positions.length).toBeGreaterThan(5);
+
+		// No single render frame should jump more than 30px
+		const MAX_PER_FRAME = 30;
+		for (let i = 1; i < positions.length; i++) {
+			const delta = Math.abs(positions[i] - positions[i - 1]);
+			expect(
+				delta,
+				`Frame ${i}/${positions.length}: ${delta.toFixed(1)}px jump`,
+			).toBeLessThanOrEqual(MAX_PER_FRAME);
+		}
+	});
+
+	test("no sudden layout shift when collapsing accordion", async ({
+		page,
+	}) => {
+		const firstHL = page.locator(".feed-item--with-highlights").first();
+
+		// Expand first and let it settle
+		await firstHL.locator(".feed-highlight-btn").click();
+		await page.waitForTimeout(800);
+
+		const positions = await page.evaluate(async () => {
+			const el = document.querySelector(
+				".feed-item--with-highlights ~ .feed-item",
+			) as HTMLElement;
+			if (!el) return [];
+
+			const samples: number[] = [el.getBoundingClientRect().y];
+
+			const btn = document.querySelector(
+				".feed-item--with-highlights .feed-highlight-btn",
+			) as HTMLButtonElement;
+			btn?.click();
+
+			await new Promise<void>((resolve) => {
+				const start = performance.now();
+				function tick() {
+					samples.push(el.getBoundingClientRect().y);
+					if (performance.now() - start < 500) {
+						requestAnimationFrame(tick);
+					} else {
+						resolve();
+					}
+				}
+				requestAnimationFrame(tick);
+			});
+
+			return samples;
+		});
+
+		expect(positions.length).toBeGreaterThan(5);
+
+		const MAX_PER_FRAME = 30;
+		for (let i = 1; i < positions.length; i++) {
+			const delta = Math.abs(positions[i] - positions[i - 1]);
+			expect(
+				delta,
+				`Frame ${i}/${positions.length}: ${delta.toFixed(1)}px jump`,
+			).toBeLessThanOrEqual(MAX_PER_FRAME);
+		}
 	});
 });

@@ -78,30 +78,16 @@ for (const entry of archiveEntries) {
 											<a href={url} target="_blank" rel="noopener noreferrer" class="feed-title">
 												{title}
 											</a>
-											{summary && <span class="feed-desc">{summary}</span>}
-											<span class="feed-meta">
-												{displayCategory && (
-													<span class="hidden md:inline">
-														{displayCategory}
-														<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
-													</span>
-												)}
-												{metaParts.map((part, i) => (
-													<>
-														{i > 0 && (
-															<span class="text-yellow-700 dark:text-yellow-600">{" · "}</span>
-														)}
-														{part}
-													</>
-												))}
-												<HighlightsAccordion
-													client:load
-													highlightsHtml={highlightsHtml}
-													highlightId={highlightId}
-													paneId={paneId}
-													count={highlights.length}
-												/>
-											</span>
+											<HighlightsAccordion
+												client:load
+												highlightsHtml={highlightsHtml}
+												highlightId={highlightId}
+												paneId={paneId}
+												count={highlights.length}
+												summary={summary || ""}
+												displayCategory={displayCategory}
+												metaParts={metaParts}
+											/>
 										</div>
 									) : (
 										<>

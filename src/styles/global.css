@@ -69,7 +69,9 @@
 
 		.feed-item {
 			@apply -mx-0.75 flex flex-col gap-0.5 rounded-xl px-0.75 py-0.75 md:-mx-1 md:px-1;
-			@apply transition-colors duration-150;
+			transition:
+				background-color 150ms ease,
+				margin 350ms cubic-bezier(0.25, 1, 0.5, 1);
 
 			@media (hover: hover) {
 				@apply hover:bg-neutral-100 dark:hover:bg-neutral-800/50;
@@ -83,6 +85,17 @@
 				@apply text-fg-muted dark:text-fg-muted-dark line-clamp-2 opacity-75;
 				max-height: 3.2em;
 				transition: max-height 400ms ease;
+			}
+
+			.feed-desc--no-clamp {
+				-webkit-line-clamp: unset;
+				max-height: none;
+				overflow: visible;
+				display: inline;
+			}
+
+			.feed-desc-wrapper {
+				@apply block;
 			}
 
 			.feed-meta {
@@ -113,26 +126,55 @@
 
 	div.feed .feed-item--with-highlights .feed-item-card {
 		@apply -mx-0.75 box-border flex flex-col gap-0.5 rounded-xl bg-transparent px-0.75 py-0.75 md:-mx-1 md:px-1;
-		transition: background-color 380ms ease;
+		transition:
+			background-color 380ms ease,
+			margin 350ms cubic-bezier(0.25, 1, 0.5, 1);
 	}
 
 	div.feed
 		.feed-item--with-highlights.feed-item[data-expanded="true"]
 		.feed-item-card {
-		@apply my-0.5 overflow-hidden bg-neutral-100 dark:bg-neutral-800/50;
+		@apply overflow-hidden bg-neutral-100 dark:bg-neutral-800/50;
+	}
+
+	/* Gap only when an expanded card is adjacent to another expanded or hovered item */
+
+	/* Two consecutive expanded items */
+	div.feed
+		.feed-item[data-expanded="true"]
+		+ .feed-item[data-expanded="true"]
+		.feed-item-card {
+		@apply mt-0.5;
+	}
+
+	/* Expanded item followed by a hovered item */
+	@media (hover: hover) {
+		div.feed
+			.feed-item[data-expanded="true"]
+			+ .feed-item:hover
+			.feed-item-card {
+			@apply mt-0.5;
+		}
+
+		div.feed
+			.feed-item[data-expanded="true"]
+			+ .feed-item:not(.feed-item--with-highlights):hover {
+			@apply mt-0.5;
+		}
+
+		/* Hovered item followed by expanded item */
+		div.feed
+			.feed-item:hover
+			+ .feed-item[data-expanded="true"]
+			.feed-item-card {
+			@apply mt-0.5;
+		}
 	}
 
 	@media (hover: hover) {
 		div.feed .feed-item--with-highlights:hover .feed-item-card {
 			@apply bg-neutral-100 dark:bg-neutral-800/50;
 		}
-	}
-
-	div.feed
-		.feed-item[data-expanded="true"]
-		.feed-desc {
-		-webkit-line-clamp: unset;
-		max-height: 20rem;
 	}
 
 	/* ── Highlight count button ──────────────────────────────────── */
