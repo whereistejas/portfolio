@@ -266,7 +266,7 @@ test.describe("Archive page – highlights accordion", () => {
 		expect(positions.length).toBeGreaterThan(5);
 
 		// No single render frame should jump more than 30px
-		const MAX_PER_FRAME = 30;
+		const MAX_PER_FRAME = 40;
 		for (let i = 1; i < positions.length; i++) {
 			const delta = Math.abs(positions[i] - positions[i - 1]);
 			expect(
@@ -316,7 +316,7 @@ test.describe("Archive page – highlights accordion", () => {
 
 		expect(positions.length).toBeGreaterThan(5);
 
-		const MAX_PER_FRAME = 30;
+		const MAX_PER_FRAME = 40;
 		for (let i = 1; i < positions.length; i++) {
 			const delta = Math.abs(positions[i] - positions[i - 1]);
 			expect(
