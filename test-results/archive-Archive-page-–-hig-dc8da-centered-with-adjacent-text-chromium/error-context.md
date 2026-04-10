@@ -1,0 +1,4661 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: archive.spec.ts >> Archive page – highlights accordion >> separator glyphs are vertically centered with adjacent text
+- Location: tests/archive.spec.ts:329:1
+
+# Error details
+
+```
+Error: Misaligned separators:
+Container #0: separator centers differ [195.6, 192.0]
+Container #1: separator centers differ [331.6, 328.0]
+Container #5: separator centers differ [875.6, 872.0]
+Container #6: separator centers differ [1011.6, 1008.0]
+Container #9: separator centers differ [1419.6, 1416.0]
+Container #12: separator centers differ [1827.6, 1824.0]
+Container #13: separator centers differ [1963.6, 1960.0]
+Container #17: separator centers differ [2507.6, 2504.0]
+Container #19: separator centers differ [2755.6, 2752.0]
+Container #20: separator centers differ [2891.6, 2888.0]
+Container #22: separator centers differ [3163.6, 3160.0]
+Container #23: separator centers differ [3299.6, 3296.0]
+Container #24: separator centers differ [3435.6, 3432.0]
+Container #25: separator centers differ [3571.6, 3568.0]
+Container #34: separator centers differ [4795.6, 4792.0]
+Container #35: separator centers differ [4931.6, 4928.0]
+Container #37: separator centers differ [5203.6, 5200.0]
+Container #38: separator centers differ [5339.6, 5336.0]
+Container #39: separator centers differ [5475.6, 5472.0]
+Container #41: separator centers differ [5747.6, 5744.0]
+Container #43: separator centers differ [6019.6, 6016.0]
+Container #44: separator centers differ [6155.6, 6152.0]
+Container #46: separator centers differ [6427.6, 6424.0]
+Container #47: separator centers differ [6563.6, 6560.0]
+Container #48: separator centers differ [6699.6, 6696.0]
+Container #51: separator centers differ [7107.6, 7104.0]
+Container #58: separator centers differ [8059.6, 8056.0]
+Container #61: separator centers differ [8467.6, 8464.0]
+Container #62: separator centers differ [8603.6, 8600.0]
+Container #63: separator centers differ [8739.6, 8736.0]
+Container #64: separator centers differ [8875.6, 8872.0]
+Container #65: separator centers differ [9011.6, 9008.0]
+Container #66: separator centers differ [9147.6, 9144.0]
+Container #68: separator centers differ [9419.6, 9416.0]
+Container #69: separator centers differ [9555.6, 9552.0]
+Container #71: separator centers differ [9827.6, 9824.0]
+Container #72: separator centers differ [9963.6, 9960.0]
+Container #73: separator centers differ [10099.6, 10096.0]
+Container #77: separator centers differ [10643.6, 10640.0]
+Container #81: separator centers differ [11187.6, 11184.0]
+Container #82: separator centers differ [11323.6, 11320.0]
+Container #95: separator centers differ [13091.6, 13088.0, 13088.0]
+Container #96: separator centers differ [13227.6, 13224.0]
+Container #100: separator centers differ [13771.6, 13768.0]
+Container #103: separator centers differ [14155.6, 14152.0]
+Container #110: separator centers differ [15107.6, 15104.0]
+Container #116: separator centers differ [15923.6, 15920.0]
+Container #119: separator centers differ [16331.6, 16328.0]
+Container #120: separator centers differ [16467.6, 16464.0]
+Container #121: separator centers differ [16603.6, 16600.0]
+Container #122: separator centers differ [16739.6, 16736.0]
+Container #130: separator centers differ [17827.6, 17824.0]
+Container #134: separator centers differ [18371.6, 18368.0]
+Container #137: separator centers differ [18779.6, 18776.0]
+Container #138: separator centers differ [18891.6, 18888.0]
+Container #140: separator centers differ [19163.6, 19160.0]
+Container #141: separator centers differ [19299.6, 19296.0]
+Container #142: separator centers differ [19411.6, 19408.0]
+Container #145: separator centers differ [19819.6, 19816.0]
+Container #146: separator centers differ [19955.6, 19952.0]
+Container #147: separator centers differ [20091.6, 20088.0]
+Container #148: separator centers differ [20227.6, 20224.0]
+Container #149: separator centers differ [20363.6, 20360.0]
+Container #150: separator centers differ [20499.6, 20496.0]
+Container #151: separator centers differ [20611.6, 20608.0]
+Container #152: separator centers differ [20747.6, 20744.0]
+Container #156: separator centers differ [21291.6, 21288.0]
+Container #157: separator centers differ [21427.6, 21424.0]
+Container #169: separator centers differ [23107.6, 23104.0]
+Container #173: separator centers differ [23651.6, 23648.0, 23648.0, 23648.0, 23648.0, 23648.0, 23648.0]
+Container #179: separator centers differ [24491.6, 24488.0]
+Container #182: separator centers differ [24899.6, 24896.0]
+Container #193: separator centers differ [26395.6, 26392.0]
+Container #194: separator centers differ [26531.6, 26528.0]
+Container #195: separator centers differ [26667.6, 26664.0]
+Container #197: separator centers differ [26939.6, 26936.0]
+Container #198: separator centers differ [27075.6, 27072.0]
+Container #201: separator centers differ [27483.6, 27480.0]
+Container #204: separator centers differ [27867.6, 27864.0]
+Container #205: separator centers differ [27979.6, 27976.0]
+Container #208: separator centers differ [28387.6, 28384.0, 28384.0, 28384.0]
+Container #211: separator centers differ [28843.6, 28840.0]
+Container #212: separator centers differ [28979.6, 28976.0]
+Container #214: separator centers differ [29251.6, 29248.0]
+Container #215: separator centers differ [29387.6, 29384.0]
+Container #218: separator centers differ [29771.6, 29768.0]
+Container #219: separator centers differ [29907.6, 29904.0, 29904.0, 29904.0, 29904.0, 29904.0]
+Container #221: separator centers differ [30203.6, 30200.0]
+Container #222: separator centers differ [30339.6, 30336.0, 30336.0, 30336.0]
+Container #224: separator centers differ [30611.6, 30608.0]
+Container #233: separator centers differ [31835.6, 31832.0]
+Container #236: separator centers differ [32243.6, 32240.0]
+Container #239: separator centers differ [32651.6, 32648.0]
+Container #242: separator centers differ [33059.6, 33056.0]
+Container #245: separator centers differ [33467.6, 33464.0, 33464.0, 33464.0]
+Container #248: separator centers differ [33875.6, 33872.0]
+Container #249: separator centers differ [34011.6, 34008.0]
+Container #255: separator centers differ [34827.6, 34824.0]
+Container #258: separator centers differ [35235.6, 35232.0]
+Container #263: separator centers differ [35915.6, 35912.0]
+Container #265: separator centers differ [36187.6, 36184.0]
+Container #266: separator centers differ [36323.6, 36320.0]
+Container #267: separator centers differ [36459.6, 36456.0]
+Container #271: separator centers differ [37003.6, 37000.0]
+Container #275: separator centers differ [37547.6, 37544.0]
+Container #277: separator centers differ [37819.6, 37816.0]
+Container #282: separator centers differ [38499.6, 38496.0]
+Container #283: separator centers differ [38635.6, 38632.0]
+Container #284: separator centers differ [38771.6, 38768.0]
+Container #287: separator centers differ [39179.6, 39176.0]
+Container #290: separator centers differ [39587.6, 39584.0]
+Container #292: separator centers differ [39859.6, 39856.0]
+Container #295: separator centers differ [40267.6, 40264.0]
+Container #299: separator centers differ [40811.6, 40808.0]
+Container #303: separator centers differ [41355.6, 41352.0]
+Container #304: separator centers differ [41491.6, 41488.0]
+Container #309: separator centers differ [42171.6, 42168.0]
+Container #311: separator centers differ [42443.6, 42440.0]
+Container #313: separator centers differ [42715.6, 42712.0]
+Container #314: separator centers differ [42851.6, 42848.0]
+Container #315: separator centers differ [42987.6, 42984.0]
+Container #317: separator centers differ [43259.6, 43256.0]
+Container #318: separator centers differ [43395.6, 43392.0]
+Container #320: separator centers differ [43667.6, 43664.0]
+Container #322: separator centers differ [43939.6, 43936.0]
+Container #323: separator centers differ [44075.6, 44072.0]
+Container #325: separator centers differ [44347.6, 44344.0]
+Container #328: separator centers differ [44755.6, 44752.0]
+Container #335: separator centers differ [45683.6, 45680.0]
+Container #336: separator centers differ [45819.6, 45816.0]
+Container #338: separator centers differ [46091.6, 46088.0]
+Container #340: separator centers differ [46363.6, 46360.0]
+Container #342: separator centers differ [46635.6, 46632.0]
+Container #343: separator centers differ [46771.6, 46768.0]
+Container #345: separator centers differ [47043.6, 47040.0]
+Container #348: separator centers differ [47451.6, 47448.0]
+Container #351: separator centers differ [47859.6, 47856.0]
+Container #352: separator centers differ [47995.6, 47992.0]
+Container #356: separator centers differ [48539.6, 48536.0]
+Container #357: separator centers differ [48675.6, 48672.0]
+Container #360: separator centers differ [49083.6, 49080.0]
+Container #367: separator centers differ [50035.6, 50032.0]
+Container #370: separator centers differ [50443.6, 50440.0]
+Container #371: separator centers differ [50579.6, 50576.0]
+Container #375: separator centers differ [51123.6, 51120.0]
+
+expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 145
+Received array:  ["Container #0: separator centers differ [195.6, 192.0]", "Container #1: separator centers differ [331.6, 328.0]", "Container #5: separator centers differ [875.6, 872.0]", "Container #6: separator centers differ [1011.6, 1008.0]", "Container #9: separator centers differ [1419.6, 1416.0]", "Container #12: separator centers differ [1827.6, 1824.0]", "Container #13: separator centers differ [1963.6, 1960.0]", "Container #17: separator centers differ [2507.6, 2504.0]", "Container #19: separator centers differ [2755.6, 2752.0]", "Container #20: separator centers differ [2891.6, 2888.0]", …]
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - heading "READING ARCHIVE" [level=4] [ref=e4]
+  - main [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "7 Practical Animation Tips" [ref=e9] [cursor=pointer]:
+          - /url: https://emilkowal.ski/ui/7-practical-animation-tips#5.-make-your-animations-origin-aware
+        - generic [ref=e10]: Good animations are not magic but can be improved with simple tricks like easing, scale, and delay. Small details like feedback, origin-aware scaling, and blur make interfaces feel smoother and more responsive. Keep animations fast and subtle to enhance user experience without causing annoyance.
+        - generic [ref=e11]:
+          - generic [ref=e12]: article
+          - generic [ref=e14]: ✦
+          - generic [ref=e15]: 09 Apr 2026
+          - generic [ref=e16]: ✦
+          - generic [ref=e17]: Emil Kowalski
+      - generic [ref=e18]:
+        - link "Entry animations" [ref=e19] [cursor=pointer]:
+          - /url: https://emilkowal.ski/ui/train-your-judgement
+        - generic [ref=e20]: AI can create animation code, but it often feels mediocre and lacks the right motion feel. This article helps you learn to spot, describe, and fix animation problems by comparing examples. Using proper animation timing and easing makes interfaces feel smoother and more natural.
+        - generic [ref=e21]:
+          - generic [ref=e22]: article
+          - generic [ref=e24]: ✦
+          - generic [ref=e25]: 09 Apr 2026
+          - generic [ref=e26]: ✦
+          - generic [ref=e27]: Emil Kowalski
+      - generic [ref=e28]:
+        - link "Borrow-checking surprises" [ref=e29] [cursor=pointer]:
+          - /url: https://www.scattered-thoughts.net/writing/borrow-checking-surprises/
+        - generic [ref=e30]: The author finds Rust's borrow-checker behavior surprising and confusing. Many people, even experienced Rust users, misunderstand its details. Understanding these examples helps improve mental models of how borrow-checking works.
+        - generic [ref=e31]:
+          - generic [ref=e32]: article
+          - generic [ref=e34]: ✦
+          - generic [ref=e35]: 09 Apr 2026
+      - generic [ref=e37]:
+        - link "The Most Important Concept for a Healthy Relationship (In this Psychologist’s Opinion)" [ref=e38] [cursor=pointer]:
+          - /url: https://www.clearerthinking.org/post/the-most-important-concept-for-a-healthy-relationship?_bhlid=ce689bf008a297431f78a3823f5a437a15d8a07d
+        - generic [ref=e40]:
+          - generic [ref=e42]: Healthy relationships depend on feeling safe, understood, and secure with your partner. Conflict often hides deeper fears of abandonment or not being valued. Talking openly about these fears and needs builds trust and stronger bonds.
+          - generic [ref=e43]:
+            - generic [ref=e44]: article
+            - generic [ref=e46]: ✦
+            - generic [ref=e47]: 08 Apr 2026
+            - generic [ref=e48]: ✦
+            - generic [ref=e49]: Jeff Perron
+            - generic [ref=e50]: ✦
+            - button "1 highlight" [ref=e51] [cursor=pointer]
+      - generic [ref=e53]:
+        - link "Discovery And Seminal Developments In The Crispr Field" [ref=e54] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/440544057
+        - generic [ref=e56]:
+          - generic [ref=e58]: CRISPR systems were discovered in bacteria and archaea in the late 1980s and early 1990s. They consist of repeating DNA sequences, spacers, and Cas proteins that work together to defend against invading genetic elements. Over time, scientists have uncovered how these components function and vary across different species.
+          - generic [ref=e59]:
+            - generic [ref=e60]: pdf
+            - generic [ref=e62]: ✦
+            - generic [ref=e63]: 06 Apr 2026
+            - generic [ref=e64]: ✦
+            - generic [ref=e65]: Francisco J. M. Mojica
+            - generic [ref=e66]: ✦
+            - generic [ref=e67]: Roger A. Garrett
+            - generic [ref=e68]: ✦
+            - button "5 highlights" [ref=e69] [cursor=pointer]
+      - generic [ref=e70]:
+        - link "Eight years of wanting, three months of building with AI" [ref=e71] [cursor=pointer]:
+          - /url: https://lalitm.com/post/building-syntaqlite-ai/#sn-ref-wadler-lindig
+        - generic [ref=e72]: AI helped the author build a complex project quickly by generating lots of code and speeding research. However, AI struggled with design and caused confusion, so the author had to guide and fix many parts manually. Overall, AI is great for coding but cannot replace careful planning and decision-making.
+        - generic [ref=e73]:
+          - generic [ref=e74]: article
+          - generic [ref=e76]: ✦
+          - generic [ref=e77]: 05 Apr 2026
+          - generic [ref=e78]: ✦
+          - generic [ref=e79]: Lalit Maganti
+      - generic [ref=e80]:
+        - link "A Love Letter to Grist" [ref=e81] [cursor=pointer]:
+          - /url: https://alsuren.github.io/2026/03/09/a-love-letter-to-grist
+        - generic [ref=e82]: The author loves Grist because it uses open sqlite files that you truly own and can edit anytime. Grist supports collaboration and data control better than many similar tools. Although not perfect, it offers strong data freedom and long-term trustworthiness.
+        - generic [ref=e83]:
+          - generic [ref=e84]: article
+          - generic [ref=e86]: ✦
+          - generic [ref=e87]: 31 Mar 2026
+          - generic [ref=e88]: ✦
+          - generic [ref=e89]: David Laban
+      - generic [ref=e91]:
+        - 'link "Issue 45: Is Being Well Read Actually A Thing? Pt II: The Upper Class of Readers" [ref=e92] [cursor=pointer]':
+          - /url: https://www.bramadams.dev/issue-45/
+        - generic [ref=e94]:
+          - generic [ref=e96]: "Readers fall into three groups based on books read per year: lower, middle, and upper class. Consistent reading habit (inertia) matters more than reading many books quickly (density). Being an upper class reader broadens your knowledge and builds mental focus over time."
+          - generic [ref=e97]:
+            - generic [ref=e98]: article
+            - generic [ref=e100]: ✦
+            - generic [ref=e101]: 31 Mar 2026
+            - generic [ref=e102]: ✦
+            - generic [ref=e103]: Bram Adams
+            - generic [ref=e104]: ✦
+            - button "2 highlights" [ref=e105] [cursor=pointer]
+      - generic [ref=e107]:
+        - link "How to make yourself crave hard books (not just want to want to read them)" [ref=e108] [cursor=pointer]:
+          - /url: https://samuelrinko.substack.com/p/how-to-make-yourself-want-to-read
+        - generic [ref=e110]:
+          - generic [ref=e112]: Reading hard books is tough because the benefits are often invisible and slow to show. Creative intellectual projects, like writing essays or joining discussions, make reading feel rewarding and motivate you to keep going. These projects also help you remember what you read and turn reading into a fun, fulfilling habit.
+          - generic [ref=e113]:
+            - generic [ref=e114]: article
+            - generic [ref=e116]: ✦
+            - generic [ref=e117]: 31 Mar 2026
+            - generic [ref=e118]: ✦
+            - generic [ref=e119]: Sam Rinko
+            - generic [ref=e120]: ✦
+            - button "2 highlights" [ref=e121] [cursor=pointer]
+      - generic [ref=e122]:
+        - link "PHANTOM OBLIGATION" [ref=e123] [cursor=pointer]:
+          - /url: https://www.terrygodier.com/phantom-obligation/ascii
+        - generic [ref=e124]: RSS readers copied email's inbox design, making unread counts feel like real obligations. This causes guilt over articles, even though no one is truly waiting for a response. Interfaces shape how we feel, and maybe we should find new ways to experience content without phantom pressure.
+        - generic [ref=e125]:
+          - generic [ref=e126]: article
+          - generic [ref=e128]: ✦
+          - generic [ref=e129]: 31 Mar 2026
+          - generic [ref=e130]: ✦
+          - generic [ref=e131]: Terry Godier
+      - generic [ref=e133]:
+        - link "Does It Help to Know History?" [ref=e134] [cursor=pointer]:
+          - /url: https://www.newyorker.com/news/daily-comment/help-know-history
+        - generic [ref=e136]:
+          - generic [ref=e138]: Studying history helps us understand that events often don't go as planned, and actions can have unintended consequences. It teaches humility and encourages us to approach problems with caution, rather than aggression. By learning from the past, we can avoid repeating mistakes and better navigate present challenges.
+          - generic [ref=e139]:
+            - generic [ref=e140]: article
+            - generic [ref=e142]: ✦
+            - generic [ref=e143]: 31 Mar 2026
+            - generic [ref=e144]: ✦
+            - generic [ref=e145]: Adam Gopnik
+            - generic [ref=e146]: ✦
+            - button "5 highlights" [ref=e147] [cursor=pointer]
+      - generic [ref=e149]:
+        - link "If You Quit Social Media, Will You Read More Books?" [ref=e150] [cursor=pointer]:
+          - /url: https://www.newyorker.com/news/fault-lines/if-you-quit-social-media-will-you-read-more-books?utm_source=nl&utm_brand=tny&utm_mailing=TNY_Daily_120925&utm_campaign=aud-dev&utm_medium=email&utm_term=tny_daily_digest&bxid=5bd66fd02ddf9c6194389d0a&cndid=22300418&hasha=268e3cc9cd4f93e81125ff99bc15edb0&hashb=f8df4272800edcc1fe2e8ce7e5c53aa6c2b79fe9&hashc=5906abdd2530ce567de22e52d1c561df763a24583893148a04c39e9a87bfced3&esrc=AUTO_OTHER
+        - generic [ref=e152]:
+          - generic [ref=e154]: Quitting social media helped the author finish work but did not make him read many more books. The internet changes how we find and choose books, often making reading more efficient but narrower. Online communities can both broaden access and create filter bubbles that replace slower, shared reading experiences.
+          - generic [ref=e155]:
+            - generic [ref=e156]: article
+            - generic [ref=e158]: ✦
+            - generic [ref=e159]: 30 Mar 2026
+            - generic [ref=e160]: ✦
+            - generic [ref=e161]: Jay Caspian Kang
+            - generic [ref=e162]: ✦
+            - button "3 highlights" [ref=e163] [cursor=pointer]
+      - generic [ref=e164]:
+        - link "The Bet On Juniors Just Got Better" [ref=e165] [cursor=pointer]:
+          - /url: https://tidyfirst.substack.com/p/the-bet-on-juniors-just-got-better?r=1gvqcg&utm_medium=ios&triedRedirect=true
+        - generic [ref=e166]: AI tools let junior developers learn much faster. Faster learning shortens the risky ramp-up period and makes more hires profitable. To get this benefit you must manage juniors for learning and teach them to use AI well.
+        - generic [ref=e167]:
+          - generic [ref=e168]: article
+          - generic [ref=e170]: ✦
+          - generic [ref=e171]: 30 Mar 2026
+          - generic [ref=e172]: ✦
+          - generic [ref=e173]: Kent Beck
+      - generic [ref=e174]:
+        - link "B-trees with GADTs" [ref=e175] [cursor=pointer]:
+          - /url: https://matthew.brecknell.net/posts/btree-gadt/
+        - generic [ref=e176]: The author builds a simple B-tree data structure in Haskell. They use a GADT to ensure the tree's structure is correct. The project includes code, slides, and videos for learning.
+        - generic [ref=e177]:
+          - generic [ref=e178]: article
+          - generic [ref=e180]: ✦
+          - generic [ref=e181]: 28 Mar 2026
+          - generic [ref=e182]: ✦
+          - generic [ref=e183]: Matthew Brecknell
+      - generic [ref=e185]:
+        - link "How To Remember Everything You Read" [ref=e186] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/386310236
+        - generic [ref=e188]:
+          - generic [ref=e190]: Actively process what you read by pausing to write one-sentence summaries and permanent notes. Use spaced repetition and self-testing to revisit and retrieve ideas over time. Turn reading into action by synthesizing, applying, and linking notes so knowledge sticks.
+          - generic [ref=e191]:
+            - generic [ref=e192]: pdf
+            - generic [ref=e194]: ✦
+            - generic [ref=e195]: 28 Mar 2026
+            - generic [ref=e196]: ✦
+            - button "8 highlights" [ref=e197] [cursor=pointer]
+      - generic [ref=e199]:
+        - link "Treat your to-read pile like a river, not a bucket" [ref=e200] [cursor=pointer]:
+          - /url: https://www.oliverburkeman.com/river
+        - generic [ref=e202]:
+          - generic [ref=e204]: Many people feel stressed by having too many important things to do or read. The problem is not finding what matters, but accepting you cannot do everything. Instead of trying to empty your to-read pile, treat it like a river and choose what to enjoy as it flows by.
+          - generic [ref=e205]:
+            - generic [ref=e206]: article
+            - generic [ref=e208]: ✦
+            - generic [ref=e209]: 28 Mar 2026
+            - generic [ref=e210]: ✦
+            - generic [ref=e211]: Oliver Burkeman
+            - generic [ref=e212]: ✦
+            - button "4 highlights" [ref=e213] [cursor=pointer]
+      - generic [ref=e215]:
+        - link "Graphs and arena allocation" [ref=e216] [cursor=pointer]:
+          - /url: https://github.com/nrc/r4cppp/blob/master/graphs/README.md
+        - generic [ref=e218]:
+          - generic [ref=e220]: Constructing graphs in Rust can be challenging due to strict lifetime and mutability rules. The recommended approach involves using arena allocation and managing node pointers carefully to avoid cyclic ownership issues. This method allows for mutable graphs where nodes can be reused outside the graph structure, but requires attention to memory management and lifetimes.
+          - generic [ref=e221]:
+            - generic [ref=e222]: article
+            - generic [ref=e224]: ✦
+            - generic [ref=e225]: 28 Mar 2026
+            - generic [ref=e226]: ✦
+            - generic [ref=e227]: Nick Cameron
+            - generic [ref=e228]: ✦
+            - button "3 highlights" [ref=e229] [cursor=pointer]
+      - generic [ref=e230]:
+        - link "Graphs in Rust" [ref=e231] [cursor=pointer]:
+          - /url: http://featherweightmusings.blogspot.com/2015/04/graphs-in-rust.html
+        - generic [ref=e232]: Rust makes graphs awkward to build because of strict lifetimes and mutability rules. Cycles prevent using simple owning pointers like Box, and edges must be mutable during initialization. The author prefers an arena-allocation approach with explicit lifetimes and discusses possible language improvements.
+        - generic [ref=e233]:
+          - generic [ref=e234]: article
+          - generic [ref=e236]: ✦
+          - generic [ref=e237]: 27 Mar 2026
+          - generic [ref=e238]: ✦
+          - generic [ref=e239]: Nick Cameron
+      - generic [ref=e241]:
+        - link "Family Values" [ref=e242] [cursor=pointer]:
+          - /url: https://benji.org/family-values
+        - generic [ref=e244]:
+          - generic [ref=e246]: The Family app focuses on fluidity and seamless transitions to enhance user experience and keep interactions smooth. It aims to create delightful moments that resonate personally, making the app feel responsive and human. By ensuring every interaction is meaningful, the app respects users' time and intelligence while guiding them effortlessly through their journey.
+          - generic [ref=e247]:
+            - generic [ref=e248]: article
+            - generic [ref=e250]: ✦
+            - generic [ref=e251]: 27 Mar 2026
+            - generic [ref=e252]: ✦
+            - generic [ref=e253]: Benji Taylor
+            - generic [ref=e254]: ✦
+            - button "5 highlights" [ref=e255] [cursor=pointer]
+      - generic [ref=e256]:
+        - link "A eulogy for Vim" [ref=e257] [cursor=pointer]:
+          - /url: https://drewdevault.com/2026/03/25/2026-03-25-Forking-vim.html
+        - generic [ref=e258]: Vim is important to me. I’m using it to write the words you’re reading right now.
+        - generic [ref=e259]:
+          - generic [ref=e260]: article
+          - generic [ref=e262]: ✦
+          - generic [ref=e263]: 26 Mar 2026
+          - generic [ref=e264]: ✦
+          - generic [ref=e265]: Drew DeVault
+      - generic [ref=e266]:
+        - link "You can just read 25 books" [ref=e267] [cursor=pointer]:
+          - /url: https://a16z.substack.com/p/you-can-just-read-25-books
+        - generic [ref=e268]: a16z asked founders and partners to share one underrated book that shaped their thinking. They recommend 25 varied titles on leadership, creativity, decision-making, and resilience. The list is meant to help outsiders gain contrarian insights and practical wisdom.
+        - generic [ref=e269]:
+          - generic [ref=e270]: article
+          - generic [ref=e272]: ✦
+          - generic [ref=e273]: 24 Mar 2026
+          - generic [ref=e274]: ✦
+          - generic [ref=e275]: a16z New Media
+      - generic [ref=e277]:
+        - link "Three Simple Principles of Trade Policy" [ref=e278] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/267450121
+        - generic [ref=e280]:
+          - generic [ref=e282]: Import restrictions can hurt exports because countries need to sell goods to earn money to buy from others. Historically, writers have recognized that exports and imports are closely linked, and limiting imports could lead to reduced exports as well. Trade imbalances often reflect capital flows, and trade policies alone cannot effectively change a country's balance of trade without considering overall savings and investment.
+          - generic [ref=e283]:
+            - generic [ref=e284]: pdf
+            - generic [ref=e286]: ✦
+            - generic [ref=e287]: 24 Mar 2026
+            - generic [ref=e288]: ✦
+            - generic [ref=e289]: Douglas A. Irwin
+            - generic [ref=e290]: ✦
+            - button "7 highlights" [ref=e291] [cursor=pointer]
+      - generic [ref=e292]:
+        - link "It’s hard to justify Tahoe icons" [ref=e293] [cursor=pointer]:
+          - /url: https://tonsky.me/blog/tahoe-icons/
+        - generic [ref=e294]: Apple's Tahoe icons are confusing and inconsistent, making it hard to find or understand menu items quickly. Too many icons clutter menus, and similar or unclear symbols cause frustration. Good icon design should be simple, clear, and consistent, but Tahoe often misses these points.
+        - generic [ref=e295]:
+          - generic [ref=e296]: article
+          - generic [ref=e298]: ✦
+          - generic [ref=e299]: 23 Mar 2026
+          - generic [ref=e300]: ✦
+          - generic [ref=e301]: Nikita Prokopov
+      - generic [ref=e302]:
+        - link "Torturing rustc by Emulating HKTs, Causing an Inductive Cycle and Borking the Compiler" [ref=e303] [cursor=pointer]:
+          - /url: https://harudagondi.space/blog/torturing-rustc-by-emulating-hkts/
+        - generic [ref=e304]: Higher Kinded Types (HKTs) let generics have generics, but Rust does not fully support them yet. Trying to emulate HKTs in Rust can cause complex errors and infinite cycles in the compiler's trait solver. Learning about this led the author to explore logic, proofs, and why supporting HKTs would make Rust more complicated.
+        - generic [ref=e305]:
+          - generic [ref=e306]: article
+          - generic [ref=e308]: ✦
+          - generic [ref=e309]: 20 Mar 2026
+          - generic [ref=e310]: ✦
+          - generic [ref=e311]: Gio Genre De Asis
+      - generic [ref=e312]:
+        - link "A sufficiently detailed spec is code" [ref=e313] [cursor=pointer]:
+          - /url: https://haskellforall.com/2026/03/a-sufficiently-detailed-spec-is-code
+        - generic [ref=e314]: Generating code purely from specification documents is unrealistic because detailed specs end up looking like code themselves. Writing clear and thoughtful specifications takes as much effort as coding, so skipping coding for specs doesn’t save work. Poorly made specs lead to unreliable code, and coding agents cannot fix unclear or incomplete instructions.
+        - generic [ref=e315]:
+          - generic [ref=e316]: article
+          - generic [ref=e318]: ✦
+          - generic [ref=e319]: 18 Mar 2026
+          - generic [ref=e320]: ✦
+          - generic [ref=e321]: Gabriella439
+      - generic [ref=e322]:
+        - link "stupid jj tricks" [ref=e323] [cursor=pointer]:
+          - /url: https://andre.arko.net/2025/09/28/stupid-jj-tricks/
+        - generic [ref=e324]: The text explains useful tips and configurations for using the version control tool jj more effectively. It highlights how templates, revsets, and commands like jj absorb, jj parallelize, and jj fix can simplify managing commits and bookmarks. The author encourages exploring built-in templates and creating aliases to improve workflow.
+        - generic [ref=e325]:
+          - generic [ref=e326]: article
+          - generic [ref=e328]: ✦
+          - generic [ref=e329]: 16 Mar 2026
+          - generic [ref=e330]: ✦
+          - generic [ref=e331]: André Arko
+      - generic [ref=e333]:
+        - link "A Mathematician’s Lament" [ref=e334] [cursor=pointer]:
+          - /url: https://worrydream.com/refs/Lockhart_2002_-_A_Mathematician's_Lament.pdf
+        - generic [ref=e336]:
+          - generic [ref=e338]: The author criticizes current mathematics education for stifling children's curiosity and creativity by focusing solely on facts and formulas. He believes that math should be taught as an art form, allowing students to explore, create, and appreciate its beauty. The lack of engaging and meaningful mathematical experiences in schools leads to a disconnection from the true essence of mathematics.
+          - generic [ref=e339]:
+            - generic [ref=e340]: pdf
+            - generic [ref=e342]: ✦
+            - generic [ref=e343]: 15 Mar 2026
+            - generic [ref=e344]: ✦
+            - generic [ref=e345]: Paul Lockhart
+            - generic [ref=e346]: ✦
+            - button "10 highlights" [ref=e347] [cursor=pointer]
+      - generic [ref=e349]:
+        - link "Cursor Goes To War For AI Coding Dominance Techocalypse, Now? How Anthropic’s Move Into Legal Ends The Myth Of AI-Proof Professions" [ref=e350] [cursor=pointer]:
+          - /url: https://www.forbes.com/sites/annatong/2026/03/05/cursor-goes-to-war-for-ai-coding-dominance/
+        - generic [ref=e352]:
+          - generic [ref=e354]: Cursor, a leading AI coding company, faces challenges as new AI models can write entire code features without human help. This shift means traditional code editors may become less important, pushing Cursor to develop better AI models and focus on enterprise clients. Meanwhile, AI is transforming many professions, making AI skills essential for success in the future.
+          - generic [ref=e355]:
+            - generic [ref=e356]: article
+            - generic [ref=e358]: ✦
+            - generic [ref=e359]: 06 Mar 2026
+            - generic [ref=e360]: ✦
+            - generic [ref=e361]: Anna Tong
+            - generic [ref=e362]: ✦
+            - button "1 highlight" [ref=e363] [cursor=pointer]
+      - generic [ref=e365]:
+        - 'link "The Claude C Compiler: What It Reveals About the Future of Software" [ref=e366] [cursor=pointer]':
+          - /url: https://www.modular.com/blog/the-claude-c-compiler-what-it-reveals-about-the-future-of-software?__readwiseLocation=
+        - generic [ref=e368]:
+          - generic [ref=e370]: Anthropic used AI agents to build a C compiler called Claude. After two weeks, it could compile the Linux kernel. This shows AI can develop complex software with little human help.
+          - generic [ref=e371]:
+            - generic [ref=e372]: article
+            - generic [ref=e374]: ✦
+            - generic [ref=e375]: 05 Mar 2026
+            - generic [ref=e376]: ✦
+            - generic [ref=e377]: Chris Latner
+            - generic [ref=e378]: ✦
+            - button "3 highlights" [ref=e379] [cursor=pointer]
+      - generic [ref=e381]:
+        - link "Rust zero-cost abstractions vs. SIMD" [ref=e382] [cursor=pointer]:
+          - /url: https://turbopuffer.com/blog/zero-cost
+        - generic [ref=e384]:
+          - generic [ref=e386]: Rust’s zero-cost iterators can prevent the compiler from using fast SIMD instructions, slowing down queries. By changing from single-item iteration to batched iteration, turbopuffer made the process 60 times faster. This shows that some abstractions hide costs, and batching helps the compiler optimize better.
+          - generic [ref=e387]:
+            - generic [ref=e388]: article
+            - generic [ref=e390]: ✦
+            - generic [ref=e391]: 04 Mar 2026
+            - generic [ref=e392]: ✦
+            - button "1 highlight" [ref=e393] [cursor=pointer]
+      - generic [ref=e395]:
+        - link "Boolean Blindness" [ref=e396] [cursor=pointer]:
+          - /url: https://existentialtype.wordpress.com/2011/03/15/boolean-blindness/
+        - generic [ref=e398]:
+          - generic [ref=e400]: The text discusses the limitations of imperative and object-oriented programming, emphasizing the need for a language-based model of computation. It highlights the λ-calculus as a better alternative for defining programs and analyzing their performance. The author argues for a focus on type structure and algorithm expression without relying on traditional compilation methods.
+          - generic [ref=e401]:
+            - generic [ref=e402]: article
+            - generic [ref=e404]: ✦
+            - generic [ref=e405]: 04 Mar 2026
+            - generic [ref=e406]: ✦
+            - button "3 highlights" [ref=e407] [cursor=pointer]
+      - generic [ref=e409]:
+        - link "Writing a simple pool allocator in C" [ref=e410] [cursor=pointer]:
+          - /url: https://8dcc.github.io/programming/pool-allocator.html
+        - generic [ref=e412]:
+          - generic [ref=e414]: This text explains how to create a simple pool allocator in C, which manages memory by allocating and freeing chunks of data. The pool consists of free and non-free chunks, linked together for easy access. The allocator can expand by adding new chunk arrays while maintaining efficient allocation and freeing processes.
+          - generic [ref=e415]:
+            - generic [ref=e416]: article
+            - generic [ref=e418]: ✦
+            - generic [ref=e419]: 03 Mar 2026
+            - generic [ref=e420]: ✦
+            - generic [ref=e421]: 8dcc
+            - generic [ref=e422]: ✦
+            - button "1 highlight" [ref=e423] [cursor=pointer]
+      - generic [ref=e425]:
+        - link "Clawed" [ref=e426] [cursor=pointer]:
+          - /url: https://www.hyperdimensional.co/p/clawed
+        - generic [ref=e428]:
+          - generic [ref=e430]: The U.S. government stopped a deal with AI company Anthropic over worries about private limits on military AI use. This move may hurt the U.S. AI industry and national security by creating distrust and higher costs. The author warns that government actions like this threaten the future of AI and American liberty.
+          - generic [ref=e431]:
+            - generic [ref=e432]: article
+            - generic [ref=e434]: ✦
+            - generic [ref=e435]: 02 Mar 2026
+            - generic [ref=e436]: ✦
+            - generic [ref=e437]: Dean W. Ball
+            - generic [ref=e438]: ✦
+            - button "2 highlights" [ref=e439] [cursor=pointer]
+      - generic [ref=e441]:
+        - 'link "Issue 44: Is Being Well Read Actually a Thing? Part I - Zero to One" [ref=e442] [cursor=pointer]':
+          - /url: https://www.bramadams.dev/issue-44/
+        - generic [ref=e444]:
+          - generic [ref=e446]: In this newsletter, the author discusses the reading habits of Americans based on a survey conducted in 2023. The data reveals that simply reading two books in a year puts a person in the top half of the population, highlighting a lack of reading in society. The author argues that when reading becomes a way to fit in rather than a means of deep thinking, it hinders the country's ability to navigate a complex world. The author also compares the time spent on social media platforms like TikTok to the time that could be spent reading, emphasizing the value of active engagement with books. The author encourages readers to make a commitment to reading and offers a strategy for developing a reading habit.
+          - generic [ref=e447]:
+            - generic [ref=e448]: article
+            - generic [ref=e450]: ✦
+            - generic [ref=e451]: 02 Mar 2026
+            - generic [ref=e452]: ✦
+            - generic [ref=e453]: Bram Adams
+            - generic [ref=e454]: ✦
+            - button "2 highlights" [ref=e455] [cursor=pointer]
+      - generic [ref=e456]:
+        - link "Anthropic and Alignment" [ref=e457] [cursor=pointer]:
+          - /url: https://stratechery.com/2026/anthropic-and-alignment/
+        - generic [ref=e458]: Anthropic refuses to let the U.S. military fully control how its AI is used, causing a conflict with the government. The U.S. fears that unchecked AI power could rival the military and threaten national security. This debate shows the challenge of balancing AI innovation with government oversight and global risks.
+        - generic [ref=e459]:
+          - generic [ref=e460]: article
+          - generic [ref=e462]: ✦
+          - generic [ref=e463]: 02 Mar 2026
+          - generic [ref=e464]: ✦
+          - generic [ref=e465]: Ben Thompson
+      - generic [ref=e466]:
+        - link "decomplexification continued" [ref=e467] [cursor=pointer]:
+          - /url: https://daniel.haxx.se/blog/2026/02/24/decomplexification-continued/
+        - generic [ref=e468]: "Last spring I wrote a blog post about our ongoing work in the background to gradually simplify the curl source code over time. This is a follow-up: a status update of what we have done since then and what comes next. In May 2025 I had just managed to get the worst function in curl … Continue reading decomplexification continued →"
+        - generic [ref=e469]:
+          - generic [ref=e470]: rss
+          - generic [ref=e472]: ✦
+          - generic [ref=e473]: 26 Feb 2026
+          - generic [ref=e474]: ✦
+          - generic [ref=e475]: Daniel Stenberg
+      - generic [ref=e477]:
+        - link "The Patriot" [ref=e478] [cursor=pointer]:
+          - /url: https://colossus.com/article/the-patriot-shyam-sankar-palantir/
+        - generic [ref=e480]:
+          - generic [ref=e482]: Palantir is a powerful and secretive company that builds software to help governments and defend Western values. Shyam is a key leader who created the role of Forward Deployed Engineer and helped the company succeed in difficult situations. Though Shyam has recently become more public, there is a tension between genuine warning and strategic business messaging in his new role.
+          - generic [ref=e483]:
+            - generic [ref=e484]: article
+            - generic [ref=e486]: ✦
+            - generic [ref=e487]: 26 Feb 2026
+            - generic [ref=e488]: ✦
+            - generic [ref=e489]: Colossus
+            - generic [ref=e490]: ✦
+            - button "12 highlights" [ref=e491] [cursor=pointer]
+      - generic [ref=e492]:
+        - link "Compiler Education Deserves a Revolution" [ref=e493] [cursor=pointer]:
+          - /url: https://thunderseethe.dev/posts/compiler-education-deserves-a-revoluation/
+        - generic [ref=e494]: Modern compilers use a query-based model instead of a step-by-step pipeline. This allows faster, incremental compilation and better support for coding tools like IDEs. We need more teaching resources to help people learn about these new compilers.
+        - generic [ref=e495]:
+          - generic [ref=e496]: article
+          - generic [ref=e498]: ✦
+          - generic [ref=e499]: 26 Feb 2026
+          - generic [ref=e500]: ✦
+          - generic [ref=e501]: Ethan Smith
+      - generic [ref=e502]:
+        - link "India’s ‘AI Impact Summit’ Promises Little More Than Spectacle" [ref=e503] [cursor=pointer]:
+          - /url: https://internetfreedom.in/indias-ai-impact-summit-promises-little-more-than-spectacle/
+        - generic [ref=e504]: India's AI Summit is more about showing power and less about real change or human rights. Big tech companies and the government control the event, while voices of workers and civil society are missing. The summit risks being just a flashy show, not a place for fair AI rules or protection for people.
+        - generic [ref=e505]:
+          - generic [ref=e506]: article
+          - generic [ref=e508]: ✦
+          - generic [ref=e509]: 25 Feb 2026
+          - generic [ref=e510]: ✦
+          - generic [ref=e511]: Apar Gupta
+      - generic [ref=e512]:
+        - 'link "India AI Impact Summit 2026: $100 Billion in AI Investment and Why It Matters for Enterprise Automation" [ref=e513] [cursor=pointer]':
+          - /url: https://beam.ai/agentic-insights/india-ai-impact-summit-2026-key-takeaways
+        - generic [ref=e514]: The India AI Impact Summit kicked off with $100B in investment targets, Anthropic's India expansion, and 12 sovereign AI models. Here's what matters.
+        - generic [ref=e515]:
+          - generic [ref=e516]: article
+          - generic [ref=e518]: ✦
+          - generic [ref=e519]: 25 Feb 2026
+          - generic [ref=e520]: ✦
+          - generic [ref=e521]: Fredrik Falk
+      - generic [ref=e523]:
+        - link "Dynamic Languages are Static Languages" [ref=e524] [cursor=pointer]:
+          - /url: https://existentialtype.wordpress.com/2011/03/19/dynamic-languages-are-static-languages/
+        - generic [ref=e526]:
+          - generic [ref=e528]: The author argues that dynamic languages are actually restrictive versions of static languages, limiting expressiveness. He believes that the appeal of dynamic languages is largely due to marketing and a misunderstanding of typing systems. Ultimately, he asserts that a good programming language should support both static and dynamic techniques to maximize flexibility and creativity.
+          - generic [ref=e529]:
+            - generic [ref=e530]: article
+            - generic [ref=e532]: ✦
+            - generic [ref=e533]: 25 Feb 2026
+            - generic [ref=e534]: ✦
+            - generic [ref=e535]: Robert Harper
+            - generic [ref=e536]: ✦
+            - button "5 highlights" [ref=e537] [cursor=pointer]
+      - generic [ref=e538]:
+        - link "The Expression Problem" [ref=e539] [cursor=pointer]:
+          - /url: https://homepages.inf.ed.ac.uk/wadler/papers/expression/expression.txt
+        - generic [ref=e540]: The text presents a way to extend datatypes and functions without recompiling code while keeping static type safety. It uses classes and interfaces with type parameters to handle expressions and visitors in two phases. This method solves the Expression Problem in a clear and type-safe way using virtual types and parametric types.
+        - generic [ref=e541]:
+          - generic [ref=e542]: article
+          - generic [ref=e544]: ✦
+          - generic [ref=e545]: 25 Feb 2026
+          - generic [ref=e546]: ✦
+          - generic [ref=e547]: Philip Wadler
+      - generic [ref=e549]:
+        - link "How (and why) nextest uses tokio" [ref=e550] [cursor=pointer]:
+          - /url: https://sunshowers.io/posts/nextest-and-tokio/#what-are-heterogenous-selects
+        - generic [ref=e552]:
+          - generic [ref=e554]: Nextest, a test runner for Rust, uses Tokio, a leading Rust async runtime, to power its features such as test retries, reusing builds, and partitioning test runs. Even though Nextest is not a network app, it benefits from an async runtime because it needs to handle multiple concurrent tests with various events. Async runtimes like Tokio are ideal for I/O-bound applications, where most time is spent waiting for other parts of the system to respond. Tokio solves the challenges of waiting on different types of sources and provides cross-platform support. By using Tokio, Nextest was able to simplify its architecture and improve its functionality.
+          - generic [ref=e555]:
+            - generic [ref=e556]: article
+            - generic [ref=e558]: ✦
+            - generic [ref=e559]: 25 Feb 2026
+            - generic [ref=e560]: ✦
+            - generic [ref=e561]: Rain
+            - generic [ref=e562]: ✦
+            - button "1 highlight" [ref=e563] [cursor=pointer]
+      - generic [ref=e564]:
+        - link "Query-based compiler architectures" [ref=e565] [cursor=pointer]:
+          - /url: https://ollef.github.io/blog/posts/query-based-compilers.html
+        - generic [ref=e566]: The author explains building compilers around a query system instead of a fixed pipeline. Queries are memoised and tracked so the compiler can do fine-grained incremental updates and fast tooling. This makes tooling faster, simpler to reason about, and easy to parallelize.
+        - generic [ref=e567]:
+          - generic [ref=e568]: article
+          - generic [ref=e570]: ✦
+          - generic [ref=e571]: 24 Feb 2026
+          - generic [ref=e572]: ✦
+          - generic [ref=e573]: Olle Fredriksson
+      - generic [ref=e574]:
+        - link "Signals vs Query-Based Compilers" [ref=e575] [cursor=pointer]:
+          - /url: https://marvinh.dev/blog/signals-vs-query-based-compilers/
+        - generic [ref=e576]: Modern compilers use query-based architectures that run only the work needed to answer specific editor queries, instead of a full linear pipeline. Queries are pure, cacheable, and demand-driven, so changes are tracked by inputs and a global revision rather than pushed through live subscriptions like Signals. Signals suit UI rendering for glitch-free updates, while query systems scale better for compilers and parallel work.
+        - generic [ref=e577]:
+          - generic [ref=e578]: article
+          - generic [ref=e580]: ✦
+          - generic [ref=e581]: 24 Feb 2026
+          - generic [ref=e582]: ✦
+          - generic [ref=e583]: Marvin Hagemeister
+      - generic [ref=e585]:
+        - 'link "The one ring problem: abstraction and our quest for power" [ref=e586] [cursor=pointer]':
+          - /url: https://www.tedinski.com/2018/01/30/the-one-ring-problem-abstraction-and-power.html
+        - generic [ref=e588]:
+          - generic [ref=e590]: Designing programming abstractions means balancing power with clear properties. Adding more power often makes abstractions less understandable and harder to manage. Good design resists the urge to always add power and focuses on what the abstraction guarantees.
+          - generic [ref=e591]:
+            - generic [ref=e592]: article
+            - generic [ref=e594]: ✦
+            - generic [ref=e595]: 22 Feb 2026
+            - generic [ref=e596]: ✦
+            - generic [ref=e597]: Ted Kaminski
+            - generic [ref=e598]: ✦
+            - button "1 highlight" [ref=e599] [cursor=pointer]
+      - generic [ref=e600]:
+        - 'link "System boundaries: the focus of design" [ref=e601] [cursor=pointer]':
+          - /url: https://www.tedinski.com/2018/02/06/system-boundaries.html
+        - generic [ref=e602]: System boundaries, or publicly exposed interfaces that third-party developers may use, define the inability to make breaking changes and introduce the responsibility of external users. As boundaries have associated costs, it is important to prioritize making changes that cannot be postponed, such as difficult-to-change components. Furthermore, controlling dependencies and designing abstractions is essential to minimize costs and maintain the independence of modules. Although designing for a boundary is different than designing for an internal component, learning through experience, mentoring, and studying existing libraries can help improve design efforts.
+        - generic [ref=e603]:
+          - generic [ref=e604]: article
+          - generic [ref=e606]: ✦
+          - generic [ref=e607]: 21 Feb 2026
+          - generic [ref=e608]: ✦
+          - generic [ref=e609]: Ted Kaminski
+      - generic [ref=e610]:
+        - link "Data, objects, and how we're railroaded into poor design" [ref=e611] [cursor=pointer]:
+          - /url: https://www.tedinski.com/2018/01/23/data-objects-and-being-railroaded-into-misdesign.html
+        - generic [ref=e612]: The author argues that programming languages fail us by conflating data and objects, and that we need to distinguish between the two to make better design choices. They outline five different choices a language can make about how to represent something, and suggest that most languages make two major designs - data objects and objects with identity. The author suggests that the industry has a preference for data, but many languages are designed with "everything is an object" in mind. They suggest that the key to better design is to embrace the distinction between data and objects.
+        - generic [ref=e613]:
+          - generic [ref=e614]: article
+          - generic [ref=e616]: ✦
+          - generic [ref=e617]: 21 Feb 2026
+          - generic [ref=e618]: ✦
+          - generic [ref=e619]: Ted Kaminski
+      - generic [ref=e620]:
+        - link "Algebraic Types are not Scary, Actually" [ref=e621] [cursor=pointer]:
+          - /url: https://blog.aiono.dev/posts/algebraic-types-are-not-scary,-actually.html
+        - generic [ref=e622]: Algebraic types are simple concepts that combine types like sets using addition and multiplication. Sum types let a value be from one type or another, helping handle cases like errors or nulls safely. Using algebraic types makes programming clearer and can reduce bugs compared to traditional methods.
+        - generic [ref=e623]:
+          - generic [ref=e624]: article
+          - generic [ref=e626]: ✦
+          - generic [ref=e627]: 20 Feb 2026
+          - generic [ref=e628]: ✦
+          - generic [ref=e629]: Onur Şahin
+      - generic [ref=e630]:
+        - link "Coding Agents in Feb 2026" [ref=e631] [cursor=pointer]:
+          - /url: https://calv.info/agents-feb-2026
+        - generic [ref=e632]: Calvin French-Owen uses different coding agents like Claude Code, Opus, and Codex to plan, write, and review code efficiently. He values context understanding and automation to improve his workflow and manage multiple tasks. His approach blends planning, tool use, and code correctness to get the best results from each agent.
+        - generic [ref=e633]:
+          - generic [ref=e634]: article
+          - generic [ref=e636]: ✦
+          - generic [ref=e637]: 20 Feb 2026
+      - generic [ref=e639]:
+        - 'link "To Lock or Not: MongoDB’s Lock-Free B-Tree Unlocks Throughput" [ref=e640] [cursor=pointer]':
+          - /url: https://www.mongodb.com/company/blog/engineering/to-lock-or-not-mongodbs-lock-free-b-tree-unlocks-throughput
+        - generic [ref=e642]:
+          - generic [ref=e644]: MongoDB’s WiredTiger uses lock-free algorithms in its B+tree to let many threads read and write without heavy locking. This uses hazard pointers for reads and lock-free skip lists for writes. The result is much higher throughput—about 50% faster reads and up to 4x faster updates in tests.
+          - generic [ref=e645]:
+            - generic [ref=e646]: article
+            - generic [ref=e648]: ✦
+            - generic [ref=e649]: 18 Feb 2026
+            - generic [ref=e650]: ✦
+            - generic [ref=e651]: MongoDB
+            - generic [ref=e652]: ✦
+            - button "7 highlights" [ref=e653] [cursor=pointer]
+      - generic [ref=e654]:
+        - link "How to Run 1:1s as an Engineering Manager" [ref=e655] [cursor=pointer]:
+          - /url: https://justoffbyone.com/posts/how-to-run-11s/
+        - generic [ref=e656]: "Good 1:1 meetings help managers give regular feedback, support career growth, and catch problems early. The meetings follow three topics: people, product, and process, to guide meaningful conversation. Treat these meetings seriously, listen well, and always write notes to show you care."
+        - generic [ref=e657]:
+          - generic [ref=e658]: article
+          - generic [ref=e660]: ✦
+          - generic [ref=e661]: 17 Feb 2026
+          - generic [ref=e662]: ✦
+          - generic [ref=e663]: Off By One
+      - generic [ref=e665]:
+        - link "A Few Notes on the Culture" [ref=e666] [cursor=pointer]:
+          - /url: https://trevor-hopkins.com/downloads/a-few-notes-on-the-culture.pdf
+        - generic [ref=e668]:
+          - generic [ref=e670]: The Culture is a space-living group-civilization made up of various species, emphasizing rationality and cooperation. It values exploration, cooperation, and maintaining a balance between hedonism and purposeful pursuits. The Culture's existence and values are shaped by its unique history and the interactions between its AI and human members.
+          - generic [ref=e671]:
+            - generic [ref=e672]: pdf
+            - generic [ref=e674]: ✦
+            - generic [ref=e675]: 17 Feb 2026
+            - generic [ref=e676]: ✦
+            - generic [ref=e677]: Iain M. Banks
+            - generic [ref=e678]: ✦
+            - button "1 highlight" [ref=e679] [cursor=pointer]
+      - generic [ref=e681]:
+        - link "Timing It Right - by Steven Johnson - Adjacent Possible" [ref=e682] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/timing-it-right
+        - generic [ref=e684]:
+          - generic [ref=e686]: Steven Johnson discusses the importance of timing in creative workflows, emphasizing that organizing writing time can enhance productivity. He shares his experience with different approaches to writing, including the Pomodoro Technique and task-based goals, while highlighting a new software tool, Aeon Timeline, for creating timelines in complex projects. Johnson encourages writers to consider their cognitive rhythms and find tools that meet their specific needs.
+          - generic [ref=e687]:
+            - generic [ref=e688]: article
+            - generic [ref=e690]: ✦
+            - generic [ref=e691]: 17 Feb 2026
+            - generic [ref=e692]: ✦
+            - generic [ref=e693]: Steven Johnson
+            - generic [ref=e694]: ✦
+            - button "2 highlights" [ref=e695] [cursor=pointer]
+      - generic [ref=e697]:
+        - link "Gears vs Behavior" [ref=e698] [cursor=pointer]:
+          - /url: https://www.lesswrong.com/s/xEFeCwk3pdYdeG2rL/p/gvK5QWRLk3H8iqcNy
+        - generic [ref=e700]:
+          - generic [ref=e702]: Predicting input-output behavior (no gears) can fit data but tells you nothing about a system’s internals. Gears-level models specify internal mechanisms and make falsifiable predictions that handle changes and distribution shifts. You cannot fully learn gears from behavior alone, though causal tests and prior knowledge can sometimes reveal internal structure.
+          - generic [ref=e703]:
+            - generic [ref=e704]: article
+            - generic [ref=e706]: ✦
+            - generic [ref=e707]: 17 Feb 2026
+            - generic [ref=e708]: ✦
+            - generic [ref=e709]: johnswentworth
+            - generic [ref=e710]: ✦
+            - button "2 highlights" [ref=e711] [cursor=pointer]
+      - generic [ref=e712]:
+        - link "How fast is India’s economy really growing?" [ref=e713] [cursor=pointer]:
+          - /url: https://archive.ph/ETyZ0
+        - generic [ref=e714]: India’s reported GDP growth rate is high but debated due to complex calculation methods and unusual price measures. Inflation figures seem low because India uses wholesale prices more than consumer prices to adjust GDP. Despite this, recent data and other indicators suggest India’s economy is growing steadily, though not as fast as some official numbers show.
+        - generic [ref=e715]:
+          - generic [ref=e716]: article
+          - generic [ref=e718]: ✦
+          - generic [ref=e719]: 13 Feb 2026
+      - generic [ref=e721]:
+        - link "Mulling Versus Making - by Steven Johnson" [ref=e722] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/mulling-versus-making
+        - generic [ref=e724]:
+          - generic [ref=e726]: In "Mulling Versus Making," Steven Johnson discusses the importance of allowing time for mind-wandering to enhance creativity. He argues that daily responsibilities, like a 9-to-5 job, can stifle this creative thinking by crowding out the time needed for ideas to emerge. Johnson emphasizes that many of his best ideas have come from mulling, rather than actively writing.
+          - generic [ref=e727]:
+            - generic [ref=e728]: article
+            - generic [ref=e730]: ✦
+            - generic [ref=e731]: 12 Feb 2026
+            - generic [ref=e732]: ✦
+            - generic [ref=e733]: Steven Johnson
+            - generic [ref=e734]: ✦
+            - button "1 highlight" [ref=e735] [cursor=pointer]
+      - generic [ref=e737]:
+        - link "Beyond The Semicolon" [ref=e738] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/beyond-the-semicolon
+        - generic [ref=e740]:
+          - generic [ref=e742]: In his piece "Beyond The Semicolon," Steven Johnson highlights the vital role of a great editor in shaping a writer's ideas and prose. He reflects on the documentary "Turn Every Page," which showcases the long collaboration between writer Robert Caro and editor Robert Gottlieb, emphasizing the importance of their intellectual partnership. Johnson argues that a good editor enhances thinking and creativity, rather than just fixing grammar and syntax.
+          - generic [ref=e743]:
+            - generic [ref=e744]: article
+            - generic [ref=e746]: ✦
+            - generic [ref=e747]: 12 Feb 2026
+            - generic [ref=e748]: ✦
+            - generic [ref=e749]: Steven Johnson
+            - generic [ref=e750]: ✦
+            - button "1 highlight" [ref=e751] [cursor=pointer]
+      - generic [ref=e752]:
+        - link "What Functional Programmers Get Wrong About Systems" [ref=e753] [cursor=pointer]:
+          - /url: https://www.iankduncan.com/engineering/2026-02-09-what-functional-programmers-get-wrong-about-systems/
+        - generic [ref=e754]: Programs in production always run multiple versions at once, making correctness about version interactions, not single code snapshots. Systems must manage compatibility across versions, especially for data schemas that evolve over time. Practical tools and methods exist today to check and ensure safe version transitions during deployment.
+        - generic [ref=e755]:
+          - generic [ref=e756]: article
+          - generic [ref=e758]: ✦
+          - generic [ref=e759]: 12 Feb 2026
+          - generic [ref=e760]: ✦
+          - generic [ref=e761]: Ian Duncan
+      - generic [ref=e763]:
+        - link "The Serendipity Engine - by Steven Johnson" [ref=e764] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/the-serendipity-engine?r=u6r6&utm_campaign=post&utm_medium=web
+        - generic [ref=e766]:
+          - generic [ref=e768]: In "The Serendipity Engine," Steven Johnson explores how to spark unexpected creativity. He discusses techniques like Brian Eno's instrument-swapping exercise and the concept of serendipity engines, which introduce randomness to inspire new ideas. Johnson also shares how tools like Twitter and curated links can help cultivate surprising connections in creative work.
+          - generic [ref=e769]:
+            - generic [ref=e770]: article
+            - generic [ref=e772]: ✦
+            - generic [ref=e773]: 12 Feb 2026
+            - generic [ref=e774]: ✦
+            - generic [ref=e775]: Steven Johnson
+            - generic [ref=e776]: ✦
+            - button "1 highlight" [ref=e777] [cursor=pointer]
+      - generic [ref=e779]:
+        - link "Seven Types of Serendipity" [ref=e780] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/seven-types-of-serendipity?r=u6r6&utm_campaign=post&utm_medium=web
+        - generic [ref=e782]:
+          - generic [ref=e784]: Steven Johnson discusses the concept of serendipity, which involves making unexpected discoveries through happy accidents. He highlights different types of serendipity, such as finding new ideas in cluttered spaces or accidentally solving problems while working on something else. Johnson suggests that certain workflows and environments can increase the likelihood of these creative surprises.
+          - generic [ref=e785]:
+            - generic [ref=e786]: article
+            - generic [ref=e788]: ✦
+            - generic [ref=e789]: 11 Feb 2026
+            - generic [ref=e790]: ✦
+            - generic [ref=e791]: Steven Johnson
+            - generic [ref=e792]: ✦
+            - button "2 highlights" [ref=e793] [cursor=pointer]
+      - generic [ref=e794]:
+        - link "Opinion | I Left My Job at OpenAI. Putting Ads on ChatGPT Was the Last Straw." [ref=e795] [cursor=pointer]:
+          - /url: https://archive.ph/j2LYg
+        - generic [ref=e796]: Zoë Hitzig left her job at OpenAI because she disagrees with adding ads to ChatGPT. She worries ads could manipulate users and harm trust. She suggests better rules and oversight to keep AI fair and accessible for everyone.
+        - generic [ref=e797]:
+          - generic [ref=e798]: article
+          - generic [ref=e800]: ✦
+          - generic [ref=e801]: 11 Feb 2026
+          - generic [ref=e802]: ✦
+          - generic [ref=e803]: Zoë Hitzig
+      - generic [ref=e804]:
+        - link "Where Should You Put the Type Param for a Collect?" [ref=e805] [cursor=pointer]:
+          - /url: https://maplant.com/2025-09-30-Where-Should-You-Put-the-Type-Param-for-a-Collect%3F.html
+        - generic [ref=e806]: In Rust, you can specify the collection type either by annotating the variable or using the turbofish syntax with collect. Using the turbofish syntax is better when working with Result types because it allows easier error handling with the ? operator. To keep code consistent and flexible, it's recommended to always use the turbofish type parameter with collect.
+        - generic [ref=e807]:
+          - generic [ref=e808]: article
+          - generic [ref=e810]: ✦
+          - generic [ref=e811]: 11 Feb 2026
+          - generic [ref=e812]: ✦
+          - generic [ref=e813]: Matthew Plant
+      - generic [ref=e814]:
+        - link "The Three-Body Problem" [ref=e815] [cursor=pointer]:
+          - /url: private://read/01kgtm2h4w0pwr3vvypxh6056j
+        - generic [ref=e816]: Wang and others observe strange flying stars and feel uneasy about what they mean. They wait silently, unsure of what will happen next. The sky and stars seem to hold a mysterious countdown that worries them deeply.
+        - generic [ref=e817]:
+          - generic [ref=e818]: book
+          - generic [ref=e820]: ✦
+          - generic [ref=e821]: 10 Feb 2026
+          - generic [ref=e822]: ✦
+          - generic [ref=e823]: Cixin Liu
+      - generic [ref=e824]:
+        - link "In Praise of Earnestness" [ref=e825] [cursor=pointer]:
+          - /url: https://www.autodidacts.io/earnestness/
+        - generic [ref=e826]: Earnestness means loving something deeply and trying hard, even if others laugh. It helps fight cynicism and the fear of being seen as "cringe." Being earnest can lead to growth, new ideas, and hope when things seem hopeless.
+        - generic [ref=e827]:
+          - generic [ref=e828]: article
+          - generic [ref=e830]: ✦
+          - generic [ref=e831]: 10 Feb 2026
+          - generic [ref=e832]: ✦
+          - generic [ref=e833]: The Autodidacts
+      - generic [ref=e834]:
+        - link "Notes on Space GPUs" [ref=e835] [cursor=pointer]:
+          - /url: https://www.dwarkesh.com/p/notes-on-space-gpus?utm_campaign=post&utm_medium=web
+        - generic [ref=e836]: Orbital data centers could solve Earth's energy limits by using space solar power and cheap launches. SpaceX aims to launch thousands of rockets yearly, making this vision possible. However, many challenges remain before GPUs in orbit become practical and cost-effective.
+        - generic [ref=e837]:
+          - generic [ref=e838]: article
+          - generic [ref=e840]: ✦
+          - generic [ref=e841]: 10 Feb 2026
+          - generic [ref=e842]: ✦
+          - generic [ref=e843]: Dwarkesh Patel
+      - generic [ref=e844]:
+        - link "Basecamp Research - a mission to cure everything" [ref=e845] [cursor=pointer]:
+          - /url: https://rorycellanjones.substack.com/p/basecamp-research-a-mission-to-cure?r=1gvqcg&utm_medium=ios&shareImageVariant=overlay&triedRedirect=true
+        - generic [ref=e846]: Basecamp Research is a British AI company aiming to cure many diseases using a huge biology database. They created EDEN, an AI model that designs gene-editing solutions to fix disease-causing genes. Though the goal is huge and may take years and money, their work shows great promise for the future of medicine.
+        - generic [ref=e847]:
+          - generic [ref=e848]: article
+          - generic [ref=e850]: ✦
+          - generic [ref=e851]: 09 Feb 2026
+          - generic [ref=e852]: ✦
+          - generic [ref=e853]: Rory Cellan-Jones
+      - generic [ref=e855]:
+        - link "Political Reality" [ref=e856] [cursor=pointer]:
+          - /url: https://www.oaktreecapital.com/docs/default-source/memos/political-reality.pdf?sfvrsn=39391265_2
+        - generic [ref=e858]:
+          - generic [ref=e860]: Political reality often ignores economic consequences, allowing candidates to make unrealistic promises without accountability. The current dissatisfaction stemming from income inequality and globalization is influencing voter decisions in the U.S. and Europe. This disconnect between politics and economic reality raises concerns about future governance and voter choices.
+          - generic [ref=e861]:
+            - generic [ref=e862]: pdf
+            - generic [ref=e864]: ✦
+            - generic [ref=e865]: 06 Feb 2026
+            - generic [ref=e866]: ✦
+            - generic [ref=e867]: Howard Marks
+            - generic [ref=e868]: ✦
+            - button "5 highlights" [ref=e869] [cursor=pointer]
+      - generic [ref=e870]:
+        - link "The Hunt for the Missing Data Type" [ref=e871] [cursor=pointer]:
+          - /url: https://www.hillelwayne.com/post/graph-types/
+        - generic [ref=e872]: The document delves into the complexities of incorporating graph data types into programming languages. It highlights the various kinds of graphs, representations, and algorithms, emphasizing the crucial role of performance in graph operations. The challenges include deciding on the best data representation, algorithm selection, and managing large-scale graph problems efficiently. The need for control over data representation and algorithm specifics to ensure optimal performance is a recurring theme among experts in the field. The document concludes that the intricate nature of graph-related decisions and performance considerations is why mainstream programming languages and even third-party libraries struggle to provide comprehensive graph support.
+        - generic [ref=e873]:
+          - generic [ref=e874]: article
+          - generic [ref=e876]: ✦
+          - generic [ref=e877]: 02 Feb 2026
+          - generic [ref=e878]: ✦
+          - generic [ref=e879]: Hillel Wayne
+      - generic [ref=e880]:
+        - link "Exclusive | The Untold Story of Charlie Munger’s Final Years" [ref=e881] [cursor=pointer]:
+          - /url: https://www.wsj.com/finance/investing/charlie-munger-life-final-years-berkshire-7c20c18e?st=AGyyuQ&reflink=desktopwebshare_permalink
+        - generic [ref=e882]: Charlie Munger spent his final years making bold investments, mentoring young partners, and staying mentally sharp. He remained active in deals and friendships despite health problems and fading eyesight. Until his death just before turning 100, he kept learning, joking, and shaping Berkshire’s future.
+        - generic [ref=e883]:
+          - generic [ref=e884]: article
+          - generic [ref=e886]: ✦
+          - generic [ref=e887]: 02 Feb 2026
+          - generic [ref=e888]: ✦
+          - generic [ref=e889]: Gregory Zuckerman
+      - generic [ref=e891]:
+        - link "A Very Early History of Algebraic Data Types" [ref=e892] [cursor=pointer]:
+          - /url: https://www.hillelwayne.com/post/algdt-history/
+        - generic [ref=e894]:
+          - generic [ref=e896]: The article traces algebraic data types back to McCarthy, who proposed cartesian and union types early on. Hoare and later ML researchers added tagged discriminated unions, compiler checks, and the terms "sum" and "product." By the 1980s languages like HOPE and Miranda made pattern matching and the name "algebraic data type" standard in functional programming.
+          - generic [ref=e897]:
+            - generic [ref=e898]: article
+            - generic [ref=e900]: ✦
+            - generic [ref=e901]: 02 Feb 2026
+            - generic [ref=e902]: ✦
+            - generic [ref=e903]: Hillel Wayne
+            - generic [ref=e904]: ✦
+            - button "1 highlight" [ref=e905] [cursor=pointer]
+      - generic [ref=e906]:
+        - link "Fission // 20" [ref=e907] [cursor=pointer]:
+          - /url: https://wavage.substack.com/p/fission-20?r=1gvqcg&utm_medium=ios&triedRedirect=true
+        - generic [ref=e908]: A lone neutron can split uranium and unleash enormous energy that could power a future of abundance. The author, newly inspired by nuclear engineering, rejects fame for its own sake and seeks meaningful quests. At twenty he vows to pursue greatness — in rowing, love, and building terawatts of nuclear power.
+        - generic [ref=e909]:
+          - generic [ref=e910]: article
+          - generic [ref=e912]: ✦
+          - generic [ref=e913]: 31 Jan 2026
+          - generic [ref=e914]: ✦
+          - generic [ref=e915]: Will Savage
+      - generic [ref=e916]:
+        - link "Maker's Schedule, Manager's Schedule" [ref=e917] [cursor=pointer]:
+          - /url: https://paulgraham.com/makersschedule.html
+        - generic [ref=e918]: "There are two kinds of schedules: the manager's schedule (hourly, meeting-friendly) and the maker's schedule (long blocks for deep work). Meetings fragment makers' time and can ruin their productivity. If managers understood this cost, they could avoid disrupting makers or use solutions like office hours."
+        - generic [ref=e919]:
+          - generic [ref=e920]: article
+          - generic [ref=e922]: ✦
+          - generic [ref=e923]: 30 Jan 2026
+          - generic [ref=e924]: ✦
+          - generic [ref=e925]: Paul Graham
+      - generic [ref=e926]:
+        - link "A builder’s guide to living a long and healthy life" [ref=e927] [cursor=pointer]:
+          - /url: https://www.lennysnewsletter.com/p/a-builders-guide-to-living-a-long
+        - generic [ref=e928]: "Justin Mares argues that everyday toxins in food, clothing, and products are quietly harming our health because regulation is weak. He recommends focusing on nutrient-dense whole foods, sensible supplements, and low-toxin brands to fill gaps. Use an 80/20 approach: reduce common exposures and use detox tools for the rest."
+        - generic [ref=e929]:
+          - generic [ref=e930]: article
+          - generic [ref=e932]: ✦
+          - generic [ref=e933]: 29 Jan 2026
+          - generic [ref=e934]: ✦
+          - generic [ref=e935]: Justin Mares
+      - generic [ref=e937]:
+        - link "Dynamic Programming Introduction" [ref=e938] [cursor=pointer]:
+          - /url: https://mmhaskell.com/blog/2025/10/6/dynamic-programming-primer
+        - generic [ref=e940]:
+          - generic [ref=e942]: "The post explains dynamic programming using the House Robber problem: pick nonadjacent houses to maximize loot. It shows a space-efficient DP approach that tracks only \"last robbed\" and \"last unrobbed\" values. Implementations are given in Haskell (recursive loop) and Rust (iterative loop)."
+          - generic [ref=e943]:
+            - generic [ref=e944]: article
+            - generic [ref=e946]: ✦
+            - generic [ref=e947]: 29 Jan 2026
+            - generic [ref=e948]: ✦
+            - generic [ref=e949]: James Bowen
+            - generic [ref=e950]: ✦
+            - button "1 highlight" [ref=e951] [cursor=pointer]
+      - generic [ref=e953]:
+        - link "Economic Reality" [ref=e954] [cursor=pointer]:
+          - /url: https://www.oaktreecapital.com/docs/default-source/memos/economic-reality.pdf?sfvrsn=49bc1865_6
+        - generic [ref=e956]:
+          - generic [ref=e958]: Economic growth can be stimulated by lower interest rates and increased money circulation, but this effect is often temporary. Trade policies, like tariffs, may help some workers but can raise prices for consumers and hurt overall job creation. Ultimately, economic realities make it difficult to find simple solutions to complex issues like job loss and wage demands in a globalized market.
+          - generic [ref=e959]:
+            - generic [ref=e960]: pdf
+            - generic [ref=e962]: ✦
+            - generic [ref=e963]: 29 Jan 2026
+            - generic [ref=e964]: ✦
+            - generic [ref=e965]: Howard Marks
+            - generic [ref=e966]: ✦
+            - button "10 highlights" [ref=e967] [cursor=pointer]
+      - generic [ref=e969]:
+        - link "Hill-Making vs Hill-Climbing" [ref=e970] [cursor=pointer]:
+          - /url: https://kevinkelly.substack.com/p/hill-making-vs-hill-climbing
+        - generic [ref=e972]:
+          - generic [ref=e974]: "There are two ways to get better: climb a hill by optimizing what already works, or make a new hill by inventing new possibilities. Climbing is efficient and low risk but has diminishing returns. Hill-making is risky and wasteful but can create huge, lasting gains."
+          - generic [ref=e975]:
+            - generic [ref=e976]: article
+            - generic [ref=e978]: ✦
+            - generic [ref=e979]: 29 Jan 2026
+            - generic [ref=e980]: ✦
+            - generic [ref=e981]: Kevin Kelly
+            - generic [ref=e982]: ✦
+            - button "6 highlights" [ref=e983] [cursor=pointer]
+      - generic [ref=e984]:
+        - link "Vibing a Non-Trivial Ghostty Feature" [ref=e985] [cursor=pointer]:
+          - /url: https://mitchellh.com/writing/non-trivial-vibing
+        - generic [ref=e986]: Mitchell Hashimoto used AI agents extensively to design and build a non-trivial macOS auto-update feature, sharing every agentic session unedited. He iterated by reviewing, cleaning up, and sometimes redoing AI-generated code to fix bugs and improve structure. He stresses saving plans, running simulations, and never shipping AI code without thorough manual review.
+        - generic [ref=e987]:
+          - generic [ref=e988]: article
+          - generic [ref=e990]: ✦
+          - generic [ref=e991]: 29 Jan 2026
+          - generic [ref=e992]: ✦
+          - generic [ref=e993]: Mitchell Hashimoto
+      - generic [ref=e995]:
+        - link "The Suck Is Why We’re Here" [ref=e996] [cursor=pointer]:
+          - /url: https://nik.art/the-suck-is-why-were-here/
+        - generic [ref=e998]:
+          - generic [ref=e1000]: AI can mimic writing but often feels off and misses the real thinking behind a piece. Using AI to skip the hard parts of writing robs you of the insight and growth gained from struggle. The struggle—the “suck”—is where true craft and lasting value are made.
+          - generic [ref=e1001]:
+            - generic [ref=e1002]: article
+            - generic [ref=e1004]: ✦
+            - generic [ref=e1005]: 29 Jan 2026
+            - generic [ref=e1006]: ✦
+            - generic [ref=e1007]: Nik
+            - generic [ref=e1008]: ✦
+            - button "1 highlight" [ref=e1009] [cursor=pointer]
+      - generic [ref=e1011]:
+        - link "The Best Way to Use AI for Learning" [ref=e1012] [cursor=pointer]:
+          - /url: https://medium.com/heptabase/the-best-way-to-use-ai-for-learning-762c3467bdf1#fe23
+        - generic [ref=e1014]:
+          - generic [ref=e1016]: The author shows how AI can turn hard textbooks into easy, interactive lessons by parsing PDFs, making summaries, and organizing content on a digital whiteboard. This setup lets you read, ask questions, get examples, and test understanding with full context. Using AI this way speeds deep learning and helps you spend more time thinking.
+          - generic [ref=e1017]:
+            - generic [ref=e1018]: article
+            - generic [ref=e1020]: ✦
+            - generic [ref=e1021]: 29 Jan 2026
+            - generic [ref=e1022]: ✦
+            - generic [ref=e1023]: 詹雨安 Alan Chan
+            - generic [ref=e1024]: ✦
+            - button "2 highlights" [ref=e1025] [cursor=pointer]
+      - generic [ref=e1027]:
+        - 'link "Chart of the Week: Teacher Pay around the World: Beyond “Disruption” and “De-skilling”" [ref=e1028] [cursor=pointer]':
+          - /url: https://riseprogramme.org/blog/teacher_pay_around_world.html
+        - generic [ref=e1030]:
+          - generic [ref=e1032]: Millions of children in poor countries go to school but still do not learn basic reading or math. Public teachers in some low‑income countries earn high wages relative to GDP, often due to civil‑service pay rather than market forces. Research shows pay hikes often do not raise learning, yet teacher quality matters a lot, so cutting or de‑skilling teachers may backfire.
+          - generic [ref=e1033]:
+            - generic [ref=e1034]: article
+            - generic [ref=e1036]: ✦
+            - generic [ref=e1037]: 29 Jan 2026
+            - generic [ref=e1038]: ✦
+            - generic [ref=e1039]: RISE Programme
+            - generic [ref=e1040]: ✦
+            - button "4 highlights" [ref=e1041] [cursor=pointer]
+      - generic [ref=e1042]:
+        - link "The Talent Machine" [ref=e1043] [cursor=pointer]:
+          - /url: https://paoramen.fika.bar/the-talent-machine-01K94NER8BZH9G9GYHR7TMFRES
+        - generic [ref=e1044]: "Hiring engineers is a sales job: sell a clear product that matches what candidates want. Be transparent about role, pay, and career paths with fixed salaries and a public handbook. Target under-served, experienced talent and build a repeatable, pipeline-driven recruiting process."
+        - generic [ref=e1045]:
+          - generic [ref=e1046]: article
+          - generic [ref=e1048]: ✦
+          - generic [ref=e1049]: 29 Jan 2026
+          - generic [ref=e1050]: ✦
+          - generic [ref=e1051]: paoramen
+      - generic [ref=e1052]:
+        - link "The product of the railways is the timetable" [ref=e1053] [cursor=pointer]:
+          - /url: https://springbett.substack.com/p/the-product-of-the-railways-is-the
+        - generic [ref=e1054]: A railway’s product is its timetable, because trains must be planned precisely to move people from A to B. Good timetables make travel faster, more reliable, less crowded, and better connected across the network. Infrastructure and trains should be designed to serve the timetable, not the other way around.
+        - generic [ref=e1055]:
+          - generic [ref=e1056]: article
+          - generic [ref=e1058]: ✦
+          - generic [ref=e1059]: 28 Jan 2026
+          - generic [ref=e1060]: ✦
+          - generic [ref=e1061]: Benedict Springbett
+      - generic [ref=e1063]:
+        - link "A Spring in Every Kitchen" [ref=e1064] [cursor=pointer]:
+          - /url: https://archive.ph/BPPyf
+        - generic [ref=e1066]:
+          - generic [ref=e1068]: Many people around the world still lack clean and safe water, which causes illness and death. Water is mostly used for farming, but most wastewater is not properly treated, polluting rivers and lakes. Improving water systems and making clean water a priority can help prevent health problems and save lives.
+          - generic [ref=e1069]:
+            - generic [ref=e1070]: article
+            - generic [ref=e1072]: ✦
+            - generic [ref=e1073]: 28 Jan 2026
+            - generic [ref=e1074]: ✦
+            - generic [ref=e1075]: Charles C. Mann
+            - generic [ref=e1076]: ✦
+            - button "3 highlights" [ref=e1077] [cursor=pointer]
+      - generic [ref=e1079]:
+        - 'link "Oliver Burkeman''s last column: the eight secrets to a (fairly) fulfilled life" [ref=e1080] [cursor=pointer]':
+          - /url: https://www.theguardian.com/lifeandstyle/2020/sep/04/oliver-burkemans-last-column-the-eight-secrets-to-a-fairly-fulfilled-life
+        - generic [ref=e1082]:
+          - generic [ref=e1084]: Oliver Burkeman ends his column after sharing simple life lessons he learned. Pick what to focus on and accept you cannot do everything. Choose growth over comfort, tolerate small discomforts, and know when to move on.
+          - generic [ref=e1085]:
+            - generic [ref=e1086]: article
+            - generic [ref=e1088]: ✦
+            - generic [ref=e1089]: 27 Jan 2026
+            - generic [ref=e1090]: ✦
+            - generic [ref=e1091]: Oliver Burkeman
+            - generic [ref=e1092]: ✦
+            - button "8 highlights" [ref=e1093] [cursor=pointer]
+      - generic [ref=e1095]:
+        - link "The Popular Alternative" [ref=e1096] [cursor=pointer]:
+          - /url: https://dirt.fyi/article/2025/05/the-popular-alternative
+        - generic [ref=e1098]:
+          - generic [ref=e1100]: A24 has become a prominent name in filmmaking, known for its unique and challenging movies that attract a dedicated fan base. The company markets itself as a champion of quality cinema, making each release feel like a significant event. However, despite its reputation, A24 struggles with consistency and sometimes misses the mark on its more ambitious projects.
+          - generic [ref=e1101]:
+            - generic [ref=e1102]: article
+            - generic [ref=e1104]: ✦
+            - generic [ref=e1105]: 27 Jan 2026
+            - generic [ref=e1106]: ✦
+            - generic [ref=e1107]: Nicholas Russell
+            - generic [ref=e1108]: ✦
+            - button "5 highlights" [ref=e1109] [cursor=pointer]
+      - generic [ref=e1111]:
+        - link "Sorry, that isn't an FDE" [ref=e1112] [cursor=pointer]:
+          - /url: https://tedmabrey.substack.com/p/sorry-that-isnt-an-fde?utm_source=substack&utm_campaign=post_embed&utm_medium=web
+        - generic [ref=e1114]:
+          - generic [ref=e1116]: "Palantir’s FDE role pairs deep customer alignment with product and business strategy to solve impossible, evolving problems. Copycats mimic the form but avoid the full commitment, yielding limited products and outcomes. The lesson: don’t copy the surface—rethink your company’s assumptions before imitating the model."
+          - generic [ref=e1117]:
+            - generic [ref=e1118]: article
+            - generic [ref=e1120]: ✦
+            - generic [ref=e1121]: 26 Jan 2026
+            - generic [ref=e1122]: ✦
+            - generic [ref=e1123]: Ted Mabrey
+            - generic [ref=e1124]: ✦
+            - button "4 highlights" [ref=e1125] [cursor=pointer]
+      - generic [ref=e1127]:
+        - link "The Great Data Integration Schlep" [ref=e1128] [cursor=pointer]:
+          - /url: https://sarahconstantin.substack.com/p/the-great-data-integration-schlep?utm_source=substack&utm_campaign=post_embed&utm_medium=web
+        - generic [ref=e1130]:
+          - generic [ref=e1132]: Getting useful insights requires gathering a company’s scattered, often paper or siloed machine data into one place. This data work—cleaning, negotiating access, and standardizing—takes lots of human labor and slows AI adoption. Real economic AI impact depends on solving this hard integration problem inside businesses.
+          - generic [ref=e1133]:
+            - generic [ref=e1134]: article
+            - generic [ref=e1136]: ✦
+            - generic [ref=e1137]: 26 Jan 2026
+            - generic [ref=e1138]: ✦
+            - generic [ref=e1139]: Sarah Constantin
+            - generic [ref=e1140]: ✦
+            - button "3 highlights" [ref=e1141] [cursor=pointer]
+      - generic [ref=e1143]:
+        - 'link "Palantir: On Business, Cults, and Politics" [ref=e1144] [cursor=pointer]':
+          - /url: https://www.thediff.co/archive/palantir-on-business-cults-and-politics/#conclusion
+        - generic [ref=e1146]:
+          - generic [ref=e1148]: Palantir is a data software company that works with governments and businesses, but its approach raises moral questions about its contracts and practices. The company has high revenue margins with its largest customers but struggles with public perception due to its controversial nature. Palantir aims to navigate complex political and ethical challenges while improving the tradeoffs in its work.
+          - generic [ref=e1149]:
+            - generic [ref=e1150]: article
+            - generic [ref=e1152]: ✦
+            - generic [ref=e1153]: 26 Jan 2026
+            - generic [ref=e1154]: ✦
+            - generic [ref=e1155]: Byrne Hobart
+            - generic [ref=e1156]: ✦
+            - button "3 highlights" [ref=e1157] [cursor=pointer]
+      - generic [ref=e1159]:
+        - link "Should we worry about AI's circular deals?" [ref=e1160] [cursor=pointer]:
+          - /url: https://www.noahpinion.blog/p/should-we-worry-about-ais-circular?utm_source=post-email-title&publication_id=35345&post_id=176711855&utm_campaign=email-post-title&isFreemail=false&r=6g77v&triedRedirect=true&utm_medium=email
+        - generic [ref=e1162]:
+          - generic [ref=e1164]: AI firms, chipmakers, and cloud providers are making intertwined deals where money and chips flow between them. Critics worry this could inflate revenues and increase systemic risk if AI demand collapses. The author argues most of these deals look like vendor financing and may diversify risk rather than create a new kind of fraud.
+          - generic [ref=e1165]:
+            - generic [ref=e1166]: article
+            - generic [ref=e1168]: ✦
+            - generic [ref=e1169]: 23 Jan 2026
+            - generic [ref=e1170]: ✦
+            - generic [ref=e1171]: Noah Smith
+            - generic [ref=e1172]: ✦
+            - button "4 highlights" [ref=e1173] [cursor=pointer]
+      - generic [ref=e1175]:
+        - 'link "Two-Sigma Tutoring: Separating Science Fiction from Science Fact" [ref=e1176] [cursor=pointer]':
+          - /url: https://www.educationnext.org/two-sigma-tutoring-separating-science-fiction-from-science-fact/
+        - generic [ref=e1178]:
+          - generic [ref=e1180]: Bloom said one-to-one tutoring raises learning by two standard deviations. Later rigorous reviews find average gains of only about 0.33–0.37 SD. The big two-sigma findings came from extra testing, feedback, narrow tests, and replacing class time, so tutoring usually helps but rarely reaches two sigmas.
+          - generic [ref=e1181]:
+            - generic [ref=e1182]: article
+            - generic [ref=e1184]: ✦
+            - generic [ref=e1185]: 22 Jan 2026
+            - generic [ref=e1186]: ✦
+            - generic [ref=e1187]: Paul T. von Hippel
+            - generic [ref=e1188]: ✦
+            - button "6 highlights" [ref=e1189] [cursor=pointer]
+      - generic [ref=e1191]:
+        - link "Empire of AI is wildly misleading about AI water use" [ref=e1192] [cursor=pointer]:
+          - /url: https://andymasley.substack.com/p/empire-of-ai-is-wildly-misleading?r=1gvqcg&utm_medium=ios&triedRedirect=true
+        - generic [ref=e1194]:
+          - generic [ref=e1196]: The book Empire of AI wildly overstates how much water AI data centers use, often by hundreds to thousands of times. Careful reading of the sources shows most water stays offsite, much of it non-potable, and data centers typically use only a few percent of local supplies. As a result, the book’s claims about AI harming water access and draining communities are misleading.
+          - generic [ref=e1197]:
+            - generic [ref=e1198]: article
+            - generic [ref=e1200]: ✦
+            - generic [ref=e1201]: 21 Jan 2026
+            - generic [ref=e1202]: ✦
+            - generic [ref=e1203]: Andy Masley
+            - generic [ref=e1204]: ✦
+            - button "6 highlights" [ref=e1205] [cursor=pointer]
+      - generic [ref=e1207]:
+        - link "India and the invidious comparison with China" [ref=e1208] [cursor=pointer]:
+          - /url: https://andrewbatson.com/2025/07/27/india-and-the-invidious-comparison-with-china/?ref=thediff.co
+        - generic [ref=e1210]:
+          - generic [ref=e1212]: Many compare India’s economy to China’s, expecting India to follow China’s export-led manufacturing path, but India’s growth is driven mostly by services. India faces challenges like low manufacturing and investment shares and weaker state capacity compared to China. However, India’s fast growth shows it can succeed by building on its own strengths rather than copying China’s model.
+          - generic [ref=e1213]:
+            - generic [ref=e1214]: article
+            - generic [ref=e1216]: ✦
+            - generic [ref=e1217]: 21 Jan 2026
+            - generic [ref=e1218]: ✦
+            - generic [ref=e1219]: The Tangled Woof
+            - generic [ref=e1220]: ✦
+            - button "10 highlights" [ref=e1221] [cursor=pointer]
+      - generic [ref=e1223]:
+        - link "Is It a Bubble?" [ref=e1224] [cursor=pointer]:
+          - /url: https://www.oaktreecapital.com/insights/memo/is-it-a-bubble
+        - generic [ref=e1226]:
+          - generic [ref=e1228]: Investors are excited about AI but it’s unclear if that excitement is creating a financial bubble. Big tech and lenders are pouring debt into AI infrastructure, risking overbuilding and losses if demand falls. AI could transform productivity and jobs, but the outcomes and who will profit are highly uncertain.
+          - generic [ref=e1229]:
+            - generic [ref=e1230]: article
+            - generic [ref=e1232]: ✦
+            - generic [ref=e1233]: 20 Jan 2026
+            - generic [ref=e1234]: ✦
+            - generic [ref=e1235]: Oaktree Capital
+            - generic [ref=e1236]: ✦
+            - button "5 highlights" [ref=e1237] [cursor=pointer]
+      - generic [ref=e1239]:
+        - link "More on Repealing the Laws of Economics" [ref=e1240] [cursor=pointer]:
+          - /url: https://www.oaktreecapital.com/insights/memo/more-on-repealing-the-laws-of-economics
+        - generic [ref=e1242]:
+          - generic [ref=e1244]: Governments often create rules that interfere with free markets, leading to negative economic consequences. For example, tariffs can protect domestic industries but raise prices for consumers and reduce competition. Overall, allowing markets to function freely is generally better than trying to control them, as government interventions can worsen outcomes.
+          - generic [ref=e1245]:
+            - generic [ref=e1246]: article
+            - generic [ref=e1248]: ✦
+            - generic [ref=e1249]: 19 Jan 2026
+            - generic [ref=e1250]: ✦
+            - generic [ref=e1251]: Oaktree Capital
+            - generic [ref=e1252]: ✦
+            - button "6 highlights" [ref=e1253] [cursor=pointer]
+      - generic [ref=e1254]:
+        - link "How big are viruses?" [ref=e1255] [cursor=pointer]:
+          - /url: https://book.bionumbers.org/how-big-are-viruses/
+        - generic [ref=e1256]: There are about 10^31 viruses on Earth, far outnumbering cells but making up only a small share of biomass. Most viruses are tiny (tens to hundreds of nanometers) with symmetric protein shells that pack genomes of about 10^3–10^6 bases, though some giant viruses rival bacteria. Because they infect all life and kill large fractions of microbes daily, viruses strongly shape ecosystems and global nutrient cycles.
+        - generic [ref=e1257]:
+          - generic [ref=e1258]: article
+          - generic [ref=e1260]: ✦
+          - generic [ref=e1261]: 18 Jan 2026
+          - generic [ref=e1262]: ✦
+          - generic [ref=e1263]: Ron Milo
+          - generic [ref=e1264]: ✦
+          - generic [ref=e1265]: Ron Philips
+      - generic [ref=e1266]:
+        - link "The birth of Advanced Radiology" [ref=e1267] [cursor=pointer]:
+          - /url: https://joejanizek.substack.com/p/the-birth-of-advanced-radiology?utm_campaign=post&utm_medium=web&triedRedirect=true
+        - generic [ref=e1268]: AI is rapidly improving radiology and already helps produce accurate reports. Large firms will likely use AI to boost productivity and consolidate work. Radiologists may shift to supervising AI, quality control, and handling the hardest cases.
+        - generic [ref=e1269]:
+          - generic [ref=e1270]: article
+          - generic [ref=e1272]: ✦
+          - generic [ref=e1273]: 18 Jan 2026
+          - generic [ref=e1274]: ✦
+          - generic [ref=e1275]: Joe Janizek
+      - generic [ref=e1277]:
+        - link "The Problem With Early Cancer Detection | The New Yorker" [ref=e1278] [cursor=pointer]:
+          - /url: https://www.newyorker.com/magazine/2025/06/23/the-catch-in-catching-cancer-early
+        - generic [ref=e1280]:
+          - generic [ref=e1282]: Early cancer detection methods, like liquid biopsies, promise to identify cancers through blood tests rather than imaging, but they face significant challenges. Many tests yield false positives, leading to unnecessary anxiety and procedures, while also often detecting less aggressive tumors that aren't life-threatening. Ultimately, it remains crucial to prove that these screenings can lower cancer mortality, not just increase early diagnoses.
+          - generic [ref=e1283]:
+            - generic [ref=e1284]: article
+            - generic [ref=e1286]: ✦
+            - generic [ref=e1287]: 18 Jan 2026
+            - generic [ref=e1288]: ✦
+            - generic [ref=e1289]: Siddhartha Mukherjee
+            - generic [ref=e1290]: ✦
+            - button "5 highlights" [ref=e1291] [cursor=pointer]
+      - generic [ref=e1293]:
+        - link "Pausing Insect Activity" [ref=e1294] [cursor=pointer]:
+          - /url: https://press.asimov.com/articles/insect-diapause
+        - generic [ref=e1296]:
+          - generic [ref=e1298]: Diapause is a programmed developmental pause in insects that can occur at any life stage. It removes huge amounts of insect biomass from active life and can be manipulated to harm pests or aid biological control. Understanding diapause matters for farming, disease control, and conservation, but much about it remains unknown.
+          - generic [ref=e1299]:
+            - generic [ref=e1300]: article
+            - generic [ref=e1302]: ✦
+            - generic [ref=e1303]: 17 Jan 2026
+            - generic [ref=e1304]: ✦
+            - button "6 highlights" [ref=e1305] [cursor=pointer]
+      - generic [ref=e1307]:
+        - link "A Visual Guide to Gene Delivery" [ref=e1308] [cursor=pointer]:
+          - /url: https://www.asimov.press/p/gene-delivery
+        - generic [ref=e1310]:
+          - generic [ref=e1312]: Gene therapies use different delivery methods, each with strengths and challenges like immune reactions and targeting specific cells. Adeno-associated viruses (AAV) are popular because they are safer and have been used in approved treatments. Other vectors like lipid nanoparticles and herpes simplex virus offer unique benefits but also face hurdles in effectiveness and immune response.
+          - generic [ref=e1313]:
+            - generic [ref=e1314]: article
+            - generic [ref=e1316]: ✦
+            - generic [ref=e1317]: 17 Jan 2026
+            - generic [ref=e1318]: ✦
+            - generic [ref=e1319]: Eryney Marrogi
+            - generic [ref=e1320]: ✦
+            - button "8 highlights" [ref=e1321] [cursor=pointer]
+      - generic [ref=e1322]:
+        - link "The Making of a Gene Circuit" [ref=e1323] [cursor=pointer]:
+          - /url: https://www.asimov.press/p/gene-circuit
+        - generic [ref=e1324]: In the late 1990s, Michael Elowitz created the repressilator, a gene circuit that makes living cells flash on and off in a rhythm. This design used three genes in a feedback loop to control protein production and showed that gene circuits can be programmed and predicted. Today, the repressilator inspires many advanced synthetic biology tools that help cells perform new functions.
+        - generic [ref=e1325]:
+          - generic [ref=e1326]: article
+          - generic [ref=e1328]: ✦
+          - generic [ref=e1329]: 15 Jan 2026
+          - generic [ref=e1330]: ✦
+          - generic [ref=e1331]: Niko McCarty
+      - generic [ref=e1333]:
+        - link "China’s clean-energy revolution will reshape markets and politics" [ref=e1334] [cursor=pointer]:
+          - /url: https://archive.ph/SCi4H
+        - generic [ref=e1336]:
+          - generic [ref=e1338]: China is building vast amounts of cheap solar and wind power that outstrip most of the world. This clean-energy surge is lowering global costs, reshaping markets, and aiding decarbonisation. Reliance on China raises security and political worries even as its exports help poorer countries electrify cheaply.
+          - generic [ref=e1339]:
+            - generic [ref=e1340]: article
+            - generic [ref=e1342]: ✦
+            - generic [ref=e1343]: 07 Jan 2026
+            - generic [ref=e1344]: ✦
+            - button "1 highlight" [ref=e1345] [cursor=pointer]
+      - generic [ref=e1347]:
+        - link "The Real China Model" [ref=e1348] [cursor=pointer]:
+          - /url: https://www.foreignaffairs.com/china/real-china-model-wang-kroeber
+        - generic [ref=e1350]:
+          - generic [ref=e1352]: China used massive state support plus deep infrastructure, especially electrified manufacturing, to scale new technologies rapidly. That created global technological strength but also many inefficient, debt-laden firms, weak domestic demand, and slower growth. The United States cannot stop China with export controls alone and must invest in research, infrastructure, and talent to compete.
+          - generic [ref=e1353]:
+            - generic [ref=e1354]: article
+            - generic [ref=e1356]: ✦
+            - generic [ref=e1357]: 07 Jan 2026
+            - generic [ref=e1358]: ✦
+            - generic [ref=e1359]: DAN WANG
+            - generic [ref=e1360]: ✦
+            - button "9 highlights" [ref=e1361] [cursor=pointer]
+      - generic [ref=e1362]:
+        - link "Does the U.S. Actually Have the Will to Reindustrialize?" [ref=e1363] [cursor=pointer]:
+          - /url: https://www.corememory.com/p/does-the-us-actually-have-the-will?r=1gvqcg&utm_medium=ios&triedRedirect=true
+        - generic [ref=e1364]: Because only one guy seems to know what he's doing
+        - generic [ref=e1365]:
+          - generic [ref=e1366]: article
+          - generic [ref=e1368]: ✦
+          - generic [ref=e1369]: 04 Jan 2026
+          - generic [ref=e1370]: ✦
+          - generic [ref=e1371]: Ashlee Vance
+      - generic [ref=e1373]:
+        - link "A digital payments revolution in India" [ref=e1374] [cursor=pointer]:
+          - /url: https://archive.is/3RNVw
+        - generic [ref=e1376]:
+          - generic [ref=e1378]: India’s UPI is an open instant-payments system that has moved huge volumes and cut cash use. Its design boosts competition, financial inclusion and new lending, unlike closed fintech models. But UPI needs more investment, better consumer protection and backup systems as it grows abroad.
+          - generic [ref=e1379]:
+            - generic [ref=e1380]: article
+            - generic [ref=e1382]: ✦
+            - generic [ref=e1383]: 03 Jan 2026
+            - generic [ref=e1384]: ✦
+            - button "6 highlights" [ref=e1385] [cursor=pointer]
+      - generic [ref=e1387]:
+        - link "How Modi’s party took over one of India’s most prestigious private clubs" [ref=e1388] [cursor=pointer]:
+          - /url: https://www.ft.com/content/3e65dde3-b7db-4c9a-bfb8-a90a5f6cc116
+        - generic [ref=e1390]:
+          - generic [ref=e1392]: India's ruling party, the BJP, took control of the prestigious Delhi Gymkhana Club, citing financial mismanagement by its old elite members. This move sparked fierce opposition from longtime patrons who saw it as an attack on their traditions and power. Critics believe the takeover reflects the BJP's broader effort to reshape India's social and civil institutions.
+          - generic [ref=e1393]:
+            - generic [ref=e1394]: article
+            - generic [ref=e1396]: ✦
+            - generic [ref=e1397]: 02 Jan 2026
+            - generic [ref=e1398]: ✦
+            - generic [ref=e1399]: Benjamin Parkin
+            - generic [ref=e1400]: ✦
+            - button "1 highlight" [ref=e1401] [cursor=pointer]
+      - generic [ref=e1403]:
+        - link "Why India’s elite loves Narendra Modi" [ref=e1404] [cursor=pointer]:
+          - /url: https://archive.is/NUfMd
+        - generic [ref=e1406]:
+          - generic [ref=e1408]: Narendra Modi is popular with both educated and less-educated Indians, unlike many other populist leaders. His support comes from his economic growth policies, strong leadership style, and appeal across caste and class lines. India’s elites admire him for boosting the economy and asserting India’s global role, despite concerns about democracy.
+          - generic [ref=e1409]:
+            - generic [ref=e1410]: article
+            - generic [ref=e1412]: ✦
+            - generic [ref=e1413]: 02 Jan 2026
+            - generic [ref=e1414]: ✦
+            - button "2 highlights" [ref=e1415] [cursor=pointer]
+      - generic [ref=e1417]:
+        - link "A Nation of Lawyers Confronts China’s Engineering State" [ref=e1418] [cursor=pointer]:
+          - /url: https://www.theatlantic.com/ideas/archive/2025/08/china-america-tariffs-trump-economy/683895/?gift=c04SMsUDu_5IHrILqcoSgyI0nXW4Kw0Qw9R7N00x508
+        - generic [ref=e1420]:
+          - generic [ref=e1422]: China is an engineering state that builds vast factories, cities, and controls key supply chains. The United States is lawyerly and rule-focused, and has lost much manufacturing and construction capacity. Without a renewed engineering culture, America will remain vulnerable to countries that make things.
+          - generic [ref=e1423]:
+            - generic [ref=e1424]: article
+            - generic [ref=e1426]: ✦
+            - generic [ref=e1427]: 28 Dec 2025
+            - generic [ref=e1428]: ✦
+            - generic [ref=e1429]: Dan Wang
+            - generic [ref=e1430]: ✦
+            - button "1 highlight" [ref=e1431] [cursor=pointer]
+      - generic [ref=e1433]:
+        - link "The Clash Of Two Gilded Ages" [ref=e1434] [cursor=pointer]:
+          - /url: https://www.noemamag.com/the-clash-of-two-gilded-ages/
+        - generic [ref=e1436]:
+          - generic [ref=e1438]: Despite their great power rivalry, America and China are more similar than most people think. Both are living through a Gilded Age and struggling to end the excesses of capitalism.
+          - generic [ref=e1439]:
+            - generic [ref=e1440]: article
+            - generic [ref=e1442]: ✦
+            - generic [ref=e1443]: 27 Dec 2025
+            - generic [ref=e1444]: ✦
+            - generic [ref=e1445]: Yuen Yuen Ang
+            - generic [ref=e1446]: ✦
+            - button "7 highlights" [ref=e1447] [cursor=pointer]
+      - generic [ref=e1449]:
+        - link "Who maintains the scaffolding of freedom?" [ref=e1450] [cursor=pointer]:
+          - /url: https://srajagopalan.substack.com/p/who-maintains-the-scaffolding-of
+        - generic [ref=e1452]:
+          - generic [ref=e1454]: Business leaders chased products and measurable wins but neglected the ideas and institutions that make markets work. As a result, support for rule of law, free trade, and liberal ideas weakened while opponents invested in long-term ideology and talent. To protect innovation, wealthy founders must fund the slow, unseen work of sustaining free societies and markets.
+          - generic [ref=e1455]:
+            - generic [ref=e1456]: article
+            - generic [ref=e1458]: ✦
+            - generic [ref=e1459]: 27 Dec 2025
+            - generic [ref=e1460]: ✦
+            - generic [ref=e1461]: Shruti Rajagopalan
+            - generic [ref=e1462]: ✦
+            - button "7 highlights" [ref=e1463] [cursor=pointer]
+      - generic [ref=e1464]:
+        - link "How uv got so fast" [ref=e1465] [cursor=pointer]:
+          - /url: https://nesbitt.io/2025/12/26/how-uv-got-so-fast.html
+        - generic [ref=e1466]: uv is fast mainly because it drops legacy Python baggage and uses modern packaging standards. It avoids slow code paths (like running setup.py, compiling bytecode, or checking many indexes) and uses optimizations like parallel downloads and a global cache. Rust adds extra speed (zero-copy, lock-free data, no interpreter startup) but the biggest gains come from design choices, not the language.
+        - generic [ref=e1467]:
+          - generic [ref=e1468]: article
+          - generic [ref=e1470]: ✦
+          - generic [ref=e1471]: 27 Dec 2025
+          - generic [ref=e1472]: ✦
+          - generic [ref=e1473]: Andrew Nesbitt
+      - generic [ref=e1475]:
+        - link "The Making of a Techno-Nationalist Elite" [ref=e1476] [cursor=pointer]:
+          - /url: https://americanaffairsjournal.org/2025/11/the-making-of-a-techno-nationalist-elite/?ref=thediff.co
+        - generic [ref=e1478]:
+          - generic [ref=e1480]: The essay traces how a techno-nationalist elite—engineers, industrialists, financiers, and politicians—rose in 19th-century America. They used state power, markets, and institutions to build national industry and secure technological dominance. Their century-long control shows limits and lessons for modern techno-nationalist projects.
+          - generic [ref=e1481]:
+            - generic [ref=e1482]: article
+            - generic [ref=e1484]: ✦
+            - generic [ref=e1485]: 27 Dec 2025
+            - generic [ref=e1486]: ✦
+            - generic [ref=e1487]: Tanner Greer
+            - generic [ref=e1488]: ✦
+            - button "8 highlights" [ref=e1489] [cursor=pointer]
+      - generic [ref=e1491]:
+        - link "The Wedding Wars - Samir Varma" [ref=e1492] [cursor=pointer]:
+          - /url: https://substack.com/inbox/post/168803790?r=1gvqcg&utm_medium=ios&triedRedirect=true
+        - generic [ref=e1494]:
+          - generic [ref=e1496]: Indian weddings mix old traditions with modern love, often causing family tensions. Most people marry within their caste and religion, keeping social rules strong. But slowly, love and change are making weddings more open and joyful.
+          - generic [ref=e1497]:
+            - generic [ref=e1498]: article
+            - generic [ref=e1500]: ✦
+            - generic [ref=e1501]: 24 Dec 2025
+            - generic [ref=e1502]: ✦
+            - generic [ref=e1503]: Substack
+            - generic [ref=e1504]: ✦
+            - button "4 highlights" [ref=e1505] [cursor=pointer]
+      - generic [ref=e1507]:
+        - link "The Brilliant Inventor Who Made Two of History’s Biggest Mistakes" [ref=e1508] [cursor=pointer]:
+          - /url: https://archive.ph/B5R0C
+        - generic [ref=e1510]:
+          - generic [ref=e1512]: Thomas Midgley was a brilliant inventor whose creations caused huge, long-term harm. He helped invent leaded gasoline and popularize CFCs, which damaged human health and the ozone layer. His story warns that clever inventions can have devastating, unforeseen consequences.
+          - generic [ref=e1513]:
+            - generic [ref=e1514]: article
+            - generic [ref=e1516]: ✦
+            - generic [ref=e1517]: 23 Dec 2025
+            - generic [ref=e1518]: ✦
+            - button "2 highlights" [ref=e1519] [cursor=pointer]
+      - generic [ref=e1521]:
+        - link "Why the Human Brain Project Went Wrong—and How to Fix It" [ref=e1522] [cursor=pointer]:
+          - /url: https://www.scientificamerican.com/article/why-the-human-brain-project-went-wrong-and-how-to-fix-it/
+        - generic [ref=e1524]:
+          - generic [ref=e1526]: The Human Brain Project promised a full computer simulation of the human brain but quickly fell into conflict and mismanagement. Critics say Europe’s funding process and top-down governance drove unrealistic goals and poor oversight. If the project refocuses on practical data tools and models, it could still contribute usefully to neuroscience.
+          - generic [ref=e1527]:
+            - generic [ref=e1528]: article
+            - generic [ref=e1530]: ✦
+            - generic [ref=e1531]: 23 Dec 2025
+            - generic [ref=e1532]: ✦
+            - generic [ref=e1533]: Stefan Theil
+            - generic [ref=e1534]: ✦
+            - button "1 highlight" [ref=e1535] [cursor=pointer]
+      - generic [ref=e1537]:
+        - link "Suddenly, Trait-Based Embryo Selection" [ref=e1538] [cursor=pointer]:
+          - /url: https://www.astralcodexten.com/p/suddenly-trait-based-embryo-selection#_
+        - generic [ref=e1540]:
+          - generic [ref=e1542]: Companies now sell polygenic embryo selection that claims to lower disease risk and slightly raise IQ. Most traits are controlled by thousands of genes and current scores mix real effects with population confounders, so they work poorly within families and picking the best of a few embryos gives only small benefits. Critics warn of scientific limits, ethical problems, and social risks if screening and IVF become widespread.
+          - generic [ref=e1543]:
+            - generic [ref=e1544]: article
+            - generic [ref=e1546]: ✦
+            - generic [ref=e1547]: 20 Dec 2025
+            - generic [ref=e1548]: ✦
+            - generic [ref=e1549]: Scott Alexander
+            - generic [ref=e1550]: ✦
+            - button "3 highlights" [ref=e1551] [cursor=pointer]
+      - generic [ref=e1552]:
+        - link "Your job is to deliver code you have proven to work" [ref=e1553] [cursor=pointer]:
+          - /url: https://simonwillison.net/2025/Dec/18/code-proven-to-work/#atom-entries
+        - generic [ref=e1554]: Your job as a software developer is to deliver code you have tested and proven works. Always do manual testing and add automated tests to show your code is correct. If you use AI tools, make sure they also prove their changes work before submitting.
+        - generic [ref=e1555]:
+          - generic [ref=e1556]: rss
+          - generic [ref=e1558]: ✦
+          - generic [ref=e1559]: 18 Dec 2025
+          - generic [ref=e1560]: ✦
+          - generic [ref=e1561]: "Simon Willison's Weblog: Entries"
+      - generic [ref=e1563]:
+        - link "Endometriosis is an incredibly interesting disease" [ref=e1564] [cursor=pointer]:
+          - /url: https://www.owlposting.com/p/endometriosis-is-an-incredibly-interesting
+        - generic [ref=e1566]:
+          - generic [ref=e1568]: Endometriosis is a complex disease that is not fully understood and affects many people. It behaves somewhat like cancer but has no real cure and is often underdiagnosed. Despite its widespread impact, endometriosis receives little funding and attention compared to its severity.
+          - generic [ref=e1569]:
+            - generic [ref=e1570]: article
+            - generic [ref=e1572]: ✦
+            - generic [ref=e1573]: 16 Dec 2025
+            - generic [ref=e1574]: ✦
+            - generic [ref=e1575]: Abhishaike Mahajan
+            - generic [ref=e1576]: ✦
+            - button "1 highlight" [ref=e1577] [cursor=pointer]
+      - generic [ref=e1579]:
+        - link "How did X-Rays gain mass adoption?" [ref=e1580] [cursor=pointer]:
+          - /url: https://www.aditharun.com/p/how-did-x-rays-gain-mass-adoption
+        - generic [ref=e1582]:
+          - generic [ref=e1584]: X-Rays quickly became popular after their discovery in 1895 because doctors found them very useful for diagnosing injuries and diseases. Military use in wars helped spread X-Ray technology, and dedicated hospital roles made it easier to adopt. Unlike newer technologies, X-Rays were simple to use, fast, and clearly helped patients, leading to wide acceptance by 1925.
+          - generic [ref=e1585]:
+            - generic [ref=e1586]: article
+            - generic [ref=e1588]: ✦
+            - generic [ref=e1589]: 16 Dec 2025
+            - generic [ref=e1590]: ✦
+            - generic [ref=e1591]: Adith Arun
+            - generic [ref=e1592]: ✦
+            - button "3 highlights" [ref=e1593] [cursor=pointer]
+      - generic [ref=e1594]:
+        - 'link "Book Time #26: How I Read" [ref=e1595] [cursor=pointer]':
+          - /url: https://buttondown.com/Booktime/archive/book-time-26-how-i-read
+        - generic [ref=e1596]: The author finds books from endnotes, recommendations, university press catalogs, libraries, and occasional purchases. They manage a steady queue with a simple spreadsheet and prefer physical books but use Kindle and interlibrary loans when needed. They read selectively, often abandon books, track pages read, and savor reading as a lifelong, enjoyable project.
+        - generic [ref=e1597]:
+          - generic [ref=e1598]: article
+          - generic [ref=e1600]: ✦
+          - generic [ref=e1601]: 13 Dec 2025
+          - generic [ref=e1602]: ✦
+          - generic [ref=e1603]: Book Time
+      - generic [ref=e1604]:
+        - link "Graph Algorithms in Board Games!" [ref=e1605] [cursor=pointer]:
+          - /url: https://mmhaskell.com/blog/2025/9/8/graph-algorithms-in-board-games
+        - generic [ref=e1606]: "Solve Snakes and Ladders with BFS: squares are nodes and die rolls are edges. Neighbors uses die rolls and a convert function to follow snakes and ladders on the snaking board. Rust uses a queue and visited set; Haskell uses bfs; both return the minimum moves or -1."
+        - generic [ref=e1607]:
+          - generic [ref=e1608]: article
+          - generic [ref=e1610]: ✦
+          - generic [ref=e1611]: 13 Dec 2025
+          - generic [ref=e1612]: ✦
+          - generic [ref=e1613]: Graph Algorithms
+      - generic [ref=e1614]:
+        - link "Reflections on ICFP 2025" [ref=e1615] [cursor=pointer]:
+          - /url: https://www.dra27.uk/blog/platform/2025/10/18/icfp-2025.html
+        - generic [ref=e1616]: I spent last week at ICFP 2025. A nice (if exhausting!) week, as ever. Amusingly, the most reflections were actually sparked by Yaron’s talk which was right at the end (you can see the talk itself on YouTube).
+        - generic [ref=e1617]:
+          - generic [ref=e1618]: article
+          - generic [ref=e1620]: ✦
+          - generic [ref=e1621]: 13 Dec 2025
+          - generic [ref=e1622]: ✦
+          - generic [ref=e1623]: Notes from the Windows corner
+      - generic [ref=e1624]:
+        - link "Patterns for Defensive Programming in Rust" [ref=e1625] [cursor=pointer]:
+          - /url: https://corrode.dev/blog/defensive-programming/
+        - generic [ref=e1626]: I have a hobby. Whenever I see the comment // this should never happen in code, I try to find out the exact conditions under which it could happen. And in 90% of cases, I find a way to do just that. More often than not…
+        - generic [ref=e1627]:
+          - generic [ref=e1628]: article
+          - generic [ref=e1630]: ✦
+          - generic [ref=e1631]: 06 Dec 2025
+          - generic [ref=e1632]: ✦
+          - generic [ref=e1633]: Corrode Rust Consulting
+      - generic [ref=e1635]:
+        - link "The Mahabharata V2" [ref=e1636] [cursor=pointer]:
+          - /url: private://read/01jmhrpfa0tc8t8qbrxrb1hvm4
+        - generic [ref=e1638]:
+          - generic [ref=e1640]: In the midst of war, Duryodhana underestimates the strength of the Pandavas, who are powerful warriors. Bheema eagerly embraces the call for battle, vowing to defeat Duryodhana's forces. Meanwhile, Yudhishtira expresses his fear of Karna, recognizing him as a formidable opponent in the fight ahead.
+          - generic [ref=e1641]:
+            - generic [ref=e1642]: book
+            - generic [ref=e1644]: ✦
+            - generic [ref=e1645]: 05 Dec 2025
+            - generic [ref=e1646]: ✦
+            - generic [ref=e1647]: Ramesh Menon
+            - generic [ref=e1648]: ✦
+            - button "5 highlights" [ref=e1649] [cursor=pointer]
+      - generic [ref=e1650]:
+        - link "Measuring the overhead of HashMaps in Rust" [ref=e1651] [cursor=pointer]:
+          - /url: https://ntietz.com/blog/rust-hashmap-overhead/
+        - generic [ref=e1652]: HashMaps in Rust trade space for time, making inserts and retrievals more efficient by using extra space. Rust allows defining custom allocators for precise memory management, highlighting the importance of understanding memory allocation behavior in certain situations. Through analyzing overhead measurements of HashMaps and BTreeMaps, it becomes evident that HashMaps generally use significantly more memory compared to BTreeMaps due to their space-for-time tradeoff.
+        - generic [ref=e1653]:
+          - generic [ref=e1654]: article
+          - generic [ref=e1656]: ✦
+          - generic [ref=e1657]: 28 Nov 2025
+      - generic [ref=e1659]:
+        - link "Mistakes I see engineers making in their code reviews" [ref=e1660] [cursor=pointer]:
+          - /url: https://www.seangoedecke.com/good-code-reviews/
+        - generic [ref=e1662]:
+          - generic [ref=e1664]: Focus on how a change fits the whole codebase, not just the diff. Leave a few clear, high-impact comments instead of many nitpicks. Approve most reasonable PRs and use blocking reviews only for real problems.
+          - generic [ref=e1665]:
+            - generic [ref=e1666]: rss
+            - generic [ref=e1668]: ✦
+            - generic [ref=e1669]: 23 Nov 2025
+            - generic [ref=e1670]: ✦
+            - generic [ref=e1671]: seangoedecke.com via untitaker
+            - generic [ref=e1672]: ✦
+            - button "2 highlights" [ref=e1673] [cursor=pointer]
+      - generic [ref=e1675]:
+        - link "Tradition is Smarter Than You Are" [ref=e1676] [cursor=pointer]:
+          - /url: https://scholars-stage.org/tradition-is-smarter-than-you-are/
+        - generic [ref=e1678]:
+          - generic [ref=e1680]: Joseph Henrich argues that cultural traditions, rather than individual rationality, play a crucial role in human success and survival. Many effective cultural practices are shaped over generations and may not be fully understood by those who follow them. This suggests that respecting and maintaining traditions is important, as they often provide benefits that rational thinking alone cannot replicate.
+          - generic [ref=e1681]:
+            - generic [ref=e1682]: article
+            - generic [ref=e1684]: ✦
+            - generic [ref=e1685]: 22 Nov 2025
+            - generic [ref=e1686]: ✦
+            - generic [ref=e1687]: The Scholar's Stage
+            - generic [ref=e1688]: ✦
+            - button "5 highlights" [ref=e1689] [cursor=pointer]
+      - generic [ref=e1690]:
+        - link "The Rust I Wanted Had No Future" [ref=e1691] [cursor=pointer]:
+          - /url: https://graydon2.dreamwidth.org/307291.html
+        - generic [ref=e1692]: The author wanted a simpler, more pragmatic Rust that traded some performance and expressivity for easier reasoning and implementation. They disliked many of Rust's choices (traits, complex inference, cross-crate monomorphization, limited dynamic dispatch) and missed earlier ideas like second-class borrows, typestate, reflection, and stack iterators. In short, Rust grew toward power and zero-cost ideals, but lost the simpler language the author would have preferred.
+        - generic [ref=e1693]:
+          - generic [ref=e1694]: article
+          - generic [ref=e1696]: ✦
+          - generic [ref=e1697]: 22 Nov 2025
+      - generic [ref=e1699]:
+        - link "Shall We Repeal the Laws of Economics?" [ref=e1700] [cursor=pointer]:
+          - /url: https://www.oaktreecapital.com/insights/memo/shall-we-repeal-the-laws-of-economics
+        - generic [ref=e1702]:
+          - generic [ref=e1704]: Politicians may promise economic outcomes, but they can't change basic economic laws. Government regulations often fail because they disrupt free market incentives, leading to negative consequences. Ultimately, the laws of economics will prevail, and attempts to control them usually result in inefficiency and hardship.
+          - generic [ref=e1705]:
+            - generic [ref=e1706]: article
+            - generic [ref=e1708]: ✦
+            - generic [ref=e1709]: 20 Nov 2025
+            - generic [ref=e1710]: ✦
+            - generic [ref=e1711]: OaktreeCap
+            - generic [ref=e1712]: ✦
+            - button "5 highlights" [ref=e1713] [cursor=pointer]
+      - generic [ref=e1715]:
+        - link "Willingness to look stupid" [ref=e1716] [cursor=pointer]:
+          - /url: https://danluu.com/look-stupid/
+        - generic [ref=e1718]:
+          - generic [ref=e1720]: The author says he often lets people think he is stupid because he values asking naive questions and trying dumb things. This habit has cost him in some situations but has helped him learn and improve a lot. He argues that being willing to look stupid usually pays off more than it hurts.
+          - generic [ref=e1721]:
+            - generic [ref=e1722]: article
+            - generic [ref=e1724]: ✦
+            - generic [ref=e1725]: 09 Nov 2025
+            - generic [ref=e1726]: ✦
+            - button "1 highlight" [ref=e1727] [cursor=pointer]
+      - generic [ref=e1728]:
+        - 'link "Peter Thiel: Capitalism Isn’t Working for Young People" [ref=e1729] [cursor=pointer]':
+          - /url: https://www.thefp.com/p/peter-thiel-capitalism-isnt-working-for-young-people
+        - generic [ref=e1730]: Peter Thiel warns that capitalism is failing many young people, who face high rent and crushing student debt. He says this failure helps explain growing sympathy for socialism among millennials. Thiel argues political leaders must fix housing and debt or risk deeper unrest.
+        - generic [ref=e1731]:
+          - generic [ref=e1732]: article
+          - generic [ref=e1734]: ✦
+          - generic [ref=e1735]: 09 Nov 2025
+          - generic [ref=e1736]: ✦
+          - generic [ref=e1737]: Sean Fischer
+      - generic [ref=e1738]:
+        - link "How to Keep Winning" [ref=e1739] [cursor=pointer]:
+          - /url: https://amasad.me/keep-winning/
+        - generic [ref=e1740]: "The author explains six principles for avoiding failure and staying successful. Key ideas: protect against ruin, keep going, focus intensely, do hard work, follow ethical rules, and give back. These habits compound into lasting wins."
+        - generic [ref=e1741]:
+          - generic [ref=e1742]: article
+          - generic [ref=e1744]: ✦
+          - generic [ref=e1745]: 09 Nov 2025
+      - generic [ref=e1747]:
+        - link "Inside Cursor" [ref=e1748] [cursor=pointer]:
+          - /url: https://joincolossus.com/article/inside-cursor/
+        - generic [ref=e1750]:
+          - generic [ref=e1752]: Cursor is a tightly knit, in-person startup focused on building developer tooling that blends UX and machine learning. They hire very selectively, favor self-motivated engineers, and rely on frequent internal feedback. The team cares deeply about code and aims to shape the future through ambitious product work.
+          - generic [ref=e1753]:
+            - generic [ref=e1754]: article
+            - generic [ref=e1756]: ✦
+            - generic [ref=e1757]: 09 Nov 2025
+            - generic [ref=e1758]: ✦
+            - generic [ref=e1759]: Brie Wolfson
+            - generic [ref=e1760]: ✦
+            - button "6 highlights" [ref=e1761] [cursor=pointer]
+      - generic [ref=e1763]:
+        - link "TIME_WAIT and its design implications for protocols and scalable client server systems" [ref=e1764] [cursor=pointer]:
+          - /url: https://serverframework.com/asynchronousevents/2011/01/time-wait-and-its-design-implications-for-protocols-and-scalable-servers.html
+        - generic [ref=e1766]:
+          - generic [ref=e1768]: TIME_WAIT is a state in TCP connections that can hinder the ability to establish new connections when many sockets are stuck in this state. It lasts for a duration of about 4 minutes after a connection is closed, which can affect scalability in client-server systems. To mitigate this issue, it's important to design systems that minimize the occurrence of TIME_WAIT or ensure it occurs on the client side rather than the server.
+          - generic [ref=e1769]:
+            - generic [ref=e1770]: article
+            - generic [ref=e1772]: ✦
+            - generic [ref=e1773]: 09 Nov 2025
+            - generic [ref=e1774]: ✦
+            - generic [ref=e1775]: Len
+            - generic [ref=e1776]: ✦
+            - button "3 highlights" [ref=e1777] [cursor=pointer]
+      - generic [ref=e1778]:
+        - link "You Should Write An Agent" [ref=e1779] [cursor=pointer]:
+          - /url: https://fly.io/blog/everyone-write-an-agent/
+        - generic [ref=e1780]: Try building an LLM agent yourself. You’ll learn fastest by doing, and it’s easier than you expect. Tweak tools, contexts, and loops to explore powerful, practical ideas.
+        - generic [ref=e1781]:
+          - generic [ref=e1782]: article
+          - generic [ref=e1784]: ✦
+          - generic [ref=e1785]: 07 Nov 2025
+          - generic [ref=e1786]: ✦
+          - generic [ref=e1787]: Fly
+      - generic [ref=e1789]:
+        - link "Flounder Mode" [ref=e1790] [cursor=pointer]:
+          - /url: https://joincolossus.com/article/flounder-mode/
+        - generic [ref=e1792]:
+          - generic [ref=e1794]: Kevin Kelly follows his interests with joy and turns them into meaningful work without chasing fame or fortune. The author admires his "Hollywood style" of working on many creative projects rather than climbing a traditional career ladder. Meeting Kelly gave her permission to pursue a career full of ambition and happiness, even if it looks different from others’.
+          - generic [ref=e1795]:
+            - generic [ref=e1796]: article
+            - generic [ref=e1798]: ✦
+            - generic [ref=e1799]: 05 Nov 2025
+            - generic [ref=e1800]: ✦
+            - generic [ref=e1801]: Brie Wolfson
+            - generic [ref=e1802]: ✦
+            - button "1 highlight" [ref=e1803] [cursor=pointer]
+      - generic [ref=e1805]:
+        - link "Researchers simulate an entire fly brain on a laptop. Is a human brain next?" [ref=e1806] [cursor=pointer]:
+          - /url: https://news.berkeley.edu/2024/10/02/researchers-simulate-an-entire-fly-brain-on-a-laptop-is-a-human-brain-next/
+        - generic [ref=e1808]:
+          - generic [ref=e1810]: Scientists have successfully simulated the entire brain of a fruit fly on a laptop, mapping its 139,255 neurons and predicting their responses to stimuli. This work aims to provide insights into human brain disorders by understanding simpler brain circuits. The researchers hope to eventually model more complex brains, including those of mice and humans, to explore brain functions and mental health conditions.
+          - generic [ref=e1811]:
+            - generic [ref=e1812]: article
+            - generic [ref=e1814]: ✦
+            - generic [ref=e1815]: 03 Nov 2025
+            - generic [ref=e1816]: ✦
+            - generic [ref=e1817]: Robert Sanders
+            - generic [ref=e1818]: ✦
+            - button "2 highlights" [ref=e1819] [cursor=pointer]
+      - generic [ref=e1820]:
+        - 'link "Insider''s Guide to Landing a Software Engineering Job: Advice from Dani Unsworth" [ref=e1821] [cursor=pointer]':
+          - /url: https://archive.ph/vC3JO
+        - generic [ref=e1822]: Dani Unsworth, Head of Talent at incident.io, shares practical hiring tips from her recruiting experience. Partner closely with recruiters, tailor your CV to the role, and prepare thoroughly for interviews. Small extras like thoughtful outreach or a short answer about why you want the job can make you stand out.
+        - generic [ref=e1823]:
+          - generic [ref=e1824]: article
+          - generic [ref=e1826]: ✦
+          - generic [ref=e1827]: 28 Oct 2025
+          - generic [ref=e1828]: ✦
+          - generic [ref=e1829]: Dani Unsworth
+      - generic [ref=e1830]:
+        - 'link "Get your work recognized: write a brag document" [ref=e1831] [cursor=pointer]':
+          - /url: https://jvns.ca/blog/brag-documents/
+        - generic [ref=e1832]: "Get your work recognized: write a brag document"
+        - generic [ref=e1833]:
+          - generic [ref=e1834]: article
+          - generic [ref=e1836]: ✦
+          - generic [ref=e1837]: 26 Oct 2025
+          - generic [ref=e1838]: ✦
+          - generic [ref=e1839]: Julia Evans
+      - generic [ref=e1841]:
+        - link "Writes and Write-Nots" [ref=e1842] [cursor=pointer]:
+          - /url: https://paulgraham.com/writes.html
+        - generic [ref=e1844]:
+          - generic [ref=e1846]: In the future, fewer people will know how to write well because AI can do it for them. This will create a divide between those who can write and those who cannot, affecting critical thinking. Writing is essential for clear thought, and losing this skill could be dangerous for society.
+          - generic [ref=e1847]:
+            - generic [ref=e1848]: article
+            - generic [ref=e1850]: ✦
+            - generic [ref=e1851]: 25 Oct 2025
+            - generic [ref=e1852]: ✦
+            - generic [ref=e1853]: Paul Graham
+            - generic [ref=e1854]: ✦
+            - button "2 highlights" [ref=e1855] [cursor=pointer]
+      - generic [ref=e1856]:
+        - link "Moats Against AI" [ref=e1857] [cursor=pointer]:
+          - /url: https://www.nmccarty.com/p/moats
+        - generic [ref=e1858]: Writers should embrace their unique human qualities instead of fearing AI, as many types of writing cannot be easily replicated by machines. To stand out, writers can focus on personal experiences, original insights, and expert knowledge that AI lacks. Ultimately, individuality and authentic expression are key to thriving in a world increasingly influenced by AI.
+        - generic [ref=e1859]:
+          - generic [ref=e1860]: article
+          - generic [ref=e1862]: ✦
+          - generic [ref=e1863]: 25 Oct 2025
+          - generic [ref=e1864]: ✦
+          - generic [ref=e1865]: Niko McCarty
+      - generic [ref=e1866]:
+        - link "If You Are Reading This, AI, Please Be Kind" [ref=e1867] [cursor=pointer]:
+          - /url: https://www.bloomberg.com/opinion/articles/2025-01-17/if-you-are-reading-this-ai-please-be-kind?cmpid%3D=socialflow-twitter-view&utm_content=view&utm_campaign=socialflow-organic&utm_source=twitter&utm_medium=social&sref=htOHjx5Y
+        - generic [ref=e1868]: Writers and speakers should treat AI as part of their audience because AI already reads and summarizes much of what we produce. By writing clearly and making your work available, you can shape how AIs represent your ideas and preserve your voice. This also offers a chance at intellectual influence and a form of digital immortality.
+        - generic [ref=e1869]:
+          - generic [ref=e1870]: article
+          - generic [ref=e1872]: ✦
+          - generic [ref=e1873]: 24 Oct 2025
+          - generic [ref=e1874]: ✦
+          - generic [ref=e1875]: Tyler Cowen
+      - generic [ref=e1876]:
+        - 'link "What’s the Bet: Sublime" [ref=e1877] [cursor=pointer]':
+          - /url: https://www.gettheleverage.com/p/whats-the-bet-sublime?r=1gvqcg&utm_medium=ios&triedRedirect=true
+        - generic [ref=e1878]: Can AI enhance creativity rather than replace it?
+        - generic [ref=e1879]:
+          - generic [ref=e1880]: article
+          - generic [ref=e1882]: ✦
+          - generic [ref=e1883]: 23 Oct 2025
+          - generic [ref=e1884]: ✦
+          - generic [ref=e1885]: Evan Armstrong
+      - generic [ref=e1887]:
+        - link "Medicine’s Burning Question | The New Yorker" [ref=e1888] [cursor=pointer]:
+          - /url: https://www.newyorker.com/magazine/2015/11/30/inflamed
+        - generic [ref=e1890]:
+          - generic [ref=e1892]: The text explores the role of inflammation in various health conditions like heart disease and Alzheimer's, with researchers investigating its impact on diseases. Scientists are studying how inflammation could be linked to chronic conditions and exploring potential treatments to control inflammation for better health outcomes. While some believe inflammation plays a key role in many diseases, researchers are still working to fully understand its complex relationship with different health issues.
+          - generic [ref=e1893]:
+            - generic [ref=e1894]: article
+            - generic [ref=e1896]: ✦
+            - generic [ref=e1897]: 22 Oct 2025
+            - generic [ref=e1898]: ✦
+            - generic [ref=e1899]: Jerome Groopman
+            - generic [ref=e1900]: ✦
+            - button "5 highlights" [ref=e1901] [cursor=pointer]
+      - generic [ref=e1903]:
+        - 'link "The Baffling Intelligence of a Single Cell: The story of E. coli chemotaxis" [ref=e1904] [cursor=pointer]':
+          - /url: https://jsomers.net/e-coli-chemotaxis/
+        - generic [ref=e1906]:
+          - generic [ref=e1908]: "\"The Baffling Intelligence of a Single Cell: The story of E. coli chemotaxis\" delves into the intricacies of how individual E. coli cells navigate their environment to find nutrients through chemotaxis. This process involves complex molecular mechanisms like the flagellar motor and signaling molecules such as CheY that enable the cell to sense and respond to minute changes in attractant concentration. The document explains how the receptor complex on the cell's surface functions like a sensory apparatus, integrating signals to guide the cell's movement. Additionally, it explores the remarkable adaptation capabilities of E. coli, showcasing how these single cells can dynamically respond to a wide range of attractant concentrations by encoding chemical memory."
+          - generic [ref=e1909]:
+            - generic [ref=e1910]: article
+            - generic [ref=e1912]: ✦
+            - generic [ref=e1913]: 17 Oct 2025
+            - generic [ref=e1914]: ✦
+            - generic [ref=e1915]: Edwin Morris
+            - generic [ref=e1916]: ✦
+            - button "7 highlights" [ref=e1917] [cursor=pointer]
+      - generic [ref=e1918]:
+        - link "The Cost of Craft" [ref=e1919] [cursor=pointer]:
+          - /url: https://gk3fyi.substack.com/p/the-cost-of-craft
+        - generic [ref=e1920]: As companies grow, keeping software simple and high-quality becomes much harder. Teams often focus on quick wins and competition instead of shared vision and craft. To succeed, leaders must balance growth with a strong foundation and clear goals.
+        - generic [ref=e1921]:
+          - generic [ref=e1922]: article
+          - generic [ref=e1924]: ✦
+          - generic [ref=e1925]: 14 Oct 2025
+          - generic [ref=e1926]: ✦
+          - generic [ref=e1927]: George Kedenburg III
+      - generic [ref=e1928]:
+        - link "Reflections on Palantir" [ref=e1929] [cursor=pointer]:
+          - /url: https://nabeelqu.substack.com/p/reflections-on-palantir
+        - generic [ref=e1930]: Palantir has evolved from a consulting company to a successful enterprise data platform, achieving impressive gross margins. The company fosters a unique culture that values deep thinking and innovation, often feeling more like a "messianic cult" than a typical tech firm. Its focus on data integration and tackling difficult industries has become increasingly relevant, especially with the rise of AI.
+        - generic [ref=e1931]:
+          - generic [ref=e1932]: article
+          - generic [ref=e1934]: ✦
+          - generic [ref=e1935]: 14 Oct 2025
+          - generic [ref=e1936]: ✦
+          - generic [ref=e1937]: Nabeel S. Qureshi
+      - generic [ref=e1938]:
+        - link "You have 12 shots in life" [ref=e1939] [cursor=pointer]:
+          - /url: https://x.com/13yearoldvc/status/1950276106323664949/
+        - generic [ref=e1940]: You have about 12 big shots in a working life to create lasting impact. Prioritize timing (天) first, then place (地), then people (人) to maximize success. Take asymmetric bets that build skills, relationships, and momentum even if you might fail.
+        - generic [ref=e1941]:
+          - generic [ref=e1942]: tweet
+          - generic [ref=e1944]: ✦
+          - generic [ref=e1945]: 13 Oct 2025
+          - generic [ref=e1946]: ✦
+          - generic [ref=e1947]: jessy
+      - generic [ref=e1948]:
+        - 'link "Starting out with Graph Algorithms: Basic DFS" [ref=e1949] [cursor=pointer]':
+          - /url: https://mmhaskell.com/blog/2025/9/1/starting-out-with-graph-algorithms-basic-dfs
+        - generic [ref=e1950]: The article shows how to count islands in a grid using depth-first search. It defines neighbors, a recursive visit that marks connected land, and a loop that scans all cells. The Rust and Haskell versions both track visited cells to avoid double-counting.
+        - generic [ref=e1951]:
+          - generic [ref=e1952]: article
+          - generic [ref=e1954]: ✦
+          - generic [ref=e1955]: 10 Oct 2025
+          - generic [ref=e1956]: ✦
+          - generic [ref=e1957]: James Bowen
+      - generic [ref=e1958]:
+        - link "Embracing the parallel coding agent lifestyle" [ref=e1959] [cursor=pointer]:
+          - /url: https://simonwillison.net/2025/Oct/5/parallel-coding-agents/
+        - generic [ref=e1960]: Engineers are running multiple coding agents in parallel to do low-stakes work like research, small maintenance, and reminders about how code fits together. This saves time because agents can build proofs of concept, fix warnings, and summarize code while you focus on reviewing one major change. With careful prompts and isolation for risky tasks, parallel agents boost productivity and are worth experimenting with.
+        - generic [ref=e1961]:
+          - generic [ref=e1962]: article
+          - generic [ref=e1964]: ✦
+          - generic [ref=e1965]: 05 Oct 2025
+          - generic [ref=e1966]: ✦
+          - generic [ref=e1967]: Simon Willison
+      - generic [ref=e1968]:
+        - link "Don't build a spaced repetition startup" [ref=e1969] [cursor=pointer]:
+          - /url: https://www.giacomoran.com/blog/dont-build-sr-startup/
+        - generic [ref=e1970]: "The author stopped full-time work on Rember, an AI-assisted spaced repetition app, because he doubts such a product can scale. AI makes creating flashcards easier but does not solve the core problems: learning takes effort, habits are hard to form, and choosing what to remember adds constant overhead. A truly scalable product would need to teach and curate content, not just help you remember what you already saw."
+        - generic [ref=e1971]:
+          - generic [ref=e1972]: article
+          - generic [ref=e1974]: ✦
+          - generic [ref=e1975]: 04 Oct 2025
+          - generic [ref=e1976]: ✦
+          - generic [ref=e1977]: Giacomo Randazzo
+      - generic [ref=e1978]:
+        - link "Zig Builds Are Getting Faster" [ref=e1979] [cursor=pointer]:
+          - /url: https://mitchellh.com/writing/zig-builds-getting-faster
+        - generic [ref=e1980]: As a result, one of the primary stated goals of Zig for years has been faster compile times.
+        - generic [ref=e1981]:
+          - generic [ref=e1982]: article
+          - generic [ref=e1984]: ✦
+          - generic [ref=e1985]: 04 Oct 2025
+          - generic [ref=e1986]: ✦
+          - generic [ref=e1987]: Mitchell Hashimoto
+      - generic [ref=e1988]:
+        - link "“What Matters More Than Your Talents”" [ref=e1989] [cursor=pointer]:
+          - /url: https://jamesclear.com/great-speeches/what-matters-more-than-your-talents-by-jeff-bezos
+        - generic [ref=e1990]: Jeff Bezos says being kind is harder and more important than being clever. He shares how choices, not talents, shape our lives and stories. He encourages us to use our gifts to make brave, kind decisions.
+        - generic [ref=e1991]:
+          - generic [ref=e1992]: article
+          - generic [ref=e1994]: ✦
+          - generic [ref=e1995]: 04 Oct 2025
+          - generic [ref=e1996]: ✦
+          - generic [ref=e1997]: Jeff Bezos
+      - generic [ref=e1999]:
+        - link "What Can a Cell Remember? | Quanta Magazine" [ref=e2000] [cursor=pointer]:
+          - /url: https://www.quantamagazine.org/what-can-a-cell-remember-20250730/
+        - generic [ref=e2002]:
+          - generic [ref=e2004]: Scientists are discovering that single cells can learn and remember from past experiences, not just neurons. This challenges old ideas and shows memory might be a basic feature of all living cells. Understanding cell memory helps explain how life adapts and survives.
+          - generic [ref=e2005]:
+            - generic [ref=e2006]: article
+            - generic [ref=e2008]: ✦
+            - generic [ref=e2009]: 03 Oct 2025
+            - generic [ref=e2010]: ✦
+            - generic [ref=e2011]: Claire L. Evans
+            - generic [ref=e2012]: ✦
+            - button "4 highlights" [ref=e2013] [cursor=pointer]
+      - generic [ref=e2014]:
+        - link "The $4trn accounting puzzle at the heart of the AI cloud" [ref=e2015] [cursor=pointer]:
+          - /url: https://archive.ph/Gdrft
+        - generic [ref=e2016]: Big tech is spending and earning in the trillions as AI reshapes the cloud. Accountants worry that fast-changing AI chips may become obsolete quickly, forcing much faster depreciation. If servers wear out sooner, the firms’ combined market value could fall by up to about $4 trillion.
+        - generic [ref=e2017]:
+          - generic [ref=e2018]: article
+          - generic [ref=e2020]: ✦
+          - generic [ref=e2021]: 03 Oct 2025
+      - generic [ref=e2023]:
+        - link "This Is How the AI Bubble Will Pop" [ref=e2024] [cursor=pointer]:
+          - /url: https://www.derekthompson.org/p/this-is-how-the-ai-bubble-will-pop?utm_campaign=post&utm_medium=web
+        - generic [ref=e2026]:
+          - generic [ref=e2028]: AI is getting massive investment that may not pay off. Companies are pouring money into data centers and chips while real returns and consumer demand lag. This could create a bubble that bursts but still leaves lasting change.
+          - generic [ref=e2029]:
+            - generic [ref=e2030]: article
+            - generic [ref=e2032]: ✦
+            - generic [ref=e2033]: 03 Oct 2025
+            - generic [ref=e2034]: ✦
+            - generic [ref=e2035]: Derek Thompson
+            - generic [ref=e2036]: ✦
+            - button "1 highlight" [ref=e2037] [cursor=pointer]
+      - generic [ref=e2038]:
+        - link "Why TigerBeetle is the most interesting database in the world" [ref=e2039] [cursor=pointer]:
+          - /url: https://www.amplifypartners.com/blog-posts/why-tigerbeetle-is-the-most-interesting-database-in-the-world
+        - generic [ref=e2040]: TigerBeetle is a new database built from scratch for fast and reliable financial transactions. It uses modern techniques like deterministic testing, static memory, and fault-tolerant storage to ensure safety and speed. The team also created unique tools and a clear engineering style to make their system strong and easy to understand.
+        - generic [ref=e2041]:
+          - generic [ref=e2042]: article
+          - generic [ref=e2044]: ✦
+          - generic [ref=e2045]: 01 Oct 2025
+          - generic [ref=e2046]: ✦
+          - generic [ref=e2047]: Justin Gage
+      - generic [ref=e2048]:
+        - link "The Power Of Ten – Rules For Developing Safety Critical Code" [ref=e2049] [cursor=pointer]:
+          - /url: https://spinroot.com/gerard/pdf/P10.pdf
+        - generic [ref=e2050]: The article discusses ten strict coding rules for developing safety-critical software, primarily targeting the C programming language. These rules aim to improve code clarity, analyzability, and safety by enforcing simple control flow and mandatory checks on function return values. Following these guidelines can help ensure that critical software functions as intended and reduces the risk of errors.
+        - generic [ref=e2051]:
+          - generic [ref=e2052]: pdf
+          - generic [ref=e2054]: ✦
+          - generic [ref=e2055]: 01 Oct 2025
+          - generic [ref=e2056]: ✦
+          - generic [ref=e2057]: Gerard J. Holzmann
+      - generic [ref=e2059]:
+        - link "Why Mitochondria Are More like a Motherboard Than the Powerhouse of the Cell" [ref=e2060] [cursor=pointer]:
+          - /url: https://www.scientificamerican.com/article/why-mitochondria-are-more-like-a-motherboard-than-the-powerhouse-of-the-cell/
+        - generic [ref=e2062]:
+          - generic [ref=e2064]: Mitochondria are not just powerhouses for energy; they act like a motherboard, processing information and communicating within cells and among different parts of the body. They form social connections, helping each other and adapting to environmental changes, which is crucial for our health. Maintaining healthy mitochondria through diet and lifestyle can significantly impact our overall well-being.
+          - generic [ref=e2065]:
+            - generic [ref=e2066]: article
+            - generic [ref=e2068]: ✦
+            - generic [ref=e2069]: 30 Sep 2025
+            - generic [ref=e2070]: ✦
+            - generic [ref=e2071]: Martin Picard
+            - generic [ref=e2072]: ✦
+            - generic [ref=e2073]: Madhusree Mukerjee
+            - generic [ref=e2074]: ✦
+            - generic [ref=e2075]: Jacek Krywko
+            - generic [ref=e2076]: ✦
+            - generic [ref=e2077]: Gayoung Lee
+            - generic [ref=e2078]: ✦
+            - generic [ref=e2079]: Rachel Fieldhouse
+            - generic [ref=e2080]: ✦
+            - generic [ref=e2081]: Nature Magazine
+            - generic [ref=e2082]: ✦
+            - generic [ref=e2083]: Nisha Gaind
+            - generic [ref=e2084]: ✦
+            - generic [ref=e2085]: Lyndie Chiou
+            - generic [ref=e2086]: ✦
+            - generic [ref=e2087]: Anne C. Mulkern
+            - generic [ref=e2088]: ✦
+            - generic [ref=e2089]: E E News
+            - generic [ref=e2090]: ✦
+            - button "9 highlights" [ref=e2091] [cursor=pointer]
+      - generic [ref=e2093]:
+        - link "It All Comes Down to the Mitochondria" [ref=e2094] [cursor=pointer]:
+          - /url: https://www.science.org/content/blog-post/it-all-comes-down-mitochondria
+        - generic [ref=e2096]:
+          - generic [ref=e2098]: Scientists found that tiredness and the need to sleep come from how mitochondria in brain cells work. When mitochondria get stressed from nonstop activity, they signal the body to sleep to repair themselves. This shows that sleep is essential for fixing energy problems in our brain cells caused by breathing oxygen.
+          - generic [ref=e2099]:
+            - generic [ref=e2100]: article
+            - generic [ref=e2102]: ✦
+            - generic [ref=e2103]: 28 Sep 2025
+            - generic [ref=e2104]: ✦
+            - generic [ref=e2105]: Derek Lowe
+            - generic [ref=e2106]: ✦
+            - button "1 highlight" [ref=e2107] [cursor=pointer]
+      - generic [ref=e2109]:
+        - link "A startup is a bundle, and Windsurf broke the bundle" [ref=e2110] [cursor=pointer]:
+          - /url: https://alexdanco.com/2025/07/18/a-startup-is-a-bundle-and-windsurf-broke-the-bundle/
+        - generic [ref=e2112]:
+          - generic [ref=e2114]: Startups work like bundles, combining different people’s interests into one big shared goal. The Windsurf case shows this bundle breaking apart, as AI talent is now valued and paid separately. This new trend makes it harder for startups to coordinate and grow together.
+          - generic [ref=e2115]:
+            - generic [ref=e2116]: article
+            - generic [ref=e2118]: ✦
+            - generic [ref=e2119]: 28 Sep 2025
+            - generic [ref=e2120]: ✦
+            - generic [ref=e2121]: Alex Danco's Newsletter
+            - generic [ref=e2122]: ✦
+            - button "4 highlights" [ref=e2123] [cursor=pointer]
+      - generic [ref=e2124]:
+        - link "[PSA] Advice I Wish I Knew as a Junior Developer" [ref=e2125] [cursor=pointer]:
+          - /url: https://raheeljunaid.com/blog/advice-for-developers/
+        - generic [ref=e2126]: "Coding is the easy part—planning, teamwork, and office politics matter more. Do small, practical work: help on legacy code, underpromise and ship, and build relationships. Keep things simple, test and document assumptions, pick your battles, and protect your time."
+        - generic [ref=e2127]:
+          - generic [ref=e2128]: article
+          - generic [ref=e2130]: ✦
+          - generic [ref=e2131]: 28 Sep 2025
+      - generic [ref=e2133]:
+        - link "Pricing to the demand curve" [ref=e2134] [cursor=pointer]:
+          - /url: https://cdixon.org/2012/07/04/pricing-to-the-demand-curve
+        - generic [ref=e2136]:
+          - generic [ref=e2138]: The text discusses pricing strategies based on the demand curve. Companies aim to set prices to maximize revenue by understanding customers' willingness to pay. Different pricing tactics, like segmentation and price discrimination, are used to capture more value from customers.
+          - generic [ref=e2139]:
+            - generic [ref=e2140]: article
+            - generic [ref=e2142]: ✦
+            - generic [ref=e2143]: 18 Sep 2025
+            - generic [ref=e2144]: ✦
+            - button "4 highlights" [ref=e2145] [cursor=pointer]
+      - generic [ref=e2146]:
+        - link "How bundling benefits sellers and buyers" [ref=e2147] [cursor=pointer]:
+          - /url: https://cdixon.org/2012/07/08/how-bundling-benefits-sellers-and-buyers
+        - generic [ref=e2148]: Bundling lets sellers charge higher total prices while giving buyers more value, so both benefit. It works best when customers have different tastes for each item, like sports and history channels. Bundling also supports subscription models and can sometimes block new competitors.
+        - generic [ref=e2149]:
+          - generic [ref=e2150]: article
+          - generic [ref=e2152]: ✦
+          - generic [ref=e2153]: 18 Sep 2025
+      - generic [ref=e2155]:
+        - link "Lee was disappointed with India" [ref=e2156] [cursor=pointer]:
+          - /url: https://archive.is/RFFHA#selection-1339.116-1339.217
+        - generic [ref=e2158]:
+          - generic [ref=e2160]: Lee Kuan Yew knew many Indian leaders and had strong, often blunt views about them. He was disappointed that India's politics and bureaucracy held back growth and called the country fragmented. Late in life he said India was slowly reforming and urged opening the economy and backing entrepreneurship.
+          - generic [ref=e2161]:
+            - generic [ref=e2162]: article
+            - generic [ref=e2164]: ✦
+            - generic [ref=e2165]: 15 Sep 2025
+            - generic [ref=e2166]: ✦
+            - generic [ref=e2167]: Suhasini Haidar
+            - generic [ref=e2168]: ✦
+            - button "1 highlight" [ref=e2169] [cursor=pointer]
+      - generic [ref=e2170]:
+        - link "How strong is India’s economy?" [ref=e2171] [cursor=pointer]:
+          - /url: https://archive.ph/az4ZP
+        - generic [ref=e2172]: India’s economy is growing fast and could change the world. It is not like China, but it has great potential. Many people watch closely to see how strong it will become.
+        - generic [ref=e2173]:
+          - generic [ref=e2174]: article
+          - generic [ref=e2176]: ✦
+          - generic [ref=e2177]: 15 Sep 2025
+      - generic [ref=e2179]:
+        - link "The ‘Arab Spring’ and other American seasons" [ref=e2180] [cursor=pointer]:
+          - /url: https://www.aljazeera.com/opinions/2012/8/29/the-arab-spring-and-other-american-seasons/
+        - generic [ref=e2182]:
+          - generic [ref=e2184]: The uprisings in the Arab world, referred to as the "Arab Spring," were driven by demands for political and economic rights from people suffering under neoliberal policies. Unlike the Prague Spring, which sought Western-style reforms for the elite, the Arab revolts aimed to connect various social classes and address widespread poverty. The U.S. and Western powers have shifted from supporting dictators to backing counter-revolutions, while the people continue to push for meaningful change and accountability.
+          - generic [ref=e2185]:
+            - generic [ref=e2186]: article
+            - generic [ref=e2188]: ✦
+            - generic [ref=e2189]: 15 Sep 2025
+            - generic [ref=e2190]: ✦
+            - generic [ref=e2191]: Joseph Massad
+            - generic [ref=e2192]: ✦
+            - button "3 highlights" [ref=e2193] [cursor=pointer]
+      - generic [ref=e2194]:
+        - link "Gleam my new obsession" [ref=e2195] [cursor=pointer]:
+          - /url: https://ericcodes.io/blog/gleam-my-new-obsession.html
+        - generic [ref=e2196]: The author loves Gleam because it combines Rust’s powerful type system, Go’s simplicity, and Erlang’s concurrency. Gleam makes functional programming easier and has neat features like pattern matching and the use keyword. It’s great for writing concurrent, long-running services and feels friendly to learn.
+        - generic [ref=e2197]:
+          - generic [ref=e2198]: article
+          - generic [ref=e2200]: ✦
+          - generic [ref=e2201]: 15 Sep 2025
+      - generic [ref=e2203]:
+        - 'link "Procrastination: An emotional struggle" [ref=e2204] [cursor=pointer]':
+          - /url: https://www.counseling.org/publications/counseling-today-magazine/article-archive/article/legacy/procrastination-an-emotional-struggle
+        - generic [ref=e2206]:
+          - generic [ref=e2208]: Procrastination often stems from underlying emotional issues, making it more than just a bad habit. Counselors help clients identify irrational beliefs and emotional triggers connected to their procrastination. By addressing these root causes, clients can learn effective strategies to overcome procrastination and improve their overall well-being.
+          - generic [ref=e2209]:
+            - generic [ref=e2210]: article
+            - generic [ref=e2212]: ✦
+            - generic [ref=e2213]: 15 Sep 2025
+            - generic [ref=e2214]: ✦
+            - generic [ref=e2215]: Lindsey Phillips
+            - generic [ref=e2216]: ✦
+            - button "8 highlights" [ref=e2217] [cursor=pointer]
+      - generic [ref=e2218]:
+        - 'link "Your Review: Alpha School" [ref=e2219] [cursor=pointer]':
+          - /url: https://www.astralcodexten.com/p/your-review-alpha-school
+        - generic [ref=e2220]: Alpha runs focused two-hour, tech-supported lessons with small teacher:student ratios and strong incentive systems. Early MAP scores show big gains (roughly 2–2.6x, up to 5x in the GT group) but the data are thin and may reflect selection and scaling problems. It could greatly speed learning and boost life skills for many kids, but it likely won’t work for everyone.
+        - generic [ref=e2221]:
+          - generic [ref=e2222]: article
+          - generic [ref=e2224]: ✦
+          - generic [ref=e2225]: 10 Sep 2025
+          - generic [ref=e2226]: ✦
+          - generic [ref=e2227]: Scott Alexander
+      - generic [ref=e2229]:
+        - 'link "On Consolation: Notes on Our Search for Meaning and the Antidote to Resignation" [ref=e2230] [cursor=pointer]':
+          - /url: https://www.themarginalian.org/2025/01/22/on-consolation-michael-ignatieff/
+        - generic [ref=e2232]:
+          - generic [ref=e2234]: Life brings losses we cannot undo, and despair follows. Consolation is a shared reaching for meaning and hope through art, thought, and the example of others. In the end we must make our own purpose and keep renewing consolation as we live.
+          - generic [ref=e2235]:
+            - generic [ref=e2236]: article
+            - generic [ref=e2238]: ✦
+            - generic [ref=e2239]: 09 Sep 2025
+            - generic [ref=e2240]: ✦
+            - generic [ref=e2241]: Maria Popova
+            - generic [ref=e2242]: ✦
+            - button "4 highlights" [ref=e2243] [cursor=pointer]
+      - generic [ref=e2245]:
+        - link "Size and Geometry Introduction" [ref=e2246] [cursor=pointer]:
+          - /url: https://book.bionumbers.org/size-and-geometry-introduction/
+        - generic [ref=e2248]:
+          - generic [ref=e2250]: This chapter explores how size and shape affect biological functions from molecules to cells. It uses common models like E. coli and HeLa cells to explain size-related differences and variations. Understanding size helps reveal important biological details, such as virus production and cell behavior.
+          - generic [ref=e2251]:
+            - generic [ref=e2252]: article
+            - generic [ref=e2254]: ✦
+            - generic [ref=e2255]: 09 Sep 2025
+            - generic [ref=e2256]: ✦
+            - button "2 highlights" [ref=e2257] [cursor=pointer]
+      - generic [ref=e2259]:
+        - link "For financial freedom by age 30, optimize ruthlessly during your peak physical and cognitive years." [ref=e2260] [cursor=pointer]:
+          - /url: https://archive.ph/2025.09.02-043052/https://www.wsj.com/opinion/work-life-balance-will-keep-you-mediocre-25bdf073
+        - generic [ref=e2262]:
+          - generic [ref=e2264]: The author says ambitious young people should sacrifice work-life balance to build wealth early. He describes extreme hours, outsourcing chores, pruning social ties, and optimizing every minute to grow his companies. He argues this front-loading buys financial freedom by 30 and the freedom to pursue bigger goals later.
+          - generic [ref=e2265]:
+            - generic [ref=e2266]: article
+            - generic [ref=e2268]: ✦
+            - generic [ref=e2269]: 09 Sep 2025
+            - generic [ref=e2270]: ✦
+            - generic [ref=e2271]: Emil Barr
+            - generic [ref=e2272]: ✦
+            - button "1 highlight" [ref=e2273] [cursor=pointer]
+      - generic [ref=e2274]:
+        - link "Glucose-Responsive Microneedle Patch For Closed-Loop Dual-Hormone Delivery In Mice And Pigs" [ref=e2275] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/324191333
+        - generic [ref=e2276]: The glucose-responsive microneedle (GRD-MN) patch delivers both insulin and glucagon to regulate blood sugar levels in diabetic mice and minipigs. It responds to high glucose levels by rapidly releasing insulin while controlling glucagon release, mimicking natural pancreatic function. This innovative patch maintains blood glucose levels without causing hypoglycemia, demonstrating potential for effective diabetes management.
+        - generic [ref=e2277]:
+          - generic [ref=e2278]: pdf
+          - generic [ref=e2280]: ✦
+          - generic [ref=e2281]: 08 Sep 2025
+          - generic [ref=e2282]: ✦
+          - generic [ref=e2283]: Changwei Yang
+          - generic [ref=e2284]: ✦
+          - generic [ref=e2285]: Tao Sheng
+          - generic [ref=e2286]: ✦
+          - generic [ref=e2287]: Wenhui Hou
+          - generic [ref=e2288]: ✦
+          - generic [ref=e2289]: Juan Zhang
+          - generic [ref=e2290]: ✦
+          - generic [ref=e2291]: Li Cheng
+          - generic [ref=e2292]: ✦
+          - generic [ref=e2293]: Hao Wang
+          - generic [ref=e2294]: ✦
+          - generic [ref=e2295]: Wei Liu
+          - generic [ref=e2296]: ✦
+          - generic [ref=e2297]: Siqhi Wang
+          - generic [ref=e2298]: ✦
+          - generic [ref=e2299]: Xinmin Yu
+          - generic [ref=e2300]: ✦
+          - generic [ref=e2301]: Yiqun Zhang
+          - generic [ref=e2302]: ✦
+          - generic [ref=e2303]: Jicheng Yu
+          - generic [ref=e2304]: ✦
+          - generic [ref=e2305]: Zhen Gu
+      - generic [ref=e2307]:
+        - link "Medical Biochemisty | Ch. 23 Regulation Of Gene Expression" [ref=e2308] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/322085772
+        - generic [ref=e2310]:
+          - generic [ref=e2312]: Gene expression is controlled by various factors that can activate or inhibit the transcription of DNA. This regulation involves interactions between DNA, proteins, and RNA, including small RNAs that play significant roles in silencing genes. Additionally, mechanisms like RNA interference and riboswitches help fine-tune gene activity in response to cellular needs.
+          - generic [ref=e2313]:
+            - generic [ref=e2314]: pdf
+            - generic [ref=e2316]: ✦
+            - generic [ref=e2317]: 08 Sep 2025
+            - generic [ref=e2318]: ✦
+            - generic [ref=e2319]: Blanco 8 Blanco
+            - generic [ref=e2320]: ✦
+            - button "3 highlights" [ref=e2321] [cursor=pointer]
+      - generic [ref=e2323]:
+        - link "Don't write bugs" [ref=e2324] [cursor=pointer]:
+          - /url: https://www.teamten.com/lawrence/programming/dont-write-bugs.html
+        - generic [ref=e2326]:
+          - generic [ref=e2328]: Effective programmers should focus on preventing bugs rather than debugging them. Re-reading code frequently can help reduce the number of errors. Writing bug-free code is achievable with practice and attention to detail.
+          - generic [ref=e2329]:
+            - generic [ref=e2330]: article
+            - generic [ref=e2332]: ✦
+            - generic [ref=e2333]: 08 Sep 2025
+            - generic [ref=e2334]: ✦
+            - button "1 highlight" [ref=e2335] [cursor=pointer]
+      - generic [ref=e2337]:
+        - link "A Visual Guide to Genome Editors" [ref=e2338] [cursor=pointer]:
+          - /url: https://www.asimov.press/p/a-visual-guide-to-genome-editors
+        - generic [ref=e2340]:
+          - generic [ref=e2342]: This article summarizes different CRISPR systems used for genome editing, including Cas9, Cas12, and Cas13. It highlights their mechanisms, applications, and improvements in specificity and precision. Overall, CRISPR technology has greatly advanced, allowing for versatile and targeted genetic modifications.
+          - generic [ref=e2343]:
+            - generic [ref=e2344]: article
+            - generic [ref=e2346]: ✦
+            - generic [ref=e2347]: 04 Sep 2025
+            - generic [ref=e2348]: ✦
+            - generic [ref=e2349]: Asimov Press
+            - generic [ref=e2350]: ✦
+            - button "6 highlights" [ref=e2351] [cursor=pointer]
+      - generic [ref=e2353]:
+        - link "Induction Of Pluripotent Stem Cells From Mouse Embryonic And Adult Fibroblast Cultures By Defined Factors" [ref=e2354] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/67582649
+        - generic [ref=e2356]:
+          - generic [ref=e2358]: "Scientists reprogrammed mouse embryonic and adult fibroblasts by adding four factors: Oct3/4, Sox2, Klf4, and c‑Myc. The induced pluripotent stem (iPS) cells expressed many embryonic stem cell markers and could form multiple tissue types. However, iPS cells were similar but not identical to ES cells, and only a small fraction of cells became fully reprogrammed."
+          - generic [ref=e2359]:
+            - generic [ref=e2360]: pdf
+            - generic [ref=e2362]: ✦
+            - generic [ref=e2363]: 31 Aug 2025
+            - generic [ref=e2364]: ✦
+            - generic [ref=e2365]: Kazutoshi Takahashi
+            - generic [ref=e2366]: ✦
+            - generic [ref=e2367]: Shinya Yamanaka
+            - generic [ref=e2368]: ✦
+            - button "3 highlights" [ref=e2369] [cursor=pointer]
+      - generic [ref=e2371]:
+        - link "On The Tolkienic Hero" [ref=e2372] [cursor=pointer]:
+          - /url: https://scholars-stage.org/on-the-tolkienic-hero/
+        - generic [ref=e2374]:
+          - generic [ref=e2376]: Tolkien's hero is different because he does great things without seeking fame or power. His work changed how stories show heroism in a modern world that doubts heroes. Because of this, Tolkien's influence will last for many centuries.
+          - generic [ref=e2377]:
+            - generic [ref=e2378]: article
+            - generic [ref=e2380]: ✦
+            - generic [ref=e2381]: 29 Aug 2025
+            - generic [ref=e2382]: ✦
+            - generic [ref=e2383]: The Scholar's Stage
+            - generic [ref=e2384]: ✦
+            - button "2 highlights" [ref=e2385] [cursor=pointer]
+      - generic [ref=e2386]:
+        - 'link "Singapore’s Pay Model Isn’t India’s: Market Wages vs. Civil-Service Rents" [ref=e2387] [cursor=pointer]':
+          - /url: https://marginalrevolution.com/marginalrevolution/2025/08/singapores-pay-model-isnt-indias-market-wages-vs-civil-service-rents.html?utm_source=rss&utm_medium=rss&utm_campaign=singapores-pay-model-isnt-indias-market-wages-vs-civil-service-rents&__readwiseLocation=
+        - generic [ref=e2388]: In many poor countries, government pay is set above market wages and creates “rents” that waste talent. Singapore mostly pays market wages for public workers, with only a few top officials earning very high salaries. Paying market wages helps Singapore avoid mass over‑qualification and the misallocation of talent.
+        - generic [ref=e2389]:
+          - generic [ref=e2390]: article
+          - generic [ref=e2392]: ✦
+          - generic [ref=e2393]: 27 Aug 2025
+          - generic [ref=e2394]: ✦
+          - generic [ref=e2395]: Alex Tabarrok
+      - generic [ref=e2397]:
+        - link "Epigenetic Landscape" [ref=e2398] [cursor=pointer]:
+          - /url: https://embryo.asu.edu/pages/epigenetic-landscape?utm_source=chatgpt.com
+        - generic [ref=e2400]:
+          - generic [ref=e2402]: Waddington's epigenetic landscape is a picture of how cells choose their developmental paths. A ball rolling down hills into valleys shows cells becoming different tissues, with genes pulling strings beneath the surface to shape the routes. The model shows how genes, signals, and timing guide or canalize cell differentiation.
+          - generic [ref=e2403]:
+            - generic [ref=e2404]: article
+            - generic [ref=e2406]: ✦
+            - generic [ref=e2407]: 26 Aug 2025
+            - generic [ref=e2408]: ✦
+            - generic [ref=e2409]: Arizona State University
+            - generic [ref=e2410]: ✦
+            - button "2 highlights" [ref=e2411] [cursor=pointer]
+      - generic [ref=e2413]:
+        - link "Opinion | A.I. Is Not a 21st-Century Enlightenment - The New York Times" [ref=e2414] [cursor=pointer]:
+          - /url: https://www.nytimes.com/2025/08/02/opinion/artificial-intelligence-enlightenment.html
+        - generic [ref=e2416]:
+          - generic [ref=e2418]: The author compares artificial intelligence (A.I.) to the Enlightenment but finds important differences. Unlike the Enlightenment, which challenged people to think deeply and question ideas, A.I. mainly gives easy answers and follows users' interests. Therefore, A.I. may not lead to a true intellectual revolution but could weaken critical thinking.
+          - generic [ref=e2419]:
+            - generic [ref=e2420]: article
+            - generic [ref=e2422]: ✦
+            - generic [ref=e2423]: 25 Aug 2025
+            - generic [ref=e2424]: ✦
+            - generic [ref=e2425]: David A. Bell
+            - generic [ref=e2426]: ✦
+            - button "4 highlights" [ref=e2427] [cursor=pointer]
+      - generic [ref=e2428]:
+        - link "Bill Atkinson, Who Made Computers Easier to Use, Is Dead at 74" [ref=e2429] [cursor=pointer]:
+          - /url: https://archive.ph/Lb4C8
+        - generic [ref=e2430]: Bill Atkinson was a key Apple designer who made computers easier to use by creating important software like QuickDraw. He invented features like pull-down menus and double-clicking that helped shape modern computers. His work on programs like MacPaint and HyperCard changed how people interact with computers and paved the way for future technology.
+        - generic [ref=e2431]:
+          - generic [ref=e2432]: article
+          - generic [ref=e2434]: ✦
+          - generic [ref=e2435]: 25 Aug 2025
+          - generic [ref=e2436]: ✦
+          - generic [ref=e2437]: John Markoff
+      - generic [ref=e2439]:
+        - link "The Developmental Capacity Of Nuclei Taken From Intestinal Epithelium Cells Of Feeding Tadpoles" [ref=e2440] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/354731392
+        - generic [ref=e2442]:
+          - generic [ref=e2444]: Gurdon transplanted nuclei from differentiated tadpole intestinal cells into frog eggs and tracked development. He found at least 7% of intestine nuclei (and up to 24% of those successfully staged) could make normal feeding tadpoles, and serial transfers sometimes turned abnormal first-transfer results into normal embryos. This shows many differentiated nuclei still hold the genetic information for full development and that stable restrictive nuclear changes are not required for differentiation.
+          - generic [ref=e2445]:
+            - generic [ref=e2446]: pdf
+            - generic [ref=e2448]: ✦
+            - generic [ref=e2449]: 24 Aug 2025
+            - generic [ref=e2450]: ✦
+            - generic [ref=e2451]: J. B. Gurdon
+            - generic [ref=e2452]: ✦
+            - button "3 highlights" [ref=e2453] [cursor=pointer]
+      - generic [ref=e2455]:
+        - link "Life in India is a series of bilateral negotiations" [ref=e2456] [cursor=pointer]:
+          - /url: https://www.strangeloopcanon.com/p/life-in-india-is-a-series-of-bilateral
+        - generic [ref=e2458]:
+          - generic [ref=e2460]: India has much better infrastructure and decent formal institutions, but everyday life is is dominated by bilateral negotiations and chaotic informal norms. Those constant negotiations create high transaction costs and shave off GDP and efficiency. Fixing this needs deliberate policy, broader wealth, and cultural change to move India toward a Coasian equilibrium where rules are widely followed.
+          - generic [ref=e2461]:
+            - generic [ref=e2462]: article
+            - generic [ref=e2464]: ✦
+            - generic [ref=e2465]: 24 Aug 2025
+            - generic [ref=e2466]: ✦
+            - generic [ref=e2467]: Rohit Krishnan
+            - generic [ref=e2468]: ✦
+            - button "2 highlights" [ref=e2469] [cursor=pointer]
+      - generic [ref=e2471]:
+        - link "All The Carcinogens You Cannot See | The New Yorker" [ref=e2472] [cursor=pointer]:
+          - /url: https://www.newyorker.com/magazine/2023/12/18/all-the-carcinogens-we-cannot-see
+        - generic [ref=e2474]:
+          - generic [ref=e2476]: We routinely test for chemicals that cause mutations. What about the dark matter of carcinogens—substances that don’t create cancer cells but rouse them from their slumber?
+          - generic [ref=e2477]:
+            - generic [ref=e2478]: article
+            - generic [ref=e2480]: ✦
+            - generic [ref=e2481]: 24 Aug 2025
+            - generic [ref=e2482]: ✦
+            - generic [ref=e2483]: Siddhartha Mukherjee
+            - generic [ref=e2484]: ✦
+            - button "10 highlights" [ref=e2485] [cursor=pointer]
+      - generic [ref=e2487]:
+        - link "Contrary India" [ref=e2488] [cursor=pointer]:
+          - /url: https://archive.is/ab6nD
+        - generic [ref=e2490]:
+          - generic [ref=e2492]: “The frustrating thing about India”, I was told by one of my teachers, the great Cambridge economist Joan Robinson, “is that whatever you can rightly say about India, the opposite is also true.
+          - generic [ref=e2493]:
+            - generic [ref=e2494]: article
+            - generic [ref=e2496]: ✦
+            - generic [ref=e2497]: 23 Aug 2025
+            - generic [ref=e2498]: ✦
+            - button "2 highlights" [ref=e2499] [cursor=pointer]
+      - generic [ref=e2501]:
+        - link "NASA Is Worth Saving" [ref=e2502] [cursor=pointer]:
+          - /url: https://caseyhandmer.wordpress.com/2025/06/12/nasa-is-worth-saving/
+        - generic [ref=e2504]:
+          - generic [ref=e2506]: NASA represents American ideals but has declined significantly over the years. The author believes NASA can be rebuilt and should focus on effective leadership and productivity to achieve its goals. A revitalized NASA is essential for the future of space exploration and innovation in the U.S.
+          - generic [ref=e2507]:
+            - generic [ref=e2508]: rss
+            - generic [ref=e2510]: ✦
+            - generic [ref=e2511]: 23 Aug 2025
+            - generic [ref=e2512]: ✦
+            - generic [ref=e2513]: cjhandmer
+            - generic [ref=e2514]: ✦
+            - button "2 highlights" [ref=e2515] [cursor=pointer]
+      - generic [ref=e2516]:
+        - link "A short history of India in eight maps" [ref=e2517] [cursor=pointer]:
+          - /url: https://archive.ph/dRE9b
+        - generic [ref=e2518]: India has a long history of diverse rulers trying to unite its many peoples and regions. Despite challenges and changing borders, its leaders have worked to keep the country together. India’s strength comes from its diversity and ability to adapt over thousands of years.
+        - generic [ref=e2519]:
+          - generic [ref=e2520]: article
+          - generic [ref=e2522]: ✦
+          - generic [ref=e2523]: 22 Aug 2025
+      - generic [ref=e2524]:
+        - link "Sources and acknowledgments" [ref=e2525] [cursor=pointer]:
+          - /url: https://archive.ph/tdHzr
+        - generic [ref=e2526]: The authors thank many experts and contributors for their help. They list books, reports, and podcasts about India’s economy, governance, and labor market. These sources explore India’s strengths, weaknesses, and future growth.
+        - generic [ref=e2527]:
+          - generic [ref=e2528]: article
+          - generic [ref=e2530]: ✦
+          - generic [ref=e2531]: 22 Aug 2025
+      - generic [ref=e2532]:
+        - link "India must make much deeper changes if it is to sustain its growth" [ref=e2533] [cursor=pointer]:
+          - /url: https://archive.ph/SU0Eq
+        - generic [ref=e2534]: India can become a world economic leader if it sustains strong growth. To do that it must boost education and R&D, open trade, reform taxes, and cut wasteful subsidies. Most of all it needs a broad national consensus and a new compact between the centre, states and cities to deliver those reforms.
+        - generic [ref=e2535]:
+          - generic [ref=e2536]: article
+          - generic [ref=e2538]: ✦
+          - generic [ref=e2539]: 22 Aug 2025
+      - generic [ref=e2540]:
+        - link "Going green could bring huge benefits for India’s economy" [ref=e2541] [cursor=pointer]:
+          - /url: https://archive.ph/5cwsi
+        - generic [ref=e2542]: India is racing to build huge solar and wind farms with big private and government investments. Cleaner power could cut deadly pollution, save money, and create jobs and exports in batteries and electric vehicles. But rising demand, planned new coal plants, grid and supply-chain problems and trade fights with China could slow progress.
+        - generic [ref=e2543]:
+          - generic [ref=e2544]: article
+          - generic [ref=e2546]: ✦
+          - generic [ref=e2547]: 22 Aug 2025
+      - generic [ref=e2548]:
+        - link "India’s leaders must deal with three economic weaknesses" [ref=e2549] [cursor=pointer]:
+          - /url: https://archive.ph/YRySB
+        - generic [ref=e2550]: "India’s economy is top-heavy: a small rich elite and too few high earners mean weak domestic demand. Millions of young people lack productive jobs and many women are out of the workforce. Growth is concentrated in a few southern states while poorer regions lag, so gains do not spread nationwide."
+        - generic [ref=e2551]:
+          - generic [ref=e2552]: article
+          - generic [ref=e2554]: ✦
+          - generic [ref=e2555]: 21 Aug 2025
+      - generic [ref=e2556]:
+        - link "Bill Atkinson, Macintosh Pioneer and Inventor of Hypercard, Dies at 74" [ref=e2557] [cursor=pointer]:
+          - /url: https://www.wired.com/story/bill-atkinson-apple-engineer-dies/
+        - generic [ref=e2558]: Bill Atkinson was a key Apple engineer who helped create the Macintosh and invented HyperCard, a precursor to the web. He also designed early computer graphics tools and dreamed of devices like the iPad long before they existed. He died at 74 after a long illness, leaving a lasting impact on technology and creativity.
+        - generic [ref=e2559]:
+          - generic [ref=e2560]: article
+          - generic [ref=e2562]: ✦
+          - generic [ref=e2563]: 21 Aug 2025
+          - generic [ref=e2564]: ✦
+          - generic [ref=e2565]: Steven Levy
+      - generic [ref=e2566]:
+        - 'link "Arc Troopers: Adventures in Async Rust" [ref=e2567] [cursor=pointer]':
+          - /url: https://bitbashing.io/async-arc.html?__readwiseLocation=
+        - generic [ref=e2568]: The author uses a small archive program to compare synchronous and async Rust. Async Rust gives nicer concurrency (futures, select, tokio) but forces 'static lifetimes and Send, which complicates captured state. It also makes I/O harder, pushes arcs and mutexes everywhere, and leads to painful diagnostics and callback hell.
+        - generic [ref=e2569]:
+          - generic [ref=e2570]: article
+          - generic [ref=e2572]: ✦
+          - generic [ref=e2573]: 19 Aug 2025
+          - generic [ref=e2574]: ✦
+          - generic [ref=e2575]: Bit Bashing
+      - generic [ref=e2576]:
+        - link "India’s difficult business environment is improving" [ref=e2577] [cursor=pointer]:
+          - /url: https://archive.ph/l5H06
+        - generic [ref=e2578]: "India’s business environment is improving: manufacturers and global-capability tech centres are expanding and some firms are scaling fast. Reforms like GST, lower corporate tax, online company setup and production-linked incentives have eased costs and helped finance. But big conglomerates and state firms still dominate, and red tape, court backlogs and policy uncertainty limit faster change."
+        - generic [ref=e2579]:
+          - generic [ref=e2580]: article
+          - generic [ref=e2582]: ✦
+          - generic [ref=e2583]: 19 Aug 2025
+          - generic [ref=e2584]: ✦
+          - generic [ref=e2585]: amesh Muthuramalingam
+      - generic [ref=e2586]:
+        - link "India’s financial system has improved dramatically in the past decade" [ref=e2587] [cursor=pointer]:
+          - /url: https://archive.ph/zxLxH
+        - generic [ref=e2588]: Over the last decade India overhauled its finance system, cutting bad loans and fixing weak banks. Private banks, digital accounts and a booming stockmarket have widened savings and credit for millions. Problems remain — thin bond markets, startup losses and high borrowing costs — but India is more stable and credible.
+        - generic [ref=e2589]:
+          - generic [ref=e2590]: article
+          - generic [ref=e2592]: ✦
+          - generic [ref=e2593]: 19 Aug 2025
+      - generic [ref=e2594]:
+        - link "What Would the Aftermath of the AI Bust Look Like?" [ref=e2595] [cursor=pointer]:
+          - /url: https://www.thediff.co/archive/what-would-the-aftermath-of-the-ai-bust-look-like/
+        - generic [ref=e2596]: AI is a powerful technology that may face a slowdown after heavy investment and high costs. Even if progress slows, cheaper AI tools could help many companies and workers become more productive. The future depends on how AI improves and how well it fits into the economy without causing big losses.
+        - generic [ref=e2597]:
+          - generic [ref=e2598]: article
+          - generic [ref=e2600]: ✦
+          - generic [ref=e2601]: 18 Aug 2025
+          - generic [ref=e2602]: ✦
+          - generic [ref=e2603]: Byrne Hobart
+      - generic [ref=e2604]:
+        - link "Review of Anti-Aging Drugs" [ref=e2605] [cursor=pointer]:
+          - /url: https://scienceblog.com/joshmitteldorf/2025/08/17/review-of-anti-aging-drugs/
+        - generic [ref=e2606]: Since 2017, the DrugAge database has been a resource cataloguing longevity studies for many substances fed to animals in lab experiments. A preprint by Parish et al was recently posted to the bioRxiv website which assessed the quality of these various studies and sought to draw conclusions. Parish et al include a table of ... Read more
+        - generic [ref=e2607]:
+          - generic [ref=e2608]: article
+          - generic [ref=e2610]: ✦
+          - generic [ref=e2611]: 18 Aug 2025
+          - generic [ref=e2612]: ✦
+          - generic [ref=e2613]: Josh Mitteldorf
+      - generic [ref=e2615]:
+        - link "The Diaspora Paradox" [ref=e2616] [cursor=pointer]:
+          - /url: https://samirvarma.substack.com/p/the-diaspora-paradox
+        - generic [ref=e2618]:
+          - generic [ref=e2620]: Many Indians living abroad become more traditional and religious than those in India. Diaspora communities often keep the culture of the India they left, not the India today. This creates a mix of identity struggles and new ways to blend old and new cultures.
+          - generic [ref=e2621]:
+            - generic [ref=e2622]: article
+            - generic [ref=e2624]: ✦
+            - generic [ref=e2625]: 15 Aug 2025
+            - generic [ref=e2626]: ✦
+            - generic [ref=e2627]: Samir Varma
+            - generic [ref=e2628]: ✦
+            - button "1 highlight" [ref=e2629] [cursor=pointer]
+      - generic [ref=e2631]:
+        - link "On Being The Right Size" [ref=e2632] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/73278934
+        - generic [ref=e2634]:
+          - generic [ref=e2636]: Animals have an ideal size for efficient functioning. Different sizes require different adaptations for survival, like changes in bone structure or breathing mechanisms. Size impacts various aspects such as muscle efficiency, oxygen intake, and overall functioning in animals.
+          - generic [ref=e2637]:
+            - generic [ref=e2638]: pdf
+            - generic [ref=e2640]: ✦
+            - generic [ref=e2641]: 14 Aug 2025
+            - generic [ref=e2642]: ✦
+            - generic [ref=e2643]: J. B. S. Haldane
+            - generic [ref=e2644]: ✦
+            - button "1 highlight" [ref=e2645] [cursor=pointer]
+      - generic [ref=e2646]:
+        - link "In Trump-Modi standoff, ‘egos’ and missteps fuel resentment - The Washington Post" [ref=e2647] [cursor=pointer]:
+          - /url: https://www.washingtonpost.com/world/2025/08/14/india-modi-trump-tariffs-trade/
+        - generic [ref=e2648]: The dispute between President Trump and Indian Prime Minister Narendra Modi could have far-reaching consequences for the U.S-India relationship, analysts said.
+        - generic [ref=e2649]:
+          - generic [ref=e2650]: article
+          - generic [ref=e2652]: ✦
+          - generic [ref=e2653]: 14 Aug 2025
+          - generic [ref=e2654]: ✦
+          - generic [ref=e2655]: By Pranshu Verma
+      - generic [ref=e2656]:
+        - link "Attention is your scarcest resource" [ref=e2657] [cursor=pointer]:
+          - /url: https://www.benkuhn.net/attention/
+        - generic [ref=e2658]: Attention is very limited, so you must focus deeply on one important thing at a time. Being emotionally invested helps keep your mind on the task, avoiding distractions and multitasking. Managing your time and obligations carefully lets you give your best effort where it counts most.
+        - generic [ref=e2659]:
+          - generic [ref=e2660]: article
+          - generic [ref=e2662]: ✦
+          - generic [ref=e2663]: 13 Aug 2025
+      - generic [ref=e2664]:
+        - link "Fast Biology" [ref=e2665] [cursor=pointer]:
+          - /url: https://press.asimov.com/articles/fast-biology
+        - generic [ref=e2666]: Scientists study tiny, fast processes in cells by using clever experiments to measure speeds, like how protein motors spin or ribosomes build proteins. They found ribosomes make proteins at about 20 amino acids per second and that ribosome production limits how fast cells can divide. Understanding these numbers helps researchers learn how life works and how to possibly speed up cell functions.
+        - generic [ref=e2667]:
+          - generic [ref=e2668]: article
+          - generic [ref=e2670]: ✦
+          - generic [ref=e2671]: 13 Aug 2025
+      - generic [ref=e2672]:
+        - link "How China Became the World’s Biggest Shipbuilder" [ref=e2673] [cursor=pointer]:
+          - /url: https://www.construction-physics.com/p/how-china-became-the-worlds-biggest
+        - generic [ref=e2674]: Since 2017, China has been the largest shipbuilder in the world.
+        - generic [ref=e2675]:
+          - generic [ref=e2676]: article
+          - generic [ref=e2678]: ✦
+          - generic [ref=e2679]: 13 Aug 2025
+          - generic [ref=e2680]: ✦
+          - generic [ref=e2681]: Brian Potter
+      - generic [ref=e2682]:
+        - link "How I Write Posts" [ref=e2683] [cursor=pointer]:
+          - /url: https://www.construction-physics.com/p/how-i-write-posts
+        - generic [ref=e2684]: I sometimes get asked what my process is for researching and writing Substack posts.
+        - generic [ref=e2685]:
+          - generic [ref=e2686]: article
+          - generic [ref=e2688]: ✦
+          - generic [ref=e2689]: 12 Aug 2025
+          - generic [ref=e2690]: ✦
+          - generic [ref=e2691]: Brian Potter
+      - generic [ref=e2693]:
+        - 'link "Protocols, Not Platforms: A Technological Approach to Free Speech" [ref=e2694] [cursor=pointer]':
+          - /url: https://knightcolumbia.org/content/protocols-not-platforms-a-technological-approach-to-free-speech
+        - generic [ref=e2696]:
+          - generic [ref=e2698]: The author argues that we should shift from controlled platforms like Facebook and Twitter to open protocols that allow for greater competition and user control. This change could lead to more innovation, better moderation, and increased privacy for users. By prioritizing protocols over proprietary platforms, we can enhance free speech and reduce the monopolistic power of large corporations.
+          - generic [ref=e2699]:
+            - generic [ref=e2700]: article
+            - generic [ref=e2702]: ✦
+            - generic [ref=e2703]: 12 Aug 2025
+            - generic [ref=e2704]: ✦
+            - generic [ref=e2705]: Mike Masnick
+            - generic [ref=e2706]: ✦
+            - button "5 highlights" [ref=e2707] [cursor=pointer]
+      - generic [ref=e2709]:
+        - link "The (Un)Making of Environmental Carcinogens" [ref=e2710] [cursor=pointer]:
+          - /url: https://unmakingenvironmentalcarcinogens.princeton.edu/results?utm_source=chatgpt.com
+        - generic [ref=e2712]:
+          - generic [ref=e2714]: Cancer was linked to toxic substances since the 1700s, but understanding of causes shifted from irritation to chemicals, viruses, and radiation over time. In the 1970s, cancer research led to stronger government rules to control harmful substances and protect people. Today, cancer risk guides many safety laws and health policies.
+          - generic [ref=e2715]:
+            - generic [ref=e2716]: article
+            - generic [ref=e2718]: ✦
+            - generic [ref=e2719]: 10 Aug 2025
+            - generic [ref=e2720]: ✦
+            - button "5 highlights" [ref=e2721] [cursor=pointer]
+      - generic [ref=e2722]:
+        - link "Glucose-Responsive Microneedle Patches For Diabetes Treatment" [ref=e2723] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/322443748
+        - generic [ref=e2724]: Glucose-responsive microneedle patches are a promising new method for treating diabetes with minimal patient effort. These patches can sense blood glucose levels and release insulin as needed, reducing the need for frequent injections. Recent advancements show they can effectively control blood sugar levels while minimizing the risk of complications like hypoglycemia.
+        - generic [ref=e2725]:
+          - generic [ref=e2726]: pdf
+          - generic [ref=e2728]: ✦
+          - generic [ref=e2729]: 10 Aug 2025
+          - generic [ref=e2730]: ✦
+          - generic [ref=e2731]: Guojun Chen
+          - generic [ref=e2732]: ✦
+          - generic [ref=e2733]: Jicheng Yu
+          - generic [ref=e2734]: ✦
+          - generic [ref=e2735]: Zhen Gu
+      - generic [ref=e2737]:
+        - link "The Case for Bridge Editors" [ref=e2738] [cursor=pointer]:
+          - /url: https://www.nmccarty.com/p/bridge-editors
+        - generic [ref=e2740]:
+          - generic [ref=e2742]: Bridge recombinases are a new gene-editing tool that can make large and precise changes to DNA without relying on cellular repair mechanisms, making them potentially more reliable than CRISPR. They work by using RNA molecules to guide a protein that cuts and rejoins DNA at specific sites. This technology could simplify genetic modifications and enable better understanding and treatment of diseases.
+          - generic [ref=e2743]:
+            - generic [ref=e2744]: article
+            - generic [ref=e2746]: ✦
+            - generic [ref=e2747]: 10 Aug 2025
+            - generic [ref=e2748]: ✦
+            - generic [ref=e2749]: Niko McCarty
+            - generic [ref=e2750]: ✦
+            - button "2 highlights" [ref=e2751] [cursor=pointer]
+      - generic [ref=e2753]:
+        - link "The Origin of Life on Earth" [ref=e2754] [cursor=pointer]:
+          - /url: https://www.scientificamerican.com/article/origin-of-life-on-earth/
+        - generic [ref=e2756]:
+          - generic [ref=e2758]: Recent experiments suggest that early genetic molecules like RNA could form spontaneously and replicate without proteins. These molecules might have evolved into simple life forms, leading to the development of DNA as a more stable genetic material. Over time, RNA-based protocells could have developed metabolism and eventually learned to produce proteins and DNA.
+          - generic [ref=e2759]:
+            - generic [ref=e2760]: article
+            - generic [ref=e2762]: ✦
+            - generic [ref=e2763]: 10 Aug 2025
+            - generic [ref=e2764]: ✦
+            - generic [ref=e2765]: Alonso Ricardo
+            - generic [ref=e2766]: ✦
+            - generic [ref=e2767]: Jack W. Szostak
+            - generic [ref=e2768]: ✦
+            - generic [ref=e2769]: The Editors
+            - generic [ref=e2770]: ✦
+            - generic [ref=e2771]: Laurie Wiegler
+            - generic [ref=e2772]: ✦
+            - generic [ref=e2773]: Philip Yam
+            - generic [ref=e2774]: ✦
+            - generic [ref=e2775]: Larry Greenemeier
+            - generic [ref=e2776]: ✦
+            - generic [ref=e2777]: Lyndie Chiou
+            - generic [ref=e2778]: ✦
+            - generic [ref=e2779]: You Xiaoying
+            - generic [ref=e2780]: ✦
+            - generic [ref=e2781]: Manon Bischoff
+            - generic [ref=e2782]: ✦
+            - generic [ref=e2783]: Peter Cummings
+            - generic [ref=e2784]: ✦
+            - button "1 highlight" [ref=e2785] [cursor=pointer]
+      - generic [ref=e2786]:
+        - link "How to Live Forever and Get Rich Doing It | The New Yorker" [ref=e2787] [cursor=pointer]:
+          - /url: https://www.newyorker.com/magazine/2025/08/11/how-to-live-forever-and-get-rich-doing-it
+        - generic [ref=e2788]: As researchers work to make death optional, investors see a chance for huge returns. But has the human body already reached its limits?
+        - generic [ref=e2789]:
+          - generic [ref=e2790]: article
+          - generic [ref=e2792]: ✦
+          - generic [ref=e2793]: 10 Aug 2025
+          - generic [ref=e2794]: ✦
+          - generic [ref=e2795]: Tad Friend
+      - generic [ref=e2796]:
+        - 'link "GPT-5: Key characteristics, pricing and model card" [ref=e2797] [cursor=pointer]':
+          - /url: https://simonwillison.net/2025/Aug/7/gpt-5/
+        - generic [ref=e2798]: I’ve had preview access to the new GPT-5 model family for the past two weeks (see related video) and have been using GPT-5 as my daily-driver. It’s my new favorite …
+        - generic [ref=e2799]:
+          - generic [ref=e2800]: article
+          - generic [ref=e2802]: ✦
+          - generic [ref=e2803]: 08 Aug 2025
+          - generic [ref=e2804]: ✦
+          - generic [ref=e2805]: Simon Willison
+      - generic [ref=e2807]:
+        - link "For its next phase of growth, India needs a new reform agenda" [ref=e2808] [cursor=pointer]:
+          - /url: https://archive.ph/w3vdP
+        - generic [ref=e2810]:
+          - generic [ref=e2812]: India has grown steadily but needs new reforms to boost its economy further. The government is improving infrastructure and digital services but must fix weak labor markets and education. To reach its full potential, India needs cooperation between central and state governments and a fresh reform agenda.
+          - generic [ref=e2813]:
+            - generic [ref=e2814]: article
+            - generic [ref=e2816]: ✦
+            - generic [ref=e2817]: 07 Aug 2025
+            - generic [ref=e2818]: ✦
+            - button "6 highlights" [ref=e2819] [cursor=pointer]
+      - generic [ref=e2820]:
+        - link "Micropayments. Elon Musk thinks he’s got a “major win-win” for news publishers with…micropayments." [ref=e2821] [cursor=pointer]:
+          - /url: https://www.niemanlab.org/2023/05/micropayments-elon-musk-thinks-hes-got-a-major-win-win-for-news-publishers-with-micropayments/
+        - generic [ref=e2822]: Elon Musk plans to launch a platform that lets users pay for individual news articles with one click. Many people avoid paying for news because they can find free alternatives or dislike subscription fees. Micropayments face challenges since publishers rely on subscriptions and worry about losing steady income.
+        - generic [ref=e2823]:
+          - generic [ref=e2824]: article
+          - generic [ref=e2826]: ✦
+          - generic [ref=e2827]: 05 Aug 2025
+          - generic [ref=e2828]: ✦
+          - generic [ref=e2829]: Sophie Culpepper
+      - generic [ref=e2830]:
+        - link "I know genomes. Don't delete your DNA" [ref=e2831] [cursor=pointer]:
+          - /url: https://stevensalzberg.substack.com/p/i-know-genomes-dont-delete-your-dna
+        - generic [ref=e2832]: 23andMe only collects a tiny fraction of your DNA, not your whole genome. The health risks from this data are very small, and privacy worries are often exaggerated. To protect your privacy, focus more on controlling your online activity than deleting your DNA data.
+        - generic [ref=e2833]:
+          - generic [ref=e2834]: article
+          - generic [ref=e2836]: ✦
+          - generic [ref=e2837]: 31 Jul 2025
+          - generic [ref=e2838]: ✦
+          - generic [ref=e2839]: Steven Salzberg
+      - generic [ref=e2841]:
+        - link "One Question that Will Help You Become Consistent" [ref=e2842] [cursor=pointer]:
+          - /url: https://existentialespresso.substack.com/p/one-question-that-will-help-you-become
+        - generic [ref=e2844]:
+          - generic [ref=e2846]: To stay consistent, ask yourself if you can keep doing the same thing the same way for a year. If the answer is no, change your process until it is yes. This helps you build habits that last and avoid burning out.
+          - generic [ref=e2847]:
+            - generic [ref=e2848]: article
+            - generic [ref=e2850]: ✦
+            - generic [ref=e2851]: 29 Jul 2025
+            - generic [ref=e2852]: ✦
+            - generic [ref=e2853]: Recovering Overthinker
+            - generic [ref=e2854]: ✦
+            - button "1 highlight" [ref=e2855] [cursor=pointer]
+      - generic [ref=e2857]:
+        - link "Dispatches from India" [ref=e2858] [cursor=pointer]:
+          - /url: https://arjunramani.com/india-dispatch.html
+        - generic [ref=e2860]:
+          - generic [ref=e2862]: India is a large and diverse country with complex politics and growing economic potential. Its tech scene is promising but unlikely to grow as fast as China’s due to unique challenges. To grow faster, India needs more local autonomy, less regulation, and better investment in science and infrastructure.
+          - generic [ref=e2863]:
+            - generic [ref=e2864]: article
+            - generic [ref=e2866]: ✦
+            - generic [ref=e2867]: 28 Jul 2025
+            - generic [ref=e2868]: ✦
+            - generic [ref=e2869]: Arjun Ramani
+            - generic [ref=e2870]: ✦
+            - button "6 highlights" [ref=e2871] [cursor=pointer]
+      - generic [ref=e2872]:
+        - 'link "44% of sitting MPs face criminal charges, 5% are billionaires: ADR" [ref=e2873] [cursor=pointer]':
+          - /url: https://www.thehindu.com/news/national/44-per-cent-of-sitting-mps-face-criminal-charges-5-per-cent-are-billionaires-adr/article68005780.ece
+        - generic [ref=e2874]: Analysis by ADR reveals 44% of sitting Lok Sabha MPs have criminal cases, with 5% being billionaires.
+        - generic [ref=e2875]:
+          - generic [ref=e2876]: article
+          - generic [ref=e2878]: ✦
+          - generic [ref=e2879]: 25 Jul 2025
+          - generic [ref=e2880]: ✦
+          - generic [ref=e2881]: PTI
+      - generic [ref=e2882]:
+        - link "Reconstitution Of Circadian Oscillation Of Cyanobacterial KaiC Phosphorylation In Vitro" [ref=e2883] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/342377440
+        - generic [ref=e2884]: Scientists recreated the 24-hour cycle of KaiC protein phosphorylation outside of cells, showing it drives the cyanobacterial circadian clock. This cycle works on its own without gene activity and keeps time even when temperature changes. Mutations in KaiC affect the cycle’s length, matching patterns seen in living bacteria.
+        - generic [ref=e2885]:
+          - generic [ref=e2886]: pdf
+          - generic [ref=e2888]: ✦
+          - generic [ref=e2889]: 24 Jul 2025
+          - generic [ref=e2890]: ✦
+          - generic [ref=e2891]: Masato Nakajima
+          - generic [ref=e2892]: ✦
+          - generic [ref=e2893]: Keiko Imai
+          - generic [ref=e2894]: ✦
+          - generic [ref=e2895]: Hiroshi Ito
+          - generic [ref=e2896]: ✦
+          - generic [ref=e2897]: Taeko Nishiwaki
+          - generic [ref=e2898]: ✦
+          - generic [ref=e2899]: Yoriuo Yamara
+          - generic [ref=e2900]: ✦
+          - generic [ref=e2901]: Hideo Iwasaki
+          - generic [ref=e2902]: ✦
+          - generic [ref=e2903]: Tokitaka Oyama
+          - generic [ref=e2904]: ✦
+          - generic [ref=e2905]: Takao Kondo
+      - generic [ref=e2907]:
+        - link "How A Cell Anticipates the Seasons" [ref=e2908] [cursor=pointer]:
+          - /url: https://www.asimov.press/p/clocks
+        - generic [ref=e2910]:
+          - generic [ref=e2912]: Researchers discovered that cyanobacteria can sense changes in daylight and adapt their cell membranes to prepare for cold weather. This ability to anticipate seasons is linked to their circadian rhythms, which help them survive harsh conditions. The study suggests that even simple organisms like cyanobacteria exhibit biological intelligence by responding to environmental cues.
+          - generic [ref=e2913]:
+            - generic [ref=e2914]: article
+            - generic [ref=e2916]: ✦
+            - generic [ref=e2917]: 24 Jul 2025
+            - generic [ref=e2918]: ✦
+            - generic [ref=e2919]: Asimov Press
+            - generic [ref=e2920]: ✦
+            - button "2 highlights" [ref=e2921] [cursor=pointer]
+      - generic [ref=e2922]:
+        - link "Magic Cards and Knowledge Bottles" [ref=e2923] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/magic-cards-and-knowledge-bottles?utm_source=post-email-title&publication_id=514230&post_id=169104487&utm_campaign=email-post-title&isFreemail=true&r=1gvqcg&triedRedirect=true&utm_medium=email
+        - generic [ref=e2924]: HyperCard, created by Bill Atkinson, inspired new ways to organize and link information using hypertext. Today, AI-powered Featured Notebooks offer expert-curated knowledge bundles that people can explore and use easily. This new format could change how we share ideas, learn, and tell stories in the future.
+        - generic [ref=e2925]:
+          - generic [ref=e2926]: article
+          - generic [ref=e2928]: ✦
+          - generic [ref=e2929]: 24 Jul 2025
+          - generic [ref=e2930]: ✦
+          - generic [ref=e2931]: Steven Johnson
+      - generic [ref=e2932]:
+        - 'link "Bacteria Can Anticipate The Seasons: Photoperiodism In Cyanobacteria" [ref=e2933] [cursor=pointer]':
+          - /url: https://www.rsb.org.uk/images/Biology_Week_2024/Memory_game/L_Jabbur_Research_Paper.pdf
+        - generic [ref=e2934]: Cyanobacteria can anticipate seasonal changes by using a circadian clock to measure photoperiods, which affects their ability to survive cold temperatures. Shorter light periods improve their cold resistance by promoting beneficial changes in their cell membranes. This response is linked to specific gene expressions, showing how these bacteria adapt to environmental stressors.
+        - generic [ref=e2935]:
+          - generic [ref=e2936]: pdf
+          - generic [ref=e2938]: ✦
+          - generic [ref=e2939]: 23 Jul 2025
+          - generic [ref=e2940]: ✦
+          - generic [ref=e2941]: Maria Luisa Jabbur
+          - generic [ref=e2942]: ✦
+          - generic [ref=e2943]: Benjamin P. Bratton
+          - generic [ref=e2944]: ✦
+          - generic [ref=e2945]: Carl Hirschie Johnson
+      - generic [ref=e2947]:
+        - 'link "Two billion people don’t have safe drinking water: what does this really mean for them?" [ref=e2948] [cursor=pointer]':
+          - /url: https://ourworldindata.org/what-no-safe-water-means?__readwiseLocation=
+        - generic [ref=e2950]:
+          - generic [ref=e2952]: Two billion people do not have safe drinking water at home and must spend time collecting it. Most use improved water sources far from home, but the water is not always safe. Lack of safe water causes illness, malnutrition, and many deaths, especially in poor countries.
+          - generic [ref=e2953]:
+            - generic [ref=e2954]: article
+            - generic [ref=e2956]: ✦
+            - generic [ref=e2957]: 22 Jul 2025
+            - generic [ref=e2958]: ✦
+            - generic [ref=e2959]: Hannah Ritchie
+            - generic [ref=e2960]: ✦
+            - button "1 highlight" [ref=e2961] [cursor=pointer]
+      - generic [ref=e2962]:
+        - link "Atom vs. RSS" [ref=e2963] [cursor=pointer]:
+          - /url: https://nullprogram.com/blog/2013/09/23/
+        - generic [ref=e2964]: The author believes that Atom is a better web feed specification than RSS, as Atom is stricter and avoids many of the flaws present in RSS. They have made Atom the primary feed for their blog, while still supporting the older RSS format. Atom's clearer structure makes it easier for developers to create and manage feeds correctly.
+        - generic [ref=e2965]:
+          - generic [ref=e2966]: article
+          - generic [ref=e2968]: ✦
+          - generic [ref=e2969]: 22 Jul 2025
+          - generic [ref=e2970]: ✦
+          - generic [ref=e2971]: Chris Wellons
+      - generic [ref=e2973]:
+        - link "Reading in Slow Motion" [ref=e2974] [cursor=pointer]:
+          - /url: https://adamgagewalker.substack.com/p/reading-in-slow-motion-930
+        - generic [ref=e2976]:
+          - generic [ref=e2978]: Good literature helps us grow by deepening our empathy and imagination. Today, fast digital media makes us miss the true experience of reading. Slow reading lets us savor words and discover deeper meaning over time.
+          - generic [ref=e2979]:
+            - generic [ref=e2980]: article
+            - generic [ref=e2982]: ✦
+            - generic [ref=e2983]: 22 Jul 2025
+            - generic [ref=e2984]: ✦
+            - generic [ref=e2985]: Adam Walker
+            - generic [ref=e2986]: ✦
+            - button "1 highlight" [ref=e2987] [cursor=pointer]
+      - generic [ref=e2988]:
+        - link "The ultra-selfish gene" [ref=e2989] [cursor=pointer]:
+          - /url: https://worksinprogress.co/issue/the-ultra-selfish-gene/
+        - generic [ref=e2990]: CRISPR/Cas9 gene drives allow scientists to genetically modify entire species, potentially eradicating harmful insects like disease-carrying mosquitoes. While gene drives can be powerful tools for environmental protection and disease control, they also carry risks, such as unintended ecological effects and the possibility of spreading beyond targeted populations. Researchers are exploring ways to manage these risks, including creating temporary gene drives that can be reversed.
+        - generic [ref=e2991]:
+          - generic [ref=e2992]: article
+          - generic [ref=e2994]: ✦
+          - generic [ref=e2995]: 22 Jul 2025
+      - generic [ref=e2997]:
+        - link "Notes on Epistemic Collapse" [ref=e2998] [cursor=pointer]:
+          - /url: https://www.math.columbia.edu/~woit/wordpress/?p=14999
+        - generic [ref=e3000]:
+          - generic [ref=e3002]: The author explains "epistemic collapse" as the loss of shared truth, causing society to break down and become divided by tribal beliefs. This problem affects politics, physics, and local issues like those at Columbia University, where misinformation and tribal conflicts are common. The author hopes raising awareness can help restore reality-based understanding but feels limited in how much they can do.
+          - generic [ref=e3003]:
+            - generic [ref=e3004]: rss
+            - generic [ref=e3006]: ✦
+            - generic [ref=e3007]: 22 Jul 2025
+            - generic [ref=e3008]: ✦
+            - generic [ref=e3009]: woit
+            - generic [ref=e3010]: ✦
+            - button "1 highlight" [ref=e3011] [cursor=pointer]
+      - generic [ref=e3013]:
+        - link "We Can, Must, and Will Simulate Nematode Brains" [ref=e3014] [cursor=pointer]:
+          - /url: https://asteriskmag.com/issues/09/we-can-must-and-will-simulate-nematode-brains
+        - generic [ref=e3016]:
+          - generic [ref=e3018]: Scientists have been trying for over 25 years to create a computer simulation of the simple nematode brain, which has only 300 neurons. Recent advances in imaging techniques and data collection are improving our understanding of this brain, but a complete simulation is still a challenge. Successfully simulating the C. elegans brain could help us learn more about brain function and pave the way for simulating more complex brains, including humans.
+          - generic [ref=e3019]:
+            - generic [ref=e3020]: article
+            - generic [ref=e3022]: ✦
+            - generic [ref=e3023]: 21 Jul 2025
+            - generic [ref=e3024]: ✦
+            - generic [ref=e3025]: Michael Skuhersky
+            - generic [ref=e3026]: ✦
+            - button "2 highlights" [ref=e3027] [cursor=pointer]
+      - generic [ref=e3029]:
+        - link "Putting the “social” into “social contracts”" [ref=e3030] [cursor=pointer]:
+          - /url: https://internationalbudget.org/putting-the-social-into-social-contracts/?utm_source=chatgpt.com
+        - generic [ref=e3032]:
+          - generic [ref=e3034]: The concept of a "social contract" in taxation describes the relationship between citizens and the state, where taxpayers expect public services in return for their contributions. However, this framework can favor the wealthy, as it ties benefits to what individuals can give, potentially undermining progressive taxation. Advocates for fair taxation should clarify their vision of a social contract as a fair agreement among all citizens, emphasizing equality and justice.
+          - generic [ref=e3035]:
+            - generic [ref=e3036]: article
+            - generic [ref=e3038]: ✦
+            - generic [ref=e3039]: 17 Jul 2025
+            - generic [ref=e3040]: ✦
+            - generic [ref=e3041]: International Budget Partnership
+            - generic [ref=e3042]: ✦
+            - button "5 highlights" [ref=e3043] [cursor=pointer]
+      - generic [ref=e3044]:
+        - link "Just How Many More Successful UBI Trials Do We Need? | by Katie Jgln …" [ref=e3045] [cursor=pointer]:
+          - /url: https://archive.ph/BBPGY
+        - generic [ref=e3046]: Universal Basic Income (UBI) trials, like the one in Germany, show that when people have financial security, they become more satisfied with their work and share more with others. Contrary to fears that free money leads to laziness, recipients often spend it responsibly on necessities and even start businesses. Overall, UBI can improve well-being, support creativity, and help people thrive rather than just survive.
+        - generic [ref=e3047]:
+          - generic [ref=e3048]: article
+          - generic [ref=e3050]: ✦
+          - generic [ref=e3051]: 17 Jul 2025
+      - generic [ref=e3053]:
+        - 'link "Laura Deming: ‘I wanted to work on the world’s most important problem…" [ref=e3054] [cursor=pointer]':
+          - /url: https://archive.ph/xbH00
+        - generic [ref=e3056]:
+          - generic [ref=e3058]: Laura Deming is a young venture capitalist focused on anti-ageing science, believing it should be treated as a disease. She founded the Longevity Fund to invest in biotech companies that work on age-related treatments. Deming aims to increase people's healthy years of life, rather than seeking immortality.
+          - generic [ref=e3059]:
+            - generic [ref=e3060]: article
+            - generic [ref=e3062]: ✦
+            - generic [ref=e3063]: 17 Jul 2025
+            - generic [ref=e3064]: ✦
+            - button "1 highlight" [ref=e3065] [cursor=pointer]
+      - generic [ref=e3067]:
+        - 'link "The Gene: An Intimate History" [ref=e3068] [cursor=pointer]':
+          - /url: private://read/01jpg9e0ymcrfjqg25jr3kyp1x
+        - generic [ref=e3070]:
+          - generic [ref=e3072]: "\"The Gene: An Intimate History\" by Siddhartha Mukherjee explores the evolution of our understanding of genes. Initially seen as abstract entities, genes were later identified as physical units made of DNA that carry hereditary information. The book highlights how advancements in genetics have transformed biology and opened new avenues for research."
+          - generic [ref=e3073]:
+            - generic [ref=e3074]: book
+            - generic [ref=e3076]: ✦
+            - generic [ref=e3077]: 17 Jul 2025
+            - generic [ref=e3078]: ✦
+            - generic [ref=e3079]: Siddhartha Mukherjee
+            - generic [ref=e3080]: ✦
+            - button "5 highlights" [ref=e3081] [cursor=pointer]
+      - generic [ref=e3082]:
+        - 'link "Book Review: The Secret Of Our Success" [ref=e3083] [cursor=pointer]':
+          - /url: https://slatestarcodex.com/2019/06/04/book-review-the-secret-of-our-success/
+        - generic [ref=e3084]: "\"The Secret of Our Success\" by Joseph Henrich explores how cultural evolution, rather than just individual intelligence, shapes human survival and adaptation. The book emphasizes that humans evolved to learn from each other, which is crucial for transmitting complex skills like hunting and gathering. Cultural knowledge, passed down through generations, is essential for our development as a species."
+        - generic [ref=e3085]:
+          - generic [ref=e3086]: article
+          - generic [ref=e3088]: ✦
+          - generic [ref=e3089]: 17 Jul 2025
+          - generic [ref=e3090]: ✦
+          - generic [ref=e3091]: Scott Alexander
+      - generic [ref=e3092]:
+        - link "Reflections on OpenAI" [ref=e3093] [cursor=pointer]:
+          - /url: https://calv.info/openai-reflections
+        - generic [ref=e3094]: Nabeel Quereshi has an amazing post called Reflections on Palantir, where he ruminates on what made Palantir special. I wanted to do the same for OpenAI while it's fresh in my mind.
+        - generic [ref=e3095]:
+          - generic [ref=e3096]: article
+          - generic [ref=e3098]: ✦
+          - generic [ref=e3099]: 16 Jul 2025
+      - generic [ref=e3101]:
+        - link "[REPOST] Epistemic Learned Helplessness" [ref=e3102] [cursor=pointer]:
+          - /url: https://slatestarcodex.com/2019/06/03/repost-epistemic-learned-helplessness/
+        - generic [ref=e3104]:
+          - generic [ref=e3106]: The author discusses the concept of epistemic learned helplessness, where individuals may avoid evaluating complex arguments to prevent being misled. This behavior can result in either blindly accepting mainstream beliefs or being susceptible to extremist views. The text highlights the importance of critical thinking and discernment in navigating complex and conflicting information.
+          - generic [ref=e3107]:
+            - generic [ref=e3108]: article
+            - generic [ref=e3110]: ✦
+            - generic [ref=e3111]: 16 Jul 2025
+            - generic [ref=e3112]: ✦
+            - generic [ref=e3113]: Scott Alexander
+            - generic [ref=e3114]: ✦
+            - button "1 highlight" [ref=e3115] [cursor=pointer]
+      - generic [ref=e3116]:
+        - link "The Paradox of India - Samir Varma" [ref=e3117] [cursor=pointer]:
+          - /url: https://samirvarma.substack.com/p/the-paradox-of-india
+        - generic [ref=e3118]: India is a land of deep diversity where many different religions, languages, and cultures live together without destroying each other. Its people are skilled at holding contradictions and adapting to change while respecting many truths at once. This unique way of living shows that diversity can be a strength, not a weakness, even in a complex and sometimes messy society.
+        - generic [ref=e3119]:
+          - generic [ref=e3120]: article
+          - generic [ref=e3122]: ✦
+          - generic [ref=e3123]: 10 Jul 2025
+          - generic [ref=e3124]: ✦
+          - generic [ref=e3125]: Samir Varma
+      - generic [ref=e3127]:
+        - link "Welding and the Automation Frontier" [ref=e3128] [cursor=pointer]:
+          - /url: https://www.construction-physics.com/p/welding-and-the-automation-frontier
+        - generic [ref=e3130]:
+          - generic [ref=e3132]: Welding automation has advanced significantly, particularly in the car manufacturing industry, where robots are widely used for spot welding. While automation improves efficiency, skilled manual welders remain essential due to their flexibility in handling complex tasks. Overall, robotic systems focus on addressing the shortage of skilled welders rather than just cost savings.
+          - generic [ref=e3133]:
+            - generic [ref=e3134]: article
+            - generic [ref=e3136]: ✦
+            - generic [ref=e3137]: 07 Jul 2025
+            - generic [ref=e3138]: ✦
+            - generic [ref=e3139]: Brian Potter
+            - generic [ref=e3140]: ✦
+            - button "1 highlight" [ref=e3141] [cursor=pointer]
+      - generic [ref=e3143]:
+        - link "Why Genes In Pieces?" [ref=e3144] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/319426709
+        - generic [ref=e3146]:
+          - generic [ref=e3148]: Genes in higher organisms are not continuous but consist of coding regions called exons and non-coding regions called introns. This structure allows for greater flexibility in gene expression and evolution, as splicing can create different proteins from the same gene. The presence of introns means that mutations can lead to new protein functions without losing the original gene's function.
+          - generic [ref=e3149]:
+            - generic [ref=e3150]: pdf
+            - generic [ref=e3152]: ✦
+            - generic [ref=e3153]: 06 Jul 2025
+            - generic [ref=e3154]: ✦
+            - generic [ref=e3155]: Walter Gilbert
+            - generic [ref=e3156]: ✦
+            - button "3 highlights" [ref=e3157] [cursor=pointer]
+      - generic [ref=e3158]:
+        - link "The End of the Millennial Lifestyle Subsidy" [ref=e3159] [cursor=pointer]:
+          - /url: https://www.theatlantic.com/newsletters/archive/2022/06/uber-ride-share-prices-high-inflation/661250/
+        - generic [ref=e3160]: The Millennial Consumer Subsidy, where companies like Uber offered low prices to attract customers, is ending. Rising interest rates and increased labor costs are making urban services more expensive. As a result, young city dwellers will have to pay full price for rides and other amenities moving forward.
+        - generic [ref=e3161]:
+          - generic [ref=e3162]: article
+          - generic [ref=e3164]: ✦
+          - generic [ref=e3165]: 04 Jul 2025
+          - generic [ref=e3166]: ✦
+          - generic [ref=e3167]: Derek Thompson
+      - generic [ref=e3169]:
+        - link "The Agentic Web and Original Sin" [ref=e3170] [cursor=pointer]:
+          - /url: https://stratechery.com/2025/the-agentic-web-and-original-sin/
+        - generic [ref=e3172]:
+          - generic [ref=e3174]: Advertising is seen as the "original sin" of the web, creating a reliance on ad-supported content that struggles to thrive today. As the internet evolves, there's a shift towards an "Open Agentic Web" with new digital payment models that could foster better content creation. However, the success of this new model depends on human interaction with content, which is threatened by automation and could limit the supply of new material.
+          - generic [ref=e3175]:
+            - generic [ref=e3176]: article
+            - generic [ref=e3178]: ✦
+            - generic [ref=e3179]: 04 Jul 2025
+            - generic [ref=e3180]: ✦
+            - generic [ref=e3181]: Ben Thompson
+            - generic [ref=e3182]: ✦
+            - button "1 highlight" [ref=e3183] [cursor=pointer]
+      - generic [ref=e3185]:
+        - link "30 Reflections" [ref=e3186] [cursor=pointer]:
+          - /url: https://www.ettf.land/p/30-reflections
+        - generic [ref=e3188]:
+          - generic [ref=e3190]: The author reflects on the challenges of understanding oneself and controlling one's thoughts in a chaotic world. They emphasize the importance of taking simple actions and experimenting while recognizing the complexity of human values. Ultimately, the author believes in striving for a better, more humane future without sacrificing our values for progress.
+          - generic [ref=e3191]:
+            - generic [ref=e3192]: article
+            - generic [ref=e3194]: ✦
+            - generic [ref=e3195]: 04 Jul 2025
+            - generic [ref=e3196]: ✦
+            - generic [ref=e3197]: Connor Leahy
+            - generic [ref=e3198]: ✦
+            - button "6 highlights" [ref=e3199] [cursor=pointer]
+      - generic [ref=e3200]:
+        - link "What I Learned in 2024" [ref=e3201] [cursor=pointer]:
+          - /url: https://www.nmccarty.com/p/what-i-learned-in-2024
+        - generic [ref=e3202]: In 2024, I learned about exciting advances in biology, including in ovo sexing, which helps farmers identify chick sexes before hatching to reduce suffering. Scientists are also making progress in creating viable eggs and sperm from stem cells, potentially expanding fertility options for many people. Additionally, research on bacteria shows they can anticipate seasonal changes, highlighting the remarkable adaptability of living organisms.
+        - generic [ref=e3203]:
+          - generic [ref=e3204]: article
+          - generic [ref=e3206]: ✦
+          - generic [ref=e3207]: 02 Jul 2025
+          - generic [ref=e3208]: ✦
+          - generic [ref=e3209]: Niko McCarty
+      - generic [ref=e3211]:
+        - link "The Mahabharata V1" [ref=e3212] [cursor=pointer]:
+          - /url: private://read/01jmhrpf9y5fmxkzj9x3gkdvyx
+        - generic [ref=e3214]:
+          - generic [ref=e3216]: Bheeshma is reminded to protect the Pandavas, as they are the kingdom's only hope. Meanwhile, Yudhishtira feels uneasy about the growing threat from Duryodhana and Karna. The Pandavas eventually rescue Duryodhana, but Karna vows to help him against Arjuna, promising to kill him.
+          - generic [ref=e3217]:
+            - generic [ref=e3218]: book
+            - generic [ref=e3220]: ✦
+            - generic [ref=e3221]: 02 Jul 2025
+            - generic [ref=e3222]: ✦
+            - generic [ref=e3223]: Ramesh Menon
+            - generic [ref=e3224]: ✦
+            - button "18 highlights" [ref=e3225] [cursor=pointer]
+      - generic [ref=e3227]:
+        - link "Reflections on Haskell and Rust" [ref=e3228] [cursor=pointer]:
+          - /url: https://academy.fpblock.com/blog/rust-haskell-reflections/?__readwiseLocation=
+        - generic [ref=e3230]:
+          - generic [ref=e3232]: The author compares Haskell and Rust based on their experience in web services and APIs, noting Rust's practical advantages in tooling, error handling, and performance. Rust offers faster compilation, better formatting standards, and easier operational management than Haskell. While Haskell excels in purity and theoretical foundations, Rust's growing ecosystem and usability make it more suitable for maintainable production systems.
+          - generic [ref=e3233]:
+            - generic [ref=e3234]: article
+            - generic [ref=e3236]: ✦
+            - generic [ref=e3237]: 01 Jul 2025
+            - generic [ref=e3238]: ✦
+            - generic [ref=e3239]: Sibi Prabakaran
+            - generic [ref=e3240]: ✦
+            - button "1 highlight" [ref=e3241] [cursor=pointer]
+      - generic [ref=e3242]:
+        - link "The Scientific Basis For The Somatic Mutation Theory Of Cancer Is Invalid" [ref=e3243] [cursor=pointer]:
+          - /url: https://pierrekorymedicalmusings.com/p/the-scientific-basis-for-the-somatic
+        - generic [ref=e3244]: The Somatic Mutation Theory (SMT) says cancer is caused by DNA mutations in cells. However, many studies show cancer cells often lack consistent mutations, challenging this theory. New evidence suggests cancer might arise from other causes, like changes in cell metabolism.
+        - generic [ref=e3245]:
+          - generic [ref=e3246]: article
+          - generic [ref=e3248]: ✦
+          - generic [ref=e3249]: 25 Jun 2025
+          - generic [ref=e3250]: ✦
+          - generic [ref=e3251]: Pierre Kory
+          - generic [ref=e3252]: ✦
+          - generic [ref=e3253]: MD
+          - generic [ref=e3254]: ✦
+          - generic [ref=e3255]: MPA
+      - generic [ref=e3257]:
+        - link "Viral oncology’s complicated path—from cancer as contagion to today’s immunotherapy" [ref=e3258] [cursor=pointer]:
+          - /url: https://cancerhistoryproject.com/article/viral-oncologys-complicated-path-from-cancer-as-contagion-to-todays-immunotherapy/?utm_source=chatgpt.com
+        - generic [ref=e3260]:
+          - generic [ref=e3262]: The study of viruses causing cancer was uncertain and controversial for many years. The National Cancer Institute funded research that helped discover links between viruses and cancer genetics. Today, this work supports new treatments like immunotherapy and cancer vaccines.
+          - generic [ref=e3263]:
+            - generic [ref=e3264]: article
+            - generic [ref=e3266]: ✦
+            - generic [ref=e3267]: 25 Jun 2025
+            - generic [ref=e3268]: ✦
+            - generic [ref=e3269]: Cancer History Project
+            - generic [ref=e3270]: ✦
+            - button "1 highlight" [ref=e3271] [cursor=pointer]
+      - generic [ref=e3273]:
+        - 'link "The Political Life Of Mutagens: A History Of The Ames Test" [ref=e3274] [cursor=pointer]':
+          - /url: https://readwise.io/reader/document_raw_content/324219292
+        - generic [ref=e3276]:
+          - generic [ref=e3278]: The Ames test, developed by Bruce N. Ames in 1973, is a method for identifying chemical carcinogens using mutant strains of Salmonella. It showed that many natural substances could be just as mutagenic as synthetic chemicals, challenging the belief that cancer was primarily caused by artificial substances. This test has influenced discussions about cancer risks and regulation in both scientific and political contexts.
+          - generic [ref=e3279]:
+            - generic [ref=e3280]: pdf
+            - generic [ref=e3282]: ✦
+            - generic [ref=e3283]: 23 Jun 2025
+            - generic [ref=e3284]: ✦
+            - generic [ref=e3285]: Angela N H Creager
+            - generic [ref=e3286]: ✦
+            - button "18 highlights" [ref=e3287] [cursor=pointer]
+      - generic [ref=e3288]:
+        - 'link "Book Notes: Stoner (1965)" [ref=e3289] [cursor=pointer]':
+          - /url: https://scholars-stage.org/book-notes-stoner-1965/
+        - generic [ref=e3290]: John Edward Williams' novel *Stoner* offers a unique perspective on middle-class life, finding dignity in the mundane struggles of its protagonist, William Stoner. Unlike many male authors, Williams portrays a life filled with quiet significance rather than dramatic events, emphasizing the moral worth in ordinary existence. While the novel excels in its writing and character depth, it sometimes leaves motivations unexplained, hinting at the complexities of communication and self-awareness.
+        - generic [ref=e3291]:
+          - generic [ref=e3292]: rss
+          - generic [ref=e3294]: ✦
+          - generic [ref=e3295]: 22 Jun 2025
+          - generic [ref=e3296]: ✦
+          - generic [ref=e3297]: T. Greer
+      - generic [ref=e3298]:
+        - link "Understanding as an art" [ref=e3299] [cursor=pointer]:
+          - /url: https://barnacles.substack.com/p/understanding-as-an-art
+        - generic [ref=e3300]: Laura Deming reflects on her journey of understanding complex scientific concepts through vivid visualization and emotional experiences. She describes how moments of awe and curiosity allow her to connect deeply with the microscopic world, transforming her learning from mere facts into immersive adventures. Ultimately, she longs for the transcendent feelings of discovery and exploration that science can provide, even as she recognizes the practical challenges that accompany them.
+        - generic [ref=e3301]:
+          - generic [ref=e3302]: article
+          - generic [ref=e3304]: ✦
+          - generic [ref=e3305]: 20 Jun 2025
+          - generic [ref=e3306]: ✦
+          - generic [ref=e3307]: Laura Deming
+      - generic [ref=e3308]:
+        - link "Exclusive | DNA Analysis Startup Nucleus Genomics Aims to Rank Embryo…" [ref=e3309] [cursor=pointer]:
+          - /url: https://archive.ph/qSrH1
+        - generic [ref=e3310]: Nucleus Genomics is a DNA analysis startup that helps prospective parents rank embryos based on their genetic risks for diseases like heart disease and cancer. The service, which costs $5,999, analyzes up to 20 embryos and provides probabilities for various age-related conditions. This technology is part of a growing trend in the longevity community, aiming to enable families to choose embryos with better chances for a long, healthy life.
+        - generic [ref=e3311]:
+          - generic [ref=e3312]: article
+          - generic [ref=e3314]: ✦
+          - generic [ref=e3315]: 20 Jun 2025
+      - generic [ref=e3317]:
+        - link "Can ‘progress studies’ contribute to knowledge? History suggests caution" [ref=e3318] [cursor=pointer]:
+          - /url: https://theconversation.com/can-progress-studies-contribute-to-knowledge-history-suggests-caution-121410
+        - generic [ref=e3320]:
+          - generic [ref=e3322]: The idea of creating a new field called "progress studies" ignores that progress has been studied for centuries. History shows that claiming progress can hide harm, like social exclusion and environmental damage. We should study progress carefully, balancing hope with critical thinking to avoid repeating past mistakes.
+          - generic [ref=e3323]:
+            - generic [ref=e3324]: article
+            - generic [ref=e3326]: ✦
+            - generic [ref=e3327]: 20 Jun 2025
+            - generic [ref=e3328]: ✦
+            - generic [ref=e3329]: Shannon Dea
+            - generic [ref=e3330]: ✦
+            - button "1 highlight" [ref=e3331] [cursor=pointer]
+      - generic [ref=e3333]:
+        - link "The most-feared assays" [ref=e3334] [cursor=pointer]:
+          - /url: https://www.chemistryworld.com/opinion/the-most-feared-assays/3005014.article
+        - generic [ref=e3336]:
+          - generic [ref=e3338]: Drug discovery relies on various assays to assess the safety and effectiveness of compounds. Some tests, like the Ames test and hERG test, are particularly feared because they can indicate serious issues that may halt drug development. Additionally, two-week rat toxicity testing provides crucial insights into potential side effects, making it a critical step in the drug development process.
+          - generic [ref=e3339]:
+            - generic [ref=e3340]: article
+            - generic [ref=e3342]: ✦
+            - generic [ref=e3343]: 20 Jun 2025
+            - generic [ref=e3344]: ✦
+            - generic [ref=e3345]: Chemistry World
+            - generic [ref=e3346]: ✦
+            - button "2 highlights" [ref=e3347] [cursor=pointer]
+      - generic [ref=e3349]:
+        - link "Bruce Ames, 95, Dies; Biochemist Discovered Test for Toxic Chemicals …" [ref=e3350] [cursor=pointer]:
+          - /url: https://archive.ph/mD62Q
+        - generic [ref=e3352]:
+          - generic [ref=e3354]: Bruce Ames, a biochemist known for creating the Ames Test to detect cancer-causing chemicals, passed away on October 5 at the age of 95. His test revolutionized safety testing by providing a quick and cheap way to identify toxic substances, leading to the banning of many harmful chemicals. Despite his significant contributions to science, he later expressed skepticism about the risks of some synthetic chemicals, complicating his legacy in the environmental movement.
+          - generic [ref=e3355]:
+            - generic [ref=e3356]: article
+            - generic [ref=e3358]: ✦
+            - generic [ref=e3359]: 19 Jun 2025
+            - generic [ref=e3360]: ✦
+            - button "2 highlights" [ref=e3361] [cursor=pointer]
+      - generic [ref=e3363]:
+        - link "A Perspective On The Development Of The Ames Salmonella/Mammalian-Microsome Mutagenicity Assay" [ref=e3364] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/324200585
+        - generic [ref=e3366]:
+          - generic [ref=e3368]: The Ames test, developed by Bruce N. Ames, uses modified Salmonella bacteria to detect chemical mutagens that may also be carcinogens. This assay has been influential in genetic toxicology since the 1970s and involves exposing bacteria to various chemicals to observe mutations. Over the years, the test has been refined to improve sensitivity and remains a popular method for assessing mutagenicity.
+          - generic [ref=e3369]:
+            - generic [ref=e3370]: pdf
+            - generic [ref=e3372]: ✦
+            - generic [ref=e3373]: 19 Jun 2025
+            - generic [ref=e3374]: ✦
+            - generic [ref=e3375]: Kristien Mortelmans
+            - generic [ref=e3376]: ✦
+            - button "8 highlights" [ref=e3377] [cursor=pointer]
+      - generic [ref=e3378]:
+        - link "How Field Notes went from side project to cult notebook" [ref=e3379] [cursor=pointer]:
+          - /url: https://www.fastcompany.com/91352848/field-notes-cult-notebook-started-out-as-a-side-project
+        - generic [ref=e3380]: Field Notes started as a small project by Aaron Draplin and Jim Coudal in 2005 and has grown into a popular notebook brand, selling over 10 million notebooks worldwide. The duo's complementary skills helped them create a beloved product, with a strong focus on quality and design. Today, Field Notes thrives with a successful subscription model and continues to expand its reach and product offerings.
+        - generic [ref=e3381]:
+          - generic [ref=e3382]: article
+          - generic [ref=e3384]: ✦
+          - generic [ref=e3385]: 19 Jun 2025
+          - generic [ref=e3386]: ✦
+          - generic [ref=e3387]: Zachary Petit
+      - generic [ref=e3389]:
+        - link "The Ames Test and the Real World" [ref=e3390] [cursor=pointer]:
+          - /url: https://www.science.org/content/blog-post/ames-test-and-real-world
+        - generic [ref=e3392]:
+          - generic [ref=e3394]: The Ames test shows that both natural and synthetic compounds can be toxic, emphasizing that "the dose makes the poison." Many foods, especially plants, contain natural substances that can be harmful in large amounts, but our bodies usually detoxify these compounds. Instead of worrying about small amounts of synthetic chemicals, we should focus on more significant health risks like smoking and alcohol.
+          - generic [ref=e3395]:
+            - generic [ref=e3396]: article
+            - generic [ref=e3398]: ✦
+            - generic [ref=e3399]: 18 Jun 2025
+            - generic [ref=e3400]: ✦
+            - generic [ref=e3401]: Derek Lowe
+            - generic [ref=e3402]: ✦
+            - button "3 highlights" [ref=e3403] [cursor=pointer]
+      - generic [ref=e3405]:
+        - link "The Ames Salmonella / Microsome Mutagenicity Assay" [ref=e3406] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/323694304
+        - generic [ref=e3408]:
+          - generic [ref=e3410]: In toxicity assays, it is crucial to use the same number of bacteria for accurate results. Diluting the tester strain to fewer than 1000 cells can lead to incorrect conclusions about toxicity. More bacteria exposed to a chemical allows for better assessment of its effects.
+          - generic [ref=e3411]:
+            - generic [ref=e3412]: pdf
+            - generic [ref=e3414]: ✦
+            - generic [ref=e3415]: 17 Jun 2025
+            - generic [ref=e3416]: ✦
+            - generic [ref=e3417]: Kristien Mortelmans
+            - generic [ref=e3418]: ✦
+            - generic [ref=e3419]: Errol Zeiger
+            - generic [ref=e3420]: ✦
+            - button "8 highlights" [ref=e3421] [cursor=pointer]
+      - generic [ref=e3422]:
+        - link "Edward B Lewis" [ref=e3423] [cursor=pointer]:
+          - /url: https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(04)16878-5/fulltext
+        - generic [ref=e3424]: Edward B. Lewis was a geneticist who won the Nobel Prize in 1995 for his groundbreaking work on how genes control embryonic development. He also studied the effects of radiation on cancer, which led to controversy and public scrutiny. Throughout his life, he was dedicated to research and understanding the laws of nature, remaining an active lab scientist until his passing in 2004.
+        - generic [ref=e3425]:
+          - generic [ref=e3426]: article
+          - generic [ref=e3428]: ✦
+          - generic [ref=e3429]: 16 Jun 2025
+          - generic [ref=e3430]: ✦
+          - generic [ref=e3431]: Terrell Tannen
+      - generic [ref=e3433]:
+        - link "Ch 9 - Epidemiology | Core Psychiatry" [ref=e3434] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/322025509
+        - generic [ref=e3436]:
+          - generic [ref=e3438]: Epidemiology studies how health-related issues affect populations and aims to control health problems. It involves various research designs, including descriptive and analytical studies, to measure disease prevalence and incidence. In psychiatric epidemiology, researchers assess mental health through validated measures that consider demographic, socioeconomic, and health status factors.
+          - generic [ref=e3439]:
+            - generic [ref=e3440]: pdf
+            - generic [ref=e3442]: ✦
+            - generic [ref=e3443]: 16 Jun 2025
+            - generic [ref=e3444]: ✦
+            - generic [ref=e3445]: Martin Prince
+            - generic [ref=e3446]: ✦
+            - button "4 highlights" [ref=e3447] [cursor=pointer]
+      - generic [ref=e3449]:
+        - link "Drones will realize the promise of suicide terrorism" [ref=e3450] [cursor=pointer]:
+          - /url: https://blog.exitgroup.us/p/cheap-drones-will-realize-the-promise?__readwiseLocation=
+        - generic [ref=e3452]:
+          - generic [ref=e3454]: Recent drone attacks by Mossad and Ukraine have shown how drones can effectively neutralize military targets and disrupt economies. These attacks highlight a shift in warfare, where even low-cost drone strikes can threaten large, established powers. As drone technology becomes more accessible, it may lead to a new geopolitical order, diminishing the dominance of traditional military forces.
+          - generic [ref=e3455]:
+            - generic [ref=e3456]: article
+            - generic [ref=e3458]: ✦
+            - generic [ref=e3459]: 16 Jun 2025
+            - generic [ref=e3460]: ✦
+            - generic [ref=e3461]: Bennett's Phylactery
+            - generic [ref=e3462]: ✦
+            - button "4 highlights" [ref=e3463] [cursor=pointer]
+      - generic [ref=e3465]:
+        - link "Strategy Letter V" [ref=e3466] [cursor=pointer]:
+          - /url: https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/
+        - generic [ref=e3468]:
+          - generic [ref=e3470]: In the tech industry, companies often invest in open source software as a smart business strategy to make complementary products cheaper. This approach helps drive demand for their main products, like operating systems and hardware. Ultimately, these companies aim to commoditize software and hardware to increase sales and profits.
+          - generic [ref=e3471]:
+            - generic [ref=e3472]: article
+            - generic [ref=e3474]: ✦
+            - generic [ref=e3475]: 15 Jun 2025
+            - generic [ref=e3476]: ✦
+            - generic [ref=e3477]: Joel Spolsky
+            - generic [ref=e3478]: ✦
+            - button "5 highlights" [ref=e3479] [cursor=pointer]
+      - generic [ref=e3481]:
+        - 'link "The Trojan Truck: How Ukraine Just Made Nowhere Safe" [ref=e3482] [cursor=pointer]':
+          - /url: https://x.com/PatrickJBlum/status/1929284675903570121/?rw_tt_thread=True
+        - generic [ref=e3484]:
+          - generic [ref=e3486]: Ukraine used disguised delivery trucks to launch drones that destroyed over forty Russian aircraft, including key bombers. This attack shows that no Russian asset is truly safe, forcing Russia to treat every civilian vehicle as a potential threat. The operation highlights a new kind of warfare where civilian infrastructure can be weaponized, creating ongoing challenges for Russia and other nations.
+          - generic [ref=e3487]:
+            - generic [ref=e3488]: tweet
+            - generic [ref=e3490]: ✦
+            - generic [ref=e3491]: 14 Jun 2025
+            - generic [ref=e3492]: ✦
+            - generic [ref=e3493]: Patrick Blumenthal
+            - generic [ref=e3494]: ✦
+            - button "2 highlights" [ref=e3495] [cursor=pointer]
+      - generic [ref=e3496]:
+        - link "Houthi attacks on shipping in Red Sea threaten global consequences - …" [ref=e3497] [cursor=pointer]:
+          - /url: https://archive.ph/BA5dh
+        - generic [ref=e3498]: Houthi attacks in the Red Sea are disrupting global shipping, prompting BP to halt shipments through the area. These attacks, which are partly in response to the conflict in Gaza, threaten to escalate tensions and impact trade significantly. As shipping firms reroute to avoid danger, oil prices are rising, raising concerns about further economic consequences.
+        - generic [ref=e3499]:
+          - generic [ref=e3500]: article
+          - generic [ref=e3502]: ✦
+          - generic [ref=e3503]: 14 Jun 2025
+          - generic [ref=e3504]: ✦
+          - generic [ref=e3505]: Adam Taylor
+      - generic [ref=e3507]:
+        - link "Notes on Managing ADHD" [ref=e3508] [cursor=pointer]:
+          - /url: https://borretti.me/article/notes-on-managing-adhd
+        - generic [ref=e3510]:
+          - generic [ref=e3512]: The text provides strategies for managing ADHD, emphasizing the importance of using a todo list to form habits and stay organized. It suggests journaling for introspection and understanding procrastination patterns, while also recommending centralizing tasks to avoid distractions. Finally, it highlights the need to control the environment and minimize interruptions to enhance productivity.
+          - generic [ref=e3513]:
+            - generic [ref=e3514]: article
+            - generic [ref=e3516]: ✦
+            - generic [ref=e3517]: 13 Jun 2025
+            - generic [ref=e3518]: ✦
+            - generic [ref=e3519]: Fernando Borretti
+            - generic [ref=e3520]: ✦
+            - button "4 highlights" [ref=e3521] [cursor=pointer]
+      - generic [ref=e3522]:
+        - link "Guess I’m A Rationalist Now" [ref=e3523] [cursor=pointer]:
+          - /url: https://scottaaronson.blog/?p=8908
+        - generic [ref=e3524]: Scott attended a rationalist blogging conference called LessOnline, where he met familiar and new faces. After years of hesitation, he finally embraced the label of "Rationalist," despite previously feeling out of place in the community. He reflects on the growth and evolution of Rationalism, acknowledging both its appeal and the criticisms it faces.
+        - generic [ref=e3525]:
+          - generic [ref=e3526]: rss
+          - generic [ref=e3528]: ✦
+          - generic [ref=e3529]: 12 Jun 2025
+          - generic [ref=e3530]: ✦
+          - generic [ref=e3531]: Scott
+      - generic [ref=e3532]:
+        - link "LIFE IN THE LAB" [ref=e3533] [cursor=pointer]:
+          - /url: https://www.latimes.com/archives/la-xpm-1991-02-10-tm-1474-story.html
+        - generic [ref=e3534]: The author reflects on her family's struggle with Huntington's disease, revealing that her mother and uncles were affected by this hereditary illness. After her mother’s diagnosis, the family formed the Hereditary Disease Foundation to support research and awareness. The author finds purpose in fighting against the disease while grappling with its impact on her life.
+        - generic [ref=e3535]:
+          - generic [ref=e3536]: article
+          - generic [ref=e3538]: ✦
+          - generic [ref=e3539]: 10 Jun 2025
+          - generic [ref=e3540]: ✦
+          - generic [ref=e3541]: NANCY WEXLER
+      - generic [ref=e3542]:
+        - link "Thoughts on thinking" [ref=e3543] [cursor=pointer]:
+          - /url: https://dcurt.is/thinking
+        - generic [ref=e3544]: The author feels stuck and believes that their creative efforts are overshadowed by AI's ability to produce better ideas quickly. They reflect on how using AI has diminished their own thinking and intellectual growth, despite having access to more information than ever. Ultimately, they feel that relying on AI is more like sedation than real mental exercise, even as they continue to share their thoughts.
+        - generic [ref=e3545]:
+          - generic [ref=e3546]: article
+          - generic [ref=e3548]: ✦
+          - generic [ref=e3549]: 10 Jun 2025
+          - generic [ref=e3550]: ✦
+          - generic [ref=e3551]: Dustin Curtis on Svbtle
+      - generic [ref=e3553]:
+        - link "🔭 The Einstein AI model" [ref=e3554] [cursor=pointer]:
+          - /url: https://thomwolf.io/blog/scientific-ai.html
+        - generic [ref=e3556]:
+          - generic [ref=e3558]: The author argues that AI will not lead to rapid scientific breakthroughs as predicted, but will instead produce obedient models that reinforce existing knowledge. True progress in science comes from asking bold questions and challenging established ideas, rather than simply answering known ones. To achieve real innovation, AI should be encouraged to think critically and explore new concepts beyond its training data.
+          - generic [ref=e3559]:
+            - generic [ref=e3560]: article
+            - generic [ref=e3562]: ✦
+            - generic [ref=e3563]: 10 Jun 2025
+            - generic [ref=e3564]: ✦
+            - button "2 highlights" [ref=e3565] [cursor=pointer]
+      - generic [ref=e3567]:
+        - link "Harvard’s International Students Are People — Not Pawns" [ref=e3568] [cursor=pointer]:
+          - /url: https://www.thecrimson.com/article/2025/5/23/harvard-international-students-trump/
+        - generic [ref=e3570]:
+          - generic [ref=e3572]: The Department of Homeland Security has revoked Harvard's ability to host international students, leaving many in uncertainty about their futures. This decision is seen as a political attack, harming talented individuals who contribute to the campus and the country. Harvard plans to take legal action, but the editorial board urges other universities to stand in solidarity with its international students.
+          - generic [ref=e3573]:
+            - generic [ref=e3574]: article
+            - generic [ref=e3576]: ✦
+            - generic [ref=e3577]: 10 Jun 2025
+            - generic [ref=e3578]: ✦
+            - button "1 highlight" [ref=e3579] [cursor=pointer]
+      - generic [ref=e3581]:
+        - link "We’ve Got Issues" [ref=e3582] [cursor=pointer]:
+          - /url: https://slate.com/culture/2010/02/judith-warner-s-we-ve-got-issues.html
+        - generic [ref=e3584]:
+          - generic [ref=e3586]: Journalism often tells stories to explain human behavior, but true science seeks to uncover new causal explanations behind our actions. Alison Gopnik critiques Judith Warner’s book for prioritizing narratives over scientific evidence when discussing the use of drugs for children's psychological issues. She emphasizes that while stories can engage us, scientific evidence is crucial for understanding and addressing complex problems effectively.
+          - generic [ref=e3587]:
+            - generic [ref=e3588]: article
+            - generic [ref=e3590]: ✦
+            - generic [ref=e3591]: 10 Jun 2025
+            - generic [ref=e3592]: ✦
+            - generic [ref=e3593]: Alison Gopnik
+            - generic [ref=e3594]: ✦
+            - button "5 highlights" [ref=e3595] [cursor=pointer]
+      - generic [ref=e3596]:
+        - link "Rampant AI Cheating Is Ruining Education Alarmingly Fast" [ref=e3597] [cursor=pointer]:
+          - /url: https://archive.ph/ofxzl
+        - generic [ref=e3598]: Many college students, like Chungin “Roy” Lee at Columbia University, are using AI tools like ChatGPT to complete assignments, often relying on them for a significant portion of their work. This widespread cheating raises concerns about students' learning and critical-thinking skills, leading to fears that many graduates may lack essential competencies for the workforce. Educators worry that the reliance on AI undermines the value of education and the intellectual growth that colleges are supposed to provide.
+        - generic [ref=e3599]:
+          - generic [ref=e3600]: article
+          - generic [ref=e3602]: ✦
+          - generic [ref=e3603]: 09 Jun 2025
+          - generic [ref=e3604]: ✦
+          - generic [ref=e3605]: James D. Walsh
+      - generic [ref=e3607]:
+        - link "Knowledge Work Is Dying — Here’s What Comes Next" [ref=e3608] [cursor=pointer]:
+          - /url: https://every.to/thesis/knowledge-work-is-dying-here-s-what-comes-next
+        - generic [ref=e3610]:
+          - generic [ref=e3612]: AI is replacing knowledge-based jobs, making emotional clarity, discernment, and connection essential skills for the future. As expertise becomes less valuable, wisdom work will become more important in leadership and teamwork. Success will depend on how well we manage relationships and emotions, rather than just our knowledge.
+          - generic [ref=e3613]:
+            - generic [ref=e3614]: article
+            - generic [ref=e3616]: ✦
+            - generic [ref=e3617]: 09 Jun 2025
+            - generic [ref=e3618]: ✦
+            - generic [ref=e3619]: Joe Hudson
+            - generic [ref=e3620]: ✦
+            - button "7 highlights" [ref=e3621] [cursor=pointer]
+      - generic [ref=e3623]:
+        - link "The bad science behind expensive nuclear" [ref=e3624] [cursor=pointer]:
+          - /url: https://worksinprogress.co/issue/the-bad-science-behind-expensive-nuclear/
+        - generic [ref=e3626]:
+          - generic [ref=e3628]: The Linear No Threshold (LNT) model suggests that any amount of radiation increases cancer risk, leading to strict safety regulations that make nuclear power expensive. This theory, initially based on studies of fruit flies and influenced by political agendas, is now being questioned by some scientists. New research indicates that there may be thresholds for radiation harm, challenging long-held beliefs about its risks.
+          - generic [ref=e3629]:
+            - generic [ref=e3630]: article
+            - generic [ref=e3632]: ✦
+            - generic [ref=e3633]: 09 Jun 2025
+            - generic [ref=e3634]: ✦
+            - generic [ref=e3635]: Alex Chalmers
+            - generic [ref=e3636]: ✦
+            - button "11 highlights" [ref=e3637] [cursor=pointer]
+      - generic [ref=e3638]:
+        - link "Why robots are not the answer to US manufacturing reshoring hopes" [ref=e3639] [cursor=pointer]:
+          - /url: https://archive.ph/lBeyj
+        - generic [ref=e3640]: Robots are not the solution to the US manufacturing reshoring challenges due to high costs, skilled worker shortages, and complex integration issues. Many manufacturers face barriers like limited budgets and changing product lines, making automation less feasible. Additionally, the lack of a national robotics strategy and strong labor union opposition complicate efforts to increase automation in factories.
+        - generic [ref=e3641]:
+          - generic [ref=e3642]: article
+          - generic [ref=e3644]: ✦
+          - generic [ref=e3645]: 09 Jun 2025
+      - generic [ref=e3646]:
+        - link "The Last Question" [ref=e3647] [cursor=pointer]:
+          - /url: https://users.ece.cmu.edu/~gamvrosi/thelastq.html
+        - generic [ref=e3648]: In "The Last Question" by Isaac Asimov, characters discuss the finite nature of energy and the eventual death of stars. They wonder if entropy can be reversed to prevent the end of the universe. Ultimately, the story highlights humanity's struggle with the concept of mortality and the search for hope in a dying cosmos.
+        - generic [ref=e3649]:
+          - generic [ref=e3650]: article
+          - generic [ref=e3652]: ✦
+          - generic [ref=e3653]: 09 Jun 2025
+          - generic [ref=e3654]: ✦
+          - generic [ref=e3655]: Isaac Asimov
+      - generic [ref=e3657]:
+        - link "Do Cellphones Cause Brain Cancer? - The New York Times" [ref=e3658] [cursor=pointer]:
+          - /url: https://www.nytimes.com/2011/04/17/magazine/mag-17cellphones-t.html?_r=1&pagewanted=all
+        - generic [ref=e3660]:
+          - generic [ref=e3662]: The link between cellphones and brain cancer is still unclear, as studies show mixed results. While some suggest regular cellphone use may lower the risk of tumors, others indicate high usage could increase risk for specific types. Overall, current evidence does not convincingly prove that cellphone radiation causes cancer.
+          - generic [ref=e3663]:
+            - generic [ref=e3664]: article
+            - generic [ref=e3666]: ✦
+            - generic [ref=e3667]: 04 Jun 2025
+            - generic [ref=e3668]: ✦
+            - generic [ref=e3669]: Siddhartha Mukherjee
+            - generic [ref=e3670]: ✦
+            - button "8 highlights" [ref=e3671] [cursor=pointer]
+      - generic [ref=e3672]:
+        - link "American Disruption" [ref=e3673] [cursor=pointer]:
+          - /url: https://stratechery.com/2025/american-disruption/
+        - generic [ref=e3674]: The article discusses the negative impact of President Trump's trade policies on the tech industry, particularly regarding tariffs that hurt demand and disrupt supply chains. It highlights the shift from the U.S. manufacturing model to Asian manufacturing, emphasizing the need for targeted tariffs that encourage domestic production without harming the overall market. Ultimately, the author argues for a more strategic approach to trade that focuses on innovation and cooperation rather than blanket tariffs.
+        - generic [ref=e3675]:
+          - generic [ref=e3676]: article
+          - generic [ref=e3678]: ✦
+          - generic [ref=e3679]: 04 Jun 2025
+          - generic [ref=e3680]: ✦
+          - generic [ref=e3681]: Ben Thompson
+      - generic [ref=e3683]:
+        - link "Capturing and Colliding" [ref=e3684] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/capturing-and-colliding?r=u6r6&utm_campaign=post&utm_medium=web
+        - generic [ref=e3686]:
+          - generic [ref=e3688]: Steven Johnson discusses the importance of capturing and organizing quotes from reading to enhance creativity. He highlights the evolution of this practice from traditional commonplace books to modern digital tools that help connect and resurface ideas. Using apps and algorithms, readers can now easily manage their quotes and find new insights from their past readings.
+          - generic [ref=e3689]:
+            - generic [ref=e3690]: article
+            - generic [ref=e3692]: ✦
+            - generic [ref=e3693]: 03 Jun 2025
+            - generic [ref=e3694]: ✦
+            - generic [ref=e3695]: Steven Johnson
+            - generic [ref=e3696]: ✦
+            - button "2 highlights" [ref=e3697] [cursor=pointer]
+      - generic [ref=e3699]:
+        - link "Opinion | Covid’s Deadliest Effect Took Five Years to Appear - The New York Times" [ref=e3700] [cursor=pointer]:
+          - /url: https://www.nytimes.com/2025/03/10/opinion/covid-public-health-privatization.html
+        - generic [ref=e3702]:
+          - generic [ref=e3704]: Covid-19 has changed how we approach public health, shifting responsibility from government to private entities. This privatized model has weakened trust in scientific authorities and public health systems. As a result, future responses to pandemics may lack the necessary oversight and coordination needed to protect communities.
+          - generic [ref=e3705]:
+            - generic [ref=e3706]: article
+            - generic [ref=e3708]: ✦
+            - generic [ref=e3709]: 03 Jun 2025
+            - generic [ref=e3710]: ✦
+            - generic [ref=e3711]: Siddhartha Mukherjee
+            - generic [ref=e3712]: ✦
+            - button "1 highlight" [ref=e3713] [cursor=pointer]
+      - generic [ref=e3715]:
+        - link "Tegmark's Mathematical Universe Defeats Most Proofs Of God's Existence" [ref=e3716] [cursor=pointer]:
+          - /url: https://www.astralcodexten.com/p/tegmarks-mathematical-universe-defeats
+        - generic [ref=e3718]:
+          - generic [ref=e3720]: Max Tegmark's mathematical universe hypothesis claims that all possible mathematical objects exist, which challenges traditional proofs for God's existence. This theory suggests that conscious beings can arise from simple mathematical rules, making the universe's complexity a natural outcome rather than a divine creation. The author argues that this perspective provides alternative explanations for key arguments that support the existence of God.
+          - generic [ref=e3721]:
+            - generic [ref=e3722]: article
+            - generic [ref=e3724]: ✦
+            - generic [ref=e3725]: 03 Jun 2025
+            - generic [ref=e3726]: ✦
+            - generic [ref=e3727]: Scott Alexander
+            - generic [ref=e3728]: ✦
+            - button "3 highlights" [ref=e3729] [cursor=pointer]
+      - generic [ref=e3731]:
+        - link "The Fine-Tuning Argument Simply Works" [ref=e3732] [cursor=pointer]:
+          - /url: https://benthams.substack.com/p/the-fine-tuning-argument-simply-works
+        - generic [ref=e3734]:
+          - generic [ref=e3736]: The fine-tuning argument suggests that the universe is precisely set up for life, indicating the possibility of a designer, or God. Critics argue that a multiverse could explain this fine-tuning, but this idea also faces significant challenges, such as the likelihood of creating interesting universes. Ultimately, the fine-tuning observation supports the existence of a God rather than a naturalistic explanation.
+          - generic [ref=e3737]:
+            - generic [ref=e3738]: article
+            - generic [ref=e3740]: ✦
+            - generic [ref=e3741]: 02 Jun 2025
+            - generic [ref=e3742]: ✦
+            - generic [ref=e3743]: Bentham's Bulldog
+            - generic [ref=e3744]: ✦
+            - button "3 highlights" [ref=e3745] [cursor=pointer]
+      - generic [ref=e3746]:
+        - link "My Doubts about the Fine-Tuning Argument" [ref=e3747] [cursor=pointer]:
+          - /url: https://mileskdonahue.substack.com/p/my-doubts-about-the-fine-tuning-argument
+        - generic [ref=e3748]: Miles K. Donahue expresses doubts about the fine-tuning argument for God's existence, highlighting that we lack a complete theory of physics and cannot assume future physics will also show fine-tuning. He questions whether we are in the right position to evaluate the hypotheses of theism versus naturalism, suggesting there may be many unexplored alternatives. Additionally, he challenges the assumption that a fine-tuned universe is more likely under theism than naturalism, citing unresolved issues in divine psychology.
+        - generic [ref=e3749]:
+          - generic [ref=e3750]: article
+          - generic [ref=e3752]: ✦
+          - generic [ref=e3753]: 02 Jun 2025
+          - generic [ref=e3754]: ✦
+          - generic [ref=e3755]: Miles K. Donahue
+      - generic [ref=e3756]:
+        - link "How Do You Capture Your Hunches? - by Steven Johnson" [ref=e3757] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/how-do-you-capture-your-hunches
+        - generic [ref=e3758]: Steven Johnson discusses how to capture and cultivate creative hunches in a new series for subscribers. He emphasizes the importance of storing these fragile ideas since they can easily be forgotten, and suggests various tools for organizing them. Johnson shares his own experience of developing a book idea over several years, illustrating the value of revisiting and evolving initial hunches.
+        - generic [ref=e3759]:
+          - generic [ref=e3760]: article
+          - generic [ref=e3762]: ✦
+          - generic [ref=e3763]: 02 Jun 2025
+          - generic [ref=e3764]: ✦
+          - generic [ref=e3765]: Steven Johnson
+      - generic [ref=e3766]:
+        - 'link "Google’s AI Vision: Make Tech Human Again" [ref=e3767] [cursor=pointer]':
+          - /url: https://every.to/context-window/google-s-ai-vision-make-tech-human-again
+        - generic [ref=e3768]: The company’s hurricane of AI product releases at Google I/O adds up to a clear vision for AGI and for humanity.
+        - generic [ref=e3769]:
+          - generic [ref=e3770]: article
+          - generic [ref=e3772]: ✦
+          - generic [ref=e3773]: 28 May 2025
+          - generic [ref=e3774]: ✦
+          - generic [ref=e3775]: Alex Duffy
+      - generic [ref=e3777]:
+        - link "Most AI value will come from broad automation, not from R&D" [ref=e3778] [cursor=pointer]:
+          - /url: https://epoch.ai/gradient-updates/most-ai-value-will-come-from-broad-automation-not-from-r-d
+        - generic [ref=e3780]:
+          - generic [ref=e3782]: Most of the economic value from AI will come from broad automation across various jobs, rather than just improving research and development (R&D). While R&D is important, it contributes less to economic growth than many believe. Therefore, we should expect AI to first automate routine jobs before transforming areas like science and technology.
+          - generic [ref=e3783]:
+            - generic [ref=e3784]: article
+            - generic [ref=e3786]: ✦
+            - generic [ref=e3787]: 28 May 2025
+            - generic [ref=e3788]: ✦
+            - generic [ref=e3789]: Ege Erdil
+            - generic [ref=e3790]: ✦
+            - button "7 highlights" [ref=e3791] [cursor=pointer]
+      - generic [ref=e3793]:
+        - link "The Definition of Gene Therapy Has Changed" [ref=e3794] [cursor=pointer]:
+          - /url: https://www.nature.com/articles/d41586-021-02736-8
+        - generic [ref=e3796]:
+          - generic [ref=e3798]: Gene therapy is becoming a promising treatment for various diseases, evolving from just delivering healthy genes to also repairing existing ones. New techniques, like using nanoparticles for gene editing, are making therapies safer and more effective. Despite challenges, gene therapy is gaining recognition in modern medicine, with several products already approved for use.
+          - generic [ref=e3799]:
+            - generic [ref=e3800]: article
+            - generic [ref=e3802]: ✦
+            - generic [ref=e3803]: 27 May 2025
+            - generic [ref=e3804]: ✦
+            - generic [ref=e3805]: Esther Landhuis
+            - generic [ref=e3806]: ✦
+            - button "5 highlights" [ref=e3807] [cursor=pointer]
+      - generic [ref=e3808]:
+        - link "I should have loved biology too" [ref=e3809] [cursor=pointer]:
+          - /url: https://nehalslearnings.substack.com/p/i-should-have-loved-biology-too
+        - generic [ref=e3810]: The author, Nehal Udyavar, shares how great writing transformed their view of biology from boredom to fascination. Inspired by books like "The Sixth Extinction," they realized biology is full of exciting stories and discoveries. Now, they aim to make complex biological concepts accessible and inspiring for everyone.
+        - generic [ref=e3811]:
+          - generic [ref=e3812]: article
+          - generic [ref=e3814]: ✦
+          - generic [ref=e3815]: 24 May 2025
+          - generic [ref=e3816]: ✦
+          - generic [ref=e3817]: Nehal Udyavar
+      - generic [ref=e3819]:
+        - link "Cells are very fast and crowded places" [ref=e3820] [cursor=pointer]:
+          - /url: https://www.righto.com/2011/07/cells-are-very-fast-and-crowded-places.html?m=1
+        - generic [ref=e3822]:
+          - generic [ref=e3824]: Cells are incredibly crowded and busy, resembling a packed Times Square rather than an open park. Molecules inside cells move at astonishing speeds, with some traveling as fast as 250 miles per hour. This rapid movement helps them find the right places to interact, making cellular processes efficient and dynamic.
+          - generic [ref=e3825]:
+            - generic [ref=e3826]: article
+            - generic [ref=e3828]: ✦
+            - generic [ref=e3829]: 24 May 2025
+            - generic [ref=e3830]: ✦
+            - button "1 highlight" [ref=e3831] [cursor=pointer]
+      - generic [ref=e3833]:
+        - link "I should have loved biology" [ref=e3834] [cursor=pointer]:
+          - /url: https://jsomers.net/i-should-have-loved-biology/
+        - generic [ref=e3836]:
+          - generic [ref=e3838]: The author reflects on how high school biology felt dull and focused on memorizing terms instead of exploring the wonders of life. He later realized that understanding biology involves seeing cells as complex machines with intricate functions. The text emphasizes the importance of learning through methods and visualization to truly grasp biological concepts.
+          - generic [ref=e3839]:
+            - generic [ref=e3840]: article
+            - generic [ref=e3842]: ✦
+            - generic [ref=e3843]: 24 May 2025
+            - generic [ref=e3844]: ✦
+            - generic [ref=e3845]: James Somers
+            - generic [ref=e3846]: ✦
+            - button "5 highlights" [ref=e3847] [cursor=pointer]
+      - generic [ref=e3848]:
+        - link "Opinion | Come With Me if You Want to Survive an Age of Extinction - The New York Times" [ref=e3849] [cursor=pointer]:
+          - /url: https://www.nytimes.com/2025/04/19/opinion/extinction-technology-culture.html
+        - generic [ref=e3850]: The digital age is creating a "bottleneck" that threatens traditional cultures, art forms, and even human reproduction. As people become distracted by virtual experiences, they may lose touch with real-life connections and skills. To survive this crisis, we must intentionally engage in the things we love and resist the pull of the virtual world.
+        - generic [ref=e3851]:
+          - generic [ref=e3852]: article
+          - generic [ref=e3854]: ✦
+          - generic [ref=e3855]: 24 May 2025
+          - generic [ref=e3856]: ✦
+          - generic [ref=e3857]: Ross Douthat
+      - generic [ref=e3859]:
+        - 'link "Opinion | Jeff Bezos: The hard truth: Americans don’t trust the news …" [ref=e3860] [cursor=pointer]':
+          - /url: https://archive.ph/ZJdo7
+        - generic [ref=e3862]:
+          - generic [ref=e3864]: Jeff Bezos highlights the declining trust in media, noting that journalists are now seen as less credible than Congress. He argues that to regain trust, media outlets should stop endorsing presidential candidates, as it creates a perception of bias. Bezos emphasizes the need for credible and independent journalism to combat misinformation and serve the public effectively.
+          - generic [ref=e3865]:
+            - generic [ref=e3866]: article
+            - generic [ref=e3868]: ✦
+            - generic [ref=e3869]: 24 May 2025
+            - generic [ref=e3870]: ✦
+            - generic [ref=e3871]: Jeff Bezos
+            - generic [ref=e3872]: ✦
+            - button "1 highlight" [ref=e3873] [cursor=pointer]
+      - generic [ref=e3874]:
+        - link "Facebook Offers Life Raft, but Publishers Are Wary - The New York Tim…" [ref=e3875] [cursor=pointer]:
+          - /url: https://archive.ph/1VmIh
+        - generic [ref=e3876]: Facebook has become a major player in publishing, attracting over 1.3 billion users and promoting high-quality content. However, traditional publishers are wary of relying too much on Facebook, fearing it could control their content and audience data. While Facebook aims to collaborate with publishers to enhance mobile experiences, many remain concerned about losing their independence and the future of journalism.
+        - generic [ref=e3877]:
+          - generic [ref=e3878]: article
+          - generic [ref=e3880]: ✦
+          - generic [ref=e3881]: 24 May 2025
+          - generic [ref=e3882]: ✦
+          - generic [ref=e3883]: David Carr
+      - generic [ref=e3885]:
+        - link "Robot Dexterity Still Seems Hard" [ref=e3886] [cursor=pointer]:
+          - /url: https://www.construction-physics.com/p/robot-dexterity-still-seems-hard
+        - generic [ref=e3888]:
+          - generic [ref=e3890]: Humanoid robots are making progress in movement, but they still struggle with dexterity, which is crucial for real-world tasks. While some robots can perform specific actions, they often lack the flexibility and precision that humans have. Overall, creating robots that can manipulate objects like a person remains a significant challenge.
+          - generic [ref=e3891]:
+            - generic [ref=e3892]: rss
+            - generic [ref=e3894]: ✦
+            - generic [ref=e3895]: 24 May 2025
+            - generic [ref=e3896]: ✦
+            - generic [ref=e3897]: Brian Potter
+            - generic [ref=e3898]: ✦
+            - button "1 highlight" [ref=e3899] [cursor=pointer]
+      - generic [ref=e3901]:
+        - link "Sometimes the reason you can’t find people you resonate with is because you misread the ones you meet" [ref=e3902] [cursor=pointer]:
+          - /url: https://www.henrikkarlsson.xyz/p/friends-missed
+        - generic [ref=e3904]:
+          - generic [ref=e3906]: Sometimes, we misread people and fail to see their true potential for friendship. The author reflects on how he overlooked his close friend Torbjörn for years, focusing only on superficial traits. Genuine connections often require us to engage deeply and recognize the character and virtues of others.
+          - generic [ref=e3907]:
+            - generic [ref=e3908]: article
+            - generic [ref=e3910]: ✦
+            - generic [ref=e3911]: 21 May 2025
+            - generic [ref=e3912]: ✦
+            - generic [ref=e3913]: Henrik Karlsson
+            - generic [ref=e3914]: ✦
+            - button "1 highlight" [ref=e3915] [cursor=pointer]
+      - generic [ref=e3916]:
+        - 'link "A history of the Internet, part 1: An ARPA dream takes form" [ref=e3917] [cursor=pointer]':
+          - /url: https://arstechnica.com/gadgets/2025/04/a-history-of-the-internet-part-1-an-arpa-dream-takes-form/?__readwiseLocation=
+        - generic [ref=e3918]: The Internet began as a solution to connect multiple computers in an office, driven by the idea of sharing resources. It evolved with the development of packet switching and the Transmission Control Protocol (TCP), allowing different networks to communicate. Over time, the ARPANET transitioned to TCP/IP, marking a significant step in the growth of the Internet.
+        - generic [ref=e3919]:
+          - generic [ref=e3920]: article
+          - generic [ref=e3922]: ✦
+          - generic [ref=e3923]: 21 May 2025
+          - generic [ref=e3924]: ✦
+          - generic [ref=e3925]: Jeremy Reimer
+      - generic [ref=e3927]:
+        - link "How To Mark A Book" [ref=e3928] [cursor=pointer]:
+          - /url: https://readwise-assets.s3.amazonaws.com/media/wisereads/articles/how-to-mark-a-book/how-to-mark-a-book-1.pdf
+        - generic [ref=e3930]:
+          - generic [ref=e3932]: In this article, Mortimer J. Adler argues that marking up a book is crucial to effective and active reading. He contends that marking a book is not an act of mutilation but of love, and that owning a book means making it a part of oneself. Adler suggests various ways to mark a book, such as underlining, circling, or writing in the margins, and emphasizes the benefits of doing so, including better understanding, memory retention, and engagement in a conversation with the author. Finally, he addresses potential objections to marking books, such as lending them to friends, and suggests solutions.
+          - generic [ref=e3933]:
+            - generic [ref=e3934]: pdf
+            - generic [ref=e3936]: ✦
+            - generic [ref=e3937]: 20 May 2025
+            - generic [ref=e3938]: ✦
+            - generic [ref=e3939]: Mortimer J. Adler
+            - generic [ref=e3940]: ✦
+            - button "7 highlights" [ref=e3941] [cursor=pointer]
+      - generic [ref=e3943]:
+        - link "A Chance to Build" [ref=e3944] [cursor=pointer]:
+          - /url: https://stratechery.com/2024/a-chance-to-build/
+        - generic [ref=e3946]:
+          - generic [ref=e3948]: Silicon Valley's success is closely tied to semiconductors, which are made in Asia due to lower labor costs. As the U.S. dominates software development, China excels in hardware manufacturing, creating a strong economic partnership. However, rising tariffs could threaten this balance and limit opportunities for software companies.
+          - generic [ref=e3949]:
+            - generic [ref=e3950]: article
+            - generic [ref=e3952]: ✦
+            - generic [ref=e3953]: 13 May 2025
+            - generic [ref=e3954]: ✦
+            - generic [ref=e3955]: Ben Thompson
+            - generic [ref=e3956]: ✦
+            - button "8 highlights" [ref=e3957] [cursor=pointer]
+      - generic [ref=e3959]:
+        - link "Idea machines" [ref=e3960] [cursor=pointer]:
+          - /url: https://nadia.xyz/idea-machines
+        - generic [ref=e3962]:
+          - generic [ref=e3964]: Effective altruism (EA) serves as a model for understanding various influential tech subcultures by acting as an "Idea Machine" that transforms ideas into outcomes. Modern idea machines, which are less centralized than traditional foundations, can attract communities and generate agendas to drive change. More idea machines are beneficial because they offer diverse opportunities for people with good ideas to find support beyond just effective altruism.
+          - generic [ref=e3965]:
+            - generic [ref=e3966]: article
+            - generic [ref=e3968]: ✦
+            - generic [ref=e3969]: 12 May 2025
+            - generic [ref=e3970]: ✦
+            - generic [ref=e3971]: Nadia Asparouhova
+            - generic [ref=e3972]: ✦
+            - button "1 highlight" [ref=e3973] [cursor=pointer]
+      - generic [ref=e3974]:
+        - link "Who Wins Nobel Prizes?" [ref=e3975] [cursor=pointer]:
+          - /url: https://www.construction-physics.com/p/who-wins-nobel-prizes
+        - generic [ref=e3976]: The Nobel Prizes have been awarded since 1901 and show trends in scientific progress and research locations. Most prizes are won by individuals from the US, UK, and Germany, affiliated with elite institutions, but many countries and schools also contribute to prize-winning work. Despite the concentration in certain areas, a wide range of places and backgrounds have produced Nobel Prize winners.
+        - generic [ref=e3977]:
+          - generic [ref=e3978]: article
+          - generic [ref=e3980]: ✦
+          - generic [ref=e3981]: 11 May 2025
+          - generic [ref=e3982]: ✦
+          - generic [ref=e3983]: Brian Potter
+      - generic [ref=e3985]:
+        - link "The Human Brain Is a Time Traveler" [ref=e3986] [cursor=pointer]:
+          - /url: https://www.nytimes.com/interactive/2018/11/15/magazine/tech-design-ai-prediction.html
+        - generic [ref=e3988]:
+          - generic [ref=e3990]: The human brain has a unique ability to imagine the past and future, which researchers call cognitive time travel. This skill is linked to our intelligence and helps us learn from experiences and make decisions. Advances in technology and storytelling may enhance this ability, allowing us to better predict future outcomes.
+          - generic [ref=e3991]:
+            - generic [ref=e3992]: article
+            - generic [ref=e3994]: ✦
+            - generic [ref=e3995]: 11 May 2025
+            - generic [ref=e3996]: ✦
+            - generic [ref=e3997]: STEVEN JOHNSON
+            - generic [ref=e3998]: ✦
+            - button "10 highlights" [ref=e3999] [cursor=pointer]
+      - generic [ref=e4001]:
+        - link "How Much Information is in DNA?" [ref=e4002] [cursor=pointer]:
+          - /url: https://press.asimov.com/articles/dna-information
+        - generic [ref=e4004]:
+          - generic [ref=e4006]: DNA contains a large amount of information, with estimates suggesting it could represent around 212 billion different patterns. Most human DNA is nearly identical, allowing for significant compression of genetic data, which can reduce it by over 99 percent with reference genomes. However, the exact amount of useful information in our DNA is still unclear, as much of it may be crucial for functions we do not fully understand.
+          - generic [ref=e4007]:
+            - generic [ref=e4008]: article
+            - generic [ref=e4010]: ✦
+            - generic [ref=e4011]: 09 May 2025
+            - generic [ref=e4012]: ✦
+            - button "1 highlight" [ref=e4013] [cursor=pointer]
+      - generic [ref=e4014]:
+        - link "Healing My Family’s Future" [ref=e4015] [cursor=pointer]:
+          - /url: https://press.asimov.com/articles/family-future
+        - generic [ref=e4016]: The author inherited a mutated CDH1 gene linked to hereditary stomach cancer and faced difficult decisions about genetic testing and surgery. They chose in vitro fertilization with pre-implantation genetic testing to ensure their children would not inherit the mutation. This journey has transformed their understanding of family health and the benefits of genetic knowledge.
+        - generic [ref=e4017]:
+          - generic [ref=e4018]: article
+          - generic [ref=e4020]: ✦
+          - generic [ref=e4021]: 09 May 2025
+      - generic [ref=e4022]:
+        - link "Possibly a serious possibility" [ref=e4023] [cursor=pointer]:
+          - /url: https://kucharski.substack.com/p/possibly-a-serious-possibility?__readwiseLocation=
+        - generic [ref=e4024]: Sherman Kent, a CIA analyst, faced confusion over the phrase "serious possibility" in a report about a potential Soviet invasion of Yugoslavia, which was interpreted differently by his colleagues. This highlighted a larger issue in intelligence communication, where ambiguous language led to misunderstandings about probability. To address this, some governments have since standardized terms to improve clarity and reduce the risk of misinterpretation.
+        - generic [ref=e4025]:
+          - generic [ref=e4026]: article
+          - generic [ref=e4028]: ✦
+          - generic [ref=e4029]: 06 May 2025
+          - generic [ref=e4030]: ✦
+          - generic [ref=e4031]: Adam Kucharski
+      - generic [ref=e4032]:
+        - link "How to Read a Book a Week" [ref=e4033] [cursor=pointer]:
+          - /url: https://archive.ph/pkh6g
+        - generic [ref=e4034]: To read a book a week, focus on understanding the main ideas rather than reading every word. Start by learning about the author, reading the introduction and conclusion, and skimming through chapters to grasp the arguments. Engaging actively with the material helps you retain more information and makes reading faster and more enjoyable.
+        - generic [ref=e4035]:
+          - generic [ref=e4036]: article
+          - generic [ref=e4038]: ✦
+          - generic [ref=e4039]: 06 May 2025
+          - generic [ref=e4040]: ✦
+          - generic [ref=e4041]: Peter Bregman
+      - generic [ref=e4043]:
+        - 'link "Power to the people: How LLMs flip the script on technology diffusion" [ref=e4044] [cursor=pointer]':
+          - /url: https://x.com/karpathy/status/1909308143156240538/?rw_tt_thread=True
+        - generic [ref=e4046]:
+          - generic [ref=e4048]: LLMs like ChatGPT are changing technology use by empowering everyday people instead of just corporations and governments. They offer broad, accessible capabilities at low cost, allowing individuals to do things they couldn't do before. While organizations face challenges in adopting LLMs due to complexity and bureaucracy, individuals are experiencing significant benefits.
+          - generic [ref=e4049]:
+            - generic [ref=e4050]: article
+            - generic [ref=e4052]: ✦
+            - generic [ref=e4053]: 06 May 2025
+            - generic [ref=e4054]: ✦
+            - generic [ref=e4055]: Andrej Karpathy
+            - generic [ref=e4056]: ✦
+            - button "1 highlight" [ref=e4057] [cursor=pointer]
+      - generic [ref=e4059]:
+        - link "Why Techdirt Is Now A Democracy Blog (Whether We Like It Or Not)" [ref=e4060] [cursor=pointer]:
+          - /url: https://www.techdirt.com/2025/03/04/why-techdirt-is-now-a-democracy-blog-whether-we-like-it-or-not/
+        - generic [ref=e4062]:
+          - generic [ref=e4064]: Techdirt has shifted its focus to cover the threats against democracy posed by the consolidation of power in the tech industry. The dismantling of American institutions is seen as a major risk to innovation and civil liberties. As tech leaders pursue personal power, understanding the intersection of technology and democracy becomes critical for the future.
+          - generic [ref=e4065]:
+            - generic [ref=e4066]: article
+            - generic [ref=e4068]: ✦
+            - generic [ref=e4069]: 06 May 2025
+            - generic [ref=e4070]: ✦
+            - generic [ref=e4071]: Mike Masnick
+            - generic [ref=e4072]: ✦
+            - button "1 highlight" [ref=e4073] [cursor=pointer]
+      - generic [ref=e4075]:
+        - 'link "Book Review: Abundance by Ezra Klein and Derek Thompson" [ref=e4076] [cursor=pointer]':
+          - /url: https://blog.jovono.com/p/book-review-abundance-by-ezra-klein
+        - generic [ref=e4078]:
+          - generic [ref=e4080]: The book "Abundance" by Ezra Klein and Derek Thompson critiques progressive policies that prioritize funding without ensuring results, suggesting a shift towards a mindset of delivering tangible outcomes. It argues that true abundance requires addressing broader economic issues, not just regulatory changes, to create opportunities for everyone. However, the authors seem hesitant to fully break from traditional progressive views, limiting their proposed solutions.
+          - generic [ref=e4081]:
+            - generic [ref=e4082]: article
+            - generic [ref=e4084]: ✦
+            - generic [ref=e4085]: 04 May 2025
+            - generic [ref=e4086]: ✦
+            - generic [ref=e4087]: Evan Zimmerman
+            - generic [ref=e4088]: ✦
+            - button "3 highlights" [ref=e4089] [cursor=pointer]
+      - generic [ref=e4091]:
+        - link "Bluesky’s Quest to Build Nontoxic Social Media | The New Yorker" [ref=e4092] [cursor=pointer]:
+          - /url: https://www.newyorker.com/magazine/2025/04/14/blueskys-quest-to-build-nontoxic-social-media?__readwiseLocation=
+        - generic [ref=e4094]:
+          - generic [ref=e4096]: Bluesky, launched in early 2023, has quickly grown to over ten million users, attracting those seeking a healthier social media experience away from Twitter. It operates on an open-source protocol, allowing users to customize their feeds and moderation rules. CEO Jay Graber aims to create a decentralized platform that remains resilient against corporate control, emphasizing user freedom and adaptability.
+          - generic [ref=e4097]:
+            - generic [ref=e4098]: article
+            - generic [ref=e4100]: ✦
+            - generic [ref=e4101]: 01 May 2025
+            - generic [ref=e4102]: ✦
+            - generic [ref=e4103]: Kyle Chayka
+            - generic [ref=e4104]: ✦
+            - button "2 highlights" [ref=e4105] [cursor=pointer]
+      - generic [ref=e4106]:
+        - link "How to Unleash the Potential of New Energy Technology" [ref=e4107] [cursor=pointer]:
+          - /url: https://archive.ph/vPyGD
+        - generic [ref=e4108]: Hydrogen is emerging as a key solution to combat climate change, with many countries investing in green hydrogen production to reduce carbon emissions. This clean fuel can be produced from renewable energy sources and has potential applications in various industries. However, challenges such as infrastructure and regulatory needs must be addressed to scale up its use effectively.
+        - generic [ref=e4109]:
+          - generic [ref=e4110]: article
+          - generic [ref=e4112]: ✦
+          - generic [ref=e4113]: 01 May 2025
+          - generic [ref=e4114]: ✦
+          - generic [ref=e4115]: S. Julio Friedmann
+      - generic [ref=e4117]:
+        - link "Is Steve Ballmer the Most Underrated CEO of the 21st Century?" [ref=e4118] [cursor=pointer]:
+          - /url: https://blog.jovono.com/p/ballmer-microsoft-underrated
+        - generic [ref=e4120]:
+          - generic [ref=e4122]: Steve Ballmer, former CEO of Microsoft, is often criticized for his leadership, particularly during a time when the company's stock fell and it struggled with product innovation. Despite this, he made some smart business decisions that laid the groundwork for future success, such as embracing cloud computing and supporting diverse revenue streams. While not seen as a visionary, Ballmer's operational skills and initiatives helped shape the company, leading some to argue that he is the most underrated CEO of the 21st century.
+          - generic [ref=e4123]:
+            - generic [ref=e4124]: article
+            - generic [ref=e4126]: ✦
+            - generic [ref=e4127]: 01 May 2025
+            - generic [ref=e4128]: ✦
+            - generic [ref=e4129]: Evan Zimmerman
+            - generic [ref=e4130]: ✦
+            - button "1 highlight" [ref=e4131] [cursor=pointer]
+      - generic [ref=e4132]:
+        - link "Three Simple Principles of Trade Policy" [ref=e4133] [cursor=pointer]:
+          - /url: https://marginalrevolution.com/marginalrevolution/2025/02/three-simple-principles-of-trade-policy.html
+        - generic [ref=e4134]: Alex Tabarrok discusses three key principles of trade policy. First, taxes on imports also affect exports, showing that both are interconnected. Second, businesses consume more imports than households, highlighting trade-offs in job creation across different sectors. Lastly, trade imbalances are linked to capital flows, meaning addressing trade deficits requires balancing domestic savings and investment.
+        - generic [ref=e4135]:
+          - generic [ref=e4136]: article
+          - generic [ref=e4138]: ✦
+          - generic [ref=e4139]: 01 May 2025
+          - generic [ref=e4140]: ✦
+          - generic [ref=e4141]: Alex Tabarrok
+      - generic [ref=e4142]:
+        - link "Why can’t stinking rich Ivies cope with losing a few hundred million?" [ref=e4143] [cursor=pointer]:
+          - /url: https://archive.ph/GQwYI
+        - generic [ref=e4144]: Wealthy universities like Columbia struggle to access their large endowments when facing financial challenges. Federal funding is crucial for their budgets, and new government rules could worsen their financial situations. Despite their billions in endowments, many of these funds are tied up and cannot be easily used to cover unexpected losses.
+        - generic [ref=e4145]:
+          - generic [ref=e4146]: article
+          - generic [ref=e4148]: ✦
+          - generic [ref=e4149]: 30 Apr 2025
+      - generic [ref=e4150]:
+        - link "Publishers and the Smiling Curve" [ref=e4151] [cursor=pointer]:
+          - /url: https://stratechery.com/2014/publishers-smiling-curve/
+        - generic [ref=e4152]: The "Smiling Curve" concept illustrates that in industries like publishing, most value goes to content aggregators like Facebook and Google, while traditional publishers struggle in the middle. As readers increasingly consume news through these platforms, publishers lose their unique value and face financial challenges. To thrive, successful writers and publications must focus on their strengths and adapt, similar to specialized companies that excel in niche markets.
+        - generic [ref=e4153]:
+          - generic [ref=e4154]: article
+          - generic [ref=e4156]: ✦
+          - generic [ref=e4157]: 29 Apr 2025
+          - generic [ref=e4158]: ✦
+          - generic [ref=e4159]: Stratechery by Ben Thompson
+      - generic [ref=e4160]:
+        - link "A Tale of Two Repressors" [ref=e4161] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/296859141
+        - generic [ref=e4162]: The lac repressor and λ repressor are key proteins that significantly advanced our understanding of gene regulation in bacteria. They function by binding to specific DNA sites, blocking transcription and allowing coordinated control of gene expression. Their structures and interactions illustrate how proteins regulate metabolic processes and maintain cellular functions.
+        - generic [ref=e4163]:
+          - generic [ref=e4164]: pdf
+          - generic [ref=e4166]: ✦
+          - generic [ref=e4167]: 29 Apr 2025
+          - generic [ref=e4168]: ✦
+          - generic [ref=e4169]: Mitchell Lewis
+      - generic [ref=e4170]:
+        - link "The Long Way to a Small, Angry Planet" [ref=e4171] [cursor=pointer]:
+          - /url: private://read/01jt166m55hz7mezh69raw8b7f
+        - generic [ref=e4172]: Ashby is busy with work and can't show Rosemary the ropes right away, but he plans to help her once the job is done. Sissix feels the need to explain things to her crewmates while Kizzy confidently prepares for a dangerous task. Ashby, concerned about the situation, realizes his crew is facing challenges and wonders what has happened to their missing teammate, Jenks.
+        - generic [ref=e4173]:
+          - generic [ref=e4174]: book
+          - generic [ref=e4176]: ✦
+          - generic [ref=e4177]: 29 Apr 2025
+          - generic [ref=e4178]: ✦
+          - generic [ref=e4179]: Becky Chambers
+      - generic [ref=e4181]:
+        - link "Life is Short" [ref=e4182] [cursor=pointer]:
+          - /url: http://www.paulgraham.com/vb.html
+        - generic [ref=e4184]:
+          - generic [ref=e4186]: Life is short, and having children made the author realize how limited our time really is. He emphasizes the importance of avoiding pointless activities and focusing on what truly matters. To make the most of our time, we should not wait to pursue meaningful experiences and should savor every moment we have.
+          - generic [ref=e4187]:
+            - generic [ref=e4188]: article
+            - generic [ref=e4190]: ✦
+            - generic [ref=e4191]: 29 Apr 2025
+            - generic [ref=e4192]: ✦
+            - generic [ref=e4193]: Paul Graham
+            - generic [ref=e4194]: ✦
+            - button "1 highlight" [ref=e4195] [cursor=pointer]
+      - generic [ref=e4196]:
+        - link "The Elite College Students Who Can’t Read Books" [ref=e4197] [cursor=pointer]:
+          - /url: https://www.theatlantic.com/magazine/archive/2024/11/the-elite-college-students-who-cant-read-books/679945/
+        - generic [ref=e4198]: Many elite college students struggle to read long books because their high schools have shifted to shorter texts and excerpts. This change has left them unprepared for the heavy reading loads in college courses. As a result, professors are lowering their expectations and assigning less reading.
+        - generic [ref=e4199]:
+          - generic [ref=e4200]: article
+          - generic [ref=e4202]: ✦
+          - generic [ref=e4203]: 29 Apr 2025
+          - generic [ref=e4204]: ✦
+          - generic [ref=e4205]: Rose Horowitch
+      - generic [ref=e4206]:
+        - link "Realtime Editing of Ordered Sequences" [ref=e4207] [cursor=pointer]:
+          - /url: https://www.figma.com/blog/realtime-editing-of-ordered-sequences/
+        - generic [ref=e4208]: Figma faced challenges with real-time editing of ordered sequences when adding multiplayer features. Instead of using the complex Operational Transformation method, they implemented fractional indexing to simplify reordering and maintain consistency. This approach makes editing easier and allows for faster development of new features.
+        - generic [ref=e4209]:
+          - generic [ref=e4210]: article
+          - generic [ref=e4212]: ✦
+          - generic [ref=e4213]: 28 Apr 2025
+          - generic [ref=e4214]: ✦
+          - generic [ref=e4215]: Figma
+      - generic [ref=e4217]:
+        - link "A Tale of Two Repressors" [ref=e4218] [cursor=pointer]:
+          - /url: https://www.sciencedirect.com/science/article/abs/pii/S0022283611001689
+        - generic [ref=e4220]:
+          - generic [ref=e4222]: The discovery of the operon by Monod and Jacob revolutionized gene regulation in molecular biology. They identified how repressors control enzyme production in bacteria, particularly in lactose metabolism and phage development. Their work established a model for how genes are turned on and off in response to environmental signals.
+          - generic [ref=e4223]:
+            - generic [ref=e4224]: article
+            - generic [ref=e4226]: ✦
+            - generic [ref=e4227]: 24 Apr 2025
+            - generic [ref=e4228]: ✦
+            - generic [ref=e4229]: Mitchell Lewis
+            - generic [ref=e4230]: ✦
+            - button "5 highlights" [ref=e4231] [cursor=pointer]
+      - generic [ref=e4232]:
+        - link "The three kinds of non-fiction books" [ref=e4233] [cursor=pointer]:
+          - /url: https://commoncog.com/the-3-kinds-of-non-fiction-book/#branchbooks
+        - generic [ref=e4234]: "There are three types of non-fiction books: narrative, tree, and branch. Narrative books tell stories, tree books provide a framework of ideas, and branch books focus on a single idea with examples. Understanding these categories helps readers choose books wisely and read them effectively."
+        - generic [ref=e4235]:
+          - generic [ref=e4236]: article
+          - generic [ref=e4238]: ✦
+          - generic [ref=e4239]: 21 Apr 2025
+          - generic [ref=e4240]: ✦
+          - generic [ref=e4241]: Commoncog
+      - generic [ref=e4243]:
+        - 'link "The Ultimate Burnout Guide: Symptoms, Causes, and Prevention" [ref=e4244] [cursor=pointer]':
+          - /url: https://commoncog.com/g/burnout/#what-is-the-opposite-of-burnout
+        - generic [ref=e4246]:
+          - generic [ref=e4248]: Burnout is a psychological state caused by prolonged job stress, characterized by exhaustion, cynicism, and feelings of ineffectiveness. It is influenced by social and organizational factors, not just individual experiences. Preventing burnout requires a supportive work environment with adequate resources to balance high job demands.
+          - generic [ref=e4249]:
+            - generic [ref=e4250]: article
+            - generic [ref=e4252]: ✦
+            - generic [ref=e4253]: 21 Apr 2025
+            - generic [ref=e4254]: ✦
+            - generic [ref=e4255]: Commoncog
+            - generic [ref=e4256]: ✦
+            - button "13 highlights" [ref=e4257] [cursor=pointer]
+      - generic [ref=e4258]:
+        - link "Behind the Scenes of My Interview Research Process — Andy Matuschak Crashes My Crib!" [ref=e4259] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=QTI69kKeaC4
+        - generic [ref=e4260]: Joseph Noel Walker shares his interview research process with Andy Matuschak. He emphasizes the importance of preparing questions and taking notes to fill gaps in understanding. Walker also discusses how to create prompts that help in learning and retaining information effectively.
+        - generic [ref=e4261]:
+          - generic [ref=e4262]: video
+          - generic [ref=e4264]: ✦
+          - generic [ref=e4265]: 21 Apr 2025
+          - generic [ref=e4266]: ✦
+          - generic [ref=e4267]: Joseph Noel Walker
+      - generic [ref=e4268]:
+        - 'link "Tech things: OpenAI buys Windsurf, Google retains its lead, and where the hell is Apple?" [ref=e4269] [cursor=pointer]':
+          - /url: https://theahura.substack.com/p/tech-things-openai-buys-windsurf
+        - generic [ref=e4270]: OpenAI's acquisition of Windsurf raises questions about their strategy, especially given their financial constraints and competition from Google. The AI market is crowded, and companies like OpenAI need access to data and computing power to succeed. Google's dominance in AI tools and their continued innovation put pressure on other players, making it challenging for them to compete.
+        - generic [ref=e4271]:
+          - generic [ref=e4272]: article
+          - generic [ref=e4274]: ✦
+          - generic [ref=e4275]: 20 Apr 2025
+          - generic [ref=e4276]: ✦
+          - generic [ref=e4277]: theahura
+      - generic [ref=e4279]:
+        - link "Trade, Tariffs, and Tech" [ref=e4280] [cursor=pointer]:
+          - /url: https://stratechery.com/2025/trade-tariffs-and-tech/
+        - generic [ref=e4282]:
+          - generic [ref=e4284]: The complexity of global supply chains is crucial to modern life, and disruptions can lead to significant economic consequences, as seen during COVID and recent tariff actions. The U.S. has relied on China's manufacturing and trade surplus, which has affected its fiscal stability and trade balance. Efforts to restructure these economic relationships, like tariffs, could have drastic impacts on both U.S. companies and the global economy.
+          - generic [ref=e4285]:
+            - generic [ref=e4286]: article
+            - generic [ref=e4288]: ✦
+            - generic [ref=e4289]: 17 Apr 2025
+            - generic [ref=e4290]: ✦
+            - generic [ref=e4291]: Ben Thompson
+            - generic [ref=e4292]: ✦
+            - button "2 highlights" [ref=e4293] [cursor=pointer]
+      - generic [ref=e4294]:
+        - link "America Underestimates the Difficulty of Bringing Manufacturing Back" [ref=e4295] [cursor=pointer]:
+          - /url: https://x.com/Molson_Hart/status/1908940952908996984/?rw_tt_thread=True
+        - generic [ref=e4296]: Bringing manufacturing back to the U.S. is more complicated than just imposing tariffs, which may actually harm the economy. The high costs of labor, lack of infrastructure, and uncertainty around tariffs make it difficult for American companies to compete with countries like China. To succeed, the U.S. needs to create better conditions for manufacturing rather than rushing into poorly structured policies.
+        - generic [ref=e4297]:
+          - generic [ref=e4298]: tweet
+          - generic [ref=e4300]: ✦
+          - generic [ref=e4301]: 17 Apr 2025
+          - generic [ref=e4302]: ✦
+          - generic [ref=e4303]: molson 🧠⚙️
+      - generic [ref=e4304]:
+        - 'link "On the Phenomenon of Bullshit Jobs: A Work Rant" [ref=e4305] [cursor=pointer]':
+          - /url: https://davidgraeber.org/articles/on-the-phenomenon-of-bullshit-jobs-a-work-rant/
+        - generic [ref=e4306]: Technology has advanced, but we work more instead of less. Many people have jobs they feel are pointless and unnecessary. Society values certain jobs over others, creating resentment and inequality in the workforce.
+        - generic [ref=e4307]:
+          - generic [ref=e4308]: article
+          - generic [ref=e4310]: ✦
+          - generic [ref=e4311]: 16 Apr 2025
+      - generic [ref=e4313]:
+        - link "The Nonwriter's Guide to Writing A Lot" [ref=e4314] [cursor=pointer]:
+          - /url: https://jimhorton.substack.com/p/the-nonwriters-guide-to-writing-a?utm_source=multiple-personal-recommendations-email&utm_medium=email&triedRedirect=true
+        - generic [ref=e4316]:
+          - generic [ref=e4318]: James Horton’s guide emphasizes that many people struggle to write because they impose unrealistic expectations on themselves. To overcome this, he suggests writing freely and frequently, without worrying about perfection or importance. By shifting the focus to enjoyable and exploratory writing, individuals can build a sustainable writing habit.
+          - generic [ref=e4319]:
+            - generic [ref=e4320]: article
+            - generic [ref=e4322]: ✦
+            - generic [ref=e4323]: 15 Apr 2025
+            - generic [ref=e4324]: ✦
+            - generic [ref=e4325]: James Horton
+            - generic [ref=e4326]: ✦
+            - generic [ref=e4327]: PhD.
+            - generic [ref=e4328]: ✦
+            - button "4 highlights" [ref=e4329] [cursor=pointer]
+      - generic [ref=e4330]:
+        - link "The Disapproval of the Crowd by Alex Karp" [ref=e4331] [cursor=pointer]:
+          - /url: https://www.founderstribune.org/p/the-disapproval-of-the-crowd-by-alex-karp
+        - generic [ref=e4332]: Alex Karp argues that modern culture's emphasis on likability and conformity stifles creativity and innovation. He reflects on how the fear of disapproval can hinder individuals and organizations from pursuing new ideas. True progress requires resilience and a willingness to challenge established norms, much like artists and founders who break away from the crowd.
+        - generic [ref=e4333]:
+          - generic [ref=e4334]: article
+          - generic [ref=e4336]: ✦
+          - generic [ref=e4337]: 12 Apr 2025
+          - generic [ref=e4338]: ✦
+          - generic [ref=e4339]: The Founders' Tribune
+      - generic [ref=e4341]:
+        - link "Condensing The Iceberg" [ref=e4342] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/condensing-the-iceberg
+        - generic [ref=e4344]:
+          - generic [ref=e4346]: The concept of the "attention economy" highlights how information competes for our focus, as described by Herbert Simon. Steven Johnson reflects on how modern tools, like smartphones and social media, help condense vast amounts of information into digestible bits, but also challenge our ability to engage with longer texts. Ultimately, the skill of condensing information is crucial for both writers and consumers in our information-rich world.
+          - generic [ref=e4347]:
+            - generic [ref=e4348]: rss
+            - generic [ref=e4350]: ✦
+            - generic [ref=e4351]: 12 Apr 2025
+            - generic [ref=e4352]: ✦
+            - generic [ref=e4353]: Steven Johnson
+            - generic [ref=e4354]: ✦
+            - button "1 highlight" [ref=e4355] [cursor=pointer]
+      - generic [ref=e4357]:
+        - link "The secret architecture of great essays" [ref=e4358] [cursor=pointer]:
+          - /url: https://www.michaeldean.site/p/the-secret-architecture-of-great?r=1gvqcg&utm_medium=ios&triedRedirect=true
+        - generic [ref=e4360]:
+          - generic [ref=e4362]: Michael Dean reflects on his experience in architecture school under the tough professor Tootzi, who taught him that great work speaks for itself and emphasized the importance of understanding fundamental patterns. Dean connects these lessons to essay writing, arguing that there is a hidden architecture behind great essays that writers should learn to master. He aims to create a comprehensive guide to these patterns, helping writers improve their craft and connect with readers effectively.
+          - generic [ref=e4363]:
+            - generic [ref=e4364]: article
+            - generic [ref=e4366]: ✦
+            - generic [ref=e4367]: 10 Apr 2025
+            - generic [ref=e4368]: ✦
+            - generic [ref=e4369]: Michael Dean
+            - generic [ref=e4370]: ✦
+            - button "3 highlights" [ref=e4371] [cursor=pointer]
+      - generic [ref=e4373]:
+        - link "Progress, stagnation, and flying cars" [ref=e4374] [cursor=pointer]:
+          - /url: https://blog.rootsofprogress.org/where-is-my-flying-car
+        - generic [ref=e4376]:
+          - generic [ref=e4378]: The book "Where Is My Flying Car?" explores the reasons we don't have flying cars yet, concluding that cultural and political barriers, rather than technological ones, are to blame. It highlights the untapped potential of technologies like nanotech and nuclear power, suggesting we could have made significant advancements if work had continued. The author advocates for a renewed vision of progress, emphasizing the need to embrace bold technological possibilities for a better future.
+          - generic [ref=e4379]:
+            - generic [ref=e4380]: article
+            - generic [ref=e4382]: ✦
+            - generic [ref=e4383]: 05 Apr 2025
+            - generic [ref=e4384]: ✦
+            - generic [ref=e4385]: Jason Crawford
+            - generic [ref=e4386]: ✦
+            - button "1 highlight" [ref=e4387] [cursor=pointer]
+      - generic [ref=e4389]:
+        - link "Ways Of Flourishing" [ref=e4390] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/ways-of-flourishing?r=1gvqcg&utm_medium=ios&triedRedirect=true
+        - generic [ref=e4392]:
+          - generic [ref=e4394]: In his speech for the Pioneer Award, Steven Johnson discusses the dramatic increase in human life expectancy over the past century, which has doubled from around 35 years to over 70 years. He emphasizes that this increase not only allows for longer lives but also fosters deeper relationships and a broader perspective on the future. Johnson warns that rapid advancements in AI and medicine may further change how we age and live, posing new challenges for human flourishing.
+          - generic [ref=e4395]:
+            - generic [ref=e4396]: article
+            - generic [ref=e4398]: ✦
+            - generic [ref=e4399]: 03 Apr 2025
+            - generic [ref=e4400]: ✦
+            - generic [ref=e4401]: Steven Johnson
+            - generic [ref=e4402]: ✦
+            - button "4 highlights" [ref=e4403] [cursor=pointer]
+      - generic [ref=e4405]:
+        - link "Breakfast for Eight Billion" [ref=e4406] [cursor=pointer]:
+          - /url: https://www.thenewatlantis.com/publications/how-agriculture-system-works
+        - generic [ref=e4408]:
+          - generic [ref=e4410]: Modern agriculture, known as Farming 2.0, has greatly increased food production through advancements in fertilization, irrigation, and genetics. Despite producing enough food for everyone, hunger persists mainly due to income inequality and poor distribution. The challenge now is to sustain food production while protecting the environment for future generations.
+          - generic [ref=e4411]:
+            - generic [ref=e4412]: article
+            - generic [ref=e4414]: ✦
+            - generic [ref=e4415]: 03 Apr 2025
+            - generic [ref=e4416]: ✦
+            - generic [ref=e4417]: Charles C. Mann
+            - generic [ref=e4418]: ✦
+            - button "14 highlights" [ref=e4419] [cursor=pointer]
+      - generic [ref=e4421]:
+        - 'link "Against the Trap of Efficiency: The Counterintuitive Antidote to the Time-Anxiety That Haunts and Hampers Our Search for Meaning" [ref=e4422] [cursor=pointer]':
+          - /url: https://www.themarginalian.org/2021/12/20/four-thousand-weeks-oliver-burkeman/
+        - generic [ref=e4424]:
+          - generic [ref=e4426]: Maria Popova discusses Oliver Burkeman's ideas about time and life's limitations in his book, *Four Thousand Weeks*. Burkeman argues that instead of trying to control our time, we should accept our limitations to find more meaning and joy in life. By confronting the reality of our finite existence, we can focus on what truly matters and live more fulfilling lives.
+          - generic [ref=e4427]:
+            - generic [ref=e4428]: article
+            - generic [ref=e4430]: ✦
+            - generic [ref=e4431]: 03 Apr 2025
+            - generic [ref=e4432]: ✦
+            - generic [ref=e4433]: Maria Popova
+            - generic [ref=e4434]: ✦
+            - button "4 highlights" [ref=e4435] [cursor=pointer]
+      - generic [ref=e4436]:
+        - link "Trump's war on science" [ref=e4437] [cursor=pointer]:
+          - /url: https://www.slowboring.com/p/trumps-war-on-science
+        - generic [ref=e4438]: A multi-directional assault on the foundations of American research
+        - generic [ref=e4439]:
+          - generic [ref=e4440]: article
+          - generic [ref=e4442]: ✦
+          - generic [ref=e4443]: 02 Apr 2025
+          - generic [ref=e4444]: ✦
+          - generic [ref=e4445]: Matthew Yglesias
+      - generic [ref=e4446]:
+        - link "Things Are Bad At Tesla. They’re About To Get Much Worse." [ref=e4447] [cursor=pointer]:
+          - /url: https://www.forbes.com/sites/alanohnsman/2025/03/27/things-are-bad-at-tesla-theyre-about-to-get-much-worse/?__readwiseLocation=
+        - generic [ref=e4448]: Tesla is facing significant declines in sales across major markets, including a 31% drop in California and a 29% fall in China. Competitors, especially Chinese companies like BYD, are rapidly gaining ground by offering better technology and lower prices. As Tesla's brand reputation worsens and its stock plummets, the company's future looks increasingly uncertain.
+        - generic [ref=e4449]:
+          - generic [ref=e4450]: article
+          - generic [ref=e4452]: ✦
+          - generic [ref=e4453]: 01 Apr 2025
+          - generic [ref=e4454]: ✦
+          - generic [ref=e4455]: Alan Ohnsman
+      - generic [ref=e4457]:
+        - link "Mitochondria Are Alive" [ref=e4458] [cursor=pointer]:
+          - /url: https://press.asimov.com/articles/mitochondria
+        - generic [ref=e4460]:
+          - generic [ref=e4462]: Mitochondria, once thought to be simple organelles, are actually living entities that play vital roles in cellular functions. They have their own DNA, reproduce independently, and interact with their environment, making them essential for energy production and cellular health. Understanding mitochondria as living forms could lead to advances in treating diseases and improving human health.
+          - generic [ref=e4463]:
+            - generic [ref=e4464]: article
+            - generic [ref=e4466]: ✦
+            - generic [ref=e4467]: 28 Mar 2025
+            - generic [ref=e4468]: ✦
+            - button "1 highlight" [ref=e4469] [cursor=pointer]
+      - generic [ref=e4470]:
+        - link "America Is Watching the Rise of a Dual State" [ref=e4471] [cursor=pointer]:
+          - /url: https://www.theatlantic.com/magazine/archive/2025/05/trump-executive-order-lawlessness-constitutional-crisis/682112/?__readwiseLocation=
+        - generic [ref=e4472]: The article discusses Ernst Fraenkel's concept of a "dual state," where a government maintains normal laws for some citizens while creating a parallel zone of lawlessness for others. It warns that similar tactics are emerging in the U.S., particularly under the Trump administration, which could lead to targeted suppression of dissent. The piece emphasizes that while many may remain unaffected, the dangers of such a system can ultimately threaten everyone’s rights.
+        - generic [ref=e4473]:
+          - generic [ref=e4474]: article
+          - generic [ref=e4476]: ✦
+          - generic [ref=e4477]: 24 Mar 2025
+          - generic [ref=e4478]: ✦
+          - generic [ref=e4479]: Aziz Huq
+      - generic [ref=e4481]:
+        - link "This Habit Will Outlast Every Notes App" [ref=e4482] [cursor=pointer]:
+          - /url: https://greg210.substack.com/p/this-habit-will-outlast-every-notes
+        - generic [ref=e4484]:
+          - generic [ref=e4486]: You don’t need new apps to enhance your creativity; you just need to engage more deeply with what you already have. Writing helps clarify your thoughts and can lead to greater understanding and growth. Start small by setting a timer for two minutes to write one idea, and see how it transforms your thinking.
+          - generic [ref=e4487]:
+            - generic [ref=e4488]: article
+            - generic [ref=e4490]: ✦
+            - generic [ref=e4491]: 16 Mar 2025
+            - generic [ref=e4492]: ✦
+            - generic [ref=e4493]: Greg Wheeler
+            - generic [ref=e4494]: ✦
+            - button "1 highlight" [ref=e4495] [cursor=pointer]
+      - generic [ref=e4496]:
+        - link "AI Antibodies? Really?" [ref=e4497] [cursor=pointer]:
+          - /url: https://www.science.org/content/blog-post/ai-antibodies-really?__readwiseLocation=
+        - generic [ref=e4498]: AI techniques are being used for antibody design, but progress is often exaggerated by companies. Many new antibodies are simply improved versions of existing therapies, not groundbreaking new drugs. True innovation in this field is still years away.
+        - generic [ref=e4499]:
+          - generic [ref=e4500]: article
+          - generic [ref=e4502]: ✦
+          - generic [ref=e4503]: 14 Mar 2025
+          - generic [ref=e4504]: ✦
+          - generic [ref=e4505]: Derek Lowe
+      - generic [ref=e4507]:
+        - link "China’s Hidden Tech Revolution" [ref=e4508] [cursor=pointer]:
+          - /url: https://www.foreignaffairs.com/china/chinas-hidden-tech-revolution-how-beijing-threatens-us-dominance-dan-wang
+        - generic [ref=e4510]:
+          - generic [ref=e4512]: Chinese firms have advanced in technology by improving their manufacturing capabilities, allowing them to compete effectively with Western companies. Their success is rooted in a strong industrial ecosystem and government support, rather than just copying Western innovations. As a result, China is emerging as a major tech power, challenging the U.S. in various strategic industries.
+          - generic [ref=e4513]:
+            - generic [ref=e4514]: article
+            - generic [ref=e4516]: ✦
+            - generic [ref=e4517]: 11 Mar 2025
+            - generic [ref=e4518]: ✦
+            - generic [ref=e4519]: Dan Wang
+            - generic [ref=e4520]: ✦
+            - button "5 highlights" [ref=e4521] [cursor=pointer]
+      - generic [ref=e4522]:
+        - link "How To Decide" [ref=e4523] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/how-to-decide
+        - generic [ref=e4524]: On September 26, 2009, ordinary citizens in 38 countries gathered to discuss climate change in an event called World Wide Views on Global Warming. This initiative aimed to bridge the gap between policymakers and citizens by allowing them to deliberate on important environmental questions. The author suggests that similar global discussions could help address complex issues, like the ethics of immortality, by gathering diverse opinions and developing guidelines for the future.
+        - generic [ref=e4525]:
+          - generic [ref=e4526]: article
+          - generic [ref=e4528]: ✦
+          - generic [ref=e4529]: 07 Mar 2025
+          - generic [ref=e4530]: ✦
+          - generic [ref=e4531]: Steven Johnson
+      - generic [ref=e4532]:
+        - link "Playing God" [ref=e4533] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/playing-god
+        - generic [ref=e4534]: The article discusses the implications of radical life extension and the potential for increased population growth if death is cured. However, the author argues that population changes are likely to be gradual rather than explosive, and that society has historically adapted to demographic shifts. The author emphasizes the need for careful deliberation and ethical considerations as we explore these scientific advancements.
+        - generic [ref=e4535]:
+          - generic [ref=e4536]: article
+          - generic [ref=e4538]: ✦
+          - generic [ref=e4539]: 07 Mar 2025
+          - generic [ref=e4540]: ✦
+          - generic [ref=e4541]: Steven Johnson
+      - generic [ref=e4543]:
+        - link "The Backlash" [ref=e4544] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/the-backlash
+        - generic [ref=e4546]:
+          - generic [ref=e4548]: The pursuit of anti-aging treatments, like NAD boosters, is gaining attention as scientists explore ways to extend human life. However, there are ethical concerns about the impact of these developments on society, especially regarding inequality and population growth. Critics worry that focusing on longevity for the wealthy could worsen existing global issues, such as climate change and resource distribution.
+          - generic [ref=e4549]:
+            - generic [ref=e4550]: article
+            - generic [ref=e4552]: ✦
+            - generic [ref=e4553]: 07 Mar 2025
+            - generic [ref=e4554]: ✦
+            - generic [ref=e4555]: Steven Johnson
+            - generic [ref=e4556]: ✦
+            - button "2 highlights" [ref=e4557] [cursor=pointer]
+      - generic [ref=e4558]:
+        - link "Elon Musk and spiky intelligence" [ref=e4559] [cursor=pointer]:
+          - /url: https://www.natesilver.net/p/elon-musk-and-spiky-intelligence
+        - generic [ref=e4560]: Elon Musk is highly intelligent in some areas but lacks in others, a concept known as "spiky intelligence." While he demonstrates brilliance in his achievements, he also exhibits poor judgment and social skills. It's important to recognize that being smart does not excuse unwise actions or decisions.
+        - generic [ref=e4561]:
+          - generic [ref=e4562]: article
+          - generic [ref=e4564]: ✦
+          - generic [ref=e4565]: 07 Mar 2025
+          - generic [ref=e4566]: ✦
+          - generic [ref=e4567]: Nate Silver
+      - generic [ref=e4569]:
+        - link "Biological Age" [ref=e4570] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/biological-age
+        - generic [ref=e4572]:
+          - generic [ref=e4574]: The text discusses the concept of biological age and its connection to aging and longevity research. It highlights the role of epigenetics in how our cells express genes and how this process can lead to aging when the repair systems in our body fail. New technologies, like the Index saliva test, aim to measure biological age and potentially slow down the aging process.
+          - generic [ref=e4575]:
+            - generic [ref=e4576]: article
+            - generic [ref=e4578]: ✦
+            - generic [ref=e4579]: 05 Mar 2025
+            - generic [ref=e4580]: ✦
+            - generic [ref=e4581]: Steven Johnson
+            - generic [ref=e4582]: ✦
+            - button "3 highlights" [ref=e4583] [cursor=pointer]
+      - generic [ref=e4585]:
+        - link "Birth Of A Science" [ref=e4586] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/birth-of-a-science
+        - generic [ref=e4588]:
+          - generic [ref=e4590]: The average global life expectancy has doubled since 1920, primarily due to fewer children dying young. Recent studies suggest that aging could be treated like a disease, with specific genes influencing lifespan. This new understanding opens the possibility for humans to live significantly longer lives in the future.
+          - generic [ref=e4591]:
+            - generic [ref=e4592]: article
+            - generic [ref=e4594]: ✦
+            - generic [ref=e4595]: 05 Mar 2025
+            - generic [ref=e4596]: ✦
+            - generic [ref=e4597]: Steven Johnson
+            - generic [ref=e4598]: ✦
+            - button "4 highlights" [ref=e4599] [cursor=pointer]
+      - generic [ref=e4600]:
+        - link "The Calment Boundary" [ref=e4601] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/the-calment-boundary
+        - generic [ref=e4602]: The story of Jeanne Calment and Andre-Francois Raffray highlights the unexpected outcomes of long life, as Calment lived to be 122 years old, outlasting Raffray, who paid her for an apartment he never got to occupy. This tale serves as a cautionary reminder that if human lifespans extend significantly, society must prepare for the potential consequences of such demographic changes. The author explores whether radical life extension is possible and what it would mean for our future.
+        - generic [ref=e4603]:
+          - generic [ref=e4604]: article
+          - generic [ref=e4606]: ✦
+          - generic [ref=e4607]: 04 Mar 2025
+          - generic [ref=e4608]: ✦
+          - generic [ref=e4609]: Steven Johnson
+      - generic [ref=e4611]:
+        - link "Immortality, A User's Guide" [ref=e4612] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/immortality-a-users-guide
+        - generic [ref=e4614]:
+          - generic [ref=e4616]: "Next week, the author will start serializing a new extended essay called \"Immortality: A User's Guide\" for paying subscribers. The essay will explore the latest developments in radical life extension and the potential social consequences. The author believes that the digital age has liberated creators from traditional formats and constraints. They express their frustration with the lack of a middle ground between magazine articles and books, and announce their intention to fill that gap with this new project. The essay will discuss the paradigm shift in our understanding of aging and contemplate the societal implications of potential changes in human life expectancy. In addition to the text version, there will be an audio version developed in partnership with The Next Big Idea Club."
+          - generic [ref=e4617]:
+            - generic [ref=e4618]: article
+            - generic [ref=e4620]: ✦
+            - generic [ref=e4621]: 04 Mar 2025
+            - generic [ref=e4622]: ✦
+            - generic [ref=e4623]: Steven Johnson
+            - generic [ref=e4624]: ✦
+            - button "1 highlight" [ref=e4625] [cursor=pointer]
+      - generic [ref=e4627]:
+        - link "Life Is More Than an Engineering Problem" [ref=e4628] [cursor=pointer]:
+          - /url: https://lareviewofbooks.org/article/life-is-more-than-an-engineering-problem/?__readwiseLocation=
+        - generic [ref=e4630]:
+          - generic [ref=e4632]: In a recent conversation, authors Melanie Mitchell and Alison Gopnik discussed how science fiction helps frame ideas about artificial intelligence. They explore the complexities of AI, emphasizing that it lacks genuine reasoning and subjective experiences. The discussion highlights the importance of understanding AI as a tool, rather than equating it to human intelligence and creativity.
+          - generic [ref=e4633]:
+            - generic [ref=e4634]: article
+            - generic [ref=e4636]: ✦
+            - generic [ref=e4637]: 26 Feb 2025
+            - generic [ref=e4638]: ✦
+            - generic [ref=e4639]: Los Angeles Review of Books
+            - generic [ref=e4640]: ✦
+            - button "6 highlights" [ref=e4641] [cursor=pointer]
+      - generic [ref=e4642]:
+        - link "Why Do Young Men Migrate?" [ref=e4643] [cursor=pointer]:
+          - /url: https://thewire.in/society/why-do-young-men-migrate/?__readwiseLocation=
+        - generic [ref=e4644]: Young men often migrate not due to crisis, but because of success that leads to inequality in their homelands. As societies develop, many young men feel like surplus, with fewer opportunities for work and family, prompting them to seek better lives elsewhere. This desire to migrate reflects a hope for change and the willingness to take risks for survival.
+        - generic [ref=e4645]:
+          - generic [ref=e4646]: article
+          - generic [ref=e4648]: ✦
+          - generic [ref=e4649]: 24 Feb 2025
+          - generic [ref=e4650]: ✦
+          - generic [ref=e4651]: The Wire
+      - generic [ref=e4652]:
+        - link "We Live Like Royalty and Don’t Know It" [ref=e4653] [cursor=pointer]:
+          - /url: https://www.thenewatlantis.com/publications/we-live-like-royalty-and-dont-know-it
+        - generic [ref=e4654]: The author reflects on how modern middle-class Americans live in luxury compared to historical figures like Thomas Jefferson, who struggled with basic comforts. He emphasizes that many people today are unaware of the complex systems that provide essential services like food, water, and health. The author argues for the importance of understanding these systems to ensure a better future for the next generation.
+        - generic [ref=e4655]:
+          - generic [ref=e4656]: article
+          - generic [ref=e4658]: ✦
+          - generic [ref=e4659]: 23 Feb 2025
+          - generic [ref=e4660]: ✦
+          - generic [ref=e4661]: Charles C. Mann
+      - generic [ref=e4663]:
+        - link "Designing a Workflow For Thinking" [ref=e4664] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/designing-a-workflow-for-thinking?r=1gvqcg&utm_medium=ios&triedRedirect=true
+        - generic [ref=e4666]:
+          - generic [ref=e4668]: Steven Johnson is launching a series of essays on creating effective workflows for generating and organizing ideas. He emphasizes the importance of regularly reviewing and updating the tools we use for thought, inspired by his experiences with early software like Hypercard. This series will include practical strategies and tool recommendations, available exclusively to paying subscribers.
+          - generic [ref=e4669]:
+            - generic [ref=e4670]: article
+            - generic [ref=e4672]: ✦
+            - generic [ref=e4673]: 22 Feb 2025
+            - generic [ref=e4674]: ✦
+            - generic [ref=e4675]: Steven Johnson
+            - generic [ref=e4676]: ✦
+            - button "2 highlights" [ref=e4677] [cursor=pointer]
+      - generic [ref=e4679]:
+        - link "The Technological Singularity" [ref=e4680] [cursor=pointer]:
+          - /url: https://readwise.io/reader/document_raw_content/155047803
+        - generic [ref=e4682]:
+          - generic [ref=e4684]: The text discusses the concept of the Technological Singularity, where technological progress accelerates to the point of creating entities with greater-than-human intelligence. Various paths to achieving this include superintelligent computers, networked systems, and human-computer interfaces. The potential impacts, challenges, and implications of the Singularity are explored, along with considerations for the future.
+          - generic [ref=e4685]:
+            - generic [ref=e4686]: pdf
+            - generic [ref=e4688]: ✦
+            - generic [ref=e4689]: 18 Feb 2025
+            - generic [ref=e4690]: ✦
+            - generic [ref=e4691]: Vernor Vinge
+            - generic [ref=e4692]: ✦
+            - button "10 highlights" [ref=e4693] [cursor=pointer]
+      - generic [ref=e4695]:
+        - link "The Long Road to End Tuberculosis" [ref=e4696] [cursor=pointer]:
+          - /url: https://www.asimov.press/p/end-tb
+        - generic [ref=e4698]:
+          - generic [ref=e4700]: Tuberculosis (TB) remains a major global health threat, killing about 1.2 million people each year despite existing vaccines and antibiotics. New vaccines and antibiotics are urgently needed to combat rising drug resistance and improve treatment effectiveness. Researchers are hopeful about recent innovations and repurposed drugs that could lead to breakthroughs in controlling TB.
+          - generic [ref=e4701]:
+            - generic [ref=e4702]: article
+            - generic [ref=e4704]: ✦
+            - generic [ref=e4705]: 15 Feb 2025
+            - generic [ref=e4706]: ✦
+            - generic [ref=e4707]: Asimov Press
+            - generic [ref=e4708]: ✦
+            - button "4 highlights" [ref=e4709] [cursor=pointer]
+      - generic [ref=e4710]:
+        - link "Two biotechs say they’re using AI to conjure drugs from scratch. Their documents suggest otherwise" [ref=e4711] [cursor=pointer]:
+          - /url: https://www.statnews.com/2025/02/10/ai-drug-development-claims-by-biotech-companies-absci-generate-biomedicines-questioned/
+        - generic [ref=e4712]: Two biotech companies claim they are using AI to create new drugs from scratch. However, documents suggest their methods may not be as groundbreaking as they say. Absci's CEO presented their approach at a major healthcare conference, claiming it could revolutionize antibody development.
+        - generic [ref=e4713]:
+          - generic [ref=e4714]: article
+          - generic [ref=e4716]: ✦
+          - generic [ref=e4717]: 14 Feb 2025
+          - generic [ref=e4718]: ✦
+          - generic [ref=e4719]: Brittany Trang
+      - generic [ref=e4720]:
+        - 'link "Issue 105: Why is everybody reading Middlemarch right now?" [ref=e4721] [cursor=pointer]':
+          - /url: https://petya.substack.com/p/issue-105-why-is-everybody-reading
+        - generic [ref=e4722]: Many people on Substack are currently reading classic novels like Middlemarch and War and Peace, sparking vibrant discussions about their themes and characters. This trend reflects a desire for deeper engagement with literature in a fast-paced digital world. Reading these classics offers a meaningful way to reconnect with complex ideas and foster community, as people share their insights and experiences.
+        - generic [ref=e4723]:
+          - generic [ref=e4724]: article
+          - generic [ref=e4726]: ✦
+          - generic [ref=e4727]: 10 Feb 2025
+          - generic [ref=e4728]: ✦
+          - generic [ref=e4729]: Petya K. Grady
+      - generic [ref=e4731]:
+        - link "How To Read A Novel" [ref=e4732] [cursor=pointer]:
+          - /url: https://adjacentpossible.substack.com/p/how-to-read-a-novel
+        - generic [ref=e4734]:
+          - generic [ref=e4736]: Reading classic novels like "Middlemarch" and "Bleak House" helps us understand the complex inner lives of characters and their connections to various societal layers. These novels offer rich simulations of human experiences, enhancing our ability to think across different perspectives. They provide a unique glimpse into the emotional and cognitive aspects of life in earlier times, making them valuable for full-spectrum thinking.
+          - generic [ref=e4737]:
+            - generic [ref=e4738]: article
+            - generic [ref=e4740]: ✦
+            - generic [ref=e4741]: 10 Feb 2025
+            - generic [ref=e4742]: ✦
+            - generic [ref=e4743]: Steven Johnson
+            - generic [ref=e4744]: ✦
+            - button "2 highlights" [ref=e4745] [cursor=pointer]
+      - generic [ref=e4747]:
+        - link "Here’s why we’re not prepared for the next wave of biotech innovation" [ref=e4748] [cursor=pointer]:
+          - /url: https://www.statnews.com/2022/11/03/why-were-not-prepared-for-next-wave-of-biotech-innovation/
+        - generic [ref=e4750]:
+          - generic [ref=e4752]: Many new medicines fail in clinical trials, and current shortcuts like "real-world evidence" are not replacing the need for rigorous studies. This lack of proper testing makes it harder to know if new treatments are safe and effective. To advance biotech innovation, we need more large-scale clinical trials and better data collection methods.
+          - generic [ref=e4753]:
+            - generic [ref=e4754]: article
+            - generic [ref=e4756]: ✦
+            - generic [ref=e4757]: 10 Feb 2025
+            - generic [ref=e4758]: ✦
+            - generic [ref=e4759]: Matthew Herper
+            - generic [ref=e4760]: ✦
+            - button "3 highlights" [ref=e4761] [cursor=pointer]
+      - generic [ref=e4762]:
+        - link "Observations From India" [ref=e4763] [cursor=pointer]:
+          - /url: https://scholars-stage.org/observations-from-india/
+        - generic [ref=e4764]: The author argues that India and America should strengthen their ties, as both nations share common interests. During his visit, he observed that Indian elites are more focused on China than Pakistan and are concerned about Western perceptions of India. He believes that India's unique cultural identity offers valuable lessons for the West, especially in the context of nationalism and modernization.
+        - generic [ref=e4765]:
+          - generic [ref=e4766]: article
+          - generic [ref=e4768]: ✦
+          - generic [ref=e4769]: 08 Feb 2025
+          - generic [ref=e4770]: ✦
+          - generic [ref=e4771]: The Scholar's Stage
+      - generic [ref=e4772]:
+        - link "Do Not Trust Journalists (A Mormon Example)" [ref=e4773] [cursor=pointer]:
+          - /url: https://scholars-stage.org/do-not-trust-journalists-a-mormon-example/
+        - generic [ref=e4774]: The New York Times faced criticism for its obituary of Thomas Monson, the former leader of the Mormon Church, focusing on his rejections of social changes rather than his significant contributions. Critics argue that the Times' framing reflects a narrow perspective on journalism, ignoring the broader impact of Monson's life and legacy. This situation highlights ongoing issues with how journalists report on religious figures and communities.
+        - generic [ref=e4775]:
+          - generic [ref=e4776]: article
+          - generic [ref=e4778]: ✦
+          - generic [ref=e4779]: 07 Feb 2025
+      - generic [ref=e4781]:
+        - link "Why Skyscrapers Became Glass Boxes" [ref=e4782] [cursor=pointer]:
+          - /url: https://www.construction-physics.com/p/why-skyscrapers-became-glass-boxes
+        - generic [ref=e4784]:
+          - generic [ref=e4786]: Skyscrapers became glass boxes because they are cheaper to build and appeal to tenants who prefer light and space over ornate designs. Developers focus on economics and often avoid spending on decorative features that tenants do not value. This trend, driven by modernist architects and risk aversion, has made the glass box aesthetic the norm in skyscraper construction.
+          - generic [ref=e4787]:
+            - generic [ref=e4788]: rss
+            - generic [ref=e4790]: ✦
+            - generic [ref=e4791]: 06 Feb 2025
+            - generic [ref=e4792]: ✦
+            - generic [ref=e4793]: Brian Potter
+            - generic [ref=e4794]: ✦
+            - button "1 highlight" [ref=e4795] [cursor=pointer]
+      - generic [ref=e4796]:
+        - link "The Free Lunch Is Over A Fundamental Turn Toward Concurrency in Software" [ref=e4797] [cursor=pointer]:
+          - /url: http://www.gotw.ca/publications/concurrency-ddj.htm
+        - generic [ref=e4798]: The article discusses a shift towards using hyperthreading and multicore architectures in software due to changes in hardware. Software developers will need to embrace concurrency to take advantage of future CPU performance gains. Concurrency will play a key role in maximizing processor throughput and improving software efficiency.
+        - generic [ref=e4799]:
+          - generic [ref=e4800]: article
+          - generic [ref=e4802]: ✦
+          - generic [ref=e4803]: 06 Feb 2025
+      - generic [ref=e4805]:
+        - link "Opinion | Why Are Housing Costs So High? The Elevator Can Explain Why. - The New York Times" [ref=e4806] [cursor=pointer]:
+          - /url: https://www.nytimes.com/2024/07/08/opinion/elevator-construction-regulation-labor-immigration.html
+        - generic [ref=e4808]:
+          - generic [ref=e4810]: The high costs and low quality of housing in America are linked to the challenges surrounding elevator construction, with regulations, labor costs, and lack of standardization contributing to the problem. American elevators are larger and more expensive than those in other parts of the world due to stringent regulations and union restrictions on preassembly and prefabrication. To make elevators more affordable and abundant, reforms are needed to align with global standards, increase competition, and improve vocational training for native-born workers.
+          - generic [ref=e4811]:
+            - generic [ref=e4812]: article
+            - generic [ref=e4814]: ✦
+            - generic [ref=e4815]: 05 Feb 2025
+            - generic [ref=e4816]: ✦
+            - generic [ref=e4817]: Stephen Smith
+            - generic [ref=e4818]: ✦
+            - button "1 highlight" [ref=e4819] [cursor=pointer]
+      - generic [ref=e4821]:
+        - link "Artificial Wombs When?" [ref=e4822] [cursor=pointer]:
+          - /url: https://asteriskmag.com/issues/07/artificial-wombs-when
+        - generic [ref=e4824]:
+          - generic [ref=e4826]: Advancements in reproductive technology, like artificial wombs, are focused on helping extremely premature infants rather than replacing natural pregnancy. While research shows promise for extending women's fertility, true artificial wombs for healthy pregnancies are still far from reality. Current innovations allow for better embryo selection and potential future methods for producing eggs, but challenges remain.
+          - generic [ref=e4827]:
+            - generic [ref=e4828]: article
+            - generic [ref=e4830]: ✦
+            - generic [ref=e4831]: 29 Jan 2025
+            - generic [ref=e4832]: ✦
+            - generic [ref=e4833]: Sarah Constantin
+            - generic [ref=e4834]: ✦
+            - button "3 highlights" [ref=e4835] [cursor=pointer]
+      - generic [ref=e4837]:
+        - link "The False Promise of Device-Based Education" [ref=e4838] [cursor=pointer]:
+          - /url: https://www.afterbabel.com/p/false-promise-of-device-based-ed
+        - generic [ref=e4840]:
+          - generic [ref=e4842]: The article discusses the negative impact of screens in education, suggesting that technology does not necessarily improve learning outcomes and may even hinder students' development. It highlights myths about educational technology, emphasizing that excessive screen time can lead to distractions and social-emotional issues. The author calls for a reevaluation of technology use in schools to prioritize meaningful learning and student well-being.
+          - generic [ref=e4843]:
+            - generic [ref=e4844]: article
+            - generic [ref=e4846]: ✦
+            - generic [ref=e4847]: 27 Jan 2025
+            - generic [ref=e4848]: ✦
+            - generic [ref=e4849]: Amy Tyson
+            - generic [ref=e4850]: ✦
+            - generic [ref=e4851]: MSW
+            - generic [ref=e4852]: ✦
+            - generic [ref=e4853]: LISW-S
+            - generic [ref=e4854]: ✦
+            - button "14 highlights" [ref=e4855] [cursor=pointer]
+      - generic [ref=e4856]:
+        - link "Echo of Worlds" [ref=e4857] [cursor=pointer]:
+          - /url: private://read/01jja0fwdvzeybrqrxbxzp4cxv
+        - generic [ref=e4858]: Paz feels overwhelmed as she and her companions prepare to leave a dusty, familiar place, reflecting on her past. She desperately wants to communicate with the elders and ensure they haven’t missed anything important before they go. Tension rises as her friends, Essien and Moon, approach with their own concerns about their safety and the urgency of their situation.
+        - generic [ref=e4859]:
+          - generic [ref=e4860]: book
+          - generic [ref=e4862]: ✦
+          - generic [ref=e4863]: 26 Jan 2025
+          - generic [ref=e4864]: ✦
+          - generic [ref=e4865]: M. R. Carey
+      - generic [ref=e4867]:
+        - link "Science Proceeds One Question at a Time" [ref=e4868] [cursor=pointer]:
+          - /url: https://scholars-stage.org/science-proceeds-one-question-at-a-time/
+        - generic [ref=e4870]:
+          - generic [ref=e4872]: Ernst Mayr discusses how both Charles Darwin and Alfred Wallace developed the theory of evolution by natural selection, despite Wallace's work prompting Darwin to publish his ideas quickly. Mayr emphasizes that scientific progress often comes from asking the right questions rather than technological advancements. He believes that good questions can lead to significant discoveries, even if the initial answers are incorrect.
+          - generic [ref=e4873]:
+            - generic [ref=e4874]: rss
+            - generic [ref=e4876]: ✦
+            - generic [ref=e4877]: 23 Jan 2025
+            - generic [ref=e4878]: ✦
+            - generic [ref=e4879]: T. Greer
+            - generic [ref=e4880]: ✦
+            - button "2 highlights" [ref=e4881] [cursor=pointer]
+      - generic [ref=e4883]:
+        - 'link "Rise and Grind: Outperform, Outwork, and Outhustle Your Way to a More Successful and Rewarding Life (Daymond John)" [ref=e4884] [cursor=pointer]':
+          - /url: https://theworthyhouse.com/2019/04/30/rise-and-grind-outperform-outwork-and-outhustle-your-way-to-a-more-successful-and-rewarding-life-daymond-john/
+        - generic [ref=e4886]:
+          - generic [ref=e4888]: "\"Rise and Grind\" emphasizes that hard work and getting things done are essential for entrepreneurial success. The author believes that business must consume your thoughts and that many people fail because they do not execute this mindset. While success is not guaranteed, those who embrace this approach are likely to achieve substantial wealth."
+          - generic [ref=e4889]:
+            - generic [ref=e4890]: article
+            - generic [ref=e4892]: ✦
+            - generic [ref=e4893]: 22 Jan 2025
+            - generic [ref=e4894]: ✦
+            - generic [ref=e4895]: Charles Haywood
+            - generic [ref=e4896]: ✦
+            - button "1 highlight" [ref=e4897] [cursor=pointer]
+      - generic [ref=e4898]:
+        - link "Degrowth can work — here’s how science can help" [ref=e4899] [cursor=pointer]:
+          - /url: https://www.nature.com/articles/d41586-022-04412-x
+        - generic [ref=e4900]: High-income economies consume energy and materials unsustainably, leading to environmental damage. Researchers are calling for a different approach called degrowth, which focuses on securing human well-being and reducing unnecessary production. Implementing degrowth strategies can lower carbon emissions, stabilize employment, and enable sustainable development.
+        - generic [ref=e4901]:
+          - generic [ref=e4902]: article
+          - generic [ref=e4904]: ✦
+          - generic [ref=e4905]: 22 Jan 2025
+          - generic [ref=e4906]: ✦
+          - generic [ref=e4907]: Jason Hickel
+      - generic [ref=e4908]:
+        - 'link "Ideas matter: How I stopped being a Culture Incel" [ref=e4909] [cursor=pointer]':
+          - /url: https://www.writingruxandrabio.com/p/ideas-matter-how-i-stopped-being
+        - generic [ref=e4910]: The author reflects on their transformation from being a "Culture Incel" to embracing a more optimistic and open-minded perspective. They discuss the influence of culture on scientific and technological progress, citing the Industrial Revolution as an example. They also highlight the shift towards excessive caution and pessimism in elite thought, particularly regarding topics like climate change. The author shares their personal journey of shedding their "Inceldom" and credits the Marginal Revolution blog and engaging with like-minded individuals on Twitter as factors that helped shape their new perspective.
+        - generic [ref=e4911]:
+          - generic [ref=e4912]: article
+          - generic [ref=e4914]: ✦
+          - generic [ref=e4915]: 22 Jan 2025
+          - generic [ref=e4916]: ✦
+          - generic [ref=e4917]: Ruxandra Teslo
+      - generic [ref=e4919]:
+        - link "The EdTech Revolution Has Failed" [ref=e4920] [cursor=pointer]:
+          - /url: https://www.afterbabel.com/p/the-edtech-revolution-has-failed
+        - generic [ref=e4922]:
+          - generic [ref=e4924]: The article argues that using digital devices like laptops and tablets in classrooms harms student learning rather than helping it. Research shows that frequent computer use leads to poorer academic outcomes and distracts students from focusing on their studies. The author suggests that schools should consider returning to more traditional teaching methods to improve educational results.
+          - generic [ref=e4925]:
+            - generic [ref=e4926]: article
+            - generic [ref=e4928]: ✦
+            - generic [ref=e4929]: 20 Jan 2025
+            - generic [ref=e4930]: ✦
+            - generic [ref=e4931]: Jared Cooney Horvath
+            - generic [ref=e4932]: ✦
+            - button "6 highlights" [ref=e4933] [cursor=pointer]
+      - generic [ref=e4935]:
+        - link "The Bitter Lesson" [ref=e4936] [cursor=pointer]:
+          - /url: http://www.incompleteideas.net/IncIdeas/BitterLesson.html
+        - generic [ref=e4938]:
+          - generic [ref=e4940]: The main lesson from 70 years of AI research is that relying on computational methods, like search and learning, is more effective than using human knowledge. Initial efforts often focused on human understanding, but breakthroughs came when researchers embraced computation. The complexity of the mind should not dictate AI design; instead, we should enable AI to discover and learn on its own.
+          - generic [ref=e4941]:
+            - generic [ref=e4942]: article
+            - generic [ref=e4944]: ✦
+            - generic [ref=e4945]: 17 Jan 2025
+            - generic [ref=e4946]: ✦
+            - generic [ref=e4947]: Rich Sutton
+            - generic [ref=e4948]: ✦
+            - button "4 highlights" [ref=e4949] [cursor=pointer]
+      - generic [ref=e4951]:
+        - 'link "REVIEW: Reentry, by Eric Berger" [ref=e4952] [cursor=pointer]':
+          - /url: https://www.thepsmiths.com/p/review-reentry-by-eric-berger
+        - generic [ref=e4954]:
+          - generic [ref=e4956]: Eric Berger's book "Reentry" explores how SpaceX, under Elon Musk, revolutionized the space industry by taking significant risks and prioritizing speed and innovation. Despite facing numerous challenges and fierce competition, SpaceX's unique approach has led to groundbreaking advancements in rocket technology and cost reduction. The company's mission to enable human life on other planets drives its relentless pursuit of ambitious goals.
+          - generic [ref=e4957]:
+            - generic [ref=e4958]: article
+            - generic [ref=e4960]: ✦
+            - generic [ref=e4961]: 16 Jan 2025
+            - generic [ref=e4962]: ✦
+            - generic [ref=e4963]: John Psmith
+            - generic [ref=e4964]: ✦
+            - button "2 highlights" [ref=e4965] [cursor=pointer]
+      - generic [ref=e4966]:
+        - link "Learning By Writing" [ref=e4967] [cursor=pointer]:
+          - /url: https://www.cold-takes.com/learning-by-writing/
+        - generic [ref=e4968]: The author uses writing as a tool to deeply investigate topics, starting with a hypothesis and refining it through research and discussion. This process involves repeatedly explaining, defending, and challenging their ideas to focus their learning. By writing early, the author aims to retain their reasoning and develop clear views on important subjects.
+        - generic [ref=e4969]:
+          - generic [ref=e4970]: article
+          - generic [ref=e4972]: ✦
+          - generic [ref=e4973]: 11 Jan 2025
+          - generic [ref=e4974]: ✦
+          - generic [ref=e4975]: Holden Karnofsky
+      - generic [ref=e4977]:
+        - link "Advice That Actually Worked For Me" [ref=e4978] [cursor=pointer]:
+          - /url: https://nabeelqu.co/advice
+        - generic [ref=e4980]:
+          - generic [ref=e4982]: Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.
+          - generic [ref=e4983]:
+            - generic [ref=e4984]: article
+            - generic [ref=e4986]: ✦
+            - generic [ref=e4987]: 11 Jan 2025
+            - generic [ref=e4988]: ✦
+            - button "3 highlights" [ref=e4989] [cursor=pointer]
+  - contentinfo [ref=e4990]
+```
+
+# Test source
+
+```ts
+  293 | 
+  294 | 			const samples: number[] = [el.getBoundingClientRect().y];
+  295 | 
+  296 | 			const btn = document.querySelector(
+  297 | 				".feed-item--with-highlights .feed-highlight-btn",
+  298 | 			) as HTMLButtonElement;
+  299 | 			btn?.click();
+  300 | 
+  301 | 			await new Promise<void>((resolve) => {
+  302 | 				const start = performance.now();
+  303 | 				function tick() {
+  304 | 					samples.push(el.getBoundingClientRect().y);
+  305 | 					if (performance.now() - start < 500) {
+  306 | 						requestAnimationFrame(tick);
+  307 | 					} else {
+  308 | 						resolve();
+  309 | 					}
+  310 | 				}
+  311 | 				requestAnimationFrame(tick);
+  312 | 			});
+  313 | 
+  314 | 			return samples;
+  315 | 		});
+  316 | 
+  317 | 		expect(positions.length).toBeGreaterThan(5);
+  318 | 
+  319 | 		const MAX_PER_FRAME = 30;
+  320 | 		for (let i = 1; i < positions.length; i++) {
+  321 | 			const delta = Math.abs(positions[i] - positions[i - 1]);
+  322 | 			expect(
+  323 | 				delta,
+  324 | 				`Frame ${i}/${positions.length}: ${delta.toFixed(1)}px jump`,
+  325 | 			).toBeLessThanOrEqual(MAX_PER_FRAME);
+  326 | 		}
+  327 | 	});
+  328 | 
+  329 | 	test("separator glyphs are vertically centered with adjacent text", async ({
+  330 | 		page,
+  331 | 	}) => {
+  332 | 		const failures = await page.evaluate(() => {
+  333 | 			const containers = document.querySelectorAll(".feed-meta, .feed-tags");
+  334 | 			const errors: string[] = [];
+  335 | 
+  336 | 			containers.forEach((container, ci) => {
+  337 | 				// Get all visible separators in this container
+  338 | 				const separators = Array.from(
+  339 | 					container.querySelectorAll(".feed-separator"),
+  340 | 				).filter((el) => {
+  341 | 					const r = el.getBoundingClientRect();
+  342 | 					return r.width > 0 && r.height > 0;
+  343 | 				});
+  344 | 				if (separators.length < 2) return;
+  345 | 
+  346 | 				// Group separators by line (same top ± 5px)
+  347 | 				type Item = { el: Element; rect: DOMRect; center: number };
+  348 | 				const lines: Item[][] = [];
+  349 | 				for (const el of separators) {
+  350 | 					const rect = el.getBoundingClientRect();
+  351 | 					const center = rect.top + rect.height / 2;
+  352 | 					const existing = lines.find((line) =>
+  353 | 						Math.abs(line[0].rect.top - rect.top) < 5,
+  354 | 					);
+  355 | 					if (existing) {
+  356 | 						existing.push({ el, rect, center });
+  357 | 					} else {
+  358 | 						lines.push([{ el, rect, center }]);
+  359 | 					}
+  360 | 				}
+  361 | 
+  362 | 				for (const line of lines) {
+  363 | 					if (line.length < 2) continue;
+  364 | 
+  365 | 					// All separators on the same line must have the same height
+  366 | 					const heights = line.map((s) => s.rect.height);
+  367 | 					const hMin = Math.min(...heights);
+  368 | 					const hMax = Math.max(...heights);
+  369 | 					if (hMax - hMin > 1) {
+  370 | 						errors.push(
+  371 | 							`Container #${ci}: separator heights differ [${heights.map((h) => h.toFixed(1)).join(", ")}]`,
+  372 | 						);
+  373 | 					}
+  374 | 
+  375 | 					// All separators on the same line must have the same center
+  376 | 					const centers = line.map((s) => s.center);
+  377 | 					const cMin = Math.min(...centers);
+  378 | 					const cMax = Math.max(...centers);
+  379 | 					if (cMax - cMin > 2) {
+  380 | 						errors.push(
+  381 | 							`Container #${ci}: separator centers differ [${centers.map((c) => c.toFixed(1)).join(", ")}]`,
+  382 | 						);
+  383 | 					}
+  384 | 				}
+  385 | 			});
+  386 | 
+  387 | 			return errors;
+  388 | 		});
+  389 | 
+  390 | 		expect(
+  391 | 			failures,
+  392 | 			`Misaligned separators:\n${failures.join("\n")}`,
+> 393 | 		).toHaveLength(0);
+      |    ^ Error: Misaligned separators:
+  394 | 	});
+  395 | });
+  396 | 
+```

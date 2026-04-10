@@ -215,23 +215,6 @@ export default function HighlightsAccordion({
 					onClick={toggle}
 				>
 					{count} {count === 1 ? "highlight" : "highlights"}
-					<motion.span
-						className="feed-highlight-chevron"
-						aria-hidden="true"
-						animate={{ rotate: isOpen ? 180 : 0 }}
-						transition={
-							reducedMotion
-								? { duration: 0 }
-								: {
-										type: "spring",
-										stiffness: 400,
-										damping: 25,
-									}
-						}
-						style={{ display: "inline-block" }}
-					>
-						&#x25BC;
-					</motion.span>
 				</button>
 			</span>
 			<AnimatePresence initial={false}>

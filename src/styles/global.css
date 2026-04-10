@@ -67,6 +67,8 @@
 	div.feed {
 		@apply flex flex-col pt-1.5 pb-1.5 md:pt-2 md:pb-2;
 
+		/* ── Feed item (base) ──────────────────────────────────────── */
+
 		.feed-item {
 			@apply -mx-0.75 flex flex-col gap-0.5 rounded-xl px-0.75 py-0.75 md:-mx-1 md:px-1;
 			transition:
@@ -76,39 +78,46 @@
 			@media (hover: hover) {
 				@apply hover:bg-neutral-100 dark:hover:bg-neutral-800/50;
 			}
+		}
 
-			.feed-title {
-				@apply truncate;
-			}
+		/* ── Title, description, metadata ─────────────────────────── */
 
-			.feed-desc {
-				@apply text-fg-muted dark:text-fg-muted-dark line-clamp-2 opacity-75;
-				max-height: 3.2em;
-				transition: max-height 400ms ease;
-			}
+		.feed-title {
+			@apply truncate;
+		}
 
-			.feed-desc--no-clamp {
-				-webkit-line-clamp: unset;
-				max-height: none;
-				overflow: visible;
-				display: inline;
-			}
+		.feed-desc {
+			@apply text-fg-muted dark:text-fg-muted-dark line-clamp-2 opacity-75;
+		}
 
-			.feed-desc-wrapper {
-				@apply block;
-			}
+		.feed-desc--no-clamp {
+			@apply block;
+			-webkit-line-clamp: unset;
+			max-height: none;
+			overflow: visible;
+		}
 
-			.feed-meta {
-				@apply text-fg-faint/60 dark:text-fg-faint-dark/60 inline-flex flex-wrap items-center gap-x-[0.5em];
-			}
+		.feed-meta,
+		.feed-tags {
+			@apply inline-flex flex-wrap items-center gap-x-[0.5em];
+		}
 
-			.feed-readwise {
-				@apply text-fg-accent dark:text-fg-accent-dark;
-			}
+		.feed-meta {
+			@apply text-fg-faint/60 dark:text-fg-faint-dark/60;
+		}
 
-			.feed-tags {
-				@apply text-fg-faint dark:text-fg-faint-dark opacity-60 inline-flex flex-wrap items-center gap-x-[0.5em];
-			}
+		.feed-tags {
+			@apply text-fg-faint dark:text-fg-faint-dark opacity-60;
+		}
+
+		/* ── Decorative glyphs (separator ✦ · chevron ▼) ────────── */
+
+		.feed-separator {
+			@apply text-fg-accent dark:text-fg-accent-dark leading-none;
+			font-size: 0.45em;
+			height: 1em;
+			display: inline-flex;
+			align-items: center;
 		}
 	}
 
@@ -184,15 +193,6 @@
 		transition:
 			background-color 0.2s ease,
 			color 0.2s ease;
-	}
-
-	.feed-highlight-chevron {
-		@apply ml-0.25 inline-flex items-center text-[0.5em] leading-none;
-	}
-
-	.feed-separator {
-		@apply text-fg-accent dark:text-fg-accent-dark text-[0.45em] leading-none;
-		vertical-align: 0.15em;
 	}
 
 	button.feed-highlight-btn:focus-visible {

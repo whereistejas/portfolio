@@ -229,35 +229,6 @@ test.describe("Archive page – highlights accordion", () => {
 		expect(gap).toBeGreaterThanOrEqual(4);
 	});
 
-	test("highlight button has a chevron that rotates when expanded", async ({
-		page,
-	}) => {
-		const firstCard = page.locator(".feed-item--with-highlights").first();
-		const chevron = firstCard.locator(".feed-highlight-chevron");
-
-		await expect(chevron).toBeVisible();
-
-		const getRotation = async () => {
-			return chevron.evaluate((el) => {
-				const transform = window.getComputedStyle(el).transform;
-				if (!transform || transform === "none") return 0;
-				const match = transform.match(/matrix\(([^)]+)\)/);
-				if (!match) return 0;
-				const [a, b] = match[1].split(",").map(Number);
-				return Math.round(Math.atan2(b, a) * (180 / Math.PI));
-			});
-		};
-
-		expect(await getRotation()).toBe(0);
-
-		await firstCard.locator(".feed-highlight-btn").click();
-		await page.waitForTimeout(600);
-		expect(await getRotation()).toBe(180);
-
-		await firstCard.locator(".feed-highlight-btn").click();
-		await page.waitForTimeout(600);
-		expect(await getRotation()).toBe(0);
-	});
 
 	test("no sudden layout shift when expanding accordion", async ({
 		page,
@@ -353,5 +324,72 @@ test.describe("Archive page – highlights accordion", () => {
 				`Frame ${i}/${positions.length}: ${delta.toFixed(1)}px jump`,
 			).toBeLessThanOrEqual(MAX_PER_FRAME);
 		}
+	});
+
+	test("separator glyphs are vertically centered with adjacent text", async ({
+		page,
+	}) => {
+		const failures = await page.evaluate(() => {
+			const containers = document.querySelectorAll(".feed-meta, .feed-tags");
+			const errors: string[] = [];
+
+			containers.forEach((container, ci) => {
+				// Get all visible separators in this container
+				const separators = Array.from(
+					container.querySelectorAll(".feed-separator"),
+				).filter((el) => {
+					const r = el.getBoundingClientRect();
+					return r.width > 0 && r.height > 0;
+				});
+				if (separators.length < 2) return;
+
+				// Group separators by line (same top ± 5px)
+				type Item = { el: Element; rect: DOMRect; center: number };
+				const lines: Item[][] = [];
+				for (const el of separators) {
+					const rect = el.getBoundingClientRect();
+					const center = rect.top + rect.height / 2;
+					const existing = lines.find((line) =>
+						Math.abs(line[0].rect.top - rect.top) < 5,
+					);
+					if (existing) {
+						existing.push({ el, rect, center });
+					} else {
+						lines.push([{ el, rect, center }]);
+					}
+				}
+
+				for (const line of lines) {
+					if (line.length < 2) continue;
+
+					// All separators on the same line must have the same height
+					const heights = line.map((s) => s.rect.height);
+					const hMin = Math.min(...heights);
+					const hMax = Math.max(...heights);
+					if (hMax - hMin > 1) {
+						errors.push(
+							`Container #${ci}: separator heights differ [${heights.map((h) => h.toFixed(1)).join(", ")}]`,
+						);
+					}
+
+					// All separators on the same line must have the same center
+					const centers = line.map((s) => s.center);
+					const cMin = Math.min(...centers);
+					const cMax = Math.max(...centers);
+					if (cMax - cMin > 2) {
+						errors.push(
+							`Container #${ci}: separator centers differ [${centers.map((c) => c.toFixed(1)).join(", ")}]`,
+						);
+					}
+				}
+			});
+
+			return errors;
+		});
+
+		expect(
+			failures,
+			`Misaligned separators:\n${failures.join("\n")}`,
+		).toHaveLength(0);
 	});
 });

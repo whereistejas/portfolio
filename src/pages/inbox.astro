@@ -38,7 +38,7 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 							{item.data.summary && (
 								<span class="feed-desc">{item.data.summary}</span>
 							)}
-						<span class="feed-meta">{displayCategory && (<><span class="hidden md:inline">{displayCategory}</span><span class="hidden md:inline"><span class="feed-separator">{"\u2726"}</span></span></>)}{metaParts.map((part, i) => (<>{i > 0 && (<span class="feed-separator">{"\u2726"}</span>)}<span>{part}</span></>))}</span>
+						<span class="feed-meta">{displayCategory && (<><span class="hidden md:inline-flex items-center">{displayCategory}</span><span class="hidden md:inline-flex items-center"><span class="feed-separator">{"\u2726"}</span></span></>)}{metaParts.map((part, i) => (<>{i > 0 && (<span class="feed-separator">{"\u2726"}</span>)}<span>{part}</span></>))}</span>
 						{sortedTags.length > 0 && (
 							<span class="feed-tags">{sortedTags.map((tag, i) => (<>{i > 0 && (<span class="feed-separator">{"\u2726"}</span>)}<span>{tag.toLowerCase()}</span></>))}</span>
 						)}
