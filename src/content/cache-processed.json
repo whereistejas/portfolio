@@ -633,7 +633,8 @@
     "date_group": "22 Feb 2026",
     "display_tags": [],
     "highlights": [
-      "You cannot make an abstraction more powerful without sacrificing some properties that you used to know about it. Necessarily. You cannot require a new property be true about an abstraction without sacrificing some of its power and flexibility. Always."
+      "You cannot make an abstraction more powerful without sacrificing some properties that you used to know about it. Necessarily. You cannot require a new property be true about an abstraction without sacrificing some of its power and flexibility. Always.",
+      "The most important point is simply to recognize properties as being a valid (and arguably most important) part of abstraction design."
     ],
     "last_moved_at": "2026-02-22T16:39:07.334Z",
     "location": "archive",
@@ -651,7 +652,9 @@
     "category": "article",
     "date_group": "21 Feb 2026",
     "display_tags": [],
-    "highlights": [],
+    "highlights": [
+      "The single most important thing about any module is what modules it does not depend upon."
+    ],
     "last_moved_at": "2026-02-21T19:57:14.568Z",
     "location": "archive",
     "needs_grouping": false,
