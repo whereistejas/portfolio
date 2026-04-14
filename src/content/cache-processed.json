@@ -7382,5 +7382,58 @@
     "tags": [],
     "title": "Borrow-checking surprises",
     "url": "https://www.scattered-thoughts.net/writing/borrow-checking-surprises/"
+  },
+  {
+    "author": "Andy Matuschak",
+    "category": "article",
+    "date_group": "13 Apr 2026",
+    "display_tags": [],
+    "highlights": [],
+    "last_moved_at": "2026-04-13T23:54:46.225Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kp4m9pm4nd4807r18hpq54qq",
+    "summary": "Coding agents can help non-programmers create and improve complex software interfaces without deep programming skills. This could free designers and experts to invent more imaginative and useful tools on their own. Right now, too much programming slows down innovation in user interfaces.",
+    "tags": [],
+    "title": "two accidental tyrannies",
+    "url": "https://andymatuschak.org/tat/"
+  },
+  {
+    "author": "blinry",
+    "category": "article",
+    "date_group": "13 Apr 2026",
+    "display_tags": [],
+    "highlights": [],
+    "last_moved_at": "2026-04-13T11:11:52.649Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kp38m2x3s64zx5g8y5y5kcwk",
+    "summary": "Oodi is a modern library in Helsinki with many cool features like game rooms, studios, and a makerspace. The third floor has lots of books, a café, and a fun children’s area. It is a welcoming place where people can work, relax, and enjoy many activities.",
+    "tags": [],
+    "title": "A tour of Oodi",
+    "url": "https://blinry.org/oodi/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "13 Apr 2026",
+    "display_tags": [],
+    "highlights": [
+      "C with its pointer arithmetic, is weakly & statically typed. Python which requires you to explicitly convert between different object types to call the appropriate method, is dynamically and strongly typed."
+    ],
+    "last_moved_at": "2026-04-13T11:11:33.789Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kp34b8eg4hafhtdnwj6xbk3e",
+    "summary": "Type systems define how programming languages check and handle data types either before running code (static) or during execution (dynamic). Strong typing means the language rarely changes data types automatically, while weak typing allows more implicit conversions. Many people confuse these terms, but understanding them helps make programming clearer and less error-prone.",
+    "tags": [],
+    "title": "Basic Type System Terminology",
+    "url": "https://lewiscampbell.tech/blog/250817.html"
   }
 ]
