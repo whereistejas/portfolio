@@ -653,7 +653,9 @@
     "date_group": "21 Feb 2026",
     "display_tags": [],
     "highlights": [
-      "The single most important thing about any module is what modules it does not depend upon."
+      "A big part of software design is the design of the abstractions themselves, of course. But equally important at a high-level are dependencies.",
+      "The single most important thing about any module is what modules it does not depend upon. It’s one of the most effective decoupling tools possible, to not even allow one module to reference another.",
+      "But then we see a response from overzealous use in the wild: “boolean parameters on functions are a code smell!”"
     ],
     "last_moved_at": "2026-02-21T19:57:14.568Z",
     "location": "archive",
@@ -7435,5 +7437,46 @@
     "tags": [],
     "title": "Basic Type System Terminology",
     "url": "https://lewiscampbell.tech/blog/250817.html"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "14 Apr 2026",
+    "display_tags": [],
+    "highlights": [],
+    "last_moved_at": "2026-04-14T17:40:00.822Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kp6h82yajgp85nc4ytp8ej4x",
+    "summary": "A social filesystem treats all your online activity like files you own and control. Apps read and write these files, but the files belong to you, not the apps. This lets different apps share data easily and lets you keep all your social info in one place.",
+    "tags": [],
+    "title": "A Social Filesystem",
+    "url": "https://overreacted.io/a-social-filesystem/"
+  },
+  {
+    "author": "Asimov Press",
+    "category": "article",
+    "date_group": "14 Apr 2026",
+    "display_tags": [],
+    "highlights": [
+      "In 1977, Sanger developed a much simpler sequencing method, called “[chain termination](https://www.pnas.org/doi/abs/10.1073/pnas.74.12.5463),” which is today known simply as Sanger sequencing. This technique took advantage of a different type of special nucleotide called a dideoxyribonucleotide, or ddNTP. ddNTPs lack one of the hydroxyl groups present on a normal dNTP, preventing the chemical reaction necessary to add another nucleotide and terminating DNA elongation.",
+      "![](https://substackcdn.com/image/fetch/$s_!BjkC!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4c15bb69-810e-404f-8672-5b921174b415_1806x2559.png)",
+      "Klenerman and Balasubramanian’s [great insight](https://www.illumina.com/science/technology/next-generation-sequencing/illumina-sequencing-history.html) was that template DNA could be sequenced by synthesizing a complementary strand of reversible terminators; basically, extending the chain one base at a time and determining the identity of each nucleotide by looking at the color of its fluorophore.",
+      "Unsurprisingly, Illumina has become by far the [most common](https://www.nature.com/articles/s41576-020-0236-x) NGS method, maintaining roughly an [80 percent](https://finance.yahoo.com/news/illumina-ilmn-leads-market-80-123127888.html) [share](https://www.genengnews.com/topics/omics/illumina-and-the-state-of-the-genomics-market/) over the last few years. This is largely owing to its versatility.",
+      "Rather than producing short overlapping reads like Illumina, PacBio generates very long reads; at first these were a few thousand bases, but today they can be [well over 10,000](https://www.pacb.com/blog/long-read-sequencing/#:~:text=Long%2Dread%20sequencing%20uses%20DNA%20(or%20RNA)%20fragments%20ranging%20in%20size%20from%201%2C000%20to%2020%2C000%20bases%20or%20more.).\n\nPacBio’s ability to produce extremely long reads makes it a useful complement to Illumina. Indeed, PacBio machines are better at [sequencing](https://www.sciencedirect.com/science/article/pii/S1672022915001345#s0015:~:text=%2C%20%5B23%5D-,Applications%20to%20genome%20research,-De%20novo%20assembly) “confusing” genomes, such as those with many copies of the same gene, long stretches of repetitive motifs, and “structural variations” like large insertions or deletions, which may not show up in short-read sequences.",
+      "By 2012, ONT had [unveiled](https://www.nature.com/articles/nbt0412-295) its first sequencing data, and Nanopore sequencing quickly established itself as a quick method for generating long reads without DNA synthesis, albeit with a [higher error rate](https://www.accurascience.com/blogs_3_0.html) than some earlier methods. (Nanopore reads had an accuracy of about 85-90 percent per base [in 2017](https://link.springer.com/article/10.1186/s13059-018-1462-9#:~:text=A%20major%20limitation%20of%20MinION%20sequencing%20is%20its%20lower%20read%20accuracy%20when%20compared%20with%20short%2Dread%20technologies.%20When%20the%20MinION%20was%20first%20introduced%2C%20reads%20showed%20an%20accuracy%20of%20less%20than%2060%25%20%5B9%2C%2010%5D.%20This%20accuracy%20has%20improved%20over%20recent%20years%20to%20reach%20approximately%2085%25), compared to over 99 percent for Illumina. Recent improvements, though, have boosted this accuracy to [more than 99 percent](https://nanoporetech.com/platform/accuracy) for most applications.)\n\nONT released its first commercial product in 2015: a handheld machine called the MinION that [retailed for just $1000](https://nanoporetech.com/news/news-human-genome-minion#:~:text=A%20MinION%20starter%20pack%20costs%20%241%2C000%20and%20includes%20the%20MinION%2C%20two%20flow%20cells%2C%20kits%20and%20community%20support.), a fraction of the price of most sequencers."
+    ],
+    "last_moved_at": "2026-04-14T10:50:19.358Z",
+    "location": "archive",
+    "needs_grouping": false,
+    "needs_summarizing": false,
+    "order": 0,
+    "readwise_id": "01kjwshbamz7bgqwwwv2nv2nps",
+    "summary": "DNA sequencing has evolved from slow, complex methods to fast, automated technologies. Key techniques include Sanger sequencing, sequencing by synthesis, and single-molecule methods like PacBio and Nanopore. These advances have made DNA sequencing cheaper, quicker, and more accurate over time.",
+    "tags": [],
+    "title": "A Visual Guide to DNA Sequencing",
+    "url": "https://www.asimov.press/p/dna-sequencing"
   }
 ]
