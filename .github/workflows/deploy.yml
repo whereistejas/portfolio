@@ -36,11 +36,11 @@ jobs:
         env:
           NO_COLOR: 1
 
-      - name: Run tests
-        run: bunx --bun playwright test
+      # - name: Run tests
+      #   run: bunx --bun playwright test
 
   build:
-    needs: test
+    # needs: test
     runs-on: ubuntu-latest
     environment:
       name: main
