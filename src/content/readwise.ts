@@ -31,11 +31,22 @@ function normalizeUrlForJoin(input: string): string {
 	}
 }
 
+type HighlightsBySourceUrl = Map<
+	string,
+	{ texts: string[]; lastHighlightedAt: string | null }
+>;
+
+function pickLatest(a: string | null, b: string | null): string | null {
+	if (!a) return b;
+	if (!b) return a;
+	return a > b ? a : b;
+}
+
 async function fetchAllReadwiseHighlightsBySourceUrl(
 	token: string
-): Promise<Map<string, string[]>> {
+): Promise<HighlightsBySourceUrl> {
 	const baseUrl = "https://readwise.io/api/v2/export/";
-	const highlightsBySourceUrl = new Map<string, string[]>();
+	const highlightsBySourceUrl: HighlightsBySourceUrl = new Map();
 	let nextPageCursor: string | null = null;
 
 	do {
@@ -62,18 +73,31 @@ async function fetchAllReadwiseHighlightsBySourceUrl(
 				continue;
 			}
 
-			const key = normalizeUrlForJoin(book.source_url);
-			const highlightTexts = book.highlights
-				.filter((highlight) => !highlight.is_deleted)
-				.map((highlight) => highlight.text)
+			const activeHighlights = book.highlights.filter((h) => !h.is_deleted);
+			const texts = activeHighlights
+				.map((h) => h.text)
 				.filter((text) => text.length > 0);
 
-			if (highlightTexts.length === 0) {
+			if (texts.length === 0) {
 				continue;
 			}
 
-			const existing = highlightsBySourceUrl.get(key) ?? [];
-			highlightsBySourceUrl.set(key, [...existing, ...highlightTexts]);
+			const lastHighlightedAt = activeHighlights.reduce<string | null>(
+				(acc, h) => pickLatest(acc, h.highlighted_at),
+				null
+			);
+
+			const key = normalizeUrlForJoin(book.source_url);
+			const existing = highlightsBySourceUrl.get(key);
+			if (existing) {
+				existing.texts.push(...texts);
+				existing.lastHighlightedAt = pickLatest(
+					existing.lastHighlightedAt,
+					lastHighlightedAt
+				);
+			} else {
+				highlightsBySourceUrl.set(key, { texts, lastHighlightedAt });
+			}
 		}
 
 		nextPageCursor = data.nextPageCursor;
@@ -162,10 +186,10 @@ async function loadProcessedCache(): Promise<ProcessedItem[]> {
 
 function toProcessedItem(
 	item: ReadwiseItem,
-	highlightsMap: Record<string, string[]>
+	highlightsBySourceUrl: HighlightsBySourceUrl
 ): ProcessedItem {
 	const joinKey = normalizeUrlForJoin(item.url.href);
-	const highlights = highlightsMap[joinKey] ?? [];
+	const bundle = highlightsBySourceUrl.get(joinKey);
 	const dateGroup = item.last_moved_at
 		.toLocaleDateString("en-GB", {
 			day: "2-digit",
@@ -181,8 +205,9 @@ function toProcessedItem(
 		category: item.category ?? "article",
 		location: item.location,
 		last_moved_at: item.last_moved_at.toISOString(),
+		last_highlighted_at: bundle?.lastHighlightedAt ?? null,
 		date_group: dateGroup,
-		highlights,
+		highlights: bundle?.texts ?? [],
 		summary: item.summary,
 		author: item.author ?? "",
 	};
@@ -201,11 +226,10 @@ export async function refreshProcessedCache(token: string): Promise<void> {
 		fetchAllReadwiseReaderItems({ token, location: "new" }),
 		fetchAllReadwiseHighlightsBySourceUrl(token),
 	]);
-	const highlightsMap = Object.fromEntries(highlightsBySourceUrl);
 
 	const merged = new Map<string, ProcessedItem>();
 	for (const item of [...archiveItems, ...queueItems]) {
-		merged.set(item.id, toProcessedItem(item, highlightsMap));
+		merged.set(item.id, toProcessedItem(item, highlightsBySourceUrl));
 	}
 
 	const items = Array.from(merged.values());
@@ -252,5 +276,8 @@ export async function loadReadwiseQueue(): Promise<ReadwiseQueueItem[]> {
 			category: item.category,
 			dateGroup: item.date_group,
 			last_moved_at: new Date(item.last_moved_at),
+			last_highlighted_at: item.last_highlighted_at
+				? new Date(item.last_highlighted_at)
+				: null,
 		}));
 }

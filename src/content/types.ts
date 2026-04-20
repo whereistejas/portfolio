@@ -37,6 +37,7 @@ export type ReadwiseApiDocument = z.infer<typeof readwiseApiDocumentSchema>;
 export const readwiseExportHighlightSchema = z.object({
 	text: z.string(),
 	is_deleted: z.boolean(),
+	highlighted_at: z.string().nullable(),
 });
 export const readwiseExportBookSchema = z.object({
 	source_url: z.string().nullable(),
@@ -72,6 +73,7 @@ export const processedItemSchema = z.object({
 	category: z.string(),
 	location: z.string(),
 	last_moved_at: z.string(),
+	last_highlighted_at: z.string().nullable().default(null),
 	date_group: z.string(),
 	highlights: z.array(z.string()),
 	summary: z.string(),
@@ -104,6 +106,7 @@ export const readwiseQueueSchema = z.object({
 	category: z.string(),
 	dateGroup: z.string(),
 	last_moved_at: z.date(),
+	last_highlighted_at: z.date().nullable(),
 });
 export type ReadwiseQueueItem = z.infer<typeof readwiseQueueSchema>;
 
