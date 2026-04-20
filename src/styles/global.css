@@ -41,6 +41,11 @@
 	--color-fg-faint-dark: var(--color-neutral-500);
 	--color-fg-accent: var(--color-yellow-700);
 	--color-fg-accent-dark: var(--color-yellow-600);
+
+	--color-neutral-125: oklch(0.958 0 0);
+	--color-neutral-150: oklch(0.946 0 0);
+
+	--color-bg-feed-item-hover: var(--color-neutral-125);
 }
 
 @layer components {
@@ -76,7 +81,7 @@
 				margin 350ms cubic-bezier(0.25, 1, 0.5, 1);
 
 			@media (hover: hover) {
-				@apply hover:bg-neutral-100 dark:hover:bg-neutral-800/50;
+				@apply hover:bg-bg-feed-item-hover dark:hover:bg-neutral-800/50;
 			}
 		}
 
@@ -143,7 +148,7 @@
 	div.feed
 		.feed-item--with-highlights.feed-item[data-expanded="true"]
 		.feed-item-card {
-		@apply overflow-hidden bg-neutral-100 dark:bg-neutral-800/50;
+		@apply overflow-hidden bg-bg-feed-item-hover dark:bg-neutral-800/50;
 	}
 
 	/* Gap only when an expanded card is adjacent to another expanded or hovered item */
@@ -182,7 +187,7 @@
 
 	@media (hover: hover) {
 		div.feed .feed-item--with-highlights:hover .feed-item-card {
-			@apply bg-neutral-100 dark:bg-neutral-800/50;
+			@apply bg-bg-feed-item-hover dark:bg-neutral-800/50;
 		}
 	}
 
@@ -195,13 +200,14 @@
 			color 0.2s ease;
 	}
 
+	button.feed-highlight-btn[aria-expanded="true"],
 	button.feed-highlight-btn:focus-visible {
-		@apply text-fg-muted dark:text-fg-muted-dark;
+		@apply text-fg dark:text-fg-dark;
 	}
 
 	@media (hover: hover) {
 		button.feed-highlight-btn:hover {
-			@apply text-fg-muted dark:text-fg-muted-dark;
+			@apply text-fg dark:text-fg-dark;
 		}
 	}
 
@@ -214,7 +220,7 @@
 	/* ── Highlight list items & blockquotes ───────────────────────── */
 
 	div.feed .feed-highlights-list {
-		@apply flex flex-col gap-1.5 pt-1 opacity-75;
+		@apply flex flex-col gap-1.5 pt-1;
 	}
 
 	div.feed .feed-highlights-list li {
@@ -222,7 +228,7 @@
 	}
 
 	div.feed .feed-highlights-list li blockquote {
-		@apply m-0 border-l-2 border-neutral-400/75 pl-1;
+		@apply m-0 border-l-2 border-neutral-600/75 pl-1;
 	}
 
 	div.feed .feed-highlights-list a {
@@ -250,6 +256,8 @@
 		--tw-prose-invert-headings: var(--color-fg-dark);
 		--tw-prose-quote-borders: var(--color-fg-accent);
 		--tw-prose-invert-quote-borders: var(--color-fg-accent);
+		--tw-prose-links: var(--color-fg-muted);
+		--tw-prose-invert-links: var(--color-fg-muted-dark);
 
 		h1,
 		h2,
@@ -279,11 +287,12 @@
 	}
 
 	a {
-		@apply text-fg dark:text-fg-dark z-1 transition-colors duration-200 ease-in;
+		@apply z-1 transition-colors duration-200 ease-in;
+		color: inherit;
 
 		@media (hover: hover) {
 			&:not(.feed-item):hover {
-				@apply dark:text-fg-muted-dark text-neutral-500;
+				@apply text-fg dark:text-fg-dark;
 			}
 		}
 	}
