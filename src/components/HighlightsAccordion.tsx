@@ -1,4 +1,5 @@
 import {
+	Fragment,
 	useState,
 	useCallback,
 	useMemo,
@@ -199,10 +200,10 @@ export default function HighlightsAccordion({
 					</>
 				)}
 				{metaParts.map((part, i) => (
-					<>
+					<Fragment key={i}>
 						{i > 0 && <Dot />}
-						<span key={i}>{part}</span>
-					</>
+						<span>{part}</span>
+					</Fragment>
 				))}
 				<Dot />
 				<button
