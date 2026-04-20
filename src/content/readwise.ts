@@ -31,6 +31,36 @@ function normalizeUrlForJoin(input: string): string {
 	}
 }
 
+function parseRetryAfter(value: string): number {
+	const seconds = Number(value);
+	if (Number.isFinite(seconds) && seconds >= 0) return seconds;
+	const date = Date.parse(value);
+	if (!Number.isNaN(date)) {
+		return Math.max(0, Math.ceil((date - Date.now()) / 1000));
+	}
+	return 60;
+}
+
+async function fetchWithRetry(
+	url: string,
+	init: RequestInit,
+	maxAttempts = 5
+): Promise<Response> {
+	for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+		const response = await fetch(url, init);
+		if (response.status !== 429 || attempt === maxAttempts) {
+			return response;
+		}
+		const retryAfter = response.headers.get("retry-after");
+		const waitSeconds = retryAfter ? parseRetryAfter(retryAfter) : 60;
+		console.log(
+			`[readwise] 429 rate limited, waiting ${waitSeconds}s (attempt ${attempt}/${maxAttempts})`
+		);
+		await new Promise((resolve) => setTimeout(resolve, waitSeconds * 1000));
+	}
+	throw new Error("fetchWithRetry: unreachable");
+}
+
 type HighlightsBySourceUrl = Map<
 	string,
 	{ texts: string[]; lastHighlightedAt: string | null }
@@ -55,7 +85,7 @@ async function fetchAllReadwiseHighlightsBySourceUrl(
 			url.searchParams.set("pageCursor", nextPageCursor);
 		}
 
-		const response = await fetch(url.toString(), {
+		const response = await fetchWithRetry(url.toString(), {
 			headers: {
 				Authorization: `Token ${token}`,
 			},
@@ -124,7 +154,7 @@ async function fetchAllReadwiseReaderItems(
 			url.searchParams.set("withHtmlContent", String(withHtmlContent));
 		if (nextPageCursor) url.searchParams.set("pageCursor", nextPageCursor);
 
-		const response = await fetch(url.toString(), {
+		const response = await fetchWithRetry(url.toString(), {
 			headers: {
 				Authorization: `Token ${token}`,
 			},
