@@ -1,13 +1,20 @@
 ---
 import { getCollection } from "astro:content";
-import Page from "../layouts/page.astro";
+
+import FeedItem from "../components/FeedItem.astro";
 import Textorlink from "../components/textorlink.astro";
+import Page from "../layouts/page.astro";
+import { renderHighlightsHtml } from "../lib/feed";
 
 const queueEntries = (await getCollection("readwise-queue")).sort((a, b) => {
 	const aTime = (a.data.last_highlighted_at ?? a.data.last_moved_at).getTime();
 	const bTime = (b.data.last_highlighted_at ?? b.data.last_moved_at).getTime();
 	return bTime - aTime;
 });
+
+const highlightHtmlById = await renderHighlightsHtml(
+	queueEntries.map((e) => e.data)
+);
 ---
 
 <Page title="Reading Inbox">
@@ -17,33 +24,20 @@ const queueEntries = (await getCollection("readwise-queue")).sort((a, b) => {
 	<Fragment slot="main">
 		<div class="feed">
 			{
-				queueEntries.map((item) => {
-					const { author, category, dateGroup } = item.data;
-					const authors = [...new Set(
-						author.split(/\s*[,&]\s*/)
-							.map((a: string) => a.trim())
-							.filter((a: string) => a && a.toLowerCase() !== "unknown" && !/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(a))
-					)];
-					const displayCategory = category === "epub" ? "book" : category;
-					const metaParts = [dateGroup, ...authors].filter(Boolean);
-
-					return (
-						<div class="feed-item">
-						<a
-							href={item.data.url}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="feed-title"
-						>
-							{item.data.title}
-						</a>
-							{item.data.summary && (
-								<span class="feed-desc">{item.data.summary}</span>
-							)}
-						<span class="feed-meta">{displayCategory && (<><span class="hidden md:inline-flex items-center">{displayCategory}</span><span class="hidden md:inline-flex items-center"><span class="feed-separator">{"\u2726"}</span></span></>)}{metaParts.map((part, i) => (<>{i > 0 && (<span class="feed-separator">{"\u2726"}</span>)}<span>{part}</span></>))}</span>
-						</div>
-					);
-				})
+				queueEntries.map((item) => (
+					<FeedItem
+						readwiseId={item.data.readwise_id}
+						title={item.data.title}
+						url={item.data.url}
+						summary={item.data.summary}
+						category={item.data.category}
+						author={item.data.author}
+						dateGroup={item.data.dateGroup}
+						highlights={item.data.highlights}
+						highlightsHtml={highlightHtmlById.get(item.data.readwise_id) ?? []}
+						paneIdPrefix="inbox"
+					/>
+				))
 			}
 		</div>
 	</Fragment>

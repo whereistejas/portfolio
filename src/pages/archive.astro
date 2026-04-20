@@ -1,46 +1,18 @@
 ---
 import { getCollection } from "astro:content";
-import { unified } from "unified";
-import rehypeStringify from "rehype-stringify";
-import remarkGfm from "remark-gfm";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
 
-import HighlightsAccordion from "../components/HighlightsAccordion";
+import FeedItem from "../components/FeedItem.astro";
 import Textorlink from "../components/textorlink.astro";
 import Page from "../layouts/page.astro";
+import { renderHighlightsHtml } from "../lib/feed";
 
 const archiveEntries = (await getCollection("readwise-archive")).sort(
 	(a, b) => b.data.last_moved_at.getTime() - a.data.last_moved_at.getTime()
 );
 
-const markdownProcessor = unified()
-	.use(remarkParse)
-	.use(remarkGfm)
-	.use(remarkRehype)
-	.use(rehypeStringify);
-
-const itemsByDate = new Map<string, (typeof archiveEntries)[number][]>();
-for (const entry of archiveEntries) {
-	const dateGroup = entry.data.dateGroup;
-	if (!itemsByDate.has(dateGroup)) {
-		itemsByDate.set(dateGroup, []);
-	}
-	itemsByDate.get(dateGroup)?.push(entry);
-}
-
-const highlightHtmlById = new Map<string, string[]>();
-for (const entry of archiveEntries) {
-	if (entry.data.highlights.length === 0) {
-		continue;
-	}
-	const html = await Promise.all(
-		entry.data.highlights.map(async (highlight: string) =>
-			String(await markdownProcessor.process(highlight))
-		)
-	);
-	highlightHtmlById.set(entry.data.readwise_id, html);
-}
+const highlightHtmlById = await renderHighlightsHtml(
+	archiveEntries.map((e) => e.data)
+);
 ---
 
 <Page title="Reading Archive">
@@ -51,77 +23,20 @@ for (const entry of archiveEntries) {
 		<div class="archive_wrapper" id="archive-wrapper">
 			<div class="feed">
 				{
-					Array.from(itemsByDate.entries()).map(([date, groupItems]) =>
-						groupItems.map((item) => {
-							const { title, url, summary, category, readwise_id, highlights, author } = item.data;
-							const hasHighlights = highlights.length > 0;
-							const highlightId = readwise_id;
-							const highlightsHtml = highlightHtmlById.get(highlightId) ?? [];
-							const paneId = `archive-highlights-${highlightId}`;
-							const authors = [...new Set(
-								author.split(/\s*[,&]\s*/)
-									.map((a: string) => a.trim())
-									.filter((a: string) => a && a.toLowerCase() !== "unknown" && !/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(a))
-							)];
-							const displayCategory = category === "epub" ? "book" : category;
-							const metaParts = [date, ...authors].filter(Boolean);
-
-							return (
-								<div
-									class:list={[
-										"feed-item",
-										hasHighlights && "feed-item--with-highlights",
-									]}
-									data-highlight-id={hasHighlights ? highlightId : undefined}
-								>
-									{hasHighlights ? (
-										<div class="feed-item-card">
-											<a href={url} target="_blank" rel="noopener noreferrer" class="feed-title">
-												{title}
-											</a>
-											<HighlightsAccordion
-												client:load
-												highlightsHtml={highlightsHtml}
-												highlightId={highlightId}
-												paneId={paneId}
-												count={highlights.length}
-												summary={summary || ""}
-												displayCategory={displayCategory}
-												metaParts={metaParts}
-											/>
-										</div>
-									) : (
-										<>
-											<a href={url} target="_blank" rel="noopener noreferrer" class="feed-title">
-												{title}
-											</a>
-											{summary && <span class="feed-desc">{summary}</span>}
-											<span class="feed-meta">
-												{displayCategory && (
-													<>
-														<span class="hidden md:inline-flex items-center">
-															{displayCategory}
-														</span>
-														<span class="hidden md:inline-flex items-center">
-															<span class="feed-separator">{"\u2726"}</span>
-														</span>
-													</>
-												)}
-												{metaParts.map((part, i) => (
-													<>
-														{i > 0 && (
-															<span class="feed-separator">{"\u2726"}</span>
-														)}
-														<span>{part}</span>
-													</>
-												))}
-											</span>
-										</>
-									)}
-								</div>
-							);
-						})
-					)
+					archiveEntries.map((item) => (
+						<FeedItem
+							readwiseId={item.data.readwise_id}
+							title={item.data.title}
+							url={item.data.url}
+							summary={item.data.summary}
+							category={item.data.category}
+							author={item.data.author}
+							dateGroup={item.data.dateGroup}
+							highlights={item.data.highlights}
+							highlightsHtml={highlightHtmlById.get(item.data.readwise_id) ?? []}
+							paneIdPrefix="archive"
+						/>
+					))
 				}
 			</div>
 		</div>

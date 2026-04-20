@@ -105,6 +105,7 @@ export const readwiseQueueSchema = z.object({
 	author: z.string(),
 	category: z.string(),
 	dateGroup: z.string(),
+	highlights: z.array(z.string()),
 	last_moved_at: z.date(),
 	last_highlighted_at: z.date().nullable(),
 });

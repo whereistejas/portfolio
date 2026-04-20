@@ -305,6 +305,7 @@ export async function loadReadwiseQueue(): Promise<ReadwiseQueueItem[]> {
 			author: item.author,
 			category: item.category,
 			dateGroup: item.date_group,
+			highlights: item.highlights,
 			last_moved_at: new Date(item.last_moved_at),
 			last_highlighted_at: item.last_highlighted_at
 				? new Date(item.last_highlighted_at)

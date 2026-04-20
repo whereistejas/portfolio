@@ -1,0 +1,84 @@
+---
+import HighlightsAccordion from "./HighlightsAccordion";
+import { displayCategory, parseAuthors } from "../lib/feed";
+
+interface Props {
+	readwiseId: string;
+	title: string;
+	url: string;
+	summary: string;
+	category: string;
+	author: string;
+	dateGroup: string;
+	highlights: string[];
+	highlightsHtml: string[];
+	paneIdPrefix: string;
+}
+
+const {
+	readwiseId,
+	title,
+	url,
+	summary,
+	category,
+	author,
+	dateGroup,
+	highlights,
+	highlightsHtml,
+	paneIdPrefix,
+} = Astro.props;
+
+const hasHighlights = highlights.length > 0;
+const paneId = `${paneIdPrefix}-highlights-${readwiseId}`;
+const authors = parseAuthors(author);
+const category_ = displayCategory(category);
+const metaParts = [dateGroup, ...authors].filter(Boolean);
+---
+
+<div
+	class:list={["feed-item", hasHighlights && "feed-item--with-highlights"]}
+	data-highlight-id={hasHighlights ? readwiseId : undefined}
+>
+	{
+		hasHighlights ? (
+			<div class="feed-item-card">
+				<a href={url} target="_blank" rel="noopener noreferrer" class="feed-title">
+					{title}
+				</a>
+				<HighlightsAccordion
+					client:load
+					highlightsHtml={highlightsHtml}
+					highlightId={readwiseId}
+					paneId={paneId}
+					count={highlights.length}
+					summary={summary || ""}
+					displayCategory={category_}
+					metaParts={metaParts}
+				/>
+			</div>
+		) : (
+			<>
+				<a href={url} target="_blank" rel="noopener noreferrer" class="feed-title">
+					{title}
+				</a>
+				{summary && <span class="feed-desc">{summary}</span>}
+				<span class="feed-meta">
+					{category_ && (
+						<>
+							<span class="hidden md:inline-flex items-center">{category_}</span>
+							<span class="hidden md:inline-flex items-center">
+								<span class="feed-separator">{"\u2726"}</span>
+							</span>
+						</>
+					)}
+					{metaParts.map((part, i) => (
+						<>
+							{i > 0 && <span class="feed-separator">{"\u2726"}</span>}
+							<span>{part}</span>
+						</>
+					))}
+				</span>
+			</>
+		)
+	}
+</div>
