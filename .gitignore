@@ -21,6 +21,9 @@ bun-debug.log*
 # jetbrains setting folder
 .idea/
 
+# claude code local settings
+.claude/settings.local.json
+
 # test artifacts
 test-results/
 playwright-report/
