@@ -69,8 +69,6 @@ export const processedItemSchema = z.object({
 	readwise_id: z.string(),
 	title: z.string(),
 	url: z.string(),
-	tags: z.array(z.string()),
-	display_tags: z.array(z.string()),
 	category: z.string(),
 	location: z.string(),
 	last_moved_at: z.string(),
@@ -78,9 +76,6 @@ export const processedItemSchema = z.object({
 	highlights: z.array(z.string()),
 	summary: z.string(),
 	author: z.string(),
-	order: z.number(),
-	needs_summarizing: z.boolean().default(false),
-	needs_grouping: z.boolean().default(false),
 });
 export type ProcessedItem = z.infer<typeof processedItemSchema>;
 
@@ -104,12 +99,11 @@ export const readwiseQueueSchema = z.object({
 	readwise_id: z.string(),
 	title: z.string(),
 	url: z.string(),
-	display_tags: z.array(z.string()),
 	summary: z.string(),
 	author: z.string(),
 	category: z.string(),
 	dateGroup: z.string(),
-	order: z.number(),
+	last_moved_at: z.date(),
 });
 export type ReadwiseQueueItem = z.infer<typeof readwiseQueueSchema>;
 

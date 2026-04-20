@@ -55,21 +55,18 @@ jobs:
       
       - name: Install dependencies
         run: bun install --omit dev
-      
-      # - name: Build queue
-      #   run: bun run build:queue
-      #   env:
-      #     NO_COLOR: 1
-      #     READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
-      #     ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      
+
+      - name: Refresh Readwise cache
+        run: bun run build:queue
+        env:
+          NO_COLOR: 1
+          READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
+
       - name: Build site
         run: bun run build
         env:
           NO_COLOR: 1
-          READWISE_TOKEN: ${{ secrets.READWISE_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-      
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -83,7 +80,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No cache changes to commit"
           else
-            git commit -m "Update LLM cache files [skip ci]"
+            git commit -m "Update cache files [skip ci]"
             git push
             echo "Cache files updated and committed"
           fi

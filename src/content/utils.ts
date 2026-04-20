@@ -1,8 +1,6 @@
 export const READWISE_CACHE_DIR = ".readwise-cache";
 export const PROCESSED_CACHE_PATH = "src/content/cache-processed.json";
 export const RAW_CACHE_PATH = `${READWISE_CACHE_DIR}/readwise-raw.json`;
-export const SUMMARY_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-summary.json`;
-export const GROUPED_CACHE_PATH = `${READWISE_CACHE_DIR}/llm-group.json`;
 
 export async function readJsonCache<T>(
 	path: string,

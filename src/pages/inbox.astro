@@ -3,8 +3,9 @@ import { getCollection } from "astro:content";
 import Page from "../layouts/page.astro";
 import Textorlink from "../components/textorlink.astro";
 
-const queueEntries = await getCollection("readwise-queue");
-queueEntries.sort((a, b) => a.data.order - b.data.order);
+const queueEntries = (await getCollection("readwise-queue")).sort(
+	(a, b) => b.data.last_moved_at.getTime() - a.data.last_moved_at.getTime()
+);
 ---
 
 <Page title="Reading Inbox">
@@ -22,7 +23,6 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 							.filter((a: string) => a && a.toLowerCase() !== "unknown" && !/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(a))
 					)];
 					const displayCategory = category === "epub" ? "book" : category;
-					const sortedTags = [...item.data.display_tags].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 					const metaParts = [dateGroup, ...authors].filter(Boolean);
 
 					return (
@@ -39,9 +39,6 @@ queueEntries.sort((a, b) => a.data.order - b.data.order);
 								<span class="feed-desc">{item.data.summary}</span>
 							)}
 						<span class="feed-meta">{displayCategory && (<><span class="hidden md:inline-flex items-center">{displayCategory}</span><span class="hidden md:inline-flex items-center"><span class="feed-separator">{"\u2726"}</span></span></>)}{metaParts.map((part, i) => (<>{i > 0 && (<span class="feed-separator">{"\u2726"}</span>)}<span>{part}</span></>))}</span>
-						{sortedTags.length > 0 && (
-							<span class="feed-tags">{sortedTags.map((tag, i) => (<>{i > 0 && (<span class="feed-separator">{"\u2726"}</span>)}<span>{tag.toLowerCase()}</span></>))}</span>
-						)}
 						</div>
 					);
 				})
