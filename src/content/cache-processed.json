@@ -1,5 +1,71 @@
 [
   {
+    "author": "Eric Topol",
+    "category": "article",
+    "date_group": "21 Apr 2026",
+    "highlights": [
+      "off-label use",
+      "putative",
+      "For example, TB-500 was found to accelerate dormant tumor growth and disrupt the immune response in animal experiments. By virtue of inducing broad cell growth, growth hormone related peptides (CJC-1295, Ipamorelin, and Tesamorelin), carry the potential risk of cancer.",
+      "Why have peptides become so popular without data to support the promotional claims? This, in part, reflects the challenge and mistrust of the medical establishment, which worsened during the Covid pandemic, but was already showing strong signs of opposition by the wide adoption of supplements"
+    ],
+    "last_highlighted_at": "2026-04-21T00:26:56.646Z",
+    "last_moved_at": "2026-04-21T00:30:23.971Z",
+    "location": "archive",
+    "readwise_id": "01kpbcvadjez40axd84t0xw82s",
+    "summary": "Peptides are becoming popular for health benefits, but most lack strong evidence or FDA approval. Some approved peptides like GLP-1 are used off-label, while many others are sold as unregulated \"research chemicals.\" The craze reflects mistrust in medicine, but safety and effectiveness remain unclear.",
+    "title": "The Peptide Craze",
+    "url": "https://erictopol.substack.com/p/the-peptide-craze"
+  },
+  {
+    "author": "Cate Hall",
+    "category": "article",
+    "date_group": "20 Apr 2026",
+    "highlights": [
+      "Functional people don’t let things linger unspoken — they name what’s facing them out loud.",
+      "People walk around in a haze of denial, simply assuming that their concerns will disappear. They wait until the problem can’t possibly be ignored anymore, instead of naming it well before it becomes critical.",
+      "Another reason is that it can feel like by naming an issue, you are making it into a big deal. But problems are real, and exert a toll on you, whether you name them or not. Naming the issue means you can interact with it.",
+      "“There’s an issue I see in our relationship, and I want to address it so our relationship is stronger. But I’m nervous about naming it, because I’m worried that it could start an argument, and I really don’t want you to feel attacked.”",
+      "Sometimes, it’s hard to name a problem because you don’t fully understand it yet. But that’s completely okay — in many settings, you don’t even have to fully understand your feelings, or what is wrong, before you name a conflict.",
+      "Yes, we are psychic, but we are also stupid. Our sense that *something is weird* is often accurate, but our stories about precisely what the weirdness represents are often way, way off. So, in order to move from an interesting intuition to an accurate story about reality, it helps to enlist other people in the discussion by naming the intuition.",
+      "if you work closely with someone, err on the side of transparency.",
+      "But over time, hopeful silence has corrosive effects. If you don’t name the real problems in your life, you eventually become alienated from your inner compass. You stop paying attention to your life on an experiential level, because you want to live in a pretend world of self-consolation. You lose the ability to see your life honestly."
+    ],
+    "last_highlighted_at": "2026-04-20T22:57:33.323Z",
+    "last_moved_at": "2026-04-20T22:59:14.501Z",
+    "location": "archive",
+    "readwise_id": "01kpk08ztax26mj19w1qzj2411",
+    "summary": "The author discusses how the lack of communication in movies creates drama and suggests that we often mirror this in real life by avoiding difficult conversations. By naming issues directly, we can clear misunderstandings and improve our relationships. Learning to communicate openly helps us confront problems before they escalate, leading to healthier interactions.",
+    "title": "Are you stuck in movie logic?",
+    "url": "https://usefulfictions.substack.com/p/are-you-stuck-in-movie-logic"
+  },
+  {
+    "author": "habryka",
+    "category": "article",
+    "date_group": "20 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-20T22:48:52.479Z",
+    "location": "archive",
+    "readwise_id": "01kppha325fns1w4qzbak00pqz",
+    "summary": "A room feels off when its lighting is too \"spiky\" or too blue, meaning the light doesn't mimic natural sunlight well. Using light bulbs with a high Color Rendering Index (CRI 95 or above) and warm color temperature (2000K-3000K) makes spaces feel natural and cozy. Modern low-quality LED lights often cause unnatural colors and discomfort, but high-CRI LEDs can restore warm, natural lighting at home.",
+    "title": "If a room feels off the lighting is probably too \"spiky\" or too blue",
+    "url": "https://www.lesswrong.com/posts/dWib7qinqymfxevE4/if-a-room-feels-off-the-lighting-is-probably-too-spiky-or"
+  },
+  {
+    "author": "Taylor Blau",
+    "category": "article",
+    "date_group": "20 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-20T22:36:41.810Z",
+    "location": "archive",
+    "readwise_id": "01kppgkrsjb0wq215n4segfs70",
+    "summary": "The open source Git project just released Git 2.54. Here is GitHub’s look at some of the most interesting features and changes introduced since last time.",
+    "title": "Highlights from Git 2.54",
+    "url": "https://github.blog/open-source/git/highlights-from-git-2-54/"
+  },
+  {
     "author": "Paul Kernfeld",
     "category": "article",
     "date_group": "16 Apr 2026",
@@ -6102,6 +6168,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Eric Topol",
+    "category": "article",
+    "date_group": "21 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-21T00:30:20.833Z",
+    "location": "new",
+    "readwise_id": "01kppq3y516df39jjjnbp9x2af",
+    "summary": "New companies are emerging that offer extensive testing to promote longevity and healthspan. While some tests have shown promise, many lack solid evidence of their benefits and can lead to false positives. The future may offer more precise and affordable methods for predicting and preventing age-related diseases.",
+    "title": "The Business of Promoting Longevity and Healthspan",
+    "url": "https://erictopol.substack.com/p/the-business-of-promoting-longevity"
+  },
+  {
     "author": "David Goldberg",
     "category": "pdf",
     "date_group": "20 Apr 2026",
@@ -6118,30 +6197,16 @@
     "author": "Dhruv Khullar",
     "category": "article",
     "date_group": "19 Apr 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "The peptide, humanin, was ultimately traced to a tiny snippet of mitochondrial DNA—part of the ninety-eight per cent of the human genome that had long been dismissed as “junk DNA.” Cohen’s work helped reveal that, in the three-billion-letter book that is our genome, even obscure one-liners can be an important part of the story. Junk DNA, it turned out, wasn’t junk: it contains instructions for numerous peptides and proteins that had never been studied."
+    ],
+    "last_highlighted_at": "2026-04-21T00:36:34.237Z",
     "last_moved_at": "2026-04-19T21:46:04.086Z",
     "location": "new",
     "readwise_id": "01kpkvaddpanvh92chjeh3cgb9",
     "summary": "Many people are injecting unapproved peptides promoted by health influencers despite limited safety data. Some doctors and researchers warn that these treatments can be risky and are not fully tested. The FDA has restricted certain peptides, but the gray market for them continues to grow.",
     "title": "Why Are People Injecting Themselves with Peptides? | The New Yorker",
     "url": "https://archive.ph/zQHbI"
-  },
-  {
-    "author": "Cate Hall",
-    "category": "article",
-    "date_group": "19 Apr 2026",
-    "highlights": [
-      "Functional people don’t let things linger unspoken — they name what’s facing them out loud.",
-      "People walk around in a haze of denial, simply assuming that their concerns will disappear. They wait until the problem can’t possibly be ignored anymore, instead of naming it well before it becomes critical."
-    ],
-    "last_highlighted_at": "2026-04-19T13:54:20.135Z",
-    "last_moved_at": "2026-04-19T13:53:25.834Z",
-    "location": "new",
-    "readwise_id": "01kpk08ztax26mj19w1qzj2411",
-    "summary": "The author discusses how the lack of communication in movies creates drama and suggests that we often mirror this in real life by avoiding difficult conversations. By naming issues directly, we can clear misunderstandings and improve our relationships. Learning to communicate openly helps us confront problems before they escalate, leading to healthier interactions.",
-    "title": "Are you stuck in movie logic?",
-    "url": "https://usefulfictions.substack.com/p/are-you-stuck-in-movie-logic"
   },
   {
     "author": "Paul Niehaus",
@@ -6181,19 +6246,6 @@
     "summary": "Newton was a deeply secretive and intense thinker who used strong mental focus to solve problems. He mixed science with mystical beliefs and kept many private writings about his unusual ideas. Later in life, he became the famous rational scientist we know, hiding much of his early, secret work.",
     "title": "Newton, the Man",
     "url": "https://mathshistory.st-andrews.ac.uk/Extras/Keynes_Newton/"
-  },
-  {
-    "author": "Eric Topol",
-    "category": "article",
-    "date_group": "16 Apr 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-04-16T14:59:13.970Z",
-    "location": "new",
-    "readwise_id": "01kpbcvadjez40axd84t0xw82s",
-    "summary": "Peptides are becoming popular for health benefits, but most lack strong evidence or FDA approval. Some approved peptides like GLP-1 are used off-label, while many others are sold as unregulated \"research chemicals.\" The craze reflects mistrust in medicine, but safety and effectiveness remain unclear.",
-    "title": "The Peptide Craze",
-    "url": "https://erictopol.substack.com/p/the-peptide-craze"
   },
   {
     "author": "",
