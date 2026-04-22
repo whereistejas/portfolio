@@ -1,5 +1,57 @@
 [
   {
+    "author": "Ben Thompson",
+    "category": "article",
+    "date_group": "21 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-21T16:53:16.176Z",
+    "location": "archive",
+    "readwise_id": "01kprfbmcct1vwa18pd4855895",
+    "summary": "Tim Cook became Apple’s CEO in 2011 and led the company to huge growth in revenue and profit. He improved Apple’s operations and focused on services, but also made the company dependent on China. Cook’s timing for stepping down is smart, but Apple’s future with AI and long-term strategy remains uncertain.",
+    "title": "Tim Cook’s Impeccable Timing",
+    "url": "https://stratechery.com/2026/tim-cooks-impeccable-timing/"
+  },
+  {
+    "author": "Matt Kline",
+    "category": "pdf",
+    "date_group": "21 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-21T13:44:36.235Z",
+    "location": "archive",
+    "readwise_id": "01kpr4j4g0f0stnh0fr7g316f6",
+    "summary": "The document delves into the complexities of concurrency for systems programmers, explaining the challenges of running multithreaded programs where code is optimized and executed in unexpected sequences. It covers fundamental concepts like atomicity, enforcing order in multithreaded programs, and memory orderings. The text emphasizes the importance of understanding how hardware, compilers, programming languages, and applications interact to create a sense of order in multithreaded programs. Key topics include atomic operations, read-modify-write operations, compare-and-swap mechanisms, and memory barriers in weakly-ordered hardware architectures.",
+    "title": "What Every Systems Programmer Should Know About Concurrency",
+    "url": "https://assets.bitbashing.io/papers/concurrency-primer.pdf"
+  },
+  {
+    "author": "Taylor Blau",
+    "category": "article",
+    "date_group": "21 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-21T12:55:53.950Z",
+    "location": "archive",
+    "readwise_id": "01kppgkrsjb0wq215n4segfs70",
+    "summary": "The open source Git project just released Git 2.54. Here is GitHub’s look at some of the most interesting features and changes introduced since last time.",
+    "title": "Highlights from Git 2.54",
+    "url": "https://github.blog/open-source/git/highlights-from-git-2-54/"
+  },
+  {
+    "author": "Emil Kowalski",
+    "category": "article",
+    "date_group": "21 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-21T12:54:51.941Z",
+    "location": "archive",
+    "readwise_id": "01kpr1q3tqkdg0rhjwxchjf6wx",
+    "summary": "Emil Kowalski explains how to teach AI agents to create better animations by defining clear rules based on design taste and logic. He shares practical tips and guidelines for animation timing, easing, and typography to ensure quality results. Packaging these rules into a skill lets AI follow them precisely, improving visual work without guesswork.",
+    "title": "`...`",
+    "url": "https://emilkowal.ski/ui/agents-with-taste"
+  },
+  {
     "author": "Eric Topol",
     "category": "article",
     "date_group": "21 Apr 2026",
@@ -51,19 +103,6 @@
     "summary": "A room feels off when its lighting is too \"spiky\" or too blue, meaning the light doesn't mimic natural sunlight well. Using light bulbs with a high Color Rendering Index (CRI 95 or above) and warm color temperature (2000K-3000K) makes spaces feel natural and cozy. Modern low-quality LED lights often cause unnatural colors and discomfort, but high-CRI LEDs can restore warm, natural lighting at home.",
     "title": "If a room feels off the lighting is probably too \"spiky\" or too blue",
     "url": "https://www.lesswrong.com/posts/dWib7qinqymfxevE4/if-a-room-feels-off-the-lighting-is-probably-too-spiky-or"
-  },
-  {
-    "author": "Taylor Blau",
-    "category": "article",
-    "date_group": "20 Apr 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-04-20T22:36:41.810Z",
-    "location": "archive",
-    "readwise_id": "01kppgkrsjb0wq215n4segfs70",
-    "summary": "The open source Git project just released Git 2.54. Here is GitHub’s look at some of the most interesting features and changes introduced since last time.",
-    "title": "Highlights from Git 2.54",
-    "url": "https://github.blog/open-source/git/highlights-from-git-2-54/"
   },
   {
     "author": "Paul Kernfeld",
