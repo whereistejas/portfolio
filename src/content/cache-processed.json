@@ -1,5 +1,21 @@
 [
   {
+    "author": "Naveen Naidu",
+    "category": "article",
+    "date_group": "22 Apr 2026",
+    "highlights": [
+      "Monologue Notes captures work that is *passive*—the ideas and decisions that accumulate when you’re out in the world or talking to other people.",
+      "I start every morning with a half-hour walk around my neighborhood. I make product decisions, troubleshoot bugs in my head, and work through problems that stumped me the day before. My best thinking often happens before I sit down at my desk, but before Notes, there wasn’t an obvious central place for it to live, so it got scattered across Apple Notes, Obsidian, and Slack."
+    ],
+    "last_highlighted_at": "2026-04-22T13:57:43.201Z",
+    "last_moved_at": "2026-04-22T13:57:49.405Z",
+    "location": "archive",
+    "readwise_id": "01kptqp3wecvnvfc5ayde9mz60",
+    "summary": "Monologue Notes records and transcribes your meetings, calls, and voice memos to make ideas easy to find and use. It works across Apple devices and connects with tools like Codex to turn thoughts into action. This helps you keep track of important ideas and solve problems faster.",
+    "title": "Introducing Monologue Notes: Record Every Meeting, Call, and Voice Memo",
+    "url": "https://every.to/on-every/introducing-monologue-notes-record-every-meeting-call-and-voice-memo"
+  },
+  {
     "author": "Ben Thompson",
     "category": "article",
     "date_group": "21 Apr 2026",
@@ -6205,6 +6221,45 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Asterisk Magazine",
+    "category": "article",
+    "date_group": "22 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-22T15:42:43.366Z",
+    "location": "new",
+    "readwise_id": "01kptxq8n6z6c4j1dsyjzg6a2j",
+    "summary": "Acetaminophen is generally safer than ibuprofen if used correctly, especially for most people and in most situations. Ibuprofen can harm the heart, kidneys, and stomach, while acetaminophen mainly risks liver damage if overdosed. Doctors often prefer acetaminophen for pregnant women, children, and people with liver issues, but overdosing on either medicine can be dangerous.",
+    "title": "The Mystery in the Medicine Cabinet",
+    "url": "https://asteriskmag.com/issues/14/the-mystery-in-the-medicine-cabinet"
+  },
+  {
+    "author": "Andrew Baumann, Jonathan Appavoo, Orran Krieger, Timothy Roscoe",
+    "category": "pdf",
+    "date_group": "22 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-22T14:32:09.580Z",
+    "location": "new",
+    "readwise_id": "01kptsp1tz2atj06dgkzvmqtcr",
+    "summary": "The authors argue that the fork() system call, once a clever solution for process creation in the 1970s, has become outdated and problematic for modern operating systems. They highlight how fork() complicates system design, introduces security vulnerabilities, and hinders innovation in OS research. The paper calls for deprecating fork() in favor of more efficient and secure alternatives.",
+    "title": "A Fork() In The Road",
+    "url": "https://readwise.io/reader/document_raw_content/29926621"
+  },
+  {
+    "author": "Natalie Wolchover",
+    "category": "article",
+    "date_group": "22 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-22T13:58:21.490Z",
+    "location": "new",
+    "readwise_id": "01kptqr5hjgpyfng56r5s6t29p",
+    "summary": "Bacteria move using a tiny motor called the flagellar motor, which spins a tail to swim. This motor is powered by protons flowing into the cell, creating a force called the proton motive force. Scientists have finally understood how this motor works after many years of research.",
+    "title": "What Physical ‘Life Force’ Turns Biology’s Wheels? | Quanta Magazine",
+    "url": "https://www.quantamagazine.org/what-physical-life-force-turns-biologys-wheels-20260420/"
   },
   {
     "author": "Eric Topol",
