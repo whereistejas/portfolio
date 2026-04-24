@@ -1,5 +1,35 @@
 [
   {
+    "author": "Joel J Miller",
+    "category": "article",
+    "date_group": "23 Apr 2026",
+    "highlights": [
+      "Yes, the original price of *To Kill a Mockingbird* and Tolkien’s *Fellowship* were just $3.95 and $5. But those are nominal values. When we factor inflation, the picture changes dramatically. In today’s dollars—and you can [run this exercise yourself](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator)—those cover prices would look more like $43 and $54.",
+      "The next time you pick up a $30 hardcover and wince, remember you’re holding a year (probably more) of someone’s creative labor; multiple rounds of professional editing; original cover art and interior design; paper, printing, binding, warehousing, and shipping; a bookseller’s rent; a clerk’s wages; not to mention an entire supply chain from forest to shelf.\n\nWhat’s more, you get all of this distilled into an object that supplies you with ten to twenty hours of the most immersive form of entertainment humans have ever invented. And did I mention that you own it forever?",
+      "Books aren’t remotely too expensive. In real dollars, they’re cheaper right now than when John F. Kennedy was president. Everything else got more expensive, true, but books didn’t. We’re just so used to the bargain we forgot it was one."
+    ],
+    "last_highlighted_at": "2026-04-23T16:06:13.217Z",
+    "last_moved_at": "2026-04-23T21:29:47.543Z",
+    "location": "archive",
+    "readwise_id": "01kpxh5v93m1s08ehrr4552d1w",
+    "summary": "Books may seem expensive, but when adjusted for inflation, their prices have actually stayed flat or dropped over time. Publishing is a low-profit industry with many costs, so cheaper books would hurt authors, editors, and bookstores. In reality, books offer great value for the creative work and materials behind them.",
+    "title": "No, Books Are Not Remotely Too Expensive",
+    "url": "https://www.millersbookreview.com/p/no-books-are-not-remotely-too-expensive"
+  },
+  {
+    "author": "Phil Eaton",
+    "category": "article",
+    "date_group": "23 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-23T14:14:49.900Z",
+    "location": "archive",
+    "readwise_id": "01kpx9fkp1djjf4x67zbbk4ee3",
+    "summary": "jemalloc is a popular memory allocator used by many major projects even in 2026. Although its original development slowed and competitors like tcmalloc and mimalloc have emerged, many projects still rely on jemalloc for performance. Meta recently took over maintaining jemalloc, bringing new updates and keeping it relevant.",
+    "title": "Who even uses jemalloc in 2026 anyway? (many major projects)",
+    "url": "https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html"
+  },
+  {
     "author": "Naveen Naidu",
     "category": "article",
     "date_group": "22 Apr 2026",
