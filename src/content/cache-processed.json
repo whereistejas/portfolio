@@ -1,5 +1,49 @@
 [
   {
+    "author": "Robert Zaretsky",
+    "category": "article",
+    "date_group": "25 Apr 2026",
+    "highlights": [
+      "pauperize",
+      "ateliers",
+      "“the blind passion and perverse murderousness of work have transformed the machine from an instrument of emancipation into an instrument that enslaves free beings.”",
+      "“the dogma of work and diabolically drilled the vice of work into the heads of workers.”"
+    ],
+    "last_highlighted_at": "2026-04-25T01:46:11.668Z",
+    "last_moved_at": "2026-04-25T01:49:28.066Z",
+    "location": "archive",
+    "readwise_id": "01kns6ncd3cat7xh28237vdff8",
+    "summary": "Paul Lafargue believed machines could free people from work and give them more leisure time. He argued that workers should fight for the right to be idle, not just shorter workdays. Lafargue imagined a future where people enjoy doing nothing, finding peace beyond constant labor.",
+    "title": "The Importance of Being Idle",
+    "url": "https://theamericanscholar.org/the-importance-of-being-idle/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "24 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-24T17:14:31.011Z",
+    "location": "archive",
+    "readwise_id": "01kq07rqg1cq180vf8pd8eh8j2",
+    "summary": "The author is building a new cloud service because current clouds are limited and frustrating to use. This new cloud offers more control over computing resources like CPU, memory, and local disk. The goal is to create a cloud that is easier, faster, and more flexible for everyone.",
+    "title": "I am building a cloud",
+    "url": "https://crawshaw.io/blog/building-a-cloud"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "24 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-24T15:53:29.620Z",
+    "location": "archive",
+    "readwise_id": "01kq034aj2z3mxpkzcftxkjbtm",
+    "summary": "The author explains how overthinking can stop projects from being finished by causing endless research and revisions. They describe their struggle with building a structural diff tool and the tools they explored. Finally, they plan to make a simple version first, then improve it step-by-step to avoid getting stuck again.",
+    "title": "On sabotaging projects by overthinking",
+    "url": "https://kevinlynagh.com/newsletter/2026_04_overthinking/"
+  },
+  {
     "author": "Joel J Miller",
     "category": "article",
     "date_group": "23 Apr 2026",
@@ -6253,6 +6297,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Ethan Mollick",
+    "category": "article",
+    "date_group": "24 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-24T11:00:48.625Z",
+    "location": "new",
+    "readwise_id": "01kpzjcgbjgw16p83vet8m467d",
+    "summary": "GPT-5.5 is a big step forward in AI, showing faster and smarter abilities than before. It can create complex projects like academic papers and roleplaying games with minimal help. However, AI still struggles with creative writing and some ideas are not very interesting yet.",
+    "title": "Sign of the future: GPT-5.5",
+    "url": "https://www.oneusefulthing.org/p/sign-of-the-future-gpt-55"
+  },
+  {
     "author": "Asterisk Magazine",
     "category": "article",
     "date_group": "22 Apr 2026",
@@ -6322,9 +6379,11 @@
     "category": "article",
     "date_group": "19 Apr 2026",
     "highlights": [
-      "The peptide, humanin, was ultimately traced to a tiny snippet of mitochondrial DNA—part of the ninety-eight per cent of the human genome that had long been dismissed as “junk DNA.” Cohen’s work helped reveal that, in the three-billion-letter book that is our genome, even obscure one-liners can be an important part of the story. Junk DNA, it turned out, wasn’t junk: it contains instructions for numerous peptides and proteins that had never been studied."
+      "The peptide, humanin, was ultimately traced to a tiny snippet of mitochondrial DNA—part of the ninety-eight per cent of the human genome that had long been dismissed as “junk DNA.” Cohen’s work helped reveal that, in the three-billion-letter book that is our genome, even obscure one-liners can be an important part of the story. Junk DNA, it turned out, wasn’t junk: it contains instructions for numerous peptides and proteins that had never been studied.",
+      "humanin was eventually linked to breast and brain cancers.",
+      "His team is best known for identifying *MOTS*-c, which has been called an exercise mimetic: it activates cellular pathways that are usually turned on during exercise. Strikingly, older mice treated with the peptide can run for twice as long as their untreated counterparts."
     ],
-    "last_highlighted_at": "2026-04-21T00:36:34.237Z",
+    "last_highlighted_at": "2026-04-25T01:51:26.525Z",
     "last_moved_at": "2026-04-19T21:46:04.086Z",
     "location": "new",
     "readwise_id": "01kpkvaddpanvh92chjeh3cgb9",
@@ -6580,22 +6639,6 @@
     "summary": "India’s Prototype Fast Breeder Reactor at Kalpakkam reached first criticality on April 6, 2026, marking a major step in its nuclear program. This reactor uses advanced technology to produce more fuel than it consumes, moving India toward energy independence. The success opens the way for more fast breeder reactors and growth in India’s nuclear capacity by 2047.",
     "title": "Breaking news: The Prototype Fast Breeder Reactor at Kalpakkam achieves first criticality",
     "url": "https://theclimatedesk.substack.com/p/breaking-news-the-prototype-fast"
-  },
-  {
-    "author": "Robert Zaretsky",
-    "category": "article",
-    "date_group": "09 Apr 2026",
-    "highlights": [
-      "pauperize",
-      "ateliers"
-    ],
-    "last_highlighted_at": "2026-04-09T13:29:10.826Z",
-    "last_moved_at": "2026-04-09T13:24:48.162Z",
-    "location": "new",
-    "readwise_id": "01kns6ncd3cat7xh28237vdff8",
-    "summary": "Paul Lafargue believed machines could free people from work and give them more leisure time. He argued that workers should fight for the right to be idle, not just shorter workdays. Lafargue imagined a future where people enjoy doing nothing, finding peace beyond constant labor.",
-    "title": "The Importance of Being Idle",
-    "url": "https://theamericanscholar.org/the-importance-of-being-idle/"
   },
   {
     "author": "Adolfo Ochagavía",
