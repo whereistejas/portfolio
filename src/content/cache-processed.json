@@ -1,5 +1,39 @@
 [
   {
+    "author": "Azeem Azhar",
+    "category": "article",
+    "date_group": "25 Apr 2026",
+    "highlights": [
+      "The best way to understand a question like this is to create a framework, one that you can update as new evidence emerges.",
+      "the public debate clouded by posturing",
+      "Tulip mania, often misremembered as a frenzy of bankrupt weavers and drowning merchants, was [less disastrous](https://theconversation.com/tulip-mania-the-classic-story-of-a-dutch-financial-bubble-is-mostly-wrong-91413) than legend suggests. It was confined to wealthy merchants and left the Dutch economy largely unscathed. But the myth has endured, and that is the point: bubbles become stories we tell ourselves about the dangers of optimism.",
+      "There are two interrelated systems at work. The first, the most visible, is when stock markets become absurdly overvalued and collapse. The second is whether the quantity of productive capital (going into capital expenditure or venture capital) deployed collapses.",
+      "A “boom,” by contrast, can look very similar in its early stages with rising valuations and accelerating investment. But the crucial distinction is that, in a boom, fundamentals eventually catch up. The underlying cash flows, productivity gains, or genuine demand growth rise to meet the optimism.",
+      "Between the two lies a gray zone: periods of exuberance when it is genuinely hard to tell whether capital is building the foundations of a new economy or merely inflating prices that will not be sustained.",
+      "Only in retrospect do we know whether exuberance was justified or delusional."
+    ],
+    "last_highlighted_at": "2026-04-25T17:53:24.754Z",
+    "last_moved_at": "2026-04-25T17:54:14.330Z",
+    "location": "archive",
+    "readwise_id": "01kg5jn02xza1smxxbf27er171",
+    "summary": "The author explores whether AI is a financial bubble by comparing it to past tech booms and busts. He creates a framework with five gauges to track investment, revenue, valuation, and funding quality in AI. The goal is to help investors and executives understand if AI's rapid growth is sustainable or a risky bubble.",
+    "title": "🫧 Is AI a bubble?",
+    "url": "https://www.exponentialview.co/p/is-ai-a-bubble"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "25 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-25T15:30:52.498Z",
+    "location": "archive",
+    "readwise_id": "01kq2kv1kxm58j0sqq73a3kmv0",
+    "summary": "America started with a bold bet. The founders trusted that people could think on their own. They believed knowledge should belong to everyone, not just the elite.",
+    "title": "LIGHTNING STUDIOS",
+    "url": "https://www.lightningstudios.ai/"
+  },
+  {
     "author": "Robert Zaretsky",
     "category": "article",
     "date_group": "25 Apr 2026",
@@ -6297,6 +6331,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Malcolm Ocean",
+    "category": "article",
+    "date_group": "25 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-25T15:16:05.961Z",
+    "location": "new",
+    "readwise_id": "01kq2kcnp9bazjwt9ex94gp3c9",
+    "summary": "The article elaborates on the concept of living in a dream mashup of current situations and past emotional meanings, likening it to dreaming of being at school on a boat. It discusses emotional flashbacks, transformational vs. counteractive approaches, and ways to navigate emotional responses in oneself and others. The importance of understanding emotional cognition and trust-building is highlighted.",
+    "title": "Dream Mashups",
+    "url": "https://malcolmocean.com/2021/06/dream-mashups/"
+  },
+  {
     "author": "Ethan Mollick",
     "category": "article",
     "date_group": "24 Apr 2026",
@@ -7353,8 +7400,16 @@
     "author": "Ben Thompson",
     "category": "article",
     "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "In each case the bubbles were not regrettable, but necessary: the speculative mania enabled what Perez called the “Installation Phase”, where necessary but not necessarily financially wise investments laid the groundwork for the “Deployment Period”.",
+      "Inflection-driven bubbles have fewer harmful side effects and more beneficial long-term effects. In an inflection-driven bubble, investors decide that the future will be meaningfully different from the past and trade accordingly.",
+      "If a mean-reversion bubble is about the numbers after the decimal point, an inflection bubble is about orders of magnitude.",
+      "The fundamental utility of inflection bubbles comes from their role as coordinating mechanisms. When one group makes investments predicated on a particular vision of the future, it reduces the risk for others seeking to build parts of that vision.",
+      "all of this ran over fiber laid by bankrupt companies. What Perez got right is that bubbles install physical capacity; what Hobart and Huber added is that they also create cognitive capacity, thanks to everyone pulling in the same direction at the exact same time, based not on fiat, but on a shared belief that this time is different.",
+      "The first is fabs",
+      "The second is power."
+    ],
+    "last_highlighted_at": "2026-04-25T18:18:47.346Z",
     "last_moved_at": "2026-02-11T22:54:37.719Z",
     "location": "new",
     "readwise_id": "01kfbg3t3cqx35fv4bc7nk0nck",
@@ -7400,18 +7455,5 @@
     "summary": "The author reflects on how steady increases in compute have driven rapid AI progress and why that trend matters for the next decade.  \nHe warns against naive long-term extrapolations while noting scaling laws and past surprises make big advances plausible.  \nHe urges serious, practical thinking about AI’s societal impacts rather than hype or fatalism.",
     "title": "2025 letter",
     "url": "https://zhengdongwang.com/2025/12/30/2025-letter.html"
-  },
-  {
-    "author": "Azeem Azhar",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.691Z",
-    "location": "new",
-    "readwise_id": "01kg5jn02xza1smxxbf27er171",
-    "summary": "The author explores whether AI is a financial bubble by comparing it to past tech booms and busts. He creates a framework with five gauges to track investment, revenue, valuation, and funding quality in AI. The goal is to help investors and executives understand if AI's rapid growth is sustainable or a risky bubble.",
-    "title": "🫧 Is AI a bubble?",
-    "url": "https://www.exponentialview.co/p/is-ai-a-bubble"
   }
 ]
