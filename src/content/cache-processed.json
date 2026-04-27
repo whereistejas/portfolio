@@ -1,5 +1,58 @@
 [
   {
+    "author": "Dhruv Khullar",
+    "category": "article",
+    "date_group": "27 Apr 2026",
+    "highlights": [
+      "The peptide, humanin, was ultimately traced to a tiny snippet of mitochondrial DNA—part of the ninety-eight per cent of the human genome that had long been dismissed as “junk DNA.” Cohen’s work helped reveal that, in the three-billion-letter book that is our genome, even obscure one-liners can be an important part of the story. Junk DNA, it turned out, wasn’t junk: it contains instructions for numerous peptides and proteins that had never been studied.",
+      "humanin was eventually linked to breast and brain cancers.",
+      "His team is best known for identifying *MOTS*-c, which has been called an exercise mimetic: it activates cellular pathways that are usually turned on during exercise. Strikingly, older mice treated with the peptide can run for twice as long as their untreated counterparts."
+    ],
+    "last_highlighted_at": "2026-04-25T01:51:26.525Z",
+    "last_moved_at": "2026-04-27T00:06:16.658Z",
+    "location": "archive",
+    "readwise_id": "01kpkvaddpanvh92chjeh3cgb9",
+    "summary": "Many people are injecting unapproved peptides promoted by health influencers despite limited safety data. Some doctors and researchers warn that these treatments can be risky and are not fully tested. The FDA has restricted certain peptides, but the gray market for them continues to grow.",
+    "title": "Why Are People Injecting Themselves with Peptides? | The New Yorker",
+    "url": "https://archive.ph/zQHbI"
+  },
+  {
+    "author": "Kevin Esvelt",
+    "category": "article",
+    "date_group": "26 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-26T23:28:24.972Z",
+    "location": "archive",
+    "readwise_id": "01ke3s3adw4p0wmavzgnkkpj8w",
+    "summary": "Deliberate release of engineered or newly identified viruses could cause far deadlier pandemics than past outbreaks and might collapse societies by halting essential services. Publicly listing and characterizing such viruses and doing certain lab experiments increases the risk by making dangerous agents easier to recreate. To prevent this, we should delay risky research, detect exponential outbreaks early, and protect essential workers quickly with easy-to-use PPE and faster countermeasures.",
+    "title": "How a deliberate pandemic could crush societies and what to do about it",
+    "url": "https://thebulletin.org/2022/11/how-a-deliberate-pandemic-could-crush-societies-and-what-to-do-about-it/"
+  },
+  {
+    "author": "Ben Thompson",
+    "category": "article",
+    "date_group": "26 Apr 2026",
+    "highlights": [
+      "In each case the bubbles were not regrettable, but necessary: the speculative mania enabled what Perez called the “Installation Phase”, where necessary but not necessarily financially wise investments laid the groundwork for the “Deployment Period”.",
+      "Inflection-driven bubbles have fewer harmful side effects and more beneficial long-term effects. In an inflection-driven bubble, investors decide that the future will be meaningfully different from the past and trade accordingly.",
+      "If a mean-reversion bubble is about the numbers after the decimal point, an inflection bubble is about orders of magnitude.",
+      "The fundamental utility of inflection bubbles comes from their role as coordinating mechanisms. When one group makes investments predicated on a particular vision of the future, it reduces the risk for others seeking to build parts of that vision.",
+      "all of this ran over fiber laid by bankrupt companies. What Perez got right is that bubbles install physical capacity; what Hobart and Huber added is that they also create cognitive capacity, thanks to everyone pulling in the same direction at the exact same time, based not on fiat, but on a shared belief that this time is different.",
+      "The first is fabs",
+      "The second is power.",
+      "The problem from a Perez perspective is that all of this spending on chips is, relative to the sort of infrastructure she wrote about — railroads, factories, fiber, etc. — short-lived.",
+      "As [I noted yesterday](https://stratechery.com/2025/amazon-earnings-aws-and-openai-did-amazon-solve-groceries/), this actually surprised me: I assumed that chips were in short supply, and the power shortage was looming, but actually power is already the limiter. This is both disappointing and unsurprising, given how power generation capacity growth has stagnated over the last two decades:\n\n[![](https://i0.wp.com/stratechery.com/wp-content/uploads/2025/11/bubbles-1.png?w=1330&ssl=1)](https://www.eia.gov/energyexplained/electricity/electricity-in-the-us-generation-capacity-and-sales.php)"
+    ],
+    "last_highlighted_at": "2026-04-26T14:11:05.289Z",
+    "last_moved_at": "2026-04-26T21:42:19.649Z",
+    "location": "archive",
+    "readwise_id": "01kfbg3t3cqx35fv4bc7nk0nck",
+    "summary": "Bubbles, like the AI bubble today, help fund many new ideas and build important tools for the future. They bring people and money together to create lasting change, even if some investments fail. History shows that bubbles can lead to big progress and new inventions over time.",
+    "title": "The Benefits of Bubbles",
+    "url": "https://stratechery.com/2025/the-benefits-of-bubbles/"
+  },
+  {
     "author": "Azeem Azhar",
     "category": "article",
     "date_group": "25 Apr 2026",
@@ -6422,23 +6475,6 @@
     "url": "https://readwise.io/reader/document_raw_content/446100713"
   },
   {
-    "author": "Dhruv Khullar",
-    "category": "article",
-    "date_group": "19 Apr 2026",
-    "highlights": [
-      "The peptide, humanin, was ultimately traced to a tiny snippet of mitochondrial DNA—part of the ninety-eight per cent of the human genome that had long been dismissed as “junk DNA.” Cohen’s work helped reveal that, in the three-billion-letter book that is our genome, even obscure one-liners can be an important part of the story. Junk DNA, it turned out, wasn’t junk: it contains instructions for numerous peptides and proteins that had never been studied.",
-      "humanin was eventually linked to breast and brain cancers.",
-      "His team is best known for identifying *MOTS*-c, which has been called an exercise mimetic: it activates cellular pathways that are usually turned on during exercise. Strikingly, older mice treated with the peptide can run for twice as long as their untreated counterparts."
-    ],
-    "last_highlighted_at": "2026-04-25T01:51:26.525Z",
-    "last_moved_at": "2026-04-19T21:46:04.086Z",
-    "location": "new",
-    "readwise_id": "01kpkvaddpanvh92chjeh3cgb9",
-    "summary": "Many people are injecting unapproved peptides promoted by health influencers despite limited safety data. Some doctors and researchers warn that these treatments can be risky and are not fully tested. The FDA has restricted certain peptides, but the gray market for them continues to grow.",
-    "title": "Why Are People Injecting Themselves with Peptides? | The New Yorker",
-    "url": "https://archive.ph/zQHbI"
-  },
-  {
     "author": "Paul Niehaus",
     "category": "article",
     "date_group": "17 Apr 2026",
@@ -7397,27 +7433,6 @@
     "url": "https://readwise.io/reader/document_raw_content/411557427"
   },
   {
-    "author": "Ben Thompson",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [
-      "In each case the bubbles were not regrettable, but necessary: the speculative mania enabled what Perez called the “Installation Phase”, where necessary but not necessarily financially wise investments laid the groundwork for the “Deployment Period”.",
-      "Inflection-driven bubbles have fewer harmful side effects and more beneficial long-term effects. In an inflection-driven bubble, investors decide that the future will be meaningfully different from the past and trade accordingly.",
-      "If a mean-reversion bubble is about the numbers after the decimal point, an inflection bubble is about orders of magnitude.",
-      "The fundamental utility of inflection bubbles comes from their role as coordinating mechanisms. When one group makes investments predicated on a particular vision of the future, it reduces the risk for others seeking to build parts of that vision.",
-      "all of this ran over fiber laid by bankrupt companies. What Perez got right is that bubbles install physical capacity; what Hobart and Huber added is that they also create cognitive capacity, thanks to everyone pulling in the same direction at the exact same time, based not on fiat, but on a shared belief that this time is different.",
-      "The first is fabs",
-      "The second is power."
-    ],
-    "last_highlighted_at": "2026-04-25T18:18:47.346Z",
-    "last_moved_at": "2026-02-11T22:54:37.719Z",
-    "location": "new",
-    "readwise_id": "01kfbg3t3cqx35fv4bc7nk0nck",
-    "summary": "Bubbles, like the AI bubble today, help fund many new ideas and build important tools for the future. They bring people and money together to create lasting change, even if some investments fail. History shows that bubbles can lead to big progress and new inventions over time.",
-    "title": "The Benefits of Bubbles",
-    "url": "https://stratechery.com/2025/the-benefits-of-bubbles/"
-  },
-  {
     "author": "Derek Thompson",
     "category": "article",
     "date_group": "11 Feb 2026",
@@ -7429,19 +7444,6 @@
     "summary": "The railroads changed America’s economy, politics, and daily life in the 19th century, but they also caused financial crises and corruption. They grew into powerful, debt-heavy corporations that shaped the modern economy and led to government regulation. If AI has a similar impact today, it could bring both great change and serious challenges.",
     "title": "AI Could Be the Railroad of the 21st Century. Brace Yourself.",
     "url": "https://archive.ph/djTwe"
-  },
-  {
-    "author": "Kevin Esvelt",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.719Z",
-    "location": "new",
-    "readwise_id": "01ke3s3adw4p0wmavzgnkkpj8w",
-    "summary": "Deliberate release of engineered or newly identified viruses could cause far deadlier pandemics than past outbreaks and might collapse societies by halting essential services. Publicly listing and characterizing such viruses and doing certain lab experiments increases the risk by making dangerous agents easier to recreate. To prevent this, we should delay risky research, detect exponential outbreaks early, and protect essential workers quickly with easy-to-use PPE and faster countermeasures.",
-    "title": "How a deliberate pandemic could crush societies and what to do about it",
-    "url": "https://thebulletin.org/2022/11/how-a-deliberate-pandemic-could-crush-societies-and-what-to-do-about-it/"
   },
   {
     "author": "Zhengdong Wang",
