@@ -1,5 +1,33 @@
 [
   {
+    "author": "Paul Sawers",
+    "category": "article",
+    "date_group": "27 Apr 2026",
+    "highlights": [
+      "Dunbar’s number is a concept from British biological anthropologist Robin Dunbar that suggests a cognitive limit to how many humans can stably exist within a given social context. That number is 150. Social media plays fast-and-loose with that figure, propelling billions of people into the same social sphere, with chaos in hot pursuit; large-scale social networks force people to engage with people who they would likely avoid in real life. The AT Protocol upends that, allowing all manner of niche and micro-networks built on the same underlying framework."
+    ],
+    "last_highlighted_at": "2026-04-27T16:30:18.967Z",
+    "last_moved_at": "2026-04-27T18:50:31.309Z",
+    "location": "archive",
+    "readwise_id": "01kq7wdpsjcjzjzk6sv2xdxdqa",
+    "summary": "Skyseed is a new fund and incubator supporting projects on the Bluesky and AT Protocol ecosystem. It aims to help creators build decentralized social apps that give users control over their data. Founder Peter Wang plans to invest money and offer guidance to early-stage teams with real ideas.",
+    "title": "Meet Skyseed, a VC fund and incubator backing the Bluesky and AT Protocol ecosystem",
+    "url": "https://techcrunch.com/2024/12/21/meet-skyseed-a-vc-fund-and-incubator-backing-the-bluesky-and-at-protocol-ecosystem/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "27 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-27T09:14:20.972Z",
+    "location": "archive",
+    "readwise_id": "01kq73fmbg2acby32c8qeyrkgr",
+    "summary": "In 2026, AI changed how I work by handling most coding tasks quickly and accurately. AI helps me test, fix, and build software much faster than before. Learning to use AI tools well is key to staying effective in software development.",
+    "title": "2026 has been the most pivotal year in my career… and it's only March",
+    "url": "https://nullprogram.com/blog/2026/03/29/"
+  },
+  {
     "author": "Dhruv Khullar",
     "category": "article",
     "date_group": "27 Apr 2026",
@@ -6384,6 +6412,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Armin Ronacher",
+    "category": "article",
+    "date_group": "27 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-27T09:59:03.243Z",
+    "location": "new",
+    "readwise_id": "01kq761jtbqh46dp72tk618vd5",
+    "summary": "Building agents is still messy and existing SDK abstractions often break with real tool use.  \nExplicit control—especially direct SDK use and explicit cache management—makes agent behavior, costs, and reinforcement clearer.  \nDesigning useful agent loops requires careful handling of tools, sub-agents, outputs, and state to avoid dead ends and unwanted leaked information.",
+    "title": "Agent Design Is Still Hard",
+    "url": "https://lucumr.pocoo.org/2025/11/21/agents-are-hard/"
+  },
+  {
     "author": "Malcolm Ocean",
     "category": "article",
     "date_group": "25 Apr 2026",
@@ -6766,8 +6807,10 @@
     "author": "",
     "category": "article",
     "date_group": "31 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "It also limits what your TUI can do to some degree, which I find charming because constraints make for minimal programs that just do what they're supposed to do without superfluous fluff."
+    ],
+    "last_highlighted_at": "2026-04-27T09:58:26.271Z",
     "last_moved_at": "2026-03-31T23:45:36.618Z",
     "location": "new",
     "readwise_id": "01kn34kmvcrnrdkhxsrsvmw97n",
