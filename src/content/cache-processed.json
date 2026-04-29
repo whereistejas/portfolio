@@ -1,5 +1,44 @@
 [
   {
+    "author": "Mitchell Hashimoto",
+    "category": "article",
+    "date_group": "28 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-28T21:39:44.409Z",
+    "location": "archive",
+    "readwise_id": "01kqb0h6kazqst7pbn14e858sp",
+    "summary": "Mitchell Hashimoto is moving his Ghostty project off GitHub after 18 years of daily use. He feels GitHub's frequent outages now block his work and passion. He plans to switch gradually but keep a read-only GitHub mirror for Ghostty.",
+    "title": "Ghostty Is Leaving GitHub",
+    "url": "https://mitchellh.com/writing/ghostty-leaving-github"
+  },
+  {
+    "author": "Asimov Press",
+    "category": "article",
+    "date_group": "28 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-28T20:16:36.004Z",
+    "location": "archive",
+    "readwise_id": "01kjgzpg1xv2y71vab6bevb07w",
+    "summary": "AI can help design better drugs, but clinical trials will still take a long time due to biological and operational limits. Trials are needed not just to confirm drug safety but also to learn about diseases, which requires time and data from humans. To speed up drug development, we must improve trial processes and collect human data faster, not just rely on AI.",
+    "title": "AI Won't Automatically Accelerate Clinical Trials",
+    "url": "https://www.asimov.press/p/ai-clinical-trials"
+  },
+  {
+    "author": "Akshay Oppiliappan",
+    "category": "article",
+    "date_group": "28 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-28T11:13:59.433Z",
+    "location": "archive",
+    "readwise_id": "01kq9wqdgpv1c258tkx0cxefxj",
+    "summary": "The author created a script called jjj to help select revsets easily using fzf when working with jujutsu commands. Jjj shows a searchable list of changes, letting users pick one to run a jj command with that revset. It works with any jj command and requires a specific log format to function properly.",
+    "title": "generated bookmark name",
+    "url": "https://oppi.li/posts/jjj/"
+  },
+  {
     "author": "Paul Sawers",
     "category": "article",
     "date_group": "27 Apr 2026",
@@ -6412,6 +6451,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "",
+    "category": "article",
+    "date_group": "28 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-28T20:16:50.785Z",
+    "location": "new",
+    "readwise_id": "01kq9vpyf73mntztqd1gyqv9pp",
+    "summary": "The author tried to create a decentralized ATProto account using did:web but got \"burned\" and blocked after deleting it. This shows that Bluesky’s system still relies on central control, limiting true decentralization. The author wants more user-friendly, community-run social media without corporate control.",
+    "title": "I Was Right About ATProto Key Management",
+    "url": "https://notes.nora.codes/atproto-again/"
+  },
+  {
     "author": "Armin Ronacher",
     "category": "article",
     "date_group": "27 Apr 2026",
@@ -7129,19 +7181,6 @@
     "summary": "The British intelligence agencies closely control what former spies can reveal in books, citing national security. They often demand removal of details, even if those facts are public or seem harmless. This secrecy sometimes protects the agencies' reputations more than the country's safety.",
     "title": "My mission to avoid breaking the Official Secrets Act",
     "url": "https://spectator.com/article/my-mission-to-avoid-breaking-the-official-secrets-act/"
-  },
-  {
-    "author": "Asimov Press",
-    "category": "article",
-    "date_group": "28 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-28T02:02:03.709Z",
-    "location": "new",
-    "readwise_id": "01kjgzpg1xv2y71vab6bevb07w",
-    "summary": "AI can help design better drugs, but clinical trials will still take a long time due to biological and operational limits. Trials are needed not just to confirm drug safety but also to learn about diseases, which requires time and data from humans. To speed up drug development, we must improve trial processes and collect human data faster, not just rely on AI.",
-    "title": "AI Won't Automatically Accelerate Clinical Trials",
-    "url": "https://www.asimov.press/p/ai-clinical-trials"
   },
   {
     "author": "Benedict Evans",
