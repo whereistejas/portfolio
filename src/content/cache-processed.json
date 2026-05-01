@@ -1,5 +1,44 @@
 [
   {
+    "author": "Armin Ronacher",
+    "category": "article",
+    "date_group": "30 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-30T13:34:43.090Z",
+    "location": "archive",
+    "readwise_id": "01kn34bv36bzx0x51rm3v6r7ew",
+    "summary": "Pi is a small and reliable coding agent that writes and runs code using just four tools. It lets users build and extend their own agents by writing code instead of downloading many extensions. This approach powers projects like OpenClaw and shows how software can build more software naturally.",
+    "title": "Pi: The Minimal Agent Within OpenClaw",
+    "url": "https://lucumr.pocoo.org/2026/1/31/pi/"
+  },
+  {
+    "author": "David Bushell",
+    "category": "article",
+    "date_group": "30 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-30T12:58:17.937Z",
+    "location": "archive",
+    "readwise_id": "01kqf7fvjd3v4955tyeq7gg8e6",
+    "summary": "The one where I suggest finding the nearest lifeboat",
+    "title": "GitHub is sinking",
+    "url": "https://dbushell.com/2026/04/29/github-is-sinking/"
+  },
+  {
+    "author": "Armin Ronacher",
+    "category": "article",
+    "date_group": "30 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-30T12:53:02.848Z",
+    "location": "archive",
+    "readwise_id": "01kqf768shs43g20ysajhhhqdf",
+    "summary": "Before GitHub, open source projects were smaller and ran on self-hosted infrastructure. GitHub made open source more open, social, and easy to use, becoming a central archive for software. Now, as GitHub declines, the open source community must find new ways to preserve and share code.",
+    "title": "Before GitHub",
+    "url": "https://lucumr.pocoo.org/2026/4/28/before-github/"
+  },
+  {
     "author": "Mitchell Hashimoto",
     "category": "article",
     "date_group": "28 Apr 2026",
@@ -6451,6 +6490,32 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Brian Potter",
+    "category": "article",
+    "date_group": "30 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-30T15:19:47.569Z",
+    "location": "new",
+    "readwise_id": "01kqffk13js7t5d80scx2xgyc2",
+    "summary": "Oil refineries turn crude oil into useful products like gasoline and diesel by separating and changing its chemical parts. They use processes like distillation and cracking to make valuable fuels from heavy oil. Refineries are huge, expensive, and work nonstop to meet the world's huge demand for petroleum.",
+    "title": "How an Oil Refinery Works",
+    "url": "https://www.construction-physics.com/p/how-an-oil-refinery-works"
+  },
+  {
+    "author": "Computer Things",
+    "category": "article",
+    "date_group": "30 Apr 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-04-30T13:34:55.591Z",
+    "location": "new",
+    "readwise_id": "01kqf9k0k78rbj5pjw1xh3cj88",
+    "summary": "Illegal states are system conditions that must never occur, while unwanted states are undesirable but sometimes allowed temporarily. Unwanted states can happen due to external factors or design choices, and systems must detect and resolve them to avoid illegal states. Sometimes unwanted states enable useful workflows, but users should be informed when entering them.",
+    "title": "Illegal vs Unwanted States",
+    "url": "https://buttondown.com/hillelwayne/archive/illegal-vs-unwanted-states/"
+  },
+  {
     "author": "",
     "category": "article",
     "date_group": "28 Apr 2026",
@@ -6871,19 +6936,6 @@
     "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/"
   },
   {
-    "author": "Armin Ronacher",
-    "category": "article",
-    "date_group": "31 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-31T23:41:20.870Z",
-    "location": "new",
-    "readwise_id": "01kn34bv36bzx0x51rm3v6r7ew",
-    "summary": "Pi is a small and reliable coding agent that writes and runs code using just four tools. It lets users build and extend their own agents by writing code instead of downloading many extensions. This approach powers projects like OpenClaw and shows how software can build more software naturally.",
-    "title": "Pi: The Minimal Agent Within OpenClaw",
-    "url": "https://lucumr.pocoo.org/2026/1/31/pi/"
-  },
-  {
     "author": "Leandro Ostera",
     "category": "article",
     "date_group": "31 Mar 2026",
@@ -7118,19 +7170,6 @@
     "url": "https://calpaterson.com/bank-python.html"
   },
   {
-    "author": "Dwarkesh Patel",
-    "category": "article",
-    "date_group": "12 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-12T13:35:27.690Z",
-    "location": "new",
-    "readwise_id": "01kkh44ryargytxgvjcz1w91m3",
-    "summary": "AI will soon be deeply built into all products and could enable widespread government surveillance. The government has strong power over AI companies, which risks misuse of AI for control and spying. While regulation is needed, it must be carefully designed to stop harmful uses without giving the government total control.",
-    "title": "I’m glad the Anthropic fight is happening now",
-    "url": "https://www.dwarkesh.com/p/dow-anthropic"
-  },
-  {
     "author": "Howard Marks",
     "category": "pdf",
     "date_group": "08 Mar 2026",
@@ -7183,19 +7222,6 @@
     "url": "https://spectator.com/article/my-mission-to-avoid-breaking-the-official-secrets-act/"
   },
   {
-    "author": "Benedict Evans",
-    "category": "article",
-    "date_group": "27 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-27T18:32:23.270Z",
-    "location": "new",
-    "readwise_id": "01kjdb9e17e90rj2t3fefsesgh",
-    "summary": "OpenAI has strong technology but no unique product or clear way to keep users engaged. Big companies like Google and Meta are catching up and using their advantages to compete. The future of AI will depend on creating new experiences and platforms that attract many users and partners.",
-    "title": "How will OpenAI compete?",
-    "url": "https://www.ben-evans.com/benedictevans/2026/2/19/how-will-openai-compete-nkg2x"
-  },
-  {
     "author": "Andrey Mokhov, Neil Mitchell, Simon Peyton Jones",
     "category": "pdf",
     "date_group": "24 Feb 2026",
@@ -7242,19 +7268,6 @@
     "url": "https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/"
   },
   {
-    "author": "Gergely Orosz",
-    "category": "article",
-    "date_group": "22 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-22T16:21:02.667Z",
-    "location": "new",
-    "readwise_id": "01kj32f12dameaab6sfpn152dh",
-    "summary": "Software engineering salaries in the Netherlands and Europe fall into three distinct groups with little overlap. Higher pay often comes from companies offering bonuses and equity, especially in fast-growing or public tech firms. Top salaries attract the best engineers but come with high competition and risk.",
-    "title": "The trimodal nature of software engineering salaries in the Netherlands and Europe",
-    "url": "https://blog.pragmaticengineer.com/software-engineering-salaries-in-the-netherlands-and-europe/"
-  },
-  {
     "author": "",
     "category": "article",
     "date_group": "16 Feb 2026",
@@ -7285,19 +7298,6 @@
     "summary": "Amartya K. Sen critiques traditional economic theory for assuming that people always act out of self-interest. He argues that this view neglects other motivations, such as moral commitments, which can influence economic behavior. Sen suggests that recognizing these factors could lead to more accurate economic models and a better understanding of human behavior.",
     "title": "Rational Fools: A Critique Of The Behavioral Foundations Of Economic Theory",
     "url": "https://readwise.io/reader/document_raw_content/306253541"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.723Z",
-    "location": "new",
-    "readwise_id": "01k0rkksw05j6r0fb3sg2t75ze",
-    "summary": "The text explains LL and LR parsing as different ways to process input tokens and output parse tree traversals. LL parsers use pre-order traversal, while LR parsers use post-order traversal, each with its own advantages in handling grammars and parsing context. Understanding LL vs LR parsing helps in choosing the right parsing strategy for different grammars and parsing requirements.",
-    "title": "LL and LR Parsing Demystified",
-    "url": "https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html"
   },
   {
     "author": "Marc Brooker",
@@ -7513,19 +7513,6 @@
     "summary": "One-to-one tutoring improves student learning much more than conventional group teaching, often by two standard deviations. Methods like Mastery Learning and increased student participation can also boost achievement significantly. Researchers suggest continuing to explore and apply these effective teaching strategies to close the learning gap.",
     "title": "The 2 Sigma Problem",
     "url": "https://readwise.io/reader/document_raw_content/411557427"
-  },
-  {
-    "author": "Derek Thompson",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.719Z",
-    "location": "new",
-    "readwise_id": "01kfbfmdam766y0dkjmxh15ter",
-    "summary": "The railroads changed America’s economy, politics, and daily life in the 19th century, but they also caused financial crises and corruption. They grew into powerful, debt-heavy corporations that shaped the modern economy and led to government regulation. If AI has a similar impact today, it could bring both great change and serious challenges.",
-    "title": "AI Could Be the Railroad of the 21st Century. Brace Yourself.",
-    "url": "https://archive.ph/djTwe"
   },
   {
     "author": "Zhengdong Wang",
