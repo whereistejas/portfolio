@@ -1,5 +1,35 @@
 [
   {
+    "author": "John Authers",
+    "category": "article",
+    "date_group": "04 May 2026",
+    "highlights": [
+      "*In the US, you grow companies like sequoias. They grow very tall. Here, they are like banyan trees. They are wide. You’re missing scale and complexity. After 250 million people, you run out of runway. You aren’t getting market depth.*",
+      "But the expansion has been largely jobless. Unlike China, where the population urbanized, India’s economy remains dominated by agriculture. Out of a total workforce of 1.11 billion people aged 15 years and above in 2024–25, around only 456 million (41%) are employed or looking for a job. The global participation rate is 65%; China’s is 75%.\n\n[According to Axis Bank](https://www.axis.bank.in/docs/default-source/press-releases/the-missing-half-axis-bank-09-03-26.pdf), the participation rate will have to rise to at least 60% if *Viksit Bhara*t is to be achieved.",
+      "*Unlike China or South Korea, which attained high-income status prior to population aging, India risks confronting a “demographic cliff” around 2045-50 while remaining stuck in the “lower-middle income trap.” Without an outward-oriented shift that boosts FDI and exports, the “jobless growth” paradox will likely become entrenched.*"
+    ],
+    "last_highlighted_at": "2026-05-04T01:31:33.139Z",
+    "last_moved_at": "2026-05-04T01:31:59.807Z",
+    "location": "archive",
+    "readwise_id": "01kkp526fb1mgedxdvn90a4twy",
+    "summary": "India’s economy is held back by family-run conglomerates that grow wide but not deep, limiting real growth. The country faces a big challenge lifting a billion people out of poverty and creating enough jobs, especially for women. To succeed by 2047, India must change fast, urbanize more, and attract more foreign investment.",
+    "title": "India Can’t Thrive Under Just a Banyan Tree",
+    "url": "https://www.bloomberg.com/opinion/articles/2026-03-13/india-can-t-thrive-under-just-a-banyan-tree"
+  },
+  {
+    "author": "James Wolff",
+    "category": "article",
+    "date_group": "04 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-04T01:21:03.263Z",
+    "location": "archive",
+    "readwise_id": "01kjqtv0rqxy6p0g497ajyewq1",
+    "summary": "The British intelligence agencies closely control what former spies can reveal in books, citing national security. They often demand removal of details, even if those facts are public or seem harmless. This secrecy sometimes protects the agencies' reputations more than the country's safety.",
+    "title": "My mission to avoid breaking the Official Secrets Act",
+    "url": "https://spectator.com/article/my-mission-to-avoid-breaking-the-official-secrets-act/"
+  },
+  {
     "author": "Amartya K. Sen",
     "category": "pdf",
     "date_group": "02 May 2026",
@@ -7141,8 +7171,11 @@
     "author": "The Economist",
     "category": "article",
     "date_group": "14 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "A jingoistic media would like Indians to see only America and China as peers. But arithmetic is a cruel master. India’s economy is a fifth the size of China’s and an eighth as big as America’s. Germany, Japan and India together add up only to two-thirds of China. Ordinary citizens may not know the precise numbers but they are no dummies. It is obvious that India is not in the same league.",
+      "Anyway, what matters more than the absolute size of an economy is how people experience it. That is why economists prefer making cross-country comparisons using purchasing-power parity—which takes into account the cost of living—rather than GDP at market exchange rates, and dividing it by the population. By that measure, India’s GDP per person is more Jordan than Japan."
+    ],
+    "last_highlighted_at": "2026-05-04T01:36:30.535Z",
     "last_moved_at": "2026-03-14T17:00:32.929Z",
     "location": "new",
     "readwise_id": "01kkpmnqs236xf07ky0fknwsar",
@@ -7175,19 +7208,6 @@
     "summary": "Looking stupid is important for creativity because good ideas often start as bad or silly ones. Fear of looking foolish can stop people from sharing their work and growing. Being willing to look stupid helps you try new things and eventually find great ideas.",
     "title": "Willingness to look stupid is a genuine moat in creative work",
     "url": "https://sharif.io/looking-stupid"
-  },
-  {
-    "author": "John Authers",
-    "category": "article",
-    "date_group": "14 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-14T12:27:43.979Z",
-    "location": "new",
-    "readwise_id": "01kkp526fb1mgedxdvn90a4twy",
-    "summary": "India’s economy is held back by family-run conglomerates that grow wide but not deep, limiting real growth. The country faces a big challenge lifting a billion people out of poverty and creating enough jobs, especially for women. To succeed by 2047, India must change fast, urbanize more, and attract more foreign investment.",
-    "title": "India Can’t Thrive Under Just a Banyan Tree",
-    "url": "https://www.bloomberg.com/opinion/articles/2026-03-13/india-can-t-thrive-under-just-a-banyan-tree"
   },
   {
     "author": "Simpler Machines",
@@ -7253,19 +7273,6 @@
     "summary": "The text discusses using 'index-handles' instead of raw or smart pointers for memory management in C and C++. It suggests centralizing memory management into systems, grouping items into arrays, and converting handles to pointers only when necessary. By following specific rules, such as not storing pointers and using handle-to-pointer conversion, memory safety and efficient memory usage can be maintained.",
     "title": "Handles are the better pointers",
     "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html"
-  },
-  {
-    "author": "James Wolff",
-    "category": "article",
-    "date_group": "02 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-02T17:51:50.039Z",
-    "location": "new",
-    "readwise_id": "01kjqtv0rqxy6p0g497ajyewq1",
-    "summary": "The British intelligence agencies closely control what former spies can reveal in books, citing national security. They often demand removal of details, even if those facts are public or seem harmless. This secrecy sometimes protects the agencies' reputations more than the country's safety.",
-    "title": "My mission to avoid breaking the Official Secrets Act",
-    "url": "https://spectator.com/article/my-mission-to-avoid-breaking-the-official-secrets-act/"
   },
   {
     "author": "Andrey Mokhov, Neil Mitchell, Simon Peyton Jones",
