@@ -7265,8 +7265,11 @@
     "author": "",
     "category": "article",
     "date_group": "07 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "when human mathematicians approach a new problem, regardless of whether they succeed, they produce insights that others in the field can build on—something AI-based proofs don’t provide.",
+      "I also think mathematicians will start doing math at larger scales."
+    ],
+    "last_highlighted_at": "2026-05-06T12:39:49.162Z",
     "last_moved_at": "2026-03-07T15:18:57.266Z",
     "location": "new",
     "readwise_id": "01kk4e2nzjx3sjgrv2f0nrmxxq",
