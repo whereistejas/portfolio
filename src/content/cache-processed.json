@@ -1,5 +1,18 @@
 [
   {
+    "author": "Dion",
+    "category": "article",
+    "date_group": "08 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-08T10:44:47.045Z",
+    "location": "archive",
+    "readwise_id": "01kr3k0z4fb0g4whyzwm1e7ttv",
+    "summary": "Async Rust is amazing, but far from flawless. In this blog, I'll walk you through the current struggles and possible solutions.",
+    "title": "Debloat your async Rust",
+    "url": "https://tweedegolf.nl/en/blog/235/debloat-your-async-rust"
+  },
+  {
     "author": "",
     "category": "article",
     "date_group": "07 May 2026",
@@ -6634,6 +6647,84 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "S.Y. Lee",
+    "category": "article",
+    "date_group": "08 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-08T17:07:36.837Z",
+    "location": "new",
+    "readwise_id": "01kr48y6r59t3d23rmjvgdzpjz",
+    "summary": "Japan split its national railway, JNR, into regional JR companies to improve finances and services. The government kept JNR’s huge debt, helping JR appear profitable while taxpayers absorbed the losses. Though JR made some gains, its success was shaped by subsidies, asset sales, and careful management rather than full market freedom.",
+    "title": "Aura of Success: The First Years of Japan's Privatized National Railways",
+    "url": "https://www.substack-bahn.net/p/aura-of-success-the-first-years-of"
+  },
+  {
+    "author": "S.Y. Lee",
+    "category": "article",
+    "date_group": "08 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-08T17:07:16.870Z",
+    "location": "new",
+    "readwise_id": "01kr48xk8c8cgdymbsh7b5hyrt",
+    "summary": "Japan National Railways (JNR) had strong and militant labor unions that often clashed with management. In the 1980s, the government and businesses privatized JNR to weaken these unions. After privatization, the unions lost power, and many workers were fired or left struggling.",
+    "title": "The Rise and Fall of Japan's National Public Railway Labor Unions",
+    "url": "https://www.substack-bahn.net/p/the-rise-and-fall-of-japans-national"
+  },
+  {
+    "author": "S.Y. Lee",
+    "category": "article",
+    "date_group": "08 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-08T17:06:59.901Z",
+    "location": "new",
+    "readwise_id": "01kr48x2nwmv82vkgckfpcd970",
+    "summary": "Japanese National Railways (JNR) faced a huge debt crisis, leading to a government plan to privatize and split it into regional companies. Prime Minister Nakasone pushed this plan to weaken labor unions and promote political reform. The media played a big role in gaining public support, and the privatization law was passed in 1983 to start the process.",
+    "title": "The Death and Privatization of Japanese National Railways (Part 2, 1982-1987)",
+    "url": "https://www.substack-bahn.net/p/the-death-and-privatization-of-japanese-8d2"
+  },
+  {
+    "author": "S.Y. Lee",
+    "category": "article",
+    "date_group": "08 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-08T17:06:37.705Z",
+    "location": "new",
+    "readwise_id": "01kr48wd09m1gn597ymtd00ey1",
+    "summary": "The Japanese National Railways (JNR) was established after World War II and held a monopoly on rail transport in Japan. Over time, JNR faced massive debt and financial struggles, leading to its dissolution in 1987 and the creation of several private railway companies. The privatization process was influenced by internal and external political factors, ultimately transforming Japan's rail industry.",
+    "title": "The Death and Privatization of Japanese National Railways (Part 1, 1949-1982)",
+    "url": "https://www.substack-bahn.net/p/the-death-and-privatization-of-japanese"
+  },
+  {
+    "author": "S.Y. Lee",
+    "category": "article",
+    "date_group": "08 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-08T17:06:01.501Z",
+    "location": "new",
+    "readwise_id": "01kr48v9mxj0yj0atabr1e0jy5",
+    "summary": "After World War II, American occupiers created Japan National Railways (JNR) to help rebuild Japan with a democratic and independent rail system. However, political interference and labor conflicts led JNR into massive debt and dysfunction. In 1987, JNR was dissolved and privatized into smaller companies, marking the end of its troubled history.",
+    "title": "How American Occupiers Helped Doom Japan's National Public Railways",
+    "url": "https://www.substack-bahn.net/p/how-american-occupiers-helped-doom"
+  },
+  {
+    "author": "Association for Computing Machinery",
+    "category": "article",
+    "date_group": "08 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-08T17:03:03.233Z",
+    "location": "new",
+    "readwise_id": "01kr48nvj18prh5ze2c163f6zj",
+    "summary": "Memory safety helps prevent serious software bugs like buffer overflows and improves security. Rust is a key example of a memory-safe language that checks safety at compile time. While switching to memory-safe languages has costs, it offers clear benefits and is worth pursuing for better software security.",
+    "title": "Memory Safety for Skeptics",
+    "url": "https://queue.acm.org/detail.cfm"
   },
   {
     "author": "Brian Potter",
