@@ -13,7 +13,7 @@
     "url": "https://tweedegolf.nl/en/blog/235/debloat-your-async-rust"
   },
   {
-    "author": "",
+    "author": "Sharif Shameem",
     "category": "article",
     "date_group": "07 May 2026",
     "highlights": [
@@ -33,7 +33,7 @@
     "url": "https://sharif.io/looking-stupid"
   },
   {
-    "author": "Simpler Machines",
+    "author": "Nat Bennett",
     "category": "article",
     "date_group": "07 May 2026",
     "highlights": [
@@ -53,7 +53,7 @@
     "url": "https://www.simplermachines.com/why-you-need-a-wtf-notebook/"
   },
   {
-    "author": "",
+    "author": "Matteo Wong",
     "category": "article",
     "date_group": "07 May 2026",
     "highlights": [
@@ -133,7 +133,7 @@
     "url": "https://readwise.io/reader/document_raw_content/306253541"
   },
   {
-    "author": "BogdanTheGeek's Blog",
+    "author": "Bogdan Ionescu",
     "category": "article",
     "date_group": "02 May 2026",
     "highlights": [],
@@ -7214,9 +7214,10 @@
     "category": "article",
     "date_group": "31 Mar 2026",
     "highlights": [
-      "It also limits what your TUI can do to some degree, which I find charming because constraints make for minimal programs that just do what they're supposed to do without superfluous fluff."
+      "It also limits what your TUI can do to some degree, which I find charming because constraints make for minimal programs that just do what they're supposed to do without superfluous fluff.",
+      "People use sub-agents within a session thinking they're saving context space, which is true. But that's the wrong way to think about sub-agents. Using a sub-agent mid-session for context gathering is a sign you didn't plan ahead. If you need to gather context, do that first in its own session. Create an artifact that you can later use in a fresh session to give your agent all the context it needs without polluting its context window with tool outputs. That artifact can be useful for the next feature too, and you get full observability and steerability, which is important during context gathering."
     ],
-    "last_highlighted_at": "2026-04-27T09:58:26.271Z",
+    "last_highlighted_at": "2026-05-11T10:30:48.871Z",
     "last_moved_at": "2026-03-31T23:45:36.618Z",
     "location": "new",
     "readwise_id": "01kn34kmvcrnrdkhxsrsvmw97n",
