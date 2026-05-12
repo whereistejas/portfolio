@@ -1,5 +1,18 @@
 [
   {
+    "author": "Daniel Stenberg",
+    "category": "rss",
+    "date_group": "11 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-11T15:53:25.557Z",
+    "location": "archive",
+    "readwise_id": "01krav8y921avbd6cfctjxy16h",
+    "summary": "yes, as in singular one. Back in April 2026 Anthropic caused a lot of media noise when they concluded that their new AI model Mythos is dangerously good at finding security flaws in source code. Apparently Mythos was so good at this that Anthropic would not release this model to the public yet but instead … Continue reading Mythos finds a curl vulnerability →",
+    "title": "Mythos finds a curl vulnerability",
+    "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/"
+  },
+  {
     "author": "Dion",
     "category": "article",
     "date_group": "08 May 2026",
