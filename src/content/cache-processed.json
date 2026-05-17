@@ -1,5 +1,37 @@
 [
   {
+    "author": "Brad Bigelow",
+    "category": "pdf",
+    "date_group": "16 May 2026",
+    "highlights": [
+      "The canon of well-known classics, the books one can find in just about every library and bookstore, the books most commonly studied and written about, is like the freeway system of literature. These works have, until recently, been our most accessible and most heavily traveled routes through our literary landscape. With the creation of the Internet Archive and the steady incorporation of material into its collection, a huge amount of our literary landscape—by now a large share of the published material from the seventeenth century on— is just a few clicks away from over half the people in the world."
+    ],
+    "last_highlighted_at": "2026-05-16T20:05:48.635Z",
+    "last_moved_at": "2026-05-16T20:06:05.037Z",
+    "location": "archive",
+    "readwise_id": "01krrcrvmqyp9mppqdtepzpnbh",
+    "summary": "Many great books are forgotten not because they lack value, but due to bad luck or poor timing. The Internet Archive helps us find and read these lost works easily. This broadens our view of literature beyond just famous classics.",
+    "title": "On The Importance Of Remembering Forgotten Books",
+    "url": "https://readwise.io/reader/document_raw_content/455592179"
+  },
+  {
+    "author": "Armin Ronacher",
+    "category": "article",
+    "date_group": "16 May 2026",
+    "highlights": [
+      "Another problem with an output tool is that sometimes it just doesn’t call the tool. One of the ways in which we’re forcing this is we remember if the output tool was called. If the loop ends without the output tool, we inject a reinforcement message to encourage it to use the output tool.",
+      "I think Haiku and Sonnet are still the best tool callers available, so they make for excellent choices in the agent loop.",
+      "The interactions of the different sub agents like the Oracle with the main loop is beautifully done, and not many other harnesses do this today. It’s also a good way for me to validate how different agent designs work."
+    ],
+    "last_highlighted_at": "2026-05-16T13:11:12.264Z",
+    "last_moved_at": "2026-05-16T13:11:19.805Z",
+    "location": "archive",
+    "readwise_id": "01kq761jtbqh46dp72tk618vd5",
+    "summary": "Building agents is still messy and existing SDK abstractions often break with real tool use.  \nExplicit control—especially direct SDK use and explicit cache management—makes agent behavior, costs, and reinforcement clearer.  \nDesigning useful agent loops requires careful handling of tools, sub-agents, outputs, and state to avoid dead ends and unwanted leaked information.",
+    "title": "Agent Design Is Still Hard",
+    "url": "https://lucumr.pocoo.org/2025/11/21/agents-are-hard/"
+  },
+  {
     "author": "The Economist",
     "category": "article",
     "date_group": "13 May 2026",
@@ -6733,6 +6765,45 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Andrew Lilley Brinker",
+    "category": "pdf",
+    "date_group": "16 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-16T12:31:49.939Z",
+    "location": "new",
+    "readwise_id": "01krrcayxc90r3sm7j53gaztrr",
+    "summary": "Memory safety helps prevent serious software bugs like buffer overflows and improves security. Rust is a popular language that offers memory safety by default, encouraging safer coding practices. While governments are not banning unsafe languages like C or C++, moving to memory-safe languages is a smart and cost-effective way to make software more secure.",
+    "title": "Memory Safety For Skeptics",
+    "url": "https://readwise.io/reader/document_raw_content/455590868"
+  },
+  {
+    "author": "Bohyun Lee, Tobias Ziegler, Viktor Leis",
+    "category": "pdf",
+    "date_group": "16 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-16T11:58:24.352Z",
+    "location": "new",
+    "readwise_id": "01krradrgr0we99frgybejge67",
+    "summary": "The paper shows how databases can reduce extra writes on SSDs by controlling write patterns using workload knowledge. It proposes aligning database and SSD garbage collection to minimize write amplification and improve SSD lifespan. These optimizations work on various SSD types and can benefit other storage systems too.",
+    "title": "How To Write To SSDs",
+    "url": "https://readwise.io/reader/document_raw_content/455466247"
+  },
+  {
+    "author": "Carlo Rovelli",
+    "category": "article",
+    "date_group": "16 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-16T11:50:27.226Z",
+    "location": "new",
+    "readwise_id": "01krr9z74s18xy19j1whewmtmf",
+    "summary": "Carlo Rovelli says the true start of quantum theory was Max Born's work before Schrödinger's waves. Schrödinger’s wave idea made people misunderstand quantum physics as mysterious waves. Quantum theory really shows that the world is made of particles that interact in a probabilistic and granular way.",
+    "title": "Carlo Rovelli on what we get wrong about the origins of quantum theory",
+    "url": "https://archive.ph/q1LNX"
+  },
+  {
     "author": "Emile P Torres",
     "category": "article",
     "date_group": "10 May 2026",
@@ -6746,7 +6817,7 @@
     "url": "https://archive.ph/vdDg6"
   },
   {
-    "author": "Émile P Torres",
+    "author": "Emile P Torres",
     "category": "article",
     "date_group": "10 May 2026",
     "highlights": [],
@@ -6759,7 +6830,7 @@
     "url": "https://aeon.co/essays/why-longtermism-is-the-worlds-most-dangerous-secular-credo"
   },
   {
-    "author": "Émile P. Torres",
+    "author": "Emile P Torres",
     "category": "article",
     "date_group": "10 May 2026",
     "highlights": [],
@@ -6850,19 +6921,6 @@
     "url": "https://www.substack-bahn.net/p/how-american-occupiers-helped-doom"
   },
   {
-    "author": "Association for Computing Machinery",
-    "category": "article",
-    "date_group": "08 May 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-05-08T17:03:03.233Z",
-    "location": "new",
-    "readwise_id": "01kr48nvj18prh5ze2c163f6zj",
-    "summary": "Memory safety helps prevent serious software bugs like buffer overflows and improves security. Rust is a key example of a memory-safe language that checks safety at compile time. While switching to memory-safe languages has costs, it offers clear benefits and is worth pursuing for better software security.",
-    "title": "Memory Safety for Skeptics",
-    "url": "https://queue.acm.org/detail.cfm"
-  },
-  {
     "author": "Brian Potter",
     "category": "article",
     "date_group": "30 Apr 2026",
@@ -6900,19 +6958,6 @@
     "summary": "The author tried to create a decentralized ATProto account using did:web but got \"burned\" and blocked after deleting it. This shows that Bluesky’s system still relies on central control, limiting true decentralization. The author wants more user-friendly, community-run social media without corporate control.",
     "title": "I Was Right About ATProto Key Management",
     "url": "https://notes.nora.codes/atproto-again/"
-  },
-  {
-    "author": "Armin Ronacher",
-    "category": "article",
-    "date_group": "27 Apr 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-04-27T09:59:03.243Z",
-    "location": "new",
-    "readwise_id": "01kq761jtbqh46dp72tk618vd5",
-    "summary": "Building agents is still messy and existing SDK abstractions often break with real tool use.  \nExplicit control—especially direct SDK use and explicit cache management—makes agent behavior, costs, and reinforcement clearer.  \nDesigning useful agent loops requires careful handling of tools, sub-agents, outputs, and state to avoid dead ends and unwanted leaked information.",
-    "title": "Agent Design Is Still Hard",
-    "url": "https://lucumr.pocoo.org/2025/11/21/agents-are-hard/"
   },
   {
     "author": "Malcolm Ocean",
@@ -7443,8 +7488,16 @@
     "author": "Daniel Smith",
     "category": "article",
     "date_group": "15 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "Being a parent, Johnson insisted, isn’t about nobility or beauty, pride or pleasure. Rather, it is “the simple, nerve-wracking, mindless, battering-ram process of trying to teach a savage to use a fork.”",
+      "But I know that it can’t be. The effort to stifle a hard emotion almost always fails, and causes it to fester and breed. The only true way to endure boredom—like anger, despair, shame—is to move toward it. To listen to it. To try to understand it.",
+      "Sometimes we cling to our negative emotions for what they give us: the vigor of agitation, the punishment we deserve. A friend once told me that when she was going through her divorce, she deliberately stoked her anger in order to fight more effectively with her husband and his lawyer.",
+      "aversive",
+      "My boredom typically spurs feelings of frustration, guilt, shame—and long nutritionless spells of goggling, slack-jawed, at celebrity news on my phone while the world throbs around me. For me, boredom is a destabilizing state that infects the very experiences that make life meaningful.",
+      "If you try to distract yourself from boredom, if you run from it, all will be lost. Brodsky quoted an imperishable line from Robert Frost: “The best way out is always through.” A note written by the novelist David Foster Wallace makes a similar point: “Bliss—a second-by-second joy and gratitude at the gift of being alive, conscious—lies on the other side of crushing, crushing boredom.”",
+      "“Everything that displays a pattern is pregnant with boredom,” Brodsky told those flabbergasted undergrads. Of course, much of what displays a pattern—lifelong friendships, enduring marriages, serious scholarship, the making of art, prayer, Sunday mornings in winter—is also pregnant with meaning. Boredom is the price we pay for a life rich with meaning. Recognizing this makes the feeling more endurable."
+    ],
+    "last_highlighted_at": "2026-05-16T20:20:31.114Z",
     "last_moved_at": "2026-03-15T23:41:59.532Z",
     "location": "new",
     "readwise_id": "01kksweccy4580xdrqa00kg3t2",
@@ -7501,7 +7554,7 @@
     "location": "new",
     "readwise_id": "01kk7wsw7w6gj1r2wqj2kxedat",
     "summary": "AI is improving very fast and can do many tasks that used to need humans, especially in coding and investing. It learns from past patterns but may not always understand or create truly new ideas. While AI can replace many jobs, its full impact on society and the economy is still uncertain.",
-    "title": "AI hurtles ahead",
+    "title": "AI Hurtles Ahead",
     "url": "https://readwise-assets.s3.amazonaws.com/media/wisereads/articles/ai-hurtles-ahead/1160.pdf"
   },
   {
@@ -7751,19 +7804,6 @@
     "summary": "The chapter introduces phantom types as a way to embed a programming language in Haskell. Phantom types are used to parameterize the Term data type so that it only contains terms of the appropriate type. This representation meets the typing requirement and allows for tag-free interpretation. The chapter also explores the usefulness and beauty of phantom types in generic functions, such as compression and comparison functions. The chapter concludes with an example of representing simply typed lambda terms using higher-order abstract syntax.",
     "title": "The Fun Of Programming",
     "url": "https://www.cs.ox.ac.uk/ralf.hinze/publications/With.pdf"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.719Z",
-    "location": "new",
-    "readwise_id": "01kg5cr4vj746f9c19nkq6qctm",
-    "summary": "The concept of \"Gears-ness\" in models refers to how well they constrain expectations and explain behavior. A model with high Gears-ness can better predict outcomes and adapt to new information, making it more useful. Understanding and improving the Gears-ness of our models can enhance our knowledge and insights about both physical systems and personal relationships.",
-    "title": "Gears in understanding",
-    "url": "https://www.lesswrong.com/posts/B7P97C27rvHPz3s9B/gears-in-understanding"
   },
   {
     "author": "",
