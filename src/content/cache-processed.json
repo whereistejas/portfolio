@@ -1,5 +1,49 @@
 [
   {
+    "author": "Corrode Rust Consulting",
+    "category": "article",
+    "date_group": "19 May 2026",
+    "highlights": [
+      "By doing so, one would set up a [work-stealing](https://rustmagazine.org/issue-4/how-tokio-schedule-tasks/), [multi-threaded runtime](https://docs.rs/tokio/latest/tokio/attr.main.html) which mandates that types are `Send` and `'static` and makes it necessary to use synchronization primitives such as [`Arc`](https://doc.rust-lang.org/std/sync/struct.Arc.html) and [`Mutex`](https://doc.rust-lang.org/std/sync/struct.Mutex.html) for all but the most trivial applications.",
+      "The choice to use `Arc` or `Mutex` might be indicative of a design that hasn’t fully embraced the ownership and borrowing principles that Rust emphasizes. It’s worth reconsidering if the shared state is genuinely necessary or if there’s a simpler design that could minimize or eliminate the need for shared mutable state (for instance by using channels).",
+      "![](https://corrode.dev/blog/async/runtimes.svg)",
+      "**Traditional arguments against threads simply don’t apply to Rust.** Threaded code in Rust is protected from data races, null dereferences, and dangling references, ensuring a level of safety that prevents many common pitfalls found in other languages."
+    ],
+    "last_highlighted_at": "2026-05-19T23:08:47.332Z",
+    "last_moved_at": "2026-05-19T23:14:35.026Z",
+    "location": "archive",
+    "readwise_id": "01k9md3encpvc2k845yc3tmjz5",
+    "summary": "The article reviews the current state of async Rust runtimes and argues that executor coupling fragments the ecosystem. Tokio is the dominant but opinionated choice, pushing multithreaded defaults that add complexity and hurt ergonomics. The author advises using async only when needed, learn sync Rust first, and hopes for leaner runtimes like smol and embassy.",
+    "title": "The State of Async Rust: Runtimes",
+    "url": "https://corrode.dev/blog/async/"
+  },
+  {
+    "author": "Matthias Endler",
+    "category": "article",
+    "date_group": "19 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-19T23:04:05.829Z",
+    "location": "archive",
+    "readwise_id": "01ks17pstjc0mc8svt5ngdkrw5",
+    "summary": "The author benchmarks a simple Ruby cat and finds GNU cat much faster. Using Linux splice and a Rust program (fcat) moves data in-kernel and is over three times faster than system cat. Splice can speed I/O but needs a pipe and fallback for portability.",
+    "title": "fastcat - A Faster `cat` Implementation Using Splice",
+    "url": "https://endler.dev/2018/fastcat/"
+  },
+  {
+    "author": "Konsti's Blog",
+    "category": "article",
+    "date_group": "19 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-19T22:39:07.468Z",
+    "location": "archive",
+    "readwise_id": "01kd4qdjpc20ewyd47tv9mv0k6",
+    "summary": "The author argues databases should use many single-threaded shards instead of multi-threaded shards. This avoids complex locking, races, and transaction headaches and makes scaling easier. With good tooling, sharded single-writer shards give simpler correctness and horizontal scalability.",
+    "title": "More databases should be single-threaded",
+    "url": "https://blog.konsti.xyz/more-databases-should-be-single-threaded/"
+  },
+  {
     "author": "Daniel Smith",
     "category": "article",
     "date_group": "18 May 2026",
@@ -6786,6 +6830,58 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Howard Marks",
+    "category": "pdf",
+    "date_group": "19 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-19T23:15:42.087Z",
+    "location": "new",
+    "readwise_id": "01ka7pn39y44x4pqvgywme8b8z",
+    "summary": "This memo discusses the conflict between political actions, like tariffs, and economic realities. While tariffs can benefit some companies, they may harm many others and can't resolve deeper economic issues. The author also warns about rising anti-capitalist sentiment and the simplistic economic solutions proposed by politicians.",
+    "title": "Political Reality Meets Economic Reality",
+    "url": "https://readwise.io/reader/document_raw_content/70922121"
+  },
+  {
+    "author": "Anastasia Gamick",
+    "category": "article",
+    "date_group": "19 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-19T22:37:49.304Z",
+    "location": "new",
+    "readwise_id": "01ks166qvrxavq20ymsxkcmz5r",
+    "summary": "Most organizations focus on working on problems by funding activities, not fully solving them. A \"general manager\" (GM) is needed to own a clear goal, coordinate all efforts, and be accountable for reaching a finish line. To solve big issues, funders must support flexible, long-term projects that aim for real, measurable outcomes instead of just ongoing work.",
+    "title": "Working on vs. Solving",
+    "url": "https://anastasiagamick.substack.com/p/working-on-vs-solving?r=1phn59&utm_campaign=post&utm_medium=web&triedRedirect=true"
+  },
+  {
+    "author": "SSIR",
+    "category": "article",
+    "date_group": "19 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-19T22:33:15.960Z",
+    "location": "new",
+    "readwise_id": "01ks15ycxt79wapypf6t3f4742",
+    "summary": "Today’s richest philanthropists mostly give money to old institutions instead of creating new ones. Unlike the Gilded Age donors, they avoid building lasting organizations that serve the public. This lack of new institution-building risks leaving future generations without strong civic foundations.",
+    "title": "Why Don’t Philanthropists Build Anymore?",
+    "url": "https://ssir.org/articles/entry/philanthropy-new-gilded-age"
+  },
+  {
+    "author": "Nan Ransohoff",
+    "category": "article",
+    "date_group": "19 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-19T22:32:25.410Z",
+    "location": "new",
+    "readwise_id": "01ks15wvmrmdgpgxzcz226e61v",
+    "summary": "AI is creating a new wave of philanthropy with up to $100 billion in annual giving soon. This money comes from tech founders who want fast, creative, and efficient organizations to solve big problems. To use this funding well, we need many new philanthropic startups and skilled leaders like in Silicon Valley.",
+    "title": "The third wave of American philanthropy",
+    "url": "https://nanransohoff.substack.com/p/the-third-wave-of-american-philanthropy?r=1gvqcg&utm_medium=ios&triedRedirect=true"
+  },
+  {
     "author": "Andrew Lilley Brinker",
     "category": "pdf",
     "date_group": "16 May 2026",
@@ -7656,32 +7752,6 @@
     "url": "https://jack-vanlightly.com/blog/2025/11/24/demystifying-determinism-in-durable-execution"
   },
   {
-    "author": "Howard Marks",
-    "category": "pdf",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.721Z",
-    "location": "new",
-    "readwise_id": "01ka7pn39y44x4pqvgywme8b8z",
-    "summary": "This memo discusses the conflict between political actions, like tariffs, and economic realities. While tariffs can benefit some companies, they may harm many others and can't resolve deeper economic issues. The author also warns about rising anti-capitalist sentiment and the simplistic economic solutions proposed by politicians.",
-    "title": "Political Reality Meets Economic Reality",
-    "url": "https://readwise.io/reader/document_raw_content/70922121"
-  },
-  {
-    "author": "Corrode Rust Consulting",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.721Z",
-    "location": "new",
-    "readwise_id": "01k9md3encpvc2k845yc3tmjz5",
-    "summary": "The article reviews the current state of async Rust runtimes and argues that executor coupling fragments the ecosystem. Tokio is the dominant but opinionated choice, pushing multithreaded defaults that add complexity and hurt ergonomics. The author advises using async only when needed, learn sync Rust first, and hopes for leaner runtimes like smol and embassy.",
-    "title": "The State of Async Rust: Runtimes",
-    "url": "https://corrode.dev/blog/async/"
-  },
-  {
     "author": "",
     "category": "article",
     "date_group": "11 Feb 2026",
@@ -7719,19 +7789,6 @@
     "summary": "If capital can replace labor, wealth will concentrate in the hands of those who are richest when that shift happens. Without strong global taxes on capital, inheritance and compounding returns could make inequality grow without bound. Historically capital often raised wages and lowered returns, but AI-driven automation could undo that self-correction.",
     "title": "Capital in the 22nd Century",
     "url": "https://substack.com/inbox/post/182789127?r=1gvqcg&utm_medium=ios&triedRedirect=true"
-  },
-  {
-    "author": "Konsti's Blog",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.720Z",
-    "location": "new",
-    "readwise_id": "01kd4qdjpc20ewyd47tv9mv0k6",
-    "summary": "The author argues databases should use many single-threaded shards instead of multi-threaded shards. This avoids complex locking, races, and transaction headaches and makes scaling easier. With good tooling, sharded single-writer shards give simpler correctness and horizontal scalability.",
-    "title": "More databases should be single-threaded",
-    "url": "https://blog.konsti.xyz/more-databases-should-be-single-threaded/"
   },
   {
     "author": "",
