@@ -1,5 +1,35 @@
 [
   {
+    "author": "Thomas Gazagnaire",
+    "category": "article",
+    "date_group": "21 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-21T09:36:36.433Z",
+    "location": "archive",
+    "readwise_id": "01ks4y9n577ge7q6r0yeqk07pg",
+    "summary": "A pure OCaml CCSDS protocol stack named Borealis successfully ran in low Earth orbit inside a satellite. OCaml's safety features help prevent memory bugs, making it ideal for secure space software. Future improvements with OxCaml aim to boost performance and reduce latency for real-time satellite operations.",
+    "title": "O(x)Caml in Space",
+    "url": "https://gazagnaire.org/blog/2026-05-14-borealis.html"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "21 May 2026",
+    "highlights": [
+      "I find that functionally inarticulate people, almost to a person, don't pay attention to details like these because *you can't separate the small stuff from the big stuff*: when you skimp on getting details correct that bleeds into everything you do and you begin to get the big picture wrong, too.",
+      "Cloning a battle-tested open source project created for that very purpose is faster, cheaper, and more reliable than asking an agent to do the same",
+      "When we decide that small frictions (like remembering a name) are not worth surmounting we eventually decide that bigger frictions (like scrutinizing tests) are also not worth surmounting."
+    ],
+    "last_highlighted_at": "2026-05-21T08:41:08.094Z",
+    "last_moved_at": "2026-05-21T08:41:33.557Z",
+    "location": "archive",
+    "readwise_id": "01ks4v1m1n9xg0gj5w1bfe625d",
+    "summary": "Typing out code by hand helps you understand and remember programming better than copying and pasting. It trains your brain to think clearly about syntax, types, and names, which improves your overall coding skills. Even with advanced tools, practicing this builds mental habits that make you a stronger programmer.",
+    "title": "Type out the code",
+    "url": "https://haskellforall.com/2026/05/type-out-the-code"
+  },
+  {
     "author": "Corrode Rust Consulting",
     "category": "article",
     "date_group": "19 May 2026",
@@ -6828,6 +6858,19 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "apenwarr",
+    "category": "article",
+    "date_group": "21 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-21T09:34:38.633Z",
+    "location": "new",
+    "readwise_id": "01ks4y64h950pr2bfyswebqvy2",
+    "summary": "Executives mainly enforce company values and approve decisions made by their teams, rather than setting detailed strategy themselves. They ensure decisions align with values and hold leaders responsible for what is best for the company. Changing strategy means changing values and often requires new executives, as values shape how the company acts and performs.",
+    "title": "What do executives do, anyway?",
+    "url": "https://apenwarr.ca/log/20190926"
   },
   {
     "author": "Howard Marks",
