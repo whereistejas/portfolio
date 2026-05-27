@@ -1,5 +1,31 @@
 [
   {
+    "author": "Fiberplane Team",
+    "category": "article",
+    "date_group": "26 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-26T13:28:36.640Z",
+    "location": "archive",
+    "readwise_id": "01ksj7hvkz5k08wsv0tar6a8gx",
+    "summary": "Fiberplane uses Claude Code agents to write TypeScript with explicit error and dependency handling using the Effect library. They enforce coding patterns automatically with ast-grep, which blocks bad code and guides the agent to fix mistakes. This approach helps agents produce better code and reduces manual reviews.",
+    "title": "How we use Claude Code and build with Agents at Fiberplane I",
+    "url": "https://fiberplane.com/blog/2026-04-10-how-we-use-claude-code-and-build-with-agents-at-fiberplane-part-1/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "26 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-26T13:01:21.081Z",
+    "location": "archive",
+    "readwise_id": "01ksj5tzj63f6bc0v2r5bjm20f",
+    "summary": "An analysis of Linear's MCP server reveals practical insights for building agent-friendly tools, from API design to output format optimization.",
+    "title": "The Linear Team Made a Good MCP",
+    "url": "https://fiberplane.com/blog/mcp-server-analysis-linear/"
+  },
+  {
     "author": "Thomas Gazagnaire",
     "category": "article",
     "date_group": "21 May 2026",
