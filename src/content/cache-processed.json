@@ -1,5 +1,18 @@
 [
   {
+    "author": "Amadeus Demarzi",
+    "category": "article",
+    "date_group": "30 May 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-05-30T10:25:12.175Z",
+    "location": "archive",
+    "readwise_id": "01ksw6ms4mc401prq6mdjjz1w4",
+    "summary": "CodeView improves code and diff rendering by using virtualization to handle large files efficiently while keeping native scrolling smooth. It balances rendering, memory, and processing challenges to avoid blank spaces and performance issues during fast scrolling. The tool also manages memory smartly and plans to add features like lightweight editing and semantic diffs in the future.",
+    "title": "ON RENDERING DIFFS",
+    "url": "https://pierre.computer/writing/on-rendering-diffs"
+  },
+  {
     "author": "Fiberplane Team",
     "category": "article",
     "date_group": "26 May 2026",
