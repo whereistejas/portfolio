@@ -1,5 +1,40 @@
 [
   {
+    "author": "Brent",
+    "category": "article",
+    "date_group": "01 Jun 2026",
+    "highlights": [
+      "when presented with a mathematical definition for the first time, most people (me included) don’t “get it” immediately: it is only after examining some specific instances of the definition, and working through the implications of the definition in detail, that one begins to appreciate the definition and gain an understanding of what it “really says.”",
+      "The problem, of course, is that if Joe HAD thought of this before, it wouldn’t have helped: the week of struggling through details was a necessary and integral part of forming Joe’s Burrito intuition, not a sad consequence of his failure to hit upon the idea sooner.",
+      "What I term the “monad tutorial fallacy,” then, consists in failing to recognize the critical role that struggling through fundamental details plays in the building of intuition."
+    ],
+    "last_highlighted_at": "2026-06-01T23:30:36.765Z",
+    "last_moved_at": "2026-06-01T23:34:53.124Z",
+    "location": "archive",
+    "readwise_id": "01kt2r2bqgmgnxemnew6p18dpd",
+    "summary": "People learn best by starting with concrete examples before moving to abstract concepts. Many tutorials on monads oversimplify this process, leading learners to misunderstand the fundamental details needed for true comprehension. This \"monad tutorial fallacy\" highlights the importance of struggling with specifics to build a solid intuition.",
+    "title": "Abstraction, intuition, and the “monad tutorial fallacy”",
+    "url": "https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/"
+  },
+  {
+    "author": "Zhengdong Wang",
+    "category": "article",
+    "date_group": "01 Jun 2026",
+    "highlights": [
+      "Moravec is better known for observing that what’s hard for robots is easy for humans, and vice versa, but in a note titled “[Bombast](https://stacks.stanford.edu/file/druid:ws563sd6050/ws563sd6050.pdf),” he marveled:\n\n> The enormous shortage of ability to compute is distorting our work, creating problems where there are none, making others impossibly difficult, and generally causing effort to be misdirected. Shouldn’t this view be more widespread, if it is as obvious as I claim?",
+      "However hard I try, I don’t think my descriptions will even move you much. You need to pick your own test. It should be a problem you know well, one you’ve worked on for years, one you’re supposed to be an expert in. You need to predict the result, year after year. Then, you need to watch the AI confound those predictions anyway.\n\nHumans are supposed to be clever. This impudent “large” model, this jumped-up matrix multiplication, it can’t possibly understand all the dearly-won nuances at the state-of-the-art. There are confounders that are supposed to stop it, like data and algorithms and other bottlenecks. It shouldn’t be this easy. It would make more sense if one of those reasons for why scaling is supposed to break had kicked in by now.",
+      "The pandemic’s arc is also instructive. That it would be a big deal was public information long before it was physically obvious. In late February, a week before the market began to crash, and weeks before its lowest point, Centers for Disease Control director [Robert Redfield admitted](https://www.cnn.com/2020/02/13/health/coronavirus-cdc-robert-redfield-gupta-intv) that coronavirus was “probably with us beyond this season, beyond this year.” I remember leaving college for ostensibly a long spring break. Friends embraced with “see you in a month!” Only a few understood that we weren’t coming back. You could conceptually know what was happening in Wuhan, in Northern Italy, but it was hard to face. In a few weeks everything changed, until the whole world was in the same story.",
+      "At the end of this Matryoshka doll of scaling curves is progress itself. Progress is a smooth trend that obscures jagged details. The historical record attests to thousands of years of stasis, before hundreds of years of growth. This smooth trend belies countless details of contingent and precarious human ingenuity, and countless confounders like the data and the algorithms that make it exist. Progress is certainly empirical. There’s no reason it had to be this way, but now we can hint at one—progress improves on itself. We have so many good reasons to hesitate extrapolating progress, why every time we’ve made the jump to a new regime of progress in the past, it was industry and accident and not providence."
+    ],
+    "last_highlighted_at": "2026-05-25T19:46:11.736Z",
+    "last_moved_at": "2026-06-01T23:10:22.696Z",
+    "location": "archive",
+    "readwise_id": "01ke06dspmcn9n6mpcq0d9fmfd",
+    "summary": "The author reflects on how steady increases in compute have driven rapid AI progress and why that trend matters for the next decade.  \nHe warns against naive long-term extrapolations while noting scaling laws and past surprises make big advances plausible.  \nHe urges serious, practical thinking about AI’s societal impacts rather than hype or fatalism.",
+    "title": "2025 letter",
+    "url": "https://zhengdongwang.com/2025/12/30/2025-letter.html"
+  },
+  {
     "author": "Amadeus Demarzi",
     "category": "article",
     "date_group": "30 May 2026",
@@ -6899,6 +6934,47 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Tavish Armstrong",
+    "category": "article",
+    "date_group": "01 Jun 2026",
+    "highlights": [
+      "Tavish's excessively long programmer biography"
+    ],
+    "last_highlighted_at": "2026-06-01T23:12:44.447Z",
+    "last_moved_at": "2026-06-01T23:12:01.154Z",
+    "location": "new",
+    "readwise_id": "01kt2qapm4tbdahh8qa0n6phxp",
+    "summary": "The author shares their journey of learning programming, starting from basic web tutorials to more advanced concepts in software engineering. They gained valuable experience through various courses and jobs, where they learned to debug code, work with open source software, and improve their programming skills. Mentorship and hands-on projects played a significant role in their development as a programmer.",
+    "title": "Tavish's excessively long programmer biography",
+    "url": "https://github.com/tarmstrong/longcv/blob/master/bio.md"
+  },
+  {
+    "author": "Jade",
+    "category": "article",
+    "date_group": "01 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-01T22:33:17.072Z",
+    "location": "new",
+    "readwise_id": "01kt2n3s0gcvhxctwbz9b4z5nj",
+    "summary": "A postmodern build system aims to make builds faster and more reliable by using pure, memoized computations that can run across multiple machines. Tools like Nix help by ensuring builds are consistent and incremental, but integrating inner build systems and compilers remains challenging. Future solutions may combine these ideas with language-level memoization and improved coordination between build layers to achieve trustworthy, efficient incremental builds.",
+    "title": "The postmodern build system (updated 2025)",
+    "url": "https://jade.fyi/blog/the-postmodern-build-system/?__readwiseLocation="
+  },
+  {
+    "author": "Dan Abramov",
+    "category": "article",
+    "date_group": "01 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-01T07:52:15.548Z",
+    "location": "new",
+    "readwise_id": "01kt12pjdwvxfgt1hxy2sq02eg",
+    "summary": "Algebraic effects are a new programming concept that helps handle errors and side effects more flexibly than try/catch. They let code pause and resume with custom handlers, making asynchronous tasks easier to manage without \"poisoning\" all functions with async. Though not yet in JavaScript, algebraic effects could improve how we write and organize code in the future.",
+    "title": "Algebraic Effects for the Rest of Us",
+    "url": "https://overreacted.io/algebraic-effects-for-the-rest-of-us/"
+  },
+  {
     "author": "David Oks",
     "category": "article",
     "date_group": "23 May 2026",
@@ -6912,7 +6988,7 @@
     "url": "https://davidoks.blog/p/why-japanese-companies-do-so-many"
   },
   {
-    "author": "apenwarr",
+    "author": "Avery Pennarun",
     "category": "article",
     "date_group": "21 May 2026",
     "highlights": [],
@@ -6951,7 +7027,7 @@
     "url": "https://anastasiagamick.substack.com/p/working-on-vs-solving?r=1phn59&utm_campaign=post&utm_medium=web&triedRedirect=true"
   },
   {
-    "author": "SSIR",
+    "author": "Sarah Cone",
     "category": "article",
     "date_group": "19 May 2026",
     "highlights": [],
@@ -7850,8 +7926,10 @@
     "author": "",
     "category": "article",
     "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "writing a tic-tac-toe game and AI)"
+    ],
+    "last_highlighted_at": "2026-06-01T23:21:33.109Z",
     "last_moved_at": "2026-02-11T22:54:37.721Z",
     "location": "new",
     "readwise_id": "01k9m6ja73v676np9x1yf6twv6",
@@ -7982,23 +8060,5 @@
     "summary": "One-to-one tutoring improves student learning much more than conventional group teaching, often by two standard deviations. Methods like Mastery Learning and increased student participation can also boost achievement significantly. Researchers suggest continuing to explore and apply these effective teaching strategies to close the learning gap.",
     "title": "The 2 Sigma Problem",
     "url": "https://readwise.io/reader/document_raw_content/411557427"
-  },
-  {
-    "author": "Zhengdong Wang",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [
-      "Moravec is better known for observing that what’s hard for robots is easy for humans, and vice versa, but in a note titled “[Bombast](https://stacks.stanford.edu/file/druid:ws563sd6050/ws563sd6050.pdf),” he marveled:\n\n> The enormous shortage of ability to compute is distorting our work, creating problems where there are none, making others impossibly difficult, and generally causing effort to be misdirected. Shouldn’t this view be more widespread, if it is as obvious as I claim?",
-      "However hard I try, I don’t think my descriptions will even move you much. You need to pick your own test. It should be a problem you know well, one you’ve worked on for years, one you’re supposed to be an expert in. You need to predict the result, year after year. Then, you need to watch the AI confound those predictions anyway.\n\nHumans are supposed to be clever. This impudent “large” model, this jumped-up matrix multiplication, it can’t possibly understand all the dearly-won nuances at the state-of-the-art. There are confounders that are supposed to stop it, like data and algorithms and other bottlenecks. It shouldn’t be this easy. It would make more sense if one of those reasons for why scaling is supposed to break had kicked in by now.",
-      "The pandemic’s arc is also instructive. That it would be a big deal was public information long before it was physically obvious. In late February, a week before the market began to crash, and weeks before its lowest point, Centers for Disease Control director [Robert Redfield admitted](https://www.cnn.com/2020/02/13/health/coronavirus-cdc-robert-redfield-gupta-intv) that coronavirus was “probably with us beyond this season, beyond this year.” I remember leaving college for ostensibly a long spring break. Friends embraced with “see you in a month!” Only a few understood that we weren’t coming back. You could conceptually know what was happening in Wuhan, in Northern Italy, but it was hard to face. In a few weeks everything changed, until the whole world was in the same story.",
-      "At the end of this Matryoshka doll of scaling curves is progress itself. Progress is a smooth trend that obscures jagged details. The historical record attests to thousands of years of stasis, before hundreds of years of growth. This smooth trend belies countless details of contingent and precarious human ingenuity, and countless confounders like the data and the algorithms that make it exist. Progress is certainly empirical. There’s no reason it had to be this way, but now we can hint at one—progress improves on itself. We have so many good reasons to hesitate extrapolating progress, why every time we’ve made the jump to a new regime of progress in the past, it was industry and accident and not providence."
-    ],
-    "last_highlighted_at": "2026-05-25T19:46:11.736Z",
-    "last_moved_at": "2026-02-11T22:54:37.719Z",
-    "location": "new",
-    "readwise_id": "01ke06dspmcn9n6mpcq0d9fmfd",
-    "summary": "The author reflects on how steady increases in compute have driven rapid AI progress and why that trend matters for the next decade.  \nHe warns against naive long-term extrapolations while noting scaling laws and past surprises make big advances plausible.  \nHe urges serious, practical thinking about AI’s societal impacts rather than hype or fatalism.",
-    "title": "2025 letter",
-    "url": "https://zhengdongwang.com/2025/12/30/2025-letter.html"
   }
 ]
