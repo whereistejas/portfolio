@@ -7927,9 +7927,13 @@
     "category": "article",
     "date_group": "11 Feb 2026",
     "highlights": [
-      "writing a tic-tac-toe game and AI)"
+      "writing a tic-tac-toe game and AI)",
+      "First, no one's going to stop you from spending time reading at work or spending time learning (on most teams).",
+      "Second, I learned that there are a lot of engineering problems we can solve without anyone knowing why.",
+      "I learned which has been even more useful is the fact that writing a test-case generator and a checker is often much more productive than the manual test-case writing that passes for automated testing in most places.",
+      "the meta-skill of not being afraid of low-level hardware comes in handy pretty often, especially when I run into compiler or chip bugs."
     ],
-    "last_highlighted_at": "2026-06-01T23:21:33.109Z",
+    "last_highlighted_at": "2026-06-02T08:44:39.014Z",
     "last_moved_at": "2026-02-11T22:54:37.721Z",
     "location": "new",
     "readwise_id": "01k9m6ja73v676np9x1yf6twv6",
