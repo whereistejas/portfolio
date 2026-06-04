@@ -6934,6 +6934,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "John C. Reynolds, A. W. Wigardena, W. A. Maurer-Kwiecien, F. L. Morris, C. P. Wadsworth, J. H. Morris, M. J. Fischer, S. K. Abdali",
+    "category": "pdf",
+    "date_group": "03 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-03T15:44:12.979Z",
+    "location": "new",
+    "readwise_id": "01kt72g65kn9hakse233xs7fze",
+    "summary": null,
+    "title": "The Discoveries Of Continuations",
+    "url": "https://www.cs.ru.nl/~freek/courses/tt-2011/papers/cps/histcont.pdf"
+  },
+  {
     "author": "Tavish Armstrong",
     "category": "article",
     "date_group": "01 Jun 2026",
@@ -7845,11 +7858,11 @@
       "two key design choices that are typically deeply wired into any build system: the order in which tasks are built (ğ4.1) and whether or not a task is (re-)built (ğ4.2).",
       "Cyclic task dependencies are typically not allowed in build systems",
       "(Minimality). A build system is minimal if it executes tasks at most once per build\nand only if they transitively depend on inputs that changed since the previous build.",
-      "suspending,",
-      "self-tracking.",
-      "early cutoff optimisation"
+      "Excel: it is self-tracking. Most build systems only track changes of inputs and intermediate results, but Excel also tracks changes in the tasks themselves",
+      "Self-tracking is uncommon in software build systems, where one often needs to manually initiate a full rebuild even if just a single task has changed.",
+      "instead of aborting and deferring the execution of tasks whose newly discovered dependencies have not yet been built (as Excel does), Shake suspends their execution until the dependencies are brought up to date. We refer to this task scheduling algorithm as suspending,"
     ],
-    "last_highlighted_at": "2026-03-04T16:08:07.851Z",
+    "last_highlighted_at": "2026-06-03T15:34:04.227Z",
     "last_moved_at": "2026-02-24T17:25:24.748Z",
     "location": "new",
     "readwise_id": "01kj8ayamczqabadz1hr6ahq1x",
