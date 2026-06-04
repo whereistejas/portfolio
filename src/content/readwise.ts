@@ -8,7 +8,11 @@ import type {
 	ReadwiseQueueItem,
 } from "./types.ts";
 import { processedItemSchema, readwiseExportResponseSchema } from "./types.ts";
-import { PROCESSED_CACHE_PATH, writeJsonCache } from "./utils.ts";
+import {
+	PROCESSED_CACHE_PATH,
+	readJsonCache,
+	writeJsonCache,
+} from "./utils.ts";
 
 function cleanAuthor(raw: string | null | undefined): string {
 	if (!raw) return "";
@@ -191,13 +195,8 @@ async function fetchAllReadwiseReaderItems(
 }
 
 async function loadProcessedCache(): Promise<ProcessedItem[]> {
-	const file = Bun.file(PROCESSED_CACHE_PATH);
-	if (!(await file.exists())) {
-		return [];
-	}
 	try {
-		const content = await file.text();
-		const parsed: unknown = JSON.parse(content);
+		const parsed = await readJsonCache<unknown[]>(PROCESSED_CACHE_PATH, []);
 		if (!Array.isArray(parsed)) {
 			return [];
 		}

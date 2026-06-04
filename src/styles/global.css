@@ -148,7 +148,7 @@
 	div.feed
 		.feed-item--with-highlights.feed-item[data-expanded="true"]
 		.feed-item-card {
-		@apply overflow-hidden bg-bg-feed-item-hover dark:bg-neutral-800/50;
+		@apply bg-bg-feed-item-hover overflow-hidden dark:bg-neutral-800/50;
 	}
 
 	/* Gap only when an expanded card is adjacent to another expanded or hovered item */
@@ -235,7 +235,6 @@
 		@apply font-normal underline underline-offset-2;
 	}
 
-
 	article.blog-article {
 		@apply prose dark:prose-invert pt-1.5 pb-1.5 md:pt-2 md:pb-2;
 		@apply text-base text-pretty hyphens-auto;
@@ -252,12 +251,32 @@
 			}
 		}
 
+		--tw-prose-body: var(--color-fg-muted);
 		--tw-prose-headings: var(--color-fg);
-		--tw-prose-invert-headings: var(--color-fg-dark);
-		--tw-prose-quote-borders: var(--color-fg-accent);
-		--tw-prose-invert-quote-borders: var(--color-fg-accent);
+		--tw-prose-lead: var(--color-fg-muted);
 		--tw-prose-links: var(--color-fg-muted);
+		--tw-prose-bold: var(--color-fg);
+		--tw-prose-counters: var(--color-fg-faint);
+		--tw-prose-bullets: var(--color-fg-accent);
+		--tw-prose-quotes: var(--color-fg-muted);
+		--tw-prose-quote-borders: var(--color-fg-accent);
+		--tw-prose-captions: var(--color-fg-faint);
+		--tw-prose-code: var(--color-fg);
+		--tw-prose-th-borders: var(--color-fg-faint);
+		--tw-prose-td-borders: var(--color-fg-faint);
+		--tw-prose-invert-body: var(--color-fg-muted-dark);
+		--tw-prose-invert-headings: var(--color-fg-dark);
+		--tw-prose-invert-lead: var(--color-fg-muted-dark);
 		--tw-prose-invert-links: var(--color-fg-muted-dark);
+		--tw-prose-invert-bold: var(--color-fg-dark);
+		--tw-prose-invert-counters: var(--color-fg-faint-dark);
+		--tw-prose-invert-bullets: var(--color-fg-accent-dark);
+		--tw-prose-invert-quotes: var(--color-fg-muted-dark);
+		--tw-prose-invert-quote-borders: var(--color-fg-accent-dark);
+		--tw-prose-invert-captions: var(--color-fg-faint-dark);
+		--tw-prose-invert-code: var(--color-fg-dark);
+		--tw-prose-invert-th-borders: var(--color-fg-faint-dark);
+		--tw-prose-invert-td-borders: var(--color-fg-faint-dark);
 
 		h1,
 		h2,
