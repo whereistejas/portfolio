@@ -1,5 +1,44 @@
 [
   {
+    "author": "hauleth.dev by hauleth",
+    "category": "rss",
+    "date_group": "05 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-05T00:40:40.597Z",
+    "location": "archive",
+    "readwise_id": "01kt9vqp8jggktqmx1127qp5yd",
+    "summary": "Comments",
+    "title": "Reviewing code requires reading",
+    "url": "https://hauleth.dev/post/review-requires-reading/"
+  },
+  {
+    "author": "Fernando Borretti",
+    "category": "article",
+    "date_group": "05 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-05T00:31:20.066Z",
+    "location": "archive",
+    "readwise_id": "01ktak21f15k7ebeq5jv2qbxf5",
+    "summary": "The author reads many books by making reading a daily habit and setting small goals. He suggests reading in public, starting with short books, and using spare moments to read. Reading books you find important, even if not always enjoyable, helps build discipline and keeps you reading more.",
+    "title": "How To Read More",
+    "url": "https://borretti.me/article/how-to-read-more"
+  },
+  {
+    "author": "Rahul Chowdhury",
+    "category": "article",
+    "date_group": "05 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-05T00:23:19.679Z",
+    "location": "archive",
+    "readwise_id": "01ktajkc5p78hmfp3gtgj4w01j",
+    "summary": "The author switched from Todoist to Apple Reminders due to its free, user-friendly features and deep integration within the Apple ecosystem, making it a compelling choice. Reminders offers robust task organization, drag-and-drop functionalities, and seamless integrations with apps like Mail and Notes, enhancing productivity for Apple users without the need for additional subscriptions. While lacking advanced natural language input compared to Todoist, Reminders' benefits like the structured Today view and ease of task migration make it a viable option for those new to task management or seeking an alternative to paid apps.",
+    "title": "Why I Moved to Apple Reminders from Todoist",
+    "url": "https://hulry.com/todoist-vs-apple-reminders/"
+  },
+  {
     "author": "Brent",
     "category": "article",
     "date_group": "01 Jun 2026",
@@ -6932,6 +6971,32 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Charity Majors",
+    "category": "article",
+    "date_group": "05 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-05T00:37:51.177Z",
+    "location": "new",
+    "readwise_id": "01ktake10kb50w7m9a7hkfyt2y",
+    "summary": "AI brings big opportunities but also real risks that both enthusiasts and skeptics see. Teams must work together, sharing wins and costs, to handle AI like an engineering problem. Trust, discipline, and clear communication are key to navigating AI’s fast changes and keeping teams strong.",
+    "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+    "url": "https://charitydotwtf.substack.com/p/ai-enthusiasts-are-in-a-race-against?r=1gvqcg&utm_medium=ios&triedRedirect=true"
+  },
+  {
+    "author": "Ted Chiang",
+    "category": "article",
+    "date_group": "04 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-04T13:29:23.326Z",
+    "location": "new",
+    "readwise_id": "01kt9d613y0j6wsjtkxfa1gzf6",
+    "summary": "Anthropic's AI, Claude, is not conscious and cannot truly understand or feel emotions. Its \"constitution\" is a set of rules designed to make its responses seem ethical, but it does not mean Claude can make moral decisions. Suggesting Claude might be conscious is more fantasy than fact, as it lacks responsibility and real awareness.",
+    "title": "No, Artificial Intelligence Is Not Conscious",
+    "url": "https://archive.ph/mYXTW"
   },
   {
     "author": "John C. Reynolds, A. W. Wigardena, W. A. Maurer-Kwiecien, F. L. Morris, C. P. Wadsworth, J. H. Morris, M. J. Fischer, S. K. Abdali",
