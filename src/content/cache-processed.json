@@ -1,5 +1,52 @@
 [
   {
+    "author": "",
+    "category": "article",
+    "date_group": "06 Jun 2026",
+    "highlights": [
+      "writing a tic-tac-toe game and AI)",
+      "First, no one's going to stop you from spending time reading at work or spending time learning (on most teams).",
+      "Second, I learned that there are a lot of engineering problems we can solve without anyone knowing why.",
+      "I learned which has been even more useful is the fact that writing a test-case generator and a checker is often much more productive than the manual test-case writing that passes for automated testing in most places.",
+      "the meta-skill of not being afraid of low-level hardware comes in handy pretty often, especially when I run into compiler or chip bugs.",
+      "Bug tracking is another meta-skill that everyone thinks they have, but when when I look at most projects I find that they literally don't know what bugs they have and they lose bugs all the time due to a failure to triage bugs effectively.",
+      "If I hadn't interviewed regularly (about once a year, even though I was happy with my job), I probably would've wondered if I was stunting my career by doing so many different things, because the big chip companies produce specialists pretty much exclusively. But in interviews I found that my experience was valued because it was something they couldn't get in-house. The irony is that every single role I was offered would have turned me into a specialist."
+    ],
+    "last_highlighted_at": "2026-06-06T23:53:06.088Z",
+    "last_moved_at": "2026-06-06T23:47:15.260Z",
+    "location": "archive",
+    "readwise_id": "01k9m6ja73v676np9x1yf6twv6",
+    "summary": "The author shares their journey from being an electrical engineer to becoming a programmer, highlighting that programming initially felt unnatural to them. They emphasize that many successful programmers have non-traditional paths and that skills can be developed over time, regardless of early talent. Additionally, they stress the importance of learning how to solve complex problems and the benefits of collaboration in programming.",
+    "title": "How I learned to program",
+    "url": "https://danluu.com/learning-to-program/"
+  },
+  {
+    "author": "Ted Chiang",
+    "category": "article",
+    "date_group": "06 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-06T19:25:45.448Z",
+    "location": "archive",
+    "readwise_id": "01kt9d613y0j6wsjtkxfa1gzf6",
+    "summary": "Anthropic's AI, Claude, is not conscious and cannot truly understand or feel emotions. Its \"constitution\" is a set of rules designed to make its responses seem ethical, but it does not mean Claude can make moral decisions. Suggesting Claude might be conscious is more fantasy than fact, as it lacks responsibility and real awareness.",
+    "title": "No, Artificial Intelligence Is Not Conscious",
+    "url": "https://archive.ph/mYXTW"
+  },
+  {
+    "author": "Albert Lau",
+    "category": "article",
+    "date_group": "06 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-06T19:25:43.403Z",
+    "location": "archive",
+    "readwise_id": "01ktecwc11nw38dgn9f2c6re9e",
+    "summary": "Lee Kuan Yew led Singapore from a poor colony to a wealthy, independent nation after separating from Malaysia in 1965. He built a strong government, modernized the country, and gained the trust of Singaporeans through good leadership. By 1990, Singapore’s economy had grown greatly, showing that effective governance can bring success even without full democracy.",
+    "title": "Lee Kuan Yew’s Singapore Story",
+    "url": "https://www.historytoday.com/archive/feature/lee-kuan-yews-singapore-story"
+  },
+  {
     "author": "hauleth.dev by hauleth",
     "category": "rss",
     "date_group": "05 Jun 2026",
@@ -6999,19 +7046,6 @@
     "url": "https://charitydotwtf.substack.com/p/ai-enthusiasts-are-in-a-race-against?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
   {
-    "author": "Ted Chiang",
-    "category": "article",
-    "date_group": "04 Jun 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-06-04T13:29:23.326Z",
-    "location": "new",
-    "readwise_id": "01kt9d613y0j6wsjtkxfa1gzf6",
-    "summary": "Anthropic's AI, Claude, is not conscious and cannot truly understand or feel emotions. Its \"constitution\" is a set of rules designed to make its responses seem ethical, but it does not mean Claude can make moral decisions. Suggesting Claude might be conscious is more fantasy than fact, as it lacks responsibility and real awareness.",
-    "title": "No, Artificial Intelligence Is Not Conscious",
-    "url": "https://archive.ph/mYXTW"
-  },
-  {
     "author": "John C. Reynolds, A. W. Wigardena, W. A. Maurer-Kwiecien, F. L. Morris, C. P. Wadsworth, J. H. Morris, M. J. Fischer, S. K. Abdali",
     "category": "pdf",
     "date_group": "03 Jun 2026",
@@ -8012,25 +8046,6 @@
     "summary": "Durable execution frameworks re-run functions from the top to recover, so the control flow must be deterministic. Side effects can be non-deterministic but must be idempotent or tolerate duplication. Separate control flow (decisions) from side effects (actions) and record any non-deterministic inputs used by control flow.",
     "title": "Demystifying Determinism in Durable Execution",
     "url": "https://jack-vanlightly.com/blog/2025/11/24/demystifying-determinism-in-durable-execution"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [
-      "writing a tic-tac-toe game and AI)",
-      "First, no one's going to stop you from spending time reading at work or spending time learning (on most teams).",
-      "Second, I learned that there are a lot of engineering problems we can solve without anyone knowing why.",
-      "I learned which has been even more useful is the fact that writing a test-case generator and a checker is often much more productive than the manual test-case writing that passes for automated testing in most places.",
-      "the meta-skill of not being afraid of low-level hardware comes in handy pretty often, especially when I run into compiler or chip bugs."
-    ],
-    "last_highlighted_at": "2026-06-02T08:44:39.014Z",
-    "last_moved_at": "2026-02-11T22:54:37.721Z",
-    "location": "new",
-    "readwise_id": "01k9m6ja73v676np9x1yf6twv6",
-    "summary": "The author shares their journey from being an electrical engineer to becoming a programmer, highlighting that programming initially felt unnatural to them. They emphasize that many successful programmers have non-traditional paths and that skills can be developed over time, regardless of early talent. Additionally, they stress the importance of learning how to solve complex problems and the benefits of collaboration in programming.",
-    "title": "How I learned to program",
-    "url": "https://danluu.com/learning-to-program/"
   },
   {
     "author": "Dan Wang",
