@@ -7020,6 +7020,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Morgan Housel",
+    "category": "article",
+    "date_group": "07 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-07T22:55:16.218Z",
+    "location": "new",
+    "readwise_id": "01ktj4rb7tp58v996m63wmvdh3",
+    "summary": "We all have fuzzy instincts and ideas we never see clearly. Writing forces those thoughts into words so you can test, improve, or discard them. That clarity makes better decisions and reveals what you truly think.",
+    "title": "Why Everyone Should Write",
+    "url": "http://www.collaborativefund.com/blog/why-everyone-should-write/"
+  },
+  {
     "author": "Samuel Hughes",
     "category": "article",
     "date_group": "05 Jun 2026",
@@ -7181,8 +7194,12 @@
     "author": "Andrew Lilley Brinker",
     "category": "pdf",
     "date_group": "16 May 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "Rust’s big step function was to offer memory safety at compile time through the use of static analysis borrowed and grown out of prior efforts such as Cyclone, a research programming language formulated as a safe subset of C.",
+      "Often, demands for large-scale rewrites are not a carefully reasoned argument about tradeoffs, but an aesthetic criticism of code that looks “ugly” or “too old.”",
+      "Reflexive rejection of a move to memory safety is misguided, especially when the benefits of memory safety can be achieved in a cost- and schedule- efficient way."
+    ],
+    "last_highlighted_at": "2026-06-07T22:07:52.703Z",
     "last_moved_at": "2026-05-16T12:31:49.939Z",
     "location": "new",
     "readwise_id": "01krrcayxc90r3sm7j53gaztrr",
@@ -7233,8 +7250,11 @@
     "author": "Emile P Torres",
     "category": "article",
     "date_group": "10 May 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "eschatological",
+      "We know that biodiversity loss and the sixth mass extinction could precipitate sudden, irreversible, catastrophic shifts in the global ecosystem."
+    ],
+    "last_highlighted_at": "2026-06-07T23:25:46.880Z",
     "last_moved_at": "2026-05-10T00:55:33.840Z",
     "location": "new",
     "readwise_id": "01kr7p3rpg9051j0bheyn3x827",
@@ -7972,9 +7992,10 @@
       "(Minimality). A build system is minimal if it executes tasks at most once per build\nand only if they transitively depend on inputs that changed since the previous build.",
       "Excel: it is self-tracking. Most build systems only track changes of inputs and intermediate results, but Excel also tracks changes in the tasks themselves",
       "Self-tracking is uncommon in software build systems, where one often needs to manually initiate a full rebuild even if just a single task has changed.",
-      "instead of aborting and deferring the execution of tasks whose newly discovered dependencies have not yet been built (as Excel does), Shake suspends their execution until the dependencies are brought up to date. We refer to this task scheduling algorithm as suspending,"
+      "instead of aborting and deferring the execution of tasks whose newly discovered dependencies have not yet been built (as Excel does), Shake suspends their execution until the dependencies are brought up to date. We refer to this task scheduling algorithm as suspending,",
+      "The busy build system defines the callback fetch so that, when given a key, it brings the key up to date in the store, and returns its value."
     ],
-    "last_highlighted_at": "2026-06-03T15:34:04.227Z",
+    "last_highlighted_at": "2026-06-07T18:54:25.951Z",
     "last_moved_at": "2026-02-24T17:25:24.748Z",
     "location": "new",
     "readwise_id": "01kj8ayamczqabadz1hr6ahq1x",
