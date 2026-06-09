@@ -1,5 +1,75 @@
 [
   {
+    "author": "Emile P Torres",
+    "category": "article",
+    "date_group": "08 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-08T23:17:00.031Z",
+    "location": "archive",
+    "readwise_id": "01kr7p3ev7hpp440fj4pmgt5mf",
+    "summary": "The TESCREAL ideology envisions a future where enhanced humans colonize space and create digital utopias, but it may justify extreme and dangerous actions. Some followers, like Yudkowsky, support violent measures, including nuclear war, to prevent an AI apocalypse. This cult-like movement’s radical ideas and threats make it a serious danger to humanity.",
+    "title": "‘Before It’s Too Late, Buddy’",
+    "url": "https://www.truthdig.com/articles/before-its-too-late-buddy/"
+  },
+  {
+    "author": "Emile P Torres",
+    "category": "article",
+    "date_group": "08 Jun 2026",
+    "highlights": [
+      "by reengineering ourselves, you and I might become immortal super-beings, and by spreading throughout the universe we could construct a multi-galactic utopian paradise of radical abundance, indefinite lifespans and endless happiness – a project that some leading longtermists quite literally call “paradise engineering”."
+    ],
+    "last_highlighted_at": "2026-06-08T23:00:30.911Z",
+    "last_moved_at": "2026-06-08T23:11:13.596Z",
+    "location": "archive",
+    "readwise_id": "01kr7p5vd3pd1xh28rywezpz0q",
+    "summary": "Longtermism is a risky belief that values the distant future so much it might justify harmful actions today. Its leaders imagine a far-off utopia but ignore the dangers of extreme means to reach it. We should care about future generations, but longtermism is not the right way to protect them.",
+    "title": "Longtermism poses a real threat to humanity",
+    "url": "https://archive.ph/vdDg6"
+  },
+  {
+    "author": "Emile P Torres",
+    "category": "article",
+    "date_group": "08 Jun 2026",
+    "highlights": [
+      "eschatological",
+      "We know that biodiversity loss and the sixth mass extinction could precipitate sudden, irreversible, catastrophic shifts in the global ecosystem."
+    ],
+    "last_highlighted_at": "2026-06-07T23:25:46.880Z",
+    "last_moved_at": "2026-06-08T22:53:50.738Z",
+    "location": "archive",
+    "readwise_id": "01kr7p3rpg9051j0bheyn3x827",
+    "summary": "Longtermism claims we must prioritize humanity’s vast future potential above present needs. Critics say this view rewards risky technological pursuit and can harm real people today. The article argues longtermism is dangerous and may increase, not reduce, existential risk.",
+    "title": "Against longtermism",
+    "url": "https://aeon.co/essays/why-longtermism-is-the-worlds-most-dangerous-secular-credo"
+  },
+  {
+    "author": "LWN",
+    "category": "article",
+    "date_group": "08 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-08T21:41:04.707Z",
+    "location": "archive",
+    "readwise_id": "01ktk39159n4cw26962kpc54ek",
+    "summary": "Linux process creation using fork() and exec() is slow because fork() copies the whole process memory. A new proposal called spawn templates tries to speed up running the same program many times by caching setup information. Although spawn templates were rejected, future work aims to create a better method like posix_spawn() to make process creation faster and simpler.",
+    "title": "Moving beyond fork() + exec()",
+    "url": "https://lwn.net/SubscriberLink/1076018/16f01bbbb8e0d1f0/"
+  },
+  {
+    "author": "Morgan Housel",
+    "category": "article",
+    "date_group": "08 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-08T18:11:12.968Z",
+    "location": "archive",
+    "readwise_id": "01ktj4rb7tp58v996m63wmvdh3",
+    "summary": "We all have fuzzy instincts and ideas we never see clearly. Writing forces those thoughts into words so you can test, improve, or discard them. That clarity makes better decisions and reveals what you truly think.",
+    "title": "Why Everyone Should Write",
+    "url": "http://www.collaborativefund.com/blog/why-everyone-should-write/"
+  },
+  {
     "author": "",
     "category": "article",
     "date_group": "06 Jun 2026",
@@ -7020,17 +7090,30 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
-    "author": "Morgan Housel",
+    "author": "",
     "category": "article",
-    "date_group": "07 Jun 2026",
+    "date_group": "08 Jun 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-06-07T22:55:16.218Z",
+    "last_moved_at": "2026-06-08T17:00:46.375Z",
     "location": "new",
-    "readwise_id": "01ktj4rb7tp58v996m63wmvdh3",
-    "summary": "We all have fuzzy instincts and ideas we never see clearly. Writing forces those thoughts into words so you can test, improve, or discard them. That clarity makes better decisions and reveals what you truly think.",
-    "title": "Why Everyone Should Write",
-    "url": "http://www.collaborativefund.com/blog/why-everyone-should-write/"
+    "readwise_id": "01ktm2vyx75ykx2xd79149vj0c",
+    "summary": "The typestate pattern in Rust allows developers to encode an object's run-time state into its compile-time type, ensuring that certain operations can only be performed when the object is in the correct state. This pattern helps prevent errors by failing to compile if operations are used incorrectly, which reduces the need for run-time checks. Overall, it leads to safer and more intuitive API design in Rust.",
+    "title": "The Typestate Pattern in Rust",
+    "url": "https://cliffle.com/blog/rust-typestate/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "08 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-08T13:04:33.613Z",
+    "location": "new",
+    "readwise_id": "01ktknbeadg46et86rvt4ckgdn",
+    "summary": "APIs represent real-world ideas using types that match the concept closely to avoid errors. Using Rust's type system, designers can ensure parts of an API stay consistent and clear. The book shows how good type choices make APIs easier and safer to use.",
+    "title": "Type-Driven API Design in Rust",
+    "url": "https://willcrichton.net/rust-api-type-patterns/main_idea.html"
   },
   {
     "author": "Samuel Hughes",
@@ -7232,48 +7315,6 @@
     "summary": "Carlo Rovelli says the true start of quantum theory was Max Born's work before Schrödinger's waves. Schrödinger’s wave idea made people misunderstand quantum physics as mysterious waves. Quantum theory really shows that the world is made of particles that interact in a probabilistic and granular way.",
     "title": "Carlo Rovelli on what we get wrong about the origins of quantum theory",
     "url": "https://archive.ph/q1LNX"
-  },
-  {
-    "author": "Emile P Torres",
-    "category": "article",
-    "date_group": "10 May 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-05-10T00:56:42.147Z",
-    "location": "new",
-    "readwise_id": "01kr7p5vd3pd1xh28rywezpz0q",
-    "summary": "Longtermism is a risky belief that values the distant future so much it might justify harmful actions today. Its leaders imagine a far-off utopia but ignore the dangers of extreme means to reach it. We should care about future generations, but longtermism is not the right way to protect them.",
-    "title": "Longtermism poses a real threat to humanity",
-    "url": "https://archive.ph/vdDg6"
-  },
-  {
-    "author": "Emile P Torres",
-    "category": "article",
-    "date_group": "10 May 2026",
-    "highlights": [
-      "eschatological",
-      "We know that biodiversity loss and the sixth mass extinction could precipitate sudden, irreversible, catastrophic shifts in the global ecosystem."
-    ],
-    "last_highlighted_at": "2026-06-07T23:25:46.880Z",
-    "last_moved_at": "2026-05-10T00:55:33.840Z",
-    "location": "new",
-    "readwise_id": "01kr7p3rpg9051j0bheyn3x827",
-    "summary": "Longtermism claims we must prioritize humanity’s vast future potential above present needs. Critics say this view rewards risky technological pursuit and can harm real people today. The article argues longtermism is dangerous and may increase, not reduce, existential risk.",
-    "title": "Against longtermism",
-    "url": "https://aeon.co/essays/why-longtermism-is-the-worlds-most-dangerous-secular-credo"
-  },
-  {
-    "author": "Emile P Torres",
-    "category": "article",
-    "date_group": "10 May 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-05-10T00:55:23.749Z",
-    "location": "new",
-    "readwise_id": "01kr7p3ev7hpp440fj4pmgt5mf",
-    "summary": "The TESCREAL ideology envisions a future where enhanced humans colonize space and create digital utopias, but it may justify extreme and dangerous actions. Some followers, like Yudkowsky, support violent measures, including nuclear war, to prevent an AI apocalypse. This cult-like movement’s radical ideas and threats make it a serious danger to humanity.",
-    "title": "‘Before It’s Too Late, Buddy’",
-    "url": "https://www.truthdig.com/articles/before-its-too-late-buddy/"
   },
   {
     "author": "Malcolm Gladwell",
@@ -8108,19 +8149,6 @@
     "url": "https://www.snellman.net/blog/archive/2016-12-13-ring-buffers/"
   },
   {
-    "author": "Jacob Savage",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.720Z",
-    "location": "new",
-    "readwise_id": "01kcr0fezd5acmg3pjgyppryw8",
-    "summary": "The article argues that younger white men have lost access to many prestigious jobs as institutions prioritize diversity. This shift shows up across media, academia, tech, and medicine. Many affected men feel shut out and struggle to find other paths.",
-    "title": "The Lost Generation",
-    "url": "https://www.compactmag.com/article/the-lost-generation/"
-  },
-  {
     "author": "",
     "category": "article",
     "date_group": "11 Feb 2026",
@@ -8178,18 +8206,5 @@
     "summary": "Cosmopolitan mutexes are much faster and use less CPU than other popular mutex implementations on Windows and Linux. They work well in highly contested situations by using a smart design based on nsync and futexes. This makes them a great choice for production workloads needing efficient thread synchronization.",
     "title": "The Fastest Mutexes",
     "url": "https://justine.lol/mutex/"
-  },
-  {
-    "author": "Benjamin S. Bloom",
-    "category": "pdf",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.719Z",
-    "location": "new",
-    "readwise_id": "01kfjx1cm718cednw176mjh2nw",
-    "summary": "One-to-one tutoring improves student learning much more than conventional group teaching, often by two standard deviations. Methods like Mastery Learning and increased student participation can also boost achievement significantly. Researchers suggest continuing to explore and apply these effective teaching strategies to close the learning gap.",
-    "title": "The 2 Sigma Problem",
-    "url": "https://readwise.io/reader/document_raw_content/411557427"
   }
 ]
