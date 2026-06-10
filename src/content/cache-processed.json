@@ -44,7 +44,7 @@
     "url": "https://aeon.co/essays/why-longtermism-is-the-worlds-most-dangerous-secular-credo"
   },
   {
-    "author": "LWN",
+    "author": "Jonathan Corbet",
     "category": "article",
     "date_group": "08 Jun 2026",
     "highlights": [],
@@ -70,7 +70,7 @@
     "url": "http://www.collaborativefund.com/blog/why-everyone-should-write/"
   },
   {
-    "author": "",
+    "author": "Dan Luu",
     "category": "article",
     "date_group": "06 Jun 2026",
     "highlights": [
@@ -117,7 +117,7 @@
     "url": "https://www.historytoday.com/archive/feature/lee-kuan-yews-singapore-story"
   },
   {
-    "author": "hauleth.dev by hauleth",
+    "author": "Łukasz Niemier",
     "category": "rss",
     "date_group": "05 Jun 2026",
     "highlights": [],
@@ -156,7 +156,7 @@
     "url": "https://hulry.com/todoist-vs-apple-reminders/"
   },
   {
-    "author": "Brent",
+    "author": "Brent Yorgey",
     "category": "article",
     "date_group": "01 Jun 2026",
     "highlights": [
@@ -217,7 +217,7 @@
     "url": "https://fiberplane.com/blog/2026-04-10-how-we-use-claude-code-and-build-with-agents-at-fiberplane-part-1/"
   },
   {
-    "author": "",
+    "author": "Fiberplane Team",
     "category": "article",
     "date_group": "26 May 2026",
     "highlights": [],
@@ -243,7 +243,7 @@
     "url": "https://gazagnaire.org/blog/2026-05-14-borealis.html"
   },
   {
-    "author": "",
+    "author": "Gabriella Gonzalez",
     "category": "article",
     "date_group": "21 May 2026",
     "highlights": [
@@ -415,7 +415,7 @@
     "url": "https://theatlantic.com/health/2026/05/monotasking-inside-the-box-excerpt-david-epstein/687015/"
   },
   {
-    "author": "",
+    "author": "Zack Radisic",
     "category": "article",
     "date_group": "12 May 2026",
     "highlights": [],
@@ -7090,7 +7090,33 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
-    "author": "",
+    "author": "Burke Libbey",
+    "category": "article",
+    "date_group": "09 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-09T17:13:05.552Z",
+    "location": "new",
+    "readwise_id": "01ktpnz7rgmjqfgrke8d4tm8jf",
+    "summary": "Nix is a powerful technology that helps manage software dependencies on your computer. It uses a unique system of \"Derivations\" to build and store software packages in a special directory called the Nix Store. The Nix Language is a specific coding language used to create these Derivations, ensuring that builds only access declared dependencies.",
+    "title": "What Is Nix",
+    "url": "https://shopify.engineering/what-is-nix"
+  },
+  {
+    "author": "Cliff L. Biffle",
+    "category": "article",
+    "date_group": "09 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-09T08:32:32.401Z",
+    "location": "new",
+    "readwise_id": "01ktnr62mg8y0c2j4196cs7et9",
+    "summary": "The author improved their website’s speed by optimizing font loading and combining CSS files. They made text appear faster, even on slow connections, by preloading fonts correctly and showing a loading message. These changes help the site load quickly and feel more responsive for all users.",
+    "title": "Making my website faster",
+    "url": "https://cliffle.com/blog/making-website-faster/#continue-reading"
+  },
+  {
+    "author": "Cliff L. Biffle",
     "category": "article",
     "date_group": "08 Jun 2026",
     "highlights": [],
@@ -7103,7 +7129,7 @@
     "url": "https://cliffle.com/blog/rust-typestate/"
   },
   {
-    "author": "",
+    "author": "Will P.L. Crichton",
     "category": "article",
     "date_group": "08 Jun 2026",
     "highlights": [],
@@ -7421,7 +7447,7 @@
     "url": "https://buttondown.com/hillelwayne/archive/illegal-vs-unwanted-states/"
   },
   {
-    "author": "",
+    "author": "Nora Tindall",
     "category": "article",
     "date_group": "28 Apr 2026",
     "highlights": [],
@@ -8034,9 +8060,11 @@
       "Excel: it is self-tracking. Most build systems only track changes of inputs and intermediate results, but Excel also tracks changes in the tasks themselves",
       "Self-tracking is uncommon in software build systems, where one often needs to manually initiate a full rebuild even if just a single task has changed.",
       "instead of aborting and deferring the execution of tasks whose newly discovered dependencies have not yet been built (as Excel does), Shake suspends their execution until the dependencies are brought up to date. We refer to this task scheduling algorithm as suspending,",
-      "The busy build system defines the callback fetch so that, when given a key, it brings the key up to date in the store, and returns its value."
+      "The busy build system defines the callback fetch so that, when given a key, it brings the key up to date in the store, and returns its value.",
+      "Excel models the dirty bit approach most directly, having an actual dirty bit associated with\neach cell, marking the cell dirty if the user modifies it. It also marks dirty all cells that (transitively) depend on the modified cell. Excel does not record dynamic dependencies of each cell; instead it computes a static over-approximation ś it is safe for it to make more cells dirty than necessary, but not vice versa.",
+      "Note that Make requires that file timestamps only go forward in time, which can be violated by backup software."
     ],
-    "last_highlighted_at": "2026-06-07T18:54:25.951Z",
+    "last_highlighted_at": "2026-06-09T17:38:27.626Z",
     "last_moved_at": "2026-02-24T17:25:24.748Z",
     "location": "new",
     "readwise_id": "01kj8ayamczqabadz1hr6ahq1x",
