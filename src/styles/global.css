@@ -214,13 +214,16 @@
 	/* ── Highlights body (collapsible pane) ───────────────────────── */
 
 	div.feed .feed-highlights-body {
-		@apply text-fg-muted dark:text-fg-muted-dark text-pretty;
+		/* cancel the card's flex gap so mounting/unmounting the pane at
+		   height 0 is layout-neutral; the visible spacing lives inside the
+		   animated height (list pt below) and collapses with it */
+		@apply -mt-0.5 text-fg-muted dark:text-fg-muted-dark text-pretty;
 	}
 
 	/* ── Highlight list items & blockquotes ───────────────────────── */
 
 	div.feed .feed-highlights-list {
-		@apply flex flex-col gap-1.5 pt-1;
+		@apply flex flex-col gap-1.5 pt-1.5;
 	}
 
 	div.feed .feed-highlights-list li {
