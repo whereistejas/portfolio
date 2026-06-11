@@ -237,7 +237,7 @@
 
 
 	article.blog-article {
-		@apply prose dark:prose-invert pt-1.5 pb-1.5 md:pt-2 md:pb-2;
+		@apply prose pt-1.5 pb-1.5 md:pt-2 md:pb-2;
 		@apply text-base text-pretty hyphens-auto;
 		@apply text-fg-muted marker:text-fg-accent dark:text-fg-muted-dark marker:dark:text-fg-accent-dark;
 		@apply w-full max-w-full;
@@ -252,12 +252,34 @@
 			}
 		}
 
+		--tw-prose-body: var(--color-fg-muted);
+		--tw-prose-invert-body: var(--color-fg-muted-dark);
+		--tw-prose-lead: var(--color-fg-muted);
+		--tw-prose-invert-lead: var(--color-fg-muted-dark);
 		--tw-prose-headings: var(--color-fg);
 		--tw-prose-invert-headings: var(--color-fg-dark);
-		--tw-prose-quote-borders: var(--color-fg-accent);
-		--tw-prose-invert-quote-borders: var(--color-fg-accent);
 		--tw-prose-links: var(--color-fg-muted);
 		--tw-prose-invert-links: var(--color-fg-muted-dark);
+		--tw-prose-bold: var(--color-fg);
+		--tw-prose-invert-bold: var(--color-fg-dark);
+		--tw-prose-quotes: var(--color-fg);
+		--tw-prose-invert-quotes: var(--color-fg-dark);
+		--tw-prose-quote-borders: var(--color-fg-accent);
+		--tw-prose-invert-quote-borders: var(--color-fg-accent);
+		--tw-prose-counters: var(--color-fg-accent);
+		--tw-prose-invert-counters: var(--color-fg-accent-dark);
+		--tw-prose-bullets: var(--color-fg-accent);
+		--tw-prose-invert-bullets: var(--color-fg-accent-dark);
+		--tw-prose-captions: var(--color-fg-faint);
+		--tw-prose-invert-captions: var(--color-fg-faint-dark);
+		--tw-prose-code: var(--color-fg);
+		--tw-prose-invert-code: var(--color-fg-dark);
+		--tw-prose-kbd: var(--color-fg);
+		--tw-prose-invert-kbd: var(--color-fg-dark);
+
+		/* must come after the --tw-prose-* overrides so its dark-mode
+		   remap to the invert vars wins the cascade */
+		@apply dark:prose-invert;
 
 		h1,
 		h2,
