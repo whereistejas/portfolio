@@ -1,5 +1,18 @@
 [
   {
+    "author": "",
+    "category": "article",
+    "date_group": "11 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-11T15:59:09.984Z",
+    "location": "archive",
+    "readwise_id": "01ktvph82wrk0m9ckxrqwfvact",
+    "summary": "Static typing became popular again because modern type systems are much better than older ones. Good static types help catch errors and make coding easier, like using a strong shovel instead of digging with hands. Also, better IDE tools now make static typing more useful and productive.",
+    "title": "Static types and shovels",
+    "url": "https://carefully.understood.systems/blog-2026-06-10-static-type-shovel.html"
+  },
+  {
     "author": "Terence Eden",
     "category": "article",
     "date_group": "10 Jun 2026",
@@ -7114,6 +7127,19 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Jane Street Blog",
+    "category": "article",
+    "date_group": "11 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-11T15:49:19.605Z",
+    "location": "new",
+    "readwise_id": "01ktvnz9kn5p31ae09a8wk7b15",
+    "summary": "Harvard and other schools are teaching OCaml to more students, inspired in part by popular culture. The article shares programming tips to write safer and clearer OCaml code. Jane Street helped popularize OCaml in the industry starting in 2002.",
+    "title": "Effective ML Revisited",
+    "url": "https://blog.janestreet.com/effective-ml-revisited/"
   },
   {
     "author": "Burke Libbey",
