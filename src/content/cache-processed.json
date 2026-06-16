@@ -467,19 +467,6 @@
     "url": "https://zackoverflow.dev/writing/zig-vs-rust-in-2026/"
   },
   {
-    "author": "Daniel Stenberg",
-    "category": "rss",
-    "date_group": "11 May 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-05-11T15:53:25.557Z",
-    "location": "archive",
-    "readwise_id": "01krav8y921avbd6cfctjxy16h",
-    "summary": "yes, as in singular one. Back in April 2026 Anthropic caused a lot of media noise when they concluded that their new AI model Mythos is dangerously good at finding security flaws in source code. Apparently Mythos was so good at this that Anthropic would not release this model to the public yet but instead … Continue reading Mythos finds a curl vulnerability →",
-    "title": "Mythos finds a curl vulnerability",
-    "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/"
-  },
-  {
     "author": "Dion",
     "category": "article",
     "date_group": "08 May 2026",
@@ -1793,19 +1780,6 @@
     "url": "https://stratechery.com/2026/anthropic-and-alignment/"
   },
   {
-    "author": "Daniel Stenberg",
-    "category": "rss",
-    "date_group": "26 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-26T16:54:11.677Z",
-    "location": "archive",
-    "readwise_id": "01kj7s73cgvwk0wz983xv9qk7d",
-    "summary": "Last spring I wrote a blog post about our ongoing work in the background to gradually simplify the curl source code over time. This is a follow-up: a status update of what we have done since then and what comes next. In May 2025 I had just managed to get the worst function in curl … Continue reading decomplexification continued →",
-    "title": "decomplexification continued",
-    "url": "https://daniel.haxx.se/blog/2026/02/24/decomplexification-continued/"
-  },
-  {
     "author": "Jeremy Stern",
     "category": "article",
     "date_group": "26 Feb 2026",
@@ -3097,19 +3071,6 @@
     "summary": "Companies now sell polygenic embryo selection that claims to lower disease risk and slightly raise IQ.  \nMost traits are controlled by thousands of genes and current scores mix real effects with population confounders, so they work poorly within families and picking the best of a few embryos gives only small benefits.  \nCritics warn of scientific limits, ethical problems, and social risks if screening and IVF become widespread.",
     "title": "Suddenly, Trait-Based Embryo Selection",
     "url": "https://www.astralcodexten.com/p/suddenly-trait-based-embryo-selection#_"
-  },
-  {
-    "author": "Simon Willison's Weblog: Entries",
-    "category": "rss",
-    "date_group": "18 Dec 2025",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2025-12-18T15:57:22.529Z",
-    "location": "archive",
-    "readwise_id": "01kcrz55y1cj66vdfnnqzp8r6w",
-    "summary": "Your job as a software developer is to deliver code you have tested and proven works. Always do manual testing and add automated tests to show your code is correct. If you use AI tools, make sure they also prove their changes work before submitting.",
-    "title": "Your job is to deliver code you have proven to work",
-    "url": "https://simonwillison.net/2025/Dec/18/code-proven-to-work/#atom-entries"
   },
   {
     "author": "Abhishaike Mahajan",
@@ -7127,6 +7088,19 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "german s.",
+    "category": "article",
+    "date_group": "15 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-15T09:57:06.139Z",
+    "location": "new",
+    "readwise_id": "01kv5bd7et2gcfzz46hbv10zak",
+    "summary": "Dopamine fracking means forcing intense pleasure from simple things by overusing technology and tricks. This process destroys the natural beauty and variety of experiences, making culture and relationships shallow. Becoming aware of this helps people avoid addiction and find more meaningful enjoyment.",
+    "title": "Dopamine Fracking",
+    "url": "https://igerman.cc/blog/dopamine-fracking/"
   },
   {
     "author": "Jane Street Blog",
