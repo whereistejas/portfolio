@@ -1,5 +1,37 @@
 [
   {
+    "author": "Ben Thompson",
+    "category": "article",
+    "date_group": "16 Jun 2026",
+    "highlights": [
+      "insouciance",
+      "Anthropic and OpenAI, meanwhile, have collectively lost tens of billions of dollars building leading-edge models that, once released, are distilled and commoditized by open source models, primarily from China.",
+      "it’s software that owns the user touchpoint, and it’s in the frontier labs’ long-term interest to not simply be a commodity input into software but to simply replace software outright."
+    ],
+    "last_highlighted_at": "2026-06-16T19:02:26.948Z",
+    "last_moved_at": "2026-06-16T23:24:36.497Z",
+    "location": "archive",
+    "readwise_id": "01kv8w6hg8ja56y430rgqharnw",
+    "summary": "Anthropic claims it controls AI safely by limiting access and altering its models to prevent misuse. Their approach mixes genuine safety concerns with a desire to hold power over AI development. This raises worries about one company controlling superintelligent technology that could impact society deeply.",
+    "title": "Anthropic’s Safety Superpower",
+    "url": "https://stratechery.com/2026/anthropics-safety-superpower/"
+  },
+  {
+    "author": "Satya Nadella",
+    "category": "tweet",
+    "date_group": "16 Jun 2026",
+    "highlights": [
+      "If all the value is accrued by only a few models, the political economy will simply not tolerate it. There is no societal permission for an AI future that hollows out entire industries."
+    ],
+    "last_highlighted_at": "2026-06-16T19:04:26.962Z",
+    "last_moved_at": "2026-06-16T19:05:14.201Z",
+    "location": "archive",
+    "readwise_id": "01kv8x3hzmyefqxrj42tgnbppx",
+    "summary": "The future of work depends on combining human knowledge with AI to create systems that learn and improve over time. Companies must build ecosystems where their unique expertise grows in value alongside AI capabilities. This approach helps businesses thrive and share value widely, avoiding concentration of power in a few AI models.",
+    "title": "A frontier without an ecosystem is not stable",
+    "url": "https://x.com/satyanadella/status/2066182223213293753/?s=12&rw_tt_thread=True"
+  },
+  {
     "author": "",
     "category": "article",
     "date_group": "11 Jun 2026",
@@ -1770,8 +1802,10 @@
     "author": "Ben Thompson",
     "category": "article",
     "date_group": "02 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "the very concept of “international law” is fake, not because pertinent statutes and agreements don’t exist, but because their effectiveness is ultimately rooted in their enforceability."
+    ],
+    "last_highlighted_at": "2026-06-16T18:51:24.462Z",
     "last_moved_at": "2026-03-02T22:08:38.747Z",
     "location": "archive",
     "readwise_id": "01kjqnhk0qtz49x5yzej9yz47k",
@@ -7090,6 +7124,58 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Fatih Arslan",
+    "category": "article",
+    "date_group": "16 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-16T23:03:39.568Z",
+    "location": "new",
+    "readwise_id": "01kv9at3dmmt979rn5m3rjytjb",
+    "summary": "Kubernetes uses feedback loops to match the real state of a system to the desired state by continuously checking and fixing problems. Controllers run reconcile loops that read the current state, compare it to the desired state, and take steps to correct any differences. This design allows independent components to work together reliably, even if parts fail or restart.",
+    "title": "The feedback loops behind Kubernetes",
+    "url": "https://planetscale.com/blog/the-feedback-loops-behind-kubernetes"
+  },
+  {
+    "author": "Jonathon P Sine",
+    "category": "article",
+    "date_group": "16 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-16T15:23:44.075Z",
+    "location": "new",
+    "readwise_id": "01kv8gg12bp7vpd7gxzw6r7134",
+    "summary": "Dan Wang argues China is an “engineering state” that builds big and fast while the U.S. is a “lawyerly society” that blocks much. Sine says that label captures part of the truth but overlooks political and managerial limits. He notes China’s breakneck boom is slowing and prefers to call it a Leninist developmental state with Chinese characteristics.",
+    "title": "Litigation Nation, Engineering Empire",
+    "url": "https://www.cogitations.co/p/litigation-nation-engineering-empire"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "16 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-16T15:23:37.284Z",
+    "location": "new",
+    "readwise_id": "01kv8gfte4wkx2ses6hqdj0pcx",
+    "summary": "Europe’s strict labor laws make it costly for companies to fire workers, so they avoid risky innovation and new industries. This limits Europe’s ability to create breakthrough companies like Tesla. To compete, Europe needs to reform its labor rules while still protecting workers.",
+    "title": "Why Europe doesn’t have a Tesla",
+    "url": "https://worksinprogress.co/issue/why-europe-doesnt-have-a-tesla/"
+  },
+  {
+    "author": "Shruti Rajagopalan",
+    "category": "article",
+    "date_group": "16 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-16T15:23:22.700Z",
+    "location": "new",
+    "readwise_id": "01kv8gfc9kvfahjy4ad4dh3s78",
+    "summary": "Indian Americans, though just 1.5% of the U.S. population, have a significant influence due to their elite educational and professional backgrounds. Most Indian immigrants come from upper or dominant castes, shaping their opportunities and perspectives in America. Despite their success, many Indian Americans lean towards the Democratic Party due to issues like immigration reform and healthcare.",
+    "title": "Kamala Harris, Usha Vance, and the twice born thrice selected Indian American elite",
+    "url": "https://srajagopalan.substack.com/p/kamala-harris-usha-vance-and-the?r=1gvqcg&utm_medium=ios&triedRedirect=true"
+  },
+  {
     "author": "german s.",
     "category": "article",
     "date_group": "15 Jun 2026",
@@ -8180,8 +8266,10 @@
     "author": "Substack",
     "category": "article",
     "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "In his 2013 *[Capital in the Twenty-first Century](https://www.amazon.com/Capital-Twenty-Century-Thomas-Piketty/dp/067443000X/)*, the socialist economist Thomas Piketty argued that, absent strong redistribution, economic inequality tends to increase indefinitely through the generations—at least until shocks, like large wars or prodigal sons, reset the clock. This is because the rich tend to save more than the poor and because they can get higher returns on their investments.\n\nAs many noted at the time, this is probably an incorrect account of the past. Labor and capital complement each other. Wealthy people can keep accumulating capital, but hammers grow less valuable when there aren’t enough hands to use all of them, and hands grow more valuable when hammers are plentiful. Capital accumulation thus lowers interest rates (aka income per unit of capital) and raises wages (income per unit of labor). This effect has tended to be strong enough that, though inequality may have grown for other reasons, inequality from capital accumulation alone has been self-correcting."
+    ],
+    "last_highlighted_at": "2026-06-16T23:25:55.020Z",
     "last_moved_at": "2026-02-11T22:54:37.720Z",
     "location": "new",
     "readwise_id": "01kdr3r6rd183ec5cphp7gw58s",
