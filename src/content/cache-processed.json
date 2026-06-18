@@ -7124,6 +7124,21 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "",
+    "category": "article",
+    "date_group": "17 Jun 2026",
+    "highlights": [
+      "It might perhaps seem surprising that after 38 years there’d still be more to add. But it’s like the typical arc of intellectual history: the more one’s figured out, the further one can see, and the more one becomes able to do."
+    ],
+    "last_highlighted_at": "2026-06-17T09:32:55.747Z",
+    "last_moved_at": "2026-06-17T09:32:48.142Z",
+    "location": "new",
+    "readwise_id": "01kvaet5menpkcktdzw95x6gg9",
+    "summary": "Wolfram Language Version 15 adds a built-in AI assistant in every notebook to help with computation. It introduces new features like symbolic music and improved data visualization. The update also makes the language more efficient and easier to use for both humans and AI.",
+    "title": "Launching Version 15 of Wolfram Language & Mathematica: Built-in (Useful) AI & Lots of New Core Functionality",
+    "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/"
+  },
+  {
     "author": "Fatih Arslan",
     "category": "article",
     "date_group": "16 Jun 2026",
