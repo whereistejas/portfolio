@@ -1,5 +1,46 @@
 [
   {
+    "author": "",
+    "category": "article",
+    "date_group": "19 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-19T23:16:14.934Z",
+    "location": "archive",
+    "readwise_id": "01kvh2qa4ayym9m1vceb9wzme6",
+    "summary": "Japan's railways split into separate JR companies but kept one shared logo and design to stay united. Each company chose colors and styles that matched their region, making the system feel connected yet local. The strong, lasting design was made to represent the present and has stayed unchanged for over 40 years.",
+    "title": "How Japan's railways stayed one while splitting apart",
+    "url": "https://arun.is/blog/jr-logo/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "19 Jun 2026",
+    "highlights": [
+      "It might perhaps seem surprising that after 38 years there’d still be more to add. But it’s like the typical arc of intellectual history: the more one’s figured out, the further one can see, and the more one becomes able to do."
+    ],
+    "last_highlighted_at": "2026-06-17T09:32:55.747Z",
+    "last_moved_at": "2026-06-19T23:09:37.591Z",
+    "location": "archive",
+    "readwise_id": "01kvaet5menpkcktdzw95x6gg9",
+    "summary": "Wolfram Language Version 15 adds a built-in AI assistant in every notebook to help with computation. It introduces new features like symbolic music and improved data visualization. The update also makes the language more efficient and easier to use for both humans and AI.",
+    "title": "Launching Version 15 of Wolfram Language & Mathematica: Built-in (Useful) AI & Lots of New Core Functionality",
+    "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/"
+  },
+  {
+    "author": "Nippon Design Center, Inc.",
+    "category": "article",
+    "date_group": "19 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-19T23:08:54.341Z",
+    "location": "archive",
+    "readwise_id": "01kvh299he83d6h1bc56kbzf8g",
+    "summary": "Search and AI give quick answers but hide the rich discussions behind them. Like software development on GitHub, preserving debates and changes helps us learn and improve knowledge. Valuing dialogue over instant answers leads to deeper understanding and better thinking.",
+    "title": "What Search Doesn’t Tell You",
+    "url": "https://www.ndc.co.jp/en/whiteboard/blindspots-of-search/"
+  },
+  {
     "author": "Ben Thompson",
     "category": "article",
     "date_group": "16 Jun 2026",
@@ -32,7 +73,7 @@
     "url": "https://x.com/satyanadella/status/2066182223213293753/?s=12&rw_tt_thread=True"
   },
   {
-    "author": "",
+    "author": "Richard Barrell",
     "category": "article",
     "date_group": "11 Jun 2026",
     "highlights": [],
@@ -7122,21 +7163,6 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "17 Jun 2026",
-    "highlights": [
-      "It might perhaps seem surprising that after 38 years there’d still be more to add. But it’s like the typical arc of intellectual history: the more one’s figured out, the further one can see, and the more one becomes able to do."
-    ],
-    "last_highlighted_at": "2026-06-17T09:32:55.747Z",
-    "last_moved_at": "2026-06-17T09:32:48.142Z",
-    "location": "new",
-    "readwise_id": "01kvaet5menpkcktdzw95x6gg9",
-    "summary": "Wolfram Language Version 15 adds a built-in AI assistant in every notebook to help with computation. It introduces new features like symbolic music and improved data visualization. The update also makes the language more efficient and easier to use for both humans and AI.",
-    "title": "Launching Version 15 of Wolfram Language & Mathematica: Built-in (Useful) AI & Lots of New Core Functionality",
-    "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/"
   },
   {
     "author": "Fatih Arslan",
