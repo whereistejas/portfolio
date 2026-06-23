@@ -1,5 +1,31 @@
 [
   {
+    "author": "Matt Gemmell",
+    "category": "article",
+    "date_group": "23 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-23T00:17:14.575Z",
+    "location": "archive",
+    "readwise_id": "01kvrvq0ksgtpcsjx80cvtzrjh",
+    "summary": "Modifier keys are hard to reach and use because they are far from the home row where fingers naturally rest. Home row mods let you hold modifier keys by pressing and holding letters on the home row, making shortcuts easier and more ergonomic. This method improves typing speed, reduces strain, and feels natural after a short learning period.",
+    "title": "Home Row Mods",
+    "url": "https://mattgemmell.scot/home-row-mods/"
+  },
+  {
+    "author": "Uğur Erdem Seyfi",
+    "category": "article",
+    "date_group": "23 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-23T00:15:59.574Z",
+    "location": "archive",
+    "readwise_id": "01kvrx8wbkkwdtcg926d04d0x0",
+    "summary": "The author built and used a Corne split keyboard for six months to improve ergonomics and typing efficiency. It took time to adapt to the ortholinear layout and new key functions, but typing speed recovered to near previous levels. Overall, the keyboard reduced strain and offered a better typing experience despite some thumb discomfort.",
+    "title": "Using The Corne Split Keyboard For Half A Year",
+    "url": "https://rugu.dev/en/blog/corne/"
+  },
+  {
     "author": "Ian Leslie",
     "category": "article",
     "date_group": "21 Jun 2026",
@@ -7178,19 +7204,6 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
-  },
-  {
-    "author": "Claude",
-    "category": "article",
-    "date_group": "20 Jun 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-06-20T10:02:50.475Z",
-    "location": "new",
-    "readwise_id": "01kvj7qaqc2szgd86dmbdpgytg",
-    "summary": "The src gene makes a protein called Src that helps control cell growth and movement. Normally, Src is carefully turned on and off to keep cells healthy. But in the virus form, Src stays always on, causing uncontrolled cell growth and cancer.",
-    "title": "Src gene and protein in RSV: normal versus abnormal function",
-    "url": "https://claude.ai/chat/80c981bd-4f47-4fde-8e62-00f5bf9cf111"
   },
   {
     "author": "Fatih Arslan",
