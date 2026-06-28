@@ -1,5 +1,91 @@
 [
   {
+    "author": "",
+    "category": "article",
+    "date_group": "27 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-27T18:12:49.971Z",
+    "location": "archive",
+    "readwise_id": "01kw53t96t4dax0xrs554f7tgg",
+    "summary": "Database vendors should not be aware of your budget for a project to secure better pricing. Monitoring data should not be stored in the same database instance that generated it. Overloading a database with resources can lead to performance issues.",
+    "title": "Ten Database Crack Commandments",
+    "url": "https://www.cs.cmu.edu/~pavlo/blog/2022/03/database-ten-commandments.html"
+  },
+  {
+    "author": "Casey Handmer",
+    "category": "article",
+    "date_group": "27 Jun 2026",
+    "highlights": [
+      "In fact [Starlink](https://caseyhandmer.wordpress.com/2019/11/02/starlink-is-a-very-big-deal/), a constellation of about 10,000 satellites with a combined power generation capacity in the 100s of MW, shows exactly how all viable space-based economic systems work. Send microwaves to Earth-based receivers containing not raw power, but sufficiently valuable binary bits of information. Typically, this is Earth observation data (eg [Planet](https://www.planet.com/), [Umbra](https://umbra.space/)) or telecommunication data (eg [Starlink](https://starlink.com/)). It turns out that the economic value of a received Watt of Starlink microwave power is about a billion times higher than the marginal value of a Watt of electrical power, and so Starlink actually makes money. A lot of money – currently about $10b per year and growing.",
+      "parochial"
+    ],
+    "last_highlighted_at": "2026-06-27T13:37:57.644Z",
+    "last_moved_at": "2026-06-27T13:39:05.376Z",
+    "location": "archive",
+    "readwise_id": "01kmtx7wspz8cgqabvy0yp1fr5",
+    "summary": "SpaceX aims to build factories on the Moon to support space industry and make space development profitable. Space-based data centers and satellites like Starlink show how space businesses can generate big money by sending valuable information to Earth. NASA’s traditional programs are costly and slow, while SpaceX’s approach is faster, cheaper, and more focused on real results.",
+    "title": "I guess we’re doing Moon factories now",
+    "url": "https://caseyhandmer.wordpress.com/2026/02/10/i-guess-were-doing-moon-factories-now/"
+  },
+  {
+    "author": "Tim Culverhouse",
+    "category": "article",
+    "date_group": "27 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-27T13:15:25.401Z",
+    "location": "archive",
+    "readwise_id": "01kkstya1g0z1cf4b54tyqdmtz",
+    "summary": "The author used an AI agent named Amp to write and organize code, letting it decide names and structure freely. This approach helped Amp work faster and more efficiently than when the author interfered. The result is a codebase designed by the agent, optimized for the agent’s own understanding and use.",
+    "title": "A Codebase by an Agent for an Agent",
+    "url": "https://ampcode.com/notes/by-an-agent-for-an-agent"
+  },
+  {
+    "author": "Bob Coecke, Aleks Kissinger",
+    "category": "article",
+    "date_group": "27 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-27T12:32:55.120Z",
+    "location": "archive",
+    "readwise_id": "01kj2gvhtp0w4kbyvk44v9h84m",
+    "summary": "\"Picturing Quantum Processes\" is a book that teaches quantum theory using diagrams. It helps readers understand complex quantum ideas more easily. The book is useful for students and researchers in physics and computer science.",
+    "title": "Picturing Quantum Processes",
+    "url": "https://www.cambridge.org/core/books/picturing-quantum-processes/1119568B3101F3A685BE832FEEC53E52"
+  },
+  {
+    "author": "Samuel Hughes",
+    "category": "article",
+    "date_group": "27 Jun 2026",
+    "highlights": [
+      "agglomeration",
+      "Tokugawa Edo stands as a monument to the power of rent-seekers, producing little and demanding immense resources as a condition of civil peace."
+    ],
+    "last_highlighted_at": "2026-06-27T12:32:27.794Z",
+    "last_moved_at": "2026-06-27T12:32:38.370Z",
+    "location": "archive",
+    "readwise_id": "01ktbhxss5f1nage9kdgtc758r",
+    "summary": "The Tokugawa family ruled Japan from 1600 to 1868, using Edo (now Tokyo) to control the samurai and daimyo by requiring them to live there and spend time in the city. Edo was divided by social class, with samurai and nobles living in the spacious and strict \"High City,\" while commoners lived in crowded, poorer areas. This system kept peace for over 250 years by limiting the power of the warrior class, allowing Japan to grow economically and culturally.",
+    "title": "Samurai city",
+    "url": "https://worksinprogress.co/issue/samurai-city/"
+  },
+  {
+    "author": "german s.",
+    "category": "article",
+    "date_group": "27 Jun 2026",
+    "highlights": [
+      "It's a metaphor, because just like in actual fracking, it is immensely harmful to the long-term health and sustainability of anything it is applied to, but in the short term, it can yield a very intense and concentrated hit of dopamine (or oil)."
+    ],
+    "last_highlighted_at": "2026-06-27T10:38:01.211Z",
+    "last_moved_at": "2026-06-27T10:37:44.898Z",
+    "location": "archive",
+    "readwise_id": "01kv5bd7et2gcfzz46hbv10zak",
+    "summary": "Dopamine fracking means forcing intense pleasure from simple things by overusing technology and tricks. This process destroys the natural beauty and variety of experiences, making culture and relationships shallow. Becoming aware of this helps people avoid addiction and find more meaningful enjoyment.",
+    "title": "Dopamine Fracking",
+    "url": "https://igerman.cc/blog/dopamine-fracking/"
+  },
+  {
     "author": "Jim Nielsen",
     "category": "article",
     "date_group": "25 Jun 2026",
@@ -7284,6 +7370,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "",
+    "category": "article",
+    "date_group": "27 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-27T18:00:07.053Z",
+    "location": "new",
+    "readwise_id": "01kw53t94dctd3x6zassvcycvq",
+    "summary": "Database vendors should not be aware of your budget for a project to secure better pricing. Monitoring data should not be stored in the same database instance that generated it. Overloading a database with resources can lead to performance issues.",
+    "title": "Ten Database Crack Commandments",
+    "url": "https://www.cs.cmu.edu/~pavlo/blog/2022/03/database-ten-commandments.html"
+  },
+  {
     "author": "Fatih Arslan",
     "category": "article",
     "date_group": "16 Jun 2026",
@@ -7334,19 +7433,6 @@
     "summary": "Indian Americans, though just 1.5% of the U.S. population, have a significant influence due to their elite educational and professional backgrounds. Most Indian immigrants come from upper or dominant castes, shaping their opportunities and perspectives in America. Despite their success, many Indian Americans lean towards the Democratic Party due to issues like immigration reform and healthcare.",
     "title": "Kamala Harris, Usha Vance, and the twice born thrice selected Indian American elite",
     "url": "https://srajagopalan.substack.com/p/kamala-harris-usha-vance-and-the?r=1gvqcg&utm_medium=ios&triedRedirect=true"
-  },
-  {
-    "author": "german s.",
-    "category": "article",
-    "date_group": "15 Jun 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-06-15T09:57:06.139Z",
-    "location": "new",
-    "readwise_id": "01kv5bd7et2gcfzz46hbv10zak",
-    "summary": "Dopamine fracking means forcing intense pleasure from simple things by overusing technology and tricks. This process destroys the natural beauty and variety of experiences, making culture and relationships shallow. Becoming aware of this helps people avoid addiction and find more meaningful enjoyment.",
-    "title": "Dopamine Fracking",
-    "url": "https://igerman.cc/blog/dopamine-fracking/"
   },
   {
     "author": "Jane Street Blog",
@@ -7412,19 +7498,6 @@
     "summary": "APIs represent real-world ideas using types that match the concept closely to avoid errors. Using Rust's type system, designers can ensure parts of an API stay consistent and clear. The book shows how good type choices make APIs easier and safer to use.",
     "title": "Type-Driven API Design in Rust",
     "url": "https://willcrichton.net/rust-api-type-patterns/main_idea.html"
-  },
-  {
-    "author": "Samuel Hughes",
-    "category": "article",
-    "date_group": "05 Jun 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-06-05T09:30:45.413Z",
-    "location": "new",
-    "readwise_id": "01ktbhxss5f1nage9kdgtc758r",
-    "summary": "The Tokugawa family ruled Japan from 1600 to 1868, using Edo (now Tokyo) to control the samurai and daimyo by requiring them to live there and spend time in the city. Edo was divided by social class, with samurai and nobles living in the spacious and strict \"High City,\" while commoners lived in crowded, poorer areas. This system kept peace for over 250 years by limiting the power of the warrior class, allowing Japan to grow economically and culturally.",
-    "title": "Samurai city",
-    "url": "https://worksinprogress.co/issue/samurai-city/"
   },
   {
     "author": "Charity Majors",
@@ -8166,19 +8239,6 @@
     "url": "https://www.roughtype.com/?p=1464"
   },
   {
-    "author": "Casey Handmer",
-    "category": "article",
-    "date_group": "28 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-28T19:02:56.054Z",
-    "location": "new",
-    "readwise_id": "01kmtx7wspz8cgqabvy0yp1fr5",
-    "summary": "SpaceX aims to build factories on the Moon to support space industry and make space development profitable. Space-based data centers and satellites like Starlink show how space businesses can generate big money by sending valuable information to Earth. NASA’s traditional programs are costly and slow, while SpaceX’s approach is faster, cheaper, and more focused on real results.",
-    "title": "I guess we’re doing Moon factories now",
-    "url": "https://caseyhandmer.wordpress.com/2026/02/10/i-guess-were-doing-moon-factories-now/"
-  },
-  {
     "author": "Gergely Orosz",
     "category": "article",
     "date_group": "26 Mar 2026",
@@ -8255,19 +8315,6 @@
     "summary": "A scholar spent decades taking neat notes and believed they were his life’s work. The author tried building a digital zettelkasten to become like him and found only chaos and useless busywork. Notes are a tool to help thinking, not a substitute for actually doing the work of thought.",
     "title": "Rank and File",
     "url": "https://reallifemag.com/rank-and-file/"
-  },
-  {
-    "author": "Tim Culverhouse",
-    "category": "article",
-    "date_group": "15 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-15T22:47:48.528Z",
-    "location": "new",
-    "readwise_id": "01kkstya1g0z1cf4b54tyqdmtz",
-    "summary": "The author used an AI agent named Amp to write and organize code, letting it decide names and structure freely. This approach helped Amp work faster and more efficiently than when the author interfered. The result is a codebase designed by the agent, optimized for the agent’s own understanding and use.",
-    "title": "A Codebase by an Agent for an Agent",
-    "url": "https://ampcode.com/notes/by-an-agent-for-an-agent"
   },
   {
     "author": "Celia Ford",
