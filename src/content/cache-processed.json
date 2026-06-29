@@ -1,5 +1,31 @@
 [
   {
+    "author": "Mark Stosberg",
+    "category": "article",
+    "date_group": "28 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-28T23:55:17.044Z",
+    "location": "archive",
+    "readwise_id": "01kw8ah85mb0s3drf2n12crktb",
+    "summary": "The author organizes Sway keybindings using layers with different modifier keys for easy access and safety. The main layer uses the Super key for common tasks, the danger layer uses Super+Shift for risky commands, and the utility layer uses Super+Control for launching apps. Visual tools and simple layouts help learn and manage these keybindings effectively.",
+    "title": "Tips for organizing Sway keybindings",
+    "url": "https://mark.stosberg.com/sway-keybindings/"
+  },
+  {
+    "author": "Nicholas Carr",
+    "category": "article",
+    "date_group": "28 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-28T13:52:32.263Z",
+    "location": "archive",
+    "readwise_id": "01kmvb3qjm5hrc5tr1ppmc7dyv",
+    "summary": "Information overload comes in two forms: situational (finding a needle in a haystack) and ambient (a pile of needles). Filters and search tools mostly solve the situational problem. But better filters worsen ambient overload by pushing more interesting stuff at us, which makes us feel more overwhelmed.",
+    "title": "Situational overload and ambient overload",
+    "url": "https://www.roughtype.com/?p=1464"
+  },
+  {
     "author": "",
     "category": "article",
     "date_group": "27 Jun 2026",
@@ -7370,6 +7396,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "David Oks",
+    "category": "article",
+    "date_group": "28 Jun 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-06-28T23:59:17.547Z",
+    "location": "new",
+    "readwise_id": "01kw8arnhbzgvnz5rpgpb3a4kx",
+    "summary": "China became rich because it invested heavily in its people's health, education, and social modernization. India did not transform its society as deeply, leaving many workers less prepared for industrial growth. This human development gap helped China grow faster and become wealthier over time.",
+    "title": "Why China got rich and India didn't",
+    "url": "https://davidoks.blog/p/why-china-got-rich-and-india-didnt?triedRedirect=true"
+  },
+  {
     "author": "",
     "category": "article",
     "date_group": "27 Jun 2026",
@@ -8224,19 +8263,6 @@
     "summary": "“I Who Have Never Known Men” is a haunting novel about a girl trapped with women in a strange cage at the end of the world. The story shows their struggle for freedom, knowledge, and survival in a silent, changed world without men. It warns us that peaceful days can suddenly end and challenges us to think about what true freedom means.",
     "title": "“I Who Have Never Known Men” Is a Warning | The New Yorker",
     "url": "https://www.newyorker.com/newyorkercom/books/second-read/i-who-have-never-known-men-jacqueline-harpman-excerpt"
-  },
-  {
-    "author": "Nicholas Carr",
-    "category": "article",
-    "date_group": "28 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-28T23:05:19.700Z",
-    "location": "new",
-    "readwise_id": "01kmvb3qjm5hrc5tr1ppmc7dyv",
-    "summary": "Information overload comes in two forms: situational (finding a needle in a haystack) and ambient (a pile of needles). Filters and search tools mostly solve the situational problem. But better filters worsen ambient overload by pushing more interesting stuff at us, which makes us feel more overwhelmed.",
-    "title": "Situational overload and ambient overload",
-    "url": "https://www.roughtype.com/?p=1464"
   },
   {
     "author": "Gergely Orosz",
