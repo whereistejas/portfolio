@@ -1,5 +1,31 @@
 [
   {
+    "author": "",
+    "category": "article",
+    "date_group": "02 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-02T22:42:28.826Z",
+    "location": "archive",
+    "readwise_id": "01kwjfysvx7nh3zy35367j4f12",
+    "summary": "The author started using a split ergonomic keyboard called Corne to reduce wrist pain and customize their typing experience. They created a personalized keymap focused on comfort and efficiency, especially for coding and navigation. Though learning to type on it was challenging, the setup helped ease their RSI symptoms and inspired them to design their own keyboard, TEMPEST.",
+    "title": "Thoughts on customising a split keyboard layout",
+    "url": "https://thrly.com/blog/thoughts-on-customising-a-split-keyboard-layout/?ref=mark.stosberg.com"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "02 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-02T15:48:45.554Z",
+    "location": "archive",
+    "readwise_id": "01kw53t94dctd3x6zassvcycvq",
+    "summary": "Database vendors should not be aware of your budget for a project to secure better pricing. Monitoring data should not be stored in the same database instance that generated it. Overloading a database with resources can lead to performance issues.",
+    "title": "Ten Database Crack Commandments",
+    "url": "https://www.cs.cmu.edu/~pavlo/blog/2022/03/database-ten-commandments.html"
+  },
+  {
     "author": "Mark Stosberg",
     "category": "article",
     "date_group": "28 Jun 2026",
@@ -7396,19 +7422,6 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
-    "author": "",
-    "category": "article",
-    "date_group": "30 Jun 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-06-30T14:15:41.964Z",
-    "location": "new",
-    "readwise_id": "01kwce5gmcp6ycjch91g56wms4",
-    "summary": "A software agent named beacon-dev-bob-elastic-8 started a job on June 30, 2026. It ran a Docker container with specific environment settings and mounted directories. The system successfully launched a web app, created worker pools, and connected to a source database.",
-    "title": "No title",
-    "url": "https://beacon-dev.wsq.io/bob-agent/job-logs/2026-06-30/beacon-dev/whereistejas/a2a-b0057f0c-b955-4ff7-906f-35fdf5fe5d4f?agent=172.19.1.138"
-  },
-  {
     "author": "Pascal Getreuer",
     "category": "article",
     "date_group": "29 Jun 2026",
@@ -7433,19 +7446,6 @@
     "summary": "China became rich because it invested heavily in its people's health, education, and social modernization. India did not transform its society as deeply, leaving many workers less prepared for industrial growth. This human development gap helped China grow faster and become wealthier over time.",
     "title": "Why China got rich and India didn't",
     "url": "https://davidoks.blog/p/why-china-got-rich-and-india-didnt?triedRedirect=true"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "27 Jun 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-06-27T18:00:07.053Z",
-    "location": "new",
-    "readwise_id": "01kw53t94dctd3x6zassvcycvq",
-    "summary": "Database vendors should not be aware of your budget for a project to secure better pricing. Monitoring data should not be stored in the same database instance that generated it. Overloading a database with resources can lead to performance issues.",
-    "title": "Ten Database Crack Commandments",
-    "url": "https://www.cs.cmu.edu/~pavlo/blog/2022/03/database-ten-commandments.html"
   },
   {
     "author": "Fatih Arslan",
