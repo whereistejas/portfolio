@@ -1,5 +1,31 @@
 [
   {
+    "author": "Cal Paterson",
+    "category": "article",
+    "date_group": "07 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-07T00:45:27.856Z",
+    "location": "archive",
+    "readwise_id": "01kkp3vvz9hstz4gy6arg55asd",
+    "summary": "Bank Python is a proprietary, bank-specific fork of the Python ecosystem used at big investment banks. It centers on a global object database and custom tools (like Barbara and Dagger) that move Excel-style finance workflows into code. This monoculture isolates developers from mainstream Python and creates heavy, data-first systems tied to legacy finance practices.",
+    "title": "An oral history of Bank Python",
+    "url": "https://calpaterson.com/bank-python.html"
+  },
+  {
+    "author": "Dan Wang",
+    "category": "article",
+    "date_group": "07 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-07T00:32:14.656Z",
+    "location": "archive",
+    "readwise_id": "01kdxctzrzd2aqe8se54t51eqj",
+    "summary": "Dan Wang argues that Silicon Valley and the Chinese state are the two biggest forces shaping technology today. He says China’s industrial strength and rapid AI development are underestimated in the West. The US must learn from China’s playbook or risk losing key industries.",
+    "title": "2025 letter",
+    "url": "https://danwang.co/2025-letter/"
+  },
+  {
     "author": "https://www.facebook.com/",
     "category": "article",
     "date_group": "06 Jul 2026",
@@ -8421,19 +8447,6 @@
     "url": "https://www.transformernews.ai/p/anthropic-employees-philanthropy-billions-donations-effective-altruism-coefficient-giving-ai-safety"
   },
   {
-    "author": "Cal Paterson",
-    "category": "article",
-    "date_group": "14 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-14T12:06:48.042Z",
-    "location": "new",
-    "readwise_id": "01kkp3vvz9hstz4gy6arg55asd",
-    "summary": "Bank Python is a proprietary, bank-specific fork of the Python ecosystem used at big investment banks. It centers on a global object database and custom tools (like Barbara and Dagger) that move Excel-style finance workflows into code. This monoculture isolates developers from mainstream Python and creates heavy, data-first systems tied to legacy finance practices.",
-    "title": "An oral history of Bank Python",
-    "url": "https://calpaterson.com/bank-python.html"
-  },
-  {
     "author": "Howard Marks",
     "category": "pdf",
     "date_group": "08 Mar 2026",
@@ -8546,19 +8559,6 @@
     "summary": "Durable execution frameworks re-run functions from the top to recover, so the control flow must be deterministic. Side effects can be non-deterministic but must be idempotent or tolerate duplication. Separate control flow (decisions) from side effects (actions) and record any non-deterministic inputs used by control flow.",
     "title": "Demystifying Determinism in Durable Execution",
     "url": "https://jack-vanlightly.com/blog/2025/11/24/demystifying-determinism-in-durable-execution"
-  },
-  {
-    "author": "Dan Wang",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.720Z",
-    "location": "new",
-    "readwise_id": "01kdxctzrzd2aqe8se54t51eqj",
-    "summary": "Dan Wang argues that Silicon Valley and the Chinese state are the two biggest forces shaping technology today. He says China’s industrial strength and rapid AI development are underestimated in the West. The US must learn from China’s playbook or risk losing key industries.",
-    "title": "2025 letter",
-    "url": "https://danwang.co/2025-letter/"
   },
   {
     "author": "Substack",
