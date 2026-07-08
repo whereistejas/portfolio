@@ -1,5 +1,18 @@
 [
   {
+    "author": "Celia Ford",
+    "category": "article",
+    "date_group": "07 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-07T16:54:43.706Z",
+    "location": "archive",
+    "readwise_id": "01kkpmhp7ancz1mxwxc0g1crw2",
+    "summary": "Anthropic employees plan to donate billions to effective altruism (EA) causes, especially AI safety nonprofits. This could greatly increase funding for groups aligned with their views but may raise concerns about bias and public trust. Donations might also support political efforts for AI safety laws and broader global health initiatives.",
+    "title": "Anthropic employees say they’ll give away billions. Where will it go?",
+    "url": "https://www.transformernews.ai/p/anthropic-employees-philanthropy-billions-donations-effective-altruism-coefficient-giving-ai-safety"
+  },
+  {
     "author": "Cal Paterson",
     "category": "article",
     "date_group": "07 Jul 2026",
@@ -8424,27 +8437,21 @@
     "author": "Robert Minto",
     "category": "article",
     "date_group": "20 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "*It matters less what you read,* he told me, emphasizing each word, *than how you take notes**.*",
+      "A few weeks later I lost the paper on which I’d taken down his booklist, but a new conviction structured the next decade of my life: The un-annotated life was not worth living.",
+      "After the initial spontaneous growth of topic hubs, you have to start memorizing your own taxonomies to make sure future notes will tie into past networks.",
+      "And thus, although old-fashioned forms of note-taking took longer and were harder to navigate, they were also more flexible, more adaptable as your views changed over time.",
+      "by making the process so easy for myself I had sacrificed its primary benefit.",
+      "I tried using algorithmic “spaced repetition” to memorize them all via a handful of flashcard apps like Memrize and Anki. But very soon the predictable happened: I missed a day here, a weekend there, and the daily flashcard quota became a wildly varying imposition on my time. I realized that in a few months, let alone years, at this rate *most* of my time would be spent on the maintenance of memories. I, as [others have found](https://www.reddit.com/r/Anki/comments/9s1rkn/experience_from_really_long_time_ankiother_spaced/e8qgo26/?context=3), would be too busy maintaining these memories to use them."
+    ],
+    "last_highlighted_at": "2026-07-07T17:11:10.604Z",
     "last_moved_at": "2026-03-20T23:32:09.245Z",
     "location": "new",
     "readwise_id": "01km6sf3cx9s1rk1ed4b73sqvr",
     "summary": "A scholar spent decades taking neat notes and believed they were his life’s work. The author tried building a digital zettelkasten to become like him and found only chaos and useless busywork. Notes are a tool to help thinking, not a substitute for actually doing the work of thought.",
     "title": "Rank and File",
     "url": "https://reallifemag.com/rank-and-file/"
-  },
-  {
-    "author": "Celia Ford",
-    "category": "article",
-    "date_group": "14 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-14T16:58:20.266Z",
-    "location": "new",
-    "readwise_id": "01kkpmhp7ancz1mxwxc0g1crw2",
-    "summary": "Anthropic employees plan to donate billions to effective altruism (EA) causes, especially AI safety nonprofits. This could greatly increase funding for groups aligned with their views but may raise concerns about bias and public trust. Donations might also support political efforts for AI safety laws and broader global health initiatives.",
-    "title": "Anthropic employees say they’ll give away billions. Where will it go?",
-    "url": "https://www.transformernews.ai/p/anthropic-employees-philanthropy-billions-donations-effective-altruism-coefficient-giving-ai-safety"
   },
   {
     "author": "Howard Marks",
