@@ -1,5 +1,39 @@
 [
   {
+    "author": "Jarred Sumner",
+    "category": "article",
+    "date_group": "09 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-09T00:58:57.064Z",
+    "location": "archive",
+    "readwise_id": "01kx2650nq67a0c02nkp909dcn",
+    "summary": "Bun was rewritten from Zig to Rust using AI assistance, improving code safety and reducing bugs. The Rust version fixes many memory leaks and shrinks the binary size by about 20%. This rewrite makes Bun faster, smaller, and more stable with better tools for future improvements.",
+    "title": "Rewriting Bun in Rust",
+    "url": "https://bun.com/blog/bun-in-rust"
+  },
+  {
+    "author": "Robert Minto",
+    "category": "article",
+    "date_group": "08 Jul 2026",
+    "highlights": [
+      "*It matters less what you read,* he told me, emphasizing each word, *than how you take notes**.*",
+      "A few weeks later I lost the paper on which I’d taken down his booklist, but a new conviction structured the next decade of my life: The un-annotated life was not worth living.",
+      "After the initial spontaneous growth of topic hubs, you have to start memorizing your own taxonomies to make sure future notes will tie into past networks.",
+      "And thus, although old-fashioned forms of note-taking took longer and were harder to navigate, they were also more flexible, more adaptable as your views changed over time.",
+      "by making the process so easy for myself I had sacrificed its primary benefit.",
+      "I tried using algorithmic “spaced repetition” to memorize them all via a handful of flashcard apps like Memrize and Anki. But very soon the predictable happened: I missed a day here, a weekend there, and the daily flashcard quota became a wildly varying imposition on my time. I realized that in a few months, let alone years, at this rate *most* of my time would be spent on the maintenance of memories. I, as [others have found](https://www.reddit.com/r/Anki/comments/9s1rkn/experience_from_really_long_time_ankiother_spaced/e8qgo26/?context=3), would be too busy maintaining these memories to use them.",
+      "The human condition, the condition of the tool-using animal, is to be perpetually vulnerable to mistaking instruments for ends."
+    ],
+    "last_highlighted_at": "2026-07-08T09:17:57.737Z",
+    "last_moved_at": "2026-07-08T09:18:56.528Z",
+    "location": "archive",
+    "readwise_id": "01km6sf3cx9s1rk1ed4b73sqvr",
+    "summary": "A scholar spent decades taking neat notes and believed they were his life’s work. The author tried building a digital zettelkasten to become like him and found only chaos and useless busywork. Notes are a tool to help thinking, not a substitute for actually doing the work of thought.",
+    "title": "Rank and File",
+    "url": "https://reallifemag.com/rank-and-file/"
+  },
+  {
     "author": "Celia Ford",
     "category": "article",
     "date_group": "07 Jul 2026",
@@ -8432,26 +8466,6 @@
     "summary": "Your work shapes who you become, often in ways you don’t notice. Choose a career and community that build the values and habits you want to grow. Remember, your job is just one part of a meaningful life.",
     "title": "Your Work Will Change You Whether You Like It Or Not",
     "url": "https://thatvastvariety.substack.com/p/your-work-will-change-you-whether?r=1gvqcg&utm_medium=ios&triedRedirect=true"
-  },
-  {
-    "author": "Robert Minto",
-    "category": "article",
-    "date_group": "20 Mar 2026",
-    "highlights": [
-      "*It matters less what you read,* he told me, emphasizing each word, *than how you take notes**.*",
-      "A few weeks later I lost the paper on which I’d taken down his booklist, but a new conviction structured the next decade of my life: The un-annotated life was not worth living.",
-      "After the initial spontaneous growth of topic hubs, you have to start memorizing your own taxonomies to make sure future notes will tie into past networks.",
-      "And thus, although old-fashioned forms of note-taking took longer and were harder to navigate, they were also more flexible, more adaptable as your views changed over time.",
-      "by making the process so easy for myself I had sacrificed its primary benefit.",
-      "I tried using algorithmic “spaced repetition” to memorize them all via a handful of flashcard apps like Memrize and Anki. But very soon the predictable happened: I missed a day here, a weekend there, and the daily flashcard quota became a wildly varying imposition on my time. I realized that in a few months, let alone years, at this rate *most* of my time would be spent on the maintenance of memories. I, as [others have found](https://www.reddit.com/r/Anki/comments/9s1rkn/experience_from_really_long_time_ankiother_spaced/e8qgo26/?context=3), would be too busy maintaining these memories to use them."
-    ],
-    "last_highlighted_at": "2026-07-07T17:11:10.604Z",
-    "last_moved_at": "2026-03-20T23:32:09.245Z",
-    "location": "new",
-    "readwise_id": "01km6sf3cx9s1rk1ed4b73sqvr",
-    "summary": "A scholar spent decades taking neat notes and believed they were his life’s work. The author tried building a digital zettelkasten to become like him and found only chaos and useless busywork. Notes are a tool to help thinking, not a substitute for actually doing the work of thought.",
-    "title": "Rank and File",
-    "url": "https://reallifemag.com/rank-and-file/"
   },
   {
     "author": "Howard Marks",
