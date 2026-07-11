@@ -1,5 +1,18 @@
 [
   {
+    "author": "",
+    "category": "article",
+    "date_group": "10 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-10T17:54:08.873Z",
+    "location": "archive",
+    "readwise_id": "01kx6jmk033j9ym9q9bnp2b8km",
+    "summary": "Jarred, who created Bun, started with energy but struggled as a manager when the project became a startup backed by venture capital. The Zig community grew unhappy with Bun's poor code quality and management, and they welcomed the recent rewrite of Bun in Rust. The main issue was a breakdown in relationships and engineering practices, not the choice of programming language.",
+    "title": "My Thoughts on the Bun Rust Rewrite",
+    "url": "https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html"
+  },
+  {
     "author": "Jarred Sumner",
     "category": "article",
     "date_group": "09 Jul 2026",
