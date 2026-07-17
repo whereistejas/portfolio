@@ -7573,6 +7573,45 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "",
+    "category": "article",
+    "date_group": "16 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-16T14:04:23.355Z",
+    "location": "new",
+    "readwise_id": "01kxnkw9xv758sb7r6j5cx175k",
+    "summary": "The author replaced a failing Georgi keyboard with a new 36-key Chocofi keyboard using a custom beakl wi layout for efficient chording. The layout is tailored to reduce finger travel and avoid pinkie strain, with layers for symbols, numbers, and functions optimized for the author’s workflow. Adjusting to the new keyboard’s staggered rows will take time, but the similar key feel and extra finger row offer promising improvements.",
+    "title": "chocofi wi",
+    "url": "http://thedarnedestthing.com/chocofi%20wi"
+  },
+  {
+    "author": "Jonas Hietala",
+    "category": "article",
+    "date_group": "16 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-16T12:48:15.788Z",
+    "location": "new",
+    "readwise_id": "01kxnfgxdcbv546605zn45vq5k",
+    "summary": "The T-34 keyboard layout is a customizable and ergonomic keyboard layout that optimizes comfort and efficiency for programming and Vim usage. The layout is designed with a focus on comfort over speed, and includes a 5-column layout instead of a 6-column layout to accommodate the user's preference of using the ring finger to press keys above the home-row pinky. The layout also prioritizes the placement of common symbols, such as parentheses and underscore, for easy access. Additionally, the layout includes home-row combos, vertical combos, and a separate layer for numbers and navigation.",
+    "title": "The T-34 keyboard layout",
+    "url": "https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/"
+  },
+  {
+    "author": "Jonas Hietala",
+    "category": "article",
+    "date_group": "16 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-16T12:43:38.894Z",
+    "location": "new",
+    "readwise_id": "01kxnf8f0eh9qbn760c8as97d0",
+    "summary": "The author improved the T-34 keyboard layout by swapping keys and changing how modifiers work for comfort and efficiency. They use combos for modifiers instead of thumb keys to reduce strain and prefer placing common shortcuts on the left hand. The layout still has trade-offs, but after months of use, it feels much better overall.",
+    "title": "The T-34/1 keyboard layout",
+    "url": "https://www.jonashietala.se/blog/2021/12/15/t-34-1/"
+  },
+  {
     "author": "Luzia Bruckamp",
     "category": "article",
     "date_group": "14 Jul 2026",
