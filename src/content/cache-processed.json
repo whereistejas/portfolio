@@ -1,5 +1,57 @@
 [
   {
+    "author": "Noah Smith",
+    "category": "article",
+    "date_group": "22 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-22T19:10:15.105Z",
+    "location": "archive",
+    "readwise_id": "01kxz9e6fj4edw3pxqkrvgv8hv",
+    "summary": "The UK’s economy suffers from too much focus on finance, high energy costs, and political problems. Its experience shows that cutting off trade, poor government choices, and housing issues hurt growth. The U.S. should learn that steady growth, energy supply, and open markets are very important.",
+    "title": "The UK is a cautionary tale for the U.S.",
+    "url": "https://www.noahpinion.blog/p/the-uk-is-a-cautionary-tale-for-the"
+  },
+  {
+    "author": "Gabe Venberg",
+    "category": "article",
+    "date_group": "22 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-22T14:23:17.798Z",
+    "location": "archive",
+    "readwise_id": "01ky53b559e06sxfzpqsr713d1",
+    "summary": "The other day, I stumbled upon RMK, a keyboard firmware written in Rust. Given that my Ferris Sweep has a Ferris the crab logo on the silkscreen, it felt only fitting that I flash it with RMK.\nSince I first built it, my Ferris Sweep has been running QMK, a very mature C-based keyboard firmware. QMK is a great project, and doing basic keymaps for an already-supported keyboard is straightforward and well-documented. However if you are designing your own keyboard, or want to use certain advanced QMK features, you wont be able to use QMKs JSON-based ‘data driven’ features. Instead, you will have to use its C macro based configuration, which can be daunting and may require understanding QMKs complex build system.",
+    "title": "Rust on the Ferris Sweep",
+    "url": "https://gabevenberg.com/posts/rmk-ferris-sweep/"
+  },
+  {
+    "author": "Jonas Hietala",
+    "category": "article",
+    "date_group": "22 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-22T09:03:43.754Z",
+    "location": "archive",
+    "readwise_id": "01kxnf8f0eh9qbn760c8as97d0",
+    "summary": "The author improved the T-34 keyboard layout by swapping keys and changing how modifiers work for comfort and efficiency. They use combos for modifiers instead of thumb keys to reduce strain and prefer placing common shortcuts on the left hand. The layout still has trade-offs, but after months of use, it feels much better overall.",
+    "title": "The T-34/1 keyboard layout",
+    "url": "https://www.jonashietala.se/blog/2021/12/15/t-34-1/"
+  },
+  {
+    "author": "Jonas Hietala",
+    "category": "article",
+    "date_group": "22 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-22T09:03:41.452Z",
+    "location": "archive",
+    "readwise_id": "01kxnfgxdcbv546605zn45vq5k",
+    "summary": "The T-34 keyboard layout is a customizable and ergonomic keyboard layout that optimizes comfort and efficiency for programming and Vim usage. The layout is designed with a focus on comfort over speed, and includes a 5-column layout instead of a 6-column layout to accommodate the user's preference of using the ring finger to press keys above the home-row pinky. The layout also prioritizes the placement of common symbols, such as parentheses and underscore, for easy access. Additionally, the layout includes home-row combos, vertical combos, and a separate layer for numbers and navigation.",
+    "title": "The T-34 keyboard layout",
+    "url": "https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/"
+  },
+  {
     "author": "Alex Vadukul",
     "category": "article",
     "date_group": "19 Jul 2026",
@@ -7597,45 +7649,6 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
-  },
-  {
-    "author": "Noah Smith",
-    "category": "article",
-    "date_group": "20 Jul 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-07-20T08:14:19.634Z",
-    "location": "new",
-    "readwise_id": "01kxz9e6fj4edw3pxqkrvgv8hv",
-    "summary": "The UK’s economy suffers from too much focus on finance, high energy costs, and political problems. Its experience shows that cutting off trade, poor government choices, and housing issues hurt growth. The U.S. should learn that steady growth, energy supply, and open markets are very important.",
-    "title": "The UK is a cautionary tale for the U.S.",
-    "url": "https://www.noahpinion.blog/p/the-uk-is-a-cautionary-tale-for-the"
-  },
-  {
-    "author": "Jonas Hietala",
-    "category": "article",
-    "date_group": "16 Jul 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-07-16T12:48:15.788Z",
-    "location": "new",
-    "readwise_id": "01kxnfgxdcbv546605zn45vq5k",
-    "summary": "The T-34 keyboard layout is a customizable and ergonomic keyboard layout that optimizes comfort and efficiency for programming and Vim usage. The layout is designed with a focus on comfort over speed, and includes a 5-column layout instead of a 6-column layout to accommodate the user's preference of using the ring finger to press keys above the home-row pinky. The layout also prioritizes the placement of common symbols, such as parentheses and underscore, for easy access. Additionally, the layout includes home-row combos, vertical combos, and a separate layer for numbers and navigation.",
-    "title": "The T-34 keyboard layout",
-    "url": "https://www.jonashietala.se/blog/2021/06/03/the-t-34-keyboard-layout/"
-  },
-  {
-    "author": "Jonas Hietala",
-    "category": "article",
-    "date_group": "16 Jul 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-07-16T12:43:38.894Z",
-    "location": "new",
-    "readwise_id": "01kxnf8f0eh9qbn760c8as97d0",
-    "summary": "The author improved the T-34 keyboard layout by swapping keys and changing how modifiers work for comfort and efficiency. They use combos for modifiers instead of thumb keys to reduce strain and prefer placing common shortcuts on the left hand. The layout still has trade-offs, but after months of use, it feels much better overall.",
-    "title": "The T-34/1 keyboard layout",
-    "url": "https://www.jonashietala.se/blog/2021/12/15/t-34-1/"
   },
   {
     "author": "Luzia Bruckamp",
