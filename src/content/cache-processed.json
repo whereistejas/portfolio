@@ -1,5 +1,31 @@
 [
   {
+    "author": "Casper — rust",
+    "category": "article",
+    "date_group": "31 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-31T15:34:15.381Z",
+    "location": "archive",
+    "readwise_id": "01kywczdb63k6f8z4k4wttgvbp",
+    "summary": "The author forked Rust's rand crate to create urandom, a simpler and more user-friendly randomness library. urandom offers a unified API with better discovery, unbiased sampling, and stable reproducibility across platforms. While it limits generator choices, it improves performance and reliability for common use cases.",
+    "title": "Why I forked rand",
+    "url": "https://casualhacks.net/blog/2026-07-27-why-i-forked-rand.html"
+  },
+  {
+    "author": "Bryan Mikaelian",
+    "category": "article",
+    "date_group": "31 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-31T15:30:11.723Z",
+    "location": "archive",
+    "readwise_id": "01kywcr3yhmhn2trmh85zhymam",
+    "summary": "Billing is hard when it mixes with regular business code and causes many problems. Exe solves this by using simple \"billable facts\" that tell the billing system what changed and let it handle charges later. This approach makes billing easier to manage, change, and scale without breaking other parts of the product.",
+    "title": "Stripe Just Wants a Number",
+    "url": "https://blog.exe.dev/billable-facts"
+  },
+  {
     "author": "Eton Xiong",
     "category": "article",
     "date_group": "30 Jul 2026",
@@ -7688,6 +7714,19 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "31 Jul 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-07-31T09:53:57.673Z",
+    "location": "new",
+    "readwise_id": "01kyvsghd9tqex7awy90rzaswn",
+    "summary": "The Triboard is a small, split keyboard with 34 keys on each half that can be wired or wireless. It uses light pink switches and supports easy customization for comfort and key functions. The wireless version has good battery life and is affordable to build, making it portable and practical for everyday use.",
+    "title": "The Triboard, a tiny 34/36 key wired/wireless split keyboard",
+    "url": "https://tarneo.fr/posts/triboard/"
   },
   {
     "author": "Luzia Bruckamp",
