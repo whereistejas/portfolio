@@ -1,5 +1,20 @@
 [
   {
+    "author": "Jasmine Sun",
+    "category": "article",
+    "date_group": "11 Aug 2026",
+    "highlights": [
+      "**My conversations make me wonder if the technical content of data center deals is mostly beside the point.** Closed-loop cooling systems? “I don’t believe them.” Paying millions in taxes? “I don’t believe them.” Creating a thousand jobs? “I don’t believe them.” I hear a reflexive skepticism of every claim."
+    ],
+    "last_highlighted_at": "2026-08-11T10:38:31.050Z",
+    "last_moved_at": "2026-08-11T19:20:22.344Z",
+    "location": "archive",
+    "readwise_id": "01kz9fc1kjq74rk5n3hfr0mrc9",
+    "summary": "Data centers are large, energy-hungry facilities that many small towns oppose because they feel ignored and harmed. Locals worry about pollution, taxes, and broken promises from big tech companies. This opposition shows a deep distrust of AI companies and government deals that seem to benefit the wealthy, not the community.",
+    "title": "🌻 no data centers in my backyard",
+    "url": "https://jasmi.news/p/no-data-centers-in-my-backyard"
+  },
+  {
     "author": "TurnTrout",
     "category": "article",
     "date_group": "05 Aug 2026",
@@ -7786,17 +7801,30 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
-    "author": "Jasmine Sun",
+    "author": "Some Thoughts on a Mysterious Universe",
     "category": "article",
-    "date_group": "05 Aug 2026",
+    "date_group": "11 Aug 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-08-05T17:26:06.706Z",
+    "last_moved_at": "2026-08-11T12:36:29.955Z",
     "location": "new",
-    "readwise_id": "01kz9fc1kjq74rk5n3hfr0mrc9",
-    "summary": "Data centers are large, energy-hungry facilities that many small towns oppose because they feel ignored and harmed. Locals worry about pollution, taxes, and broken promises from big tech companies. This opposition shows a deep distrust of AI companies and government deals that seem to benefit the wealthy, not the community.",
-    "title": "🌻 no data centers in my backyard",
-    "url": "https://jasmi.news/p/no-data-centers-in-my-backyard"
+    "readwise_id": "01kzrd624351twr59bvp0v32a4",
+    "summary": "Machines will soon think better than humans, changing what meaningful work means. To keep up, humans may need to enhance their brains or accept machines leading the way. Our future depends on whether we upgrade ourselves or let AI take full control.",
+    "title": "A workaphile’s apology",
+    "url": "https://moalquraishi.wordpress.com/2026/08/10/a-workaphiles-apology/"
+  },
+  {
+    "author": "Nan Ransohoff, Charlie Petty, Devin Sok",
+    "category": "article",
+    "date_group": "11 Aug 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-08-11T11:24:53.840Z",
+    "location": "new",
+    "readwise_id": "01kzr92ypgvt6emrfq8cshej99",
+    "summary": "Respiratory infections cause huge health and economic problems worldwide, but they are often seen as minor and unavoidable. New technologies like broad-spectrum preventatives and air pathogen removal can help reduce and eventually stop these infections. With more research and funding, we can protect more people and make respiratory infections a thing of the past.",
+    "title": "Ending respiratory infections",
+    "url": "https://blog.interceptfund.com/p/ending-respiratory-infections"
   },
   {
     "author": "Emily Wilson",
