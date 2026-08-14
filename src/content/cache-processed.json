@@ -7801,6 +7801,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "Andrew Gallant",
+    "category": "article",
+    "date_group": "13 Aug 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-08-13T18:02:41.517Z",
+    "location": "new",
+    "readwise_id": "01kzy4mrzdy0sw1pkjtf4yt4g4",
+    "summary": "Using unwrap() in Rust is okay for quick scripts or tests but not for real error handling in libraries or applications. Panics signal bugs and are not meant for regular error management. Good Rust code treats errors as values and avoids panicking except for unrecoverable bugs.",
+    "title": "Using unwrap() in Rust is Okay",
+    "url": "https://burntsushi.net/unwrap/"
+  },
+  {
     "author": "Some Thoughts on a Mysterious Universe",
     "category": "article",
     "date_group": "11 Aug 2026",
