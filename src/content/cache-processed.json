@@ -7801,6 +7801,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "",
+    "category": "article",
+    "date_group": "14 Aug 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-08-14T09:55:44.251Z",
+    "location": "new",
+    "readwise_id": "01kzzv5vfv9vem6yrqvbw238nv",
+    "summary": "This article explains how to use helpful aliases and commands in Jujutsu (jj) to work with stacks of commits more easily. It shows how to select the top, bottom, or entire stack and how to move between commits using simple commands. It also describes how to list bookmarks in a stack to better manage your work.",
+    "title": "Stacks in Jujutsu",
+    "url": "https://alan.norbauer.com/articles/stacks-in-jujutsu/"
+  },
+  {
     "author": "Andrew Gallant",
     "category": "article",
     "date_group": "13 Aug 2026",
