@@ -1,5 +1,18 @@
 [
   {
+    "author": "",
+    "category": "article",
+    "date_group": "19 Aug 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-08-19T12:27:39.922Z",
+    "location": "archive",
+    "readwise_id": "01kctde4a0ayv6vf6vk749wrmm",
+    "summary": "The author explains common ring buffer implementations and their trade-offs. He shows a better approach: use two unmasked, wrapping indices and mask only on access to reclaim the wasted slot. This method is simpler and uses full capacity but requires unsigned wraparound and power-of-two sizes.",
+    "title": "I've been writing ring buffers wrong all these years",
+    "url": "https://www.snellman.net/blog/archive/2016-12-13-ring-buffers/"
+  },
+  {
     "author": "Jasmine Sun",
     "category": "article",
     "date_group": "11 Aug 2026",
@@ -8941,19 +8954,6 @@
     "summary": "If capital can replace labor, wealth will concentrate in the hands of those who are richest when that shift happens. Without strong global taxes on capital, inheritance and compounding returns could make inequality grow without bound. Historically capital often raised wages and lowered returns, but AI-driven automation could undo that self-correction.",
     "title": "Capital in the 22nd Century",
     "url": "https://substack.com/inbox/post/182789127?r=1gvqcg&utm_medium=ios&triedRedirect=true"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "11 Feb 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-02-11T22:54:37.720Z",
-    "location": "new",
-    "readwise_id": "01kctde4a0ayv6vf6vk749wrmm",
-    "summary": "The author explains common ring buffer implementations and their trade-offs. He shows a better approach: use two unmasked, wrapping indices and mask only on access to reclaim the wasted slot. This method is simpler and uses full capacity but requires unsigned wraparound and power-of-two sizes.",
-    "title": "I've been writing ring buffers wrong all these years",
-    "url": "https://www.snellman.net/blog/archive/2016-12-13-ring-buffers/"
   },
   {
     "author": "",
