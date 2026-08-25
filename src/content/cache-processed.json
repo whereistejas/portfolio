@@ -1,5 +1,18 @@
 [
   {
+    "author": "Tanner Greer",
+    "category": "rss",
+    "date_group": "25 Aug 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-08-25T08:35:22.016Z",
+    "location": "archive",
+    "readwise_id": "01km97qyh4wcx3txt78xfg9fp1",
+    "summary": "China aims to become the world’s leading scientific power by 2026 through heavy investment and innovation. The government focuses on self-reliance in technology and education, producing many top scientists and engineers. This rapid rise in science could change the future of technology and global leadership.",
+    "title": "China and the Future of Science",
+    "url": "https://scholars-stage.org/china-and-the-future-of-science/"
+  },
+  {
     "author": "Ramachandra Guha",
     "category": "article",
     "date_group": "23 Aug 2026",
@@ -13,7 +26,7 @@
     "url": "https://ramachandraguha.in/archives/a-brief-history-of-cults-of-personality-the-telegraph.html"
   },
   {
-    "author": "",
+    "author": "Juho Snellman",
     "category": "article",
     "date_group": "19 Aug 2026",
     "highlights": [],
@@ -41,7 +54,7 @@
     "url": "https://jasmi.news/p/no-data-centers-in-my-backyard"
   },
   {
-    "author": "TurnTrout",
+    "author": "Alex Turner",
     "category": "article",
     "date_group": "05 Aug 2026",
     "highlights": [],
@@ -54,7 +67,7 @@
     "url": "https://www.lesswrong.com/posts/iKm2FhpWkuuBojm82/why-i-left-google-deepmind"
   },
   {
-    "author": "",
+    "author": "Paul Krugman",
     "category": "article",
     "date_group": "03 Aug 2026",
     "highlights": [
@@ -85,7 +98,7 @@
     "url": "https://www.nytimes.com/2003/10/07/opinion/lumps-of-labor.html?scp=1&sq=lumps%20of%20labor&st=cse"
   },
   {
-    "author": "",
+    "author": "tarneo",
     "category": "article",
     "date_group": "01 Aug 2026",
     "highlights": [],
@@ -241,7 +254,7 @@
     "url": "https://www.nytimes.com/2026/07/09/style/too-many-books-new-york-city-apartment-scholar-landlord.html?unlocked_article_code=1.wlA.ZohU.v8c2miH030DC&smid=url-share"
   },
   {
-    "author": "",
+    "author": "Steven Hum",
     "category": "article",
     "date_group": "19 Jul 2026",
     "highlights": [],
@@ -254,7 +267,7 @@
     "url": "http://thedarnedestthing.com/chocofi%20wi"
   },
   {
-    "author": "",
+    "author": "Stephen Gunn",
     "category": "article",
     "date_group": "14 Jul 2026",
     "highlights": [],
@@ -280,7 +293,7 @@
     "url": "https://page.petrisch.ch/blog/piantor-case/??ref=showcase.beekeeb.com"
   },
   {
-    "author": "",
+    "author": "Andrew Kelley",
     "category": "article",
     "date_group": "10 Jul 2026",
     "highlights": [],
@@ -366,7 +379,7 @@
     "url": "https://danwang.co/2025-letter/"
   },
   {
-    "author": "https://www.facebook.com/",
+    "author": "precondition",
     "category": "article",
     "date_group": "06 Jul 2026",
     "highlights": [],
@@ -379,7 +392,7 @@
     "url": "https://precondition.github.io/home-row-mods"
   },
   {
-    "author": "",
+    "author": "Rob Hague",
     "category": "article",
     "date_group": "04 Jul 2026",
     "highlights": [],
@@ -405,7 +418,7 @@
     "url": "https://gabevenberg.com/posts/ferris-sweep-keyboard/"
   },
   {
-    "author": "",
+    "author": "Oliver Thurly",
     "category": "article",
     "date_group": "04 Jul 2026",
     "highlights": [],
@@ -455,19 +468,6 @@
     "summary": "Information overload comes in two forms: situational (finding a needle in a haystack) and ambient (a pile of needles). Filters and search tools mostly solve the situational problem. But better filters worsen ambient overload by pushing more interesting stuff at us, which makes us feel more overwhelmed.",
     "title": "Situational overload and ambient overload",
     "url": "https://www.roughtype.com/?p=1464"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "27 Jun 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-06-27T18:12:49.971Z",
-    "location": "archive",
-    "readwise_id": "01kw53t96t4dax0xrs554f7tgg",
-    "summary": "Database vendors should not be aware of your budget for a project to secure better pricing. Monitoring data should not be stored in the same database instance that generated it. Overloading a database with resources can lead to performance issues.",
-    "title": "Ten Database Crack Commandments",
-    "url": "https://www.cs.cmu.edu/~pavlo/blog/2022/03/database-ten-commandments.html"
   },
   {
     "author": "Casey Handmer",
@@ -8811,19 +8811,6 @@
     "summary": "Rust enforces coherence and orphan rules to ensure trait implementations do not conflict or cause unsoundness across crates. Introducing incoherent traits and explicit trait impl naming allows overlapping implementations while keeping type safety. This approach helps manage complex trait bounds and ecosystem compatibility without breaking Rust’s soundness guarantees.",
     "title": "An Incoherent Rust",
     "url": "https://www.boxyuwu.blog/posts/an-incoherent-rust/"
-  },
-  {
-    "author": "Tanner Greer",
-    "category": "rss",
-    "date_group": "22 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-22T11:40:00.752Z",
-    "location": "new",
-    "readwise_id": "01km97qyh4wcx3txt78xfg9fp1",
-    "summary": "China aims to become the world’s leading scientific power by 2026 through heavy investment and innovation. The government focuses on self-reliance in technology and education, producing many top scientists and engineers. This rapid rise in science could change the future of technology and global leadership.",
-    "title": "China and the Future of Science",
-    "url": "https://scholars-stage.org/china-and-the-future-of-science/"
   },
   {
     "author": "Matt Beard",
