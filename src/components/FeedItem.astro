@@ -1,4 +1,5 @@
 ---
+import FeedCard from "./FeedCard.astro";
 import HighlightsAccordion from "./HighlightsAccordion";
 import { displayCategory, parseAuthors } from "../lib/feed";
 
@@ -35,14 +36,19 @@ const category_ = displayCategory(category);
 const metaParts = [dateGroup, ...authors].filter(Boolean);
 ---
 
-<div
-	class:list={["feed-item", hasHighlights && "feed-item--with-highlights"]}
-	data-highlight-id={hasHighlights ? readwiseId : undefined}
->
-	{
-		hasHighlights ? (
+{
+	hasHighlights ? (
+		<div
+			class="feed-item feed-item--with-highlights"
+			data-highlight-id={readwiseId}
+		>
 			<div class="feed-item-card">
-				<a href={url} target="_blank" rel="noopener noreferrer" class="feed-title">
+				<a
+					href={url}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="feed-title"
+				>
 					{title}
 				</a>
 				<HighlightsAccordion
@@ -56,29 +62,14 @@ const metaParts = [dateGroup, ...authors].filter(Boolean);
 					metaParts={metaParts}
 				/>
 			</div>
-		) : (
-			<>
-				<a href={url} target="_blank" rel="noopener noreferrer" class="feed-title">
-					{title}
-				</a>
-				{summary && <span class="feed-desc">{summary}</span>}
-				<span class="feed-meta">
-					{category_ && (
-						<>
-							<span class="hidden md:inline-flex items-center">{category_}</span>
-							<span class="hidden md:inline-flex items-center">
-								<span class="feed-separator">{"\u2726"}</span>
-							</span>
-						</>
-					)}
-					{metaParts.map((part, i) => (
-						<>
-							{i > 0 && <span class="feed-separator">{"\u2726"}</span>}
-							<span>{part}</span>
-						</>
-					))}
-				</span>
-			</>
-		)
-	}
-</div>
+		</div>
+	) : (
+		<FeedCard
+			title={title}
+			href={url}
+			summary={summary}
+			category={category_}
+			metaParts={metaParts}
+		/>
+	)
+}
