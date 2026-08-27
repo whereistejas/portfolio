@@ -1,5 +1,31 @@
 [
   {
+    "author": "Alex Chalmers, Ben Southwood",
+    "category": "article",
+    "date_group": "26 Aug 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-08-26T13:20:51.477Z",
+    "location": "archive",
+    "readwise_id": "01m0z3nzr4bxdpmaa3a8mbxqc4",
+    "summary": "High doses of radiation can harm people, as seen in Chernobyl, but low doses usually do not cause clear health problems. Studies of people exposed to low radiation often show no increase in cancer, and sometimes even lower rates. The strongest evidence suggests only a small cancer risk from cumulative low-dose radiation, mostly at higher exposures.",
+    "title": "How to lie about radiation",
+    "url": "https://worksinprogress.co/issue/how-to-lie-about-radiation/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "26 Aug 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-08-26T11:24:15.830Z",
+    "location": "archive",
+    "readwise_id": "01m0yx0ggesdr9x0eq0xm7hbwr",
+    "summary": "The author created a fuzzer to test the Gleam compiler by generating random Gleam programs and checking for bugs or crashes. This fuzzer found several issues, including compiler regressions and type inference problems. The tool helps improve Gleam's reliability, especially since it compiles to both Erlang and JavaScript.",
+    "title": "Fuzzing The Gleam Compiler",
+    "url": "https://www.kurz.net/posts/fuzzing-gleam-compiler"
+  },
+  {
     "author": "Tanner Greer",
     "category": "rss",
     "date_group": "25 Aug 2026",
