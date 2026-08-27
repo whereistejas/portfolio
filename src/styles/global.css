@@ -2,35 +2,70 @@
 
 @plugin '@tailwindcss/typography';
 
+/* Nebula Sans, SIL Open Font License 1.1 — see /nebula-sans-license.txt */
 @font-face {
-	font-family: InterVariable;
+	font-family: "Nebula Sans";
 	font-style: normal;
-	font-weight: 100 900;
+	font-weight: 400;
 	font-display: swap;
-	font-feature-settings:
-		"liga" 1,
-		"calt" 1;
-	src: url("/InterVariable.woff2") format("woff2");
+	src: url("/NebulaSans-Book.woff2") format("woff2");
 }
 @font-face {
-	font-family: InterVariable;
+	font-family: "Nebula Sans";
 	font-style: italic;
-	font-weight: 100 900;
+	font-weight: 400;
 	font-display: swap;
-	font-feature-settings:
-		"liga" 1,
-		"calt" 1;
-	src: url("/InterVariable-Italic.woff2") format("woff2");
+	src: url("/NebulaSans-BookItalic.woff2") format("woff2");
 }
-@supports (font-variation-settings: normal) {
-	:root {
-		font-family: InterVariable, sans-serif;
-	}
+@font-face {
+	font-family: "Nebula Sans";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("/NebulaSans-Medium.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Nebula Sans";
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url("/NebulaSans-MediumItalic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Nebula Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("/NebulaSans-Semibold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Nebula Sans";
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url("/NebulaSans-SemiboldItalic.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Nebula Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/NebulaSans-Bold.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Nebula Sans";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("/NebulaSans-BoldItalic.woff2") format("woff2");
+}
+:root {
+	font-family: "Nebula Sans", sans-serif;
 }
 
 @theme {
-	--font-sans: InterVariable, sans-serif;
-	--default-font-feature-settings: "calt", "tnum", "ss03";
+	--font-sans: "Nebula Sans", sans-serif;
+	--default-font-feature-settings: "liga", "tnum";
 	--spacing: 1rem;
 
 	--color-fg: var(--color-neutral-950);
