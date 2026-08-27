@@ -1,5 +1,6 @@
 ---
 title: Thoughts on EdTech
+description: Notes from two After Babel articles on how phones and device-based learning have actually played out in American schools.
 layout: ../../layouts/blog.astro
 date: 2025-04-22
 ---

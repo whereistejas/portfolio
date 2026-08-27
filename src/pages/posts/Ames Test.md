@@ -1,5 +1,6 @@
 ---
 date: 2026-03-22
+description: How engineered Salmonella strains are used to work out whether a drug candidate causes mutations in our DNA.
 layout: ../../layouts/blog.astro
 title: What is an Ames Test?
 ---

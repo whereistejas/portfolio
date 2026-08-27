@@ -1,5 +1,6 @@
 ---
 date: 2025-03-25
+description: You rarely know you are in the middle of a hard thing while it is happening, and that missing bit of knowledge is what decides whether you keep going.
 layout: ../../layouts/blog.astro
 title: The hard thing about hard things
 ---

@@ -1,5 +1,6 @@
 ---
 date: 2025-02-13
+description: The handful of books I reach for whenever someone asks me for a recommendation.
 layout: ../../layouts/blog.astro
 title: Books I recommend
 ---

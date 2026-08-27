@@ -1,5 +1,6 @@
 ---
 date: 2025-11-14
+description: In-degrees, adjacency lists, and how Kahn's algorithm peels a directed graph into a topological order one dependency-free layer at a time.
 layout: ../../layouts/blog.astro
 title: Kahn's Algorithm
 ---
