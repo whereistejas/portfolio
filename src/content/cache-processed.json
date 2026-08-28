@@ -1,5 +1,36 @@
 [
   {
+    "author": "Cloudflare Blog",
+    "category": "article",
+    "date_group": "27 Aug 2026",
+    "highlights": [
+      "Rust enums are [sum types](https://en.wikipedia.org/wiki/Algebraic_data_type): each variant can carry different data, but the enum is always the size of its largest variant.",
+      "Boxing has two costs. The first is allocator overhead. ... The second cost is poor memory locality."
+    ],
+    "last_highlighted_at": "2026-08-27T17:54:41.702Z",
+    "last_moved_at": "2026-08-27T17:53:38.050Z",
+    "location": "archive",
+    "readwise_id": "01m125p20zw7zvhcx4hzfhez10",
+    "summary": "Cloudflare optimized 1.1.1.1's DNS cache to use 56% less memory per entry, saving about 100 terabytes across their fleet. These changes also made the cache faster, increasing insert speed by 43% and reducing lookup time by 19%. They plan to use the saved memory to store more cache entries and improve performance even more.",
+    "title": "How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache",
+    "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/"
+  },
+  {
+    "author": "Thariq Shihipar",
+    "category": "article",
+    "date_group": "27 Aug 2026",
+    "highlights": [
+      "When you don’t account for your unknowns, you fail both ways. You don't know when the path will be filled with obstacles, and you don’t know when the path will be clear"
+    ],
+    "last_highlighted_at": "2026-08-27T11:45:37.041Z",
+    "last_moved_at": "2026-08-27T11:55:10.827Z",
+    "location": "archive",
+    "readwise_id": "01m11gbbxxjpr8sz405qkm6w46",
+    "summary": "Claude Fable helps you find what you don’t know when working on a project. You give Claude context and it helps discover hidden problems by brainstorming, interviewing, and planning. This process makes your work clearer and easier before you start coding or building.",
+    "title": "A field guide to Claude Fable 5: Finding your unknowns",
+    "url": "https://claude.com/blog/a-field-guide-to-claude-fable-finding-your-unknowns"
+  },
+  {
     "author": "Alex Chalmers, Ben Southwood",
     "category": "article",
     "date_group": "26 Aug 2026",
