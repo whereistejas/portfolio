@@ -7886,6 +7886,19 @@
   {
     "author": "",
     "category": "article",
+    "date_group": "01 Sept 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-09-01T13:47:29.873Z",
+    "location": "new",
+    "readwise_id": "01m1ekk56hdv2a9f8ghwzeaneh",
+    "summary": "The article explains how to build a test case generator that creates valid WebAssembly instructions and modules. It uses pairs of functions to check instruction validity and generate instructions in context. This approach helps find hidden bugs by testing beyond the parser stage.",
+    "title": "Writing a Test Case Generator for a Programming Language",
+    "url": "https://fitzgen.com/2020/08/24/writing-a-test-case-generator.html"
+  },
+  {
+    "author": "",
+    "category": "article",
     "date_group": "14 Aug 2026",
     "highlights": [],
     "last_highlighted_at": null,
