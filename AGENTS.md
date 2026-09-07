@@ -3,6 +3,9 @@
 Rust rewrite of the Astro site in `../portfolio`. Leptos CSR + Trunk, static output
 destined for GitHub Pages.
 
+Code style is a separate document: **[`STYLE.md`](./STYLE.md)** — read it before writing
+Rust here. Setup and build mechanics are in [`README.md`](./README.md).
+
 ## Hard rule: no macros in this crate
 
 Crate code uses **zero macros** — neither `view!`/`rsx!` (function-like proc macros) nor
@@ -68,7 +71,7 @@ ordering is manual.
 
 Use `jj`, not `git` (the repo is colocated). Commit regularly — one logical change per
 commit, `cargo fmt` and `clippy` clean at each step. Never push; leave commits local for
-review.
+review. See the commit-history rules in [`STYLE.md`](./STYLE.md#commit-history).
 
 Avoid interactive `jj` commands, since stdin is not a terminal:
 
