@@ -1,39 +1,17 @@
 //! The photo carousel, ported from `components/carousel.astro`.
 //!
-//! The Astro version shipped a `<script>` that mutated a `--current-slide` custom
-//! property. Here the index is a signal, and the same custom property is bound to it, so
-//! the CSS transform driving the slide transition is unchanged.
+//! The markup is static: `--current-slide` starts at 0 and the behaviour layer in the
+//! browser bundle mutates it, exactly as the `<script>` in `carousel.astro` did. Holding
+//! the index in a signal here would be pointless, because this only ever runs at build
+//! time.
 
-use leptos::ev;
 use leptos::html;
 use leptos::prelude::*;
 
 use crate::photos::{PHOTOS, Photo};
 
 pub fn carousel() -> impl IntoView {
-    let current = RwSignal::new(0usize);
     let count = PHOTOS.len();
-
-    // Wrapping arithmetic, so the ends of the carousel join up as they did before.
-    let step = move |delta: isize| {
-        current.update(|slide| {
-            let count = isize::try_from(count).unwrap_or(1).max(1);
-            let next = (isize::try_from(*slide).unwrap_or(0) + delta).rem_euclid(count);
-            *slide = usize::try_from(next).unwrap_or(0);
-        });
-    };
-
-    let on_key = move |event: ev::KeyboardEvent| match event.key().as_str() {
-        "ArrowLeft" => {
-            event.prevent_default();
-            step(-1);
-        }
-        "ArrowRight" => {
-            event.prevent_default();
-            step(1);
-        }
-        _ => (),
-    };
 
     let slides = PHOTOS
         .iter()
@@ -47,18 +25,12 @@ pub fn carousel() -> impl IntoView {
             "relative flex h-full w-full max-w-full flex-col items-center gap-2 \
              select-none md:w-48",
         )
-        .style(("--current-slide", move || current.get().to_string()))
+        .style(("--current-slide", "0"))
+        // Read back by the behaviour layer, which owns the slide index at runtime.
+        .attr("data-num-slides", count.to_string())
         .tabindex("0")
-        .on(ev::keydown, on_key)
-        .child(edge(
-            "left",
-            "Previous slide",
-            "cursor-w-resize",
-            move || step(-1),
-        ))
-        .child(edge("right", "Next slide", "cursor-e-resize", move || {
-            step(1)
-        }))
+        .child(edge("left", "Previous slide", "cursor-w-resize"))
+        .child(edge("right", "Next slide", "cursor-e-resize"))
         .child(
             html::div()
                 .class(
@@ -101,24 +73,13 @@ fn slide(index: usize, photo: &'static Photo, count: usize) -> impl IntoView {
         )
 }
 
-/// An invisible half-width click target, shown only where a pointer exists.
-fn edge(
-    id: &'static str,
-    label: &'static str,
-    cursor: &'static str,
-    on_click: impl Fn() + 'static,
-) -> impl IntoView {
+/// An invisible half-width click target, shown only where a pointer exists. The click
+/// handler is attached by the browser bundle, which finds these by id.
+fn edge(id: &'static str, label: &'static str, cursor: &'static str) -> impl IntoView {
     let side = if id == "left" { "left-0" } else { "right-0" };
 
-    html::button()
-        .id(id)
-        .aria_label(label)
-        .class(format!(
-            "absolute {side} z-10 hidden h-[calc(100%-1lh-0.5rem)] w-1/2 {cursor} \
+    html::button().id(id).aria_label(label).class(format!(
+        "absolute {side} z-10 hidden h-[calc(100%-1lh-0.5rem)] w-1/2 {cursor} \
              border-none bg-transparent md:block md:h-[calc(100%-1lh-0.625rem)]"
-        ))
-        .on(ev::click, move |event: ev::MouseEvent| {
-            event.prevent_default();
-            on_click();
-        })
+    ))
 }

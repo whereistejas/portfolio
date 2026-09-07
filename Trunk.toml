@@ -11,8 +11,9 @@ stage = "pre_build"
 command = "bun"
 command_arguments = ["run", "css"]
 
-# Pages has no rewrite rules, so every route needs a real file on disk.
+# Renders every route into its own file. Pages has no rewrite rules, and a CSR shell
+# would leave crawlers an empty body.
 [[hooks]]
 stage = "post_build"
-command = "sh"
-command_arguments = ["scripts/emit-routes.sh"]
+command = "cargo"
+command_arguments = ["run", "--quiet", "--release", "-p", "prerender"]

@@ -1,7 +1,7 @@
 //! Ported from `pages/blog.astro` and `layouts/blog.astro`.
 //!
-//! The listing metadata comes from the table `build/posts.rs` generates; post bodies are
-//! fetched as pre-rendered HTML when a post is opened.
+//! Both the listing metadata and the rendered bodies come from the table
+//! `build/posts.rs` generates, so a post needs no request of its own.
 
 use leptos::html;
 use leptos::prelude::*;
@@ -15,6 +15,8 @@ pub struct Post {
     pub title: &'static str,
     pub date: &'static str,
     pub summary: &'static str,
+    /// The rendered HTML, included from the file `build/posts.rs` wrote.
+    pub body: &'static str,
 }
 
 include!(concat!(env!("OUT_DIR"), "/posts.rs"));
@@ -43,13 +45,14 @@ pub fn view() -> impl IntoView {
 }
 
 /// A single post. The heading is the title in caps, as `blog.astro` rendered it.
-pub fn post_view(slug: &'static str) -> impl IntoView {
-    let title = post_title(slug);
-    let body = LocalResource::new(move || fetch_body(slug));
+pub fn post_view(slug: &str) -> impl IntoView {
+    let post = POSTS.iter().find(|post| post.slug == slug);
+    let title = post.map_or("Blog", |post| post.title);
+    let body = post.map_or("", |post| post.body);
 
     let article = html::article()
         .class("blog-article")
-        .child(move || body.get().map(|html| self::body(html.to_string())));
+        .child(self::body(body));
 
     shell(heading(title.to_uppercase()), article, ())
 }
@@ -70,7 +73,7 @@ pub fn post_title(slug: &str) -> &'static str {
         .map_or("Blog", |post| post.title)
 }
 
-fn body(html: String) -> impl IntoView {
+fn body(html: &'static str) -> impl IntoView {
     html::div().inner_html(html)
 }
 
@@ -91,13 +94,4 @@ fn textorlink_owned(content: String) -> impl IntoView {
     html::div()
         .class("inline-block")
         .child(html::h4().child(content))
-}
-
-async fn fetch_body(slug: &str) -> String {
-    let url = format!("/posts/{slug}.html");
-
-    match gloo_net::http::Request::get(&url).send().await {
-        Ok(response) => response.text().await.unwrap_or_default(),
-        Err(_) => String::new(),
-    }
 }

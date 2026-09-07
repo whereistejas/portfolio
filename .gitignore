@@ -3,6 +3,4 @@
 /node_modules
 /styles/generated.css
 /public/photos/
-/public/feed.json
-/public/posts/
-/public/post-slugs.txt
+/generated/

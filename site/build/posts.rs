@@ -1,13 +1,13 @@
 //! Renders the blog posts, replacing Astro's `import.meta.glob` over `pages/posts/*.md`
 //! and its markdown integration.
 //!
-//! Post bodies go to `public/posts/<slug>.html` and are fetched when a post is opened.
-//! The listing metadata is small and needed for routing, so it is emitted as a Rust table
-//! instead.
+//! Bodies are written to `generated/posts/<slug>.html` and included into the Rust table
+//! alongside the listing metadata, so a post renders without a request of its own. They
+//! are build intermediates, not served assets.
 
 use std::error::Error;
 use std::fs;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use crate::markdown;
 
@@ -30,8 +30,10 @@ pub fn generate(output_dir: &Path, out_dir: &Path) -> Result<(), Box<dyn Error>>
             .ok_or("post file name is not valid UTF-8")?
             .to_owned();
 
-        let post = Post::read(&slug, &fs::read_to_string(source)?)?;
-        fs::write(posts_dir.join(format!("{slug}.html")), &post.body)?;
+        let mut post = Post::read(&slug, &fs::read_to_string(source)?)?;
+        let rendered = posts_dir.join(format!("{slug}.html"));
+        fs::write(&rendered, &post.body)?;
+        post.rendered = fs::canonicalize(&rendered)?;
         posts.push(post);
     }
 
@@ -63,6 +65,8 @@ struct Post {
     date: String,
     summary: String,
     body: String,
+    /// Absolute path of the written HTML, so the table can `include_str!` it.
+    rendered: PathBuf,
 }
 
 impl Post {
@@ -84,16 +88,21 @@ impl Post {
             date,
             summary,
             body: markdown::to_html(markdown),
+            rendered: PathBuf::new(),
         })
     }
 
     fn entry(&self) -> String {
+        // The body is included rather than inlined so the generated file stays small
+        // and the HTML has a single on-disk source.
         format!(
-            "    Post {{ slug: {}, title: {}, date: {}, summary: {} }},",
+            "    Post {{ slug: {}, title: {}, date: {}, summary: {}, \
+             body: include_str!({}) }},",
             quote(&self.slug),
             quote(&self.title),
             quote(&display_date(&self.date)),
             quote(&self.summary),
+            quote(&self.rendered.display().to_string()),
         )
     }
 }

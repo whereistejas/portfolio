@@ -1,10 +1,12 @@
-//! Turns the committed Readwise cache into a compact asset the app fetches at runtime,
-//! replacing the loaders in `content/readwise.ts` and the helpers in `lib/feed.ts`.
+//! Turns the committed Readwise cache into `generated/feed.json`, replacing the loaders
+//! in `content/readwise.ts` and the helpers in `lib/feed.ts`.
 //!
 //! Everything derivable is derived here — sorting, author parsing, category naming, and
-//! markdown rendering — so the wasm bundle carries no markdown parser and the pages only
-//! walk a list. The cache is 696 KB of JSON; embedding it in the binary would cost more
-//! than fetching a trimmed copy.
+//! markdown rendering — so nothing downstream needs a markdown parser.
+//!
+//! `feed.json` is the source of truth the prerenderer reads. It is deliberately *not*
+//! written into `public/`: since the browser no longer fetches it, shipping it would add
+//! 598 KB to the deployment that nothing ever requests.
 
 use std::collections::BTreeSet;
 use std::error::Error;
@@ -17,6 +19,8 @@ use serde_json::{Value, json};
 use crate::markdown;
 
 pub fn generate(output_dir: &Path) -> Result<(), Box<dyn Error>> {
+    fs::create_dir_all(output_dir)?;
+
     let raw = fs::read_to_string(CACHE)?;
     let items = serde_json::from_str::<Vec<CacheItem>>(&raw)?;
 

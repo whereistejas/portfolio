@@ -1,9 +1,8 @@
 //! The shared body of the inbox and archive pages, standing in for the `getCollection`
 //! call each Astro page made plus `components/FeedItem.astro`.
 //!
-//! Astro had the data in hand while rendering. Here it arrives over the network, so the
-//! list is wrapped in a resource; the pending state renders nothing rather than a
-//! placeholder, which keeps the page from shifting once items appear.
+//! Like Astro, this has the data in hand while rendering: the prerenderer reads
+//! `feed.json` and passes the list straight in, so there is no loading state.
 
 use leptos::either::Either;
 use leptos::html;
@@ -11,22 +10,13 @@ use leptos::prelude::*;
 
 use crate::components::feed_card::Card;
 use crate::components::highlights;
-use crate::feed::{Item, Kind, load};
+use crate::feed::{Item, Kind};
 
-pub fn feed_list(kind: Kind) -> impl IntoView {
-    let items = LocalResource::new(move || load(kind));
-
-    // `LocalResource::get` yields a guard, not the value, so take an owned copy before
-    // building the rows rather than borrowing through it.
-    let rows = move || {
-        let items = items.get().map(|guard| guard.to_vec())?;
-        Some(
-            items
-                .into_iter()
-                .map(|item| row(item, kind))
-                .collect::<Vec<_>>(),
-        )
-    };
+pub fn feed_list(kind: Kind, items: Vec<Item>) -> impl IntoView {
+    let rows = items
+        .into_iter()
+        .map(|item| row(item, kind))
+        .collect::<Vec<_>>();
 
     let feed = html::div().class("feed").child(rows);
 
