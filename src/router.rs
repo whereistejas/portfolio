@@ -76,7 +76,16 @@ pub fn view() -> impl IntoView {
 }
 
 fn current() -> Route {
-    Route::from_path(&window().location().pathname().unwrap_or_default())
+    let path = window().location().pathname().unwrap_or_default();
+
+    // Post slugs come from filenames and contain spaces, so the pathname arrives
+    // percent-encoded and has to be decoded before it can match a slug.
+    let decoded = js_sys::decode_uri_component(&path)
+        .ok()
+        .and_then(|decoded| decoded.as_string())
+        .unwrap_or(path);
+
+    Route::from_path(&decoded)
 }
 
 const SITE: &str = "Tejas Sanap";

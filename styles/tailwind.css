@@ -258,6 +258,80 @@
 		   height 0 is layout-neutral; the visible spacing lives inside the
 		   animated height (list pt below) and collapses with it */
 		@apply -mt-0.5 text-fg-muted dark:text-fg-muted-dark text-pretty;
+
+		/* framer-motion animated height:0 -> auto on an element it mounted and
+		   unmounted. The Rust port keeps the pane mounted and animates a grid
+		   row instead, which is the only way to transition to a content-derived
+		   height in CSS alone. */
+		display: grid;
+		grid-template-rows: 0fr;
+		opacity: 0;
+		overflow: hidden;
+		transition:
+			grid-template-rows 450ms cubic-bezier(0.05, 0.7, 0.1, 1),
+			opacity 300ms ease-in-out;
+	}
+
+	div.feed .feed-highlights-body[data-open="true"] {
+		grid-template-rows: 1fr;
+		opacity: 1;
+	}
+
+	/* min-height:0 lets the grid item be clipped while the row collapses */
+	div.feed .feed-highlights-body > * {
+		min-height: 0;
+	}
+
+	/* Padding is added outside the content box, so a 0fr row cannot collapse it and
+	   the pane would keep the list's pt-1.5 as phantom height. Animate the padding
+	   alongside the row instead, which is what "collapses with it" meant when the
+	   height was animated directly. */
+	div.feed .feed-highlights-body:not([data-open="true"]) .feed-highlights-list {
+		@apply pt-0;
+	}
+
+	div.feed .feed-highlights-list {
+		transition: padding-top 450ms cubic-bezier(0.05, 0.7, 0.1, 1);
+	}
+
+	/* replaces staggerChildren/delayChildren on the list container */
+	div.feed .feed-highlights-list li {
+		opacity: 0;
+		transition: opacity 250ms ease-in;
+	}
+
+	div.feed .feed-highlights-body[data-open="true"] .feed-highlights-list li {
+		opacity: 1;
+		transition:
+			opacity 350ms ease-out calc(120ms + var(--index) * 50ms);
+	}
+
+	/* the summary's clamped -> full height animation, previously measured in a
+	   layout effect and animated by framer-motion */
+	div.feed .feed-desc-wrapper {
+		display: grid;
+		grid-template-rows: 1fr;
+		transition: grid-template-rows 450ms cubic-bezier(0.05, 0.7, 0.1, 1);
+	}
+
+	div.feed .feed-desc-wrapper[data-open="true"] .feed-desc {
+		/* the same declarations as .feed-desc--no-clamp, which @apply cannot
+		   reference because it is not a utility */
+		@apply block;
+		-webkit-line-clamp: unset;
+		max-height: none;
+		overflow: visible;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		div.feed .feed-highlights-body,
+		div.feed .feed-highlights-list,
+		div.feed .feed-highlights-list li,
+		div.feed .feed-highlights-body[data-open="true"] .feed-highlights-list li,
+		div.feed .feed-desc-wrapper {
+			transition-duration: 0ms;
+			transition-delay: 0ms;
+		}
 	}
 
 	/* ── Highlight list items & blockquotes ───────────────────────── */

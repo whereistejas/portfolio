@@ -10,3 +10,9 @@ open = false
 stage = "pre_build"
 command = "bun"
 command_arguments = ["run", "css"]
+
+# Pages has no rewrite rules, so every route needs a real file on disk.
+[[hooks]]
+stage = "post_build"
+command = "sh"
+command_arguments = ["scripts/emit-routes.sh"]
