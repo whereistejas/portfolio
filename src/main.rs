@@ -1,26 +1,28 @@
-use leptos::html;
+mod carousel;
+mod layout;
+mod photos;
+
 use leptos::prelude::*;
 
-fn app() -> impl IntoView {
-    html::main()
-        .class("flex min-h-dvh items-center justify-center bg-neutral-950 text-neutral-100")
-        .child(
-            html::div()
-                .class("space-y-3 text-center")
-                .child(
-                    html::h1()
-                        .class("text-4xl font-semibold tracking-tight")
-                        .child("Hello, world!"),
-                )
-                .child(
-                    html::p()
-                        .class("text-sm text-neutral-400")
-                        .child("Leptos + Trunk + Tailwind, with no macros in this crate."),
-                ),
-        )
-}
+use crate::carousel::carousel;
+use crate::layout::{shell, textorlink};
 
 fn main() {
     console_error_panic_hook::set_once();
-    leptos::mount::mount_to_body(app);
+    leptos::mount::mount_to_body(home);
+}
+
+/// The landing page, ported from `pages/index.astro`.
+fn home() -> impl IntoView {
+    shell(
+        (
+            textorlink("INBOX", Some("/inbox")),
+            textorlink("BLOG", Some("/blog")),
+        ),
+        carousel(),
+        (
+            textorlink("ARCHIVE", Some("/archive")),
+            textorlink("INFO", Some("/info")),
+        ),
+    )
 }
