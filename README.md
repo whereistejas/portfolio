@@ -1,8 +1,8 @@
 # portfolio-rs
 
-Rust rewrite of [whereistejas.xyz](https://whereistejas.xyz) — currently a Leptos
-"hello world" wired up to Trunk and Tailwind v4. The Astro original lives in
-`../portfolio`.
+Rust rewrite of [whereistejas.xyz](https://whereistejas.xyz). Leptos renders every route
+to static HTML at build time; the browser gets a small behaviour-only wasm bundle. The
+Astro original lives in `../portfolio`.
 
 - [`STYLE.md`](./STYLE.md) — Rust code style
 - [`AGENTS.md`](./AGENTS.md) — project conventions and porting notes
@@ -34,14 +34,19 @@ Installing it manually just risks a version mismatch.
 
 ## Layout
 
-A two-member Cargo workspace:
+A four-member Cargo workspace:
 
-- **`portfolio`** (repo root) — the Leptos app, compiled to `wasm32-unknown-unknown`
-- **`preview/`** — a native static file server that imitates GitHub Pages
+| Package | Target | Role |
+| --- | --- | --- |
+| `site/` | host + wasm | the views, as a library so they compile for both |
+| `prerender/` | host | renders each route to a complete HTML file |
+| `portfolio` (root) | wasm | behaviour only: carousel index, accordion toggles |
+| `preview/` | host | static file server imitating GitHub Pages |
 
-They are split because Trunk compiles the root package for wasm, where `tokio`'s
-networking does not build. Keep cargo commands package-scoped rather than using
-`--workspace`.
+The split is not cosmetic. `site` carries no `leptos` feature of its own: `portfolio`
+selects `csr` and `prerender` selects `ssr`, and those stay separate only because they are
+separate build roots. Keep cargo commands package-scoped — **`--workspace` unifies the
+features and turns both on at once**.
 
 `cargo run -p preview` serves `dist/` on `:4321` with Pages' quirks: exact-match files, a
 301 to the trailing-slash form for directories holding an index, `404.html` with a real
@@ -52,9 +57,10 @@ while writing code.
 
 Five files do the work:
 
-**`Cargo.toml`** — `leptos` with the `csr` feature (client-side rendering; no server, no
-hydration). The release profile is tuned for payload rather than speed: `opt-level = "z"`,
-`lto = true`, `codegen-units = 1`, `panic = "abort"`, `strip = true`.
+**`Cargo.toml`** — the root package depends on `web-sys` and `wasm-bindgen`, and
+deliberately **not** on `leptos`: pages arrive prerendered, so nothing on the client
+builds markup. The release profile is tuned for payload rather than speed:
+`opt-level = "z"`, `lto = true`, `codegen-units = 1`, `panic = "abort"`, `strip = true`.
 
 **`index.html`** — Trunk's entry point, not a template. Trunk scans it for `data-trunk`
 link tags, runs each through an asset pipeline, and rewrites the tag to point at the
@@ -65,10 +71,11 @@ content-hashed output. Here that's one tag:
 ```
 
 plus a `copy-dir` tag that flattens `public/` onto the root of `dist/`, which is what makes
-`/feed.json` and `/NebulaSans-Book.woff2` resolve.
+`/photos/…` and `/NebulaSans-Book.woff2` resolve.
 
 Trunk finds the Rust binary on its own from `Cargo.toml` — there is no `rel="rust"` tag.
-The `<body>` holds only the `rel="me"` link; `mount_to_body` fills in the rest at runtime.
+The `<body>` holds the `rel="me"` link and a `<!-- prerender -->` marker, which is where
+`prerender` splices each page's markup.
 
 **`Trunk.toml`** — sets `dist/` as the output and declares two hooks:
 
@@ -80,14 +87,15 @@ command_arguments = ["run", "css"]
 
 [[hooks]]
 stage = "post_build"
-command = "sh"
-command_arguments = ["scripts/emit-routes.sh"]
+command = "cargo"
+command_arguments = ["run", "--quiet", "--release", "-p", "prerender"]
 ```
 
 `pre_build` runs before the asset pipeline, so `styles/generated.css` exists by the time
 Trunk goes looking for it — which is why you never run Tailwind by hand. `post_build`
-copies the finished HTML to one file per route, since Pages cannot rewrite `/inbox` onto
-`index.html`.
+renders every route into its own file, since Pages cannot rewrite `/inbox` onto
+`index.html`. The hook reads `TRUNK_STAGING_DIR`, because Trunk stages the build and only
+moves it to `dist/` once the whole pipeline succeeds.
 
 **`build.rs`** — the content pipeline, standing in for everything Astro did at build
 time. It runs on the host, so an image decoder and a markdown parser never reach the
@@ -97,12 +105,13 @@ browser:
 | --- | --- | --- |
 | `build/photos.rs` | `astro:assets`, `exifreader` | resized JPEGs + caption table |
 | `build/markdown.rs` | `unified()`, `remark-*`, `rehype-katex` | — |
-| `build/feed.rs` | `content/readwise.ts`, `lib/feed.ts` | `feed.json` |
-| `build/posts.rs` | `import.meta.glob` over `posts/*.md` | post HTML + listing table |
+| `build/feed.rs` | `content/readwise.ts`, `lib/feed.ts` | `generated/feed.json` |
+| `build/posts.rs` | `import.meta.glob` over `posts/*.md` | post bodies + listing table |
 
-Sources live in `content/` and `assets/`; everything generated lands in `public/`, which
-is gitignored per-entry. Maths is rendered to **MathML**, so the KaTeX CDN stylesheet the
-Astro site loaded is gone.
+Sources live in `content/` and `assets/`. Generated output splits by whether it is
+served: `public/` is copied into `dist/`, while `generated/` holds intermediates that only
+later build steps read (`feed.json`, post bodies) and never ships. Maths is rendered to
+**MathML**, so the KaTeX CDN stylesheet the Astro site loaded is gone.
 
 **`styles/tailwind.css`** — the Tailwind v4 entry point. v4 has no `tailwind.config.js`;
 configuration is CSS-native:
@@ -129,42 +138,47 @@ cargo run -p preview         # serve dist/ on :4321 the way Pages would
 bun run css                  # one-shot Tailwind build
 bun run css:watch            # Tailwind in watch mode
 cargo fmt --all
+cargo clippy -p site --target wasm32-unknown-unknown --all-targets -- -D warnings
 cargo clippy -p portfolio --target wasm32-unknown-unknown --all-targets -- -D warnings
+cargo clippy -p prerender --all-targets -- -D warnings
 cargo clippy -p preview --all-targets -- -D warnings
 ```
 
-The two clippy lines are per-package on purpose. `portfolio` needs
-`--target wasm32-unknown-unknown`, because the host target compiles a different set of
-features and misses things CI catches. `preview` needs the host target, because `tokio`'s
-networking does not build for wasm. `--workspace` cannot satisfy both.
+Per package on purpose. `site` and `portfolio` need
+`--target wasm32-unknown-unknown`; `prerender` and `preview` only build for the host,
+because `leptos/ssr` and `tokio`'s networking have no wasm support. `--workspace` cannot
+satisfy both, and would unify the `csr`/`ssr` features besides.
 
 ## What a release build produces
 
 ```
 dist/
-├── index.html                    # and one copy per route, plus 404.html
+├── index.html                    # fully rendered, one per route
+├── 404.html
 ├── blog/index.html
 ├── inbox/index.html
 ├── archive/index.html
 ├── info/index.html
 ├── posts/<slug>/index.html       # one directory per post
-├── posts/<slug>.html             # the rendered body, fetched on demand
-├── feed.json                     # the trimmed Readwise cache
 ├── photos/<name>-{400,800}.jpg
 ├── generated-<hash>.css
 ├── portfolio-<hash>.js           # wasm-bindgen glue
 └── portfolio-<hash>_bg.wasm
 ```
 
-| Asset | Hello world | Now |
-| --- | --- | --- |
-| wasm | 52 KB | 235 KB |
-| JS glue | 23 KB | 37 KB |
-| CSS | 6 KB | 55 KB |
-| `feed.json` | — | 598 KB (222 KB gzipped) |
+Every HTML file contains its complete content — the pages render with JavaScript
+disabled.
 
-Worth re-checking after adding dependencies — GitHub Pages serves gzip but not brotli, so
-the wire size stays close to the gzipped size.
+| Asset | Hello world | CSR peak | Now |
+| --- | --- | --- | --- |
+| wasm | 52 KB | 235 KB | **28 KB** |
+| JS glue | 23 KB | 37 KB | **16 KB** |
+| CSS | 6 KB | 55 KB | 55 KB |
+| feed data on the wire | — | 598 KB | **0** |
+
+The largest page is now the markup: `archive/index.html` is 847 KB, 220 KB gzipped,
+served as a single document. Worth re-checking after adding dependencies — GitHub Pages
+serves gzip but not brotli, so the wire size stays close to the gzipped size.
 
 ## CI
 
@@ -179,16 +193,11 @@ Trunk is pinned by the `TRUNK_VERSION` env var and downloaded straight from the
 `trunk-rs/trunk` GitHub release, rather than via a third-party action or a slow
 `cargo install`. Bump the version there.
 
-The output-tree assertion exists because two failure modes are invisible until someone
-loads the site: a route without its own `index.html` 404s on Pages, and a missing
-`feed.json` silently empties the inbox and archive.
+The output-tree assertion exists because these failure modes are invisible until someone
+loads the site: a route without its own `index.html` 404s on Pages, and a page whose
+markup did not get spliced in looks fine to the build but empty to a reader.
 
 ## Not done yet
-
-**Prerendering.** This is CSR only, so crawlers and link-preview bots get an empty
-`<body>`, and the feed pages show nothing until `feed.json` arrives. Fixing it means
-rendering each route to HTML at build time and switching the client from `mount_to_body`
-to `hydrate_body`.
 
 **Refreshing the Readwise cache.** `content/cache-processed.json` is committed, so builds
 need no API token — but nothing fetches new documents. The Astro repo did this in

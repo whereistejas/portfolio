@@ -1,7 +1,17 @@
 # AGENTS.md
 
-Rust rewrite of the Astro site in `../portfolio`. Leptos CSR + Trunk, static output
-destined for GitHub Pages.
+Rust rewrite of the Astro site in `../portfolio`. Leptos renders every route to static
+HTML at build time; Trunk builds a small behaviour-only wasm bundle. Deployed to GitHub
+Pages.
+
+Four workspace members:
+
+| Package | Target | Role |
+| --- | --- | --- |
+| `site/` | host + wasm | the views, as a library so they compile for both |
+| `prerender/` | host | renders each route to a complete HTML file |
+| `portfolio` (root) | wasm | behaviour only: carousel index, accordion toggles |
+| `preview/` | host | static file server imitating GitHub Pages |
 
 Code style is a separate document: **[`STYLE.md`](./STYLE.md)** — read it before writing
 Rust here. Setup and build mechanics are in [`README.md`](./README.md).
@@ -47,14 +57,18 @@ Run both before declaring work done. There is no test suite yet.
 
 ```bash
 cargo fmt --all
+cargo clippy -p site --target wasm32-unknown-unknown --all-targets -- -D warnings
 cargo clippy -p portfolio --target wasm32-unknown-unknown --all-targets -- -D warnings
+cargo clippy -p prerender --all-targets -- -D warnings
 cargo clippy -p preview --all-targets -- -D warnings
 ```
 
-The two clippy invocations are not interchangeable. `portfolio` must be checked against
-`wasm32-unknown-unknown`, since the host target compiles a different feature set and will
-not catch what CI catches. `preview` must be checked against the **host** target, because
-`tokio`'s networking does not build for wasm at all. Never use `--workspace` here.
+These are not interchangeable, and **`--workspace` must never be used**. `site` and
+`portfolio` are checked for wasm; `prerender` and `preview` only build for the host,
+because `tokio`'s networking and `leptos/ssr` have no wasm support. More importantly,
+`site` carries no `leptos` feature of its own: `portfolio` selects `csr` and `prerender`
+selects `ssr`, and they stay separate only because they are separate build roots.
+`--workspace` unifies them and turns both on at once.
 
 ## How Tailwind is wired
 
@@ -102,8 +116,8 @@ modules live in `build/` and are wired in with `#[path]` attributes:
 | --- | --- | --- |
 | `build/photos.rs` | `astro:assets`, `exifreader` | `public/photos/*.jpg` + `$OUT_DIR/photos.rs` |
 | `build/markdown.rs` | the `unified()` pipeline, `remark-*`, `rehype-katex` | — |
-| `build/feed.rs` | `content/readwise.ts`, `lib/feed.ts` | `public/feed.json` |
-| `build/posts.rs` | `import.meta.glob` over `pages/posts/*.md` | `public/posts/*.html` + `$OUT_DIR/posts.rs` |
+| `build/feed.rs` | `content/readwise.ts`, `lib/feed.ts` | `generated/feed.json` |
+| `build/posts.rs` | `import.meta.glob` over `pages/posts/*.md` | `generated/posts/*.html` + `$OUT_DIR/posts.rs` |
 
 Rules that follow from this:
 
@@ -112,43 +126,66 @@ Rules that follow from this:
 - **Generated Rust tables are `include!`d**, not committed: `src/photos.rs` and
   `src/pages/blog.rs` pull in `$OUT_DIR/*.rs`. The `Photo`/`Post` structs they populate are
   declared next to the `include!`
-- **`public/` is both an output directory and a URL namespace.** Trunk copies it to the
-  root of `dist/`, so `public/feed.json` is served at `/feed.json`. Generated entries are
-  gitignored; committed assets (fonts, favicons) are not
+- **`public/` is served, `generated/` is not.** Trunk copies `public/` to the root of
+  `dist/`, so `public/photos/x.jpg` is served at `/photos/x.jpg`. Build intermediates that
+  only later build steps read — `feed.json`, post bodies — go in `generated/`, which never
+  reaches `dist/`. Putting them in `public/` would add ~600 KB to the deployment that
+  nothing requests
 - **Maths becomes MathML** via `pulldown-latex`. The Astro site loaded KaTeX's stylesheet
   from a CDN; that `<link>` is deliberately gone
 - Input sources are committed under `content/`: `cache-processed.json` and `posts/*.md`
 
-`src/feed.rs` reads `feed.json` at runtime through the browser's own `JSON.parse` and
-`js_sys::Reflect`, **not** `serde`. The payload is ~600 KB and a Rust parser plus derived
-deserialisers would be dead weight for work the engine already does natively.
+`generated/feed.json` is the source of truth for the two reading lists. `prerender` reads
+it with `serde_json` and bakes the result into HTML, so the browser never fetches or parses
+it. To change what the feed pages show, change `build/feed.rs` and re-render.
 
-## Routing
+## Routing and prerendering
 
-There is no `leptos_router`. Its `Route` components can only be instantiated through
-`view!` or by hand-building `TypedChildren`, which the no-macro rule rules out, and five
-static routes do not need a matcher.
+There is no `leptos_router`, and no runtime dispatch. Its `Route` components can only be
+instantiated through `view!` or by hand-building `TypedChildren`, which the no-macro rule
+rules out, and static routes need no matcher.
 
-- `src/router.rs` matches `location.pathname` and returns the page view
-- It **percent-decodes** the path first: post slugs come from filenames and contain spaces
-- `scripts/emit-routes.sh` runs as a Trunk `post_build` hook and copies the built
-  `index.html` to each route directory plus `404.html`, because Pages has no rewrites
-- Adding a route means touching `Route`, `router::view`, *and* the hook's route list
-- Navigation is a full document load, as it was in Astro; the wasm comes from cache
+- `site/src/router.rs` holds the `Route` enum: `Route::all()`, `path()` and `title()`
+- `prerender` walks `Route::all()`, renders each with `RenderHtml::to_html()`, and
+  substitutes body and title into the shell Trunk built. It runs as a Trunk `post_build`
+  hook, reading `TRUNK_STAGING_DIR` — Trunk stages the build and only moves it to `dist/`
+  once the pipeline succeeds, so `dist/` does not exist yet when the hook runs
+- Each route lands at `<path>/index.html`, plus `404.html`, because Pages has no rewrites
+- **Post routes come from the generated `POSTS` table**, so adding a markdown file is
+  enough. The five fixed pages are listed by hand in `Route::all()`
+- Each render runs in its own `Owner`, or reactive state would leak between routes
+- Navigation is a full document load, as it was in Astro
+
+## The browser bundle has no framework
+
+The root package deliberately does not depend on `leptos` — only `web-sys` and
+`wasm-bindgen`. Pages arrive fully rendered, so nothing on the client builds markup; it
+would double up if it did. What ships is the behaviour CSS cannot express:
+
+- the carousel's slide index, read from and written to `--current-slide`
+- the accordion toggles, through **one delegated listener** on `<body>` rather than one
+  per row, because the archive has 251 of them
+
+The contract between the two halves is markup, not code: `site` emits
+`data-num-slides`, `aria-controls` and `aria-expanded`; the bundle reads them and toggles
+`data-open` / `data-expanded`. **Change an attribute name on one side and you must change
+it on the other** — nothing type-checks across that boundary.
 
 ## Payload budget
 
 GitHub Pages serves gzip but **not brotli**, so wasm ships close to its gzipped size.
 Re-measure `dist/` after any dependency addition and flag regressions.
 
-| Asset | Hello world | Now |
-| --- | --- | --- |
-| wasm | 52 KB | 235 KB |
-| JS glue | 23 KB | 37 KB |
-| CSS | 6 KB | 55 KB |
-| `feed.json` | — | 598 KB (222 KB gzipped) |
+| Asset | Hello world | CSR peak | Now |
+| --- | --- | --- | --- |
+| wasm | 52 KB | 235 KB | **28 KB** |
+| JS glue | 23 KB | 37 KB | **16 KB** |
+| CSS | 6 KB | 55 KB | 55 KB |
+| feed data on the wire | — | 598 KB | **0** |
 
-This is what the no-macro/no-`into_any` discipline is protecting.
+Prerendering removed the framework and the data fetch from the client. The largest page
+is now the markup itself: `archive/index.html` is 847 KB, 220 KB gzipped — served as one
+document with no round-trip, where CSR needed the bundle *plus* a 598 KB fetch first.
 
 ## Views take owned data
 
@@ -170,7 +207,5 @@ doc comment, so `rg -n "[Pp]orted from" src build` is the fastest way to map the
   One item has a `null` summary despite `processedItemSchema` declaring a plain string;
   `build/feed.rs` tolerates it
 
-Still outstanding: the site is CSR only, so crawlers and link-preview bots get an empty
-`<body>`. Prerendering is the remaining structural work — see "Not done yet" in
-`README.md`. Also unported: the Readwise API fetch itself (the cache is committed, so
-builds work without a token, but nothing refreshes it) and `components/posthog.astro`.
+Still unported: the Readwise API fetch itself (the cache is committed, so builds work
+without a token, but nothing refreshes it) and `components/posthog.astro`.
