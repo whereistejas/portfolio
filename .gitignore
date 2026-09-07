@@ -1,8 +1,4 @@
-# The Astro site is gone. Its dependencies and build output are still on disk, so this
-# stays behind to keep them out of the tree; the Rust port replaces it with its own.
-dist/
-node_modules/
-.astro/
-.env
-.env.production
-.DS_Store
+/target
+/dist
+/node_modules
+/styles/generated.css
