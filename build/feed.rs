@@ -20,13 +20,14 @@ pub fn generate(output_dir: &Path) -> Result<(), Box<dyn Error>> {
     let raw = fs::read_to_string(CACHE)?;
     let items = serde_json::from_str::<Vec<CacheItem>>(&raw)?;
 
-    let (mut archive, mut inbox): (Vec<_>, Vec<_>) =
-        items.into_iter().partition(|item| item.location == "archive");
+    let (mut archive, mut inbox): (Vec<_>, Vec<_>) = items
+        .into_iter()
+        .partition(|item| item.location == "archive");
 
     // The archive orders by when an item was filed; the queue prefers when it was last
     // highlighted, matching the two sort comparators in the Astro pages.
     archive.sort_by(|a, b| b.last_moved_at.cmp(&a.last_moved_at));
-    inbox.sort_by(|a, b| b.queue_order().cmp(&a.queue_order()));
+    inbox.sort_by(|a, b| b.queue_order().cmp(a.queue_order()));
 
     let feed = json!({
         "inbox": inbox.iter().map(CacheItem::to_json).collect::<Vec<_>>(),
@@ -80,7 +81,9 @@ impl CacheItem {
     }
 
     fn queue_order(&self) -> &str {
-        self.last_highlighted_at.as_deref().unwrap_or(&self.last_moved_at)
+        self.last_highlighted_at
+            .as_deref()
+            .unwrap_or(&self.last_moved_at)
     }
 }
 

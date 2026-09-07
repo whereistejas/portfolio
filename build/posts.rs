@@ -48,7 +48,10 @@ pub fn generate(output_dir: &Path, out_dir: &Path) -> Result<(), Box<dyn Error>>
     )?;
 
     // Consumed by `scripts/emit-routes.sh`, which needs a directory per post.
-    let slugs = posts.iter().map(|post| post.slug.as_str()).collect::<Vec<_>>();
+    let slugs = posts
+        .iter()
+        .map(|post| post.slug.as_str())
+        .collect::<Vec<_>>();
     fs::write(output_dir.join("post-slugs.txt"), slugs.join("\n"))?;
 
     Ok(())
@@ -66,11 +69,11 @@ impl Post {
     fn read(slug: &str, source: &str) -> Result<Self, Box<dyn Error>> {
         let (frontmatter, markdown) = split_frontmatter(source)?;
 
-        let title = field(&frontmatter, "title").unwrap_or_else(|| slug.to_owned());
-        let date = field(&frontmatter, "date").ok_or("post is missing a date")?;
+        let title = field(frontmatter, "title").unwrap_or_else(|| slug.to_owned());
+        let date = field(frontmatter, "date").ok_or("post is missing a date")?;
 
         // Fall back to the first prose block, as `firstParagraph` in blog.astro did.
-        let summary = match field(&frontmatter, "description") {
+        let summary = match field(frontmatter, "description") {
             Some(description) => description,
             None => markdown::to_plain_text(first_paragraph(markdown)),
         };
@@ -100,7 +103,9 @@ fn split_frontmatter(source: &str) -> Result<(&str, &str), Box<dyn Error>> {
     let rest = source
         .strip_prefix("---")
         .ok_or("post does not start with frontmatter")?;
-    let end = rest.find("\n---").ok_or("post frontmatter is unterminated")?;
+    let end = rest
+        .find("\n---")
+        .ok_or("post frontmatter is unterminated")?;
 
     let body = rest[end..]
         .trim_start_matches('\n')

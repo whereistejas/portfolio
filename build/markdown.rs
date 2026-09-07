@@ -19,7 +19,10 @@ pub fn to_html(markdown: &str) -> String {
     options.insert(Options::ENABLE_MATH);
 
     let mut rendered = String::new();
-    html::push_html(&mut rendered, MathEvents::new(Parser::new_ext(markdown, options)));
+    html::push_html(
+        &mut rendered,
+        MathEvents::new(Parser::new_ext(markdown, options)),
+    );
     rendered
 }
 
@@ -38,7 +41,10 @@ pub fn to_plain_text(markdown: &str) -> String {
         }
     }
 
-    decode_entities(&text).split_whitespace().collect::<Vec<_>>().join(" ")
+    decode_entities(&text)
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ")
 }
 
 /// Rewrites `pulldown-cmark`'s math events into MathML, passing everything else through.
