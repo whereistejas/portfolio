@@ -6,6 +6,18 @@ on:
   pull_request:
   workflow_dispatch:
 
+# Required by actions/deploy-pages; `contents: read` is enough because nothing is
+# committed back to the repo.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# A superseded deploy is worth cancelling, but never mid-deployment.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 env:
   CARGO_TERM_COLOR: always
   TRUNK_VERSION: "0.21.14"
@@ -28,6 +40,8 @@ jobs:
       - name: rustfmt
         run: cargo fmt --all --check
 
+      # Per package on purpose: the app must be checked for wasm32, and `preview`
+      # only builds for the host, because tokio's networking has no wasm support.
       - name: clippy (app, wasm target)
         run: cargo clippy -p portfolio --target wasm32-unknown-unknown --all-targets -- -D warnings
 
@@ -61,11 +75,39 @@ jobs:
             | tar -xzf - -C /usr/local/bin trunk
           trunk --version
 
+      # Runs build.rs (photos, feed, posts), then the pre_build Tailwind hook and the
+      # post_build hook that fans index.html out to one file per route.
       - name: Build
         run: trunk build --release
 
-      - name: Upload dist
-        uses: actions/upload-artifact@v4
+      # Guards the two failure modes that only show up in the output tree: a route
+      # without its own file 404s on Pages, and a missing feed.json empties two pages.
+      - name: Check the output tree
+        run: |
+          set -eu
+          for path in index.html 404.html blog/index.html inbox/index.html \
+                      archive/index.html info/index.html feed.json; do
+            test -f "dist/$path" || { echo "missing dist/$path"; exit 1; }
+          done
+          count=$(find dist/posts -name index.html | wc -l)
+          test "$count" -gt 0 || { echo "no post routes were emitted"; exit 1; }
+          echo "dist/ tree looks right ($count post routes)"
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: dist
-          path: dist/
+          path: ./dist
+
+  deploy:
+    name: deploy to Pages
+    # Only the default branch deploys; pull requests stop after build.
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: [lint, build]
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

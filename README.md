@@ -168,14 +168,20 @@ the wire size stays close to the gzipped size.
 
 ## CI
 
-`.github/workflows/ci.yml`, two jobs:
+`.github/workflows/ci.yml`, three jobs:
 
 - **`lint`** — `cargo fmt --all --check`, then clippy for each package with `-D warnings`
-- **`build`** — installs Bun and Trunk, runs `trunk build --release`, uploads `dist/`
+- **`build`** — installs Bun and Trunk, runs `trunk build --release`, asserts the output
+  tree, uploads `dist/` as a Pages artifact
+- **`deploy`** — `actions/deploy-pages`, gated on `main` and on both jobs above
 
 Trunk is pinned by the `TRUNK_VERSION` env var and downloaded straight from the
 `trunk-rs/trunk` GitHub release, rather than via a third-party action or a slow
 `cargo install`. Bump the version there.
+
+The output-tree assertion exists because two failure modes are invisible until someone
+loads the site: a route without its own `index.html` 404s on Pages, and a missing
+`feed.json` silently empties the inbox and archive.
 
 ## Not done yet
 
