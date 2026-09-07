@@ -50,7 +50,7 @@ while writing code.
 
 ## How the build is wired
 
-Four files do the work:
+Five files do the work:
 
 **`Cargo.toml`** — `leptos` with the `csr` feature (client-side rendering; no server, no
 hydration). The release profile is tuned for payload rather than speed: `opt-level = "z"`,
@@ -64,21 +64,45 @@ content-hashed output. Here that's one tag:
 <link data-trunk rel="css" href="styles/generated.css" />
 ```
 
-Trunk finds the Rust binary on its own from `Cargo.toml` — there is no `rel="rust"` tag.
-`<body>` is empty because `mount_to_body` fills it at runtime.
+plus a `copy-dir` tag that flattens `public/` onto the root of `dist/`, which is what makes
+`/feed.json` and `/NebulaSans-Book.woff2` resolve.
 
-**`Trunk.toml`** — sets `dist/` as the output and, importantly, declares the Tailwind
-hook:
+Trunk finds the Rust binary on its own from `Cargo.toml` — there is no `rel="rust"` tag.
+The `<body>` holds only the `rel="me"` link; `mount_to_body` fills in the rest at runtime.
+
+**`Trunk.toml`** — sets `dist/` as the output and declares two hooks:
 
 ```toml
 [[hooks]]
 stage = "pre_build"
 command = "bun"
 command_arguments = ["run", "css"]
+
+[[hooks]]
+stage = "post_build"
+command = "sh"
+command_arguments = ["scripts/emit-routes.sh"]
 ```
 
 `pre_build` runs before the asset pipeline, so `styles/generated.css` exists by the time
-Trunk goes looking for it. This is why you never run Tailwind by hand.
+Trunk goes looking for it — which is why you never run Tailwind by hand. `post_build`
+copies the finished HTML to one file per route, since Pages cannot rewrite `/inbox` onto
+`index.html`.
+
+**`build.rs`** — the content pipeline, standing in for everything Astro did at build
+time. It runs on the host, so an image decoder and a markdown parser never reach the
+browser:
+
+| Module | Replaces | Output |
+| --- | --- | --- |
+| `build/photos.rs` | `astro:assets`, `exifreader` | resized JPEGs + caption table |
+| `build/markdown.rs` | `unified()`, `remark-*`, `rehype-katex` | — |
+| `build/feed.rs` | `content/readwise.ts`, `lib/feed.ts` | `feed.json` |
+| `build/posts.rs` | `import.meta.glob` over `posts/*.md` | post HTML + listing table |
+
+Sources live in `content/` and `assets/`; everything generated lands in `public/`, which
+is gitignored per-entry. Maths is rendered to **MathML**, so the KaTeX CDN stylesheet the
+Astro site loaded is gone.
 
 **`styles/tailwind.css`** — the Tailwind v4 entry point. v4 has no `tailwind.config.js`;
 configuration is CSS-native:
@@ -118,15 +142,29 @@ networking does not build for wasm. `--workspace` cannot satisfy both.
 
 ```
 dist/
-├── index.html
+├── index.html                    # and one copy per route, plus 404.html
+├── blog/index.html
+├── inbox/index.html
+├── archive/index.html
+├── info/index.html
+├── posts/<slug>/index.html       # one directory per post
+├── posts/<slug>.html             # the rendered body, fetched on demand
+├── feed.json                     # the trimmed Readwise cache
+├── photos/<name>-{400,800}.jpg
 ├── generated-<hash>.css
-├── portfolio-<hash>.js          # wasm-bindgen glue
+├── portfolio-<hash>.js           # wasm-bindgen glue
 └── portfolio-<hash>_bg.wasm
 ```
 
-Current hello-world size: **52 KB wasm + 23 KB JS**. Worth re-checking after adding
-dependencies — GitHub Pages serves gzip but not brotli, so the wire size stays close to
-the gzipped size.
+| Asset | Hello world | Now |
+| --- | --- | --- |
+| wasm | 52 KB | 235 KB |
+| JS glue | 23 KB | 37 KB |
+| CSS | 6 KB | 55 KB |
+| `feed.json` | — | 598 KB (222 KB gzipped) |
+
+Worth re-checking after adding dependencies — GitHub Pages serves gzip but not brotli, so
+the wire size stays close to the gzipped size.
 
 ## CI
 
@@ -141,10 +179,14 @@ Trunk is pinned by the `TRUNK_VERSION` env var and downloaded straight from the
 
 ## Not done yet
 
-This is CSR only, which means crawlers and link-preview bots get an empty
-`<body>`. Before this replaces the Astro site it needs prerendering via
-`SsrMode::Static` + `leptos_axum`'s `StaticRouteGenerator`, driven by a small binary
-that boots the Leptos config, generates, and exits — Leptos has no `--ssg` flag.
+**Prerendering.** This is CSR only, so crawlers and link-preview bots get an empty
+`<body>`, and the feed pages show nothing until `feed.json` arrives. Fixing it means
+rendering each route to HTML at build time and switching the client from `mount_to_body`
+to `hydrate_body`.
 
-Also outstanding: the Readwise build-time pipeline, the five routes, and the highlights
-accordion. See the porting notes in `AGENTS.md`.
+**Refreshing the Readwise cache.** `content/cache-processed.json` is committed, so builds
+need no API token — but nothing fetches new documents. The Astro repo did this in
+`src/content/readwise.ts` against the Readwise API, and CI committed the refreshed cache
+back to `main`.
+
+**Analytics.** `components/posthog.astro` is not ported.

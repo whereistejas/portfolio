@@ -92,24 +92,85 @@ Avoid interactive `jj` commands, since stdin is not a terminal:
 Trunk fetches `wasm-bindgen` itself at build time; do not install it separately. Bumping
 Trunk means editing `TRUNK_VERSION` in the workflow.
 
+## The build-time content pipeline
+
+`build.rs` does what Astro used to, and runs on the **host** even though the crate targets
+wasm, so it can decode images and parse markdown without either reaching the browser. Its
+modules live in `build/` and are wired in with `#[path]` attributes:
+
+| Module | Replaces | Output |
+| --- | --- | --- |
+| `build/photos.rs` | `astro:assets`, `exifreader` | `public/photos/*.jpg` + `$OUT_DIR/photos.rs` |
+| `build/markdown.rs` | the `unified()` pipeline, `remark-*`, `rehype-katex` | — |
+| `build/feed.rs` | `content/readwise.ts`, `lib/feed.ts` | `public/feed.json` |
+| `build/posts.rs` | `import.meta.glob` over `pages/posts/*.md` | `public/posts/*.html` + `$OUT_DIR/posts.rs` |
+
+Rules that follow from this:
+
+- **Everything derivable is derived at build time** — sorting, author parsing, category
+  naming, date formatting, markdown. The bundle has no markdown parser; do not add one
+- **Generated Rust tables are `include!`d**, not committed: `src/photos.rs` and
+  `src/pages/blog.rs` pull in `$OUT_DIR/*.rs`. The `Photo`/`Post` structs they populate are
+  declared next to the `include!`
+- **`public/` is both an output directory and a URL namespace.** Trunk copies it to the
+  root of `dist/`, so `public/feed.json` is served at `/feed.json`. Generated entries are
+  gitignored; committed assets (fonts, favicons) are not
+- **Maths becomes MathML** via `pulldown-latex`. The Astro site loaded KaTeX's stylesheet
+  from a CDN; that `<link>` is deliberately gone
+- Input sources are committed under `content/`: `cache-processed.json` and `posts/*.md`
+
+`src/feed.rs` reads `feed.json` at runtime through the browser's own `JSON.parse` and
+`js_sys::Reflect`, **not** `serde`. The payload is ~600 KB and a Rust parser plus derived
+deserialisers would be dead weight for work the engine already does natively.
+
+## Routing
+
+There is no `leptos_router`. Its `Route` components can only be instantiated through
+`view!` or by hand-building `TypedChildren`, which the no-macro rule rules out, and five
+static routes do not need a matcher.
+
+- `src/router.rs` matches `location.pathname` and returns the page view
+- It **percent-decodes** the path first: post slugs come from filenames and contain spaces
+- `scripts/emit-routes.sh` runs as a Trunk `post_build` hook and copies the built
+  `index.html` to each route directory plus `404.html`, because Pages has no rewrites
+- Adding a route means touching `Route`, `router::view`, *and* the hook's route list
+- Navigation is a full document load, as it was in Astro; the wasm comes from cache
+
 ## Payload budget
 
-The reason for the no-macro/no-`into_any` discipline: hello world currently costs **52 KB
-wasm + 23 KB JS glue**. GitHub Pages serves gzip but **not brotli**, so wasm ships close
-to its gzipped size. Re-measure `dist/` after any dependency addition and flag
-regressions.
+GitHub Pages serves gzip but **not brotli**, so wasm ships close to its gzipped size.
+Re-measure `dist/` after any dependency addition and flag regressions.
+
+| Asset | Hello world | Now |
+| --- | --- | --- |
+| wasm | 52 KB | 235 KB |
+| JS glue | 23 KB | 37 KB |
+| CSS | 6 KB | 55 KB |
+| `feed.json` | — | 598 KB (222 KB gzipped) |
+
+This is what the no-macro/no-`into_any` discipline is protecting.
+
+## Views take owned data
+
+Under edition 2024 an `impl Trait` return captures **every** input lifetime, and adding
+`+ 'static` does not undo that — the opaque type still carries the lifetime. A view built
+from a borrowed item therefore cannot outlive the resource guard it was read from.
+
+So: components take `String`/`Vec<String>`/`Item` by value and destructure them, rather
+than taking `&Item`. If you hit `E0515` in a view function, this is why.
 
 ## Porting reference
 
-The Astro original is `../portfolio`. Relevant prior art there:
+The Astro original is `../portfolio`. Every ported file names its source in a module
+doc comment, so `rg -n "[Pp]orted from" src build` is the fastest way to map the two.
 
-- `src/content/readwise.ts` — build-time Readwise fetch plus the committed
-  `src/content/cache-processed.json` (696 KB) that lets CI build without an API token
-- `src/components/HighlightsAccordion.tsx` — the only genuinely interactive component
-- `src/pages/{index,blog,inbox,archive,info}.astro` — the five routes to reproduce
 - `astro.config.mjs` — `site: "https://whereistejas.xyz"`, apex domain, so no
   base-path handling is needed
+- `src/content/cache-processed.json` — upstream of `content/cache-processed.json` here.
+  One item has a `null` summary despite `processedItemSchema` declaring a plain string;
+  `build/feed.rs` tolerates it
 
-Open question, not yet decided: pure CSR (current setup) leaves crawlers an empty shell.
-Prerendering via `SsrMode::Static` + `StaticRouteGenerator` from `leptos_axum` is the
-intended fix, and requires a small binary that boots Leptos options, generates, and exits.
+Still outstanding: the site is CSR only, so crawlers and link-preview bots get an empty
+`<body>`. Prerendering is the remaining structural work — see "Not done yet" in
+`README.md`. Also unported: the Readwise API fetch itself (the cache is committed, so
+builds work without a token, but nothing refreshes it) and `components/posthog.astro`.
