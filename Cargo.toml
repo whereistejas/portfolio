@@ -12,9 +12,17 @@ publish = false
 console_error_panic_hook = "0.1"
 leptos = { version = "0.8", features = ["csr"] }
 
+# Tuned for wasm payload rather than compile speed; `portfolio` is the only member that
+# ships to the browser.
 [profile.release]
 codegen-units = 1
 lto = true
 opt-level = "z"
 panic = "abort"
 strip = true
+
+# `preview` never ships anywhere, so spare it the size-optimised settings above. `lto` and
+# `panic` cannot be overridden per package, but these two are what actually cost time.
+[profile.release.package.preview]
+codegen-units = 16
+opt-level = 1

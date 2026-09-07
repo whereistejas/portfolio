@@ -32,6 +32,22 @@ Installing it manually just risks a version mismatch.
 `rust-toolchain.toml` pins the channel and declares the target, so `rustup` installs
 `wasm32-unknown-unknown` on demand. No manual `rustup target add` needed after a clone.
 
+## Layout
+
+A two-member Cargo workspace:
+
+- **`portfolio`** (repo root) — the Leptos app, compiled to `wasm32-unknown-unknown`
+- **`preview/`** — a native static file server that imitates GitHub Pages
+
+They are split because Trunk compiles the root package for wasm, where `tokio`'s
+networking does not build. Keep cargo commands package-scoped rather than using
+`--workspace`.
+
+`cargo run -p preview` serves `dist/` on `:4321` with Pages' quirks: exact-match files, a
+301 to the trailing-slash form for directories holding an index, `404.html` with a real
+404 status, and gzip but never brotli. Use it to check a release build; use `trunk serve`
+while writing code.
+
 ## How the build is wired
 
 Four files do the work:
@@ -85,14 +101,18 @@ get tree-shaken out with no warning.
 trunk serve                  # dev server on :8080, rebuilds on change
 trunk build                  # debug build into dist/
 trunk build --release        # production build into dist/
+cargo run -p preview         # serve dist/ on :4321 the way Pages would
 bun run css                  # one-shot Tailwind build
 bun run css:watch            # Tailwind in watch mode
 cargo fmt --all
-cargo clippy --target wasm32-unknown-unknown --all-targets -- -D warnings
+cargo clippy -p portfolio --target wasm32-unknown-unknown --all-targets -- -D warnings
+cargo clippy -p preview --all-targets -- -D warnings
 ```
 
-Always pass `--target wasm32-unknown-unknown` to clippy. The default host target compiles
-a different set of features and will miss things CI catches.
+The two clippy lines are per-package on purpose. `portfolio` needs
+`--target wasm32-unknown-unknown`, because the host target compiles a different set of
+features and misses things CI catches. `preview` needs the host target, because `tokio`'s
+networking does not build for wasm. `--workspace` cannot satisfy both.
 
 ## What a release build produces
 
@@ -112,7 +132,7 @@ the gzipped size.
 
 `.github/workflows/ci.yml`, two jobs:
 
-- **`lint`** — `cargo fmt --all --check`, then clippy with `-D warnings`
+- **`lint`** — `cargo fmt --all --check`, then clippy for each package with `-D warnings`
 - **`build`** — installs Bun and Trunk, runs `trunk build --release`, uploads `dist/`
 
 Trunk is pinned by the `TRUNK_VERSION` env var and downloaded straight from the

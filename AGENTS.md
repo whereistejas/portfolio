@@ -47,11 +47,14 @@ Run both before declaring work done. There is no test suite yet.
 
 ```bash
 cargo fmt --all
-cargo clippy --target wasm32-unknown-unknown --all-targets -- -D warnings
+cargo clippy -p portfolio --target wasm32-unknown-unknown --all-targets -- -D warnings
+cargo clippy -p preview --all-targets -- -D warnings
 ```
 
-Pass `--target wasm32-unknown-unknown` to clippy — the default host target compiles a
-different feature set and will not catch what CI catches.
+The two clippy invocations are not interchangeable. `portfolio` must be checked against
+`wasm32-unknown-unknown`, since the host target compiles a different feature set and will
+not catch what CI catches. `preview` must be checked against the **host** target, because
+`tokio`'s networking does not build for wasm at all. Never use `--workspace` here.
 
 ## How Tailwind is wired
 
@@ -82,7 +85,7 @@ Avoid interactive `jj` commands, since stdin is not a terminal:
 
 `.github/workflows/ci.yml` has two jobs:
 
-- `lint` — `cargo fmt --all --check` and the clippy command above
+- `lint` — `cargo fmt --all --check` and both clippy commands above
 - `build` — installs Bun and a pinned Trunk (`TRUNK_VERSION`, downloaded straight from
   the `trunk-rs/trunk` GitHub release), runs `trunk build --release`, uploads `dist/`
 

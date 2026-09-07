@@ -28,8 +28,11 @@ jobs:
       - name: rustfmt
         run: cargo fmt --all --check
 
-      - name: clippy
-        run: cargo clippy --target wasm32-unknown-unknown --all-targets -- -D warnings
+      - name: clippy (app, wasm target)
+        run: cargo clippy -p portfolio --target wasm32-unknown-unknown --all-targets -- -D warnings
+
+      - name: clippy (preview, host target)
+        run: cargo clippy -p preview --all-targets -- -D warnings
 
   build:
     name: trunk build
