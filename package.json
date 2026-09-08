@@ -1,0 +1,14 @@
+{
+	"name": "portfolio-css",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"css": "bunx --bun @tailwindcss/cli -i styles/tailwind.css -o styles/generated.css --minify",
+		"css:watch": "bunx --bun @tailwindcss/cli -i styles/tailwind.css -o styles/generated.css --watch"
+	},
+	"devDependencies": {
+		"@tailwindcss/cli": "^4.2.2",
+		"@tailwindcss/typography": "^0.5.20",
+		"tailwindcss": "^4.2.2"
+	}
+}

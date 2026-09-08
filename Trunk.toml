@@ -1,0 +1,19 @@
+[build]
+target = "index.html"
+dist = "dist"
+
+[serve]
+port = 8080
+open = false
+
+[[hooks]]
+stage = "pre_build"
+command = "bun"
+command_arguments = ["run", "css"]
+
+# Renders every route into its own file. Pages has no rewrite rules, and a CSR shell
+# would leave crawlers an empty body.
+[[hooks]]
+stage = "post_build"
+command = "cargo"
+command_arguments = ["run", "--quiet", "--release", "-p", "prerender"]

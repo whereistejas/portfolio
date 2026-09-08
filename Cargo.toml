@@ -1,0 +1,38 @@
+[workspace]
+members = ["preview", "prerender", "readwise", "site"]
+resolver = "3"
+
+[package]
+name = "portfolio"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+console_error_panic_hook = "0.1"
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = [
+	"CssStyleDeclaration",
+	"Document",
+	"Element",
+	"Event",
+	"EventTarget",
+	"HtmlElement",
+	"KeyboardEvent",
+	"Window",
+] }
+
+# Tuned for wasm payload rather than compile speed; `portfolio` is the only member that
+# ships to the browser.
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "z"
+panic = "abort"
+strip = true
+
+# `preview` never ships anywhere, so spare it the size-optimised settings above. `lto` and
+# `panic` cannot be overridden per package, but these two are what actually cost time.
+[profile.release.package.preview]
+codegen-units = 16
+opt-level = 1

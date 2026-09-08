@@ -1,0 +1,141 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Required by actions/deploy-pages; `contents: read` is enough because nothing is
+# committed back to the repo.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# A superseded deploy is worth cancelling, but never mid-deployment.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  CARGO_TERM_COLOR: always
+  TRUNK_VERSION: "0.21.14"
+
+jobs:
+  lint:
+    name: fmt + clippy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+          targets: wasm32-unknown-unknown
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: rustfmt
+        run: cargo fmt --all --check
+
+      # Per package on purpose, never --workspace: `site` carries no leptos feature of
+      # its own, so --workspace would turn on both `csr` (from portfolio) and `ssr`
+      # (from prerender) at once. `prerender` and `preview` are host-only besides.
+      - name: clippy (views, wasm target)
+        run: cargo clippy -p site --target wasm32-unknown-unknown --all-targets -- -D warnings
+
+      - name: clippy (browser bundle, wasm target)
+        run: cargo clippy -p portfolio --target wasm32-unknown-unknown --all-targets -- -D warnings
+
+      - name: clippy (prerender, host target)
+        run: cargo clippy -p prerender --all-targets -- -D warnings
+
+      - name: clippy (preview, host target)
+        run: cargo clippy -p preview --all-targets -- -D warnings
+
+      - name: clippy (readwise, host target)
+        run: cargo clippy -p readwise --all-targets -- -D warnings
+
+      # Checks the cache refresher's date and author formatting against every item in
+      # the committed cache. Needs no token, so it runs on every push.
+      - name: test
+        run: cargo test -p readwise
+
+  build:
+    name: trunk build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install CSS toolchain
+        run: bun install --frozen-lockfile
+
+      - name: Install Trunk
+        run: |
+          curl -fsSL "https://github.com/trunk-rs/trunk/releases/download/v${TRUNK_VERSION}/trunk-x86_64-unknown-linux-gnu.tar.gz" \
+            | tar -xzf - -C /usr/local/bin trunk
+          trunk --version
+
+      # Runs site's build.rs (photos, feed, posts), the pre_build Tailwind hook, and
+      # the post_build hook that prerenders every route.
+      - name: Build
+        run: trunk build --release
+
+      # These failure modes are invisible to the build and only show up to a reader:
+      # a route without its own file 404s on Pages, and a page whose markup was not
+      # spliced in looks fine but reads empty.
+      - name: Check the output tree
+        run: |
+          set -eu
+          for path in index.html 404.html blog/index.html inbox/index.html \
+                      archive/index.html info/index.html; do
+            test -f "dist/$path" || { echo "missing dist/$path"; exit 1; }
+          done
+
+          posts=$(find dist/posts -name index.html | wc -l)
+          test "$posts" -gt 0 || { echo "no post routes were emitted"; exit 1; }
+
+          # Prerendering is the point: assert the content is really in the HTML,
+          # rather than trusting that the hook ran.
+          grep -q 'feed-item' dist/archive/index.html \
+            || { echo "archive/index.html has no feed items: prerender did not run"; exit 1; }
+          grep -q 'id="carousel"' dist/index.html \
+            || { echo "index.html has no carousel: prerender did not run"; exit 1; }
+
+          # generated/ holds build intermediates and must not reach the deployment.
+          test ! -e dist/feed.json || { echo "feed.json should not ship"; exit 1; }
+
+          echo "dist/ tree looks right ($posts post routes)"
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    name: deploy to Pages
+    # Only the default branch deploys; pull requests stop after build.
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: [lint, build]
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
