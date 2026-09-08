@@ -165,6 +165,9 @@ fn quote(value: &str) -> String {
 }
 
 const SOURCE: &str = "content/posts";
+/// Month abbreviations as en-GB renders them. Note **"Sept"**: current CLDR abbreviates
+/// September with four letters in en-GB, and the reading lists use the same
+/// spelling, so the two date formats on the site agree. Kept in step with `readwise/src/main.rs`.
 const MONTHS: [&str; 12] = [
-    "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec",
 ];

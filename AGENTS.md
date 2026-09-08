@@ -10,6 +10,7 @@ Four workspace members:
 | --- | --- | --- |
 | `site/` | host + wasm | the views, as a library so they compile for both |
 | `prerender/` | host | renders each route to a complete HTML file |
+| `readwise/` | host | refreshes the committed Readwise cache from the API |
 | `portfolio` (root) | wasm | behaviour only: carousel index, accordion toggles |
 | `preview/` | host | static file server imitating GitHub Pages |
 
@@ -61,7 +62,12 @@ cargo clippy -p site --target wasm32-unknown-unknown --all-targets -- -D warning
 cargo clippy -p portfolio --target wasm32-unknown-unknown --all-targets -- -D warnings
 cargo clippy -p prerender --all-targets -- -D warnings
 cargo clippy -p preview --all-targets -- -D warnings
+cargo clippy -p readwise --all-targets -- -D warnings
+cargo test -p readwise
 ```
+
+`readwise` is the only package with tests; `cargo test -p readwise` checks its date and
+author formatting against all 601 items in the committed cache, which needs no token.
 
 These are not interchangeable, and **`--workspace` must never be used**. `site` and
 `portfolio` are checked for wasm; `prerender` and `preview` only build for the host,
@@ -196,6 +202,27 @@ from a borrowed item therefore cannot outlive the resource guard it was read fro
 So: components take `String`/`Vec<String>`/`Item` by value and destructure them, rather
 than taking `&Item`. If you hit `E0515` in a view function, this is why.
 
+## Refreshing the Readwise cache
+
+`content/cache-processed.json` is committed, so a checkout builds with no token and the
+API is only contacted deliberately:
+
+```bash
+READWISE_TOKEN=… cargo run -p readwise
+```
+
+This is `refreshProcessedCache` from `content/readwise.ts`. Two endpoints are joined:
+`v3/list` has the documents but no highlight text, `v2/export` has the highlights keyed by
+source URL rather than document id, so they join on a **normalised URL** (fragment
+removed, trailing slash dropped). Output is written through `serde_json::Value`, whose
+maps are ordered, reproducing `writeJsonCache`'s sorted keys and 2-space indent so a
+refresh yields a reviewable diff.
+
+**Dates use "Sept", not "Sep".** Current CLDR abbreviates September with four letters in
+en-GB, and the committed cache was produced by a runtime that did so; 19 entries depend on
+it. Some ICU builds disagree, so this is a hand-written table in two places —
+`readwise/src/main.rs` and `site/build/posts.rs` — that must stay in step.
+
 ## Porting reference
 
 The Astro original is `../portfolio`. Every ported file names its source in a module
@@ -207,5 +234,4 @@ doc comment, so `rg -n "[Pp]orted from" src build` is the fastest way to map the
   One item has a `null` summary despite `processedItemSchema` declaring a plain string;
   `build/feed.rs` tolerates it
 
-Still unported: the Readwise API fetch itself (the cache is committed, so builds work
-without a token, but nothing refreshes it) and `components/posthog.astro`.
+`components/posthog.astro` is deliberately not ported: the analytics are being dropped.

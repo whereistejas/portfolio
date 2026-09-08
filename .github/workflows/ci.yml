@@ -55,6 +55,14 @@ jobs:
       - name: clippy (preview, host target)
         run: cargo clippy -p preview --all-targets -- -D warnings
 
+      - name: clippy (readwise, host target)
+        run: cargo clippy -p readwise --all-targets -- -D warnings
+
+      # Checks the cache refresher's date and author formatting against every item in
+      # the committed cache. Needs no token, so it runs on every push.
+      - name: test
+        run: cargo test -p readwise
+
   build:
     name: trunk build
     runs-on: ubuntu-latest

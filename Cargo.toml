@@ -1,5 +1,5 @@
 [workspace]
-members = ["preview", "prerender", "site"]
+members = ["preview", "prerender", "readwise", "site"]
 resolver = "3"
 
 [package]

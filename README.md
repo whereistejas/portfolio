@@ -40,6 +40,7 @@ A four-member Cargo workspace:
 | --- | --- | --- |
 | `site/` | host + wasm | the views, as a library so they compile for both |
 | `prerender/` | host | renders each route to a complete HTML file |
+| `readwise/` | host | refreshes the committed Readwise cache from the API |
 | `portfolio` (root) | wasm | behaviour only: carousel index, accordion toggles |
 | `preview/` | host | static file server imitating GitHub Pages |
 
@@ -142,6 +143,8 @@ cargo clippy -p site --target wasm32-unknown-unknown --all-targets -- -D warning
 cargo clippy -p portfolio --target wasm32-unknown-unknown --all-targets -- -D warnings
 cargo clippy -p prerender --all-targets -- -D warnings
 cargo clippy -p preview --all-targets -- -D warnings
+cargo test -p readwise           # validates formatting against the committed cache
+READWISE_TOKEN=… cargo run -p readwise   # refresh content/cache-processed.json
 ```
 
 Per package on purpose. `site` and `portfolio` need
@@ -199,9 +202,12 @@ markup did not get spliced in looks fine to the build but empty to a reader.
 
 ## Not done yet
 
-**Refreshing the Readwise cache.** `content/cache-processed.json` is committed, so builds
-need no API token — but nothing fetches new documents. The Astro repo did this in
-`src/content/readwise.ts` against the Readwise API, and CI committed the refreshed cache
-back to `main`.
+**Scheduled cache refresh.** `cargo run -p readwise` fetches from the API, but nothing
+runs it on a schedule yet. The Astro repo refreshed nightly in CI and committed the
+result back to `main`; that workflow is not ported, so the cache only moves when someone
+runs the command.
 
-**Analytics.** `components/posthog.astro` is not ported.
+**Pagination.** `archive/index.html` is 847 KB as a single document (220 KB gzipped).
+Fine over gzip, but if the archive keeps growing it will want splitting.
+
+Analytics are gone on purpose — `components/posthog.astro` is not ported.
