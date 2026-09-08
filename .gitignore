@@ -1,39 +1,8 @@
-# build output
+# The Astro site is gone. Its dependencies and build output are still on disk, so this
+# stays behind to keep them out of the tree; the Rust port replaces it with its own.
 dist/
-.vercel/
-
-# generated types
-.astro/
-
-# dependencies
 node_modules/
-
-# logs
-bun-debug.log*
-
-# environment variables
+.astro/
 .env
 .env.production
-
-# macOS-specific files
 .DS_Store
-
-# jetbrains setting folder
-.idea/
-
-# claude code local settings
-.claude/settings.local.json
-
-# test artifacts
-test-results/
-playwright-report/
-
-# cache
-tmp/
-.readwise-cache/
-
-# deprecated readwise caches (replaced by cache-processed.json)
-src/content/cache-highlights.json
-src/content/cache-summary.json
-src/content/cache-group.json
-src/content/cache-display.json
