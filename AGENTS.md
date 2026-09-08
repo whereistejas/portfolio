@@ -93,8 +93,17 @@ ordering is manual.
 ## Version control
 
 Use `jj`, not `git` (the repo is colocated). Commit regularly — one logical change per
-commit, `cargo fmt` and `clippy` clean at each step. Never push; leave commits local for
-review. See the commit-history rules in [`STYLE.md`](./STYLE.md#commit-history).
+commit, `cargo fmt` and `clippy` clean at each step. See the commit-history rules in
+[`STYLE.md`](./STYLE.md#commit-history).
+
+**Never push to `main`.** `main` is what CI deploys to Pages; it only ever moves through a
+reviewed merge, never from an agent. This holds even if asked in the moment — confirm the
+target branch first. Other branches may be pushed, through `jj` rather than `git`:
+
+- `jj bookmark set <name> -r <rev>`, then `jj git push --bookmark <name> --remote origin`
+- add `--allow-new` for a branch the remote has not seen
+- never `jj git push --all` or `--tracked`, which can carry `main` along with it
+- never force-push or rewrite history that has already been pushed
 
 Avoid interactive `jj` commands, since stdin is not a terminal:
 
