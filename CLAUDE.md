@@ -57,7 +57,12 @@ Five top-level pages (`src/pages/{index,blog,inbox,archive,info}.astro`) share `
 ## Version control and change hygiene
 
 - The repo is colocated with both `.git/` and `.jj/`. If Jujutsu is in use locally, prefer `jj` commands over raw `git` so you don't fight the jj workflow.
-- Never push; leave commits local for the user to review.
+- **Never push to `main`.** `main` is what CI deploys to Pages; it only ever moves through a reviewed merge, never from an agent. This holds even if asked in the moment — confirm the target branch first.
+- Pushing other branches is allowed, and must go through `jj`, never `git push`:
+  - `jj bookmark set <name> -r <rev>` then `jj git push --bookmark <name>`
+  - `jj git push --bookmark <name> --allow-new` for a branch the remote has not seen
+  - Never `jj git push --all` or `--tracked`, which can carry `main` along with it
+- Never force-push or rewrite history that has already been pushed.
 - When preparing changes for review, split noisy refactors from substantive work and keep commits in a logical order.
 
 ## Planning notes
