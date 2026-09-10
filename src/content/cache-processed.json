@@ -7897,6 +7897,19 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "",
+    "category": "article",
+    "date_group": "09 Sept 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-09-09T16:19:50.227Z",
+    "location": "new",
+    "readwise_id": "01m23ffvakcjazpefczsk7rgwt",
+    "summary": "Solaris uses turnstiles to manage blocking locks efficiently and handle priority inversion problems. Turnstiles track waiting threads and help boost priorities along chains of lock owners. This system improves latency for high-priority tasks without making locks too large or complex.",
+    "title": "Solaris Turnstiles",
+    "url": "https://rdmsr.github.io/writing/turnstiles/"
+  },
+  {
     "author": "Ed West",
     "category": "article",
     "date_group": "05 Sept 2026",
