@@ -51,6 +51,44 @@ export const readwiseExportResponseSchema = z.object({
 	nextPageCursor: z.coerce.string().nullable(),
 });
 
+export const matterStatusSchema = z.enum(["inbox", "queue", "archive"]);
+export type MatterStatus = z.infer<typeof matterStatusSchema>;
+
+export const matterItemSchema = z.object({
+	id: z.string(),
+	title: z.string(),
+	url: z.string(),
+	status: matterStatusSchema.nullable(),
+	content_type: z.enum([
+		"article",
+		"video",
+		"podcast",
+		"pdf",
+		"tweet",
+		"newsletter",
+	]),
+	author: z.object({ name: z.string() }).nullable().optional(),
+	excerpt: z.string().nullable().optional(),
+	updated_at: z.string(),
+});
+export type MatterItem = z.infer<typeof matterItemSchema>;
+
+export const matterAnnotationSchema = z.object({
+	id: z.string(),
+	item_id: z.string(),
+	text: z.string(),
+	created_at: z.string(),
+});
+export type MatterAnnotation = z.infer<typeof matterAnnotationSchema>;
+
+export function matterListSchema<T extends z.ZodType>(result: T) {
+	return z.object({
+		results: z.array(result),
+		has_more: z.boolean(),
+		next_cursor: z.string().nullable().optional(),
+	});
+}
+
 export const rawCacheItemSchema = z.object({
 	id: z.string(),
 	url: z.string(),

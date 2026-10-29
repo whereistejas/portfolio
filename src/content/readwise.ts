@@ -8,7 +8,11 @@ import type {
 	ReadwiseQueueItem,
 } from "./types.ts";
 import { processedItemSchema, readwiseExportResponseSchema } from "./types.ts";
-import { PROCESSED_CACHE_PATH, writeJsonCache } from "./utils.ts";
+import {
+	normalizeUrlForJoin,
+	PROCESSED_CACHE_PATH,
+	writeJsonCache,
+} from "./utils.ts";
 
 function cleanAuthor(raw: string | null | undefined): string {
 	if (!raw) return "";
@@ -16,19 +20,6 @@ function cleanAuthor(raw: string | null | undefined): string {
 	if (!trimmed || trimmed.toLowerCase() === "unknown") return "";
 	if (/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(trimmed)) return "";
 	return trimmed;
-}
-
-function normalizeUrlForJoin(input: string): string {
-	try {
-		const url = new URL(input);
-		url.hash = "";
-		if (url.pathname.length > 1 && url.pathname.endsWith("/")) {
-			url.pathname = url.pathname.slice(0, -1);
-		}
-		return url.toString();
-	} catch {
-		return input.trim();
-	}
 }
 
 function parseRetryAfter(value: string): number {
@@ -190,8 +181,10 @@ async function fetchAllReadwiseReaderItems(
 	);
 }
 
-async function loadProcessedCache(): Promise<ProcessedItem[]> {
-	const file = Bun.file(PROCESSED_CACHE_PATH);
+export async function loadProcessedCache(
+	path: string = PROCESSED_CACHE_PATH
+): Promise<ProcessedItem[]> {
+	const file = Bun.file(path);
 	if (!(await file.exists())) {
 		return [];
 	}
@@ -206,10 +199,7 @@ async function loadProcessedCache(): Promise<ProcessedItem[]> {
 			.filter((r): r is { success: true; data: ProcessedItem } => r.success)
 			.map((r) => r.data);
 	} catch (err) {
-		console.warn(
-			`[readwise] Failed to parse ${PROCESSED_CACHE_PATH}, returning empty:`,
-			err
-		);
+		console.warn(`[readwise] Failed to parse ${path}, returning empty:`, err);
 		return [];
 	}
 }
