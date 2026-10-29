@@ -1,16 +1,15 @@
+import { MatterClient } from "./matter.ts";
 import type {
-	FetchReadwiseOptions,
+	MatterItem,
 	ProcessedItem,
 	ReadwiseArchiveItem,
-	ReadwiseCategory,
-	ReadwiseItem,
-	ReadwiseLocation,
 	ReadwiseQueueItem,
 } from "./types.ts";
-import { processedItemSchema, readwiseExportResponseSchema } from "./types.ts";
+import { processedItemSchema } from "./types.ts";
 import {
 	normalizeUrlForJoin,
 	PROCESSED_CACHE_PATH,
+	READWISE_FROZEN_PATH,
 	writeJsonCache,
 } from "./utils.ts";
 
@@ -22,40 +21,13 @@ function cleanAuthor(raw: string | null | undefined): string {
 	return trimmed;
 }
 
-function parseRetryAfter(value: string): number {
-	const seconds = Number(value);
-	if (Number.isFinite(seconds) && seconds >= 0) return seconds;
-	const date = Date.parse(value);
-	if (!Number.isNaN(date)) {
-		return Math.max(0, Math.ceil((date - Date.now()) / 1000));
-	}
-	return 60;
-}
+type Highlights = { texts: string[]; lastHighlightedAt: string | null };
 
-async function fetchWithRetry(
-	url: string,
-	init: RequestInit,
-	maxAttempts = 5
-): Promise<Response> {
-	for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-		const response = await fetch(url, init);
-		if (response.status !== 429 || attempt === maxAttempts) {
-			return response;
-		}
-		const retryAfter = response.headers.get("retry-after");
-		const waitSeconds = retryAfter ? parseRetryAfter(retryAfter) : 60;
-		console.log(
-			`[readwise] 429 rate limited, waiting ${waitSeconds}s (attempt ${attempt}/${maxAttempts})`
-		);
-		await new Promise((resolve) => setTimeout(resolve, waitSeconds * 1000));
-	}
-	throw new Error("fetchWithRetry: unreachable");
+function joinKeys(url: string): string[] {
+	const exact = normalizeUrlForJoin(url);
+	const withoutQuery = exact.replace(/\?.*$/, "");
+	return withoutQuery === exact ? [exact] : [exact, withoutQuery];
 }
-
-type HighlightsBySourceUrl = Map<
-	string,
-	{ texts: string[]; lastHighlightedAt: string | null }
->;
 
 function pickLatest(a: string | null, b: string | null): string | null {
 	if (!a) return b;
@@ -63,122 +35,18 @@ function pickLatest(a: string | null, b: string | null): string | null {
 	return a > b ? a : b;
 }
 
-async function fetchAllReadwiseHighlightsBySourceUrl(
-	token: string
-): Promise<HighlightsBySourceUrl> {
-	const baseUrl = "https://readwise.io/api/v2/export/";
-	const highlightsBySourceUrl: HighlightsBySourceUrl = new Map();
-	let nextPageCursor: string | null = null;
-
-	do {
-		const url = new URL(baseUrl);
-		if (nextPageCursor) {
-			url.searchParams.set("pageCursor", nextPageCursor);
-		}
-
-		const response = await fetchWithRetry(url.toString(), {
-			headers: {
-				Authorization: `Token ${token}`,
-			},
-		});
-
-		if (!response.ok) {
-			throw new Error(
-				`Failed to fetch highlights from export API: ${response.status} ${response.statusText}`
-			);
-		}
-
-		const data = readwiseExportResponseSchema.parse(await response.json());
-		for (const book of data.results) {
-			if (book.is_deleted || !book.source_url) {
-				continue;
-			}
-
-			const activeHighlights = book.highlights.filter((h) => !h.is_deleted);
-			const texts = activeHighlights
-				.map((h) => h.text)
-				.filter((text) => text.length > 0);
-
-			if (texts.length === 0) {
-				continue;
-			}
-
-			const lastHighlightedAt = activeHighlights.reduce<string | null>(
-				(acc, h) => pickLatest(acc, h.highlighted_at),
-				null
-			);
-
-			const key = normalizeUrlForJoin(book.source_url);
-			const existing = highlightsBySourceUrl.get(key);
-			if (existing) {
-				existing.texts.push(...texts);
-				existing.lastHighlightedAt = pickLatest(
-					existing.lastHighlightedAt,
-					lastHighlightedAt
-				);
-			} else {
-				highlightsBySourceUrl.set(key, { texts, lastHighlightedAt });
-			}
-		}
-
-		nextPageCursor = data.nextPageCursor;
-	} while (nextPageCursor);
-
-	return highlightsBySourceUrl;
-}
-
-async function fetchAllReadwiseReaderItems(
-	options: FetchReadwiseOptions
-): Promise<ReadwiseItem[]> {
-	const { token, location, category, updatedAfter, withHtmlContent } = options;
-
-	const baseUrl = "https://readwise.io/api/v3/list/";
-	const items: ReadwiseItem[] = [];
-	let nextPageCursor: string | null = null;
-
-	do {
-		const url = new URL(baseUrl);
-		if (location) url.searchParams.set("location", location);
-		if (category) url.searchParams.set("category", category);
-		if (updatedAfter) url.searchParams.set("updatedAfter", updatedAfter);
-		if (withHtmlContent != null)
-			url.searchParams.set("withHtmlContent", String(withHtmlContent));
-		if (nextPageCursor) url.searchParams.set("pageCursor", nextPageCursor);
-
-		const response = await fetchWithRetry(url.toString(), {
-			headers: {
-				Authorization: `Token ${token}`,
-			},
-		});
-
-		if (!response.ok) {
-			throw new Error(
-				`Failed to fetch Reader items: ${response.status} ${response.statusText}`
-			);
-		}
-
-		const data = await response.json();
-		const docs = data.results ?? [];
-
-		for (const doc of docs) {
-			items.push({
-				id: doc.id,
-				url: new URL(doc.source_url),
-				last_moved_at: new Date(doc.last_moved_at),
-				title: doc.title,
-				summary: doc.summary,
-				author: cleanAuthor(doc.author),
-				location: doc.location as ReadwiseLocation,
-				category: doc.category as ReadwiseCategory,
-			});
-		}
-
-		nextPageCursor = data.nextPageCursor || null;
-	} while (nextPageCursor);
-
-	return items.sort(
-		(a, b) => b.last_moved_at.getTime() - a.last_moved_at.getTime()
-	);
+async function fetchHighlights(
+	client: MatterClient,
+	itemId: string
+): Promise<Highlights> {
+	const annotations = await client.listAnnotations(itemId);
+	return {
+		texts: annotations.map((a) => a.text).filter((text) => text.length > 0),
+		lastHighlightedAt: annotations.reduce<string | null>(
+			(acc, a) => pickLatest(acc, new Date(a.created_at).toISOString()),
+			null
+		),
+	};
 }
 
 export async function loadProcessedCache(
@@ -205,12 +73,11 @@ export async function loadProcessedCache(
 }
 
 function toProcessedItem(
-	item: ReadwiseItem,
-	highlightsBySourceUrl: HighlightsBySourceUrl
+	item: MatterItem,
+	highlights: Highlights
 ): ProcessedItem {
-	const joinKey = normalizeUrlForJoin(item.url.href);
-	const bundle = highlightsBySourceUrl.get(joinKey);
-	const dateGroup = item.last_moved_at
+	const movedAt = new Date(item.updated_at);
+	const dateGroup = movedAt
 		.toLocaleDateString("en-GB", {
 			day: "2-digit",
 			month: "short",
@@ -221,41 +88,97 @@ function toProcessedItem(
 	return {
 		readwise_id: item.id,
 		title: item.title,
-		url: item.url.href,
-		category: item.category ?? "article",
-		location: item.location,
-		last_moved_at: item.last_moved_at.toISOString(),
-		last_highlighted_at: bundle?.lastHighlightedAt ?? null,
+		url: new URL(item.url).href,
+		category: item.content_type ?? "article",
+		location: item.status === "archive" ? "archive" : "new",
+		last_moved_at: movedAt.toISOString(),
+		last_highlighted_at: highlights.lastHighlightedAt,
 		date_group: dateGroup,
-		highlights: bundle?.texts ?? [],
-		summary: item.summary,
-		author: item.author ?? "",
+		highlights: highlights.texts,
+		summary: item.excerpt ?? "",
+		author: cleanAuthor(item.author?.name),
 	};
 }
 
 /**
- * Fetch both archive and queue items plus highlights from the Readwise API
- * and write them to `cache-processed.json`. Called by `bun run build:queue`.
- * Astro loaders never hit the API directly — they read from the committed
- * cache.
+ * Rebuild `cache-processed.json` from the Matter queue and archive, plus the
+ * Readwise archive frozen in `cache-readwise.json`. Called by
+ * `bun run build:queue`. Astro loaders never hit the API directly — they read
+ * from the committed cache.
+ *
+ * Annotations are only fetched for items whose `updated_at` changed since the
+ * last refresh; Matter bumps it whenever an annotation is added. A Matter item
+ * without annotations keeps the Readwise highlights for the same URL.
  */
 export async function refreshProcessedCache(token: string): Promise<void> {
-	console.log("[readwise] Fetching archive + queue items from Readwise API...");
-	const [archiveItems, queueItems, highlightsBySourceUrl] = await Promise.all([
-		fetchAllReadwiseReaderItems({ token, location: "archive" }),
-		fetchAllReadwiseReaderItems({ token, location: "new" }),
-		fetchAllReadwiseHighlightsBySourceUrl(token),
+	console.log("[matter] Fetching queue + archive items from Matter API...");
+	const client = new MatterClient(token);
+	const [matterItems, previous, frozen] = await Promise.all([
+		client.listItems(["queue", "archive"]),
+		loadProcessedCache(),
+		loadProcessedCache(READWISE_FROZEN_PATH),
 	]);
 
-	const merged = new Map<string, ProcessedItem>();
-	for (const item of [...archiveItems, ...queueItems]) {
-		merged.set(item.id, toProcessedItem(item, highlightsBySourceUrl));
+	const previousById = new Map(
+		previous.map((item) => [item.readwise_id, item])
+	);
+	// Matter drops tracking parameters when it saves a URL, so a Readwise URL
+	// with a query string also matches the same URL without one.
+	const readwiseByUrl = new Map<string, ProcessedItem>();
+	for (const item of frozen) {
+		for (const key of joinKeys(item.url)) {
+			if (!readwiseByUrl.get(key)?.highlights.length) {
+				readwiseByUrl.set(key, item);
+			}
+		}
 	}
 
-	const items = Array.from(merged.values());
-	await writeJsonCache(PROCESSED_CACHE_PATH, items);
+	const items: ProcessedItem[] = [];
+	const matterUrls = new Set<string>();
+	let annotationFetches = 0;
+	for (const item of matterItems) {
+		const keys = joinKeys(item.url);
+		for (const key of keys) matterUrls.add(key);
+
+		const cached = previousById.get(item.id);
+		let highlights: Highlights;
+		if (cached?.last_moved_at === new Date(item.updated_at).toISOString()) {
+			highlights = {
+				texts: cached.highlights,
+				lastHighlightedAt: cached.last_highlighted_at,
+			};
+		} else {
+			annotationFetches++;
+			highlights = await fetchHighlights(client, item.id);
+		}
+
+		const readwise = keys
+			.map((key) => readwiseByUrl.get(key))
+			.find((match) => match !== undefined);
+		if (highlights.texts.length === 0 && readwise) {
+			highlights = {
+				texts: readwise.highlights,
+				lastHighlightedAt: readwise.last_highlighted_at,
+			};
+		}
+
+		items.push(toProcessedItem(item, highlights));
+	}
+
+	const readwiseArchive = frozen.filter(
+		(item) =>
+			item.location === "archive" &&
+			!joinKeys(item.url).some((key) => matterUrls.has(key))
+	);
+
+	const merged = [...items, ...readwiseArchive].sort((a, b) =>
+		b.last_moved_at.localeCompare(a.last_moved_at)
+	);
+	await writeJsonCache(PROCESSED_CACHE_PATH, merged);
+
+	const archived = items.filter((item) => item.location === "archive").length;
 	console.log(
-		`[readwise] Cached ${archiveItems.length} archive + ${queueItems.length} queue items (${items.length} total)`
+		`[matter] Cached ${archived} archive + ${items.length - archived} queue items from Matter and ${readwiseArchive.length} archive items from Readwise (${merged.length} total, annotations fetched for ${annotationFetches})`
 	);
 }
 
