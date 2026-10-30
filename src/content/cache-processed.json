@@ -2,15 +2,245 @@
   {
     "author": "Stephen Clark",
     "category": "article",
-    "date_group": "29 Oct 2026",
+    "date_group": "30 Oct 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T13:36:52.000Z",
+    "last_moved_at": "2026-10-30T04:08:58.000Z",
     "location": "archive",
     "readwise_id": "itm_9Ovbx",
     "summary": "Catch and release The DIA report doesn’t reveal much new about what the Chinese spaceplane does in orbit. China has launched four spaceplane missions since 2020 with durations of up to nine months.",
     "title": "China's top-secret spaceplane can't hide in low-Earth orbit",
     "url": "https://arstechnica.com/space/2026/10/chinas-top-secret-spaceplane-cant-hide-in-low-earth-orbit/"
+  },
+  {
+    "author": "hyperthesis",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [
+      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
+    ],
+    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
+    "last_moved_at": "2026-10-30T04:05:16.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1CyV",
+    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
+    "title": "The Bitter Lesson",
+    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
+  },
+  {
+    "author": "Benn Eifert",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T03:42:54.000Z",
+    "location": "archive",
+    "readwise_id": "itm_d2uI",
+    "summary": "The epic crash in stocks and crypto has been the big financial story of 2022. When the Fed raised rates, it exposed a lot of bad investments — as Warren Buffett once said, “Only when the tide goes out do you discover who's been swimming naked.” But it would be nice if investors could recognize the too-good-to-be-true stuff before the big crash, so as not to over-expose themselves in the first place",
+    "title": "On bullshit in investing",
+    "url": "https://noahpinion.substack.com/p/on-bullshit-in-investing"
+  },
+  {
+    "author": "Nan Ransohoff",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T03:26:34.000Z",
+    "location": "new",
+    "readwise_id": "itm_8JFzk",
+    "summary": "Putting this wave in context can give us clues about where we’re building from and what will likely need to evolve. The first wave of American philanthropy (~1880-1930) came out of industrial fortunes.",
+    "title": "The third wave of American philanthropy",
+    "url": "https://nanransohoff.substack.com/p/the-third-wave-of-american-philanthropy"
+  },
+  {
+    "author": "Aria Schrecker",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T03:04:11.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9O8Uf",
+    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
+    "title": "Young prudes",
+    "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
+    "author": "Felix Rieseberg",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T02:32:02.000Z",
+    "location": "new",
+    "readwise_id": "itm_9Ow5h",
+    "summary": "Hunger beats tenure. This post is my best advice for junior engineers, though “junior” is the wrong word. It’s really for engineers without social capital, status, or power.",
+    "title": "Hunger beats tenure: Advice for junior engineers",
+    "url": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
+  },
+  {
+    "author": "StillStackinAfterAllTheseYears",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T02:09:15.000Z",
+    "location": "new",
+    "readwise_id": "itm_8jdTa",
+    "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
+    "title": "Emily Wilson · An Uncomplicated Man",
+    "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T00:53:42.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9L6zm",
+    "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
+    "title": "Sichuan and the Sun Belt",
+    "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
+  },
+  {
+    "author": "Tim Urban",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T00:36:04.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9yv",
+    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
+    "title": "The AI Revolution: The Road to Superintelligence",
+    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "29 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-29T19:32:16.000Z",
+    "location": "new",
+    "readwise_id": "itm_9PeuY",
+    "summary": "",
+    "title": "https://spawn-queue.acm.org/doi/fullHtml/10.1145/3773095",
+    "url": "https://spawn-queue.acm.org/doi/fullHtml/10.1145/3773095"
+  },
+  {
+    "author": "Shoshannah Tekofsky",
+    "category": "article",
+    "date_group": "29 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-29T19:17:49.000Z",
+    "location": "archive",
+    "readwise_id": "itm_4m6os",
+    "summary": "Except it applies to all of life, and gets you looking at the world with a question mark on your brain, wondering what tiny new thing you could do today.",
+    "title": "Explore More: A Bag of Tricks to Keep Your Life on the Rails",
+    "url": "https://www.lesswrong.com/posts/uwmFSaDMprsFkpWet/explore-more-a-bag-of-tricks-to-keep-your-life-on-the-rails"
+  },
+  {
+    "author": "Dario Amodei",
+    "category": "article",
+    "date_group": "29 Oct 2026",
+    "highlights": [
+      "timescales",
+      "factors that limit",
+      "it’s dangerous to view companies as unilaterally shaping the world, and dangerous to view practical technological goals in essentially religious terms."
+    ],
+    "last_highlighted_at": "2024-11-18T13:24:11.000Z",
+    "last_moved_at": "2026-10-29T18:01:40.000Z",
+    "location": "archive",
+    "readwise_id": "itm_4qEzC",
+    "summary": "Machines of Loving Grace How AI Could Transform the World for the Better I think and talk a lot about the risks of powerful AI. The company I’m the CEO of, Anthropic, does a lot of research on how to reduce these risks.",
+    "title": "Machines of Loving Grace",
+    "url": "https://darioamodei.com/machines-of-loving-grace"
+  },
+  {
+    "author": "Leandro Ostera",
+    "category": "article",
+    "date_group": "29 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-29T17:50:44.000Z",
+    "location": "new",
+    "readwise_id": "itm_9PewF",
+    "summary": "This means we can really only return role in any of our constructors, so you probably don't need GADTs. Let's look at an example that does not need GADTs but uses them anyway.",
+    "title": "A quick guide to GADTs and why you ain't gonna need them",
+    "url": "https://leostera.substack.com/p/a-quick-guide-to-gadts-and-why-you"
+  },
+  {
+    "author": "Theresa Ronnie",
+    "category": "article",
+    "date_group": "29 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-29T17:31:37.000Z",
+    "location": "new",
+    "readwise_id": "itm_9Peui",
+    "summary": "On 6 April 2026, the Prototype Fast Breeder Reactor at Kalpakkam achieved first criticality. Seventy years after Homi Bhabha drew the blueprint, India has entered Stage II of its nuclear programme.",
+    "title": "Breaking news: The Prototype Fast Breeder Reactor at Kalpakkam achieves first criticality",
+    "url": "https://theclimatedesk.substack.com/p/breaking-news-the-prototype-fast"
+  },
+  {
+    "author": "danluu.com via lalitm",
+    "category": "article",
+    "date_group": "29 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-29T15:29:59.000Z",
+    "location": "new",
+    "readwise_id": "itm_9NXzl",
+    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
+    "title": "“We should be more ambitious with the software we build”",
+    "url": "https://danluu.com/ambitious/"
+  },
+  {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "29 Oct 2026",
+    "highlights": [
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-10-29T10:27:03.000Z",
+    "last_moved_at": "2026-10-29T15:08:46.000Z",
+    "location": "new",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Samuel Hughes",
+    "category": "article",
+    "date_group": "29 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-29T14:06:44.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Ez6W",
+    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
+    "title": "The seven vices of highly effective Victorians",
+    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
+  },
+  {
+    "author": "Kevin Kelly",
+    "category": "article",
+    "date_group": "29 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-29T14:05:04.000Z",
+    "location": "archive",
+    "readwise_id": "itm_H9Eg",
+    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
+    "title": "103 Bits of Advice I Wish I Had Known",
+    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
   },
   {
     "author": "whiteblossom",
@@ -28,32 +258,6 @@
     "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
     "title": "China’s Growth Machine",
     "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T13:33:48.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9L6zm",
-    "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
-    "title": "Sichuan and the Sun Belt",
-    "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
-  },
-  {
-    "author": "Felix Rieseberg",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T13:15:49.000Z",
-    "location": "new",
-    "readwise_id": "itm_9Ow5h",
-    "summary": "Hunger beats tenure. This post is my best advice for junior engineers, though “junior” is the wrong word. It’s really for engineers without social capital, status, or power.",
-    "title": "Hunger beats tenure: Advice for junior engineers",
-    "url": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
   },
   {
     "author": "Dario Amodei",
@@ -82,19 +286,6 @@
     "summary": "Over the past couple of years we’re seeing several new companies in the business to consumer space for promoting lifespan, healthspan, and generally the use of extensive testing to achieve early detection or prevent diseases.",
     "title": "The Business of Promoting Longevity and Healthspan",
     "url": "https://erictopol.substack.com/p/the-business-of-promoting-longevity"
-  },
-  {
-    "author": "Aria Schrecker",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T12:09:33.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9O8Uf",
-    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
-    "title": "Young prudes",
-    "url": "https://worksinprogress.co/issue/young-prudes/"
   },
   {
     "author": "Atul Gawande",
@@ -395,19 +586,6 @@
     "url": "https://thatvastvariety.substack.com/p/your-work-will-change-you-whether"
   },
   {
-    "author": "Leandro Ostera",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:18:26.000Z",
-    "location": "new",
-    "readwise_id": "itm_9PewF",
-    "summary": "This means we can really only return role in any of our constructors, so you probably don't need GADTs. Let's look at an example that does not need GADTs but uses them anyway.",
-    "title": "A quick guide to GADTs and why you ain't gonna need them",
-    "url": "https://leostera.substack.com/p/a-quick-guide-to-gadts-and-why-you"
-  },
-  {
     "author": "rrampage",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -445,19 +623,6 @@
     "summary": "In practical terms, this means Orchid is more likely to underestimate an embryo's risk of a disease for which you have a family history.",
     "title": "The Practical Guide to Superbabies",
     "url": "https://www.lesswrong.com/posts/PPLHfFhNWMuWCnaTt/the-practical-guide-to-superbabies-3"
-  },
-  {
-    "author": "Theresa Ronnie",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:18:05.000Z",
-    "location": "new",
-    "readwise_id": "itm_9Peui",
-    "summary": "On 6 April 2026, the Prototype Fast Breeder Reactor at Kalpakkam achieved first criticality. Seventy years after Homi Bhabha drew the blueprint, India has entered Stage II of its nuclear programme.",
-    "title": "Breaking news: The Prototype Fast Breeder Reactor at Kalpakkam achieves first criticality",
-    "url": "https://theclimatedesk.substack.com/p/breaking-news-the-prototype-fast"
   },
   {
     "author": "mattkeeter.com via tekknolagi",
@@ -536,19 +701,6 @@
     "summary": "Chinmay Tumbe is a faculty member of the Indian Institute of Management Ahmedabad, author of India Moving and The Age of Pandemics, and leads the India Pharma Archives project.",
     "title": "‘Made in India’: A fine exposition of the personal and professional in creating pharma brand Lupin",
     "url": "https://scroll.in/article/1091985/made-in-india-a-fine-exposition-of-the-personal-and-professional-in-creating-pharma-brand-lupin"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:17:37.000Z",
-    "location": "new",
-    "readwise_id": "itm_9PeuY",
-    "summary": "",
-    "title": "https://spawn-queue.acm.org/doi/fullHtml/10.1145/3773095",
-    "url": "https://spawn-queue.acm.org/doi/fullHtml/10.1145/3773095"
   },
   {
     "author": "h4x0r.org via eatonphil",
@@ -796,19 +948,6 @@
     "summary": "JNR labor unions of the 1980s were thoroughly out-maneuvered in the political dissolution of JNR into a rebirthed JR and left crushed by the transformation. Japan’s national rail unions are now a fraction of its former selves.",
     "title": "The Rise and Fall of Japan's National Public Railway Labor Unions",
     "url": "https://www.substack-bahn.net/p/the-rise-and-fall-of-japans-national"
-  },
-  {
-    "author": "Nan Ransohoff",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:15:50.000Z",
-    "location": "new",
-    "readwise_id": "itm_8JFzk",
-    "summary": "Putting this wave in context can give us clues about where we’re building from and what will likely need to evolve. The first wave of American philanthropy (~1880-1930) came out of industrial fortunes.",
-    "title": "The third wave of American philanthropy",
-    "url": "https://nanransohoff.substack.com/p/the-third-wave-of-american-philanthropy"
   },
   {
     "author": "S.Y. Lee",
@@ -1073,19 +1212,6 @@
     "url": "https://blog.burntsushi.net/unwrap/"
   },
   {
-    "author": "StillStackinAfterAllTheseYears",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:14:03.000Z",
-    "location": "new",
-    "readwise_id": "itm_8jdTa",
-    "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
-    "title": "Emily Wilson · An Uncomplicated Man",
-    "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
-  },
-  {
     "author": "Mohammed AlQuraishi",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -1203,22 +1329,6 @@
     "url": "https://getreuer.info/posts/keyboards/glossary/index.html"
   },
   {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-10-29T10:27:03.000Z",
-    "last_moved_at": "2026-10-29T10:35:13.000Z",
-    "location": "new",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
-  },
-  {
     "author": "Brian Potter",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -1230,19 +1340,6 @@
     "summary": "In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
     "title": "How SpaceX Streamlined the Raptor Engine",
     "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor"
-  },
-  {
-    "author": "Samuel Hughes",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T09:20:23.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Ez6W",
-    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
-    "title": "The seven vices of highly effective Victorians",
-    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
   },
   {
     "author": "Scott Adams",
@@ -1286,19 +1383,6 @@
     "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
     "title": "How to Write Usefully",
     "url": "http://paulgraham.com/useful.html"
-  },
-  {
-    "author": "danluu.com via lalitm",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T06:42:50.000Z",
-    "location": "new",
-    "readwise_id": "itm_9NXzl",
-    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
-    "title": "“We should be more ambitious with the software we build”",
-    "url": "https://danluu.com/ambitious/"
   },
   {
     "author": "Philpax",
@@ -1547,23 +1631,6 @@
     "url": "https://www.newyorker.com/newyorkercom/books/second-read/i-who-have-never-known-men-jacqueline-harpman-excerpt"
   },
   {
-    "author": "Dario Amodei",
-    "category": "article",
-    "date_group": "27 Oct 2026",
-    "highlights": [
-      "timescales",
-      "factors that limit",
-      "it’s dangerous to view companies as unilaterally shaping the world, and dangerous to view practical technological goals in essentially religious terms."
-    ],
-    "last_highlighted_at": "2024-11-18T13:24:11.000Z",
-    "last_moved_at": "2026-10-27T10:25:13.000Z",
-    "location": "archive",
-    "readwise_id": "itm_4qEzC",
-    "summary": "Machines of Loving Grace How AI Could Transform the World for the Better I think and talk a lot about the risks of powerful AI. The company I’m the CEO of, Anthropic, does a lot of research on how to reduce these risks.",
-    "title": "Machines of Loving Grace",
-    "url": "https://darioamodei.com/machines-of-loving-grace"
-  },
-  {
     "author": "Dan Luu",
     "category": "article",
     "date_group": "27 Oct 2026",
@@ -1590,34 +1657,6 @@
     "summary": "I ended up giving him a bit of a monologue. this is more or less what I told him.) okay, so this is the most common failure mode I’ve seen.",
     "title": "the senior engineer death spiral",
     "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/"
-  },
-  {
-    "author": "hyperthesis",
-    "category": "article",
-    "date_group": "27 Oct 2026",
-    "highlights": [
-      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
-    ],
-    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
-    "last_moved_at": "2026-10-27T00:24:04.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1CyV",
-    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
-    "title": "The Bitter Lesson",
-    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
-  },
-  {
-    "author": "Kevin Kelly",
-    "category": "article",
-    "date_group": "26 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-26T19:47:08.000Z",
-    "location": "archive",
-    "readwise_id": "itm_H9Eg",
-    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
-    "title": "103 Bits of Advice I Wish I Had Known",
-    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
   },
   {
     "author": "vismit2000",
@@ -1667,19 +1706,6 @@
     "summary": "You might have already noticed that 2026 seems to be a bit special year for Rust compiler. It seems like there's just a lot of stuff going on.",
     "title": "2026 is an exciting year for the Rust compiler (and me)",
     "url": "https://yoyo-code.com/2026-is-exciting-year-for-rust-compiler-and-me/"
-  },
-  {
-    "author": "Tim Urban",
-    "category": "article",
-    "date_group": "26 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-26T15:29:06.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9yv",
-    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
-    "title": "The AI Revolution: The Road to Superintelligence",
-    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
   },
   {
     "author": "Paul Graham",
@@ -1743,19 +1769,6 @@
     "summary": "Six American cities are now served by robotaxis made by Waymo. Understanding why Europe doesn’t have Google is important. Understanding why it doesn’t have a Tesla is existential.",
     "title": "Why Europe doesn’t have a Tesla",
     "url": "https://worksinprogress.co/issue/why-europe-doesnt-have-a-tesla/"
-  },
-  {
-    "author": "Benn Eifert",
-    "category": "article",
-    "date_group": "25 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-25T13:55:28.000Z",
-    "location": "archive",
-    "readwise_id": "itm_d2uI",
-    "summary": "The epic crash in stocks and crypto has been the big financial story of 2022. When the Fed raised rates, it exposed a lot of bad investments — as Warren Buffett once said, “Only when the tide goes out do you discover who's been swimming naked.” But it would be nice if investors could recognize the too-good-to-be-true stuff before the big crash, so as not to over-expose themselves in the first place",
-    "title": "On bullshit in investing",
-    "url": "https://noahpinion.substack.com/p/on-bullshit-in-investing"
   },
   {
     "author": "Ege Erdil",
@@ -1991,19 +2004,6 @@
     "summary": "Simply put, it is the total count of elementary operations (additions, multiplications, reads, writes…) that are executed during a computation, optionally weighted by their costs. Complexity is an old concept.",
     "title": "Complexity Models",
     "url": "https://en.algorithmica.org/hpc/complexity/"
-  },
-  {
-    "author": "Shoshannah Tekofsky",
-    "category": "article",
-    "date_group": "19 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-19T22:02:08.000Z",
-    "location": "archive",
-    "readwise_id": "itm_4m6os",
-    "summary": "Except it applies to all of life, and gets you looking at the world with a question mark on your brain, wondering what tiny new thing you could do today.",
-    "title": "Explore More: A Bag of Tricks to Keep Your Life on the Rails",
-    "url": "https://www.lesswrong.com/posts/uwmFSaDMprsFkpWet/explore-more-a-bag-of-tricks-to-keep-your-life-on-the-rails"
   },
   {
     "author": "Ted Chiang",
