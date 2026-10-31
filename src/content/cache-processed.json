@@ -1,5 +1,190 @@
 [
   {
+    "author": "Dario Amodei",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [
+      "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
+    ],
+    "last_highlighted_at": "2026-10-16T17:37:26.000Z",
+    "last_moved_at": "2026-10-31T03:24:32.000Z",
+    "location": "archive",
+    "readwise_id": "itm_94DoO",
+    "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
+    "title": "We Must Pace the Frontier",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
+  },
+  {
+    "author": "Samuel Hughes",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-31T02:20:02.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Ez6W",
+    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
+    "title": "The seven vices of highly effective Victorians",
+    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
+  },
+  {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T23:01:56.000Z",
+    "location": "new",
+    "readwise_id": "itm_9P8VF",
+    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
+    "title": "A love letter to a new kind of company",
+    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
+  },
+  {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-10-30T20:51:53.000Z",
+    "last_moved_at": "2026-10-30T22:35:29.000Z",
+    "location": "new",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Blake J. Harris",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T22:21:20.000Z",
+    "location": "new",
+    "readwise_id": "itm_9Ku0E",
+    "summary": "But if he really was willing to reach out to Larry, I said, please let him know that I didn’t want to ask a single question about Seinfeld or Curb.",
+    "title": "Why the creator of Seinfeld and Curb Your Enthusiasm is one of history’s purest founders",
+    "url": "https://colossus.com/article/many-failures-larry-david-profile/"
+  },
+  {
+    "author": "Matt Beard",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T21:48:42.000Z",
+    "location": "new",
+    "readwise_id": "itm_7wlys",
+    "summary": "Sometimes there are clear answers like a lack of meaning or personal fit, but occasionally people communicate that they’ve spent a decade twisting themselves into a shape that they don’t like.",
+    "title": "Your Work Will Change You Whether You Like It Or Not",
+    "url": "https://thatvastvariety.substack.com/p/your-work-will-change-you-whether"
+  },
+  {
+    "author": "Aria Schrecker",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T21:42:48.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9O8Uf",
+    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
+    "title": "Young prudes",
+    "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
+    "author": "Felix Rieseberg",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T21:08:03.000Z",
+    "location": "new",
+    "readwise_id": "itm_9Ow5h",
+    "summary": "Hunger beats tenure. This post is my best advice for junior engineers, though “junior” is the wrong word. It’s really for engineers without social capital, status, or power.",
+    "title": "Hunger beats tenure: Advice for junior engineers",
+    "url": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
+  },
+  {
+    "author": "danluu.com via lalitm",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T17:25:48.000Z",
+    "location": "new",
+    "readwise_id": "itm_9NXzl",
+    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
+    "title": "“We should be more ambitious with the software we build”",
+    "url": "https://danluu.com/ambitious/"
+  },
+  {
+    "author": "Nick",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [
+      "The cause of situational overload is too much noise. The cause of ambient overload is too much signal.",
+      "Ambient overload doesn’t involve needles in haystacks. It involves haystack-sized piles of needles. We experience ambient overload when we’re surrounded by so much information that is of immediate interest to us that we feel overwhelmed by the neverending pressure of trying to keep up with it all.",
+      "Information overload actually takes two forms, which I’ll call situational overload and ambient overload,",
+      "Better filters don’t mitigate information overload; they intensify it. It would be more accurate to say: “It’s not information overload. It’s filter success.”",
+      "“It’s not information overload. It’s filter failure.”"
+    ],
+    "last_highlighted_at": "2026-06-28T13:49:59.000Z",
+    "last_moved_at": "2026-10-30T16:52:04.000Z",
+    "location": "archive",
+    "readwise_id": "itm_5cNU",
+    "summary": "When we complain about information overload, what we’re usually complaining about is ambient overload. This is an altogether different beast. Ambient overload doesn’t involve needles in haystacks.",
+    "title": "Situational overload and ambient overload",
+    "url": "https://www.roughtype.com/?p=1464"
+  },
+  {
+    "author": "Nan Ransohoff",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T14:29:15.000Z",
+    "location": "new",
+    "readwise_id": "itm_8JFzk",
+    "summary": "Putting this wave in context can give us clues about where we’re building from and what will likely need to evolve. The first wave of American philanthropy (~1880-1930) came out of industrial fortunes.",
+    "title": "The third wave of American philanthropy",
+    "url": "https://nanransohoff.substack.com/p/the-third-wave-of-american-philanthropy"
+  },
+  {
+    "author": "Alice Ryhl",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [
+      "The basic idea behind an actor is to spawn a self-contained task that performs some job independently of other parts of the program. Typically these actors communicate with the rest of the program through the use of message passing channels."
+    ],
+    "last_highlighted_at": "2026-10-27T19:23:00.000Z",
+    "last_moved_at": "2026-10-30T13:54:24.000Z",
+    "location": "new",
+    "readwise_id": "itm_3ksIB",
+    "summary": "Actors sending messages to other actors There is nothing wrong with having actors send messages to other actors. To do this, you can simply give one actor the handle of some other actor.",
+    "title": "Actors with Tokio",
+    "url": "https://ryhl.io/blog/actors-with-tokio/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "30 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-30T05:07:56.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9L6zm",
+    "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
+    "title": "Sichuan and the Sun Belt",
+    "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
+  },
+  {
     "author": "Stephen Clark",
     "category": "article",
     "date_group": "30 Oct 2026",
@@ -41,45 +226,6 @@
     "url": "https://noahpinion.substack.com/p/on-bullshit-in-investing"
   },
   {
-    "author": "Nan Ransohoff",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T03:26:34.000Z",
-    "location": "new",
-    "readwise_id": "itm_8JFzk",
-    "summary": "Putting this wave in context can give us clues about where we’re building from and what will likely need to evolve. The first wave of American philanthropy (~1880-1930) came out of industrial fortunes.",
-    "title": "The third wave of American philanthropy",
-    "url": "https://nanransohoff.substack.com/p/the-third-wave-of-american-philanthropy"
-  },
-  {
-    "author": "Aria Schrecker",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T03:04:11.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9O8Uf",
-    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
-    "title": "Young prudes",
-    "url": "https://worksinprogress.co/issue/young-prudes/"
-  },
-  {
-    "author": "Felix Rieseberg",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T02:32:02.000Z",
-    "location": "new",
-    "readwise_id": "itm_9Ow5h",
-    "summary": "Hunger beats tenure. This post is my best advice for junior engineers, though “junior” is the wrong word. It’s really for engineers without social capital, status, or power.",
-    "title": "Hunger beats tenure: Advice for junior engineers",
-    "url": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
-  },
-  {
     "author": "StillStackinAfterAllTheseYears",
     "category": "article",
     "date_group": "30 Oct 2026",
@@ -91,19 +237,6 @@
     "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
     "title": "Emily Wilson · An Uncomplicated Man",
     "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T00:53:42.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9L6zm",
-    "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
-    "title": "Sichuan and the Sun Belt",
-    "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
   },
   {
     "author": "Tim Urban",
@@ -188,48 +321,6 @@
     "url": "https://theclimatedesk.substack.com/p/breaking-news-the-prototype-fast"
   },
   {
-    "author": "danluu.com via lalitm",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T15:29:59.000Z",
-    "location": "new",
-    "readwise_id": "itm_9NXzl",
-    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
-    "title": "“We should be more ambitious with the software we build”",
-    "url": "https://danluu.com/ambitious/"
-  },
-  {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-10-29T10:27:03.000Z",
-    "last_moved_at": "2026-10-29T15:08:46.000Z",
-    "location": "new",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
-  },
-  {
-    "author": "Samuel Hughes",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T14:06:44.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Ez6W",
-    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
-    "title": "The seven vices of highly effective Victorians",
-    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
-  },
-  {
     "author": "Kevin Kelly",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -258,21 +349,6 @@
     "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
     "title": "China’s Growth Machine",
     "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
-  },
-  {
-    "author": "Dario Amodei",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [
-      "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
-    ],
-    "last_highlighted_at": "2026-10-16T17:37:26.000Z",
-    "last_moved_at": "2026-10-29T12:20:46.000Z",
-    "location": "archive",
-    "readwise_id": "itm_94DoO",
-    "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
-    "title": "We Must Pace the Frontier",
-    "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
   },
   {
     "author": "Eric Topol",
@@ -571,19 +647,6 @@
     "summary": "Now, Sam has generously agreed to an interview and has asked to remain anonymous, hence the nom de plume (pseudonym). He doesn’t seek public attention and has a strong professional reputation.",
     "title": "“How to be a 10x engineer” - interview with a standout dev",
     "url": "https://newsletter.pragmaticengineer.com/p/how-to-be-a-10x-engineer-interview"
-  },
-  {
-    "author": "Matt Beard",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:18:36.000Z",
-    "location": "new",
-    "readwise_id": "itm_7wlys",
-    "summary": "Sometimes there are clear answers like a lack of meaning or personal fit, but occasionally people communicate that they’ve spent a decade twisting themselves into a shape that they don’t like.",
-    "title": "Your Work Will Change You Whether You Like It Or Not",
-    "url": "https://thatvastvariety.substack.com/p/your-work-will-change-you-whether"
   },
   {
     "author": "rrampage",
@@ -1437,19 +1500,6 @@
     "url": "https://arstechnica.com/tech-policy/2026/02/wikipedia-bans-archive-today-after-site-executed-ddos-and-altered-web-captures/"
   },
   {
-    "author": "Blake J. Harris",
-    "category": "article",
-    "date_group": "28 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-28T17:02:15.000Z",
-    "location": "new",
-    "readwise_id": "itm_9Ku0E",
-    "summary": "But if he really was willing to reach out to Larry, I said, please let him know that I didn’t want to ask a single question about Seinfeld or Curb.",
-    "title": "Why the creator of Seinfeld and Curb Your Enthusiasm is one of history’s purest founders",
-    "url": "https://colossus.com/article/many-failures-larry-david-profile/"
-  },
-  {
     "author": "sebg",
     "category": "article",
     "date_group": "28 Oct 2026",
@@ -1535,21 +1585,6 @@
     "summary": "In 1861, the American scientist and educator William Barton Rogers published a manifesto calling for a new kind of research institution. Recognizing t",
     "title": "We Need a New Science of Progress",
     "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
-  },
-  {
-    "author": "Alice Ryhl",
-    "category": "article",
-    "date_group": "27 Oct 2026",
-    "highlights": [
-      "The basic idea behind an actor is to spawn a self-contained task that performs some job independently of other parts of the program. Typically these actors communicate with the rest of the program through the use of message passing channels."
-    ],
-    "last_highlighted_at": "2026-10-27T19:23:00.000Z",
-    "last_moved_at": "2026-10-27T19:23:37.000Z",
-    "location": "new",
-    "readwise_id": "itm_3ksIB",
-    "summary": "Actors sending messages to other actors There is nothing wrong with having actors send messages to other actors. To do this, you can simply give one actor the handle of some other actor.",
-    "title": "Actors with Tokio",
-    "url": "https://ryhl.io/blog/actors-with-tokio/"
   },
   {
     "author": "ettolrach.com by ettolrach",
@@ -2307,25 +2342,6 @@
     "summary": "The analogy to manufacturing is that a combination of automation and modular platforms, defined by software, are both necessary and perhaps possible to build for the first time in a long time.",
     "title": "A Chance to Build",
     "url": "https://stratechery.com/2024/a-chance-to-build/"
-  },
-  {
-    "author": "Nick",
-    "category": "article",
-    "date_group": "24 Sept 2026",
-    "highlights": [
-      "The cause of situational overload is too much noise. The cause of ambient overload is too much signal.",
-      "Ambient overload doesn’t involve needles in haystacks. It involves haystack-sized piles of needles. We experience ambient overload when we’re surrounded by so much information that is of immediate interest to us that we feel overwhelmed by the neverending pressure of trying to keep up with it all.",
-      "Information overload actually takes two forms, which I’ll call situational overload and ambient overload,",
-      "Better filters don’t mitigate information overload; they intensify it. It would be more accurate to say: “It’s not information overload. It’s filter success.”",
-      "“It’s not information overload. It’s filter failure.”"
-    ],
-    "last_highlighted_at": "2026-06-28T13:49:59.000Z",
-    "last_moved_at": "2026-09-24T14:25:03.000Z",
-    "location": "archive",
-    "readwise_id": "itm_5cNU",
-    "summary": "When we complain about information overload, what we’re usually complaining about is ambient overload. This is an altogether different beast. Ambient overload doesn’t involve needles in haystacks.",
-    "title": "Situational overload and ambient overload",
-    "url": "https://www.roughtype.com/?p=1464"
   },
   {
     "author": "matklad@users.lobste.rs (matklad)",
