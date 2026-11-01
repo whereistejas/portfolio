@@ -2,12 +2,12 @@
   {
     "author": "Dario Amodei",
     "category": "article",
-    "date_group": "31 Oct 2026",
+    "date_group": "01 Nov 2026",
     "highlights": [
       "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
     ],
     "last_highlighted_at": "2026-10-16T17:37:26.000Z",
-    "last_moved_at": "2026-10-31T03:24:32.000Z",
+    "last_moved_at": "2026-11-01T04:29:59.000Z",
     "location": "archive",
     "readwise_id": "itm_94DoO",
     "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
@@ -15,12 +15,565 @@
     "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
   },
   {
-    "author": "Samuel Hughes",
+    "author": "Kevin Kelly",
     "category": "article",
-    "date_group": "31 Oct 2026",
+    "date_group": "01 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-10-31T02:20:02.000Z",
+    "last_moved_at": "2026-11-01T04:28:42.000Z",
+    "location": "archive",
+    "readwise_id": "itm_H9Eg",
+    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
+    "title": "103 Bits of Advice I Wish I Had Known",
+    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T04:27:53.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9L6zm",
+    "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
+    "title": "Sichuan and the Sun Belt",
+    "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
+  },
+  {
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [
+      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
+    ],
+    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
+    "last_moved_at": "2026-11-01T04:15:19.000Z",
+    "location": "archive",
+    "readwise_id": "itm_bioV",
+    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
+    "title": "Tips for Productivity, Thinking, and Doing",
+    "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Nathaniel J. Smith",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [
+      "nurseries.",
+      "thread spawning and callback registration"
+    ],
+    "last_highlighted_at": "2026-11-01T02:20:03.000Z",
+    "last_moved_at": "2026-11-01T02:22:59.000Z",
+    "location": "new",
+    "readwise_id": "itm_4yev",
+    "summary": "In the late 1960s, Edsger W. Dijkstra wrote a pair of now-famous papers that helped make this much clearer: Go to statement considered harmful, and Notes on structured programming (PDF).",
+    "title": "Notes on structured concurrency, or: Go statement considered harmful",
+    "url": "https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/"
+  },
+  {
+    "author": "Stefanos Baziotis",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:15:21.000Z",
+    "location": "new",
+    "readwise_id": "itm_58n2U",
+    "summary": "As a heads up, this article is only about large-scale, mainstream, general-purpose compilers like LLVM, GCC, and ICX. Some of the statements don't apply e.g., to domain-specific compilers or small-to-medium-scale compilers.",
+    "title": "Common Misconceptions about Compilers",
+    "url": "https://sbaziotis.com/compilers/common-misconceptions-about-compilers.html"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:15:03.000Z",
+    "location": "new",
+    "readwise_id": "itm_9PeuY",
+    "summary": "",
+    "title": "https://spawn-queue.acm.org/doi/fullHtml/10.1145/3773095",
+    "url": "https://spawn-queue.acm.org/doi/fullHtml/10.1145/3773095"
+  },
+  {
+    "author": "Abhinav Upadhyay",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:14:50.000Z",
+    "location": "new",
+    "readwise_id": "itm_8FjBV",
+    "summary": "Key Takeaway Virtual memory operates at the granularity of pages (4 KB chunks of virtual address space) that map to frames (4 KB chunks of physical memory).",
+    "title": "Virtual Memory: A Deep Dive into Page Tables, TLBs, and Linux Internals",
+    "url": "https://blog.codingconfessions.com/p/virtual-memory"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:14:50.000Z",
+    "location": "new",
+    "readwise_id": "itm_63X1M",
+    "summary": "Refer to the article for more complex examples. Data-parallel programming. Branchless programming is very important for SIMD applications because they don’t have branching in the first place.",
+    "title": "Branchless Programming",
+    "url": "https://en.algorithmica.org/hpc/pipelining/branchless/"
+  },
+  {
+    "author": "Yagiz Nizipli",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:14:50.000Z",
+    "location": "new",
+    "readwise_id": "itm_9KJdN",
+    "summary": "Eight bytes at a time Eight bytes fit in a uint64_t, and the arithmetic can run on all of them at once. The technique is called SWAR: SIMD within a register.",
+    "title": "Eight bytes in one register",
+    "url": "https://www.yagiz.co/eight-bytes-in-one-register"
+  },
+  {
+    "author": "Matthew Stoltenberg",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:14:50.000Z",
+    "location": "new",
+    "readwise_id": "itm_5mAWg",
+    "summary": "When trying to write fast functions operating over many bytes, we sometimes use ‘SWAR’. SWAR stands for SIMD Within A Register, and it is a technique to perform parallel computations on multiple data elements packed into a single word.",
+    "title": "Detect control characters, quotes and backslashes efficiently using ‘SWAR’",
+    "url": "https://lemire.me/blog/2025/04/13/detect-control-characters-quotes-and-backslashes-efficiently-using-swar/"
+  },
+  {
+    "author": "nnethercote.github.io via patchunwrap",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:14:09.000Z",
+    "location": "new",
+    "readwise_id": "itm_9C2rH",
+    "summary": "The technical term for this result is “a sea of green”. rustdoc In my last post I mentioned how Noah Lev got some enormous speed wins on rustdoc.",
+    "title": "How to speed up the Rust compiler in September 2026",
+    "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html"
+  },
+  {
+    "author": "redixhumayun.github.io via vi_mi",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:13:17.000Z",
+    "location": "new",
+    "readwise_id": "itm_86Wkm",
+    "summary": "For covariant lifetimes, Rust can shorten a longer-lived &amp;T into a shorter-lived &amp;T when needed, which allows us to elide the nested lifetimes and let the compiler infer the intermediate lifetimes for us.",
+    "title": "Zero-Copy Pages in Rust: Or How I Learned To Stop Worrying And Love Lifetimes",
+    "url": "https://redixhumayun.github.io/databases/2026/04/14/zero-copy-pages-in-rust.html"
+  },
+  {
+    "author": "hamy.xyz via deejayy",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:13:17.000Z",
+    "location": "new",
+    "readwise_id": "itm_84oKI",
+    "summary": "So I started doing research and reading the Rust book and building little prototypes. What I came up with was an approach that gets us ~80% of benefits of Rust for only ~20% of the pain.",
+    "title": "High-Level Rust: Getting 80% of the Benefits with 20% of the Pain",
+    "url": "https://hamy.xyz/blog/2026-01_high-level-rust"
+  },
+  {
+    "author": "Folkert de Vries",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:13:17.000Z",
+    "location": "new",
+    "readwise_id": "itm_85nhs",
+    "summary": "Next we plan to work on tail calls for extern \"Rust\" first, and separate tail calls for other calling conventions into their own feature. For extern \"Rust\" rustc fully controls the ABI across platforms.",
+    "title": "Rust should have stable tail calls",
+    "url": "https://trifectatech.org/blog/tail-calls-project-goal/"
+  },
+  {
+    "author": "jart",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:12:40.000Z",
+    "location": "new",
+    "readwise_id": "itm_4nIZj",
+    "summary": "Cosmopolitan mutexes were also 65x faster than Cygwin, which like Cosmopolitan provides a POSIX implementation on Windows. Cygwin's mutexes are so bad that they would have been better off for this use case just using a spin lock.",
+    "title": "The Fastest Mutexes",
+    "url": "https://justine.lol/mutex/"
+  },
+  {
+    "author": "h4x0r.org via eatonphil",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:12:40.000Z",
+    "location": "new",
+    "readwise_id": "itm_6hUwF",
+    "summary": "These days, any good locking primitive is going to be based on a futex. You should expect system libraries like pthreads will use the futex extensively. Wait, a futex isn’t a mutex?",
+    "title": "Without the futex, it's futile",
+    "url": "https://h4x0r.org/futex/"
+  },
+  {
+    "author": "Android Developers (noreply@blogger.com)",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:12:40.000Z",
+    "location": "new",
+    "readwise_id": "itm_7kuar",
+    "summary": "Posted by Shai Barack, Android Platform Performance Lead and Charles Munger, Principal Software Engineer In Android 17, apps targeting SDK 37 or higher will receive a new implementation of MessageQueue where the implementation is lock-free.",
+    "title": "Under the hood: Android 17’s lock-free MessageQueue",
+    "url": "https://android-developers.googleblog.com/2026/02/under-hood-android-17s-lock-free.html"
+  },
+  {
+    "author": "ibobev",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:12:40.000Z",
+    "location": "new",
+    "readwise_id": "itm_8rYF",
+    "summary": "But it’s still better than no dangling protection at all (like raw pointers), or a ‘fake memory leak’ which would happen in similar situations with smart pointers.",
+    "title": "Handles are the better pointers",
+    "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html"
+  },
+  {
+    "author": "xnacly",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:12:40.000Z",
+    "location": "new",
+    "readwise_id": "itm_73WM6",
+    "summary": "Segmented List As introduced in Segmented Lists vs Dynamic Arrays, a segmented list consists of segments. Each segment is lazily allocated and doubles in size to the previous one.",
+    "title": "Porting a Segmented List From C to Rust",
+    "url": "https://xnacly.me/posts/2025/porting-a-segmented-list-from-c-to-rust/"
+  },
+  {
+    "author": "tarmstrong",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [
+      "Tavish's excessively long programmer biography"
+    ],
+    "last_highlighted_at": "2026-06-01T23:12:44.447Z",
+    "last_moved_at": "2026-11-01T02:12:18.000Z",
+    "location": "new",
+    "readwise_id": "itm_4Ot0",
+    "summary": "My end-of-year project involved a 45-minute long presentation to my peers. For this project I decided to teach my fellow students basic web skills (like HTML, CSS, and JavaScript).",
+    "title": "longcv/bio.md at master · tarmstrong/longcv",
+    "url": "https://github.com/tarmstrong/longcv/blob/master/bio.md"
+  },
+  {
+    "author": "want some more",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:11:29.000Z",
+    "location": "new",
+    "readwise_id": "itm_7mSAH",
+    "summary": "You should take advantage of the type system too, not many languages have it as good as Rust :) Saturday, February 21st, 2026 —  #design pattern #rust #type system #type-driven design",
+    "title": "Parse, don't Validate and Type-Driven Design in Rust",
+    "url": "https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:10:52.000Z",
+    "location": "new",
+    "readwise_id": "itm_9PedS",
+    "summary": "In this book, my goal is to show you how representational principles can be used to improve API design. That is, when you map the real world to an API, how can you help API clients be more productive and avoid mistakes?",
+    "title": "Type-Driven API Design in Rust",
+    "url": "https://willcrichton.net/rust-api-type-patterns/main_idea.html"
+  },
+  {
+    "author": "jparise@users.lobste.rs (jparise)",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:10:52.000Z",
+    "location": "new",
+    "readwise_id": "itm_jQf1",
+    "summary": "So generally, I think unwrap() in documentation is okay, but I’ve been gravitating away from it because it’s easy to do.So, in summary, I’d say “do not use unwrap() for error handling in Rust” is a fine first approximation.",
+    "title": "Using unwrap() in Rust is Okay",
+    "url": "https://blog.burntsushi.net/unwrap/"
+  },
+  {
+    "author": "behnamoh",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:10:52.000Z",
+    "location": "new",
+    "readwise_id": "itm_4FE4",
+    "summary": "This is an example of the typestate pattern, enforcing the property “you may not perform other operations on a File after closing it.” This might look like RAII to you, and you’re right.",
+    "title": "The Typestate Pattern in Rust",
+    "url": "http://cliffle.com/blog/rust-typestate/"
+  },
+  {
+    "author": "mattkeeter.com via tekknolagi",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:10:52.000Z",
+    "location": "new",
+    "readwise_id": "itm_82XOp",
+    "summary": "Last week, I wrote a tail-call interpreter using the become keyword, which was recently added to nightly Rust (seven months ago is recent, right?).",
+    "title": "A tail-call interpreter in (nightly) Rust",
+    "url": "https://www.mattkeeter.com/blog/2026-04-05-tailcall/"
+  },
+  {
+    "author": "fanf2",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:10:52.000Z",
+    "location": "new",
+    "readwise_id": "itm_7HhWI",
+    "summary": "Posted on May 23, 2025 Short answer: hard, but not as hard as I thought. Type systems in which the types (of functions, typically) may depend on terms are called dependently-typed.",
+    "title": "Implementing dependent types: how hard could it be? (Part 1)",
+    "url": "https://jerrington.me/posts/2025-05-23-depty-impl.html"
+  },
+  {
+    "author": "fanf2",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:10:52.000Z",
+    "location": "new",
+    "readwise_id": "itm_7HpWf",
+    "summary": "Posted on July 31, 2025 Short answer: hard, but not as hard as I thought. This is part 2 of a series of posts on the implementation of a dependently-typed lambda-calculus.",
+    "title": "Implementing dependent types: how hard could it be? (Part 2)",
+    "url": "https://jerrington.me/posts/2025-07-31-depty-impl-part-2.html"
+  },
+  {
+    "author": "boxyuwu.blog via ettolrach",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:10:52.000Z",
+    "location": "new",
+    "readwise_id": "itm_7xdfm",
+    "summary": "I don’t think Rust made a mistake by having coherence but I do think we need to seriously consider how we can move towards an incoherent Rust without sacrificing the benefits coherence has given us.",
+    "title": "An Incoherent Rust",
+    "url": "https://www.boxyuwu.blog/posts/an-incoherent-rust/"
+  },
+  {
+    "author": "Kenny Workman",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:09:55.000Z",
+    "location": "new",
+    "readwise_id": "itm_9PecD",
+    "summary": "Genentech is the flagship example of an industrial research organization. Their culture of open science and free flowing publication is rooted in a strong contrarian foundation we should all remember.",
+    "title": "Genentech is the flagship example of an industrial research organization. Their culture...",
+    "url": "https://x.com/i/web/status/1888396343791722605"
+  },
+  {
+    "author": "highfrequency",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:09:30.000Z",
+    "location": "new",
+    "readwise_id": "itm_EWn",
+    "summary": "The Great Filter - Are We Almost Past It? Sept. 15, 1998 by Robin Hanson   Humanity seems to have a bright future, i.e., a non-trivial chance of expan",
+    "title": "The Great Filter",
+    "url": "http://mason.gmu.edu/~rhanson/greatfilter.html"
+  },
+  {
+    "author": "satvikpendem",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:09:07.000Z",
+    "location": "new",
+    "readwise_id": "itm_24uB",
+    "summary": "Okay, What Are Algebraic Effects? The name might be a bit intimidating but the idea is simple. If you’re familiar with try / catch blocks, you’ll figure out algebraic effects very fast.",
+    "title": "Algebraic Effects for the Rest of Us",
+    "url": "https://overreacted.io/algebraic-effects-for-the-rest-of-us/"
+  },
+  {
+    "author": "T. Greer",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:08:00.000Z",
+    "location": "new",
+    "readwise_id": "itm_fk5",
+    "summary": "Prestige journalists, like most other writers, do not judge the quality of their work by clicks (or even paychecks) but through the praise and censure of other writers and journalists.",
+    "title": "Why Writers (and Think Tankers) Feud So Viciously",
+    "url": "https://scholars-stage.blogspot.com/2021/02/why-writers-and-think-tankers-feud-so.html"
+  },
+  {
+    "author": "danluu.com via lalitm",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:07:58.000Z",
+    "location": "new",
+    "readwise_id": "itm_9NXzl",
+    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
+    "title": "“We should be more ambitious with the software we build”",
+    "url": "https://danluu.com/ambitious/"
+  },
+  {
+    "author": "Ed West",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:07:24.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9159J",
+    "summary": "Every catastrophe needs its Jeremiah, and for this we have Times columnist James Marriott, whose increasing anxiety about the decline of literacy was articulated in a hugely popular substack post last year.",
+    "title": "Doomscrolling ourselves to death",
+    "url": "https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death"
+  },
+  {
+    "author": "Morgan Housel",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [
+      "Writing crystallizes ideas in ways thinking on its own will never accomplish.",
+      "Writers don't know exactly what they'll write about until they start writing, because the process crystallizes the fuzzy ideas we all have floating around. This chicken-and-egg problem is probably why writing is intimidating for some people.",
+      "Things the mind tends to gloss over the pen tends to highlight.",
+      "You don't talk about these ideas, even in your own head, because you've never put them into words. They're gut feelings. Intuitions.",
+      "Intuition is strong enough to put these ideas into practice. But intuition isn't a tool; it's a safety net at best, and is more often the fuel of biased decisions. Turning gut feelings into tools means understanding their origin, limits, and how they interact with other ideas. Which requires turning them into words."
+    ],
+    "last_highlighted_at": "2026-06-08T18:10:22.000Z",
+    "last_moved_at": "2026-11-01T02:07:12.000Z",
+    "location": "archive",
+    "readwise_id": "itm_T6Q",
+    "summary": "They don’t think they can write because – in their head, as this moment – they don’t know what they’d write about. But hardly anyone does. So, write.",
+    "title": "Why Everyone Should Write",
+    "url": "http://www.collaborativefund.com/blog/why-everyone-should-write/"
+  },
+  {
+    "author": "Aeon",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [
+      "But longtermists have an answer to this conundrum: the so-called ‘value-neutrality thesis’. This states that technology is a morally neutral object, ie, ‘just a tool’.",
+      "Just as worrisome is the longtermist demand that we must create ever-more powerful technologies, despite the agreed-upon fact that the overwhelming source of risk to human existence these days comes from these very technologies.",
+      "concept into three main components: transhumanism, space expansionism, and a moral view closely associated with what philosophers call ‘total utilitarianism’.",
+      "Ord puts it in The Precipice,",
+      "omnicidal",
+      "of all the problems facing humanity, our ‘first great task … is to reach a place of safety – a place where existential risk’ – as he defines it – ‘is low and stays low’, which he dubs ‘existential security’.",
+      "insouciant",
+      "humanity has a ‘potential’ of its own, one that transcends the potentials of each individual person, and failing to realise this potential would be extremely bad – indeed, as we will see, a moral catastrophe of literally cosmic proportions. This is the central dogma of longtermism: nothing matters more, ethically speaking, than fulfilling our potential as a species of ‘Earth-originating intelligent life’.",
+      "The initial thing to notice is that longtermism, as proposed by Bostrom and Beckstead, is not equivalent to ‘caring about the long term’ or ‘valuing the wellbeing of future generations’. It goes way beyond this. At its core is a simple – albeit flawed, in my opinion – analogy between individual persons and humanity as a whole.",
+      "We know that biodiversity loss and the sixth mass extinction could precipitate sudden, irreversible, catastrophic shifts in the global ecosystem."
+    ],
+    "last_highlighted_at": "2026-06-08T22:50:45.000Z",
+    "last_moved_at": "2026-11-01T02:07:11.000Z",
+    "location": "archive",
+    "readwise_id": "itm_2LT6",
+    "summary": "Here, then, are a few reasons I find longtermism to be profoundly dangerous. Yet there are additional, fundamental problems with this worldview that no one, to my knowledge, has previously noted in writing.",
+    "title": "Why longtermism is the world’s most dangerous secular credo",
+    "url": "https://aeon.co/essays/why-longtermism-is-the-worlds-most-dangerous-secular-credo"
+  },
+  {
+    "author": "rdmsr.github.io via smb",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T02:02:31.000Z",
+    "location": "new",
+    "readwise_id": "itm_92duF",
+    "summary": "Resources Turnstiles are well described in the following books: The Design and Implementation of the FreeBSD Operating System; and Solaris Internals Additionally, they were described in a Solaris magazine here.",
+    "title": "Solaris Turnstiles",
+    "url": "https://rdmsr.github.io/writing/turnstiles/"
+  },
+  {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [
+      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
+      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
+      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
+    "last_moved_at": "2026-11-01T01:51:00.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Philpax",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T01:23:08.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9IKnH",
+    "summary": "So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?",
+    "title": "Redesigning source control at Anthropic",
+    "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+  },
+  {
+    "author": "Anne Applebaum",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T00:53:12.000Z",
+    "location": "new",
+    "readwise_id": "itm_9MPRP",
+    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
+    "title": "What the U.S. Is Really Doing in Venezuela",
+    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
+  },
+  {
+    "author": "Samuel Hughes",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T00:36:43.000Z",
     "location": "archive",
     "readwise_id": "itm_9Ez6W",
     "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
@@ -28,12 +581,60 @@
     "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
   },
   {
-    "author": "Colossus",
+    "author": "rusbus",
     "category": "article",
-    "date_group": "30 Oct 2026",
+    "date_group": "31 Oct 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T23:01:56.000Z",
+    "last_moved_at": "2026-10-31T22:39:10.000Z",
+    "location": "new",
+    "readwise_id": "itm_94bbR",
+    "summary": "Spin to keep control This is a very advanced tactic for chasing latency measured in microseconds. I don't recommend reaching for this first, but it can definitely work.",
+    "title": "Principles for fast Tokio applications",
+    "url": "https://dial9-rs.github.io/blog/principles-for-fast-tokio-applications/"
+  },
+  {
+    "author": "Patrick Collison",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [
+      "When anthropologists look at scientists, they’re trying to understand the species. But when viewed through the lens of Progress Studies, the implicit question is how scientists (or funders or evaluators of scientists) should be acting. The success of Progress Studies will come from its ability to identify effective progress-increasing interventions and the extent to which they are adopted by universities, funding agencies, philanthropists, entrepreneurs, policy makers, and other institutions. In that sense, Progress Studies is closer to medicine than biology: The goal is to treat, not merely to understand.",
+      "present funding mechanisms are likely to be far from optimal, in part because they do not focus enough on research autonomy and risk taking.",
+      "Thinkers in these disciplines don’t necessarily attend the same conferences, publish in the same journals, or work together to solve shared problems.",
+      "Switzerland’s Basel region in life sciences.",
+      "For example, if our discoveries and inventions improve standards of living by 1 percent a year, children will by adulthood be 35 percent better off than their parents. If they improve livelihoods at 3 percent a year, those same children will grow up to be about 2.5 times better off.",
+      "Progress itself is understudied. By “progress,” we mean the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries."
+    ],
+    "last_highlighted_at": "2024-11-06T19:02:48.000Z",
+    "last_moved_at": "2026-10-31T22:24:08.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8f5",
+    "summary": "In 1861, the American scientist and educator William Barton Rogers published a manifesto calling for a new kind of research institution. Recognizing t",
+    "title": "We Need a New Science of Progress",
+    "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
+  },
+  {
+    "author": "Atul Gawande",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [
+      "deliberate practice"
+    ],
+    "last_highlighted_at": "2024-11-16T05:34:05.000Z",
+    "last_moved_at": "2026-10-31T21:07:15.000Z",
+    "location": "archive",
+    "readwise_id": "itm_ECd",
+    "summary": "No matter how well trained people are, few can sustain their best performance on their own. That’s where coaching comes in.",
+    "title": "Personal Best",
+    "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
+  },
+  {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-31T20:36:27.000Z",
     "location": "new",
     "readwise_id": "itm_9P8VF",
     "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
@@ -41,36 +642,107 @@
     "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
   },
   {
-    "author": "Nathan Heller",
+    "author": "Paul Graham",
     "category": "article",
-    "date_group": "30 Oct 2026",
+    "date_group": "31 Oct 2026",
     "highlights": [
-      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
-      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
-      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
+      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
     ],
-    "last_highlighted_at": "2026-10-30T20:51:53.000Z",
-    "last_moved_at": "2026-10-30T22:35:29.000Z",
-    "location": "new",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
+    "last_moved_at": "2026-10-31T17:16:53.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1qI",
+    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
+    "title": "How to Write Usefully",
+    "url": "http://paulgraham.com/useful.html"
   },
   {
-    "author": "Blake J. Harris",
+    "author": "Aria Schrecker",
     "category": "article",
-    "date_group": "30 Oct 2026",
+    "date_group": "31 Oct 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T22:21:20.000Z",
-    "location": "new",
-    "readwise_id": "itm_9Ku0E",
-    "summary": "But if he really was willing to reach out to Larry, I said, please let him know that I didn’t want to ask a single question about Seinfeld or Curb.",
-    "title": "Why the creator of Seinfeld and Curb Your Enthusiasm is one of history’s purest founders",
-    "url": "https://colossus.com/article/many-failures-larry-david-profile/"
+    "last_moved_at": "2026-10-31T16:01:10.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9O8Uf",
+    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
+    "title": "Young prudes",
+    "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
+    "author": "Nick",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [
+      "The cause of situational overload is too much noise. The cause of ambient overload is too much signal.",
+      "Ambient overload doesn’t involve needles in haystacks. It involves haystack-sized piles of needles. We experience ambient overload when we’re surrounded by so much information that is of immediate interest to us that we feel overwhelmed by the neverending pressure of trying to keep up with it all.",
+      "Information overload actually takes two forms, which I’ll call situational overload and ambient overload,",
+      "Better filters don’t mitigate information overload; they intensify it. It would be more accurate to say: “It’s not information overload. It’s filter success.”",
+      "“It’s not information overload. It’s filter failure.”"
+    ],
+    "last_highlighted_at": "2026-06-28T13:49:59.000Z",
+    "last_moved_at": "2026-10-31T15:15:47.000Z",
+    "location": "archive",
+    "readwise_id": "itm_5cNU",
+    "summary": "When we complain about information overload, what we’re usually complaining about is ambient overload. This is an altogether different beast. Ambient overload doesn’t involve needles in haystacks.",
+    "title": "Situational overload and ambient overload",
+    "url": "https://www.roughtype.com/?p=1464"
+  },
+  {
+    "author": "Dan Wang",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-31T14:44:50.000Z",
+    "location": "archive",
+    "readwise_id": "itm_7UEWr",
+    "summary": "China’s strength lies in a robust manufacturing ecosystem full of self-reinforcing parts. Chinese tech achievements that were apparent in 2025 were the fruits of investments made a decade ago.",
+    "title": "2025 letter | Dan Wang",
+    "url": "https://danwang.co/2025-letter/"
+  },
+  {
+    "author": "Ravi Gupta",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-31T13:13:47.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8ZY6",
+    "summary": "In my experience, desperation is the single greatest advantage you have as a startup. It takes you down to the lowest level of detail.3 Desperation inspires creativity and intense focus.",
+    "title": "Desperation Induced Focus",
+    "url": "https://rkg.blog/desperation-induced-focus.php"
+  },
+  {
+    "author": "whiteblossom",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [
+      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
+      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
+      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
+    ],
+    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
+    "last_moved_at": "2026-10-31T10:46:13.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9HfjH",
+    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
+    "title": "China’s Growth Machine",
+    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
+  },
+  {
+    "author": "Alex Chalmers",
+    "category": "article",
+    "date_group": "31 Oct 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-10-31T10:19:25.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8z05M",
+    "summary": "This is because burning trash comes with specific complexities. The smoke from burning trash contains mercury, lead, and acid gases, requiring expensive pollution control.",
+    "title": "Just bury your trash",
+    "url": "https://worksinprogress.co/issue/just-bury-your-trash/"
   },
   {
     "author": "Matt Beard",
@@ -84,64 +756,6 @@
     "summary": "Sometimes there are clear answers like a lack of meaning or personal fit, but occasionally people communicate that they’ve spent a decade twisting themselves into a shape that they don’t like.",
     "title": "Your Work Will Change You Whether You Like It Or Not",
     "url": "https://thatvastvariety.substack.com/p/your-work-will-change-you-whether"
-  },
-  {
-    "author": "Aria Schrecker",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T21:42:48.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9O8Uf",
-    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
-    "title": "Young prudes",
-    "url": "https://worksinprogress.co/issue/young-prudes/"
-  },
-  {
-    "author": "Felix Rieseberg",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T21:08:03.000Z",
-    "location": "new",
-    "readwise_id": "itm_9Ow5h",
-    "summary": "Hunger beats tenure. This post is my best advice for junior engineers, though “junior” is the wrong word. It’s really for engineers without social capital, status, or power.",
-    "title": "Hunger beats tenure: Advice for junior engineers",
-    "url": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/"
-  },
-  {
-    "author": "danluu.com via lalitm",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T17:25:48.000Z",
-    "location": "new",
-    "readwise_id": "itm_9NXzl",
-    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
-    "title": "“We should be more ambitious with the software we build”",
-    "url": "https://danluu.com/ambitious/"
-  },
-  {
-    "author": "Nick",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [
-      "The cause of situational overload is too much noise. The cause of ambient overload is too much signal.",
-      "Ambient overload doesn’t involve needles in haystacks. It involves haystack-sized piles of needles. We experience ambient overload when we’re surrounded by so much information that is of immediate interest to us that we feel overwhelmed by the neverending pressure of trying to keep up with it all.",
-      "Information overload actually takes two forms, which I’ll call situational overload and ambient overload,",
-      "Better filters don’t mitigate information overload; they intensify it. It would be more accurate to say: “It’s not information overload. It’s filter success.”",
-      "“It’s not information overload. It’s filter failure.”"
-    ],
-    "last_highlighted_at": "2026-06-28T13:49:59.000Z",
-    "last_moved_at": "2026-10-30T16:52:04.000Z",
-    "location": "archive",
-    "readwise_id": "itm_5cNU",
-    "summary": "When we complain about information overload, what we’re usually complaining about is ambient overload. This is an altogether different beast. Ambient overload doesn’t involve needles in haystacks.",
-    "title": "Situational overload and ambient overload",
-    "url": "https://www.roughtype.com/?p=1464"
   },
   {
     "author": "Nan Ransohoff",
@@ -170,19 +784,6 @@
     "summary": "Actors sending messages to other actors There is nothing wrong with having actors send messages to other actors. To do this, you can simply give one actor the handle of some other actor.",
     "title": "Actors with Tokio",
     "url": "https://ryhl.io/blog/actors-with-tokio/"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T05:07:56.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9L6zm",
-    "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
-    "title": "Sichuan and the Sun Belt",
-    "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
   },
   {
     "author": "Stephen Clark",
@@ -252,19 +853,6 @@
     "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
   },
   {
-    "author": "",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T19:32:16.000Z",
-    "location": "new",
-    "readwise_id": "itm_9PeuY",
-    "summary": "",
-    "title": "https://spawn-queue.acm.org/doi/fullHtml/10.1145/3773095",
-    "url": "https://spawn-queue.acm.org/doi/fullHtml/10.1145/3773095"
-  },
-  {
     "author": "Shoshannah Tekofsky",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -321,36 +909,6 @@
     "url": "https://theclimatedesk.substack.com/p/breaking-news-the-prototype-fast"
   },
   {
-    "author": "Kevin Kelly",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T14:05:04.000Z",
-    "location": "archive",
-    "readwise_id": "itm_H9Eg",
-    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
-    "title": "103 Bits of Advice I Wish I Had Known",
-    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
-  },
-  {
-    "author": "whiteblossom",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [
-      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
-      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
-      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
-    ],
-    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
-    "last_moved_at": "2026-10-29T13:34:55.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9HfjH",
-    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
-    "title": "China’s Growth Machine",
-    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
-  },
-  {
     "author": "Eric Topol",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -362,21 +920,6 @@
     "summary": "Over the past couple of years we’re seeing several new companies in the business to consumer space for promoting lifespan, healthspan, and generally the use of extensive testing to achieve early detection or prevent diseases.",
     "title": "The Business of Promoting Longevity and Healthspan",
     "url": "https://erictopol.substack.com/p/the-business-of-promoting-longevity"
-  },
-  {
-    "author": "Atul Gawande",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [
-      "deliberate practice"
-    ],
-    "last_highlighted_at": "2024-11-16T05:34:05.000Z",
-    "last_moved_at": "2026-10-29T11:40:41.000Z",
-    "location": "archive",
-    "readwise_id": "itm_ECd",
-    "summary": "No matter how well trained people are, few can sustain their best performance on their own. That’s where coaching comes in.",
-    "title": "Personal Best",
-    "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
   },
   {
     "author": "",
@@ -405,32 +948,6 @@
     "url": "https://archive.ph/q1LNX"
   },
   {
-    "author": "jart",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:20:37.000Z",
-    "location": "new",
-    "readwise_id": "itm_4nIZj",
-    "summary": "Cosmopolitan mutexes were also 65x faster than Cygwin, which like Cosmopolitan provides a POSIX implementation on Windows. Cygwin's mutexes are so bad that they would have been better off for this use case just using a spin lock.",
-    "title": "The Fastest Mutexes",
-    "url": "https://justine.lol/mutex/"
-  },
-  {
-    "author": "fanf2",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:20:26.000Z",
-    "location": "new",
-    "readwise_id": "itm_7HhWI",
-    "summary": "Posted on May 23, 2025 Short answer: hard, but not as hard as I thought. Type systems in which the types (of functions, typically) may depend on terms are called dependently-typed.",
-    "title": "Implementing dependent types: how hard could it be? (Part 1)",
-    "url": "https://jerrington.me/posts/2025-05-23-depty-impl.html"
-  },
-  {
     "author": "Substack",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -445,32 +962,6 @@
     "summary": "So far we have discussed taxing capital as if all capital were accumulable capital, as almost all of it currently is. In this context, we have discussed two large costs to capital taxation: that it slows growth and that it drives capital abroad.",
     "title": "Capital in the 22nd Century",
     "url": "https://substack.com/inbox/post/182789127"
-  },
-  {
-    "author": "fanf2",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:20:16.000Z",
-    "location": "new",
-    "readwise_id": "itm_7HpWf",
-    "summary": "Posted on July 31, 2025 Short answer: hard, but not as hard as I thought. This is part 2 of a series of posts on the implementation of a dependently-typed lambda-calculus.",
-    "title": "Implementing dependent types: how hard could it be? (Part 2)",
-    "url": "https://jerrington.me/posts/2025-07-31-depty-impl-part-2.html"
-  },
-  {
-    "author": "want some more",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:20:08.000Z",
-    "location": "new",
-    "readwise_id": "itm_7mSAH",
-    "summary": "You should take advantage of the type system too, not many languages have it as good as Rust :) Saturday, February 21st, 2026 —  #design pattern #rust #type system #type-driven design",
-    "title": "Parse, don't Validate and Type-Driven Design in Rust",
-    "url": "https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/"
   },
   {
     "author": "Jack Vanlightly",
@@ -506,19 +997,6 @@
     "url": "https://www.cs.ox.ac.uk/ralf.hinze/publications/With.pdf"
   },
   {
-    "author": "Android Developers (noreply@blogger.com)",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:20:00.000Z",
-    "location": "new",
-    "readwise_id": "itm_7kuar",
-    "summary": "Posted by Shai Barack, Android Platform Performance Lead and Charles Munger, Principal Software Engineer In Android 17, apps targeting SDK 37 or higher will receive a new implementation of MessageQueue where the implementation is lock-free.",
-    "title": "Under the hood: Android 17’s lock-free MessageQueue",
-    "url": "https://android-developers.googleblog.com/2026/02/under-hood-android-17s-lock-free.html"
-  },
-  {
     "author": "Marc Brooker",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -530,32 +1008,6 @@
     "summary": "Strong consistency avoids this whole problem1, ensuring that the first code snippet works as expected. Eventual Consistency is a Pain for Application Builders The folks building the service behind that API run into exactly the same problems.",
     "title": "Why Strong Consistency?",
     "url": "https://brooker.co.za/blog/2025/11/18/consistency.html"
-  },
-  {
-    "author": "xnacly",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:19:50.000Z",
-    "location": "new",
-    "readwise_id": "itm_73WM6",
-    "summary": "Segmented List As introduced in Segmented Lists vs Dynamic Arrays, a segmented list consists of segments. Each segment is lazily allocated and doubles in size to the previous one.",
-    "title": "Porting a Segmented List From C to Rust",
-    "url": "https://xnacly.me/posts/2025/porting-a-segmented-list-from-c-to-rust/"
-  },
-  {
-    "author": "ibobev",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:19:34.000Z",
-    "location": "new",
-    "readwise_id": "itm_8rYF",
-    "summary": "But it’s still better than no dangling protection at all (like raw pointers), or a ‘fake memory leak’ which would happen in similar situations with smart pointers.",
-    "title": "Handles are the better pointers",
-    "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html"
   },
   {
     "author": "",
@@ -579,32 +1031,6 @@
     "summary": "",
     "title": "Build Systems à la Carte",
     "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2018/03/build-systems-final.pdf"
-  },
-  {
-    "author": "Stefanos Baziotis",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:19:21.000Z",
-    "location": "new",
-    "readwise_id": "itm_58n2U",
-    "summary": "As a heads up, this article is only about large-scale, mainstream, general-purpose compilers like LLVM, GCC, and ICX. Some of the statements don't apply e.g., to domain-specific compilers or small-to-medium-scale compilers.",
-    "title": "Common Misconceptions about Compilers",
-    "url": "https://sbaziotis.com/compilers/common-misconceptions-about-compilers.html"
-  },
-  {
-    "author": "boxyuwu.blog via ettolrach",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:19:06.000Z",
-    "location": "new",
-    "readwise_id": "itm_7xdfm",
-    "summary": "I don’t think Rust made a mistake by having coherence but I do think we need to seriously consider how we can move towards an incoherent Rust without sacrificing the benefits coherence has given us.",
-    "title": "An Incoherent Rust",
-    "url": "https://www.boxyuwu.blog/posts/an-incoherent-rust/"
   },
   {
     "author": "the_mitsuhiko",
@@ -688,19 +1114,6 @@
     "url": "https://www.lesswrong.com/posts/PPLHfFhNWMuWCnaTt/the-practical-guide-to-superbabies-3"
   },
   {
-    "author": "mattkeeter.com via tekknolagi",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:18:03.000Z",
-    "location": "new",
-    "readwise_id": "itm_82XOp",
-    "summary": "Last week, I wrote a tail-call interpreter using the become keyword, which was recently added to nightly Rust (seven months ago is recent, right?).",
-    "title": "A tail-call interpreter in (nightly) Rust",
-    "url": "https://www.mattkeeter.com/blog/2026-04-05-tailcall/"
-  },
-  {
     "author": "gmays",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -766,32 +1179,6 @@
     "url": "https://scroll.in/article/1091985/made-in-india-a-fine-exposition-of-the-personal-and-professional-in-creating-pharma-brand-lupin"
   },
   {
-    "author": "h4x0r.org via eatonphil",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:17:34.000Z",
-    "location": "new",
-    "readwise_id": "itm_6hUwF",
-    "summary": "These days, any good locking primitive is going to be based on a futex. You should expect system libraries like pthreads will use the futex extensively. Wait, a futex isn’t a mutex?",
-    "title": "Without the futex, it's futile",
-    "url": "https://h4x0r.org/futex/"
-  },
-  {
-    "author": "hamy.xyz via deejayy",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:17:33.000Z",
-    "location": "new",
-    "readwise_id": "itm_84oKI",
-    "summary": "So I started doing research and reading the Rust book and building little prototypes. What I came up with was an approach that gets us ~80% of benefits of Rust for only ~20% of the pain.",
-    "title": "High-Level Rust: Getting 80% of the Benefits with 20% of the Pain",
-    "url": "https://hamy.xyz/blog/2026-01_high-level-rust"
-  },
-  {
     "author": "tison",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -803,32 +1190,6 @@
     "summary": "Takeaways: Plan representation is a key decision for a query optimizer. A good plan representation should be straightforward for the optimizer framework to manipulate and easy for the user to use.",
     "title": "Plan Representation: #1 Lesson Learned from Building an Optimizer",
     "url": "https://www.skyzh.dev/blog/2025-02-06-optimizer-lesson-01/"
-  },
-  {
-    "author": "redixhumayun.github.io via vi_mi",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:17:31.000Z",
-    "location": "new",
-    "readwise_id": "itm_86Wkm",
-    "summary": "For covariant lifetimes, Rust can shorten a longer-lived &amp;T into a shorter-lived &amp;T when needed, which allows us to elide the nested lifetimes and let the compiler infer the intermediate lifetimes for us.",
-    "title": "Zero-Copy Pages in Rust: Or How I Learned To Stop Worrying And Love Lifetimes",
-    "url": "https://redixhumayun.github.io/databases/2026/04/14/zero-copy-pages-in-rust.html"
-  },
-  {
-    "author": "Folkert de Vries",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:17:29.000Z",
-    "location": "new",
-    "readwise_id": "itm_85nhs",
-    "summary": "Next we plan to work on tail calls for extern \"Rust\" first, and separate tail calls for other calling conventions into their own feature. For extern \"Rust\" rustc fully controls the ABI across platforms.",
-    "title": "Rust should have stable tail calls",
-    "url": "https://trifectatech.org/blog/tail-calls-project-goal/"
   },
   {
     "author": "Maciej Cegłowski",
@@ -1078,21 +1439,6 @@
     "url": "https://davidoks.blog/p/why-japanese-companies-do-so-many"
   },
   {
-    "author": "tarmstrong",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [
-      "Tavish's excessively long programmer biography"
-    ],
-    "last_highlighted_at": "2026-06-01T23:12:44.447Z",
-    "last_moved_at": "2026-10-29T11:15:26.000Z",
-    "location": "new",
-    "readwise_id": "itm_4Ot0",
-    "summary": "My end-of-year project involved a 45-minute long presentation to my peers. For this project I decided to teach my fellow students basic web skills (like HTML, CSS, and JavaScript).",
-    "title": "longcv/bio.md at master · tarmstrong/longcv",
-    "url": "https://github.com/tarmstrong/longcv/blob/master/bio.md"
-  },
-  {
     "author": "SinePost",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -1106,19 +1452,6 @@
     "url": "https://jade.fyi/blog/the-postmodern-build-system/"
   },
   {
-    "author": "satvikpendem",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:15:22.000Z",
-    "location": "new",
-    "readwise_id": "itm_24uB",
-    "summary": "Okay, What Are Algebraic Effects? The name might be a bit intimidating but the idea is simple. If you’re familiar with try / catch blocks, you’ll figure out algebraic effects very fast.",
-    "title": "Algebraic Effects for the Rest of Us",
-    "url": "https://overreacted.io/algebraic-effects-for-the-rest-of-us/"
-  },
-  {
     "author": "Charity Majors",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -1130,19 +1463,6 @@
     "summary": "It’s still hard as shit. There is no natural feedback loop connecting enthusiasts with skeptics The wins are real, the costs are real.",
     "title": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
     "url": "https://charity.wtf/2026/06/02/ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entropy-xpost/"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:15:18.000Z",
-    "location": "new",
-    "readwise_id": "itm_9PedS",
-    "summary": "In this book, my goal is to show you how representational principles can be used to improve API design. That is, when you map the real world to an API, how can you help API clients be more productive and avoid mistakes?",
-    "title": "Type-Driven API Design in Rust",
-    "url": "https://willcrichton.net/rust-api-type-patterns/main_idea.html"
   },
   {
     "author": "Brian Potter",
@@ -1182,19 +1502,6 @@
     "summary": "We would be rebuilding Kubernetes. The real platform already exists, and it's Kubernetes. Part 2: how we reinvented Kubernetes Now we can map what we hand-rolled in Part 1 to Kubernetes.",
     "title": "The feedback loops behind Kubernetes",
     "url": "https://planetscale.com/blog/the-feedback-loops-behind-kubernetes"
-  },
-  {
-    "author": "behnamoh",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:14:52.000Z",
-    "location": "new",
-    "readwise_id": "itm_4FE4",
-    "summary": "This is an example of the typestate pattern, enforcing the property “you may not perform other operations on a File after closing it.” This might look like RAII to you, and you’re right.",
-    "title": "The Typestate Pattern in Rust",
-    "url": "http://cliffle.com/blog/rust-typestate/"
   },
   {
     "author": "",
@@ -1262,19 +1569,6 @@
     "url": "https://davidoks.blog/p/why-china-got-rich-and-india-didnt"
   },
   {
-    "author": "jparise@users.lobste.rs (jparise)",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:14:09.000Z",
-    "location": "new",
-    "readwise_id": "itm_jQf1",
-    "summary": "So generally, I think unwrap() in documentation is okay, but I’ve been gravitating away from it because it’s easy to do.So, in summary, I’d say “do not use unwrap() for error handling in Rust” is a fine first approximation.",
-    "title": "Using unwrap() in Rust is Okay",
-    "url": "https://blog.burntsushi.net/unwrap/"
-  },
-  {
     "author": "Mohammed AlQuraishi",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -1314,45 +1608,6 @@
     "url": "http://fitzgeraldnick.com/2020/08/24/writing-a-test-case-generator.html"
   },
   {
-    "author": "Kenny Workman",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:13:33.000Z",
-    "location": "new",
-    "readwise_id": "itm_9PecD",
-    "summary": "Genentech is the flagship example of an industrial research organization. Their culture of open science and free flowing publication is rooted in a strong contrarian foundation we should all remember.",
-    "title": "Genentech is the flagship example of an industrial research organization. Their culture...",
-    "url": "https://x.com/i/web/status/1888396343791722605"
-  },
-  {
-    "author": "rdmsr.github.io via smb",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:13:32.000Z",
-    "location": "new",
-    "readwise_id": "itm_92duF",
-    "summary": "Resources Turnstiles are well described in the following books: The Design and Implementation of the FreeBSD Operating System; and Solaris Internals Additionally, they were described in a Solaris magazine here.",
-    "title": "Solaris Turnstiles",
-    "url": "https://rdmsr.github.io/writing/turnstiles/"
-  },
-  {
-    "author": "Ed West",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:13:31.000Z",
-    "location": "new",
-    "readwise_id": "itm_9159J",
-    "summary": "Every catastrophe needs its Jeremiah, and for this we have Times columnist James Marriott, whose increasing anxiety about the decline of literacy was articulated in a hugely popular substack post last year.",
-    "title": "Doomscrolling ourselves to death",
-    "url": "https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death"
-  },
-  {
     "author": "",
     "category": "pdf",
     "date_group": "29 Oct 2026",
@@ -1377,19 +1632,6 @@
     "summary": "The major building blocks, at least in my mental model of Nix, are: The Nix Store Derivations Sandboxing The Nix Language. The Nix Store The easiest place to start is the Nix Store.",
     "title": "What Is Nix",
     "url": "https://shopify.engineering/what-is-nix"
-  },
-  {
-    "author": "Pascal Getreuer",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:12:12.000Z",
-    "location": "new",
-    "readwise_id": "itm_6FJUw",
-    "summary": "Alpha layout Detailed description: A guide to alt keyboard layouts (why, how, which one?) An alpha layout is an arrangement of the alphabet keys on the keyboard. The alpha layout is QWERTY on a standard US keyboard.",
-    "title": "Glossary of keyboard terms",
-    "url": "https://getreuer.info/posts/keyboards/glossary/index.html"
   },
   {
     "author": "Brian Potter",
@@ -1431,47 +1673,6 @@
     "summary": "Smart machines need much less UI. It’ll take a while for this to play out. It’ll take a generation for the “new software” to replace the “old software”.",
     "title": "What I believe about the future of software development",
     "url": "http://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/"
-  },
-  {
-    "author": "Paul Graham",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [
-      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
-    ],
-    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
-    "last_moved_at": "2026-10-29T07:00:23.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1qI",
-    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
-    "title": "How to Write Usefully",
-    "url": "http://paulgraham.com/useful.html"
-  },
-  {
-    "author": "Philpax",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T00:51:26.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9IKnH",
-    "summary": "So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?",
-    "title": "Redesigning source control at Anthropic",
-    "url": "https://www.anthropic.com/engineering/redesigning-source-control"
-  },
-  {
-    "author": "highfrequency",
-    "category": "article",
-    "date_group": "28 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-28T21:42:36.000Z",
-    "location": "new",
-    "readwise_id": "itm_EWn",
-    "summary": "The Great Filter - Are We Almost Past It? Sept. 15, 1998 by Robin Hanson   Humanity seems to have a bright future, i.e., a non-trivial chance of expan",
-    "title": "The Great Filter",
-    "url": "http://mason.gmu.edu/~rhanson/greatfilter.html"
   },
   {
     "author": "Packy McCormick",
@@ -1526,34 +1727,6 @@
     "url": "https://worksinprogress.co/issue/mosquitoes-are-a-choice/"
   },
   {
-    "author": "Nabeel Qureshi",
-    "category": "article",
-    "date_group": "28 Oct 2026",
-    "highlights": [
-      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
-    ],
-    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
-    "last_moved_at": "2026-10-28T04:56:09.000Z",
-    "location": "archive",
-    "readwise_id": "itm_bioV",
-    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
-    "title": "Tips for Productivity, Thinking, and Doing",
-    "url": "https://nabeelqu.co/advice"
-  },
-  {
-    "author": "nnethercote.github.io via patchunwrap",
-    "category": "article",
-    "date_group": "28 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-28T01:21:17.000Z",
-    "location": "new",
-    "readwise_id": "itm_9C2rH",
-    "summary": "The technical term for this result is “a sea of green”. rustdoc In my last post I mentioned how Noah Lev got some enormous speed wins on rustdoc.",
-    "title": "How to speed up the Rust compiler in September 2026",
-    "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html"
-  },
-  {
     "author": "Facebook Twitter",
     "category": "article",
     "date_group": "28 Oct 2026",
@@ -1565,26 +1738,6 @@
     "summary": "I notice I haven't written any advice posts recently. Here is a collection of my advice posts pre 2020. I've been feeling all this elderly wisdom pent up in me, ready to pour at any moment.",
     "title": "Advice to the young",
     "url": "http://muratbuffalo.blogspot.com/2024/07/advice-to-young.html"
-  },
-  {
-    "author": "Patrick Collison",
-    "category": "article",
-    "date_group": "27 Oct 2026",
-    "highlights": [
-      "When anthropologists look at scientists, they’re trying to understand the species. But when viewed through the lens of Progress Studies, the implicit question is how scientists (or funders or evaluators of scientists) should be acting. The success of Progress Studies will come from its ability to identify effective progress-increasing interventions and the extent to which they are adopted by universities, funding agencies, philanthropists, entrepreneurs, policy makers, and other institutions. In that sense, Progress Studies is closer to medicine than biology: The goal is to treat, not merely to understand.",
-      "present funding mechanisms are likely to be far from optimal, in part because they do not focus enough on research autonomy and risk taking.",
-      "Thinkers in these disciplines don’t necessarily attend the same conferences, publish in the same journals, or work together to solve shared problems.",
-      "Switzerland’s Basel region in life sciences.",
-      "For example, if our discoveries and inventions improve standards of living by 1 percent a year, children will by adulthood be 35 percent better off than their parents. If they improve livelihoods at 3 percent a year, those same children will grow up to be about 2.5 times better off.",
-      "Progress itself is understudied. By “progress,” we mean the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries."
-    ],
-    "last_highlighted_at": "2024-11-06T19:02:48.000Z",
-    "last_moved_at": "2026-10-27T23:47:46.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8f5",
-    "summary": "In 1861, the American scientist and educator William Barton Rogers published a manifesto calling for a new kind of research institution. Recognizing t",
-    "title": "We Need a New Science of Progress",
-    "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
   },
   {
     "author": "ettolrach.com by ettolrach",
@@ -1606,19 +1759,6 @@
     "url": "https://ettolrach.com/blog/rust_when_empty_isnt_bottom.html"
   },
   {
-    "author": "T. Greer",
-    "category": "article",
-    "date_group": "27 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-27T19:13:24.000Z",
-    "location": "new",
-    "readwise_id": "itm_fk5",
-    "summary": "Prestige journalists, like most other writers, do not judge the quality of their work by clicks (or even paychecks) but through the praise and censure of other writers and journalists.",
-    "title": "Why Writers (and Think Tankers) Feud So Viciously",
-    "url": "https://scholars-stage.blogspot.com/2021/02/why-writers-and-think-tankers-feud-so.html"
-  },
-  {
     "author": "Matt Webb",
     "category": "article",
     "date_group": "27 Oct 2026",
@@ -1630,25 +1770,6 @@
     "summary": "I said goodbye to some old apps. You’re reading this because I moved my blog to GitHub Pages. Lost some functionality on the way, but security is now someone else’s problem.",
     "title": "Bunkering down",
     "url": "https://interconnected.org/home/2026/10/24/bunker"
-  },
-  {
-    "author": "Morgan Housel",
-    "category": "article",
-    "date_group": "27 Oct 2026",
-    "highlights": [
-      "Writing crystallizes ideas in ways thinking on its own will never accomplish.",
-      "Writers don't know exactly what they'll write about until they start writing, because the process crystallizes the fuzzy ideas we all have floating around. This chicken-and-egg problem is probably why writing is intimidating for some people.",
-      "Things the mind tends to gloss over the pen tends to highlight.",
-      "You don't talk about these ideas, even in your own head, because you've never put them into words. They're gut feelings. Intuitions.",
-      "Intuition is strong enough to put these ideas into practice. But intuition isn't a tool; it's a safety net at best, and is more often the fuel of biased decisions. Turning gut feelings into tools means understanding their origin, limits, and how they interact with other ideas. Which requires turning them into words."
-    ],
-    "last_highlighted_at": "2026-06-08T18:10:22.000Z",
-    "last_moved_at": "2026-10-27T13:13:37.000Z",
-    "location": "archive",
-    "readwise_id": "itm_T6Q",
-    "summary": "They don’t think they can write because – in their head, as this moment – they don’t know what they’d write about. But hardly anyone does. So, write.",
-    "title": "Why Everyone Should Write",
-    "url": "http://www.collaborativefund.com/blog/why-everyone-should-write/"
   },
   {
     "author": "Carmen Maria Machado",
@@ -1777,19 +1898,6 @@
     "url": "https://nabeelqu.co/principles"
   },
   {
-    "author": "Iain M. Banks",
-    "category": "article",
-    "date_group": "25 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-25T21:33:10.000Z",
-    "location": "new",
-    "readwise_id": "itm_5Crw",
-    "summary": "With best wishes for the future, Iain M Banks(Sun-Earther Iain El-Bonko Banks of North Queensferry) This article was posted to newsgroup rec.arts.sf.written on 10 Aug 1994 on behalf of Iain M Banks by Ken MacLeod kenm@festival.ed.ac.uk.",
-    "title": "A Few Notes on the Culture, by Iain M Banks",
-    "url": "https://redsails.org/a-few-notes-on-the-culture/"
-  },
-  {
     "author": "Samuel Watling",
     "category": "article",
     "date_group": "25 Oct 2026",
@@ -1838,19 +1946,6 @@
     "url": "https://gk3fyi.substack.com/p/the-cost-of-craft"
   },
   {
-    "author": "Dan Wang",
-    "category": "article",
-    "date_group": "24 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-24T18:29:57.000Z",
-    "location": "archive",
-    "readwise_id": "itm_7UEWr",
-    "summary": "China’s strength lies in a robust manufacturing ecosystem full of self-reinforcing parts. Chinese tech achievements that were apparent in 2025 were the fruits of investments made a decade ago.",
-    "title": "2025 letter | Dan Wang",
-    "url": "https://danwang.co/2025-letter/"
-  },
-  {
     "author": "",
     "category": "article",
     "date_group": "24 Oct 2026",
@@ -1862,19 +1957,6 @@
     "summary": "The front page of the LLVM website proudly claims that: Clang is an “LLVM native” C/C++/Objective-C compiler, which aims to deliver amazingly fast compiles […] I’m not sure whether this has been true in the past, but it certainly isn’t true now.",
     "title": "Make LLVM fast again",
     "url": "https://www.npopov.com/2020/05/10/Make-LLVM-fast-again.html"
-  },
-  {
-    "author": "Alex Chalmers",
-    "category": "article",
-    "date_group": "24 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-24T04:07:08.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8z05M",
-    "summary": "This is because burning trash comes with specific complexities. The smoke from burning trash contains mercury, lead, and acid gases, requiring expensive pollution control.",
-    "title": "Just bury your trash",
-    "url": "https://worksinprogress.co/issue/just-bury-your-trash/"
   },
   {
     "author": "tonyedgecombe",
@@ -1916,71 +1998,6 @@
     "url": "https://doc.rust-lang.org/book/ch09-03-to-panic-or-not-to-panic.html"
   },
   {
-    "author": "rusbus",
-    "category": "article",
-    "date_group": "23 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-23T23:03:14.000Z",
-    "location": "new",
-    "readwise_id": "itm_94bbR",
-    "summary": "Spin to keep control This is a very advanced tactic for chasing latency measured in microseconds. I don't recommend reaching for this first, but it can definitely work.",
-    "title": "Principles for fast Tokio applications",
-    "url": "https://dial9-rs.github.io/blog/principles-for-fast-tokio-applications/"
-  },
-  {
-    "author": "Matthew Stoltenberg",
-    "category": "article",
-    "date_group": "23 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-23T23:01:08.000Z",
-    "location": "new",
-    "readwise_id": "itm_5mAWg",
-    "summary": "When trying to write fast functions operating over many bytes, we sometimes use ‘SWAR’. SWAR stands for SIMD Within A Register, and it is a technique to perform parallel computations on multiple data elements packed into a single word.",
-    "title": "Detect control characters, quotes and backslashes efficiently using ‘SWAR’",
-    "url": "https://lemire.me/blog/2025/04/13/detect-control-characters-quotes-and-backslashes-efficiently-using-swar/"
-  },
-  {
-    "author": "Yagiz Nizipli",
-    "category": "article",
-    "date_group": "23 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-23T23:01:00.000Z",
-    "location": "new",
-    "readwise_id": "itm_9KJdN",
-    "summary": "Eight bytes at a time Eight bytes fit in a uint64_t, and the arithmetic can run on all of them at once. The technique is called SWAR: SIMD within a register.",
-    "title": "Eight bytes in one register",
-    "url": "https://www.yagiz.co/eight-bytes-in-one-register"
-  },
-  {
-    "author": "Nathaniel J. Smith",
-    "category": "article",
-    "date_group": "23 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-23T23:00:33.000Z",
-    "location": "new",
-    "readwise_id": "itm_4yev",
-    "summary": "In the late 1960s, Edsger W. Dijkstra wrote a pair of now-famous papers that helped make this much clearer: Go to statement considered harmful, and Notes on structured programming (PDF).",
-    "title": "Notes on structured concurrency, or: Go statement considered harmful",
-    "url": "https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/"
-  },
-  {
-    "author": "Abhinav Upadhyay",
-    "category": "article",
-    "date_group": "23 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-23T23:00:31.000Z",
-    "location": "new",
-    "readwise_id": "itm_8FjBV",
-    "summary": "Key Takeaway Virtual memory operates at the granularity of pages (4 KB chunks of virtual address space) that map to frames (4 KB chunks of physical memory).",
-    "title": "Virtual Memory: A Deep Dive into Page Tables, TLBs, and Linux Internals",
-    "url": "https://blog.codingconfessions.com/p/virtual-memory"
-  },
-  {
     "author": "",
     "category": "article",
     "date_group": "23 Oct 2026",
@@ -1994,19 +2011,6 @@
     "summary": "By Michael Nielsen, January 2019\nWhat does it mean to understand a piece of mathematics? Naively, we perhaps think of this in relatively black and whi",
     "title": "Using spaced repetition systems to see through a piece of mathematics",
     "url": "http://cognitivemedium.com/srs-mathematics"
-  },
-  {
-    "author": "Ravi Gupta",
-    "category": "article",
-    "date_group": "22 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-22T23:14:38.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8ZY6",
-    "summary": "In my experience, desperation is the single greatest advantage you have as a startup. It takes you down to the lowest level of detail.3 Desperation inspires creativity and intense focus.",
-    "title": "Desperation Induced Focus",
-    "url": "https://rkg.blog/desperation-induced-focus.php"
   },
   {
     "author": "mailyk",
@@ -2180,30 +2184,6 @@
     "url": "https://www.noahpinion.blog/p/the-uk-is-a-cautionary-tale-for-the"
   },
   {
-    "author": "Aeon",
-    "category": "article",
-    "date_group": "10 Oct 2026",
-    "highlights": [
-      "But longtermists have an answer to this conundrum: the so-called ‘value-neutrality thesis’. This states that technology is a morally neutral object, ie, ‘just a tool’.",
-      "Just as worrisome is the longtermist demand that we must create ever-more powerful technologies, despite the agreed-upon fact that the overwhelming source of risk to human existence these days comes from these very technologies.",
-      "concept into three main components: transhumanism, space expansionism, and a moral view closely associated with what philosophers call ‘total utilitarianism’.",
-      "Ord puts it in The Precipice,",
-      "omnicidal",
-      "of all the problems facing humanity, our ‘first great task … is to reach a place of safety – a place where existential risk’ – as he defines it – ‘is low and stays low’, which he dubs ‘existential security’.",
-      "insouciant",
-      "humanity has a ‘potential’ of its own, one that transcends the potentials of each individual person, and failing to realise this potential would be extremely bad – indeed, as we will see, a moral catastrophe of literally cosmic proportions. This is the central dogma of longtermism: nothing matters more, ethically speaking, than fulfilling our potential as a species of ‘Earth-originating intelligent life’.",
-      "The initial thing to notice is that longtermism, as proposed by Bostrom and Beckstead, is not equivalent to ‘caring about the long term’ or ‘valuing the wellbeing of future generations’. It goes way beyond this. At its core is a simple – albeit flawed, in my opinion – analogy between individual persons and humanity as a whole.",
-      "We know that biodiversity loss and the sixth mass extinction could precipitate sudden, irreversible, catastrophic shifts in the global ecosystem."
-    ],
-    "last_highlighted_at": "2026-06-08T22:50:45.000Z",
-    "last_moved_at": "2026-10-10T13:05:20.000Z",
-    "location": "archive",
-    "readwise_id": "itm_2LT6",
-    "summary": "Here, then, are a few reasons I find longtermism to be profoundly dangerous. Yet there are additional, fundamental problems with this worldview that no one, to my knowledge, has previously noted in writing.",
-    "title": "Why longtermism is the world’s most dangerous secular credo",
-    "url": "https://aeon.co/essays/why-longtermism-is-the-worlds-most-dangerous-secular-credo"
-  },
-  {
     "author": "pranitha_m",
     "category": "article",
     "date_group": "09 Oct 2026",
@@ -2355,19 +2335,6 @@
     "summary": "E.g., if we have three durability levels (volatile, normal, durable), then our version is a tuple of three numbers. Additionally, every time we increment a particular component, we also need to increment all less durable components.",
     "title": "Durable Incrementality",
     "url": "https://rust-analyzer.github.io//blog/2023/07/24/durable-incrementality.html"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "17 Sept 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-09-17T00:36:38.000Z",
-    "location": "new",
-    "readwise_id": "itm_63X1M",
-    "summary": "Refer to the article for more complex examples. Data-parallel programming. Branchless programming is very important for SIMD applications because they don’t have branching in the first place.",
-    "title": "Branchless Programming",
-    "url": "https://en.algorithmica.org/hpc/pipelining/branchless/"
   },
   {
     "author": "Jonathon P Sine",
