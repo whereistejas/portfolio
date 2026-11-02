@@ -1,13 +1,52 @@
 [
   {
+    "author": "Anne Applebaum",
+    "category": "article",
+    "date_group": "02 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-02T04:55:11.000Z",
+    "location": "new",
+    "readwise_id": "itm_9MPRP",
+    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
+    "title": "What the U.S. Is Really Doing in Venezuela",
+    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
+  },
+  {
+    "author": "Shaun Maguire",
+    "category": "article",
+    "date_group": "02 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-02T04:29:45.000Z",
+    "location": "new",
+    "readwise_id": "itm_9QTy2",
+    "summary": "But *everyone* at SpaceX is great. Amazon, Google and the Neclouds have some people who can solve gnarly problems. But SpaceX (+ Tesla) has someone that can solve *any* problem.",
+    "title": "People don't understand SpaceX",
+    "url": "https://x.com/shaunmmaguire/status/2116260821080973679"
+  },
+  {
+    "author": "Aria Schrecker",
+    "category": "article",
+    "date_group": "02 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-02T03:59:20.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9O8Uf",
+    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
+    "title": "Young prudes",
+    "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
     "author": "Dario Amodei",
     "category": "article",
-    "date_group": "01 Nov 2026",
+    "date_group": "02 Nov 2026",
     "highlights": [
       "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
     ],
     "last_highlighted_at": "2026-10-16T17:37:26.000Z",
-    "last_moved_at": "2026-11-01T04:29:59.000Z",
+    "last_moved_at": "2026-11-02T01:57:48.000Z",
     "location": "archive",
     "readwise_id": "itm_94DoO",
     "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
@@ -15,25 +54,105 @@
     "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
   },
   {
-    "author": "Kevin Kelly",
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "02 Nov 2026",
+    "highlights": [
+      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
+      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
+      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
+    "last_moved_at": "2026-11-02T01:22:01.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Tim Urban",
+    "category": "article",
+    "date_group": "02 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-02T01:18:47.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9yv",
+    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
+    "title": "The AI Revolution: The Road to Superintelligence",
+    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
+  },
+  {
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "02 Nov 2026",
+    "highlights": [
+      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
+    ],
+    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
+    "last_moved_at": "2026-11-02T00:35:33.000Z",
+    "location": "archive",
+    "readwise_id": "itm_bioV",
+    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
+    "title": "Tips for Productivity, Thinking, and Doing",
+    "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Dan Luu",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [
+      "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
+    ],
+    "last_highlighted_at": "2025-11-09T01:51:47.056Z",
+    "last_moved_at": "2026-11-01T23:25:08.000Z",
+    "location": "archive",
+    "readwise_id": "itm_2SNh",
+    "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
+    "title": "Willingness to look stupid",
+    "url": "https://danluu.com/look-stupid/"
+  },
+  {
+    "author": "Samuel Hughes",
     "category": "article",
     "date_group": "01 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T04:28:42.000Z",
+    "last_moved_at": "2026-11-01T23:20:25.000Z",
     "location": "archive",
-    "readwise_id": "itm_H9Eg",
-    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
-    "title": "103 Bits of Advice I Wish I Had Known",
-    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
+    "readwise_id": "itm_9Ez6W",
+    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
+    "title": "The seven vices of highly effective Victorians",
+    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
+  },
+  {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T23:08:22.000Z",
+    "location": "new",
+    "readwise_id": "itm_9P8VF",
+    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
+    "title": "A love letter to a new kind of company",
+    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
   },
   {
     "author": "",
     "category": "article",
     "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T04:27:53.000Z",
+    "highlights": [
+      "China is made up of distinctive macro regions. China’s central government has for millennia tried to impose its will on the entire nation. Though top leader Xi Jinping wields more governance instruments than any former emperor, central authorities still have to contend with the ambitions of different regions. New investments do not end up in Beijing by default."
+    ],
+    "last_highlighted_at": "2026-11-01T23:02:36.000Z",
+    "last_moved_at": "2026-11-01T23:03:33.000Z",
     "location": "archive",
     "readwise_id": "itm_9L6zm",
     "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
@@ -41,19 +160,102 @@
     "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
   },
   {
-    "author": "Nabeel Qureshi",
+    "author": "Brian Potter",
     "category": "article",
     "date_group": "01 Nov 2026",
     "highlights": [
-      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
+      "Internalizing the various propellant lines and adding internal cooling systems allows this heat shield and fire protection system to be eliminated. In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
+      "But an FFSC engine has several advantages, one of which is (theoretically) reliability: because so much mass flows through the turbines driving the pumps, the turbines can run cooler and at lower pressure, making them (in theory) more reliable. If you’re a company betting heavily on reusable rockets, a more reliable turbine is obviously attractive."
     ],
-    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
-    "last_moved_at": "2026-11-01T04:15:19.000Z",
+    "last_highlighted_at": "2026-11-01T22:55:18.000Z",
+    "last_moved_at": "2026-11-01T22:55:54.000Z",
     "location": "archive",
-    "readwise_id": "itm_bioV",
-    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
-    "title": "Tips for Productivity, Thinking, and Doing",
-    "url": "https://nabeelqu.co/advice"
+    "readwise_id": "itm_96My0",
+    "summary": "In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
+    "title": "How SpaceX Streamlined the Raptor Engine",
+    "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor"
+  },
+  {
+    "author": "Brian Potter",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T22:51:09.000Z",
+    "location": "new",
+    "readwise_id": "itm_842va",
+    "summary": "Worldwide Helium Production Helium production by country in 2024, in billions of cubic meters. Helium in Natural Gas Helium content in various natural gas fields. Elemental helium has a few different useful properties.",
+    "title": "Helium Is Hard to Replace",
+    "url": "https://www.construction-physics.com/p/helium-is-hard-to-replace"
+  },
+  {
+    "author": "whiteblossom",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [
+      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
+      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
+      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
+    ],
+    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
+    "last_moved_at": "2026-11-01T21:11:54.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9HfjH",
+    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
+    "title": "China’s Growth Machine",
+    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
+  },
+  {
+    "author": "Kevin Kelly",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T21:07:39.000Z",
+    "location": "archive",
+    "readwise_id": "itm_H9Eg",
+    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
+    "title": "103 Bits of Advice I Wish I Had Known",
+    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
+  },
+  {
+    "author": "danluu.com via lalitm",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T13:51:27.000Z",
+    "location": "new",
+    "readwise_id": "itm_9NXzl",
+    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
+    "title": "“We should be more ambitious with the software we build”",
+    "url": "https://danluu.com/ambitious/"
+  },
+  {
+    "author": "Thorsten Ball",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T08:44:00.000Z",
+    "location": "archive",
+    "readwise_id": "itm_97UQW",
+    "summary": "Smart machines need much less UI. It’ll take a while for this to play out. It’ll take a generation for the “new software” to replace the “old software”.",
+    "title": "What I believe about the future of software development",
+    "url": "http://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/"
+  },
+  {
+    "author": "wip-admin",
+    "category": "article",
+    "date_group": "01 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-01T08:11:47.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8YgcN",
+    "summary": "In the meantime, the lack of any strong signal in the Taiwan data is one of many good indicators that low-level radiation is not a cause for concern.",
+    "title": "How to lie about radiation",
+    "url": "https://worksinprogress.co/issue/how-to-lie-about-radiation/"
   },
   {
     "author": "Nathaniel J. Smith",
@@ -438,19 +640,6 @@
     "url": "https://scholars-stage.blogspot.com/2021/02/why-writers-and-think-tankers-feud-so.html"
   },
   {
-    "author": "danluu.com via lalitm",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T02:07:58.000Z",
-    "location": "new",
-    "readwise_id": "itm_9NXzl",
-    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
-    "title": "“We should be more ambitious with the software we build”",
-    "url": "https://danluu.com/ambitious/"
-  },
-  {
     "author": "Ed West",
     "category": "article",
     "date_group": "01 Nov 2026",
@@ -520,28 +709,6 @@
     "url": "https://rdmsr.github.io/writing/turnstiles/"
   },
   {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [
-      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
-      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
-      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
-      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
-      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
-      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
-    "last_moved_at": "2026-11-01T01:51:00.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
-  },
-  {
     "author": "Philpax",
     "category": "article",
     "date_group": "01 Nov 2026",
@@ -553,32 +720,6 @@
     "summary": "So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?",
     "title": "Redesigning source control at Anthropic",
     "url": "https://www.anthropic.com/engineering/redesigning-source-control"
-  },
-  {
-    "author": "Anne Applebaum",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T00:53:12.000Z",
-    "location": "new",
-    "readwise_id": "itm_9MPRP",
-    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
-    "title": "What the U.S. Is Really Doing in Venezuela",
-    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
-  },
-  {
-    "author": "Samuel Hughes",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T00:36:43.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Ez6W",
-    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
-    "title": "The seven vices of highly effective Victorians",
-    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
   },
   {
     "author": "rusbus",
@@ -629,19 +770,6 @@
     "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
   },
   {
-    "author": "Colossus",
-    "category": "article",
-    "date_group": "31 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-31T20:36:27.000Z",
-    "location": "new",
-    "readwise_id": "itm_9P8VF",
-    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
-    "title": "A love letter to a new kind of company",
-    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
-  },
-  {
     "author": "Paul Graham",
     "category": "article",
     "date_group": "31 Oct 2026",
@@ -655,19 +783,6 @@
     "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
     "title": "How to Write Usefully",
     "url": "http://paulgraham.com/useful.html"
-  },
-  {
-    "author": "Aria Schrecker",
-    "category": "article",
-    "date_group": "31 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-31T16:01:10.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9O8Uf",
-    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
-    "title": "Young prudes",
-    "url": "https://worksinprogress.co/issue/young-prudes/"
   },
   {
     "author": "Nick",
@@ -713,23 +828,6 @@
     "summary": "In my experience, desperation is the single greatest advantage you have as a startup. It takes you down to the lowest level of detail.3 Desperation inspires creativity and intense focus.",
     "title": "Desperation Induced Focus",
     "url": "https://rkg.blog/desperation-induced-focus.php"
-  },
-  {
-    "author": "whiteblossom",
-    "category": "article",
-    "date_group": "31 Oct 2026",
-    "highlights": [
-      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
-      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
-      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
-    ],
-    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
-    "last_moved_at": "2026-10-31T10:46:13.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9HfjH",
-    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
-    "title": "China’s Growth Machine",
-    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
   },
   {
     "author": "Alex Chalmers",
@@ -838,19 +936,6 @@
     "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
     "title": "Emily Wilson · An Uncomplicated Man",
     "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
-  },
-  {
-    "author": "Tim Urban",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T00:36:04.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9yv",
-    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
-    "title": "The AI Revolution: The Road to Superintelligence",
-    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
   },
   {
     "author": "Shoshannah Tekofsky",
@@ -1125,19 +1210,6 @@
     "summary": "Some tools support installing skills via npx skills, but that only works in Codex and Claude Code, not Claude Cowork or standard Claude. Pure knowledge skills work in Claude, but most others don’t.",
     "title": "I Still Prefer MCP Over Skills",
     "url": "https://david.coffee/i-still-prefer-mcp-over-skills/"
-  },
-  {
-    "author": "Brian Potter",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:17:50.000Z",
-    "location": "new",
-    "readwise_id": "itm_842va",
-    "summary": "Worldwide Helium Production Helium production by country in 2024, in billions of cubic meters. Helium in Natural Gas Helium content in various natural gas fields. Elemental helium has a few different useful properties.",
-    "title": "Helium Is Hard to Replace",
-    "url": "https://www.construction-physics.com/p/helium-is-hard-to-replace"
   },
   {
     "author": "Patrick Mineault",
@@ -1634,19 +1706,6 @@
     "url": "https://shopify.engineering/what-is-nix"
   },
   {
-    "author": "Brian Potter",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T10:15:11.000Z",
-    "location": "archive",
-    "readwise_id": "itm_96My0",
-    "summary": "In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
-    "title": "How SpaceX Streamlined the Raptor Engine",
-    "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor"
-  },
-  {
     "author": "Scott Adams",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -1660,19 +1719,6 @@
     "summary": "I went from being a bad writer to a good writer after taking a one-day course in \"business writing.\" I couldn't believe how simple it was.",
     "title": "The Day You Became A Better Writer",
     "url": "https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html"
-  },
-  {
-    "author": "Thorsten Ball",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T07:54:12.000Z",
-    "location": "archive",
-    "readwise_id": "itm_97UQW",
-    "summary": "Smart machines need much less UI. It’ll take a while for this to play out. It’ll take a generation for the “new software” to replace the “old software”.",
-    "title": "What I believe about the future of software development",
-    "url": "http://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/"
   },
   {
     "author": "Packy McCormick",
@@ -1785,21 +1831,6 @@
     "summary": "But “I Who Have Never Known Men” warns us: the nights are ordinary, until they’re not. ♦ This is drawn from the introduction to a new edition of “I Who Have Never Known Men.”",
     "title": "“I Who Have Never Known Men” Is a Warning",
     "url": "https://www.newyorker.com/newyorkercom/books/second-read/i-who-have-never-known-men-jacqueline-harpman-excerpt"
-  },
-  {
-    "author": "Dan Luu",
-    "category": "article",
-    "date_group": "27 Oct 2026",
-    "highlights": [
-      "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
-    ],
-    "last_highlighted_at": "2025-11-09T01:51:47.056Z",
-    "last_moved_at": "2026-10-27T09:29:57.000Z",
-    "location": "archive",
-    "readwise_id": "itm_2SNh",
-    "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
-    "title": "Willingness to look stupid",
-    "url": "https://danluu.com/look-stupid/"
   },
   {
     "author": "Sunil Pai",
@@ -2228,19 +2259,6 @@
     "summary": "In the U.S., government expenditure on EdTech products for public schools exceeds $30 billion annually. With these numbers, you’d think EdTech had clearly demonstrated a strong beneficial impact on student learning.",
     "title": "The EdTech Revolution Has Failed",
     "url": "https://www.afterbabel.com/p/the-edtech-revolution-has-failed"
-  },
-  {
-    "author": "wip-admin",
-    "category": "article",
-    "date_group": "04 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-04T10:15:37.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8YgcN",
-    "summary": "In the meantime, the lack of any strong signal in the Taiwan data is one of many good indicators that low-level radiation is not a cause for concern.",
-    "title": "How to lie about radiation",
-    "url": "https://worksinprogress.co/issue/how-to-lie-about-radiation/"
   },
   {
     "author": "Gwern Branwen",
