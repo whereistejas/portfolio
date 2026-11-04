@@ -1,5 +1,102 @@
 [
   {
+    "author": "Samuel Hughes",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T02:27:21.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Ez6W",
+    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
+    "title": "The seven vices of highly effective Victorians",
+    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
+  },
+  {
+    "author": "Shaun Maguire",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T02:13:47.000Z",
+    "location": "new",
+    "readwise_id": "itm_9QTy2",
+    "summary": "But *everyone* at SpaceX is great. Amazon, Google and the Neclouds have some people who can solve gnarly problems. But SpaceX (+ Tesla) has someone that can solve *any* problem.",
+    "title": "People don't understand SpaceX",
+    "url": "https://x.com/shaunmmaguire/status/2116260821080973679"
+  },
+  {
+    "author": "Anne Applebaum",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T01:50:19.000Z",
+    "location": "new",
+    "readwise_id": "itm_9MPRP",
+    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
+    "title": "What the U.S. Is Really Doing in Venezuela",
+    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
+  },
+  {
+    "author": "Dario Amodei",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [
+      "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
+    ],
+    "last_highlighted_at": "2026-10-16T17:37:26.000Z",
+    "last_moved_at": "2026-11-04T00:37:20.000Z",
+    "location": "archive",
+    "readwise_id": "itm_94DoO",
+    "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
+    "title": "We Must Pace the Frontier",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
+  },
+  {
+    "author": "Dario Amodei",
+    "category": "article",
+    "date_group": "03 Nov 2026",
+    "highlights": [
+      "timescales",
+      "factors that limit",
+      "it’s dangerous to view companies as unilaterally shaping the world, and dangerous to view practical technological goals in essentially religious terms."
+    ],
+    "last_highlighted_at": "2024-11-18T13:24:11.000Z",
+    "last_moved_at": "2026-11-03T23:27:42.000Z",
+    "location": "archive",
+    "readwise_id": "itm_4qEzC",
+    "summary": "Machines of Loving Grace How AI Could Transform the World for the Better I think and talk a lot about the risks of powerful AI. The company I’m the CEO of, Anthropic, does a lot of research on how to reduce these risks.",
+    "title": "Machines of Loving Grace",
+    "url": "https://darioamodei.com/machines-of-loving-grace"
+  },
+  {
+    "author": "danluu.com via lalitm",
+    "category": "article",
+    "date_group": "03 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-03T20:36:10.000Z",
+    "location": "new",
+    "readwise_id": "itm_9NXzl",
+    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
+    "title": "“We should be more ambitious with the software we build”",
+    "url": "https://danluu.com/ambitious/"
+  },
+  {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "03 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-03T18:25:52.000Z",
+    "location": "new",
+    "readwise_id": "itm_9P8VF",
+    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
+    "title": "A love letter to a new kind of company",
+    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
+  },
+  {
     "author": "Nathan Heller",
     "category": "article",
     "date_group": "03 Nov 2026",
@@ -14,7 +111,7 @@
       "jeremiads,"
     ],
     "last_highlighted_at": "2026-11-01T01:48:38.000Z",
-    "last_moved_at": "2026-11-03T05:31:26.000Z",
+    "last_moved_at": "2026-11-03T17:27:59.000Z",
     "location": "archive",
     "readwise_id": "itm_9Kr0e",
     "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
@@ -22,43 +119,17 @@
     "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
   },
   {
-    "author": "Anne Applebaum",
+    "author": "Thorsten Ball",
     "category": "article",
     "date_group": "03 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T04:47:21.000Z",
-    "location": "new",
-    "readwise_id": "itm_9MPRP",
-    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
-    "title": "What the U.S. Is Really Doing in Venezuela",
-    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
-  },
-  {
-    "author": "zdw",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T04:18:34.000Z",
+    "last_moved_at": "2026-11-03T17:21:08.000Z",
     "location": "archive",
-    "readwise_id": "itm_9BOHj",
-    "summary": "As Florida Keys Mosquito Control District Executive Director Andrea Leal said, ‘our biggest challenges have been awaiting regulatory approvals.’ Luckily, this district had another mosquito control option to try out: Wolbachia-infected mosquitoes.",
-    "title": "Every mosquito is a policy failure",
-    "url": "https://worksinprogress.co/issue/mosquitoes-are-a-choice/"
-  },
-  {
-    "author": "Samuel Hughes",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T04:13:23.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Ez6W",
-    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
-    "title": "The seven vices of highly effective Victorians",
-    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
+    "readwise_id": "itm_97UQW",
+    "summary": "Smart machines need much less UI. It’ll take a while for this to play out. It’ll take a generation for the “new software” to replace the “old software”.",
+    "title": "What I believe about the future of software development",
+    "url": "http://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/"
   },
   {
     "author": "Aria Schrecker",
@@ -66,7 +137,7 @@
     "date_group": "03 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T03:52:05.000Z",
+    "last_moved_at": "2026-11-03T17:03:17.000Z",
     "location": "archive",
     "readwise_id": "itm_9O8Uf",
     "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
@@ -74,17 +145,96 @@
     "url": "https://worksinprogress.co/issue/young-prudes/"
   },
   {
-    "author": "Shaun Maguire",
+    "author": "Patrick Collison",
+    "category": "article",
+    "date_group": "03 Nov 2026",
+    "highlights": [
+      "When anthropologists look at scientists, they’re trying to understand the species. But when viewed through the lens of Progress Studies, the implicit question is how scientists (or funders or evaluators of scientists) should be acting. The success of Progress Studies will come from its ability to identify effective progress-increasing interventions and the extent to which they are adopted by universities, funding agencies, philanthropists, entrepreneurs, policy makers, and other institutions. In that sense, Progress Studies is closer to medicine than biology: The goal is to treat, not merely to understand.",
+      "present funding mechanisms are likely to be far from optimal, in part because they do not focus enough on research autonomy and risk taking.",
+      "Thinkers in these disciplines don’t necessarily attend the same conferences, publish in the same journals, or work together to solve shared problems.",
+      "Switzerland’s Basel region in life sciences.",
+      "For example, if our discoveries and inventions improve standards of living by 1 percent a year, children will by adulthood be 35 percent better off than their parents. If they improve livelihoods at 3 percent a year, those same children will grow up to be about 2.5 times better off.",
+      "Progress itself is understudied. By “progress,” we mean the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries."
+    ],
+    "last_highlighted_at": "2024-11-06T19:02:48.000Z",
+    "last_moved_at": "2026-11-03T16:53:31.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8f5",
+    "summary": "In 1861, the American scientist and educator William Barton Rogers published a manifesto calling for a new kind of research institution. Recognizing t",
+    "title": "We Need a New Science of Progress",
+    "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
+  },
+  {
+    "author": "ibobev",
     "category": "article",
     "date_group": "03 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T02:39:21.000Z",
+    "last_moved_at": "2026-11-03T16:11:17.000Z",
     "location": "new",
-    "readwise_id": "itm_9QTy2",
-    "summary": "But *everyone* at SpaceX is great. Amazon, Google and the Neclouds have some people who can solve gnarly problems. But SpaceX (+ Tesla) has someone that can solve *any* problem.",
-    "title": "People don't understand SpaceX",
-    "url": "https://x.com/shaunmmaguire/status/2116260821080973679"
+    "readwise_id": "itm_8rYF",
+    "summary": "But it’s still better than no dangling protection at all (like raw pointers), or a ‘fake memory leak’ which would happen in similar situations with smart pointers.",
+    "title": "Handles are the better pointers",
+    "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html"
+  },
+  {
+    "author": "Kevin Kelly",
+    "category": "article",
+    "date_group": "03 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-03T14:56:00.000Z",
+    "location": "archive",
+    "readwise_id": "itm_H9Eg",
+    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
+    "title": "103 Bits of Advice I Wish I Had Known",
+    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
+  },
+  {
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "03 Nov 2026",
+    "highlights": [
+      "The most valuable feedback usually hurts a lot.",
+      "Scrolling and reading too much drowns out your inner voice.",
+      "Think in writing. Write Google Docs, scrawl in notebooks. This extends working memory arbitrarily and allows your thoughts to compound on each other.",
+      "If you find yourself dreading Mondays, quit."
+    ],
+    "last_highlighted_at": "2025-01-10T13:25:20.000Z",
+    "last_moved_at": "2026-11-03T14:15:03.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1oyus",
+    "summary": "Do things fast. Things don’t actually take much time, resistance/procrastination does. “Slow is fake”. Wealth can be created, there is not a fixed amount of it in the world.",
+    "title": "Nabeel Qureshi",
+    "url": "https://nabeelqu.co/principles"
+  },
+  {
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "03 Nov 2026",
+    "highlights": [
+      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
+    ],
+    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
+    "last_moved_at": "2026-11-03T14:12:01.000Z",
+    "location": "archive",
+    "readwise_id": "itm_bioV",
+    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
+    "title": "Tips for Productivity, Thinking, and Doing",
+    "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "zdw",
+    "category": "article",
+    "date_group": "03 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-03T14:00:22.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9BOHj",
+    "summary": "As Florida Keys Mosquito Control District Executive Director Andrea Leal said, ‘our biggest challenges have been awaiting regulatory approvals.’ Luckily, this district had another mosquito control option to try out: Wolbachia-infected mosquitoes.",
+    "title": "Every mosquito is a policy failure",
+    "url": "https://worksinprogress.co/issue/mosquitoes-are-a-choice/"
   },
   {
     "author": "Philpax",
@@ -98,19 +248,6 @@
     "summary": "So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?",
     "title": "Redesigning source control at Anthropic",
     "url": "https://www.anthropic.com/engineering/redesigning-source-control"
-  },
-  {
-    "author": "Colossus",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T00:37:18.000Z",
-    "location": "new",
-    "readwise_id": "itm_9P8VF",
-    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
-    "title": "A love letter to a new kind of company",
-    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
   },
   {
     "author": "Sunil Pai",
@@ -143,21 +280,6 @@
     "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
   },
   {
-    "author": "Nabeel Qureshi",
-    "category": "article",
-    "date_group": "02 Nov 2026",
-    "highlights": [
-      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
-    ],
-    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
-    "last_moved_at": "2026-11-02T13:41:40.000Z",
-    "location": "archive",
-    "readwise_id": "itm_bioV",
-    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
-    "title": "Tips for Productivity, Thinking, and Doing",
-    "url": "https://nabeelqu.co/advice"
-  },
-  {
     "author": "",
     "category": "article",
     "date_group": "02 Nov 2026",
@@ -188,19 +310,6 @@
     "url": "https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html"
   },
   {
-    "author": "Kevin Kelly",
-    "category": "article",
-    "date_group": "02 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-02T08:56:09.000Z",
-    "location": "archive",
-    "readwise_id": "itm_H9Eg",
-    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
-    "title": "103 Bits of Advice I Wish I Had Known",
-    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
-  },
-  {
     "author": "Dan Luu",
     "category": "article",
     "date_group": "02 Nov 2026",
@@ -220,21 +329,6 @@
     "summary": "How I learned to program  Tavish Armstrong has a great document where he describes how and when he learned the programming skills he has.",
     "title": "How I learned to program",
     "url": "https://danluu.com/learning-to-program/"
-  },
-  {
-    "author": "Dario Amodei",
-    "category": "article",
-    "date_group": "02 Nov 2026",
-    "highlights": [
-      "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
-    ],
-    "last_highlighted_at": "2026-10-16T17:37:26.000Z",
-    "last_moved_at": "2026-11-02T01:57:48.000Z",
-    "location": "archive",
-    "readwise_id": "itm_94DoO",
-    "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
-    "title": "We Must Pace the Frontier",
-    "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
   },
   {
     "author": "Tim Urban",
@@ -292,32 +386,6 @@
     "summary": "Worldwide Helium Production Helium production by country in 2024, in billions of cubic meters. Helium in Natural Gas Helium content in various natural gas fields. Elemental helium has a few different useful properties.",
     "title": "Helium Is Hard to Replace",
     "url": "https://www.construction-physics.com/p/helium-is-hard-to-replace"
-  },
-  {
-    "author": "danluu.com via lalitm",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T13:51:27.000Z",
-    "location": "new",
-    "readwise_id": "itm_9NXzl",
-    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
-    "title": "“We should be more ambitious with the software we build”",
-    "url": "https://danluu.com/ambitious/"
-  },
-  {
-    "author": "Thorsten Ball",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T08:44:00.000Z",
-    "location": "archive",
-    "readwise_id": "itm_97UQW",
-    "summary": "Smart machines need much less UI. It’ll take a while for this to play out. It’ll take a generation for the “new software” to replace the “old software”.",
-    "title": "What I believe about the future of software development",
-    "url": "http://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/"
   },
   {
     "author": "wip-admin",
@@ -516,19 +584,6 @@
     "summary": "Posted by Shai Barack, Android Platform Performance Lead and Charles Munger, Principal Software Engineer In Android 17, apps targeting SDK 37 or higher will receive a new implementation of MessageQueue where the implementation is lock-free.",
     "title": "Under the hood: Android 17’s lock-free MessageQueue",
     "url": "https://android-developers.googleblog.com/2026/02/under-hood-android-17s-lock-free.html"
-  },
-  {
-    "author": "ibobev",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T02:12:40.000Z",
-    "location": "new",
-    "readwise_id": "itm_8rYF",
-    "summary": "But it’s still better than no dangling protection at all (like raw pointers), or a ‘fake memory leak’ which would happen in similar situations with smart pointers.",
-    "title": "Handles are the better pointers",
-    "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html"
   },
   {
     "author": "xnacly",
@@ -797,26 +852,6 @@
     "url": "https://dial9-rs.github.io/blog/principles-for-fast-tokio-applications/"
   },
   {
-    "author": "Patrick Collison",
-    "category": "article",
-    "date_group": "31 Oct 2026",
-    "highlights": [
-      "When anthropologists look at scientists, they’re trying to understand the species. But when viewed through the lens of Progress Studies, the implicit question is how scientists (or funders or evaluators of scientists) should be acting. The success of Progress Studies will come from its ability to identify effective progress-increasing interventions and the extent to which they are adopted by universities, funding agencies, philanthropists, entrepreneurs, policy makers, and other institutions. In that sense, Progress Studies is closer to medicine than biology: The goal is to treat, not merely to understand.",
-      "present funding mechanisms are likely to be far from optimal, in part because they do not focus enough on research autonomy and risk taking.",
-      "Thinkers in these disciplines don’t necessarily attend the same conferences, publish in the same journals, or work together to solve shared problems.",
-      "Switzerland’s Basel region in life sciences.",
-      "For example, if our discoveries and inventions improve standards of living by 1 percent a year, children will by adulthood be 35 percent better off than their parents. If they improve livelihoods at 3 percent a year, those same children will grow up to be about 2.5 times better off.",
-      "Progress itself is understudied. By “progress,” we mean the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries."
-    ],
-    "last_highlighted_at": "2024-11-06T19:02:48.000Z",
-    "last_moved_at": "2026-10-31T22:24:08.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8f5",
-    "summary": "In 1861, the American scientist and educator William Barton Rogers published a manifesto calling for a new kind of research institution. Recognizing t",
-    "title": "We Need a New Science of Progress",
-    "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
-  },
-  {
     "author": "Atul Gawande",
     "category": "article",
     "date_group": "31 Oct 2026",
@@ -1011,23 +1046,6 @@
     "summary": "Except it applies to all of life, and gets you looking at the world with a question mark on your brain, wondering what tiny new thing you could do today.",
     "title": "Explore More: A Bag of Tricks to Keep Your Life on the Rails",
     "url": "https://www.lesswrong.com/posts/uwmFSaDMprsFkpWet/explore-more-a-bag-of-tricks-to-keep-your-life-on-the-rails"
-  },
-  {
-    "author": "Dario Amodei",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [
-      "timescales",
-      "factors that limit",
-      "it’s dangerous to view companies as unilaterally shaping the world, and dangerous to view practical technological goals in essentially religious terms."
-    ],
-    "last_highlighted_at": "2024-11-18T13:24:11.000Z",
-    "last_moved_at": "2026-10-29T18:01:40.000Z",
-    "location": "archive",
-    "readwise_id": "itm_4qEzC",
-    "summary": "Machines of Loving Grace How AI Could Transform the World for the Better I think and talk a lot about the risks of powerful AI. The company I’m the CEO of, Anthropic, does a lot of research on how to reduce these risks.",
-    "title": "Machines of Loving Grace",
-    "url": "https://darioamodei.com/machines-of-loving-grace"
   },
   {
     "author": "Leandro Ostera",
@@ -1909,24 +1927,6 @@
     "summary": "It's only when you try to put them into words that you discover they're not. So if you never subject your ideas to that test, you'll not only never have fully formed ideas, but also never realize it.",
     "title": "Putting Ideas into Words",
     "url": "http://paulgraham.com/words.html"
-  },
-  {
-    "author": "Nabeel Qureshi",
-    "category": "article",
-    "date_group": "25 Oct 2026",
-    "highlights": [
-      "The most valuable feedback usually hurts a lot.",
-      "Scrolling and reading too much drowns out your inner voice.",
-      "Think in writing. Write Google Docs, scrawl in notebooks. This extends working memory arbitrarily and allows your thoughts to compound on each other.",
-      "If you find yourself dreading Mondays, quit."
-    ],
-    "last_highlighted_at": "2025-01-10T13:25:20.000Z",
-    "last_moved_at": "2026-10-25T23:11:33.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1oyus",
-    "summary": "Do things fast. Things don’t actually take much time, resistance/procrastination does. “Slow is fake”. Wealth can be created, there is not a fixed amount of it in the world.",
-    "title": "Nabeel Qureshi",
-    "url": "https://nabeelqu.co/principles"
   },
   {
     "author": "Samuel Watling",
