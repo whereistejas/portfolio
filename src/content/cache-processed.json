@@ -1,16 +1,243 @@
 [
   {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-05T05:25:00.000Z",
+    "location": "new",
+    "readwise_id": "itm_9P8VF",
+    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
+    "title": "A love letter to a new kind of company",
+    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
+  },
+  {
+    "author": "Kevin Kelly",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-05T02:32:38.000Z",
+    "location": "archive",
+    "readwise_id": "itm_H9Eg",
+    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
+    "title": "103 Bits of Advice I Wish I Had Known",
+    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
+  },
+  {
+    "author": "Paul Graham",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [
+      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
+    ],
+    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
+    "last_moved_at": "2026-11-05T02:31:08.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1qI",
+    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
+    "title": "How to Write Usefully",
+    "url": "http://paulgraham.com/useful.html"
+  },
+  {
+    "author": "David Oks",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T23:15:59.000Z",
+    "location": "new",
+    "readwise_id": "itm_8IlhF",
+    "summary": "Why do they do so many different things? And how do they manage to do so all those different things so well?",
+    "title": "Why Japanese companies do so many different things",
+    "url": "https://davidoks.blog/p/why-japanese-companies-do-so-many"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T23:05:01.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9PedS",
+    "summary": "In this book, my goal is to show you how representational principles can be used to improve API design. That is, when you map the real world to an API, how can you help API clients be more productive and avoid mistakes?",
+    "title": "Type-Driven API Design in Rust",
+    "url": "https://willcrichton.net/rust-api-type-patterns/main_idea.html"
+  },
+  {
+    "author": "behnamoh",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T22:57:52.000Z",
+    "location": "new",
+    "readwise_id": "itm_4FE4",
+    "summary": "This is an example of the typestate pattern, enforcing the property “you may not perform other operations on a File after closing it.” This might look like RAII to you, and you’re right.",
+    "title": "The Typestate Pattern in Rust",
+    "url": "http://cliffle.com/blog/rust-typestate/"
+  },
+  {
+    "author": "StillStackinAfterAllTheseYears",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T22:51:55.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8jdTa",
+    "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
+    "title": "Emily Wilson · An Uncomplicated Man",
+    "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T22:51:10.000Z",
+    "location": "new",
+    "readwise_id": "itm_Ow1E",
+    "summary": "The front page of the LLVM website proudly claims that: Clang is an “LLVM native” C/C++/Objective-C compiler, which aims to deliver amazingly fast compiles […] I’m not sure whether this has been true in the past, but it certainly isn’t true now.",
+    "title": "Make LLVM fast again",
+    "url": "https://www.npopov.com/2020/05/10/Make-LLVM-fast-again.html"
+  },
+  {
+    "author": "sebg",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T22:50:47.000Z",
+    "location": "new",
+    "readwise_id": "itm_8oItx",
+    "summary": "Codebases won't disappear. They just stop being what we mean when we say \"the project.\" Abstractions retire.",
+    "title": "Retire the Abstractions",
+    "url": "https://hazyresearch.stanford.edu/blog/2026-08-05-retire-the-abstractions"
+  },
+  {
     "author": "Samuel Hughes",
     "category": "article",
     "date_group": "04 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-04T02:27:21.000Z",
+    "last_moved_at": "2026-11-04T22:39:27.000Z",
     "location": "archive",
     "readwise_id": "itm_9Ez6W",
     "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
     "title": "The seven vices of highly effective Victorians",
     "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
+  },
+  {
+    "author": "Tim Urban",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T21:02:16.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9yv",
+    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
+    "title": "The AI Revolution: The Road to Superintelligence",
+    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
+  },
+  {
+    "author": "Anne Applebaum",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T18:45:35.000Z",
+    "location": "new",
+    "readwise_id": "itm_9MPRP",
+    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
+    "title": "What the U.S. Is Really Doing in Venezuela",
+    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
+  },
+  {
+    "author": "Stephen Clark",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-04T18:23:32.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Ovbx",
+    "summary": "Catch and release The DIA report doesn’t reveal much new about what the Chinese spaceplane does in orbit. China has launched four spaceplane missions since 2020 with durations of up to nine months.",
+    "title": "China's top-secret spaceplane can't hide in low-Earth orbit",
+    "url": "https://arstechnica.com/space/2026/10/chinas-top-secret-spaceplane-cant-hide-in-low-earth-orbit/"
+  },
+  {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [
+      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
+      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
+      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
+    "last_moved_at": "2026-11-04T16:29:34.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Scott Adams",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [
+      "Your first sentence needs to grab the reader. Go back and read my first sentence to this post. I rewrote it a dozen times. It makes you curious. That's the key. Write short sentences. Avoid putting multiple thoughts in one sentence. Readers aren't as smart as you'd think."
+    ],
+    "last_highlighted_at": "2026-06-10T08:53:50.000Z",
+    "last_moved_at": "2026-11-04T08:26:50.000Z",
+    "location": "archive",
+    "readwise_id": "itm_CsS",
+    "summary": "I went from being a bad writer to a good writer after taking a one-day course in \"business writing.\" I couldn't believe how simple it was.",
+    "title": "The Day You Became A Better Writer",
+    "url": "https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html"
+  },
+  {
+    "author": "whiteblossom",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [
+      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
+      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
+      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
+    ],
+    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
+    "last_moved_at": "2026-11-04T05:38:15.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9HfjH",
+    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
+    "title": "China’s Growth Machine",
+    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
+  },
+  {
+    "author": "hyperthesis",
+    "category": "article",
+    "date_group": "04 Nov 2026",
+    "highlights": [
+      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
+    ],
+    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
+    "last_moved_at": "2026-11-04T05:34:59.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1CyV",
+    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
+    "title": "The Bitter Lesson",
+    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
   },
   {
     "author": "Shaun Maguire",
@@ -24,19 +251,6 @@
     "summary": "But *everyone* at SpaceX is great. Amazon, Google and the Neclouds have some people who can solve gnarly problems. But SpaceX (+ Tesla) has someone that can solve *any* problem.",
     "title": "People don't understand SpaceX",
     "url": "https://x.com/shaunmmaguire/status/2116260821080973679"
-  },
-  {
-    "author": "Anne Applebaum",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-04T01:50:19.000Z",
-    "location": "new",
-    "readwise_id": "itm_9MPRP",
-    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
-    "title": "What the U.S. Is Really Doing in Venezuela",
-    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
   },
   {
     "author": "Dario Amodei",
@@ -82,41 +296,6 @@
     "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
     "title": "“We should be more ambitious with the software we build”",
     "url": "https://danluu.com/ambitious/"
-  },
-  {
-    "author": "Colossus",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T18:25:52.000Z",
-    "location": "new",
-    "readwise_id": "itm_9P8VF",
-    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
-    "title": "A love letter to a new kind of company",
-    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
-  },
-  {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [
-      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
-      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
-      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
-      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
-      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
-      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
-    "last_moved_at": "2026-11-03T17:27:59.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
   },
   {
     "author": "Thorsten Ball",
@@ -176,19 +355,6 @@
     "summary": "But it’s still better than no dangling protection at all (like raw pointers), or a ‘fake memory leak’ which would happen in similar situations with smart pointers.",
     "title": "Handles are the better pointers",
     "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html"
-  },
-  {
-    "author": "Kevin Kelly",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T14:56:00.000Z",
-    "location": "archive",
-    "readwise_id": "itm_H9Eg",
-    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
-    "title": "103 Bits of Advice I Wish I Had Known",
-    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
   },
   {
     "author": "Nabeel Qureshi",
@@ -263,23 +429,6 @@
     "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/"
   },
   {
-    "author": "whiteblossom",
-    "category": "article",
-    "date_group": "02 Nov 2026",
-    "highlights": [
-      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
-      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
-      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
-    ],
-    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
-    "last_moved_at": "2026-11-02T18:04:15.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9HfjH",
-    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
-    "title": "China’s Growth Machine",
-    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
-  },
-  {
     "author": "",
     "category": "article",
     "date_group": "02 Nov 2026",
@@ -293,21 +442,6 @@
     "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
     "title": "Sichuan and the Sun Belt",
     "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
-  },
-  {
-    "author": "Scott Adams",
-    "category": "article",
-    "date_group": "02 Nov 2026",
-    "highlights": [
-      "Your first sentence needs to grab the reader. Go back and read my first sentence to this post. I rewrote it a dozen times. It makes you curious. That's the key. Write short sentences. Avoid putting multiple thoughts in one sentence. Readers aren't as smart as you'd think."
-    ],
-    "last_highlighted_at": "2026-06-10T08:53:50.000Z",
-    "last_moved_at": "2026-11-02T09:03:57.000Z",
-    "location": "archive",
-    "readwise_id": "itm_CsS",
-    "summary": "I went from being a bad writer to a good writer after taking a one-day course in \"business writing.\" I couldn't believe how simple it was.",
-    "title": "The Day You Became A Better Writer",
-    "url": "https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html"
   },
   {
     "author": "Dan Luu",
@@ -329,19 +463,6 @@
     "summary": "How I learned to program  Tavish Armstrong has a great document where he describes how and when he learned the programming skills he has.",
     "title": "How I learned to program",
     "url": "https://danluu.com/learning-to-program/"
-  },
-  {
-    "author": "Tim Urban",
-    "category": "article",
-    "date_group": "02 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-02T01:18:47.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9yv",
-    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
-    "title": "The AI Revolution: The Road to Superintelligence",
-    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
   },
   {
     "author": "Dan Luu",
@@ -627,19 +748,6 @@
     "url": "https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/"
   },
   {
-    "author": "",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T02:10:52.000Z",
-    "location": "new",
-    "readwise_id": "itm_9PedS",
-    "summary": "In this book, my goal is to show you how representational principles can be used to improve API design. That is, when you map the real world to an API, how can you help API clients be more productive and avoid mistakes?",
-    "title": "Type-Driven API Design in Rust",
-    "url": "https://willcrichton.net/rust-api-type-patterns/main_idea.html"
-  },
-  {
     "author": "jparise@users.lobste.rs (jparise)",
     "category": "article",
     "date_group": "01 Nov 2026",
@@ -651,19 +759,6 @@
     "summary": "So generally, I think unwrap() in documentation is okay, but I’ve been gravitating away from it because it’s easy to do.So, in summary, I’d say “do not use unwrap() for error handling in Rust” is a fine first approximation.",
     "title": "Using unwrap() in Rust is Okay",
     "url": "https://blog.burntsushi.net/unwrap/"
-  },
-  {
-    "author": "behnamoh",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T02:10:52.000Z",
-    "location": "new",
-    "readwise_id": "itm_4FE4",
-    "summary": "This is an example of the typestate pattern, enforcing the property “you may not perform other operations on a File after closing it.” This might look like RAII to you, and you’re right.",
-    "title": "The Typestate Pattern in Rust",
-    "url": "http://cliffle.com/blog/rust-typestate/"
   },
   {
     "author": "mattkeeter.com via tekknolagi",
@@ -867,21 +962,6 @@
     "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
   },
   {
-    "author": "Paul Graham",
-    "category": "article",
-    "date_group": "31 Oct 2026",
-    "highlights": [
-      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
-    ],
-    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
-    "last_moved_at": "2026-10-31T17:16:53.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1qI",
-    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
-    "title": "How to Write Usefully",
-    "url": "http://paulgraham.com/useful.html"
-  },
-  {
     "author": "Nick",
     "category": "article",
     "date_group": "31 Oct 2026",
@@ -981,34 +1061,6 @@
     "url": "https://ryhl.io/blog/actors-with-tokio/"
   },
   {
-    "author": "Stephen Clark",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T04:08:58.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Ovbx",
-    "summary": "Catch and release The DIA report doesn’t reveal much new about what the Chinese spaceplane does in orbit. China has launched four spaceplane missions since 2020 with durations of up to nine months.",
-    "title": "China's top-secret spaceplane can't hide in low-Earth orbit",
-    "url": "https://arstechnica.com/space/2026/10/chinas-top-secret-spaceplane-cant-hide-in-low-earth-orbit/"
-  },
-  {
-    "author": "hyperthesis",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [
-      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
-    ],
-    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
-    "last_moved_at": "2026-10-30T04:05:16.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1CyV",
-    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
-    "title": "The Bitter Lesson",
-    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
-  },
-  {
     "author": "Benn Eifert",
     "category": "article",
     "date_group": "30 Oct 2026",
@@ -1020,19 +1072,6 @@
     "summary": "The epic crash in stocks and crypto has been the big financial story of 2022. When the Fed raised rates, it exposed a lot of bad investments — as Warren Buffett once said, “Only when the tide goes out do you discover who's been swimming naked.” But it would be nice if investors could recognize the too-good-to-be-true stuff before the big crash, so as not to over-expose themselves in the first place",
     "title": "On bullshit in investing",
     "url": "https://noahpinion.substack.com/p/on-bullshit-in-investing"
-  },
-  {
-    "author": "StillStackinAfterAllTheseYears",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T02:09:15.000Z",
-    "location": "new",
-    "readwise_id": "itm_8jdTa",
-    "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
-    "title": "Emily Wilson · An Uncomplicated Man",
-    "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
   },
   {
     "author": "Shoshannah Tekofsky",
@@ -1578,19 +1617,6 @@
     "url": "https://anastasiagamick.substack.com/p/working-on-vs-solving"
   },
   {
-    "author": "David Oks",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:15:30.000Z",
-    "location": "new",
-    "readwise_id": "itm_8IlhF",
-    "summary": "Why do they do so many different things? And how do they manage to do so all those different things so well?",
-    "title": "Why Japanese companies do so many different things",
-    "url": "https://davidoks.blog/p/why-japanese-companies-do-so-many"
-  },
-  {
     "author": "SinePost",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -1812,19 +1838,6 @@
     "url": "https://arstechnica.com/tech-policy/2026/02/wikipedia-bans-archive-today-after-site-executed-ddos-and-altered-web-captures/"
   },
   {
-    "author": "sebg",
-    "category": "article",
-    "date_group": "28 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-28T10:38:52.000Z",
-    "location": "new",
-    "readwise_id": "itm_8oItx",
-    "summary": "Codebases won't disappear. They just stop being what we mean when we say \"the project.\" Abstractions retire.",
-    "title": "Retire the Abstractions",
-    "url": "https://hazyresearch.stanford.edu/blog/2026-08-05-retire-the-abstractions"
-  },
-  {
     "author": "Facebook Twitter",
     "category": "article",
     "date_group": "28 Oct 2026",
@@ -1975,19 +1988,6 @@
     "summary": "More on this topic from Reggie James & Eugene Angelo Fix the incentives Introduce a craft or systems-focused counterbalance to metric goals so that success doesn't come at the cost of user experience.",
     "title": "The Cost of Craft",
     "url": "https://gk3fyi.substack.com/p/the-cost-of-craft"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "24 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-24T14:24:06.000Z",
-    "location": "new",
-    "readwise_id": "itm_Ow1E",
-    "summary": "The front page of the LLVM website proudly claims that: Clang is an “LLVM native” C/C++/Objective-C compiler, which aims to deliver amazingly fast compiles […] I’m not sure whether this has been true in the past, but it certainly isn’t true now.",
-    "title": "Make LLVM fast again",
-    "url": "https://www.npopov.com/2020/05/10/Make-LLVM-fast-again.html"
   },
   {
     "author": "tonyedgecombe",
