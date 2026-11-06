@@ -1,11 +1,52 @@
 [
   {
-    "author": "Colossus",
+    "author": "hyperthesis",
     "category": "article",
-    "date_group": "05 Nov 2026",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
+    ],
+    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
+    "last_moved_at": "2026-11-06T03:58:56.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1CyV",
+    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
+    "title": "The Bitter Lesson",
+    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
+  },
+  {
+    "author": "Anne Applebaum",
+    "category": "article",
+    "date_group": "06 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-05T05:25:00.000Z",
+    "last_moved_at": "2026-11-06T02:10:40.000Z",
+    "location": "new",
+    "readwise_id": "itm_9MPRP",
+    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
+    "title": "What the U.S. Is Really Doing in Venezuela",
+    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
+  },
+  {
+    "author": "danluu.com via lalitm",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T02:00:47.000Z",
+    "location": "new",
+    "readwise_id": "itm_9NXzl",
+    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
+    "title": "“We should be more ambitious with the software we build”",
+    "url": "https://danluu.com/ambitious/"
+  },
+  {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T01:06:26.000Z",
     "location": "new",
     "readwise_id": "itm_9P8VF",
     "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
@@ -13,17 +54,73 @@
     "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
   },
   {
-    "author": "Kevin Kelly",
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [
+      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
+    ],
+    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
+    "last_moved_at": "2026-11-05T22:44:15.000Z",
+    "location": "archive",
+    "readwise_id": "itm_bioV",
+    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
+    "title": "Tips for Productivity, Thinking, and Doing",
+    "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Scott Adams",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [
+      "Your first sentence needs to grab the reader. Go back and read my first sentence to this post. I rewrote it a dozen times. It makes you curious. That's the key. Write short sentences. Avoid putting multiple thoughts in one sentence. Readers aren't as smart as you'd think."
+    ],
+    "last_highlighted_at": "2026-06-10T08:53:50.000Z",
+    "last_moved_at": "2026-11-05T21:41:53.000Z",
+    "location": "archive",
+    "readwise_id": "itm_CsS",
+    "summary": "I went from being a bad writer to a good writer after taking a one-day course in \"business writing.\" I couldn't believe how simple it was.",
+    "title": "The Day You Became A Better Writer",
+    "url": "https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html"
+  },
+  {
+    "author": "Shaun Maguire",
     "category": "article",
     "date_group": "05 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-05T02:32:38.000Z",
+    "last_moved_at": "2026-11-05T20:30:55.000Z",
+    "location": "new",
+    "readwise_id": "itm_9QTy2",
+    "summary": "But *everyone* at SpaceX is great. Amazon, Google and the Neclouds have some people who can solve gnarly problems. But SpaceX (+ Tesla) has someone that can solve *any* problem.",
+    "title": "People don't understand SpaceX",
+    "url": "https://x.com/shaunmmaguire/status/2116260821080973679"
+  },
+  {
+    "author": "Philpax",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-05T20:04:08.000Z",
     "location": "archive",
-    "readwise_id": "itm_H9Eg",
-    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
-    "title": "103 Bits of Advice I Wish I Had Known",
-    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
+    "readwise_id": "itm_9IKnH",
+    "summary": "So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?",
+    "title": "Redesigning source control at Anthropic",
+    "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+  },
+  {
+    "author": "Kenny Workman",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-05T17:45:20.000Z",
+    "location": "new",
+    "readwise_id": "itm_9PecD",
+    "summary": "Genentech is the flagship example of an industrial research organization. Their culture of open science and free flowing publication is rooted in a strong contrarian foundation we should all remember.",
+    "title": "Genentech is the flagship example of an industrial research organization. Their culture...",
+    "url": "https://x.com/i/web/status/1888396343791722605"
   },
   {
     "author": "Paul Graham",
@@ -33,7 +130,7 @@
       "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
     ],
     "last_highlighted_at": "2025-01-07T13:48:24.000Z",
-    "last_moved_at": "2026-11-05T02:31:08.000Z",
+    "last_moved_at": "2026-11-05T16:14:58.000Z",
     "location": "archive",
     "readwise_id": "itm_1qI",
     "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
@@ -43,15 +140,65 @@
   {
     "author": "David Oks",
     "category": "article",
-    "date_group": "04 Nov 2026",
+    "date_group": "05 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-04T23:15:59.000Z",
+    "last_moved_at": "2026-11-05T10:40:29.000Z",
     "location": "new",
     "readwise_id": "itm_8IlhF",
     "summary": "Why do they do so many different things? And how do they manage to do so all those different things so well?",
     "title": "Why Japanese companies do so many different things",
     "url": "https://davidoks.blog/p/why-japanese-companies-do-so-many"
+  },
+  {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [
+      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
+      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
+      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
+    "last_moved_at": "2026-11-05T08:38:15.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Dario Amodei",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [
+      "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
+    ],
+    "last_highlighted_at": "2026-10-16T17:37:26.000Z",
+    "last_moved_at": "2026-11-05T08:33:55.000Z",
+    "location": "archive",
+    "readwise_id": "itm_94DoO",
+    "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
+    "title": "We Must Pace the Frontier",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
+  },
+  {
+    "author": "Kevin Kelly",
+    "category": "article",
+    "date_group": "05 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-05T06:08:33.000Z",
+    "location": "archive",
+    "readwise_id": "itm_H9Eg",
+    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
+    "title": "103 Bits of Advice I Wish I Had Known",
+    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
   },
   {
     "author": "",
@@ -145,19 +292,6 @@
     "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
   },
   {
-    "author": "Anne Applebaum",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-04T18:45:35.000Z",
-    "location": "new",
-    "readwise_id": "itm_9MPRP",
-    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
-    "title": "What the U.S. Is Really Doing in Venezuela",
-    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
-  },
-  {
     "author": "Stephen Clark",
     "category": "article",
     "date_group": "04 Nov 2026",
@@ -169,43 +303,6 @@
     "summary": "Catch and release The DIA report doesn’t reveal much new about what the Chinese spaceplane does in orbit. China has launched four spaceplane missions since 2020 with durations of up to nine months.",
     "title": "China's top-secret spaceplane can't hide in low-Earth orbit",
     "url": "https://arstechnica.com/space/2026/10/chinas-top-secret-spaceplane-cant-hide-in-low-earth-orbit/"
-  },
-  {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [
-      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
-      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
-      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
-      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
-      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
-      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
-    "last_moved_at": "2026-11-04T16:29:34.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
-  },
-  {
-    "author": "Scott Adams",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [
-      "Your first sentence needs to grab the reader. Go back and read my first sentence to this post. I rewrote it a dozen times. It makes you curious. That's the key. Write short sentences. Avoid putting multiple thoughts in one sentence. Readers aren't as smart as you'd think."
-    ],
-    "last_highlighted_at": "2026-06-10T08:53:50.000Z",
-    "last_moved_at": "2026-11-04T08:26:50.000Z",
-    "location": "archive",
-    "readwise_id": "itm_CsS",
-    "summary": "I went from being a bad writer to a good writer after taking a one-day course in \"business writing.\" I couldn't believe how simple it was.",
-    "title": "The Day You Became A Better Writer",
-    "url": "https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html"
   },
   {
     "author": "whiteblossom",
@@ -225,49 +322,6 @@
     "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
   },
   {
-    "author": "hyperthesis",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [
-      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
-    ],
-    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
-    "last_moved_at": "2026-11-04T05:34:59.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1CyV",
-    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
-    "title": "The Bitter Lesson",
-    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
-  },
-  {
-    "author": "Shaun Maguire",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-04T02:13:47.000Z",
-    "location": "new",
-    "readwise_id": "itm_9QTy2",
-    "summary": "But *everyone* at SpaceX is great. Amazon, Google and the Neclouds have some people who can solve gnarly problems. But SpaceX (+ Tesla) has someone that can solve *any* problem.",
-    "title": "People don't understand SpaceX",
-    "url": "https://x.com/shaunmmaguire/status/2116260821080973679"
-  },
-  {
-    "author": "Dario Amodei",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [
-      "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
-    ],
-    "last_highlighted_at": "2026-10-16T17:37:26.000Z",
-    "last_moved_at": "2026-11-04T00:37:20.000Z",
-    "location": "archive",
-    "readwise_id": "itm_94DoO",
-    "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
-    "title": "We Must Pace the Frontier",
-    "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
-  },
-  {
     "author": "Dario Amodei",
     "category": "article",
     "date_group": "03 Nov 2026",
@@ -283,19 +337,6 @@
     "summary": "Machines of Loving Grace How AI Could Transform the World for the Better I think and talk a lot about the risks of powerful AI. The company I’m the CEO of, Anthropic, does a lot of research on how to reduce these risks.",
     "title": "Machines of Loving Grace",
     "url": "https://darioamodei.com/machines-of-loving-grace"
-  },
-  {
-    "author": "danluu.com via lalitm",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T20:36:10.000Z",
-    "location": "new",
-    "readwise_id": "itm_9NXzl",
-    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
-    "title": "“We should be more ambitious with the software we build”",
-    "url": "https://danluu.com/ambitious/"
   },
   {
     "author": "Thorsten Ball",
@@ -375,21 +416,6 @@
     "url": "https://nabeelqu.co/principles"
   },
   {
-    "author": "Nabeel Qureshi",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [
-      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
-    ],
-    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
-    "last_moved_at": "2026-11-03T14:12:01.000Z",
-    "location": "archive",
-    "readwise_id": "itm_bioV",
-    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
-    "title": "Tips for Productivity, Thinking, and Doing",
-    "url": "https://nabeelqu.co/advice"
-  },
-  {
     "author": "zdw",
     "category": "article",
     "date_group": "03 Nov 2026",
@@ -401,19 +427,6 @@
     "summary": "As Florida Keys Mosquito Control District Executive Director Andrea Leal said, ‘our biggest challenges have been awaiting regulatory approvals.’ Luckily, this district had another mosquito control option to try out: Wolbachia-infected mosquitoes.",
     "title": "Every mosquito is a policy failure",
     "url": "https://worksinprogress.co/issue/mosquitoes-are-a-choice/"
-  },
-  {
-    "author": "Philpax",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T01:33:53.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9IKnH",
-    "summary": "So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?",
-    "title": "Redesigning source control at Anthropic",
-    "url": "https://www.anthropic.com/engineering/redesigning-source-control"
   },
   {
     "author": "Sunil Pai",
@@ -811,19 +824,6 @@
     "summary": "I don’t think Rust made a mistake by having coherence but I do think we need to seriously consider how we can move towards an incoherent Rust without sacrificing the benefits coherence has given us.",
     "title": "An Incoherent Rust",
     "url": "https://www.boxyuwu.blog/posts/an-incoherent-rust/"
-  },
-  {
-    "author": "Kenny Workman",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T02:09:55.000Z",
-    "location": "new",
-    "readwise_id": "itm_9PecD",
-    "summary": "Genentech is the flagship example of an industrial research organization. Their culture of open science and free flowing publication is rooted in a strong contrarian foundation we should all remember.",
-    "title": "Genentech is the flagship example of an industrial research organization. Their culture...",
-    "url": "https://x.com/i/web/status/1888396343791722605"
   },
   {
     "author": "highfrequency",
