@@ -1,26 +1,11 @@
 [
   {
-    "author": "hyperthesis",
-    "category": "article",
-    "date_group": "06 Nov 2026",
-    "highlights": [
-      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
-    ],
-    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
-    "last_moved_at": "2026-11-06T03:58:56.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1CyV",
-    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
-    "title": "The Bitter Lesson",
-    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
-  },
-  {
     "author": "Anne Applebaum",
     "category": "article",
-    "date_group": "06 Nov 2026",
+    "date_group": "07 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-06T02:10:40.000Z",
+    "last_moved_at": "2026-11-07T03:38:26.000Z",
     "location": "new",
     "readwise_id": "itm_9MPRP",
     "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
@@ -30,10 +15,10 @@
   {
     "author": "danluu.com via lalitm",
     "category": "article",
-    "date_group": "06 Nov 2026",
+    "date_group": "07 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-06T02:00:47.000Z",
+    "last_moved_at": "2026-11-07T03:00:40.000Z",
     "location": "new",
     "readwise_id": "itm_9NXzl",
     "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
@@ -41,12 +26,105 @@
     "url": "https://danluu.com/ambitious/"
   },
   {
+    "author": "Shaun Maguire",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-07T02:31:07.000Z",
+    "location": "new",
+    "readwise_id": "itm_9QTy2",
+    "summary": "But *everyone* at SpaceX is great. Amazon, Google and the Neclouds have some people who can solve gnarly problems. But SpaceX (+ Tesla) has someone that can solve *any* problem.",
+    "title": "People don't understand SpaceX",
+    "url": "https://x.com/shaunmmaguire/status/2116260821080973679"
+  },
+  {
+    "author": "Atul Gawande",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "deliberate practice"
+    ],
+    "last_highlighted_at": "2024-11-16T05:34:05.000Z",
+    "last_moved_at": "2026-11-06T21:44:09.000Z",
+    "location": "archive",
+    "readwise_id": "itm_ECd",
+    "summary": "No matter how well trained people are, few can sustain their best performance on their own. That’s where coaching comes in.",
+    "title": "Personal Best",
+    "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
+  },
+  {
+    "author": "Dan Luu",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
+    ],
+    "last_highlighted_at": "2025-11-09T01:51:47.056Z",
+    "last_moved_at": "2026-11-06T21:31:28.000Z",
+    "location": "archive",
+    "readwise_id": "itm_2SNh",
+    "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
+    "title": "Willingness to look stupid",
+    "url": "https://danluu.com/look-stupid/"
+  },
+  {
+    "author": "Patrick Collison",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "When anthropologists look at scientists, they’re trying to understand the species. But when viewed through the lens of Progress Studies, the implicit question is how scientists (or funders or evaluators of scientists) should be acting. The success of Progress Studies will come from its ability to identify effective progress-increasing interventions and the extent to which they are adopted by universities, funding agencies, philanthropists, entrepreneurs, policy makers, and other institutions. In that sense, Progress Studies is closer to medicine than biology: The goal is to treat, not merely to understand.",
+      "present funding mechanisms are likely to be far from optimal, in part because they do not focus enough on research autonomy and risk taking.",
+      "Thinkers in these disciplines don’t necessarily attend the same conferences, publish in the same journals, or work together to solve shared problems.",
+      "Switzerland’s Basel region in life sciences.",
+      "For example, if our discoveries and inventions improve standards of living by 1 percent a year, children will by adulthood be 35 percent better off than their parents. If they improve livelihoods at 3 percent a year, those same children will grow up to be about 2.5 times better off.",
+      "Progress itself is understudied. By “progress,” we mean the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries."
+    ],
+    "last_highlighted_at": "2024-11-06T19:02:48.000Z",
+    "last_moved_at": "2026-11-06T21:24:52.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8f5",
+    "summary": "In 1861, the American scientist and educator William Barton Rogers published a manifesto calling for a new kind of research institution. Recognizing t",
+    "title": "We Need a New Science of Progress",
+    "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
+  },
+  {
+    "author": "whiteblossom",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
+      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
+      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
+    ],
+    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
+    "last_moved_at": "2026-11-06T20:19:18.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9HfjH",
+    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
+    "title": "China’s Growth Machine",
+    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
+  },
+  {
+    "author": "Aria Schrecker",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T20:18:11.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9O8Uf",
+    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
+    "title": "Young prudes",
+    "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
     "author": "Colossus",
     "category": "article",
     "date_group": "06 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-06T01:06:26.000Z",
+    "last_moved_at": "2026-11-06T19:49:44.000Z",
     "location": "new",
     "readwise_id": "itm_9P8VF",
     "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
@@ -54,14 +132,230 @@
     "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
   },
   {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
+      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
+      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
+    "last_moved_at": "2026-11-06T19:38:37.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Paul Graham",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
+    ],
+    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
+    "last_moved_at": "2026-11-06T19:17:40.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1qI",
+    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
+    "title": "How to Write Usefully",
+    "url": "http://paulgraham.com/useful.html"
+  },
+  {
+    "author": "Mohammed AlQuraishi",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T18:11:46.000Z",
+    "location": "new",
+    "readwise_id": "itm_8pkT4",
+    "summary": "My concern is exclusively with the latter group. In this sense, my workaphile’s apology is the exact opposite of Hardy’s: he defended “useless” work; I’m defending “useful” work.",
+    "title": "A Workaphile’s Apology",
+    "url": "https://moalquraishi.wordpress.com/2026/08/10/a-workaphiles-apology/"
+  },
+  {
+    "author": "hyperthesis",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
+    ],
+    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
+    "last_moved_at": "2026-11-06T17:43:43.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1CyV",
+    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
+    "title": "The Bitter Lesson",
+    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
+  },
+  {
+    "author": "Matt Beard",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T17:41:25.000Z",
+    "location": "new",
+    "readwise_id": "itm_7wlys",
+    "summary": "Sometimes there are clear answers like a lack of meaning or personal fit, but occasionally people communicate that they’ve spent a decade twisting themselves into a shape that they don’t like.",
+    "title": "Your Work Will Change You Whether You Like It Or Not",
+    "url": "https://thatvastvariety.substack.com/p/your-work-will-change-you-whether"
+  },
+  {
+    "author": "Brian Potter",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "Internalizing the various propellant lines and adding internal cooling systems allows this heat shield and fire protection system to be eliminated. In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
+      "But an FFSC engine has several advantages, one of which is (theoretically) reliability: because so much mass flows through the turbines driving the pumps, the turbines can run cooler and at lower pressure, making them (in theory) more reliable. If you’re a company betting heavily on reusable rockets, a more reliable turbine is obviously attractive."
+    ],
+    "last_highlighted_at": "2026-11-01T22:55:18.000Z",
+    "last_moved_at": "2026-11-06T16:51:04.000Z",
+    "location": "archive",
+    "readwise_id": "itm_96My0",
+    "summary": "In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
+    "title": "How SpaceX Streamlined the Raptor Engine",
+    "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor"
+  },
+  {
     "author": "Nabeel Qureshi",
     "category": "article",
-    "date_group": "05 Nov 2026",
+    "date_group": "06 Nov 2026",
+    "highlights": [
+      "The most valuable feedback usually hurts a lot.",
+      "Scrolling and reading too much drowns out your inner voice.",
+      "Think in writing. Write Google Docs, scrawl in notebooks. This extends working memory arbitrarily and allows your thoughts to compound on each other.",
+      "If you find yourself dreading Mondays, quit."
+    ],
+    "last_highlighted_at": "2025-01-10T13:25:20.000Z",
+    "last_moved_at": "2026-11-06T15:44:56.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1oyus",
+    "summary": "Do things fast. Things don’t actually take much time, resistance/procrastination does. “Slow is fake”. Wealth can be created, there is not a fixed amount of it in the world.",
+    "title": "Nabeel Qureshi",
+    "url": "https://nabeelqu.co/principles"
+  },
+  {
+    "author": "Ed West",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T15:32:34.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9159J",
+    "summary": "Every catastrophe needs its Jeremiah, and for this we have Times columnist James Marriott, whose increasing anxiety about the decline of literacy was articulated in a hugely popular substack post last year.",
+    "title": "Doomscrolling ourselves to death",
+    "url": "https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death"
+  },
+  {
+    "author": "Kevin Kelly",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T14:28:04.000Z",
+    "location": "archive",
+    "readwise_id": "itm_H9Eg",
+    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
+    "title": "103 Bits of Advice I Wish I Had Known",
+    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
+  },
+  {
+    "author": "cglong",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T10:18:42.000Z",
+    "location": "new",
+    "readwise_id": "itm_mbT",
+    "summary": "Oh, and one more: 3. You can only call a red function from within another red function. You can call a blue function from with a red one.",
+    "title": "What Color is Your Function?",
+    "url": "https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/"
+  },
+  {
+    "author": "",
+    "category": "pdf",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T10:18:19.000Z",
+    "location": "new",
+    "readwise_id": "itm_yK1a",
+    "summary": "",
+    "title": "An Introduction to Algebraic Effects and Handlers",
+    "url": "https://www.eff-lang.org/handlers-tutorial.pdf"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T10:14:47.000Z",
+    "location": "new",
+    "readwise_id": "itm_MeSO",
+    "summary": "We capture the continuation using callCC, which gives us the continuation as the function cont.We then log \"captured continuation\" and invoke cont.Note how \"continuation called\" is never logged. Why is that?",
+    "title": "What’s in a Continuation",
+    "url": "https://archive.jlongster.com/Whats-in-a-Continuation"
+  },
+  {
+    "author": "alan",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T09:46:25.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9PecE",
+    "summary": "Here are some helpers to make basic stack operations easier with Jujutsu (jj). Everything below, distilled into one config.",
+    "title": "Stacks in Jujutsu",
+    "url": "https://alan.norbauer.com/articles/stacks-in-jujutsu/"
+  },
+  {
+    "author": "Kenny Workman",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T09:43:20.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9PecD",
+    "summary": "Genentech is the flagship example of an industrial research organization. Their culture of open science and free flowing publication is rooted in a strong contrarian foundation we should all remember.",
+    "title": "Genentech is the flagship example of an industrial research organization. Their culture...",
+    "url": "https://x.com/i/web/status/1888396343791722605"
+  },
+  {
+    "author": "David Oks",
+    "category": "article",
+    "date_group": "06 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-06T09:40:11.000Z",
+    "location": "new",
+    "readwise_id": "itm_8IlhF",
+    "summary": "Why do they do so many different things? And how do they manage to do so all those different things so well?",
+    "title": "Why Japanese companies do so many different things",
+    "url": "https://davidoks.blog/p/why-japanese-companies-do-so-many"
+  },
+  {
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "06 Nov 2026",
     "highlights": [
       "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
     ],
     "last_highlighted_at": "2025-01-11T14:39:28.000Z",
-    "last_moved_at": "2026-11-05T22:44:15.000Z",
+    "last_moved_at": "2026-11-06T06:22:48.000Z",
     "location": "archive",
     "readwise_id": "itm_bioV",
     "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
@@ -84,19 +378,6 @@
     "url": "https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html"
   },
   {
-    "author": "Shaun Maguire",
-    "category": "article",
-    "date_group": "05 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-05T20:30:55.000Z",
-    "location": "new",
-    "readwise_id": "itm_9QTy2",
-    "summary": "But *everyone* at SpaceX is great. Amazon, Google and the Neclouds have some people who can solve gnarly problems. But SpaceX (+ Tesla) has someone that can solve *any* problem.",
-    "title": "People don't understand SpaceX",
-    "url": "https://x.com/shaunmmaguire/status/2116260821080973679"
-  },
-  {
     "author": "Philpax",
     "category": "article",
     "date_group": "05 Nov 2026",
@@ -108,69 +389,6 @@
     "summary": "So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?",
     "title": "Redesigning source control at Anthropic",
     "url": "https://www.anthropic.com/engineering/redesigning-source-control"
-  },
-  {
-    "author": "Kenny Workman",
-    "category": "article",
-    "date_group": "05 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-05T17:45:20.000Z",
-    "location": "new",
-    "readwise_id": "itm_9PecD",
-    "summary": "Genentech is the flagship example of an industrial research organization. Their culture of open science and free flowing publication is rooted in a strong contrarian foundation we should all remember.",
-    "title": "Genentech is the flagship example of an industrial research organization. Their culture...",
-    "url": "https://x.com/i/web/status/1888396343791722605"
-  },
-  {
-    "author": "Paul Graham",
-    "category": "article",
-    "date_group": "05 Nov 2026",
-    "highlights": [
-      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
-    ],
-    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
-    "last_moved_at": "2026-11-05T16:14:58.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1qI",
-    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
-    "title": "How to Write Usefully",
-    "url": "http://paulgraham.com/useful.html"
-  },
-  {
-    "author": "David Oks",
-    "category": "article",
-    "date_group": "05 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-05T10:40:29.000Z",
-    "location": "new",
-    "readwise_id": "itm_8IlhF",
-    "summary": "Why do they do so many different things? And how do they manage to do so all those different things so well?",
-    "title": "Why Japanese companies do so many different things",
-    "url": "https://davidoks.blog/p/why-japanese-companies-do-so-many"
-  },
-  {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "05 Nov 2026",
-    "highlights": [
-      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
-      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
-      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
-      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
-      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
-      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
-    "last_moved_at": "2026-11-05T08:38:15.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
   },
   {
     "author": "Dario Amodei",
@@ -186,19 +404,6 @@
     "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
     "title": "We Must Pace the Frontier",
     "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
-  },
-  {
-    "author": "Kevin Kelly",
-    "category": "article",
-    "date_group": "05 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-05T06:08:33.000Z",
-    "location": "archive",
-    "readwise_id": "itm_H9Eg",
-    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
-    "title": "103 Bits of Advice I Wish I Had Known",
-    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
   },
   {
     "author": "",
@@ -305,23 +510,6 @@
     "url": "https://arstechnica.com/space/2026/10/chinas-top-secret-spaceplane-cant-hide-in-low-earth-orbit/"
   },
   {
-    "author": "whiteblossom",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [
-      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
-      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
-      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
-    ],
-    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
-    "last_moved_at": "2026-11-04T05:38:15.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9HfjH",
-    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
-    "title": "China’s Growth Machine",
-    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
-  },
-  {
     "author": "Dario Amodei",
     "category": "article",
     "date_group": "03 Nov 2026",
@@ -352,39 +540,6 @@
     "url": "http://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/"
   },
   {
-    "author": "Aria Schrecker",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-03T17:03:17.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9O8Uf",
-    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
-    "title": "Young prudes",
-    "url": "https://worksinprogress.co/issue/young-prudes/"
-  },
-  {
-    "author": "Patrick Collison",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [
-      "When anthropologists look at scientists, they’re trying to understand the species. But when viewed through the lens of Progress Studies, the implicit question is how scientists (or funders or evaluators of scientists) should be acting. The success of Progress Studies will come from its ability to identify effective progress-increasing interventions and the extent to which they are adopted by universities, funding agencies, philanthropists, entrepreneurs, policy makers, and other institutions. In that sense, Progress Studies is closer to medicine than biology: The goal is to treat, not merely to understand.",
-      "present funding mechanisms are likely to be far from optimal, in part because they do not focus enough on research autonomy and risk taking.",
-      "Thinkers in these disciplines don’t necessarily attend the same conferences, publish in the same journals, or work together to solve shared problems.",
-      "Switzerland’s Basel region in life sciences.",
-      "For example, if our discoveries and inventions improve standards of living by 1 percent a year, children will by adulthood be 35 percent better off than their parents. If they improve livelihoods at 3 percent a year, those same children will grow up to be about 2.5 times better off.",
-      "Progress itself is understudied. By “progress,” we mean the combination of economic, technological, scientific, cultural, and organizational advancement that has transformed our lives and raised standards of living over the past couple of centuries."
-    ],
-    "last_highlighted_at": "2024-11-06T19:02:48.000Z",
-    "last_moved_at": "2026-11-03T16:53:31.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8f5",
-    "summary": "In 1861, the American scientist and educator William Barton Rogers published a manifesto calling for a new kind of research institution. Recognizing t",
-    "title": "We Need a New Science of Progress",
-    "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
-  },
-  {
     "author": "ibobev",
     "category": "article",
     "date_group": "03 Nov 2026",
@@ -396,24 +551,6 @@
     "summary": "But it’s still better than no dangling protection at all (like raw pointers), or a ‘fake memory leak’ which would happen in similar situations with smart pointers.",
     "title": "Handles are the better pointers",
     "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html"
-  },
-  {
-    "author": "Nabeel Qureshi",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [
-      "The most valuable feedback usually hurts a lot.",
-      "Scrolling and reading too much drowns out your inner voice.",
-      "Think in writing. Write Google Docs, scrawl in notebooks. This extends working memory arbitrarily and allows your thoughts to compound on each other.",
-      "If you find yourself dreading Mondays, quit."
-    ],
-    "last_highlighted_at": "2025-01-10T13:25:20.000Z",
-    "last_moved_at": "2026-11-03T14:15:03.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1oyus",
-    "summary": "Do things fast. Things don’t actually take much time, resistance/procrastination does. “Slow is fake”. Wealth can be created, there is not a fixed amount of it in the world.",
-    "title": "Nabeel Qureshi",
-    "url": "https://nabeelqu.co/principles"
   },
   {
     "author": "zdw",
@@ -476,37 +613,6 @@
     "summary": "How I learned to program  Tavish Armstrong has a great document where he describes how and when he learned the programming skills he has.",
     "title": "How I learned to program",
     "url": "https://danluu.com/learning-to-program/"
-  },
-  {
-    "author": "Dan Luu",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [
-      "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
-    ],
-    "last_highlighted_at": "2025-11-09T01:51:47.056Z",
-    "last_moved_at": "2026-11-01T23:25:08.000Z",
-    "location": "archive",
-    "readwise_id": "itm_2SNh",
-    "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
-    "title": "Willingness to look stupid",
-    "url": "https://danluu.com/look-stupid/"
-  },
-  {
-    "author": "Brian Potter",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [
-      "Internalizing the various propellant lines and adding internal cooling systems allows this heat shield and fire protection system to be eliminated. In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
-      "But an FFSC engine has several advantages, one of which is (theoretically) reliability: because so much mass flows through the turbines driving the pumps, the turbines can run cooler and at lower pressure, making them (in theory) more reliable. If you’re a company betting heavily on reusable rockets, a more reliable turbine is obviously attractive."
-    ],
-    "last_highlighted_at": "2026-11-01T22:55:18.000Z",
-    "last_moved_at": "2026-11-01T22:55:54.000Z",
-    "location": "archive",
-    "readwise_id": "itm_96My0",
-    "summary": "In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
-    "title": "How SpaceX Streamlined the Raptor Engine",
-    "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor"
   },
   {
     "author": "Brian Potter",
@@ -865,19 +971,6 @@
     "url": "https://scholars-stage.blogspot.com/2021/02/why-writers-and-think-tankers-feud-so.html"
   },
   {
-    "author": "Ed West",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-01T02:07:24.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9159J",
-    "summary": "Every catastrophe needs its Jeremiah, and for this we have Times columnist James Marriott, whose increasing anxiety about the decline of literacy was articulated in a hugely popular substack post last year.",
-    "title": "Doomscrolling ourselves to death",
-    "url": "https://www.edwest.co.uk/p/doomscrolling-ourselves-to-death"
-  },
-  {
     "author": "Morgan Housel",
     "category": "article",
     "date_group": "01 Nov 2026",
@@ -947,21 +1040,6 @@
     "url": "https://dial9-rs.github.io/blog/principles-for-fast-tokio-applications/"
   },
   {
-    "author": "Atul Gawande",
-    "category": "article",
-    "date_group": "31 Oct 2026",
-    "highlights": [
-      "deliberate practice"
-    ],
-    "last_highlighted_at": "2024-11-16T05:34:05.000Z",
-    "last_moved_at": "2026-10-31T21:07:15.000Z",
-    "location": "archive",
-    "readwise_id": "itm_ECd",
-    "summary": "No matter how well trained people are, few can sustain their best performance on their own. That’s where coaching comes in.",
-    "title": "Personal Best",
-    "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
-  },
-  {
     "author": "Nick",
     "category": "article",
     "date_group": "31 Oct 2026",
@@ -1018,19 +1096,6 @@
     "summary": "This is because burning trash comes with specific complexities. The smoke from burning trash contains mercury, lead, and acid gases, requiring expensive pollution control.",
     "title": "Just bury your trash",
     "url": "https://worksinprogress.co/issue/just-bury-your-trash/"
-  },
-  {
-    "author": "Matt Beard",
-    "category": "article",
-    "date_group": "30 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-30T21:48:42.000Z",
-    "location": "new",
-    "readwise_id": "itm_7wlys",
-    "summary": "Sometimes there are clear answers like a lack of meaning or personal fit, but occasionally people communicate that they’ve spent a decade twisting themselves into a shape that they don’t like.",
-    "title": "Your Work Will Change You Whether You Like It Or Not",
-    "url": "https://thatvastvariety.substack.com/p/your-work-will-change-you-whether"
   },
   {
     "author": "Nan Ransohoff",
@@ -1745,32 +1810,6 @@
     "summary": "Whatever cultural advantage that China might enjoy over India, it wasn’t operative a hundred years ago. So I want to propose my own explanation for why China got rich and India didn’t.",
     "title": "Why China got rich and India didn't",
     "url": "https://davidoks.blog/p/why-china-got-rich-and-india-didnt"
-  },
-  {
-    "author": "Mohammed AlQuraishi",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:13:45.000Z",
-    "location": "new",
-    "readwise_id": "itm_8pkT4",
-    "summary": "My concern is exclusively with the latter group. In this sense, my workaphile’s apology is the exact opposite of Hardy’s: he defended “useless” work; I’m defending “useful” work.",
-    "title": "A Workaphile’s Apology",
-    "url": "https://moalquraishi.wordpress.com/2026/08/10/a-workaphiles-apology/"
-  },
-  {
-    "author": "alan",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:13:38.000Z",
-    "location": "new",
-    "readwise_id": "itm_9PecE",
-    "summary": "Here are some helpers to make basic stack operations easier with Jujutsu (jj). Everything below, distilled into one config.",
-    "title": "Stacks in Jujutsu",
-    "url": "https://alan.norbauer.com/articles/stacks-in-jujutsu/"
   },
   {
     "author": "",
