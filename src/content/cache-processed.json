@@ -1,24 +1,14 @@
 [
   {
-    "author": "Anne Applebaum",
-    "category": "article",
-    "date_group": "07 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-07T03:38:26.000Z",
-    "location": "new",
-    "readwise_id": "itm_9MPRP",
-    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
-    "title": "What the U.S. Is Really Doing in Venezuela",
-    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
-  },
-  {
     "author": "danluu.com via lalitm",
     "category": "article",
-    "date_group": "07 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-07T03:00:40.000Z",
+    "date_group": "08 Nov 2026",
+    "highlights": [
+      "I feel like a lot of problems are in something like this class of problem, where it's possible to set up some kind of at least partially self-checking setup that a human can spend a small amount of time on. This also feels analogous to the situation about software testing at large, where (before coding agents) I found fuzzing and property-based testing to be highly effective.",
+      "I'm more productive and can work faster, but I find that, in terms of what I'm doing, I get farther from \"it just works\" with each more capable model because the gap between what the model can verify effectively without significant handholding and what the model can implement has been increasing."
+    ],
+    "last_highlighted_at": "2026-11-08T00:02:42.000Z",
+    "last_moved_at": "2026-11-08T02:39:28.000Z",
     "location": "new",
     "readwise_id": "itm_9NXzl",
     "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
@@ -26,12 +16,77 @@
     "url": "https://danluu.com/ambitious/"
   },
   {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "08 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-08T00:38:16.000Z",
+    "location": "new",
+    "readwise_id": "itm_9P8VF",
+    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
+    "title": "A love letter to a new kind of company",
+    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
+  },
+  {
+    "author": "whiteblossom",
+    "category": "article",
+    "date_group": "08 Nov 2026",
+    "highlights": [
+      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
+      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
+      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
+    ],
+    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
+    "last_moved_at": "2026-11-08T00:37:42.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9HfjH",
+    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
+    "title": "China’s Growth Machine",
+    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
+  },
+  {
+    "author": "Brian Potter",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [
+      "Internalizing the various propellant lines and adding internal cooling systems allows this heat shield and fire protection system to be eliminated. In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
+      "But an FFSC engine has several advantages, one of which is (theoretically) reliability: because so much mass flows through the turbines driving the pumps, the turbines can run cooler and at lower pressure, making them (in theory) more reliable. If you’re a company betting heavily on reusable rockets, a more reliable turbine is obviously attractive."
+    ],
+    "last_highlighted_at": "2026-11-01T22:55:18.000Z",
+    "last_moved_at": "2026-11-07T23:27:23.000Z",
+    "location": "archive",
+    "readwise_id": "itm_96My0",
+    "summary": "In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
+    "title": "How SpaceX Streamlined the Raptor Engine",
+    "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor"
+  },
+  {
+    "author": "Morgan Housel",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [
+      "Writing crystallizes ideas in ways thinking on its own will never accomplish.",
+      "Writers don't know exactly what they'll write about until they start writing, because the process crystallizes the fuzzy ideas we all have floating around. This chicken-and-egg problem is probably why writing is intimidating for some people.",
+      "Things the mind tends to gloss over the pen tends to highlight.",
+      "You don't talk about these ideas, even in your own head, because you've never put them into words. They're gut feelings. Intuitions.",
+      "Intuition is strong enough to put these ideas into practice. But intuition isn't a tool; it's a safety net at best, and is more often the fuel of biased decisions. Turning gut feelings into tools means understanding their origin, limits, and how they interact with other ideas. Which requires turning them into words."
+    ],
+    "last_highlighted_at": "2026-06-08T18:10:22.000Z",
+    "last_moved_at": "2026-11-07T22:28:29.000Z",
+    "location": "archive",
+    "readwise_id": "itm_T6Q",
+    "summary": "They don’t think they can write because – in their head, as this moment – they don’t know what they’d write about. But hardly anyone does. So, write.",
+    "title": "Why Everyone Should Write",
+    "url": "http://www.collaborativefund.com/blog/why-everyone-should-write/"
+  },
+  {
     "author": "Shaun Maguire",
     "category": "article",
     "date_group": "07 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-07T02:31:07.000Z",
+    "last_moved_at": "2026-11-07T21:26:22.000Z",
     "location": "new",
     "readwise_id": "itm_9QTy2",
     "summary": "But *everyone* at SpaceX is great. Amazon, Google and the Neclouds have some people who can solve gnarly problems. But SpaceX (+ Tesla) has someone that can solve *any* problem.",
@@ -39,34 +94,136 @@
     "url": "https://x.com/shaunmmaguire/status/2116260821080973679"
   },
   {
-    "author": "Atul Gawande",
+    "author": "Aria Schrecker",
     "category": "article",
-    "date_group": "06 Nov 2026",
-    "highlights": [
-      "deliberate practice"
-    ],
-    "last_highlighted_at": "2024-11-16T05:34:05.000Z",
-    "last_moved_at": "2026-11-06T21:44:09.000Z",
+    "date_group": "07 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-07T17:42:17.000Z",
     "location": "archive",
-    "readwise_id": "itm_ECd",
-    "summary": "No matter how well trained people are, few can sustain their best performance on their own. That’s where coaching comes in.",
-    "title": "Personal Best",
-    "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
+    "readwise_id": "itm_9O8Uf",
+    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
+    "title": "Young prudes",
+    "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
+    "author": "Samuel Hughes",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-07T17:34:20.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Ez6W",
+    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
+    "title": "The seven vices of highly effective Victorians",
+    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
+  },
+  {
+    "author": "David Oks",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-07T17:15:16.000Z",
+    "location": "new",
+    "readwise_id": "itm_8Oc9T",
+    "summary": "Whatever cultural advantage that China might enjoy over India, it wasn’t operative a hundred years ago. So I want to propose my own explanation for why China got rich and India didn’t.",
+    "title": "Why China got rich and India didn't",
+    "url": "https://davidoks.blog/p/why-china-got-rich-and-india-didnt"
+  },
+  {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [
+      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
+      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
+      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
+    "last_moved_at": "2026-11-07T17:05:38.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Paul Graham",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [
+      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
+    ],
+    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
+    "last_moved_at": "2026-11-07T16:53:05.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1qI",
+    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
+    "title": "How to Write Usefully",
+    "url": "http://paulgraham.com/useful.html"
+  },
+  {
+    "author": "Anne Applebaum",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-07T15:54:06.000Z",
+    "location": "new",
+    "readwise_id": "itm_9MPRP",
+    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
+    "title": "What the U.S. Is Really Doing in Venezuela",
+    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
+  },
+  {
+    "author": "Asterisk Magazine",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-07T15:23:30.000Z",
+    "location": "new",
+    "readwise_id": "itm_86TzF",
+    "summary": "How this all comes together to reduce pain is still somewhat a scientific mystery. Aside: When trying to understand painkillers, it’s natural to focus on chemistry and molecular biology.",
+    "title": "The Mystery in the Medicine Cabinet",
+    "url": "https://asteriskmag.com/issues/14/the-mystery-in-the-medicine-cabinet"
   },
   {
     "author": "Dan Luu",
     "category": "article",
-    "date_group": "06 Nov 2026",
+    "date_group": "07 Nov 2026",
     "highlights": [
       "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
     ],
     "last_highlighted_at": "2025-11-09T01:51:47.056Z",
-    "last_moved_at": "2026-11-06T21:31:28.000Z",
+    "last_moved_at": "2026-11-07T07:51:24.000Z",
     "location": "archive",
     "readwise_id": "itm_2SNh",
     "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
     "title": "Willingness to look stupid",
     "url": "https://danluu.com/look-stupid/"
+  },
+  {
+    "author": "Atul Gawande",
+    "category": "article",
+    "date_group": "07 Nov 2026",
+    "highlights": [
+      "deliberate practice"
+    ],
+    "last_highlighted_at": "2024-11-16T05:34:05.000Z",
+    "last_moved_at": "2026-11-07T06:40:03.000Z",
+    "location": "archive",
+    "readwise_id": "itm_ECd",
+    "summary": "No matter how well trained people are, few can sustain their best performance on their own. That’s where coaching comes in.",
+    "title": "Personal Best",
+    "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
   },
   {
     "author": "Patrick Collison",
@@ -87,86 +244,6 @@
     "summary": "In 1861, the American scientist and educator William Barton Rogers published a manifesto calling for a new kind of research institution. Recognizing t",
     "title": "We Need a New Science of Progress",
     "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
-  },
-  {
-    "author": "whiteblossom",
-    "category": "article",
-    "date_group": "06 Nov 2026",
-    "highlights": [
-      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
-      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
-      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
-    ],
-    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
-    "last_moved_at": "2026-11-06T20:19:18.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9HfjH",
-    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
-    "title": "China’s Growth Machine",
-    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
-  },
-  {
-    "author": "Aria Schrecker",
-    "category": "article",
-    "date_group": "06 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-06T20:18:11.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9O8Uf",
-    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
-    "title": "Young prudes",
-    "url": "https://worksinprogress.co/issue/young-prudes/"
-  },
-  {
-    "author": "Colossus",
-    "category": "article",
-    "date_group": "06 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-06T19:49:44.000Z",
-    "location": "new",
-    "readwise_id": "itm_9P8VF",
-    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
-    "title": "A love letter to a new kind of company",
-    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
-  },
-  {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "06 Nov 2026",
-    "highlights": [
-      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
-      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
-      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
-      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
-      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
-      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
-    "last_moved_at": "2026-11-06T19:38:37.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
-  },
-  {
-    "author": "Paul Graham",
-    "category": "article",
-    "date_group": "06 Nov 2026",
-    "highlights": [
-      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
-    ],
-    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
-    "last_moved_at": "2026-11-06T19:17:40.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1qI",
-    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
-    "title": "How to Write Usefully",
-    "url": "http://paulgraham.com/useful.html"
   },
   {
     "author": "Mohammed AlQuraishi",
@@ -208,22 +285,6 @@
     "summary": "Sometimes there are clear answers like a lack of meaning or personal fit, but occasionally people communicate that they’ve spent a decade twisting themselves into a shape that they don’t like.",
     "title": "Your Work Will Change You Whether You Like It Or Not",
     "url": "https://thatvastvariety.substack.com/p/your-work-will-change-you-whether"
-  },
-  {
-    "author": "Brian Potter",
-    "category": "article",
-    "date_group": "06 Nov 2026",
-    "highlights": [
-      "Internalizing the various propellant lines and adding internal cooling systems allows this heat shield and fire protection system to be eliminated. In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
-      "But an FFSC engine has several advantages, one of which is (theoretically) reliability: because so much mass flows through the turbines driving the pumps, the turbines can run cooler and at lower pressure, making them (in theory) more reliable. If you’re a company betting heavily on reusable rockets, a more reliable turbine is obviously attractive."
-    ],
-    "last_highlighted_at": "2026-11-01T22:55:18.000Z",
-    "last_moved_at": "2026-11-06T16:51:04.000Z",
-    "location": "archive",
-    "readwise_id": "itm_96My0",
-    "summary": "In fact, the biggest mass change from version 1 to version 3 of the Raptor comes from mass removal of “vehicle side” engine hardware, which is almost certainly largely the heat shield.",
-    "title": "How SpaceX Streamlined the Raptor Engine",
-    "url": "https://www.construction-physics.com/p/how-spacex-streamlined-the-raptor"
   },
   {
     "author": "Nabeel Qureshi",
@@ -469,19 +530,6 @@
     "summary": "Codebases won't disappear. They just stop being what we mean when we say \"the project.\" Abstractions retire.",
     "title": "Retire the Abstractions",
     "url": "https://hazyresearch.stanford.edu/blog/2026-08-05-retire-the-abstractions"
-  },
-  {
-    "author": "Samuel Hughes",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-04T22:39:27.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Ez6W",
-    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
-    "title": "The seven vices of highly effective Victorians",
-    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
   },
   {
     "author": "Tim Urban",
@@ -969,25 +1017,6 @@
     "summary": "Prestige journalists, like most other writers, do not judge the quality of their work by clicks (or even paychecks) but through the praise and censure of other writers and journalists.",
     "title": "Why Writers (and Think Tankers) Feud So Viciously",
     "url": "https://scholars-stage.blogspot.com/2021/02/why-writers-and-think-tankers-feud-so.html"
-  },
-  {
-    "author": "Morgan Housel",
-    "category": "article",
-    "date_group": "01 Nov 2026",
-    "highlights": [
-      "Writing crystallizes ideas in ways thinking on its own will never accomplish.",
-      "Writers don't know exactly what they'll write about until they start writing, because the process crystallizes the fuzzy ideas we all have floating around. This chicken-and-egg problem is probably why writing is intimidating for some people.",
-      "Things the mind tends to gloss over the pen tends to highlight.",
-      "You don't talk about these ideas, even in your own head, because you've never put them into words. They're gut feelings. Intuitions.",
-      "Intuition is strong enough to put these ideas into practice. But intuition isn't a tool; it's a safety net at best, and is more often the fuel of biased decisions. Turning gut feelings into tools means understanding their origin, limits, and how they interact with other ideas. Which requires turning them into words."
-    ],
-    "last_highlighted_at": "2026-06-08T18:10:22.000Z",
-    "last_moved_at": "2026-11-01T02:07:12.000Z",
-    "location": "archive",
-    "readwise_id": "itm_T6Q",
-    "summary": "They don’t think they can write because – in their head, as this moment – they don’t know what they’d write about. But hardly anyone does. So, write.",
-    "title": "Why Everyone Should Write",
-    "url": "http://www.collaborativefund.com/blog/why-everyone-should-write/"
   },
   {
     "author": "Aeon",
@@ -1513,19 +1542,6 @@
     "url": "https://www.quantamagazine.org/what-physical-life-force-turns-biologys-wheels-20260420/"
   },
   {
-    "author": "Asterisk Magazine",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:16:56.000Z",
-    "location": "new",
-    "readwise_id": "itm_86TzF",
-    "summary": "How this all comes together to reduce pain is still somewhat a scientific mystery. Aside: When trying to understand painkillers, it’s natural to focus on chemistry and molecular biology.",
-    "title": "The Mystery in the Medicine Cabinet",
-    "url": "https://asteriskmag.com/issues/14/the-mystery-in-the-medicine-cabinet"
-  },
-  {
     "author": "Ethan Mollick",
     "category": "article",
     "date_group": "29 Oct 2026",
@@ -1797,19 +1813,6 @@
     "summary": "Healthy people spend roughly 15-25 days each year—about 5% of their lives—sick with respiratory infections like the common cold and influenza. Common respiratory infections can lead to severe outcomes.",
     "title": "Ending respiratory infections",
     "url": "https://blog.interceptfund.com/p/ending-respiratory-infections"
-  },
-  {
-    "author": "David Oks",
-    "category": "article",
-    "date_group": "29 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-29T11:14:21.000Z",
-    "location": "new",
-    "readwise_id": "itm_8Oc9T",
-    "summary": "Whatever cultural advantage that China might enjoy over India, it wasn’t operative a hundred years ago. So I want to propose my own explanation for why China got rich and India didn’t.",
-    "title": "Why China got rich and India didn't",
-    "url": "https://davidoks.blog/p/why-china-got-rich-and-india-didnt"
   },
   {
     "author": "",
