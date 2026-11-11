@@ -1,5 +1,256 @@
 [
   {
+    "author": "Dario Amodei",
+    "category": "article",
+    "date_group": "11 Nov 2026",
+    "highlights": [
+      "timescales",
+      "factors that limit",
+      "it’s dangerous to view companies as unilaterally shaping the world, and dangerous to view practical technological goals in essentially religious terms."
+    ],
+    "last_highlighted_at": "2024-11-18T13:24:11.000Z",
+    "last_moved_at": "2026-11-11T04:35:49.000Z",
+    "location": "archive",
+    "readwise_id": "itm_4qEzC",
+    "summary": "Machines of Loving Grace How AI Could Transform the World for the Better I think and talk a lot about the risks of powerful AI. The company I’m the CEO of, Anthropic, does a lot of research on how to reduce these risks.",
+    "title": "Machines of Loving Grace",
+    "url": "https://darioamodei.com/machines-of-loving-grace"
+  },
+  {
+    "author": "Henrik Karlsson",
+    "category": "article",
+    "date_group": "11 Nov 2026",
+    "highlights": [
+      "Yet, when I look at the most effective people I know, they all have core areas where they are willing to invest the time to go this deep. And inversely, the typical approach that I see when I have to sit in on meetings, where people settle on the first solution that comes to mind without investigating their understanding of the problem—this rarely ends well."
+    ],
+    "last_highlighted_at": "2024-11-05T11:13:20.000Z",
+    "last_moved_at": "2026-11-11T04:25:33.000Z",
+    "location": "archive",
+    "readwise_id": "itm_2kIN5",
+    "summary": "The problem essentially disappeared. It had been swallowed by the sea. These ways of working on problems, going fast or slow, can be seen in all domains.",
+    "title": "Being patient with problems",
+    "url": "https://www.henrikkarlsson.xyz/p/being-patient-with-problems"
+  },
+  {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "11 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-11T03:57:48.000Z",
+    "location": "new",
+    "readwise_id": "itm_9P8VF",
+    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
+    "title": "A love letter to a new kind of company",
+    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
+  },
+  {
+    "author": "Tim Urban",
+    "category": "article",
+    "date_group": "11 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-11T03:57:47.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9yv",
+    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
+    "title": "The AI Revolution: The Road to Superintelligence",
+    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
+  },
+  {
+    "author": "Anne Applebaum",
+    "category": "article",
+    "date_group": "11 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-11T02:51:03.000Z",
+    "location": "new",
+    "readwise_id": "itm_9MPRP",
+    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
+    "title": "What the U.S. Is Really Doing in Venezuela",
+    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
+  },
+  {
+    "author": "Daisy Alioto",
+    "category": "article",
+    "date_group": "11 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-11T01:21:38.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9UcNV",
+    "summary": "In the font family “It’s good enough and doesn’t really look like anything. That’s why it’s nice.” Daisy Alioto in conversation with Charles Broskoski, Are.na co-founder and CEO, and Johannes Breyer, co-founder of Dinamo.",
+    "title": "Dirt: In the font family",
+    "url": "https://dirt.fyi/article/2026/11/in-the-font-family"
+  },
+  {
+    "author": "Dario Amodei",
+    "category": "article",
+    "date_group": "11 Nov 2026",
+    "highlights": [
+      "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
+    ],
+    "last_highlighted_at": "2026-10-16T17:37:26.000Z",
+    "last_moved_at": "2026-11-11T00:42:17.000Z",
+    "location": "archive",
+    "readwise_id": "itm_94DoO",
+    "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
+    "title": "We Must Pace the Frontier",
+    "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
+  },
+  {
+    "author": "Samuel Hughes",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-10T22:31:47.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Ez6W",
+    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
+    "title": "The seven vices of highly effective Victorians",
+    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
+  },
+  {
+    "author": "Brian Patrick Eha",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-10T19:31:49.000Z",
+    "location": "new",
+    "readwise_id": "itm_1Vm0",
+    "summary": "Speculative fiction—fantasy, science fiction, and dystopian prophecies—has captured the imagination of twenty-first-century man. These flights of fancy are the cornerstone of our popular culture; their protagonists are our cultural heroes.",
+    "title": "Why Is Young-Adult Fiction So Popular?",
+    "url": "https://www.city-journal.org/why-is-young-adult-fiction-so-popular"
+  },
+  {
+    "author": "Atul Gawande",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [
+      "deliberate practice"
+    ],
+    "last_highlighted_at": "2024-11-16T05:34:05.000Z",
+    "last_moved_at": "2026-11-10T19:01:04.000Z",
+    "location": "archive",
+    "readwise_id": "itm_ECd",
+    "summary": "No matter how well trained people are, few can sustain their best performance on their own. That’s where coaching comes in.",
+    "title": "Personal Best",
+    "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
+  },
+  {
+    "author": "Andrew Jones",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-10T17:08:22.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9TZ2H",
+    "summary": "And now the international Martian Moons eXploration (MMX) mission, which successfully launched on 20 October, seeks to explore that mystery with an unprecedented series of landings on the unknown surface of Phobos.",
+    "title": "MMX Mission to Phobos Faces a Gravity Challenge",
+    "url": "https://spectrum.ieee.org/mmx-mission-to-phobos"
+  },
+  {
+    "author": "Ted Chiang",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [
+      "Anthropic would have us believe that it is inventing a new category of being whose needs for protection require essentially no divergence from how a software company would treat an ordinary chatbot that lacks conscious experience. That’s so convenient that it’s simply not plausible."
+    ],
+    "last_highlighted_at": "2026-06-06T00:51:46.000Z",
+    "last_moved_at": "2026-11-10T15:38:59.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8Owco",
+    "summary": "It’s fortunate that LLMs are not conscious, or else the actions of the big AI firms would be even more scandalous than they already are. So why are Anthropic’s employees suggesting that Claude might be conscious?",
+    "title": "No, Artificial Intelligence Is Not Conscious",
+    "url": "https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/"
+  },
+  {
+    "author": "StillStackinAfterAllTheseYears",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-10T12:54:32.000Z",
+    "location": "archive",
+    "readwise_id": "itm_wtv",
+    "summary": "The Last Question by Isaac Asimov © 1956 The last question was asked for the first time, half in jest, on May 21, 2061, at a time when humanity first stepped into the light.",
+    "title": "The Last Question -- Isaac Asimov",
+    "url": "https://www.multivax.com/last_question.html"
+  },
+  {
+    "author": "danluu.com via lalitm",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [
+      "I feel like a lot of problems are in something like this class of problem, where it's possible to set up some kind of at least partially self-checking setup that a human can spend a small amount of time on. This also feels analogous to the situation about software testing at large, where (before coding agents) I found fuzzing and property-based testing to be highly effective.",
+      "I'm more productive and can work faster, but I find that, in terms of what I'm doing, I get farther from \"it just works\" with each more capable model because the gap between what the model can verify effectively without significant handholding and what the model can implement has been increasing."
+    ],
+    "last_highlighted_at": "2026-11-08T00:02:42.000Z",
+    "last_moved_at": "2026-11-10T11:29:17.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9NXzl",
+    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
+    "title": "“We should be more ambitious with the software we build”",
+    "url": "https://danluu.com/ambitious/"
+  },
+  {
+    "author": "zdw",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-10T09:59:34.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9BOHj",
+    "summary": "As Florida Keys Mosquito Control District Executive Director Andrea Leal said, ‘our biggest challenges have been awaiting regulatory approvals.’ Luckily, this district had another mosquito control option to try out: Wolbachia-infected mosquitoes.",
+    "title": "Every mosquito is a policy failure",
+    "url": "https://worksinprogress.co/issue/mosquitoes-are-a-choice/"
+  },
+  {
+    "author": "S.Y. Lee",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [
+      "inured"
+    ],
+    "last_highlighted_at": "2026-11-10T02:22:58.000Z",
+    "last_moved_at": "2026-11-10T09:04:55.000Z",
+    "location": "new",
+    "readwise_id": "itm_tH3o",
+    "summary": "The American occupiers had a chance to truly remake Japanese railways – and Japanese public services – in the victor’s vision back in 1945 until as late as 1948.",
+    "title": "How American Occupiers Helped Doom Japan's National Public Railways",
+    "url": "https://seungylee14.substack.com/p/how-american-occupiers-helped-doom"
+  },
+  {
+    "author": "Philpax",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-10T07:53:31.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9IKnH",
+    "summary": "So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?",
+    "title": "Redesigning source control at Anthropic",
+    "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+  },
+  {
+    "author": "Aria Schrecker",
+    "category": "article",
+    "date_group": "10 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-10T07:29:26.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9O8Uf",
+    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
+    "title": "Young prudes",
+    "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
     "author": "Dan Luu",
     "category": "article",
     "date_group": "10 Nov 2026",
@@ -13,37 +264,6 @@
     "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
     "title": "Willingness to look stupid",
     "url": "https://danluu.com/look-stupid/"
-  },
-  {
-    "author": "danluu.com via lalitm",
-    "category": "article",
-    "date_group": "10 Nov 2026",
-    "highlights": [
-      "I feel like a lot of problems are in something like this class of problem, where it's possible to set up some kind of at least partially self-checking setup that a human can spend a small amount of time on. This also feels analogous to the situation about software testing at large, where (before coding agents) I found fuzzing and property-based testing to be highly effective.",
-      "I'm more productive and can work faster, but I find that, in terms of what I'm doing, I get farther from \"it just works\" with each more capable model because the gap between what the model can verify effectively without significant handholding and what the model can implement has been increasing."
-    ],
-    "last_highlighted_at": "2026-11-08T00:02:42.000Z",
-    "last_moved_at": "2026-11-10T03:23:41.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9NXzl",
-    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
-    "title": "“We should be more ambitious with the software we build”",
-    "url": "https://danluu.com/ambitious/"
-  },
-  {
-    "author": "S.Y. Lee",
-    "category": "article",
-    "date_group": "10 Nov 2026",
-    "highlights": [
-      "inured"
-    ],
-    "last_highlighted_at": "2026-11-10T02:22:58.000Z",
-    "last_moved_at": "2026-11-10T02:38:28.000Z",
-    "location": "new",
-    "readwise_id": "itm_tH3o",
-    "summary": "The American occupiers had a chance to truly remake Japanese railways – and Japanese public services – in the victor’s vision back in 1945 until as late as 1948.",
-    "title": "How American Occupiers Helped Doom Japan's National Public Railways",
-    "url": "https://seungylee14.substack.com/p/how-american-occupiers-helped-doom"
   },
   {
     "author": "S.Y. Lee",
@@ -85,19 +305,6 @@
     "url": "https://blog.interceptfund.com/p/ending-respiratory-infections"
   },
   {
-    "author": "Colossus",
-    "category": "article",
-    "date_group": "10 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-10T01:04:23.000Z",
-    "location": "new",
-    "readwise_id": "itm_9P8VF",
-    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
-    "title": "A love letter to a new kind of company",
-    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
-  },
-  {
     "author": "dgroshev",
     "category": "article",
     "date_group": "10 Nov 2026",
@@ -109,21 +316,6 @@
     "summary": "Everyone who sees a property-based testing tool like FsCheck or QuickCheck thinks that it is amazing… but when it comes time to start creating your own properties, the universal complaint is: “what properties should I use?",
     "title": "Choosing properties for property-based testing",
     "url": "https://fsharpforfunandprofit.com/posts/property-based-testing-2/"
-  },
-  {
-    "author": "Dario Amodei",
-    "category": "article",
-    "date_group": "09 Nov 2026",
-    "highlights": [
-      "There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right."
-    ],
-    "last_highlighted_at": "2026-10-16T17:37:26.000Z",
-    "last_moved_at": "2026-11-09T19:54:53.000Z",
-    "location": "archive",
-    "readwise_id": "itm_94DoO",
-    "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
-    "title": "We Must Pace the Frontier",
-    "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
   },
   {
     "author": "Mohammed AlQuraishi",
@@ -176,19 +368,6 @@
     "url": "https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html"
   },
   {
-    "author": "zdw",
-    "category": "article",
-    "date_group": "09 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-09T18:09:38.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9BOHj",
-    "summary": "As Florida Keys Mosquito Control District Executive Director Andrea Leal said, ‘our biggest challenges have been awaiting regulatory approvals.’ Luckily, this district had another mosquito control option to try out: Wolbachia-infected mosquitoes.",
-    "title": "Every mosquito is a policy failure",
-    "url": "https://worksinprogress.co/issue/mosquitoes-are-a-choice/"
-  },
-  {
     "author": "Kevin Kelly",
     "category": "article",
     "date_group": "09 Nov 2026",
@@ -215,19 +394,6 @@
     "url": "https://rkg.blog/desperation-induced-focus.php"
   },
   {
-    "author": "Philpax",
-    "category": "article",
-    "date_group": "09 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-09T14:34:59.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9IKnH",
-    "summary": "So we asked ourselves: if we designed source control with the fact that agents are always online in mind from the start, what would it look like?",
-    "title": "Redesigning source control at Anthropic",
-    "url": "https://www.anthropic.com/engineering/redesigning-source-control"
-  },
-  {
     "author": "StillStackinAfterAllTheseYears",
     "category": "article",
     "date_group": "09 Nov 2026",
@@ -239,19 +405,6 @@
     "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
     "title": "Emily Wilson · An Uncomplicated Man",
     "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
-  },
-  {
-    "author": "Samuel Hughes",
-    "category": "article",
-    "date_group": "09 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-09T07:55:30.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Ez6W",
-    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
-    "title": "The seven vices of highly effective Victorians",
-    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
   },
   {
     "author": "Nabeel Qureshi",
@@ -270,19 +423,6 @@
     "summary": "Do things fast. Things don’t actually take much time, resistance/procrastination does. “Slow is fake”. Wealth can be created, there is not a fixed amount of it in the world.",
     "title": "Nabeel Qureshi",
     "url": "https://nabeelqu.co/principles"
-  },
-  {
-    "author": "Andrew Jones",
-    "category": "article",
-    "date_group": "09 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-09T00:16:34.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9TZ2H",
-    "summary": "And now the international Martian Moons eXploration (MMX) mission, which successfully launched on 20 October, seeks to explore that mystery with an unprecedented series of landings on the unknown surface of Phobos.",
-    "title": "MMX Mission to Phobos Faces a Gravity Challenge",
-    "url": "https://spectrum.ieee.org/mmx-mission-to-phobos"
   },
   {
     "author": "whiteblossom",
@@ -333,19 +473,6 @@
     "summary": "And so without further ado, I present to you… ChatGPT and the Meaning of Life, by Harvey Lederman For the last two and a half years, since the release of ChatGPT, I’ve been suffering from fits of dread.",
     "title": "ChatGPT and the Meaning of Life: Guest Post by Harvey Lederman",
     "url": "https://scottaaronson.blog/?p=9030"
-  },
-  {
-    "author": "Aria Schrecker",
-    "category": "article",
-    "date_group": "08 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-08T18:03:32.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9O8Uf",
-    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
-    "title": "Young prudes",
-    "url": "https://worksinprogress.co/issue/young-prudes/"
   },
   {
     "author": "T. Greer",
@@ -457,19 +584,6 @@
     "url": "https://noahpinion.substack.com/p/on-bullshit-in-investing"
   },
   {
-    "author": "Anne Applebaum",
-    "category": "article",
-    "date_group": "08 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-08T09:55:22.000Z",
-    "location": "new",
-    "readwise_id": "itm_9MPRP",
-    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
-    "title": "What the U.S. Is Really Doing in Venezuela",
-    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
-  },
-  {
     "author": "Brian Potter",
     "category": "article",
     "date_group": "07 Nov 2026",
@@ -544,21 +658,6 @@
     "summary": "How this all comes together to reduce pain is still somewhat a scientific mystery. Aside: When trying to understand painkillers, it’s natural to focus on chemistry and molecular biology.",
     "title": "The Mystery in the Medicine Cabinet",
     "url": "https://asteriskmag.com/issues/14/the-mystery-in-the-medicine-cabinet"
-  },
-  {
-    "author": "Atul Gawande",
-    "category": "article",
-    "date_group": "07 Nov 2026",
-    "highlights": [
-      "deliberate practice"
-    ],
-    "last_highlighted_at": "2024-11-16T05:34:05.000Z",
-    "last_moved_at": "2026-11-07T06:40:03.000Z",
-    "location": "archive",
-    "readwise_id": "itm_ECd",
-    "summary": "No matter how well trained people are, few can sustain their best performance on their own. That’s where coaching comes in.",
-    "title": "Personal Best",
-    "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
   },
   {
     "author": "hyperthesis",
@@ -734,19 +833,6 @@
     "url": "https://hazyresearch.stanford.edu/blog/2026-08-05-retire-the-abstractions"
   },
   {
-    "author": "Tim Urban",
-    "category": "article",
-    "date_group": "04 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-04T21:02:16.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9yv",
-    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
-    "title": "The AI Revolution: The Road to Superintelligence",
-    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
-  },
-  {
     "author": "Stephen Clark",
     "category": "article",
     "date_group": "04 Nov 2026",
@@ -758,23 +844,6 @@
     "summary": "Catch and release The DIA report doesn’t reveal much new about what the Chinese spaceplane does in orbit. China has launched four spaceplane missions since 2020 with durations of up to nine months.",
     "title": "China's top-secret spaceplane can't hide in low-Earth orbit",
     "url": "https://arstechnica.com/space/2026/10/chinas-top-secret-spaceplane-cant-hide-in-low-earth-orbit/"
-  },
-  {
-    "author": "Dario Amodei",
-    "category": "article",
-    "date_group": "03 Nov 2026",
-    "highlights": [
-      "timescales",
-      "factors that limit",
-      "it’s dangerous to view companies as unilaterally shaping the world, and dangerous to view practical technological goals in essentially religious terms."
-    ],
-    "last_highlighted_at": "2024-11-18T13:24:11.000Z",
-    "last_moved_at": "2026-11-03T23:27:42.000Z",
-    "location": "archive",
-    "readwise_id": "itm_4qEzC",
-    "summary": "Machines of Loving Grace How AI Could Transform the World for the Better I think and talk a lot about the risks of powerful AI. The company I’m the CEO of, Anthropic, does a lot of research on how to reduce these risks.",
-    "title": "Machines of Loving Grace",
-    "url": "https://darioamodei.com/machines-of-loving-grace"
   },
   {
     "author": "Thorsten Ball",
@@ -2173,49 +2242,6 @@
     "summary": "Simply put, it is the total count of elementary operations (additions, multiplications, reads, writes…) that are executed during a computation, optionally weighted by their costs. Complexity is an old concept.",
     "title": "Complexity Models",
     "url": "https://en.algorithmica.org/hpc/complexity/"
-  },
-  {
-    "author": "Ted Chiang",
-    "category": "article",
-    "date_group": "19 Oct 2026",
-    "highlights": [
-      "Anthropic would have us believe that it is inventing a new category of being whose needs for protection require essentially no divergence from how a software company would treat an ordinary chatbot that lacks conscious experience. That’s so convenient that it’s simply not plausible."
-    ],
-    "last_highlighted_at": "2026-06-06T00:51:46.000Z",
-    "last_moved_at": "2026-10-19T21:14:03.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8Owco",
-    "summary": "It’s fortunate that LLMs are not conscious, or else the actions of the big AI firms would be even more scandalous than they already are. So why are Anthropic’s employees suggesting that Claude might be conscious?",
-    "title": "No, Artificial Intelligence Is Not Conscious",
-    "url": "https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/"
-  },
-  {
-    "author": "Henrik Karlsson",
-    "category": "article",
-    "date_group": "19 Oct 2026",
-    "highlights": [
-      "Yet, when I look at the most effective people I know, they all have core areas where they are willing to invest the time to go this deep. And inversely, the typical approach that I see when I have to sit in on meetings, where people settle on the first solution that comes to mind without investigating their understanding of the problem—this rarely ends well."
-    ],
-    "last_highlighted_at": "2024-11-05T11:13:20.000Z",
-    "last_moved_at": "2026-10-19T04:52:39.000Z",
-    "location": "archive",
-    "readwise_id": "itm_2kIN5",
-    "summary": "The problem essentially disappeared. It had been swallowed by the sea. These ways of working on problems, going fast or slow, can be seen in all domains.",
-    "title": "Being patient with problems",
-    "url": "https://www.henrikkarlsson.xyz/p/being-patient-with-problems"
-  },
-  {
-    "author": "StillStackinAfterAllTheseYears",
-    "category": "article",
-    "date_group": "18 Oct 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-10-18T10:39:37.000Z",
-    "location": "archive",
-    "readwise_id": "itm_wtv",
-    "summary": "The Last Question by Isaac Asimov © 1956 The last question was asked for the first time, half in jest, on May 21, 2061, at a time when humanity first stepped into the light.",
-    "title": "The Last Question -- Isaac Asimov",
-    "url": "https://www.multivax.com/last_question.html"
   },
   {
     "author": "Ivan Babrou",
