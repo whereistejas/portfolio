@@ -1,5 +1,97 @@
 [
   {
+    "author": "Aria Schrecker",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-13T05:17:49.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9O8Uf",
+    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
+    "title": "Young prudes",
+    "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [
+      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
+    ],
+    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
+    "last_moved_at": "2026-11-13T02:43:56.000Z",
+    "location": "archive",
+    "readwise_id": "itm_bioV",
+    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
+    "title": "Tips for Productivity, Thinking, and Doing",
+    "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "12 Nov 2026",
+    "highlights": [
+      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
+      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
+      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
+    "last_moved_at": "2026-11-12T23:37:01.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Anne Applebaum",
+    "category": "article",
+    "date_group": "12 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-12T20:41:07.000Z",
+    "location": "new",
+    "readwise_id": "itm_9MPRP",
+    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
+    "title": "What the U.S. Is Really Doing in Venezuela",
+    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
+  },
+  {
+    "author": "danluu.com via lalitm",
+    "category": "article",
+    "date_group": "12 Nov 2026",
+    "highlights": [
+      "I feel like a lot of problems are in something like this class of problem, where it's possible to set up some kind of at least partially self-checking setup that a human can spend a small amount of time on. This also feels analogous to the situation about software testing at large, where (before coding agents) I found fuzzing and property-based testing to be highly effective.",
+      "I'm more productive and can work faster, but I find that, in terms of what I'm doing, I get farther from \"it just works\" with each more capable model because the gap between what the model can verify effectively without significant handholding and what the model can implement has been increasing."
+    ],
+    "last_highlighted_at": "2026-11-08T00:02:42.000Z",
+    "last_moved_at": "2026-11-12T19:54:51.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9NXzl",
+    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
+    "title": "“We should be more ambitious with the software we build”",
+    "url": "https://danluu.com/ambitious/"
+  },
+  {
+    "author": "Daisy Alioto",
+    "category": "article",
+    "date_group": "12 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-12T16:57:50.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9UcNV",
+    "summary": "In the font family “It’s good enough and doesn’t really look like anything. That’s why it’s nice.” Daisy Alioto in conversation with Charles Broskoski, Are.na co-founder and CEO, and Johannes Breyer, co-founder of Dinamo.",
+    "title": "Dirt: In the font family",
+    "url": "https://dirt.fyi/article/2026/11/in-the-font-family"
+  },
+  {
     "author": "Dan Luu",
     "category": "article",
     "date_group": "12 Nov 2026",
@@ -7,12 +99,73 @@
       "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
     ],
     "last_highlighted_at": "2025-11-09T01:51:47.056Z",
-    "last_moved_at": "2026-11-12T04:23:30.000Z",
+    "last_moved_at": "2026-11-12T15:44:53.000Z",
     "location": "archive",
     "readwise_id": "itm_2SNh",
     "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
     "title": "Willingness to look stupid",
     "url": "https://danluu.com/look-stupid/"
+  },
+  {
+    "author": "Sunil Pai",
+    "category": "article",
+    "date_group": "12 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-12T13:30:24.000Z",
+    "location": "archive",
+    "readwise_id": "itm_97NDR",
+    "summary": "I ended up giving him a bit of a monologue. this is more or less what I told him.) okay, so this is the most common failure mode I’ve seen.",
+    "title": "the senior engineer death spiral",
+    "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/"
+  },
+  {
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "12 Nov 2026",
+    "highlights": [
+      "The most valuable feedback usually hurts a lot.",
+      "Scrolling and reading too much drowns out your inner voice.",
+      "Think in writing. Write Google Docs, scrawl in notebooks. This extends working memory arbitrarily and allows your thoughts to compound on each other.",
+      "If you find yourself dreading Mondays, quit."
+    ],
+    "last_highlighted_at": "2025-01-10T13:25:20.000Z",
+    "last_moved_at": "2026-11-12T13:29:15.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1oyus",
+    "summary": "Do things fast. Things don’t actually take much time, resistance/procrastination does. “Slow is fake”. Wealth can be created, there is not a fixed amount of it in the world.",
+    "title": "Nabeel Qureshi",
+    "url": "https://nabeelqu.co/principles"
+  },
+  {
+    "author": "whiteblossom",
+    "category": "article",
+    "date_group": "12 Nov 2026",
+    "highlights": [
+      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
+      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
+      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
+    ],
+    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
+    "last_moved_at": "2026-11-12T12:28:30.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9HfjH",
+    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
+    "title": "China’s Growth Machine",
+    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
+  },
+  {
+    "author": "S.Y. Lee",
+    "category": "article",
+    "date_group": "12 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-12T10:04:12.000Z",
+    "location": "new",
+    "readwise_id": "itm_51COp",
+    "summary": "This post unpacks the first eight years of the JR era, from 1987 to 1995. Author’s Note This is the fifth and last installment of a multi-part examination of JNR’s history.",
+    "title": "Aura of Success: The First Years of Japan's Privatized National Railways",
+    "url": "https://www.substack-bahn.net/p/aura-of-success-the-first-years-of"
   },
   {
     "author": "Paul Graham",
@@ -56,41 +209,6 @@
     "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
   },
   {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "12 Nov 2026",
-    "highlights": [
-      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
-      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
-      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
-      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
-      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
-      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
-    "last_moved_at": "2026-11-12T01:08:35.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
-  },
-  {
-    "author": "Anne Applebaum",
-    "category": "article",
-    "date_group": "12 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-12T00:38:24.000Z",
-    "location": "new",
-    "readwise_id": "itm_9MPRP",
-    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
-    "title": "What the U.S. Is Really Doing in Venezuela",
-    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
-  },
-  {
     "author": "Kevin Kelly",
     "category": "article",
     "date_group": "12 Nov 2026",
@@ -102,22 +220,6 @@
     "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
     "title": "103 Bits of Advice I Wish I Had Known",
     "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
-  },
-  {
-    "author": "danluu.com via lalitm",
-    "category": "article",
-    "date_group": "11 Nov 2026",
-    "highlights": [
-      "I feel like a lot of problems are in something like this class of problem, where it's possible to set up some kind of at least partially self-checking setup that a human can spend a small amount of time on. This also feels analogous to the situation about software testing at large, where (before coding agents) I found fuzzing and property-based testing to be highly effective.",
-      "I'm more productive and can work faster, but I find that, in terms of what I'm doing, I get farther from \"it just works\" with each more capable model because the gap between what the model can verify effectively without significant handholding and what the model can implement has been increasing."
-    ],
-    "last_highlighted_at": "2026-11-08T00:02:42.000Z",
-    "last_moved_at": "2026-11-11T19:37:03.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9NXzl",
-    "summary": "All of that is a long-winded and less eloquent way of saying: we should be more ambitious with the software we build. Thanks to Laurence Tratt, Yossi Kreining, Alex Kolovsky, and Michael Malis for comments/corrections/discussion.",
-    "title": "“We should be more ambitious with the software we build”",
-    "url": "https://danluu.com/ambitious/"
   },
   {
     "author": "Colossus",
@@ -225,19 +327,6 @@
     "summary": "The problem essentially disappeared. It had been swallowed by the sea. These ways of working on problems, going fast or slow, can be seen in all domains.",
     "title": "Being patient with problems",
     "url": "https://www.henrikkarlsson.xyz/p/being-patient-with-problems"
-  },
-  {
-    "author": "Daisy Alioto",
-    "category": "article",
-    "date_group": "11 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-11T01:21:38.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9UcNV",
-    "summary": "In the font family “It’s good enough and doesn’t really look like anything. That’s why it’s nice.” Daisy Alioto in conversation with Charles Broskoski, Are.na co-founder and CEO, and Johannes Breyer, co-founder of Dinamo.",
-    "title": "Dirt: In the font family",
-    "url": "https://dirt.fyi/article/2026/11/in-the-font-family"
   },
   {
     "author": "Dario Amodei",
@@ -352,32 +441,6 @@
     "url": "https://www.anthropic.com/engineering/redesigning-source-control"
   },
   {
-    "author": "Aria Schrecker",
-    "category": "article",
-    "date_group": "10 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-10T07:29:26.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9O8Uf",
-    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
-    "title": "Young prudes",
-    "url": "https://worksinprogress.co/issue/young-prudes/"
-  },
-  {
-    "author": "S.Y. Lee",
-    "category": "article",
-    "date_group": "10 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-10T02:20:49.000Z",
-    "location": "new",
-    "readwise_id": "itm_51COp",
-    "summary": "This post unpacks the first eight years of the JR era, from 1987 to 1995. Author’s Note This is the fifth and last installment of a multi-part examination of JNR’s history.",
-    "title": "Aura of Success: The First Years of Japan's Privatized National Railways",
-    "url": "https://www.substack-bahn.net/p/aura-of-success-the-first-years-of"
-  },
-  {
     "author": "S.Y. Lee",
     "category": "article",
     "date_group": "10 Nov 2026",
@@ -456,41 +519,6 @@
     "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
     "title": "Emily Wilson · An Uncomplicated Man",
     "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
-  },
-  {
-    "author": "Nabeel Qureshi",
-    "category": "article",
-    "date_group": "09 Nov 2026",
-    "highlights": [
-      "The most valuable feedback usually hurts a lot.",
-      "Scrolling and reading too much drowns out your inner voice.",
-      "Think in writing. Write Google Docs, scrawl in notebooks. This extends working memory arbitrarily and allows your thoughts to compound on each other.",
-      "If you find yourself dreading Mondays, quit."
-    ],
-    "last_highlighted_at": "2025-01-10T13:25:20.000Z",
-    "last_moved_at": "2026-11-09T03:27:58.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1oyus",
-    "summary": "Do things fast. Things don’t actually take much time, resistance/procrastination does. “Slow is fake”. Wealth can be created, there is not a fixed amount of it in the world.",
-    "title": "Nabeel Qureshi",
-    "url": "https://nabeelqu.co/principles"
-  },
-  {
-    "author": "whiteblossom",
-    "category": "article",
-    "date_group": "08 Nov 2026",
-    "highlights": [
-      "The central government’s third job is policing the tournament and stopping local governments from going too far in pursuit of their own growth at the expense of the wider economy.",
-      "Beijing’s second job, after ensuring the availability of cheap capital, is to rein in the overexuberance it has set off.",
-      "Real interest rates, adjusted for consumer inflation, have been negative in almost half of the years since 1999."
-    ],
-    "last_highlighted_at": "2026-10-15T18:17:54.000Z",
-    "last_moved_at": "2026-11-08T23:33:26.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9HfjH",
-    "summary": "These local growth machines and the competition between them are what drives China’s stunning economic success, and what the Western world must embrace to keep up.",
-    "title": "China’s Growth Machine",
-    "url": "https://worksinprogress.co/issue/chinas-growth-machine/"
   },
   {
     "author": "Name",
@@ -782,21 +810,6 @@
     "url": "https://x.com/i/web/status/1888396343791722605"
   },
   {
-    "author": "Nabeel Qureshi",
-    "category": "article",
-    "date_group": "06 Nov 2026",
-    "highlights": [
-      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
-    ],
-    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
-    "last_moved_at": "2026-11-06T06:22:48.000Z",
-    "location": "archive",
-    "readwise_id": "itm_bioV",
-    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
-    "title": "Tips for Productivity, Thinking, and Doing",
-    "url": "https://nabeelqu.co/advice"
-  },
-  {
     "author": "",
     "category": "article",
     "date_group": "04 Nov 2026",
@@ -886,19 +899,6 @@
     "summary": "But it’s still better than no dangling protection at all (like raw pointers), or a ‘fake memory leak’ which would happen in similar situations with smart pointers.",
     "title": "Handles are the better pointers",
     "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html"
-  },
-  {
-    "author": "Sunil Pai",
-    "category": "article",
-    "date_group": "02 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-02T20:43:19.000Z",
-    "location": "archive",
-    "readwise_id": "itm_97NDR",
-    "summary": "I ended up giving him a bit of a monologue. this is more or less what I told him.) okay, so this is the most common failure mode I’ve seen.",
-    "title": "the senior engineer death spiral",
-    "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/"
   },
   {
     "author": "Dan Luu",
