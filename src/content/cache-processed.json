@@ -1,16 +1,175 @@
 [
   {
+    "author": "Kevin Kelly",
+    "category": "article",
+    "date_group": "14 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-14T04:30:27.000Z",
+    "location": "archive",
+    "readwise_id": "itm_H9Eg",
+    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
+    "title": "103 Bits of Advice I Wish I Had Known",
+    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
+  },
+  {
+    "author": "Paul Graham",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [
+      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
+    ],
+    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
+    "last_moved_at": "2026-11-13T23:52:06.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1qI",
+    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
+    "title": "How to Write Usefully",
+    "url": "http://paulgraham.com/useful.html"
+  },
+  {
+    "author": "Samuel Hughes",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-13T23:19:54.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Ez6W",
+    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
+    "title": "The seven vices of highly effective Victorians",
+    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
+  },
+  {
+    "author": "Sunil Pai",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-13T20:59:19.000Z",
+    "location": "archive",
+    "readwise_id": "itm_97NDR",
+    "summary": "I ended up giving him a bit of a monologue. this is more or less what I told him.) okay, so this is the most common failure mode I’ve seen.",
+    "title": "the senior engineer death spiral",
+    "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/"
+  },
+  {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [
+      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
+      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
+      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
+    "last_moved_at": "2026-11-13T17:16:26.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Anne Applebaum",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-13T17:12:24.000Z",
+    "location": "new",
+    "readwise_id": "itm_9MPRP",
+    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
+    "title": "What the U.S. Is Really Doing in Venezuela",
+    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
+  },
+  {
+    "author": "Tim Urban",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-13T16:18:19.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9yv",
+    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
+    "title": "The AI Revolution: The Road to Superintelligence",
+    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
+  },
+  {
+    "author": "StillStackinAfterAllTheseYears",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-13T15:30:37.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8jdTa",
+    "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
+    "title": "Emily Wilson · An Uncomplicated Man",
+    "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
+  },
+  {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-13T14:34:32.000Z",
+    "location": "new",
+    "readwise_id": "itm_9P8VF",
+    "summary": "This isn’t histrionics; 300 days into the year 2026, and 311 unicorns have been minted so far. We were shocked when Cursor went from $0 to $100mn in a year.",
+    "title": "The Sane Asylum",
+    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
+  },
+  {
     "author": "Aria Schrecker",
     "category": "article",
     "date_group": "13 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-13T05:17:49.000Z",
+    "last_moved_at": "2026-11-13T08:39:21.000Z",
     "location": "archive",
     "readwise_id": "itm_9O8Uf",
     "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
     "title": "Young prudes",
     "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
+    "author": "Paul Graham",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [
+      "If writing down your ideas always makes them more precise and more complete, then no one who hasn't written about a topic has fully formed ideas about it. And someone who never writes has no fully formed ideas about anything nontrivial.",
+      "Putting ideas into words is a severe test."
+    ],
+    "last_highlighted_at": "2024-11-05T10:53:23.000Z",
+    "last_moved_at": "2026-11-13T08:33:19.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8Qri",
+    "summary": "It's only when you try to put them into words that you discover they're not. So if you never subject your ideas to that test, you'll not only never have fully formed ideas, but also never realize it.",
+    "title": "Putting Ideas into Words",
+    "url": "http://paulgraham.com/words.html"
+  },
+  {
+    "author": "Dan Luu",
+    "category": "article",
+    "date_group": "13 Nov 2026",
+    "highlights": [
+      "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
+    ],
+    "last_highlighted_at": "2025-11-09T01:51:47.056Z",
+    "last_moved_at": "2026-11-13T08:31:22.000Z",
+    "location": "archive",
+    "readwise_id": "itm_2SNh",
+    "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
+    "title": "Willingness to look stupid",
+    "url": "https://danluu.com/look-stupid/"
   },
   {
     "author": "Nabeel Qureshi",
@@ -26,41 +185,6 @@
     "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
     "title": "Tips for Productivity, Thinking, and Doing",
     "url": "https://nabeelqu.co/advice"
-  },
-  {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "12 Nov 2026",
-    "highlights": [
-      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
-      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
-      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
-      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
-      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
-      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
-    "last_moved_at": "2026-11-12T23:37:01.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
-  },
-  {
-    "author": "Anne Applebaum",
-    "category": "article",
-    "date_group": "12 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-12T20:41:07.000Z",
-    "location": "new",
-    "readwise_id": "itm_9MPRP",
-    "summary": "The political and business relationship now being forged between America and Venezuela is completely different. It’s not a relationship of two equals, obviously. But nor is it exactly an occupation.",
-    "title": "What the U.S. Is Really Doing in Venezuela",
-    "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
   },
   {
     "author": "danluu.com via lalitm",
@@ -90,34 +214,6 @@
     "summary": "In the font family “It’s good enough and doesn’t really look like anything. That’s why it’s nice.” Daisy Alioto in conversation with Charles Broskoski, Are.na co-founder and CEO, and Johannes Breyer, co-founder of Dinamo.",
     "title": "Dirt: In the font family",
     "url": "https://dirt.fyi/article/2026/11/in-the-font-family"
-  },
-  {
-    "author": "Dan Luu",
-    "category": "article",
-    "date_group": "12 Nov 2026",
-    "highlights": [
-      "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
-    ],
-    "last_highlighted_at": "2025-11-09T01:51:47.056Z",
-    "last_moved_at": "2026-11-12T15:44:53.000Z",
-    "location": "archive",
-    "readwise_id": "itm_2SNh",
-    "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
-    "title": "Willingness to look stupid",
-    "url": "https://danluu.com/look-stupid/"
-  },
-  {
-    "author": "Sunil Pai",
-    "category": "article",
-    "date_group": "12 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-12T13:30:24.000Z",
-    "location": "archive",
-    "readwise_id": "itm_97NDR",
-    "summary": "I ended up giving him a bit of a monologue. this is more or less what I told him.) okay, so this is the most common failure mode I’ve seen.",
-    "title": "the senior engineer death spiral",
-    "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/"
   },
   {
     "author": "Nabeel Qureshi",
@@ -168,21 +264,6 @@
     "url": "https://www.substack-bahn.net/p/aura-of-success-the-first-years-of"
   },
   {
-    "author": "Paul Graham",
-    "category": "article",
-    "date_group": "12 Nov 2026",
-    "highlights": [
-      "If you know nothing at all about an issue, you can't go wrong by saying that the issue is a complex one, that there are many factors to be considered, that it's a mistake to take too simplistic a view of it, and so on."
-    ],
-    "last_highlighted_at": "2025-01-07T13:48:24.000Z",
-    "last_moved_at": "2026-11-12T02:18:15.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1qI",
-    "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
-    "title": "How to Write Usefully",
-    "url": "http://paulgraham.com/useful.html"
-  },
-  {
     "author": "zdw",
     "category": "article",
     "date_group": "12 Nov 2026",
@@ -194,45 +275,6 @@
     "summary": "As Florida Keys Mosquito Control District Executive Director Andrea Leal said, ‘our biggest challenges have been awaiting regulatory approvals.’ Luckily, this district had another mosquito control option to try out: Wolbachia-infected mosquitoes.",
     "title": "Every mosquito is a policy failure",
     "url": "https://worksinprogress.co/issue/mosquitoes-are-a-choice/"
-  },
-  {
-    "author": "Samuel Hughes",
-    "category": "article",
-    "date_group": "12 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-12T01:29:30.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Ez6W",
-    "summary": "The most that can be said for Victorians’ classical education is perhaps that, like schooling in any difficult subject, it trained students in self-discipline, memorization, and applying rules.",
-    "title": "The seven vices of highly effective Victorians",
-    "url": "https://worksinprogress.co/issue/the-seven-vices-of-highly-effective-victorians/"
-  },
-  {
-    "author": "Kevin Kelly",
-    "category": "article",
-    "date_group": "12 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-12T00:37:08.000Z",
-    "location": "archive",
-    "readwise_id": "itm_H9Eg",
-    "summary": "About 99% of the time, the right time is right now. No one is as impressed with your possessions as you are. Don’t ever work for someone you don’t want to become.",
-    "title": "103 Bits of Advice I Wish I Had Known",
-    "url": "https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/"
-  },
-  {
-    "author": "Colossus",
-    "category": "article",
-    "date_group": "11 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-11T19:31:54.000Z",
-    "location": "new",
-    "readwise_id": "itm_9P8VF",
-    "summary": "I’ve joined their Slack, attended their offsites, and teamed up to ship some work together, all to get a feel for the place. What follows is a love letter to the way they are building their company.",
-    "title": "A love letter to a new kind of company",
-    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
   },
   {
     "author": "Patrick Collison",
@@ -253,35 +295,6 @@
     "summary": "In 1861, the American scientist and educator William Barton Rogers published a manifesto calling for a new kind of research institution. Recognizing t",
     "title": "We Need a New Science of Progress",
     "url": "https://www.theatlantic.com/science/archive/2019/07/we-need-new-science-progress/594946/"
-  },
-  {
-    "author": "Paul Graham",
-    "category": "article",
-    "date_group": "11 Nov 2026",
-    "highlights": [
-      "If writing down your ideas always makes them more precise and more complete, then no one who hasn't written about a topic has fully formed ideas about it. And someone who never writes has no fully formed ideas about anything nontrivial.",
-      "Putting ideas into words is a severe test."
-    ],
-    "last_highlighted_at": "2024-11-05T10:53:23.000Z",
-    "last_moved_at": "2026-11-11T16:47:58.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8Qri",
-    "summary": "It's only when you try to put them into words that you discover they're not. So if you never subject your ideas to that test, you'll not only never have fully formed ideas, but also never realize it.",
-    "title": "Putting Ideas into Words",
-    "url": "http://paulgraham.com/words.html"
-  },
-  {
-    "author": "Tim Urban",
-    "category": "article",
-    "date_group": "11 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-11T11:00:27.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9yv",
-    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
-    "title": "The AI Revolution: The Road to Superintelligence",
-    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
   },
   {
     "author": "Ravi Gupta",
@@ -506,19 +519,6 @@
     "summary": "I went from being a bad writer to a good writer after taking a one-day course in \"business writing.\" I couldn't believe how simple it was.",
     "title": "The Day You Became A Better Writer",
     "url": "https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html"
-  },
-  {
-    "author": "StillStackinAfterAllTheseYears",
-    "category": "article",
-    "date_group": "09 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-09T13:04:41.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8jdTa",
-    "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
-    "title": "Emily Wilson · An Uncomplicated Man",
-    "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
   },
   {
     "author": "Name",
