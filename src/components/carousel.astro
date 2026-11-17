@@ -32,7 +32,7 @@ const firstSlide = slides[0];
 
 <div
 	id="carousel"
-	class="relative flex h-full w-full max-w-full flex-col items-center gap-2 select-none md:w-48"
+	class="relative flex h-full w-full max-w-full flex-col items-center gap-2 select-none [container-type:size]"
 	style="--current-slide: 0;"
 	data-num-slides={slides.length}
 	tabindex="0"
@@ -53,10 +53,11 @@ const firstSlide = slides[0];
 		{
 			slides.map(({ caption, image }, idx) => (
 				<div
-					class={`flex shrink-0 grow-0 flex-col items-center justify-center gap-1 md:gap-1.25 order-${idx} scroll-snap h-full w-full translate-x-[calc(-100%*var(--current-slide))] snap-center bg-neutral-50 transition-transform duration-500 dark:bg-neutral-900`}
+					style={`--ratio: ${image.width / image.height}`}
+					class={`flex shrink-0 grow-0 flex-col items-center justify-center gap-(--gap) [--gap:--spacing(1)] md:[--gap:--spacing(1.25)] [--fit-w:min(100cqw,calc((100cqh_-_1lh_-_var(--gap))_*_var(--ratio)))] order-${idx} scroll-snap h-full w-full translate-x-[calc(-100%*var(--current-slide))] snap-center bg-neutral-50 transition-transform duration-500 dark:bg-neutral-900`}
 				>
 					<Image
-						class="mix-blend-multiply dark:mix-blend-normal"
+						class="w-(--fit-w) mix-blend-multiply dark:mix-blend-normal"
 						src={image}
 						alt={caption}
 						widths={[400, 800]}
@@ -65,7 +66,7 @@ const firstSlide = slides[0];
 						decoding={idx === 0 ? "sync" : "async"}
 						fetchpriority={idx === 0 ? "high" : undefined}
 					/>
-					<div class="flex h-lh w-full justify-between">
+					<div class="flex h-lh w-(--fit-w) justify-between">
 						<span>{caption}</span>
 						<span>
 							{idx + 1}/{slides.length}
