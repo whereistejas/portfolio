@@ -41,32 +41,8 @@ const longDateFormat = new Intl.DateTimeFormat("en-GB", {
 	timeZone: "UTC",
 });
 
-const ROMAN: [number, string][] = [
-	[1000, "M"],
-	[900, "CM"],
-	[500, "D"],
-	[400, "CD"],
-	[100, "C"],
-	[90, "XC"],
-	[50, "L"],
-	[40, "XL"],
-	[10, "X"],
-	[9, "IX"],
-	[5, "V"],
-	[4, "IV"],
-	[1, "I"],
-];
-
 export function formatVolume(number: number): string {
-	let rest = number;
-	let roman = "";
-	for (const [value, numeral] of ROMAN) {
-		while (rest >= value) {
-			roman += numeral;
-			rest -= value;
-		}
-	}
-	return `Vol. ${roman}`;
+	return `Vol. ${number}`;
 }
 
 export function formatDate(date: Date): string {
