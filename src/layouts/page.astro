@@ -15,7 +15,17 @@ const { title } = Astro.props;
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="theme-color" content="#fafafa" />
+		<meta name="color-scheme" content="light dark" />
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: light)"
+			content="#fafafa"
+		/>
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: dark)"
+			content="#171717"
+		/>
 		<meta name="msapplication-navbutton-color" content="#fafafa" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="#fafafa" />
 		<meta name="apple-mobile-web-app-title" content="Tejas Sanap" />
