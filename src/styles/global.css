@@ -391,6 +391,14 @@
 			@apply font-serif;
 		}
 
+		.gazette-byline {
+			@apply font-serif text-sm tracking-[0.02em];
+
+			span {
+				@apply font-semibold uppercase;
+			}
+		}
+
 		.gazette-meta {
 			@apply text-fg-muted dark:text-fg-muted-dark font-serif text-sm tracking-[0.02em];
 		}

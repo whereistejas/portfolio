@@ -40,13 +40,23 @@ function block(text: string, font: Font, width: number, clamp = Infinity) {
 	return Math.min(clamp, lines(text, font, width)) * font.line;
 }
 
-function storyHeight(item: GazetteItem, width: number, clamp: number): number {
+function stack(parts: number[], gap: number): number {
+	const shown = parts.filter((part) => part > 0);
 	return (
-		block(item.title, HEADLINE, width) +
-		STACK_GAP +
-		block(item.summary, BODY, width, clamp) +
-		STACK_GAP +
-		META
+		shown.reduce((sum, part) => sum + part, 0) +
+		gap * Math.max(0, shown.length - 1)
+	);
+}
+
+function storyHeight(item: GazetteItem, width: number, clamp: number): number {
+	return stack(
+		[
+			block(item.title, HEADLINE, width),
+			item.author ? META : 0,
+			block(item.summary, BODY, width, clamp),
+			item.highlights.length > 0 ? META : 0,
+		],
+		STACK_GAP
 	);
 }
 
@@ -71,16 +81,18 @@ function leadHeight(item: GazetteItem, width: number): number {
 	const pull = item.highlights.find(
 		(text) => text.length >= 60 && text.length <= 400
 	);
-	const parts = [
-		block(item.title, LEAD_HEADLINE, width),
-		block(item.summary, BODY, width),
-		...(pull
-			? [12 + 24 + 2 * RULE + block(pull, PULL, Math.min(width, PULL_MAX))]
-			: []),
-		META,
-	];
-	return (
-		parts.reduce((sum, part) => sum + part, 0) + LEAD_GAP * (parts.length - 1)
+	const tucked = item.highlights.length - (pull ? 1 : 0);
+	return stack(
+		[
+			block(item.title, LEAD_HEADLINE, width),
+			item.author ? META : 0,
+			block(item.summary, BODY, width),
+			pull
+				? 12 + 24 + 2 * RULE + block(pull, PULL, Math.min(width, PULL_MAX))
+				: 0,
+			tucked > 0 ? META : 0,
+		],
+		LEAD_GAP
 	);
 }
 

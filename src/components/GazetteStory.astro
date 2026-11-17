@@ -40,14 +40,19 @@ const hasNote =
 		target="_blank"
 		rel="noopener noreferrer">{item.title}</a
 	>
+	{
+		byline && (
+			<p class="gazette-byline">
+				By <span>{byline}</span>
+			</p>
+		)
+	}
 	<p class="gazette-dek">{item.summary}</p>
 	{pullQuote && <blockquote class="gazette-pull" set:html={pullQuote} />}
 	<GazetteHighlights
 		class="gazette-meta"
 		highlightsHtml={tucked}
 		more={pullQuote !== undefined}
-	>
-		{byline && <span>{byline}</span>}
-	</GazetteHighlights>
+	/>
 	{hasNote && <GazetteNote title={item.title} highlightsHtml={tucked} />}
 </article>

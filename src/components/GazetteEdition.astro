@@ -69,10 +69,18 @@ const [firstColumn = [], ...otherColumns] = splitIntoColumns(
 					target="_blank"
 					rel="noopener noreferrer">{issue.lead.title}</a
 				>
+				{
+					byline && (
+						<p class="gazette-byline">
+							By <span>{byline}</span>
+						</p>
+					)
+				}
 				<p class="gazette-dek">{issue.lead.summary}</p>
-				<GazetteHighlights class="gazette-meta" highlightsHtml={leadHighlights}>
-					{byline && <span>{byline}</span>}
-				</GazetteHighlights>
+				<GazetteHighlights
+					class="gazette-meta"
+					highlightsHtml={leadHighlights}
+				/>
 				{
 					hasNote && (
 						<GazetteNote
