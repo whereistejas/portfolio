@@ -538,34 +538,33 @@
 		}
 
 		.gazette-count {
-			@apply px-[0.2em] whitespace-nowrap;
-			background-image: linear-gradient(
-				var(--gazette-highlighter),
-				var(--gazette-highlighter)
-			);
-			background-repeat: no-repeat;
-			background-position: 0 92%;
-			background-size: 100% 42%;
-			box-decoration-break: clone;
-			transition: background-size 150ms var(--gazette-ease-out);
-		}
+			@apply relative isolate px-[0.2em] whitespace-nowrap;
 
-		.gazette-highlights[open] .gazette-count,
-		.gazette-note[open] .gazette-count {
-			@apply text-fg dark:text-fg-dark;
-			background-size: 100% 84%;
-		}
-
-		@media (hover: hover) and (pointer: fine) {
-			.gazette-highlights > summary:hover .gazette-count,
-			.gazette-note > summary:hover .gazette-count {
-				background-size: 100% 84%;
+			&::before {
+				@apply absolute inset-x-0 bottom-[8%] -z-1 h-[84%] origin-bottom;
+				content: "";
+				background-color: var(--gazette-highlighter);
+				transform: scaleY(0.5);
+				transition: transform 150ms var(--gazette-ease-out);
 			}
 		}
 
-		.gazette-highlights > summary:active .gazette-count,
-		.gazette-note > summary:active .gazette-count {
-			background-size: 100% 84%;
+		.gazette-highlights[open] .gazette-count {
+			@apply text-fg dark:text-fg-dark;
+
+			&::before {
+				transform: scaleY(1);
+			}
+		}
+
+		@media (hover: hover) and (pointer: fine) {
+			.gazette-highlights > summary:hover .gazette-count::before {
+				transform: scaleY(1);
+			}
+		}
+
+		.gazette-highlights > summary:active .gazette-count::before {
+			transform: scaleY(1);
 			transition-duration: 80ms;
 		}
 
@@ -580,34 +579,37 @@
 				display: none;
 			}
 
-			.gazette-noted:has(> .gazette-highlights[open]) > .gazette-note {
-				display: block;
-			}
-
 			.gazette-note {
-				@apply absolute font-serif text-sm leading-[1.5];
+				@apply absolute hidden font-serif text-base leading-[1.55];
 				left: calc(100% + 2.5rem);
 				width: var(--container-2xs);
-				border-left: 2px solid var(--gazette-highlighter);
-				background-color: var(--gazette-highlighter-wash);
-				padding: 0.5rem 0.75rem;
 				text-align: left;
+				opacity: 0;
+				translate: -0.75rem 0;
 				transition:
-					opacity 200ms var(--gazette-ease-out),
-					translate 200ms var(--gazette-ease-out),
-					display 200ms allow-discrete;
+					opacity 150ms var(--gazette-ease-out),
+					translate 150ms var(--gazette-ease-out),
+					display 150ms allow-discrete;
+			}
+
+			.gazette-noted:has(> .gazette-highlights[open]) > .gazette-note {
+				display: block;
+				opacity: 1;
+				translate: 0 0;
+				transition-duration: 200ms;
 
 				@starting-style {
 					opacity: 0;
 					translate: -0.75rem 0;
 				}
+			}
+
+			.gazette-note {
 
 				blockquote {
-					@apply text-fg dark:text-fg-dark mt-0.25 wrap-break-word;
-				}
-
-				blockquote + blockquote {
-					@apply mt-0.75;
+					@apply text-fg dark:text-fg-dark mt-0.5 px-0.75 py-0.5 wrap-break-word;
+					border-left: 2px solid var(--gazette-highlighter);
+					background-color: var(--gazette-highlighter-wash);
 				}
 
 				blockquote ul {
@@ -616,16 +618,18 @@
 			}
 
 			.gazette-note-title {
-				@apply block font-medium;
+				@apply text-fg-muted dark:text-fg-muted-dark block text-sm font-medium tracking-[0.02em];
 			}
 		}
 
 		@media (prefers-reduced-motion: reduce) {
-			.gazette-count {
+			.gazette-count::before {
 				transition: none;
 			}
 
-			&[data-rail] .gazette-note {
+			&[data-rail] .gazette-note,
+			&[data-rail] .gazette-noted:has(> .gazette-highlights[open]) > .gazette-note {
+				translate: 0 0;
 				transition-property: opacity, display;
 
 				@starting-style {
