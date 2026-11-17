@@ -287,7 +287,7 @@
 		.gazette-top {
 			@apply flex flex-col gap-2;
 
-			.gazette-story--lead {
+			.gazette-center {
 				order: 1;
 			}
 			.gazette-side {
@@ -303,7 +303,7 @@
 				@apply grid gap-x-1.5;
 				grid-template-areas: "lead";
 
-				.gazette-story--lead {
+				.gazette-center {
 					grid-area: lead;
 				}
 				.gazette-side {
@@ -433,9 +433,16 @@
 			}
 		}
 
+		.gazette-fold {
+			@apply mt-1.5 grid grid-cols-1 gap-x-1.5 gap-y-1.5 md:grid-cols-2;
+		}
+
 		.gazette-more-grid {
 			@apply grid grid-flow-row-dense grid-cols-1 gap-x-1.5 gap-y-1.5 md:grid-cols-2 lg:grid-cols-4;
+		}
 
+		.gazette-fold,
+		.gazette-more-grid {
 			.gazette-story {
 				@apply pt-0.75;
 				border-top: 1px dotted var(--gazette-rule);

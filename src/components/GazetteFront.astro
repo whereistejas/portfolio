@@ -3,6 +3,7 @@ import GazetteHighlights from "./GazetteHighlights.astro";
 import GazetteNote from "./GazetteNote.astro";
 import GazetteStory from "./GazetteStory.astro";
 import { parseAuthors } from "../lib/feed";
+import { aboveTheFold, GLANCE_HEADING } from "../lib/gazette-fold";
 import {
 	byRecency,
 	formatLongDate,
@@ -33,6 +34,8 @@ const remaining = issue.rest
 	.sort(byRecency);
 const glance = remaining.slice(0, GLANCE_ITEMS);
 const more = remaining.slice(GLANCE_ITEMS);
+const fold = more.slice(0, aboveTheFold(glance, issue.lead, side, more));
+const below = more.slice(fold.length);
 const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 ---
 
@@ -56,7 +59,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 		{
 			glance.length > 0 && (
 				<aside class="gazette-glance">
-					<h2>This Week at a Glance</h2>
+					<h2>{GLANCE_HEADING}</h2>
 					<ul>
 						{glance.map((item) => {
 							const highlights = highlightsOf(item.readwise_id);
@@ -98,12 +101,27 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 			)
 		}
 
-		<GazetteStory
-			item={issue.lead}
-			highlightsHtml={highlightsOf(issue.lead.readwise_id)}
-			variant="lead"
-			noted
-		/>
+		<div class="gazette-center">
+			<GazetteStory
+				item={issue.lead}
+				highlightsHtml={highlightsOf(issue.lead.readwise_id)}
+				variant="lead"
+				noted
+			/>
+			{
+				fold.length > 0 && (
+					<div class="gazette-fold">
+						{fold.map((item) => (
+							<GazetteStory
+								item={item}
+								highlightsHtml={highlightsOf(item.readwise_id)}
+								variant="side"
+							/>
+						))}
+					</div>
+				)
+			}
+		</div>
 
 		{
 			side.length > 0 && (
@@ -122,9 +140,9 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 	</div>
 
 	{
-		more.length > 0 && (
+		below.length > 0 && (
 			<div class="gazette-more-grid">
-				{more.map((item) => (
+				{below.map((item) => (
 					<GazetteStory
 						item={item}
 						highlightsHtml={highlightsOf(item.readwise_id)}
