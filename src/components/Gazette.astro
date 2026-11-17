@@ -8,9 +8,10 @@ interface Props {
 	name: string;
 	tagline: string;
 	items: GazetteItem[];
+	numbered?: boolean;
 }
 
-const { name, tagline, items } = Astro.props;
+const { name, tagline, items, numbered = true } = Astro.props;
 
 const [current, ...previous] = groupIntoIssues(items);
 const highlightHtmlById = await renderHighlightsHtml(items);
@@ -26,6 +27,7 @@ const builtAt = new Date();
 				issue={current}
 				highlightsHtml={highlightHtmlById}
 				updatedAt={builtAt}
+				numbered={numbered}
 			/>
 		)
 	}
@@ -35,7 +37,11 @@ const builtAt = new Date();
 				<h2>Previous editions</h2>
 				<div class="gazette-grid">
 					{previous.map((issue) => (
-						<GazetteEdition issue={issue} highlightsHtml={highlightHtmlById} />
+						<GazetteEdition
+							issue={issue}
+							highlightsHtml={highlightHtmlById}
+							numbered={numbered}
+						/>
 					))}
 				</div>
 			</section>

@@ -13,9 +13,10 @@ import {
 interface Props {
 	issue: Issue;
 	highlightsHtml: Map<string, string[]>;
+	numbered: boolean;
 }
 
-const { issue, highlightsHtml } = Astro.props;
+const { issue, highlightsHtml, numbered } = Astro.props;
 
 const LEAD_LINES = 4;
 const LINES_PER_COLUMN = 9;
@@ -44,8 +45,16 @@ const [firstColumn = [], ...otherColumns] = splitIntoColumns(
 	id={`issue-${issue.number}`}
 >
 	<div class="gazette-edition-head">
-		<span class="gazette-edition-no">No. {issue.number}</span>
-		<span>{formatDate(issue.weekEnd)}</span>
+		{
+			numbered ? (
+				<>
+					<span class="gazette-edition-no">No. {issue.number}</span>
+					<span>{formatDate(issue.weekEnd)}</span>
+				</>
+			) : (
+				<span class="gazette-edition-no">{formatDate(issue.weekEnd)}</span>
+			)
+		}
 	</div>
 
 	<div class="gazette-edition-body">

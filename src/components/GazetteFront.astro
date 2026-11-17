@@ -16,9 +16,11 @@ interface Props {
 	issue: Issue;
 	highlightsHtml: Map<string, string[]>;
 	updatedAt: Date;
+	numbered: boolean;
 }
 
-const { name, tagline, issue, highlightsHtml, updatedAt } = Astro.props;
+const { name, tagline, issue, highlightsHtml, updatedAt, numbered } =
+	Astro.props;
 
 const SIDE_STORIES = 3;
 const GLANCE_ITEMS = 6;
@@ -38,7 +40,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 	<div class="gazette-masthead">
 		<span>{formatLongDate(updatedAt)}</span>
 		<h1>{name}</h1>
-		<span>No. {issue.number}, WIP</span>
+		<span>{numbered && `No. ${issue.number}, WIP`}</span>
 		<p class="gazette-tagline">{tagline}</p>
 	</div>
 

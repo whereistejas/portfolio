@@ -15,6 +15,7 @@ const queueEntries = (await getCollection("readwise-queue")).map(
 			name="Inbox"
 			tagline="What I’ve saved to read, one week at a time."
 			items={queueEntries}
+			numbered={false}
 		/>
 	</Fragment>
 </Page>
