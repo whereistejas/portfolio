@@ -12,7 +12,7 @@ import {
 
 interface Props {
 	name: string;
-	tagline: string;
+	tagline: string | undefined;
 	issue: Issue;
 	highlightsHtml: Map<string, string[]>;
 	updatedAt: Date;
@@ -41,7 +41,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 		<span>{formatLongDate(updatedAt)}</span>
 		<h1>{name}</h1>
 		<span>{numbered && `No. ${issue.number}, WIP`}</span>
-		<p class="gazette-tagline">{tagline}</p>
+		{tagline && <p class="gazette-tagline">{tagline}</p>}
 	</div>
 
 	<div
