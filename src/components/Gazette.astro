@@ -2,7 +2,13 @@
 import GazetteEdition from "./GazetteEdition.astro";
 import GazetteFront from "./GazetteFront.astro";
 import { renderHighlightsHtml } from "../lib/feed";
-import { groupIntoIssues, type GazetteItem } from "../lib/gazette";
+import {
+	byRecency,
+	groupIntoIssues,
+	withoutItems,
+	type GazetteItem,
+} from "../lib/gazette";
+import { layoutFront } from "../lib/gazette-fold";
 
 interface Props {
 	name: string;
@@ -13,18 +19,25 @@ interface Props {
 
 const { name, tagline, items, numbered = true } = Astro.props;
 
-const [current, ...previous] = groupIntoIssues(items);
+const [current, ...older] = groupIntoIssues(items);
+const backfill = numbered
+	? []
+	: older.flatMap((issue) => [issue.lead, ...issue.rest]).sort(byRecency);
+const front = current && layoutFront(current, backfill);
+const taken = new Set(front?.fold);
+const previous = older.flatMap((issue) => withoutItems(issue, taken) ?? []);
 const highlightHtmlById = await renderHighlightsHtml(items);
 const builtAt = new Date();
 ---
 
 <div class="gazette">
 	{
-		current && (
+		current && front && (
 			<GazetteFront
 				name={name}
 				tagline={tagline}
-				issue={current}
+				edition={current.number}
+				front={front}
 				highlightsHtml={highlightHtmlById}
 				updatedAt={builtAt}
 				numbered={numbered}

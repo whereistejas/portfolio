@@ -126,3 +126,13 @@ export function groupIntoIssues(items: GazetteItem[]): Issue[] {
 		})
 		.reverse();
 }
+
+export function withoutItems(
+	issue: Issue,
+	taken: Set<GazetteItem>
+): Issue | undefined {
+	const [lead, ...rest] = [issue.lead, ...issue.rest].filter(
+		(item) => !taken.has(item)
+	);
+	return lead && { ...issue, lead, rest };
+}

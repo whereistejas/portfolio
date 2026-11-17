@@ -1,4 +1,14 @@
-import type { GazetteItem } from "./gazette";
+import { byRecency, type GazetteItem, type Issue } from "./gazette";
+
+export interface Front {
+	lead: GazetteItem;
+	left: GazetteItem[];
+	right: GazetteItem[];
+	fold: GazetteItem[];
+	below: GazetteItem[];
+}
+
+const SIDE_STORIES = 3;
 
 interface Font {
 	size: number;
@@ -91,7 +101,7 @@ function leadHeight(item: GazetteItem, width: number): number {
  * figures are pixels in the `lg` layout, where the 5xl column is 976px wide
  * whatever the viewport.
  */
-export function aboveTheFold(
+function aboveTheFold(
 	left: GazetteItem[],
 	lead: GazetteItem,
 	right: GazetteItem[],
@@ -122,4 +132,29 @@ export function aboveTheFold(
 		count += row.length;
 	}
 	return count;
+}
+
+/**
+ * Lays out the front page of an issue. The right column takes the stories
+ * with highlights, the left the most recent of the rest. Stories go under the
+ * lead while they fit, from the issue's own leftovers and then from
+ * `backfill`; the leftovers that don't fit go below the fold.
+ */
+export function layoutFront(issue: Issue, backfill: GazetteItem[]): Front {
+	const right = issue.rest
+		.filter((item) => item.highlights.length > 0)
+		.slice(0, SIDE_STORIES);
+	const remaining = issue.rest
+		.filter((item) => !right.includes(item))
+		.sort(byRecency);
+	const left = remaining.slice(0, SIDE_STORIES);
+	const more = remaining.slice(SIDE_STORIES);
+
+	const candidates = [...more, ...backfill];
+	const fold = candidates.slice(
+		0,
+		aboveTheFold(left, issue.lead, right, candidates)
+	);
+	const below = more.filter((item) => !fold.includes(item));
+	return { lead: issue.lead, left, right, fold, below };
 }

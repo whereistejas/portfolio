@@ -1,32 +1,21 @@
 ---
 import GazetteStory from "./GazetteStory.astro";
-import { aboveTheFold } from "../lib/gazette-fold";
-import { byRecency, formatLongDate, type Issue } from "../lib/gazette";
+import { formatLongDate } from "../lib/gazette";
+import type { Front } from "../lib/gazette-fold";
 
 interface Props {
 	name: string;
 	tagline: string | undefined;
-	issue: Issue;
+	edition: number;
+	front: Front;
 	highlightsHtml: Map<string, string[]>;
 	updatedAt: Date;
 	numbered: boolean;
 }
 
-const { name, tagline, issue, highlightsHtml, updatedAt, numbered } =
+const { name, tagline, edition, front, highlightsHtml, updatedAt, numbered } =
 	Astro.props;
-
-const SIDE_STORIES = 3;
-
-const right = issue.rest
-	.filter((item) => item.highlights.length > 0)
-	.slice(0, SIDE_STORIES);
-const remaining = issue.rest
-	.filter((item) => !right.includes(item))
-	.sort(byRecency);
-const left = remaining.slice(0, SIDE_STORIES);
-const more = remaining.slice(SIDE_STORIES);
-const fold = more.slice(0, aboveTheFold(left, issue.lead, right, more));
-const below = more.slice(fold.length);
+const { lead, left, right, fold, below } = front;
 const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 ---
 
@@ -34,7 +23,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 	<div class="gazette-masthead">
 		<span>{formatLongDate(updatedAt)}</span>
 		<h1>{name}</h1>
-		<span>{numbered && `No. ${issue.number}, WIP`}</span>
+		<span>{numbered && `No. ${edition}, WIP`}</span>
 		{tagline && <p class="gazette-tagline">{tagline}</p>}
 	</div>
 
@@ -64,8 +53,8 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 
 		<div class="gazette-center">
 			<GazetteStory
-				item={issue.lead}
-				highlightsHtml={highlightsOf(issue.lead.readwise_id)}
+				item={lead}
+				highlightsHtml={highlightsOf(lead.readwise_id)}
 				variant="lead"
 				noted
 			/>
