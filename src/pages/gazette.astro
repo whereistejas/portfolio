@@ -9,7 +9,10 @@ const archiveEntries = (await getCollection("readwise-archive")).map(
 );
 ---
 
-<Page title="Gazette">
+<Page
+	title="Gazette"
+	fonts={["economist-serif-roman.woff2", "economist-serif-italic.woff2"]}
+>
 	<Fragment slot="main">
 		<Paper
 			name="Gazette"

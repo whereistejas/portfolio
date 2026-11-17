@@ -3,7 +3,14 @@ import Textorlink from "../components/textorlink.astro";
 import Page from "../layouts/page.astro";
 ---
 
-<Page title="Info">
+<Page
+	title="Info"
+	fonts={[
+		"NebulaSans-Book.woff2",
+		"NebulaSans-BookItalic.woff2",
+		"NebulaSans-Medium.woff2",
+	]}
+>
 	<Fragment slot="header">
 		<Textorlink content="INFO" />
 	</Fragment>

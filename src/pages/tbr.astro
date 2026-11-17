@@ -9,7 +9,7 @@ const queueEntries = (await getCollection("readwise-queue")).map(
 );
 ---
 
-<Page title="To Be Read">
+<Page title="To Be Read" fonts={["economist-serif-roman.woff2"]}>
 	<Fragment slot="main">
 		<Gazette name="To Be Read" items={queueEntries} numbered={false} />
 	</Fragment>
