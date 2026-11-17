@@ -520,6 +520,14 @@
 			blockquote a {
 				@apply underline underline-offset-2;
 			}
+
+			blockquote ul {
+				@apply mt-0.5 list-disc pl-1.25;
+			}
+
+			blockquote ol {
+				@apply mt-0.5 list-decimal pl-1.25;
+			}
 		}
 
 		.gazette-count {
