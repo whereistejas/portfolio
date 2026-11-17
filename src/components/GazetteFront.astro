@@ -11,12 +11,14 @@ import {
 } from "../lib/gazette";
 
 interface Props {
+	name: string;
+	tagline: string;
 	issue: Issue;
 	highlightsHtml: Map<string, string[]>;
 	updatedAt: Date;
 }
 
-const { issue, highlightsHtml, updatedAt } = Astro.props;
+const { name, tagline, issue, highlightsHtml, updatedAt } = Astro.props;
 
 const SIDE_STORIES = 3;
 const GLANCE_ITEMS = 6;
@@ -35,11 +37,9 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 <section class="gazette-front">
 	<div class="gazette-masthead">
 		<span>{formatLongDate(updatedAt)}</span>
-		<h1>Gazette</h1>
+		<h1>{name}</h1>
 		<span>No. {issue.number}, WIP</span>
-		<p class="gazette-tagline">
-			My reading list archive: what I read each week, and what I highlighted.
-		</p>
+		<p class="gazette-tagline">{tagline}</p>
 	</div>
 
 	<div

@@ -1,12 +1,11 @@
 ---
 import GazetteHighlights from "./GazetteHighlights.astro";
 import GazetteNote from "./GazetteNote.astro";
-import type { ReadwiseArchiveItem } from "../content/types";
 import { parseAuthors } from "../lib/feed";
-import { wantsMarginNote } from "../lib/gazette";
+import { wantsMarginNote, type GazetteItem } from "../lib/gazette";
 
 interface Props {
-	item: ReadwiseArchiveItem;
+	item: GazetteItem;
 	highlightsHtml: string[];
 	variant: "lead" | "side";
 	noted?: boolean;

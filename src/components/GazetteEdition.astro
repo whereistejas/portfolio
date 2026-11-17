@@ -2,9 +2,13 @@
 import GazetteEditionItem from "./GazetteEditionItem.astro";
 import GazetteHighlights from "./GazetteHighlights.astro";
 import GazetteNote from "./GazetteNote.astro";
-import type { ReadwiseArchiveItem } from "../content/types";
 import { parseAuthors } from "../lib/feed";
-import { formatDate, splitIntoColumns, type Issue } from "../lib/gazette";
+import {
+	formatDate,
+	splitIntoColumns,
+	type Issue,
+	type GazetteItem,
+} from "../lib/gazette";
 
 interface Props {
 	issue: Issue;
@@ -22,7 +26,7 @@ const span = Math.min(
 	MAX_SPAN,
 	Math.ceil((LEAD_LINES + issue.rest.length) / LINES_PER_COLUMN)
 );
-const highlightsOf = (item: ReadwiseArchiveItem) =>
+const highlightsOf = (item: GazetteItem) =>
 	highlightsHtml.get(item.readwise_id) ?? [];
 const byline = parseAuthors(issue.lead.author).join(", ");
 const leadHighlights = highlightsOf(issue.lead);

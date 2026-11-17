@@ -1,112 +1,20 @@
 ---
 import { getCollection } from "astro:content";
 
-import GazetteEdition from "../components/GazetteEdition.astro";
-import GazetteFront from "../components/GazetteFront.astro";
+import Gazette from "../components/Gazette.astro";
 import Page from "../layouts/page.astro";
-import { renderHighlightsHtml } from "../lib/feed";
-import { groupIntoIssues } from "../lib/gazette";
 
 const archiveEntries = (await getCollection("readwise-archive")).map(
 	(entry) => entry.data
 );
-
-const [current, ...previous] = groupIntoIssues(archiveEntries);
-const highlightHtmlById = await renderHighlightsHtml(archiveEntries);
-const builtAt = new Date();
 ---
 
 <Page title="Gazette" wide>
 	<Fragment slot="main">
-		<div class="gazette">
-			{
-				current && (
-					<GazetteFront
-						issue={current}
-						highlightsHtml={highlightHtmlById}
-						updatedAt={builtAt}
-					/>
-				)
-			}
-			{
-				previous.length > 0 && (
-					<section class="gazette-previous">
-						<h2>Previous editions</h2>
-						<div class="gazette-grid">
-							{previous.map((issue) => (
-								<GazetteEdition
-									issue={issue}
-									highlightsHtml={highlightHtmlById}
-								/>
-							))}
-						</div>
-					</section>
-				)
-			}
-		</div>
+		<Gazette
+			name="Gazette"
+			tagline="My reading list archive: what I read each week, and what I highlighted."
+			items={archiveEntries}
+		/>
 	</Fragment>
 </Page>
-
-
-<script>
-	const RAIL = window.matchMedia("(width >= 116rem)");
-
-	function toggleOf(note: HTMLElement): HTMLDetailsElement | null {
-		return (
-			note.parentElement?.querySelector<HTMLDetailsElement>(
-				":scope > .gazette-highlights"
-			) ?? null
-		);
-	}
-
-	function placeNotes(root: HTMLElement) {
-		if (!RAIL.matches) {
-			delete root.dataset["rail"];
-			root.style.minHeight = "";
-			return;
-		}
-		root.dataset["rail"] = "";
-
-		const open = Array.from(
-			root.querySelectorAll<HTMLElement>("[data-gazette-note]")
-		).find((note) => toggleOf(note)?.open);
-		if (!open) {
-			root.style.minHeight = "";
-			return;
-		}
-
-		const anchor = open.closest<HTMLElement>("[data-note-anchor]") ?? open;
-		const top =
-			anchor.getBoundingClientRect().top - root.getBoundingClientRect().top;
-		open.style.top = `${top}px`;
-		root.style.minHeight = `${top + open.offsetHeight}px`;
-	}
-
-	const root = document.querySelector<HTMLElement>(".gazette");
-	if (root) {
-		let queued = false;
-		const schedule = () => {
-			if (queued) return;
-			queued = true;
-			requestAnimationFrame(() => {
-				queued = false;
-				placeNotes(root);
-			});
-		};
-
-		const observer = new ResizeObserver(schedule);
-		observer.observe(root);
-		root
-			.querySelectorAll("[data-gazette-note], [data-note-anchor]")
-			.forEach((element) => observer.observe(element));
-
-		new MutationObserver(() => placeNotes(root)).observe(root, {
-			attributeFilter: ["open"],
-			subtree: true,
-		});
-
-		RAIL.addEventListener("change", schedule);
-		document.fonts.ready.then(schedule);
-		schedule();
-	}
-</script>

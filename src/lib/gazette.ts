@@ -1,11 +1,22 @@
 import type { ReadwiseArchiveItem } from "../content/types";
 
+export type GazetteItem = Pick<
+	ReadwiseArchiveItem,
+	| "readwise_id"
+	| "title"
+	| "url"
+	| "summary"
+	| "author"
+	| "highlights"
+	| "last_moved_at"
+>;
+
 export interface Issue {
 	number: number;
 	weekStart: Date;
 	weekEnd: Date;
-	lead: ReadwiseArchiveItem;
-	rest: ReadwiseArchiveItem[];
+	lead: GazetteItem;
+	rest: GazetteItem[];
 }
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -81,19 +92,16 @@ export function splitIntoColumns<T>(
 	return result;
 }
 
-export function byRecency(
-	a: ReadwiseArchiveItem,
-	b: ReadwiseArchiveItem
-): number {
+export function byRecency(a: GazetteItem, b: GazetteItem): number {
 	return b.last_moved_at.getTime() - a.last_moved_at.getTime();
 }
 
-function byProminence(a: ReadwiseArchiveItem, b: ReadwiseArchiveItem): number {
+function byProminence(a: GazetteItem, b: GazetteItem): number {
 	return b.highlights.length - a.highlights.length || byRecency(a, b);
 }
 
-export function groupIntoIssues(items: ReadwiseArchiveItem[]): Issue[] {
-	const weeks = new Map<number, ReadwiseArchiveItem[]>();
+export function groupIntoIssues(items: GazetteItem[]): Issue[] {
+	const weeks = new Map<number, GazetteItem[]>();
 	for (const item of items) {
 		const key = startOfWeek(item.last_moved_at).getTime();
 		const week = weeks.get(key);
