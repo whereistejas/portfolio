@@ -227,6 +227,7 @@
 		--gazette-highlighter: oklch(0.9 0.16 98);
 		--gazette-highlighter-wash: oklch(0.97 0.07 98);
 		--gazette-swash: var(--gazette-highlighter);
+		--gazette-count-rest: 0.5;
 		--gazette-count-ink: var(--color-fg);
 		--gazette-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 		@media (prefers-color-scheme: dark) {
@@ -234,8 +235,10 @@
 			--gazette-edition-rule: var(--color-neutral-500);
 			--gazette-highlighter: oklch(0.84 0.15 95);
 			--gazette-highlighter-wash: oklch(0.27 0.025 90);
-			--gazette-swash: oklch(0.84 0.15 95 / 0.35);
-			--gazette-count-ink: var(--color-fg-dark);
+			--gazette-swash: oklch(0.9 0.14 100);
+			--gazette-count-rest: 1;
+			--gazette-count-rest-ink: var(--color-stone-600);
+			--gazette-count-ink: var(--color-neutral-900);
 		}
 
 		/* ── Masthead ────────────────────────────────────────────── */
@@ -546,12 +549,13 @@
 
 		.gazette-count {
 			@apply relative isolate px-[0.2em] whitespace-nowrap;
+			color: var(--gazette-count-rest-ink, currentColor);
 
 			&::before {
 				@apply absolute inset-x-0 bottom-[8%] -z-1 h-[84%] origin-bottom;
 				content: "";
 				background-color: var(--gazette-swash);
-				transform: scaleY(0.5);
+				transform: scaleY(var(--gazette-count-rest));
 				transition: transform 150ms var(--gazette-ease-out);
 			}
 		}
