@@ -20,7 +20,6 @@ const pullIndex =
 		: -1;
 const pullQuote = highlightsHtml[pullIndex];
 const tucked = highlightsHtml.filter((_, i) => i !== pullIndex);
-const tuckedText = item.highlights.filter((_, i) => i !== pullIndex);
 const hasNote = noted && tucked.length > 0;
 ---
 
@@ -52,7 +51,6 @@ const hasNote = noted && tucked.length > 0;
 			<GazetteNote
 				title={item.title}
 				highlightsHtml={tucked}
-				highlightsText={tuckedText}
 			/>
 		)
 	}

@@ -215,13 +215,12 @@
 		header,
 		main,
 		footer {
-			@apply md:w-full md:max-w-6xl md:px-1.5 xl:max-w-7xl;
+			@apply md:w-full md:max-w-6xl md:px-1.5;
 		}
 	}
 
 	div.gazette {
 		@apply relative flex flex-col gap-3 pb-3 leading-[1.55];
-		@apply xl:mr-[calc(var(--container-2xs)+2.5rem)];
 
 		--gazette-rule: var(--color-neutral-300);
 		--gazette-edition-rule: var(--color-neutral-400);
@@ -577,99 +576,47 @@
 		}
 
 		&[data-rail] {
-			counter-reset: gazette-note;
-
-			[data-note-anchor] {
-				counter-increment: gazette-note;
+			.gazette-noted > .gazette-highlights::details-content {
+				display: none;
 			}
 
-			.gazette-noted > .gazette-highlights .gazette-count::after,
-			.gazette-note::before {
-				@apply font-sans text-[0.7em] font-semibold;
-				content: counter(gazette-note);
-				vertical-align: super;
-				line-height: 0;
-			}
-
-			.gazette-noted > .gazette-highlights .gazette-count::after {
-				@apply ml-[0.15em];
-			}
-
-			.gazette-note::before {
-				@apply text-fg-accent dark:text-fg-accent-dark absolute -left-1 top-[0.6em];
-			}
-
-			.gazette-noted > .gazette-highlights {
-				@apply pointer-events-none;
-
-				&::details-content {
-					display: none;
-				}
+			.gazette-noted:has(> .gazette-highlights[open]) > .gazette-note {
+				display: block;
 			}
 
 			.gazette-note {
-				@apply text-fg-muted dark:text-fg-muted-dark invisible absolute block font-serif text-sm leading-[1.5];
+				@apply absolute font-serif text-sm leading-[1.5];
 				left: calc(100% + 2.5rem);
 				width: var(--container-2xs);
+				border-left: 2px solid var(--gazette-highlighter);
+				background-color: var(--gazette-highlighter-wash);
+				padding: 0.5rem 0.75rem;
 				text-align: left;
-				interpolate-size: allow-keywords;
+				transition:
+					opacity 200ms var(--gazette-ease-out),
+					translate 200ms var(--gazette-ease-out),
+					display 200ms allow-discrete;
 
-				> summary {
-					@apply cursor-pointer list-none;
-
-					&::-webkit-details-marker {
-						display: none;
-					}
+				@starting-style {
+					opacity: 0;
+					translate: -0.75rem 0;
 				}
 
 				blockquote {
-					@apply mt-0.25 wrap-break-word;
-				}
-
-				> summary blockquote {
-					@apply line-clamp-4;
-				}
-
-				&[open] > summary blockquote {
-					display: block;
-					-webkit-line-clamp: unset;
+					@apply text-fg dark:text-fg-dark mt-0.25 wrap-break-word;
 				}
 
 				blockquote + blockquote {
-					@apply mt-0.5;
+					@apply mt-0.75;
 				}
 
 				blockquote ul {
 					@apply mt-0.25 list-disc pl-1;
 				}
-
-				.gazette-count {
-					@apply mt-0.25 inline-block;
-				}
-
-				&::details-content {
-					block-size: 0;
-					opacity: 0;
-					overflow-y: clip;
-					transition:
-						block-size 160ms var(--gazette-ease-out),
-						opacity 160ms var(--gazette-ease-out),
-						content-visibility 160ms allow-discrete;
-				}
-
-				&[open]::details-content {
-					block-size: auto;
-					opacity: 1;
-					transition-duration: 240ms;
-				}
 			}
 
 			.gazette-note-title {
-				@apply text-fg dark:text-fg-dark block font-medium;
-			}
-
-			&[data-notes-placed] .gazette-note {
-				@apply visible;
+				@apply block font-medium;
 			}
 		}
 
@@ -678,10 +625,12 @@
 				transition: none;
 			}
 
-			&[data-rail] .gazette-note::details-content,
-			&[data-rail] .gazette-note[open]::details-content {
-				block-size: auto;
-				transition-property: opacity, content-visibility;
+			&[data-rail] .gazette-note {
+				transition-property: opacity, display;
+
+				@starting-style {
+					translate: 0 0;
+				}
 			}
 		}
 

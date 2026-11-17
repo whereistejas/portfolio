@@ -2,35 +2,12 @@
 interface Props {
 	title: string;
 	highlightsHtml: string[];
-	highlightsText: string[];
 }
 
-const { title, highlightsHtml, highlightsText } = Astro.props;
-
-const CLAMPED_LENGTH = 240;
-
-const [first, ...rest] = highlightsHtml;
-const firstIsLong = (highlightsText[0]?.length ?? 0) > CLAMPED_LENGTH;
-const label = rest.length > 0 ? `+${rest.length} more` : "Read all";
+const { title, highlightsHtml } = Astro.props;
 ---
 
-{
-	first &&
-		(rest.length > 0 || firstIsLong ? (
-			<details class="gazette-note" data-gazette-note>
-				<summary>
-					<span class="gazette-note-title">{title}</span>
-					<blockquote set:html={first} />
-					<span class="gazette-count">{label}</span>
-				</summary>
-				{rest.map((html) => (
-					<blockquote set:html={html} />
-				))}
-			</details>
-		) : (
-			<div class="gazette-note" data-gazette-note>
-				<span class="gazette-note-title">{title}</span>
-				<blockquote set:html={first} />
-			</div>
-		))
-}
+<aside class="gazette-note" data-gazette-note>
+	<span class="gazette-note-title">{title}</span>
+	{highlightsHtml.map((html) => <blockquote set:html={html} />)}
+</aside>
