@@ -110,6 +110,10 @@
 	font-family: "Nebula Sans", sans-serif;
 }
 
+html.fonts-loading body {
+	visibility: hidden;
+}
+
 @theme {
 	--font-sans: "Nebula Sans", sans-serif;
 	--font-serif: "Economist Serif", "Newsreader", Georgia, serif;
