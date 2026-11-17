@@ -1,6 +1,7 @@
 ---
 import GazetteEdition from "./GazetteEdition.astro";
 import GazetteFront from "./GazetteFront.astro";
+import GazettePaper from "./GazettePaper.astro";
 import { renderHighlightsHtml } from "../lib/feed";
 import {
 	byRecency,
@@ -32,7 +33,7 @@ const highlightHtmlById = await renderHighlightsHtml(items);
 const builtAt = new Date();
 ---
 
-<div class="gazette">
+<GazettePaper>
 	{
 		current && front && (
 			<GazetteFront
@@ -62,104 +63,4 @@ const builtAt = new Date();
 			</section>
 		)
 	}
-</div>
-
-<script>
-	const RAIL = window.matchMedia("(width >= 116rem)");
-
-	function toggleOf(note: HTMLElement): HTMLDetailsElement | null {
-		return (
-			note.parentElement?.querySelector<HTMLDetailsElement>(
-				":scope > .gazette-highlights"
-			) ?? null
-		);
-	}
-
-	function placeNotes(root: HTMLElement) {
-		if (!RAIL.matches) {
-			delete root.dataset["rail"];
-			root.style.minHeight = "";
-			return;
-		}
-		root.dataset["rail"] = "";
-
-		const open = Array.from(
-			root.querySelectorAll<HTMLElement>("[data-gazette-note]")
-		).find((note) => toggleOf(note)?.open);
-		if (!open) {
-			root.style.minHeight = "";
-			return;
-		}
-
-		const anchor = open.closest<HTMLElement>("[data-note-anchor]") ?? open;
-		const top =
-			anchor.getBoundingClientRect().top - root.getBoundingClientRect().top;
-		open.style.top = `${top}px`;
-		root.style.minHeight = `${top + open.offsetHeight}px`;
-	}
-
-	function linesThatFit(dek: HTMLElement): number {
-		const story = dek.parentElement;
-		if (!story) return 0;
-
-		const last = Array.from(story.children)
-			.filter((child) => child.tagName !== "ASIDE")
-			.at(-1);
-		if (!last) return 0;
-
-		const bottom =
-			story.getBoundingClientRect().bottom -
-			parseFloat(getComputedStyle(story).paddingBottom);
-		const slack = bottom - last.getBoundingClientRect().bottom;
-		const line = parseFloat(getComputedStyle(dek).lineHeight);
-		return Math.floor(
-			(dek.getBoundingClientRect().height + slack) / line + 0.01
-		);
-	}
-
-	function fillDeks(root: HTMLElement) {
-		const deks = Array.from(
-			root.querySelectorAll<HTMLElement>(".gazette-dek-fill")
-		);
-		deks.forEach((dek) => dek.style.removeProperty("--dek-lines"));
-
-		deks
-			.map((dek) => [dek, linesThatFit(dek)] as const)
-			.forEach(([dek, lines]) => {
-				if (lines > 0) dek.style.setProperty("--dek-lines", String(lines));
-			});
-	}
-
-	function layout(root: HTMLElement) {
-		fillDeks(root);
-		placeNotes(root);
-	}
-
-	const root = document.querySelector<HTMLElement>(".gazette");
-	if (root) {
-		let queued = false;
-		const schedule = () => {
-			if (queued) return;
-			queued = true;
-			requestAnimationFrame(() => {
-				queued = false;
-				layout(root);
-			});
-		};
-
-		const observer = new ResizeObserver(schedule);
-		observer.observe(root);
-		root
-			.querySelectorAll("[data-gazette-note], [data-note-anchor]")
-			.forEach((element) => observer.observe(element));
-
-		new MutationObserver(() => layout(root)).observe(root, {
-			attributeFilter: ["open"],
-			subtree: true,
-		});
-
-		RAIL.addEventListener("change", schedule);
-		document.fonts.ready.then(schedule);
-		schedule();
-	}
-</script>
+</GazettePaper>
