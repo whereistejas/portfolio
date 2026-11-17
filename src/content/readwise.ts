@@ -3,6 +3,7 @@ import type {
 	ProcessedItem,
 	ReadwiseArchiveItem,
 	ReadwiseCategory,
+	ReadwiseExportHighlight,
 	ReadwiseItem,
 	ReadwiseLocation,
 	ReadwiseQueueItem,
@@ -66,6 +67,15 @@ type HighlightsBySourceUrl = Map<
 	{ texts: string[]; lastHighlightedAt: string | null }
 >;
 
+const DEFINITION_MARKER = /defn/i;
+
+function isDefinition(highlight: ReadwiseExportHighlight): boolean {
+	return (
+		DEFINITION_MARKER.test(highlight.note) ||
+		highlight.tags.some((tag) => DEFINITION_MARKER.test(tag.name))
+	);
+}
+
 function pickLatest(a: string | null, b: string | null): string | null {
 	if (!a) return b;
 	if (!b) return a;
@@ -103,7 +113,9 @@ async function fetchAllReadwiseHighlightsBySourceUrl(
 				continue;
 			}
 
-			const activeHighlights = book.highlights.filter((h) => !h.is_deleted);
+			const activeHighlights = book.highlights.filter(
+				(h) => !h.is_deleted && !isDefinition(h)
+			);
 			const texts = activeHighlights
 				.map((h) => h.text)
 				.filter((text) => text.length > 0);

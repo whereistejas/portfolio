@@ -36,9 +36,14 @@ export type ReadwiseApiDocument = z.infer<typeof readwiseApiDocumentSchema>;
 
 export const readwiseExportHighlightSchema = z.object({
 	text: z.string(),
+	note: z.string(),
+	tags: z.array(z.object({ name: z.string() })),
 	is_deleted: z.boolean(),
 	highlighted_at: z.string().nullable(),
 });
+export type ReadwiseExportHighlight = z.infer<
+	typeof readwiseExportHighlightSchema
+>;
 export const readwiseExportBookSchema = z.object({
 	source_url: z.string().nullable(),
 	is_deleted: z.boolean(),
