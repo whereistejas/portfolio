@@ -1,5 +1,6 @@
 ---
 import GazetteHighlights from "./GazetteHighlights.astro";
+import GazetteNote from "./GazetteNote.astro";
 import type { ReadwiseArchiveItem } from "../content/types";
 import { parseAuthors } from "../lib/feed";
 
@@ -7,9 +8,10 @@ interface Props {
 	item: ReadwiseArchiveItem;
 	highlightsHtml: string[];
 	variant: "lead" | "side";
+	noted?: boolean;
 }
 
-const { item, highlightsHtml, variant } = Astro.props;
+const { item, highlightsHtml, variant, noted = false } = Astro.props;
 
 const byline = parseAuthors(item.author).join(", ");
 const pullIndex =
@@ -18,9 +20,18 @@ const pullIndex =
 		: -1;
 const pullQuote = highlightsHtml[pullIndex];
 const tucked = highlightsHtml.filter((_, i) => i !== pullIndex);
+const tuckedText = item.highlights.filter((_, i) => i !== pullIndex);
+const hasNote = noted && tucked.length > 0;
 ---
 
-<article class={`gazette-story gazette-story--${variant}`}>
+<article
+	class:list={[
+		"gazette-story",
+		`gazette-story--${variant}`,
+		{ "gazette-noted": hasNote },
+	]}
+	data-note-anchor={hasNote ? "" : undefined}
+>
 	<a
 		class="gazette-headline"
 		href={item.url}
@@ -36,4 +47,13 @@ const tucked = highlightsHtml.filter((_, i) => i !== pullIndex);
 	>
 		{byline && <span>{byline}</span>}
 	</GazetteHighlights>
+	{
+		hasNote && (
+			<GazetteNote
+				title={item.title}
+				highlightsHtml={tucked}
+				highlightsText={tuckedText}
+			/>
+		)
+	}
 </article>

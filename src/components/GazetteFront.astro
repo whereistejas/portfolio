@@ -74,6 +74,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 			item={issue.lead}
 			highlightsHtml={highlightsOf(issue.lead.readwise_id)}
 			variant="lead"
+			noted
 		/>
 
 		{
@@ -84,6 +85,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 							item={item}
 							highlightsHtml={highlightsOf(item.readwise_id)}
 							variant="side"
+							noted
 						/>
 					))}
 				</div>

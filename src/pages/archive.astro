@@ -47,3 +47,61 @@ const builtAt = new Date();
 	</Fragment>
 </Page>
 
+
+<script>
+	const RAIL = window.matchMedia("(width >= 80rem)");
+	const NOTE_GAP = 16;
+
+	function placeNotes(root: HTMLElement) {
+		if (!RAIL.matches) {
+			delete root.dataset["rail"];
+			delete root.dataset["notesPlaced"];
+			root.style.minHeight = "";
+			return;
+		}
+		root.dataset["rail"] = "";
+
+		const rootTop = root.getBoundingClientRect().top;
+		const notes = Array.from(
+			root.querySelectorAll<HTMLElement>("[data-gazette-note]")
+		)
+			.map((note) => {
+				const anchor = note.closest<HTMLElement>("[data-note-anchor]") ?? note;
+				return { note, target: anchor.getBoundingClientRect().top - rootTop };
+			})
+			.sort((a, b) => a.target - b.target);
+
+		let floor = 0;
+		for (const { note, target } of notes) {
+			const top = Math.max(target, floor);
+			note.style.top = `${top}px`;
+			floor = top + note.offsetHeight + NOTE_GAP;
+		}
+
+		const minHeight = `${floor}px`;
+		if (root.style.minHeight !== minHeight) root.style.minHeight = minHeight;
+		root.dataset["notesPlaced"] = "";
+	}
+
+	const root = document.querySelector<HTMLElement>(".gazette");
+	if (root) {
+		let queued = false;
+		const schedule = () => {
+			if (queued) return;
+			queued = true;
+			requestAnimationFrame(() => {
+				queued = false;
+				placeNotes(root);
+			});
+		};
+
+		const observer = new ResizeObserver(schedule);
+		observer.observe(root);
+		root
+			.querySelectorAll("[data-gazette-note], [data-note-anchor]")
+			.forEach((element) => observer.observe(element));
+		RAIL.addEventListener("change", schedule);
+		document.fonts.ready.then(schedule);
+		schedule();
+	}
+</script>

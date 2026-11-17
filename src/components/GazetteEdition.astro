@@ -1,6 +1,7 @@
 ---
 import GazetteEditionItem from "./GazetteEditionItem.astro";
 import GazetteHighlights from "./GazetteHighlights.astro";
+import GazetteNote from "./GazetteNote.astro";
 import type { ReadwiseArchiveItem } from "../content/types";
 import { parseAuthors } from "../lib/feed";
 import { formatDate, type Issue } from "../lib/gazette";
@@ -23,6 +24,8 @@ const span = Math.min(
 const highlightsOf = (item: ReadwiseArchiveItem) =>
 	highlightsHtml.get(item.readwise_id) ?? [];
 const byline = parseAuthors(issue.lead.author).join(", ");
+const leadHighlights = highlightsOf(issue.lead);
+const hasNote = leadHighlights.length > 0;
 ---
 
 <article
@@ -34,7 +37,10 @@ const byline = parseAuthors(issue.lead.author).join(", ");
 		<span>{formatDate(issue.weekEnd)}</span>
 	</div>
 
-	<div class="gazette-edition-lead">
+	<div
+		class:list={["gazette-edition-lead", { "gazette-noted": hasNote }]}
+		data-note-anchor={hasNote ? "" : undefined}
+	>
 		<a
 			class="gazette-headline"
 			href={issue.lead.url}
@@ -42,9 +48,18 @@ const byline = parseAuthors(issue.lead.author).join(", ");
 			rel="noopener noreferrer">{issue.lead.title}</a
 		>
 		<p class="gazette-dek">{issue.lead.summary}</p>
-		<GazetteHighlights class="gazette-meta" highlightsHtml={highlightsOf(issue.lead)}>
+		<GazetteHighlights class="gazette-meta" highlightsHtml={leadHighlights}>
 			{byline && <span>{byline}</span>}
 		</GazetteHighlights>
+		{
+			hasNote && (
+				<GazetteNote
+					title={issue.lead.title}
+					highlightsHtml={leadHighlights}
+					highlightsText={issue.lead.highlights}
+				/>
+			)
+		}
 	</div>
 
 	{
