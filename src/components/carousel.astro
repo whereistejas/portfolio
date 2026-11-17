@@ -26,8 +26,6 @@ const slides: { caption: string; image: ImageMetadata }[] = await Promise.all(
 		return { caption, image };
 	})
 );
-
-const firstSlide = slides[0];
 ---
 
 <div
@@ -75,17 +73,6 @@ const firstSlide = slides[0];
 		}
 	</div>
 </div>
-
-{
-	firstSlide && (
-		<link
-			rel="preload"
-			as="image"
-			href={firstSlide.image.src}
-			fetchpriority="high"
-		/>
-	)
-}
 
 <script>
 	function setupCarousel() {
