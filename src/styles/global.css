@@ -447,13 +447,8 @@
 
 		/* ── Previous editions ───────────────────────────────────── */
 
-		.gazette-previous > h2 {
-			@apply mb-1.5 pt-0.75 font-serif text-2xl leading-[1.2] font-semibold;
-			border-top: 1px solid var(--gazette-edition-rule);
-		}
-
 		.gazette-grid {
-			@apply grid grid-flow-row-dense grid-cols-1 gap-x-1.5 gap-y-3 md:grid-cols-2 lg:grid-cols-3;
+			@apply grid grid-flow-row-dense grid-cols-1 gap-x-1.5 gap-y-1.5 md:grid-cols-2 lg:grid-cols-3;
 		}
 
 		.gazette-edition {

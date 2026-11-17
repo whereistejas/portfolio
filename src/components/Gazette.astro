@@ -34,7 +34,6 @@ const builtAt = new Date();
 	{
 		previous.length > 0 && (
 			<section class="gazette-previous">
-				{numbered && <h2>Previous editions</h2>}
 				<div class="gazette-grid">
 					{previous.map((issue) => (
 						<GazetteEdition
