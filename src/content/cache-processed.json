@@ -1,5 +1,170 @@
 [
   {
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "17 Nov 2026",
+    "highlights": [
+      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
+    ],
+    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
+    "last_moved_at": "2026-11-17T04:59:31.000Z",
+    "location": "archive",
+    "readwise_id": "itm_bioV",
+    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
+    "title": "Tips for Productivity, Thinking, and Doing",
+    "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Dan Luu",
+    "category": "article",
+    "date_group": "17 Nov 2026",
+    "highlights": [
+      "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
+    ],
+    "last_highlighted_at": "2025-11-09T01:51:47.056Z",
+    "last_moved_at": "2026-11-17T04:36:09.000Z",
+    "location": "archive",
+    "readwise_id": "itm_2SNh",
+    "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
+    "title": "Willingness to look stupid",
+    "url": "https://danluu.com/look-stupid/"
+  },
+  {
+    "author": "Nathan Heller",
+    "category": "article",
+    "date_group": "17 Nov 2026",
+    "highlights": [
+      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
+      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
+      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
+      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
+      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
+      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
+      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
+      "jeremiads,"
+    ],
+    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
+    "last_moved_at": "2026-11-17T00:51:57.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9Kr0e",
+    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
+    "title": "The New Age of Reading",
+    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
+  },
+  {
+    "author": "Aria Schrecker",
+    "category": "article",
+    "date_group": "16 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-16T20:36:09.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9O8Uf",
+    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
+    "title": "Young prudes",
+    "url": "https://worksinprogress.co/issue/young-prudes/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "16 Nov 2026",
+    "highlights": [
+      "China is made up of distinctive macro regions. China’s central government has for millennia tried to impose its will on the entire nation. Though top leader Xi Jinping wields more governance instruments than any former emperor, central authorities still have to contend with the ambitions of different regions. New investments do not end up in Beijing by default."
+    ],
+    "last_highlighted_at": "2026-11-01T23:02:36.000Z",
+    "last_moved_at": "2026-11-16T20:35:02.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9L6zm",
+    "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
+    "title": "Sichuan and the Sun Belt",
+    "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
+  },
+  {
+    "author": "Tim Urban",
+    "category": "article",
+    "date_group": "16 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-16T17:15:22.000Z",
+    "location": "archive",
+    "readwise_id": "itm_9yv",
+    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
+    "title": "The AI Revolution: The Road to Superintelligence",
+    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
+  },
+  {
+    "author": "hyperthesis",
+    "category": "article",
+    "date_group": "16 Nov 2026",
+    "highlights": [
+      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
+    ],
+    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
+    "last_moved_at": "2026-11-16T17:14:54.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1CyV",
+    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
+    "title": "The Bitter Lesson",
+    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
+  },
+  {
+    "author": "Alex Chalmers",
+    "category": "article",
+    "date_group": "16 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-16T15:52:16.000Z",
+    "location": "archive",
+    "readwise_id": "itm_8z05M",
+    "summary": "This is because burning trash comes with specific complexities. The smoke from burning trash contains mercury, lead, and acid gases, requiring expensive pollution control.",
+    "title": "Just bury your trash",
+    "url": "https://worksinprogress.co/issue/just-bury-your-trash/"
+  },
+  {
+    "author": "Nabeel Qureshi",
+    "category": "article",
+    "date_group": "16 Nov 2026",
+    "highlights": [
+      "The most valuable feedback usually hurts a lot.",
+      "Scrolling and reading too much drowns out your inner voice.",
+      "Think in writing. Write Google Docs, scrawl in notebooks. This extends working memory arbitrarily and allows your thoughts to compound on each other.",
+      "If you find yourself dreading Mondays, quit."
+    ],
+    "last_highlighted_at": "2025-01-10T13:25:20.000Z",
+    "last_moved_at": "2026-11-16T15:35:39.000Z",
+    "location": "archive",
+    "readwise_id": "itm_1oyus",
+    "summary": "Do things fast. Things don’t actually take much time, resistance/procrastination does. “Slow is fake”. Wealth can be created, there is not a fixed amount of it in the world.",
+    "title": "Nabeel Qureshi",
+    "url": "https://nabeelqu.co/principles"
+  },
+  {
+    "author": "Brian Patrick Eha",
+    "category": "article",
+    "date_group": "16 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-16T13:40:47.000Z",
+    "location": "new",
+    "readwise_id": "itm_1Vm0",
+    "summary": "Speculative fiction—fantasy, science fiction, and dystopian prophecies—has captured the imagination of twenty-first-century man. These flights of fancy are the cornerstone of our popular culture; their protagonists are our cultural heroes.",
+    "title": "Why Is Young-Adult Fiction So Popular?",
+    "url": "https://www.city-journal.org/why-is-young-adult-fiction-so-popular"
+  },
+  {
+    "author": "Colossus",
+    "category": "article",
+    "date_group": "16 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-16T08:05:16.000Z",
+    "location": "new",
+    "readwise_id": "itm_9P8VF",
+    "summary": "This isn’t histrionics; 300 days into the year 2026, and 311 unicorns have been minted so far. We were shocked when Cursor went from $0 to $100mn in a year.",
+    "title": "The Sane Asylum",
+    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
+  },
+  {
     "author": "Kevin Kelly",
     "category": "article",
     "date_group": "16 Nov 2026",
@@ -26,28 +191,6 @@
     "summary": "The exciting thing is not that there's a lot left to write, but that there's a lot left to discover. There's a certain kind of idea that's best discovered by writing essays. If most essays are still unwritten, most such ideas are still undiscovered.",
     "title": "How to Write Usefully",
     "url": "http://paulgraham.com/useful.html"
-  },
-  {
-    "author": "Nathan Heller",
-    "category": "article",
-    "date_group": "16 Nov 2026",
-    "highlights": [
-      "Travelling, like reading, is a reminder of the impossibility of communicating across territories—but also evidence that, somehow, we always do.",
-      "It’s that their canon is illegible to older readers. The new reading wars, in that sense, are largely about the primacy of taste.",
-      "Every bookseller I spoke to reported increased book-buying among young customers. It is puzzling, then, that the world is filled with professors reporting that students can barely muddle through the reading on their syllabi.",
-      "Buying a book demands an unusual commitment from the customer—hours, days, or even weeks of attention, and a measure of heart besides. Because the investment is great, the sales numbers can seem small. To reach the Billboard Top Ten, a music album often must sell about thirty thousand units a week; a book can make it to the Times best-seller list with a mere five thousand. An individual Barnes & Noble store might sell two dozen copies of a best-seller a week, and a “steady seller” might mean fewer than ten weekly sales.",
-      "“The more bookshops there are, the more people will read. The better bookshops are, the more people discover things. Online is an efficient place, but it’s not a place that can excite in itself.”",
-      "Elliott Management, the hedge fund that owns Waterstones and Barnes & Noble, is widely expected to take both of them public next year at a total valuation of at least three billion dollars—a",
-      "The illusion of decline might come in part because people consume books differently. Pew reported that, in 2025, the number of adults who read a print book during the year was eight percentage points less than it was in 2011—but that the number who read an e-book and the number who listened to an audiobook each increased by almost double the same proportion.",
-      "jeremiads,"
-    ],
-    "last_highlighted_at": "2026-11-01T01:48:38.000Z",
-    "last_moved_at": "2026-11-16T03:30:50.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9Kr0e",
-    "summary": "Chain bookselling, which enabled the unification of the reading market, was one of the first heralds of a globalizing age.",
-    "title": "The New Age of Reading",
-    "url": "https://www.newyorker.com/magazine/2026/10/26/james-daunt-profile"
   },
   {
     "author": "whiteblossom",
@@ -96,19 +239,6 @@
     "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
   },
   {
-    "author": "Colossus",
-    "category": "article",
-    "date_group": "15 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-15T19:00:21.000Z",
-    "location": "new",
-    "readwise_id": "itm_9P8VF",
-    "summary": "This isn’t histrionics; 300 days into the year 2026, and 311 unicorns have been minted so far. We were shocked when Cursor went from $0 to $100mn in a year.",
-    "title": "The Sane Asylum",
-    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
-  },
-  {
     "author": "pranitha_m",
     "category": "article",
     "date_group": "15 Nov 2026",
@@ -120,24 +250,6 @@
     "summary": "Conclusion These results are specific to our workload and they don't necessarily mean lock-free is always faster. Going lock-free helped us avoid the overhead of acquiring and releasing thousands of read locks.",
     "title": "The Performance Cost of RwLock in Our Read-Heavy Workload",
     "url": "https://pranitha.dev/posts/rwlock-vs-lockfree/"
-  },
-  {
-    "author": "Nabeel Qureshi",
-    "category": "article",
-    "date_group": "15 Nov 2026",
-    "highlights": [
-      "The most valuable feedback usually hurts a lot.",
-      "Scrolling and reading too much drowns out your inner voice.",
-      "Think in writing. Write Google Docs, scrawl in notebooks. This extends working memory arbitrarily and allows your thoughts to compound on each other.",
-      "If you find yourself dreading Mondays, quit."
-    ],
-    "last_highlighted_at": "2025-01-10T13:25:20.000Z",
-    "last_moved_at": "2026-11-15T18:44:39.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1oyus",
-    "summary": "Do things fast. Things don’t actually take much time, resistance/procrastination does. “Slow is fake”. Wealth can be created, there is not a fixed amount of it in the world.",
-    "title": "Nabeel Qureshi",
-    "url": "https://nabeelqu.co/principles"
   },
   {
     "author": "Ravi Gupta",
@@ -166,21 +278,6 @@
     "summary": "We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain.",
     "title": "We Must Pace the Frontier",
     "url": "https://darioamodei.com/post/we-must-pace-the-frontier"
-  },
-  {
-    "author": "hyperthesis",
-    "category": "article",
-    "date_group": "15 Nov 2026",
-    "highlights": [
-      "general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falling cost per unit of computation."
-    ],
-    "last_highlighted_at": "2024-12-04T06:41:19.000Z",
-    "last_moved_at": "2026-11-15T17:15:44.000Z",
-    "location": "archive",
-    "readwise_id": "itm_1CyV",
-    "summary": "There were many examples of AI researchers' belated learning of this bitter lesson, and it is instructive to review some of the most prominent.",
-    "title": "The Bitter Lesson",
-    "url": "http://www.incompleteideas.net/IncIdeas/BitterLesson.html"
   },
   {
     "author": "T. Greer",
@@ -242,21 +339,6 @@
     "url": "https://www.anthropic.com/engineering/redesigning-source-control"
   },
   {
-    "author": "Nabeel Qureshi",
-    "category": "article",
-    "date_group": "15 Nov 2026",
-    "highlights": [
-      "**In chess, a thing that distinguishes a good player from a worse one is that the good player tests their potential move against the opponent's strongest possible replies. Weak players often play 'hope chess': they launch an attack, and assume their opponents will go along with their plans by playing weak responses. As a result they don't see how their attack might fail, and they lose."
-    ],
-    "last_highlighted_at": "2025-01-11T14:39:28.000Z",
-    "last_moved_at": "2026-11-15T03:22:54.000Z",
-    "location": "archive",
-    "readwise_id": "itm_bioV",
-    "summary": "Because energy compounds, the first actions in the day matter a lot: the right actions get you into a positive spiral, the wrong actions get you into a negative spiral.",
-    "title": "Tips for Productivity, Thinking, and Doing",
-    "url": "https://nabeelqu.co/advice"
-  },
-  {
     "author": "highfrequency",
     "category": "article",
     "date_group": "15 Nov 2026",
@@ -268,21 +350,6 @@
     "summary": "The Great Filter - Are We Almost Past It? Sept. 15, 1998 by Robin Hanson   Humanity seems to have a bright future, i.e., a non-trivial chance of expan",
     "title": "The Great Filter",
     "url": "http://mason.gmu.edu/~rhanson/greatfilter.html"
-  },
-  {
-    "author": "",
-    "category": "article",
-    "date_group": "15 Nov 2026",
-    "highlights": [
-      "China is made up of distinctive macro regions. China’s central government has for millennia tried to impose its will on the entire nation. Though top leader Xi Jinping wields more governance instruments than any former emperor, central authorities still have to contend with the ambitions of different regions. New investments do not end up in Beijing by default."
-    ],
-    "last_highlighted_at": "2026-11-01T23:02:36.000Z",
-    "last_moved_at": "2026-11-15T01:29:07.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9L6zm",
-    "summary": "They really are more bookish, possessing perhaps a less practical bent. Rust Belt states like Pennsylvania (where my parents live) and Michigan (which is my home) are pleasant in many ways, but they also feel stuck.",
-    "title": "Sichuan and the Sun Belt",
-    "url": "https://worksinprogress.co/issue/sichuan-and-the-sun-belt-2/"
   },
   {
     "author": "Atul Gawande",
@@ -298,19 +365,6 @@
     "summary": "No matter how well trained people are, few can sustain their best performance on their own. That’s where coaching comes in.",
     "title": "Personal Best",
     "url": "https://www.newyorker.com/magazine/2011/10/03/personal-best"
-  },
-  {
-    "author": "Aria Schrecker",
-    "category": "article",
-    "date_group": "14 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-14T23:16:38.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9O8Uf",
-    "summary": "The kids have a different view. Polling says that young people today are less likely to have sex on a first date or a one-night stand, and are more interested in marriage.",
-    "title": "Young prudes",
-    "url": "https://worksinprogress.co/issue/young-prudes/"
   },
   {
     "author": "Andrew Jones",
@@ -396,19 +450,6 @@
     "url": "https://sunilpai.dev/posts/the-senior-engineer-death-spiral/"
   },
   {
-    "author": "Tim Urban",
-    "category": "article",
-    "date_group": "13 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-13T16:18:19.000Z",
-    "location": "archive",
-    "readwise_id": "itm_9yv",
-    "summary": "Which means an ASI, when we create it, will be the most powerful being in the history of life on Earth, and all living things, including humans, will be entirely at its whim—and this might happen in the next few decades.",
-    "title": "The AI Revolution: The Road to Superintelligence",
-    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html"
-  },
-  {
     "author": "StillStackinAfterAllTheseYears",
     "category": "article",
     "date_group": "13 Nov 2026",
@@ -420,21 +461,6 @@
     "summary": "Sadly, Damon’s Odysseus isn’t complicated or wily or artful. One of Odysseus’ funniest (and most famous) tricks in Homer is to tell Polyphemus that his name is ‘No Man’.",
     "title": "Emily Wilson · An Uncomplicated Man",
     "url": "https://www.lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man"
-  },
-  {
-    "author": "Dan Luu",
-    "category": "article",
-    "date_group": "13 Nov 2026",
-    "highlights": [
-      "On the flip side, one of the most common failure modes I see with junior engineers is when someone will be too afraid to look stupid to ask questions and then learn very slowly as a result; in some cases, this is so severe it results in them being put on a PIP and then getting fired"
-    ],
-    "last_highlighted_at": "2025-11-09T01:51:47.056Z",
-    "last_moved_at": "2026-11-13T08:31:22.000Z",
-    "location": "archive",
-    "readwise_id": "itm_2SNh",
-    "summary": "People frequently think that I'm very stupid. I don't find this surprising, since I don't mind if other people think I'm stupid, which means that I don't adjust my behavior to avoid seeming stupid, which results in people thinking that I'm stupid.",
-    "title": "Willingness to look stupid",
-    "url": "https://danluu.com/look-stupid/"
   },
   {
     "author": "Daisy Alioto",
@@ -509,19 +535,6 @@
     "summary": "The problem essentially disappeared. It had been swallowed by the sea. These ways of working on problems, going fast or slow, can be seen in all domains.",
     "title": "Being patient with problems",
     "url": "https://www.henrikkarlsson.xyz/p/being-patient-with-problems"
-  },
-  {
-    "author": "Brian Patrick Eha",
-    "category": "article",
-    "date_group": "10 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-10T19:31:49.000Z",
-    "location": "new",
-    "readwise_id": "itm_1Vm0",
-    "summary": "Speculative fiction—fantasy, science fiction, and dystopian prophecies—has captured the imagination of twenty-first-century man. These flights of fancy are the cornerstone of our popular culture; their protagonists are our cultural heroes.",
-    "title": "Why Is Young-Adult Fiction So Popular?",
-    "url": "https://www.city-journal.org/why-is-young-adult-fiction-so-popular"
   },
   {
     "author": "Ted Chiang",
@@ -669,19 +682,6 @@
     "summary": "Whatever cultural advantage that China might enjoy over India, it wasn’t operative a hundred years ago. So I want to propose my own explanation for why China got rich and India didn’t.",
     "title": "Why China got rich and India didn't",
     "url": "https://davidoks.blog/p/why-china-got-rich-and-india-didnt"
-  },
-  {
-    "author": "Alex Chalmers",
-    "category": "article",
-    "date_group": "08 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-08T15:22:26.000Z",
-    "location": "archive",
-    "readwise_id": "itm_8z05M",
-    "summary": "This is because burning trash comes with specific complexities. The smoke from burning trash contains mercury, lead, and acid gases, requiring expensive pollution control.",
-    "title": "Just bury your trash",
-    "url": "https://worksinprogress.co/issue/just-bury-your-trash/"
   },
   {
     "author": "David Oks",
