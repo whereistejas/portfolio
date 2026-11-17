@@ -285,7 +285,7 @@
 		/* ── Front page: left · lead · right ─────────────────────── */
 
 		.gazette-top {
-			@apply flex flex-col gap-2;
+			@apply flex flex-col gap-1;
 
 			.gazette-center {
 				order: 1;
@@ -409,6 +409,11 @@
 			@apply flex flex-col;
 			--dek-lines: 4;
 
+			@media (width < 64rem) {
+				@apply pt-1;
+				border-top: 1px dotted var(--gazette-rule);
+			}
+
 			.gazette-story {
 				@apply pb-1;
 			}
@@ -421,10 +426,6 @@
 				@apply pt-1;
 				border-top: 1px dotted var(--gazette-rule);
 			}
-		}
-
-		.gazette-side--left .gazette-headline {
-			@apply italic;
 		}
 
 		.gazette-fold {
