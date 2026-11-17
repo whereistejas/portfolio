@@ -226,7 +226,8 @@
 		--gazette-edition-rule: var(--color-neutral-400);
 		--gazette-highlighter: oklch(0.9 0.16 98);
 		--gazette-highlighter-wash: oklch(0.97 0.07 98);
-		--gazette-swash: var(--gazette-highlighter);
+		--gazette-swash-rest: var(--gazette-highlighter);
+		--gazette-swash-open: var(--gazette-highlighter);
 		--gazette-count-rest: 0.5;
 		--gazette-count-ink: var(--color-fg);
 		--gazette-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
@@ -235,7 +236,8 @@
 			--gazette-edition-rule: var(--color-neutral-500);
 			--gazette-highlighter: oklch(0.84 0.15 95);
 			--gazette-highlighter-wash: oklch(0.27 0.025 90);
-			--gazette-swash: oklch(0.9 0.14 100);
+			--gazette-swash-rest: oklch(0.95 0.06 100);
+			--gazette-swash-open: oklch(0.86 0.19 98);
 			--gazette-count-rest: 1;
 			--gazette-count-rest-ink: var(--color-stone-600);
 			--gazette-count-ink: var(--color-neutral-900);
@@ -550,13 +552,22 @@
 		.gazette-count {
 			@apply relative isolate px-[0.2em] whitespace-nowrap;
 			color: var(--gazette-count-rest-ink, currentColor);
+			transition: color 200ms ease;
 
 			&::before {
 				@apply absolute inset-x-0 bottom-[8%] -z-1 h-[84%] origin-bottom;
 				content: "";
-				background-color: var(--gazette-swash);
+				background-color: var(--gazette-swash-rest);
 				transform: scaleY(var(--gazette-count-rest));
-				transition: transform 150ms var(--gazette-ease-out);
+				transition:
+					transform 200ms ease,
+					background-color 200ms ease;
+
+				@media (prefers-color-scheme: dark) {
+					top: 0.04em;
+					bottom: -0.16em;
+					height: auto;
+				}
 			}
 		}
 
@@ -564,6 +575,7 @@
 			color: var(--gazette-count-ink);
 
 			&::before {
+				background-color: var(--gazette-swash-open);
 				transform: scaleY(1);
 			}
 		}
@@ -574,11 +586,13 @@
 			}
 
 			.gazette-highlights > summary:hover .gazette-count::before {
+				background-color: var(--gazette-swash-open);
 				transform: scaleY(1);
 			}
 		}
 
 		.gazette-highlights > summary:active .gazette-count::before {
+			background-color: var(--gazette-swash-open);
 			transform: scaleY(1);
 			transition-duration: 80ms;
 		}
@@ -639,7 +653,7 @@
 
 		@media (prefers-reduced-motion: reduce) {
 			.gazette-count::before {
-				transition: none;
+				transition-property: background-color;
 			}
 
 			&[data-rail] .gazette-note,
