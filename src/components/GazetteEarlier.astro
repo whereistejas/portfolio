@@ -1,0 +1,96 @@
+---
+import {
+	formatDate,
+	formatVolume,
+	volumePath,
+	type Issue,
+} from "../lib/gazette";
+
+interface Props {
+	issues: Issue[];
+}
+
+const { issues } = Astro.props;
+---
+
+<nav class="gazette-earlier" aria-label="Earlier volumes">
+	<h2>Earlier volumes</h2>
+	<ul>
+		{
+			issues.map((issue) => (
+				<li>
+					<a href={volumePath(issue.number)}>{formatVolume(issue.number)}</a>
+					<span>{formatDate(issue.weekEnd)}</span>
+				</li>
+			))
+		}
+	</ul>
+</nav>
+
+<script>
+	const BATCH = 4;
+
+	async function editionAt(href: string): Promise<Element> {
+		const url = new URL(href);
+		if (!url.pathname.endsWith("/")) url.pathname += "/";
+
+		const response = await fetch(url);
+		if (!response.ok) throw new Error(`${url} answered ${response.status}`);
+
+		const page = new DOMParser().parseFromString(
+			await response.text(),
+			"text/html"
+		);
+		const edition = page.querySelector(".gazette-edition");
+		if (!edition) throw new Error(`${url} has no edition`);
+		return document.adoptNode(edition);
+	}
+
+	const nav = document.querySelector<HTMLElement>(".gazette-earlier");
+	const grid = document.querySelector<HTMLElement>(
+		".gazette-previous .gazette-grid"
+	);
+
+	if (nav && grid) {
+		let loading = false;
+
+		const observer = new IntersectionObserver(
+			async (entries) => {
+				if (loading || !entries.some((entry) => entry.isIntersecting)) return;
+				loading = true;
+
+				const links = Array.from(
+					nav.querySelectorAll<HTMLAnchorElement>("li > a")
+				).slice(0, BATCH);
+
+				try {
+					const editions = await Promise.all(
+						links.map((link) => editionAt(link.href))
+					);
+					editions.forEach((edition, index) => {
+						grid.append(edition);
+						links[index]?.closest("li")?.remove();
+					});
+				} catch (error) {
+					observer.disconnect();
+					console.error(error);
+					return;
+				} finally {
+					loading = false;
+				}
+
+				if (!nav.querySelector("li")) {
+					observer.disconnect();
+					nav.remove();
+					return;
+				}
+
+				observer.unobserve(nav);
+				observer.observe(nav);
+			},
+			{ rootMargin: "0px 0px 100% 0px" }
+		);
+
+		observer.observe(nav);
+	}
+</script>

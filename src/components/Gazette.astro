@@ -1,4 +1,5 @@
 ---
+import GazetteEarlier from "./GazetteEarlier.astro";
 import GazetteEdition from "./GazetteEdition.astro";
 import GazetteFront from "./GazetteFront.astro";
 import GazettePaper from "./GazettePaper.astro";
@@ -6,8 +7,6 @@ import { renderHighlightsHtml } from "../lib/feed";
 import {
 	anchorsOf,
 	byRecency,
-	formatDate,
-	formatVolume,
 	groupIntoIssues,
 	volumePath,
 	withoutItems,
@@ -77,21 +76,5 @@ const builtAt = new Date();
 			</section>
 		)
 	}
-	{
-		earlier.length > 0 && (
-			<nav class="gazette-earlier" aria-label="Earlier volumes">
-				<h2>Earlier volumes</h2>
-				<ul>
-					{earlier.map((issue) => (
-						<li>
-							<a href={volumePath(issue.number)}>
-								{formatVolume(issue.number)}
-							</a>
-							<span>{formatDate(issue.weekEnd)}</span>
-						</li>
-					))}
-				</ul>
-			</nav>
-		)
-	}
+	{earlier.length > 0 && <GazetteEarlier issues={earlier} />}
 </GazettePaper>
