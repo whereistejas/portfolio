@@ -260,8 +260,12 @@
 				@apply md:text-left;
 			}
 
-			> span:last-child {
+			> span:nth-child(3) {
 				@apply md:text-right;
+			}
+
+			.gazette-tagline {
+				@apply text-fg-muted dark:text-fg-muted-dark mx-auto mt-0.5 max-w-36 font-serif text-sm tracking-[0.02em] text-balance md:col-span-3;
 			}
 		}
 
