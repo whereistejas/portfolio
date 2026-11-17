@@ -23,7 +23,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 	<div class="gazette-masthead">
 		<span>{formatLongDate(updatedAt)}</span>
 		<h1>{name}</h1>
-		<span>{numbered ? formatVolume(edition) : "Opus in fieri"}</span>
+		<span>{numbered ? formatVolume(edition) : "Vol. in fieri"}</span>
 		{tagline && <p class="gazette-tagline">{tagline}</p>}
 	</div>
 
