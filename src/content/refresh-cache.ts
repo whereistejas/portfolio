@@ -1,8 +1,8 @@
 import { refreshProcessedCache } from "./readwise.ts";
 
-const token = process.env["MATTER_TOKEN"];
+const token = process.env["READWISE_TOKEN"];
 if (!token) {
-	console.error("[matter] MATTER_TOKEN is required to refresh the cache");
+	console.error("[readwise] READWISE_TOKEN is required to refresh the cache");
 	process.exit(1);
 }
 
