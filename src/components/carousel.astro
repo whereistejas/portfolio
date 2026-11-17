@@ -32,7 +32,7 @@ const firstSlide = slides[0];
 
 <div
 	id="carousel"
-	class="relative flex h-full w-full max-w-full flex-col items-center gap-2 select-none [container-type:size]"
+	class="[container-type:size] relative h-full w-full select-none"
 	style="--current-slide: 0;"
 	data-num-slides={slides.length}
 	tabindex="0"
@@ -47,14 +47,12 @@ const firstSlide = slides[0];
 		aria-label="Next slide"
 		class="absolute right-0 z-10 hidden h-[calc(100%-1lh-0.5rem)] w-1/2 cursor-e-resize border-none bg-transparent md:block md:h-[calc(100%-1lh-0.625rem)]"
 	></button>
-	<div
-		class="flex h-full w-full snap-x snap-mandatory items-center overflow-scroll scroll-smooth"
-	>
+	<div class="flex h-full w-full snap-x snap-mandatory overflow-scroll">
 		{
 			slides.map(({ caption, image }, idx) => (
 				<div
 					style={`--ratio: ${image.width / image.height}`}
-					class={`flex shrink-0 grow-0 flex-col items-center justify-center gap-(--gap) [--gap:--spacing(1)] md:[--gap:--spacing(1.25)] [--fit-w:min(100cqw,calc((100cqh_-_1lh_-_var(--gap))_*_var(--ratio)))] order-${idx} scroll-snap h-full w-full translate-x-[calc(-100%*var(--current-slide))] snap-center bg-neutral-50 transition-transform duration-500 dark:bg-neutral-900`}
+					class="flex h-full w-full shrink-0 translate-x-[calc(-100%*var(--current-slide))] snap-center flex-col items-center justify-center gap-(--gap) bg-neutral-50 transition-transform duration-500 [--fit-w:min(100cqw,calc((100cqh_-_1lh_-_var(--gap))_*_var(--ratio)))] [--gap:--spacing(1)] md:[--gap:--spacing(1.25)] dark:bg-neutral-900"
 				>
 					<Image
 						class="w-(--fit-w) mix-blend-multiply dark:mix-blend-normal"
