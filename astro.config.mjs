@@ -10,6 +10,7 @@ export default defineConfig({
 	output: "static",
 	redirects: {
 		"/inbox": "/tbr",
+		"/archive": "/gazette",
 	},
 	markdown: {
 		remarkPlugins: [remarkMath],

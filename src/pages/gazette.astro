@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-import Gazette from "../components/Gazette.astro";
+import Paper from "../components/Gazette.astro";
 import Page from "../layouts/page.astro";
 
 const archiveEntries = (await getCollection("readwise-archive")).map(
@@ -11,7 +11,7 @@ const archiveEntries = (await getCollection("readwise-archive")).map(
 
 <Page title="Gazette">
 	<Fragment slot="main">
-		<Gazette
+		<Paper
 			name="Gazette"
 			tagline="My reading, filed weekly."
 			items={archiveEntries}
