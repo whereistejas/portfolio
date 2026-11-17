@@ -1,6 +1,7 @@
 ---
 import GazetteHighlights from "./GazetteHighlights.astro";
 import GazetteNote from "./GazetteNote.astro";
+import { parseAuthors } from "../lib/feed";
 import { wantsMarginNote, type GazetteItem } from "../lib/gazette";
 
 interface Props {
@@ -11,6 +12,7 @@ interface Props {
 const { item, highlightsHtml } = Astro.props;
 
 const hasNote = wantsMarginNote(highlightsHtml.length);
+const byline = parseAuthors(item.author).join(", ");
 ---
 
 <li
@@ -23,6 +25,16 @@ const hasNote = wantsMarginNote(highlightsHtml.length);
 	>
 		<a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a
 		>
+		{
+			byline && (
+				<>
+					<br />
+					<span class="gazette-byline">
+						By <span>{byline}</span>
+					</span>
+				</>
+			)
+		}
 	</GazetteHighlights>
 	{
 		hasNote && (
