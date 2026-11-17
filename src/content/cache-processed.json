@@ -1,5 +1,18 @@
 [
   {
+    "author": "Daniel Stenberg",
+    "category": "article",
+    "date_group": "17 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-17T16:45:46.740Z",
+    "location": "archive",
+    "readwise_id": "01m7n6cth8h2ck7cr04hqsmqm8",
+    "summary": "AI tools have created Rust versions of curl, but copying its code is easier than maintaining it. Curl’s strength comes from years of updates, bug fixes, and community support—not just its programming language. The author favors continuous improvement over rewrites and wishes the new projects well.",
+    "title": "Actual curl rewrites in rust",
+    "url": "https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/"
+  },
+  {
     "author": "Jonathon P Sine",
     "category": "article",
     "date_group": "17 Nov 2026",
@@ -8447,6 +8460,19 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Kobzol's blog",
+    "category": "article",
+    "date_group": "17 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-17T16:48:23.594Z",
+    "location": "new",
+    "readwise_id": "01m7n6hqha5nqyskj3hbx97604",
+    "summary": "The author learned to write Python code with strict type hints and clear interfaces after using Rust, which prevents many errors at compile time. They suggest using classes, type hints, and construction methods to make Python code safer and easier to maintain. The post also highlights how Rust features like algebraic data types and safe mutexes inspire better Python programming patterns.",
+    "title": "Writing Python like it's Rust",
+    "url": "https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html"
   },
   {
     "author": "James Long",
