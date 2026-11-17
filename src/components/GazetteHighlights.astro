@@ -1,0 +1,32 @@
+---
+interface Props {
+	highlightsHtml: string[];
+	class: string;
+	more?: boolean;
+}
+
+const { highlightsHtml, class: className, more = false } = Astro.props;
+
+const count = highlightsHtml.length;
+const label = `${count} ${more ? "more " : ""}highlight${count === 1 ? "" : "s"}`;
+const prefix = Astro.slots.has("default")
+	? (await Astro.slots.render("default")).trim()
+	: "";
+---
+
+{
+	count > 0 ? (
+		<details class:list={[className, "gazette-highlights"]}>
+			<summary>
+				{prefix && <Fragment set:html={prefix} />}
+				{prefix && ", "}
+				<span class="gazette-count">{label}</span>
+			</summary>
+			{highlightsHtml.map((html) => (
+				<blockquote set:html={html} />
+			))}
+		</details>
+	) : (
+		prefix && <div class={className} set:html={prefix} />
+	)
+}

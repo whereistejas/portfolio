@@ -1,0 +1,110 @@
+---
+import GazetteHighlights from "./GazetteHighlights.astro";
+import GazetteStory from "./GazetteStory.astro";
+import { parseAuthors } from "../lib/feed";
+import { byRecency, formatLongDate, type Issue } from "../lib/gazette";
+
+interface Props {
+	issue: Issue;
+	highlightsHtml: Map<string, string[]>;
+	updatedAt: Date;
+}
+
+const { issue, highlightsHtml, updatedAt } = Astro.props;
+
+const SIDE_STORIES = 3;
+const GLANCE_ITEMS = 6;
+
+const side = issue.rest
+	.filter((item) => item.highlights.length > 0)
+	.slice(0, SIDE_STORIES);
+const remaining = issue.rest
+	.filter((item) => !side.includes(item))
+	.sort(byRecency);
+const glance = remaining.slice(0, GLANCE_ITEMS);
+const more = remaining.slice(GLANCE_ITEMS);
+const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
+---
+
+<section class="gazette-front">
+	<div class="gazette-masthead">
+		<span>{formatLongDate(updatedAt)}</span>
+		<h1>Gazette</h1>
+		<span>No. {issue.number}, WIP</span>
+	</div>
+
+	<div
+		class:list={[
+			"gazette-top",
+			{
+				"gazette-top--glance": glance.length > 0,
+				"gazette-top--side": side.length > 0,
+			},
+		]}
+	>
+		{
+			glance.length > 0 && (
+				<aside class="gazette-glance">
+					<h2>This Week at a Glance</h2>
+					<ul>
+						{glance.map((item) => (
+							<li>
+								<p>
+									<a href={item.url} target="_blank" rel="noopener noreferrer">
+										{item.title}
+									</a>{" "}
+									{item.summary}
+								</p>
+								<GazetteHighlights
+									class="gazette-meta"
+									highlightsHtml={highlightsOf(item.readwise_id)}
+								>
+									{parseAuthors(item.author).length > 0 && (
+										<span>{parseAuthors(item.author).join(", ")}</span>
+									)}
+								</GazetteHighlights>
+							</li>
+						))}
+					</ul>
+				</aside>
+			)
+		}
+
+		<GazetteStory
+			item={issue.lead}
+			highlightsHtml={highlightsOf(issue.lead.readwise_id)}
+			variant="lead"
+		/>
+
+		{
+			side.length > 0 && (
+				<div class="gazette-side">
+					{side.map((item) => (
+						<GazetteStory
+							item={item}
+							highlightsHtml={highlightsOf(item.readwise_id)}
+							variant="side"
+						/>
+					))}
+				</div>
+			)
+		}
+	</div>
+
+	{
+		more.length > 0 && (
+			<div class="gazette-more">
+				<h2>More this week</h2>
+				<div class="gazette-more-grid">
+					{more.map((item) => (
+						<GazetteStory
+							item={item}
+							highlightsHtml={highlightsOf(item.readwise_id)}
+							variant="side"
+						/>
+					))}
+				</div>
+			</div>
+		)
+	}
+</section>

@@ -1,0 +1,39 @@
+---
+import GazetteHighlights from "./GazetteHighlights.astro";
+import type { ReadwiseArchiveItem } from "../content/types";
+import { parseAuthors } from "../lib/feed";
+
+interface Props {
+	item: ReadwiseArchiveItem;
+	highlightsHtml: string[];
+	variant: "lead" | "side";
+}
+
+const { item, highlightsHtml, variant } = Astro.props;
+
+const byline = parseAuthors(item.author).join(", ");
+const pullIndex =
+	variant === "lead"
+		? item.highlights.findIndex((text) => text.length >= 60 && text.length <= 400)
+		: -1;
+const pullQuote = highlightsHtml[pullIndex];
+const tucked = highlightsHtml.filter((_, i) => i !== pullIndex);
+---
+
+<article class={`gazette-story gazette-story--${variant}`}>
+	<a
+		class="gazette-headline"
+		href={item.url}
+		target="_blank"
+		rel="noopener noreferrer">{item.title}</a
+	>
+	<p class="gazette-dek">{item.summary}</p>
+	{pullQuote && <blockquote class="gazette-pull" set:html={pullQuote} />}
+	<GazetteHighlights
+		class="gazette-meta"
+		highlightsHtml={tucked}
+		more={pullQuote !== undefined}
+	>
+		{byline && <span>{byline}</span>}
+	</GazetteHighlights>
+</article>

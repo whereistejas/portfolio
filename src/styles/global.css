@@ -59,12 +59,46 @@
 	font-display: swap;
 	src: url("/NebulaSans-BoldItalic.woff2") format("woff2");
 }
+/* Newsreader, SIL Open Font License 1.1 — see /newsreader-license.txt */
+@font-face {
+	font-family: "Newsreader";
+	font-style: normal;
+	font-weight: 200 800;
+	font-display: swap;
+	src: url("/Newsreader-Latin.woff2") format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: "Newsreader";
+	font-style: normal;
+	font-weight: 200 800;
+	font-display: swap;
+	src: url("/Newsreader-LatinExt.woff2") format("woff2");
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+	font-family: "Newsreader";
+	font-style: italic;
+	font-weight: 200 800;
+	font-display: swap;
+	src: url("/Newsreader-Italic-Latin.woff2") format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: "Newsreader";
+	font-style: italic;
+	font-weight: 200 800;
+	font-display: swap;
+	src: url("/Newsreader-Italic-LatinExt.woff2") format("woff2");
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 :root {
 	font-family: "Nebula Sans", sans-serif;
 }
 
 @theme {
 	--font-sans: "Nebula Sans", sans-serif;
+	--font-serif: "Newsreader", Georgia, serif;
 	--default-font-feature-settings: "liga", "tnum";
 	--spacing: 1rem;
 
@@ -161,10 +195,326 @@
 		}
 	}
 
-	/* ── Archive wrapper ─────────────────────────────────────────── */
+	/* ── Gazette ─────────────────────────────────────────────────── */
 
-	div.archive_wrapper {
-		@apply relative w-full;
+	body.wide {
+		header,
+		main,
+		footer {
+			@apply md:w-full md:max-w-76 md:px-1.5 xl:px-0;
+		}
+	}
+
+	div.gazette {
+		@apply flex flex-col gap-3 pb-3;
+
+		--gazette-rule: var(--color-neutral-300);
+		--gazette-edition-rule: var(--color-neutral-400);
+		@media (prefers-color-scheme: dark) {
+			--gazette-rule: var(--color-neutral-700);
+			--gazette-edition-rule: var(--color-neutral-500);
+		}
+
+		/* ── Masthead ────────────────────────────────────────────── */
+
+		.gazette-front {
+			@apply flex flex-col gap-2;
+		}
+
+		.gazette-masthead {
+			@apply grid grid-cols-1 items-end gap-x-1 gap-y-0.25 pb-0.75 text-center md:grid-cols-[1fr_auto_1fr];
+			border-bottom: 1px solid var(--gazette-edition-rule);
+
+			h1 {
+				@apply font-serif text-6xl leading-none font-semibold tracking-tight md:text-7xl;
+			}
+
+			> span {
+				@apply text-fg-muted dark:text-fg-muted-dark pb-0.25 font-serif text-sm tracking-[0.01em];
+			}
+
+			> span:first-child {
+				@apply md:text-left;
+			}
+
+			> span:last-child {
+				@apply md:text-right;
+			}
+		}
+
+		/* ── Front page: glance · lead · side ────────────────────── */
+
+		.gazette-top {
+			@apply flex flex-col gap-2;
+
+			.gazette-story--lead {
+				order: 1;
+			}
+			.gazette-side {
+				order: 2;
+			}
+			.gazette-glance {
+				order: 3;
+			}
+		}
+
+		@media (width >= 48rem) {
+			.gazette-top {
+				@apply grid gap-x-1.5;
+				grid-template-areas: "lead";
+
+				.gazette-story--lead {
+					grid-area: lead;
+				}
+				.gazette-side {
+					grid-area: side;
+				}
+				.gazette-glance {
+					grid-area: glance;
+				}
+			}
+
+			.gazette-top--glance {
+				grid-template-areas: "lead" "glance";
+			}
+			.gazette-top--side {
+				grid-template-areas: "lead" "side";
+			}
+			.gazette-top--glance.gazette-top--side {
+				grid-template-columns: 1fr 1fr;
+				grid-template-areas: "lead lead" "glance side";
+			}
+		}
+
+		@media (width >= 64rem) {
+			.gazette-top--glance {
+				grid-template-columns: 1fr 2fr;
+				grid-template-areas: "glance lead";
+			}
+			.gazette-top--side {
+				grid-template-columns: 2fr 1fr;
+				grid-template-areas: "lead side";
+			}
+			.gazette-top--glance.gazette-top--side {
+				grid-template-columns: 1fr 2fr 1fr;
+				grid-template-areas: "glance lead side";
+			}
+
+			.gazette-top--glance .gazette-glance {
+				@apply pr-1.5;
+				border-right: 1px dotted var(--gazette-rule);
+			}
+			.gazette-top--side .gazette-side {
+				@apply pl-1.5;
+				border-left: 1px dotted var(--gazette-rule);
+			}
+		}
+
+		.gazette-glance {
+			h2 {
+				@apply mb-0.75 font-serif text-2xl leading-tight font-semibold tracking-tight;
+			}
+
+			ul {
+				@apply flex flex-col font-serif;
+			}
+
+			li {
+				@apply py-0.5;
+				border-top: 1px dotted var(--gazette-rule);
+			}
+
+			li p {
+				@apply line-clamp-4;
+			}
+
+			li .gazette-meta {
+				@apply mt-0.25;
+			}
+
+			li a {
+				@apply font-medium;
+			}
+		}
+
+		/* ── Stories ─────────────────────────────────────────────── */
+
+		.gazette-story {
+			@apply flex flex-col gap-0.25;
+		}
+
+		.gazette-headline {
+			@apply font-serif text-2xl leading-tight font-medium tracking-tight text-balance;
+		}
+
+		.gazette-dek {
+			@apply font-serif;
+		}
+
+		.gazette-meta {
+			@apply text-fg-muted dark:text-fg-muted-dark font-serif text-sm tracking-[0.01em];
+		}
+
+		.gazette-story--lead {
+			@apply mx-auto max-w-48 items-center gap-0.5 text-center;
+
+			.gazette-headline {
+				@apply text-4xl leading-[1.05] md:text-5xl lg:text-6xl;
+			}
+
+			.gazette-dek {
+				@apply text-balance;
+			}
+
+			.gazette-highlights > summary {
+				@apply text-center;
+			}
+		}
+
+		.gazette-pull {
+			@apply text-fg dark:text-fg-dark mt-0.75 max-w-40 py-0.75 font-serif text-2xl leading-tight font-medium tracking-tight italic;
+			border-block: 1px dotted var(--gazette-rule);
+		}
+
+		.gazette-side {
+			@apply flex flex-col;
+
+			.gazette-story {
+				@apply pb-1;
+			}
+
+			.gazette-story + .gazette-story {
+				@apply pt-1;
+				border-top: 1px dotted var(--gazette-rule);
+			}
+
+			.gazette-dek {
+				@apply line-clamp-4;
+			}
+		}
+
+		.gazette-more {
+			@apply pt-0.75;
+			border-top: 1px dotted var(--gazette-rule);
+
+			h2 {
+				@apply mb-1 font-serif text-2xl leading-tight font-semibold tracking-tight;
+			}
+		}
+
+		.gazette-more-grid {
+			@apply grid grid-flow-row-dense grid-cols-1 gap-x-1.5 gap-y-1.5 md:grid-cols-2 lg:grid-cols-4;
+
+			.gazette-story {
+				@apply pt-0.75;
+				border-top: 1px dotted var(--gazette-rule);
+			}
+
+			.gazette-dek {
+				@apply line-clamp-3;
+			}
+		}
+
+		/* ── Previous editions ───────────────────────────────────── */
+
+		.gazette-previous > h2 {
+			@apply mb-1.5 pt-0.75 font-serif text-2xl leading-tight font-semibold tracking-tight;
+			border-top: 1px solid var(--gazette-edition-rule);
+		}
+
+		.gazette-grid {
+			@apply grid grid-flow-row-dense grid-cols-1 gap-x-1.5 gap-y-3 md:grid-cols-2 lg:grid-cols-3;
+		}
+
+		.gazette-edition {
+			@apply flex flex-col gap-0.25 pt-0.5;
+			border-top: 1px solid var(--gazette-edition-rule);
+
+			.gazette-edition-lead {
+				@apply flex flex-col gap-0.25;
+			}
+
+			.gazette-dek {
+				@apply line-clamp-3;
+			}
+		}
+
+		.gazette-edition--span-2,
+		.gazette-edition--span-3 {
+			@apply gap-x-1.5 md:col-span-2 md:block md:columns-2;
+
+			.gazette-edition-head {
+				column-span: all;
+			}
+
+			.gazette-edition-lead {
+				@apply md:mb-0.5;
+				break-inside: avoid;
+			}
+
+			.gazette-edition-list {
+				@apply md:mt-0 md:block;
+			}
+
+			.gazette-edition-list li {
+				break-inside: avoid;
+			}
+		}
+
+		.gazette-edition--span-3 {
+			@apply lg:col-span-3 lg:columns-3;
+		}
+
+		.gazette-edition-head {
+			@apply text-fg-muted dark:text-fg-muted-dark mb-0.75 flex flex-row items-baseline justify-between gap-1 font-serif text-sm tracking-[0.01em];
+		}
+
+		.gazette-edition-no {
+			@apply text-fg dark:text-fg-dark font-serif text-2xl leading-tight font-semibold tracking-tight;
+		}
+
+		.gazette-edition-list {
+			@apply mt-0.5 flex flex-col font-serif;
+
+			li {
+				@apply py-0.5;
+				border-top: 1px dotted var(--gazette-rule);
+			}
+
+			.gazette-edition-title a {
+				@apply font-medium;
+			}
+		}
+
+		/* ── Tucked-away highlights ──────────────────────────────── */
+
+		.gazette-highlights {
+			@apply w-full text-left;
+
+			> summary {
+				@apply cursor-pointer list-none;
+
+				&::-webkit-details-marker {
+					display: none;
+				}
+			}
+
+			blockquote {
+				@apply border-fg-accent dark:border-fg-accent-dark mt-0.75 border-l-2 pl-0.75 font-serif text-base wrap-break-word;
+			}
+
+			blockquote a {
+				@apply underline underline-offset-2;
+			}
+		}
+
+		.gazette-count {
+			@apply italic;
+		}
+
+		.gazette-highlights[open] .gazette-count {
+			@apply text-fg dark:text-fg-dark;
+		}
 	}
 
 	/* ── Highlight card (wrapper row + card surface) ──────────────── */

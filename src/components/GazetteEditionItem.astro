@@ -1,0 +1,17 @@
+---
+import GazetteHighlights from "./GazetteHighlights.astro";
+import type { ReadwiseArchiveItem } from "../content/types";
+
+interface Props {
+	item: ReadwiseArchiveItem;
+	highlightsHtml: string[];
+}
+
+const { item, highlightsHtml } = Astro.props;
+---
+
+<li>
+	<GazetteHighlights class="gazette-edition-title" highlightsHtml={highlightsHtml}>
+		<a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+	</GazetteHighlights>
+</li>
