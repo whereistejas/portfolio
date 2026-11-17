@@ -9,6 +9,11 @@ export interface Issue {
 }
 
 const DAY_MS = 24 * 60 * 60 * 1000;
+const MARGIN_NOTE_THRESHOLD = 4;
+
+export function wantsMarginNote(highlightCount: number): boolean {
+	return highlightCount > MARGIN_NOTE_THRESHOLD;
+}
 
 const dateFormat = new Intl.DateTimeFormat("en-GB", {
 	day: "numeric",
@@ -43,7 +48,10 @@ function startOfWeek(date: Date): Date {
 	return new Date(day - sinceMonday * DAY_MS);
 }
 
-export function byRecency(a: ReadwiseArchiveItem, b: ReadwiseArchiveItem): number {
+export function byRecency(
+	a: ReadwiseArchiveItem,
+	b: ReadwiseArchiveItem
+): number {
 	return b.last_moved_at.getTime() - a.last_moved_at.getTime();
 }
 

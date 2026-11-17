@@ -3,6 +3,7 @@ import GazetteHighlights from "./GazetteHighlights.astro";
 import GazetteNote from "./GazetteNote.astro";
 import type { ReadwiseArchiveItem } from "../content/types";
 import { parseAuthors } from "../lib/feed";
+import { wantsMarginNote } from "../lib/gazette";
 
 interface Props {
 	item: ReadwiseArchiveItem;
@@ -16,11 +17,14 @@ const { item, highlightsHtml, variant, noted = false } = Astro.props;
 const byline = parseAuthors(item.author).join(", ");
 const pullIndex =
 	variant === "lead"
-		? item.highlights.findIndex((text) => text.length >= 60 && text.length <= 400)
+		? item.highlights.findIndex(
+				(text) => text.length >= 60 && text.length <= 400
+			)
 		: -1;
 const pullQuote = highlightsHtml[pullIndex];
 const tucked = highlightsHtml.filter((_, i) => i !== pullIndex);
-const hasNote = noted && tucked.length > 0;
+const hasNote =
+	tucked.length > 0 && (noted || wantsMarginNote(highlightsHtml.length));
 ---
 
 <article
@@ -46,12 +50,5 @@ const hasNote = noted && tucked.length > 0;
 	>
 		{byline && <span>{byline}</span>}
 	</GazetteHighlights>
-	{
-		hasNote && (
-			<GazetteNote
-				title={item.title}
-				highlightsHtml={tucked}
-			/>
-		)
-	}
+	{hasNote && <GazetteNote title={item.title} highlightsHtml={tucked} />}
 </article>

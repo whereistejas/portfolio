@@ -1,6 +1,8 @@
 ---
 import GazetteHighlights from "./GazetteHighlights.astro";
+import GazetteNote from "./GazetteNote.astro";
 import type { ReadwiseArchiveItem } from "../content/types";
+import { wantsMarginNote } from "../lib/gazette";
 
 interface Props {
 	item: ReadwiseArchiveItem;
@@ -8,10 +10,24 @@ interface Props {
 }
 
 const { item, highlightsHtml } = Astro.props;
+
+const hasNote = wantsMarginNote(highlightsHtml.length);
 ---
 
-<li>
-	<GazetteHighlights class="gazette-edition-title" highlightsHtml={highlightsHtml}>
-		<a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+<li
+	class:list={{ "gazette-noted": hasNote }}
+	data-note-anchor={hasNote ? "" : undefined}
+>
+	<GazetteHighlights
+		class="gazette-edition-title"
+		highlightsHtml={highlightsHtml}
+	>
+		<a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a
+		>
 	</GazetteHighlights>
+	{
+		hasNote && (
+			<GazetteNote title={item.title} highlightsHtml={highlightsHtml} />
+		)
+	}
 </li>
