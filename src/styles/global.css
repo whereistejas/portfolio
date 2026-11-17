@@ -282,7 +282,7 @@
 			}
 		}
 
-		/* ── Front page: glance · lead · side ────────────────────── */
+		/* ── Front page: left · lead · right ─────────────────────── */
 
 		.gazette-top {
 			@apply flex flex-col gap-2;
@@ -290,10 +290,10 @@
 			.gazette-center {
 				order: 1;
 			}
-			.gazette-side {
+			.gazette-side--right {
 				order: 2;
 			}
-			.gazette-glance {
+			.gazette-side--left {
 				order: 3;
 			}
 		}
@@ -306,75 +306,52 @@
 				.gazette-center {
 					grid-area: lead;
 				}
-				.gazette-side {
-					grid-area: side;
+				.gazette-side--right {
+					grid-area: right;
 				}
-				.gazette-glance {
-					grid-area: glance;
+				.gazette-side--left {
+					grid-area: left;
 				}
 			}
 
-			.gazette-top--glance {
-				grid-template-areas: "lead" "glance";
+			.gazette-top--left {
+				grid-template-areas: "lead" "left";
 			}
-			.gazette-top--side {
-				grid-template-areas: "lead" "side";
+			.gazette-top--right {
+				grid-template-areas: "lead" "right";
 			}
-			.gazette-top--glance.gazette-top--side {
+			.gazette-top--left.gazette-top--right {
 				grid-template-columns: 1fr 1fr;
-				grid-template-areas: "lead lead" "glance side";
+				grid-template-areas: "lead lead" "left right";
 			}
 		}
 
 		@media (width >= 64rem) {
-			.gazette-top--glance {
+			.gazette-top--left {
 				grid-template-columns: 1fr 2fr;
-				grid-template-areas: "glance lead";
+				grid-template-areas: "left lead";
 			}
-			.gazette-top--side {
+			.gazette-top--right {
 				grid-template-columns: 2fr 1fr;
-				grid-template-areas: "lead side";
+				grid-template-areas: "lead right";
 			}
-			.gazette-top--glance.gazette-top--side {
+			.gazette-top--left.gazette-top--right {
 				grid-template-columns: 1fr 2fr 1fr;
-				grid-template-areas: "glance lead side";
+				grid-template-areas: "left lead right";
 			}
 
-			.gazette-top--glance .gazette-glance {
+			.gazette-side--left {
 				@apply pr-1.5;
 				border-right: 1px dotted var(--gazette-rule);
 			}
-			.gazette-top--side .gazette-side {
+			.gazette-side--right {
 				@apply pl-1.5;
 				border-left: 1px dotted var(--gazette-rule);
 			}
 		}
 
-		.gazette-glance {
-			h2 {
-				@apply mb-0.75 font-serif text-2xl leading-[1.2] font-semibold;
-			}
-
-			ul {
-				@apply flex flex-col font-serif;
-			}
-
-			li {
-				@apply py-0.5;
-				border-top: 1px dotted var(--gazette-rule);
-			}
-
-			li p {
-				@apply line-clamp-4;
-			}
-
-			li .gazette-meta {
-				@apply mt-0.25;
-			}
-
-			li a {
-				@apply font-medium;
-			}
+		.gazette-center {
+			@apply flex flex-col;
 		}
 
 		/* ── Stories ─────────────────────────────────────────────── */
@@ -424,25 +401,34 @@
 			border-block: 1px dotted var(--gazette-rule);
 		}
 
+		.gazette-dek-fill {
+			@apply line-clamp-(--dek-lines);
+		}
+
 		.gazette-side {
 			@apply flex flex-col;
+			--dek-lines: 4;
 
 			.gazette-story {
 				@apply pb-1;
+			}
+
+			.gazette-story:last-child {
+				@apply flex-auto pb-0;
 			}
 
 			.gazette-story + .gazette-story {
 				@apply pt-1;
 				border-top: 1px dotted var(--gazette-rule);
 			}
+		}
 
-			.gazette-dek {
-				@apply line-clamp-4;
-			}
+		.gazette-side--left .gazette-headline {
+			@apply italic;
 		}
 
 		.gazette-fold {
-			@apply mt-1.5 grid grid-cols-1 gap-x-1.5 gap-y-1.5 md:grid-cols-2;
+			@apply mt-1.5 grid flex-1 auto-rows-fr grid-cols-1 gap-x-1.5 gap-y-1.5 md:grid-cols-2;
 		}
 
 		.gazette-more-grid {
@@ -451,13 +437,11 @@
 
 		.gazette-fold,
 		.gazette-more-grid {
+			--dek-lines: 3;
+
 			.gazette-story {
 				@apply pt-0.75;
 				border-top: 1px dotted var(--gazette-rule);
-			}
-
-			.gazette-dek {
-				@apply line-clamp-3;
 			}
 		}
 

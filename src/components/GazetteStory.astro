@@ -47,7 +47,13 @@ const hasNote =
 			</p>
 		)
 	}
-	<p class="gazette-dek">{item.summary}</p>
+	{
+		variant === "lead" ? (
+			<p class="gazette-dek">{item.summary}</p>
+		) : (
+			item.summary && <p class="gazette-dek gazette-dek-fill">{item.summary}</p>
+		)
+	}
 	{pullQuote && <blockquote class="gazette-pull" set:html={pullQuote} />}
 	<GazetteHighlights
 		class="gazette-meta"

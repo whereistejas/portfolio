@@ -83,6 +83,43 @@ const builtAt = new Date();
 		root.style.minHeight = `${top + open.offsetHeight}px`;
 	}
 
+	function linesThatFit(dek: HTMLElement): number {
+		const story = dek.parentElement;
+		if (!story) return 0;
+
+		const last = Array.from(story.children)
+			.filter((child) => child.tagName !== "ASIDE")
+			.at(-1);
+		if (!last) return 0;
+
+		const bottom =
+			story.getBoundingClientRect().bottom -
+			parseFloat(getComputedStyle(story).paddingBottom);
+		const slack = bottom - last.getBoundingClientRect().bottom;
+		const line = parseFloat(getComputedStyle(dek).lineHeight);
+		return Math.floor(
+			(dek.getBoundingClientRect().height + slack) / line + 0.01
+		);
+	}
+
+	function fillDeks(root: HTMLElement) {
+		const deks = Array.from(
+			root.querySelectorAll<HTMLElement>(".gazette-dek-fill")
+		);
+		deks.forEach((dek) => dek.style.removeProperty("--dek-lines"));
+
+		deks
+			.map((dek) => [dek, linesThatFit(dek)] as const)
+			.forEach(([dek, lines]) => {
+				if (lines > 0) dek.style.setProperty("--dek-lines", String(lines));
+			});
+	}
+
+	function layout(root: HTMLElement) {
+		fillDeks(root);
+		placeNotes(root);
+	}
+
 	const root = document.querySelector<HTMLElement>(".gazette");
 	if (root) {
 		let queued = false;
@@ -91,7 +128,7 @@ const builtAt = new Date();
 			queued = true;
 			requestAnimationFrame(() => {
 				queued = false;
-				placeNotes(root);
+				layout(root);
 			});
 		};
 
@@ -101,7 +138,7 @@ const builtAt = new Date();
 			.querySelectorAll("[data-gazette-note], [data-note-anchor]")
 			.forEach((element) => observer.observe(element));
 
-		new MutationObserver(() => placeNotes(root)).observe(root, {
+		new MutationObserver(() => layout(root)).observe(root, {
 			attributeFilter: ["open"],
 			subtree: true,
 		});

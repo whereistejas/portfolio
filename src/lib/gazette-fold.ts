@@ -1,7 +1,5 @@
 import type { GazetteItem } from "./gazette";
 
-export const GLANCE_HEADING = "This Week at a Glance";
-
 interface Font {
 	size: number;
 	line: number;
@@ -60,15 +58,6 @@ function storyHeight(item: GazetteItem, width: number, clamp: number): number {
 	);
 }
 
-function glanceHeight(items: GazetteItem[], width: number): number {
-	if (items.length === 0) return 0;
-
-	const heading = block(GLANCE_HEADING, HEADLINE, width) + 12;
-	const item = (it: GazetteItem) =>
-		RULE + 16 + block(`${it.title} ${it.summary}`, BODY, width, 4) + 4 + META;
-	return items.reduce((sum, it) => sum + item(it), heading);
-}
-
 function sideHeight(items: GazetteItem[], width: number): number {
 	return items.reduce(
 		(sum, item, i) =>
@@ -98,17 +87,17 @@ function leadHeight(item: GazetteItem, width: number): number {
 
 /**
  * Estimates, from text lengths, how many of the remaining stories fit in the
- * space the lead story leaves empty beside the glance and side columns. The
+ * space the lead story leaves empty beside the left and right columns. The
  * figures are pixels in the `lg` layout, where the 5xl column is 976px wide
  * whatever the viewport.
  */
 export function aboveTheFold(
-	glance: GazetteItem[],
+	left: GazetteItem[],
 	lead: GazetteItem,
-	side: GazetteItem[],
+	right: GazetteItem[],
 	candidates: GazetteItem[]
 ): number {
-	const columns = Number(glance.length > 0) + Number(side.length > 0);
+	const columns = Number(left.length > 0) + Number(right.length > 0);
 	if (columns === 0) return 0;
 
 	const fr = (COLUMN - GAP * columns) / (2 + columns);
@@ -117,7 +106,7 @@ export function aboveTheFold(
 	const cell = (wide - GAP) / 2;
 
 	let free =
-		Math.max(glanceHeight(glance, narrow), sideHeight(side, narrow)) -
+		Math.max(sideHeight(left, narrow), sideHeight(right, narrow)) -
 		leadHeight(lead, wide);
 	let count = 0;
 	while (count < candidates.length) {
@@ -127,7 +116,7 @@ export function aboveTheFold(
 			12 +
 			RULE +
 			Math.max(...row.map((item) => storyHeight(item, cell, 3)));
-		if (height > free) break;
+		if (height / 2 > free) break;
 
 		free -= height;
 		count += row.length;
