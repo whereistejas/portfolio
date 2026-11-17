@@ -221,7 +221,7 @@
 
 	div.gazette {
 		@apply relative flex flex-col gap-3 pb-3 leading-[1.55];
-		@apply xl:mr-[calc(var(--container-2xs)+1.5rem)];
+		@apply xl:mr-[calc(var(--container-2xs)+2.5rem)];
 
 		--gazette-rule: var(--color-neutral-300);
 		--gazette-edition-rule: var(--color-neutral-400);
@@ -577,9 +577,26 @@
 		}
 
 		&[data-rail] {
-			.gazette-masthead,
-			.gazette-previous > h2 {
-				@apply -mr-[calc(var(--container-2xs)+1.5rem)];
+			counter-reset: gazette-note;
+
+			[data-note-anchor] {
+				counter-increment: gazette-note;
+			}
+
+			.gazette-noted > .gazette-highlights .gazette-count::after,
+			.gazette-note::before {
+				@apply font-sans text-[0.7em] font-semibold;
+				content: counter(gazette-note);
+				vertical-align: super;
+				line-height: 0;
+			}
+
+			.gazette-noted > .gazette-highlights .gazette-count::after {
+				@apply ml-[0.15em];
+			}
+
+			.gazette-note::before {
+				@apply text-fg-accent dark:text-fg-accent-dark absolute -left-1 top-[0.6em];
 			}
 
 			.gazette-noted > .gazette-highlights {
@@ -591,12 +608,9 @@
 			}
 
 			.gazette-note {
-				@apply invisible absolute block font-serif text-sm leading-[1.5];
-				left: calc(100% + 1.5rem);
+				@apply text-fg-muted dark:text-fg-muted-dark invisible absolute block font-serif text-sm leading-[1.5];
+				left: calc(100% + 2.5rem);
 				width: var(--container-2xs);
-				border-left: 2px solid var(--gazette-highlighter);
-				background-color: var(--gazette-highlighter-wash);
-				padding: 0.5rem 0.75rem;
 				text-align: left;
 				interpolate-size: allow-keywords;
 
@@ -609,7 +623,7 @@
 				}
 
 				blockquote {
-					@apply text-fg dark:text-fg-dark mt-0.25 wrap-break-word;
+					@apply mt-0.25 wrap-break-word;
 				}
 
 				> summary blockquote {
@@ -651,7 +665,7 @@
 			}
 
 			.gazette-note-title {
-				@apply block font-medium;
+				@apply text-fg dark:text-fg-dark block font-medium;
 			}
 
 			&[data-notes-placed] .gazette-note {
