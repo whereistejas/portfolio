@@ -243,15 +243,38 @@
 		}
 
 		.gazette-masthead {
-			@apply grid grid-cols-1 items-end gap-x-1 gap-y-0.25 pb-0.75 text-center md:grid-cols-[1fr_auto_1fr];
+			@apply grid grid-cols-1 gap-x-1 gap-y-0.25 pb-0.75 text-center md:grid-cols-[1fr_auto_1fr] md:items-baseline;
 			border-bottom: 1px solid var(--gazette-edition-rule);
+
+			@media (width >= 48rem) {
+				grid-template-areas:
+					". name ."
+					"date tagline edition";
+
+				h1 {
+					grid-area: name;
+				}
+
+				> span:first-child {
+					grid-area: date;
+				}
+
+				> span:nth-child(3) {
+					grid-area: edition;
+				}
+
+				.gazette-tagline {
+					grid-area: tagline;
+				}
+			}
 
 			h1 {
 				@apply font-serif text-6xl leading-none font-semibold tracking-[-0.01em] md:text-7xl;
 			}
 
-			> span {
-				@apply text-fg-muted dark:text-fg-muted-dark pb-0.25 font-serif text-sm tracking-[0.02em];
+			> span,
+			.gazette-tagline {
+				@apply text-fg-muted dark:text-fg-muted-dark font-serif text-sm tracking-[0.02em];
 			}
 
 			> span:first-child {
@@ -263,7 +286,7 @@
 			}
 
 			.gazette-tagline {
-				@apply text-fg-muted dark:text-fg-muted-dark mx-auto mt-0.5 max-w-36 font-serif text-sm tracking-[0.02em] text-balance md:col-span-3;
+				@apply mx-auto mt-0.5 max-w-36 text-balance;
 			}
 		}
 
