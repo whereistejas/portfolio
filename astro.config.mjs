@@ -4,6 +4,17 @@ import rehypeKatex from "rehype-katex";
 
 import tailwindcss from "@tailwindcss/vite";
 
+function remarkMathFrontmatter() {
+	const hasMath = (node) =>
+		node.type === "math" ||
+		node.type === "inlineMath" ||
+		(node.children ?? []).some(hasMath);
+
+	return (tree, file) => {
+		if (hasMath(tree)) file.data.astro.frontmatter.math = true;
+	};
+}
+
 export default defineConfig({
 	site: "https://whereistejas.xyz",
 	base: "",
@@ -13,7 +24,7 @@ export default defineConfig({
 		"/archive": "/gazette",
 	},
 	markdown: {
-		remarkPlugins: [remarkMath],
+		remarkPlugins: [remarkMath, remarkMathFrontmatter],
 		rehypePlugins: [rehypeKatex],
 		remarkRehype: {
 			footnoteLabel: " ",

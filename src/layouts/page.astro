@@ -5,12 +5,14 @@ interface Props {
 	title: string | undefined;
 	fonts?: string[];
 	prefetchFonts?: string[];
+	math?: boolean;
 }
 
 const {
 	title,
 	fonts = ["NebulaSans-Book.woff2", "NebulaSans-Medium.woff2"],
 	prefetchFonts = [],
+	math = false,
 } = Astro.props;
 ---
 
@@ -69,10 +71,14 @@ const {
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/site.webmanifest" />
 
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"
-		/>
+		{
+			math && (
+				<link
+					rel="stylesheet"
+					href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"
+				/>
+			)
+		}
 
 		<title>
 			{title === undefined ? "Tejas Sanap" : `${title} | Tejas Sanap`}
