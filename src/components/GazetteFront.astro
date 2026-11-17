@@ -1,11 +1,12 @@
 ---
 import GazetteStory from "./GazetteStory.astro";
-import { formatLongDate, formatVolume } from "../lib/gazette";
+import { formatLongDate, formatVolume, type Sibling } from "../lib/gazette";
 import type { Front } from "../lib/gazette-fold";
 
 interface Props {
 	name: string;
 	tagline: string | undefined;
+	sibling: Sibling | undefined;
 	edition: number;
 	front: Front;
 	highlightsHtml: Map<string, string[]>;
@@ -13,17 +14,34 @@ interface Props {
 	numbered: boolean;
 }
 
-const { name, tagline, edition, front, highlightsHtml, updatedAt, numbered } =
-	Astro.props;
+const {
+	name,
+	tagline,
+	sibling,
+	edition,
+	front,
+	highlightsHtml,
+	updatedAt,
+	numbered,
+} = Astro.props;
 const { lead, left, right, fold, below } = front;
 const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 ---
 
 <section class="gazette-front">
 	<div class="gazette-masthead">
-		<span>{formatLongDate(updatedAt)}</span>
 		<h1>{name}</h1>
-		<span>{numbered ? formatVolume(edition) : "Vol. in fieri"}</span>
+		{
+			sibling && (
+				<a class="gazette-ear" href={sibling.href}>
+					{sibling.label} →
+				</a>
+			)
+		}
+		<span class="gazette-volume">
+			{numbered ? formatVolume(edition) : "Vol. in fieri"}
+		</span>
+		<span class="gazette-date">{formatLongDate(updatedAt)}</span>
 		{tagline && <p class="gazette-tagline">{tagline}</p>}
 	</div>
 

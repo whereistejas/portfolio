@@ -235,54 +235,71 @@
 		}
 
 		.gazette-masthead {
-			@apply grid grid-cols-1 gap-x-1 gap-y-0.25 pb-0.75 text-center md:grid-cols-[1fr_auto_1fr] md:items-baseline;
+			@apply grid grid-cols-[1fr_auto] gap-x-1 gap-y-0.25 pb-0.75 md:grid-cols-[1fr_auto_1fr];
+			grid-template-areas:
+				"name name"
+				"tagline tagline"
+				"volume ear"
+				"date ear";
 			border-bottom: 1px solid var(--gazette-edition-rule);
+
+			&:not(:has(.gazette-tagline)) {
+				grid-template-areas:
+					"name name"
+					"volume date";
+			}
 
 			@media (width >= 48rem) {
 				grid-template-areas:
-					". name ."
-					"edition tagline date";
+					". name ear"
+					"volume tagline date";
 
 				&:not(:has(.gazette-tagline)) {
-					grid-template-areas: "edition name date";
-				}
+					grid-template-areas: "volume name date";
 
-				h1 {
-					grid-area: name;
-				}
-
-				> span:first-child {
-					grid-area: date;
-				}
-
-				> span:nth-child(3) {
-					grid-area: edition;
-				}
-
-				.gazette-tagline {
-					grid-area: tagline;
+					h1,
+					.gazette-volume,
+					.gazette-date {
+						align-self: baseline;
+					}
 				}
 			}
 
 			h1 {
-				@apply font-serif text-6xl leading-none font-semibold tracking-[-0.01em] md:text-7xl;
+				@apply self-center text-center font-serif text-6xl leading-none font-semibold tracking-[-0.01em] md:text-7xl;
+				grid-area: name;
 			}
 
-			> span,
+			.gazette-ear {
+				@apply self-center justify-self-end border px-0.75 py-0.25 font-serif text-sm font-medium;
+				grid-area: ear;
+				border-color: var(--gazette-edition-rule);
+			}
+
+			.gazette-volume,
+			.gazette-date,
 			.gazette-tagline {
-				@apply text-fg-muted dark:text-fg-muted-dark font-serif text-base tracking-[0.02em];
+				@apply text-fg-muted dark:text-fg-muted-dark self-end font-serif text-base tracking-[0.02em];
 			}
 
-			> span:first-child {
-				@apply md:text-right;
+			.gazette-volume {
+				grid-area: volume;
 			}
 
-			> span:nth-child(3) {
-				@apply md:text-left;
+			.gazette-date {
+				@apply text-right;
+				grid-area: date;
+			}
+
+			@media (width < 48rem) {
+				&:has(.gazette-tagline) .gazette-date {
+					@apply text-left;
+				}
 			}
 
 			.gazette-tagline {
-				@apply mx-auto mt-0.5 max-w-36 text-balance;
+				@apply mx-auto mb-0.75 max-w-36 text-center text-balance md:mt-0.5 md:mb-0;
+				grid-area: tagline;
 			}
 		}
 

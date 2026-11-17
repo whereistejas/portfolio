@@ -11,10 +11,6 @@ const queueEntries = (await getCollection("readwise-queue")).map(
 
 <Page title="To Be Read">
 	<Fragment slot="main">
-		<Gazette
-			name="To Be Read"
-			items={queueEntries}
-			numbered={false}
-		/>
+		<Gazette name="To Be Read" items={queueEntries} numbered={false} />
 	</Fragment>
 </Page>

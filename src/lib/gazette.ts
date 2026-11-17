@@ -11,6 +11,11 @@ export type GazetteItem = Pick<
 	| "last_moved_at"
 >;
 
+export interface Sibling {
+	href: string;
+	label: string;
+}
+
 export interface Issue {
 	number: number;
 	weekStart: Date;
