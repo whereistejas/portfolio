@@ -48,6 +48,39 @@ function startOfWeek(date: Date): Date {
 	return new Date(day - sinceMonday * DAY_MS);
 }
 
+/**
+ * Splits a week's other pieces into fixed columns, in reading order, so that
+ * expanding one piece's highlights only lengthens its own column. CSS
+ * multi-column layout would rebalance the columns on every animation frame.
+ */
+export function splitIntoColumns<T>(
+	items: T[],
+	columns: number,
+	leadWeight: number,
+	weightOf: (item: T) => number
+): T[][] {
+	const total =
+		leadWeight + items.reduce((sum, item) => sum + weightOf(item), 0);
+	const perColumn = total / columns;
+
+	const result: T[][] = Array.from({ length: columns }, () => []);
+	let column = 0;
+	let filled = leadWeight;
+	for (const item of items) {
+		const weight = weightOf(item);
+		if (
+			column < columns - 1 &&
+			filled > 0 &&
+			filled + weight / 2 > perColumn * (column + 1)
+		) {
+			column++;
+		}
+		result[column]!.push(item);
+		filled += weight;
+	}
+	return result;
+}
+
 export function byRecency(
 	a: ReadwiseArchiveItem,
 	b: ReadwiseArchiveItem

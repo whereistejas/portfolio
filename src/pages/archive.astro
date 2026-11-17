@@ -63,17 +63,18 @@ const builtAt = new Date();
 		return open;
 	}
 
-	function moveTo(note: HTMLElement, top: number) {
+	function moveTo(note: HTMLElement, top: number, animate: boolean) {
 		const previous = Number.parseFloat(note.style.top);
 		note.style.top = `${top}px`;
-		if (Number.isNaN(previous) || previous === top || REDUCED_MOTION.matches) return;
+		if (!animate || Number.isNaN(previous) || previous === top) return;
+		if (REDUCED_MOTION.matches) return;
 		note.animate(
 			[{ transform: `translateY(${previous - top}px)` }, { transform: "translateY(0)" }],
 			{ duration: 200, easing: EASE_IN_OUT }
 		);
 	}
 
-	function placeNotes(root: HTMLElement) {
+	function placeNotes(root: HTMLElement, animate = false) {
 		if (!RAIL.matches) {
 			delete root.dataset["rail"];
 			root.style.minHeight = "";
@@ -108,7 +109,7 @@ const builtAt = new Date();
 				}
 			}
 			taken.push({ top, bottom: top + height });
-			moveTo(note, top);
+			moveTo(note, top, animate);
 			floor = Math.max(floor, top + height + NOTE_GAP);
 		}
 
@@ -133,7 +134,14 @@ const builtAt = new Date();
 		root
 			.querySelectorAll("[data-gazette-note], [data-note-anchor]")
 			.forEach((element) => observer.observe(element));
-		new MutationObserver(() => placeNotes(root)).observe(root, {
+		new MutationObserver((records) => {
+			const noteToggled = records.some(
+				(record) =>
+					record.target instanceof Element &&
+					record.target.parentElement?.classList.contains("gazette-noted")
+			);
+			placeNotes(root, noteToggled);
+		}).observe(root, {
 			attributeFilter: ["open"],
 			subtree: true,
 		});

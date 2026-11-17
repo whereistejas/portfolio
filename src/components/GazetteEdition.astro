@@ -4,7 +4,7 @@ import GazetteHighlights from "./GazetteHighlights.astro";
 import GazetteNote from "./GazetteNote.astro";
 import type { ReadwiseArchiveItem } from "../content/types";
 import { parseAuthors } from "../lib/feed";
-import { formatDate, type Issue } from "../lib/gazette";
+import { formatDate, splitIntoColumns, type Issue } from "../lib/gazette";
 
 interface Props {
 	issue: Issue;
@@ -16,6 +16,7 @@ const { issue, highlightsHtml } = Astro.props;
 const LEAD_LINES = 4;
 const LINES_PER_COLUMN = 9;
 const MAX_SPAN = 3;
+const TWO_LINE_TITLE = 45;
 
 const span = Math.min(
 	MAX_SPAN,
@@ -26,6 +27,12 @@ const highlightsOf = (item: ReadwiseArchiveItem) =>
 const byline = parseAuthors(issue.lead.author).join(", ");
 const leadHighlights = highlightsOf(issue.lead);
 const hasNote = leadHighlights.length > 0;
+const [firstColumn = [], ...otherColumns] = splitIntoColumns(
+	issue.rest,
+	span,
+	LEAD_LINES,
+	(item) => (item.title.length > TWO_LINE_TITLE ? 2 : 1)
+);
 ---
 
 <article
@@ -37,37 +44,58 @@ const hasNote = leadHighlights.length > 0;
 		<span>{formatDate(issue.weekEnd)}</span>
 	</div>
 
-	<div
-		class:list={["gazette-edition-lead", { "gazette-noted": hasNote }]}
-		data-note-anchor={hasNote ? "" : undefined}
-	>
-		<a
-			class="gazette-headline"
-			href={issue.lead.url}
-			target="_blank"
-			rel="noopener noreferrer">{issue.lead.title}</a
-		>
-		<p class="gazette-dek">{issue.lead.summary}</p>
-		<GazetteHighlights class="gazette-meta" highlightsHtml={leadHighlights}>
-			{byline && <span>{byline}</span>}
-		</GazetteHighlights>
+	<div class="gazette-edition-body">
+		<div class="gazette-edition-column">
+			<div
+				class:list={["gazette-edition-lead", { "gazette-noted": hasNote }]}
+				data-note-anchor={hasNote ? "" : undefined}
+			>
+				<a
+					class="gazette-headline"
+					href={issue.lead.url}
+					target="_blank"
+					rel="noopener noreferrer">{issue.lead.title}</a
+				>
+				<p class="gazette-dek">{issue.lead.summary}</p>
+				<GazetteHighlights class="gazette-meta" highlightsHtml={leadHighlights}>
+					{byline && <span>{byline}</span>}
+				</GazetteHighlights>
+				{
+					hasNote && (
+						<GazetteNote
+							title={issue.lead.title}
+							highlightsHtml={leadHighlights}
+						/>
+					)
+				}
+			</div>
+
+			{
+				firstColumn.length > 0 && (
+					<ul class="gazette-edition-list">
+						{firstColumn.map((item) => (
+							<GazetteEditionItem
+								item={item}
+								highlightsHtml={highlightsOf(item)}
+							/>
+						))}
+					</ul>
+				)
+			}
+		</div>
 		{
-			hasNote && (
-				<GazetteNote
-					title={issue.lead.title}
-					highlightsHtml={leadHighlights}
-				/>
-			)
+			otherColumns.map((column) => (
+				<div class="gazette-edition-column">
+					<ul class="gazette-edition-list">
+						{column.map((item) => (
+							<GazetteEditionItem
+								item={item}
+								highlightsHtml={highlightsOf(item)}
+							/>
+						))}
+					</ul>
+				</div>
+			))
 		}
 	</div>
-
-	{
-		issue.rest.length > 0 && (
-			<ul class="gazette-edition-list">
-				{issue.rest.map((item) => (
-					<GazetteEditionItem item={item} highlightsHtml={highlightsOf(item)} />
-				))}
-			</ul>
-		)
-	}
 </article>
