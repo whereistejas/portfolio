@@ -241,7 +241,7 @@
 			@media (width >= 48rem) {
 				grid-template-areas:
 					". name ."
-					"date tagline edition";
+					"edition tagline date";
 
 				h1 {
 					grid-area: name;
@@ -270,11 +270,11 @@
 			}
 
 			> span:first-child {
-				@apply md:text-left;
+				@apply md:text-right;
 			}
 
 			> span:nth-child(3) {
-				@apply md:text-right;
+				@apply md:text-left;
 			}
 
 			.gazette-tagline {
