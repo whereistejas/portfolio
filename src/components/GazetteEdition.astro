@@ -20,7 +20,6 @@ const span = Math.min(
 	MAX_SPAN,
 	Math.ceil((LEAD_LINES + issue.rest.length) / LINES_PER_COLUMN)
 );
-const pieces = 1 + issue.rest.length;
 const highlightsOf = (item: ReadwiseArchiveItem) =>
 	highlightsHtml.get(item.readwise_id) ?? [];
 const byline = parseAuthors(issue.lead.author).join(", ");
@@ -32,9 +31,7 @@ const byline = parseAuthors(issue.lead.author).join(", ");
 >
 	<div class="gazette-edition-head">
 		<span class="gazette-edition-no">No. {issue.number}</span>
-		<span>
-			{formatDate(issue.weekEnd)}, {pieces} piece{pieces === 1 ? "" : "s"}
-		</span>
+		<span>{formatDate(issue.weekEnd)}</span>
 	</div>
 
 	<div class="gazette-edition-lead">
