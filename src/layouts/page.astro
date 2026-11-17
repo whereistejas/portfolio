@@ -5,10 +5,14 @@ import "../styles/global.css";
 interface Props {
 	title: string | undefined;
 	fonts?: string[];
+	prefetchFonts?: string[];
 }
 
-const { title, fonts = ["NebulaSans-Book.woff2", "NebulaSans-Medium.woff2"] } =
-	Astro.props;
+const {
+	title,
+	fonts = ["NebulaSans-Book.woff2", "NebulaSans-Medium.woff2"],
+	prefetchFonts = [],
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -43,6 +47,17 @@ const { title, fonts = ["NebulaSans-Book.woff2", "NebulaSans-Medium.woff2"] } =
 			fonts.map((font) => (
 				<link
 					rel="preload"
+					href={`/${font}`}
+					as="font"
+					type="font/woff2"
+					crossorigin="anonymous"
+				/>
+			))
+		}
+		{
+			prefetchFonts.map((font) => (
+				<link
+					rel="prefetch"
 					href={`/${font}`}
 					as="font"
 					type="font/woff2"

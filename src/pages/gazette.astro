@@ -12,6 +12,12 @@ const archiveEntries = (await getCollection("readwise-archive")).map(
 <Page
 	title="Gazette"
 	fonts={["economist-serif-roman.woff2", "economist-serif-italic.woff2"]}
+	prefetchFonts={[
+		"NebulaSans-Book.woff2",
+		"NebulaSans-BookItalic.woff2",
+		"NebulaSans-Bold.woff2",
+		"NebulaSans-BoldItalic.woff2",
+	]}
 >
 	<Fragment slot="main">
 		<Paper
