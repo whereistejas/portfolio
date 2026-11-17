@@ -123,17 +123,14 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 
 	{
 		more.length > 0 && (
-			<div class="gazette-more">
-				<h2>More this week</h2>
-				<div class="gazette-more-grid">
-					{more.map((item) => (
-						<GazetteStory
-							item={item}
-							highlightsHtml={highlightsOf(item.readwise_id)}
-							variant="side"
-						/>
-					))}
-				</div>
+			<div class="gazette-more-grid">
+				{more.map((item) => (
+					<GazetteStory
+						item={item}
+						highlightsHtml={highlightsOf(item.readwise_id)}
+						variant="side"
+					/>
+				))}
 			</div>
 		)
 	}

@@ -433,15 +433,6 @@
 			}
 		}
 
-		.gazette-more {
-			@apply pt-0.75;
-			border-top: 1px dotted var(--gazette-rule);
-
-			h2 {
-				@apply mb-1 font-serif text-2xl leading-[1.2] font-semibold;
-			}
-		}
-
 		.gazette-more-grid {
 			@apply grid grid-flow-row-dense grid-cols-1 gap-x-1.5 gap-y-1.5 md:grid-cols-2 lg:grid-cols-4;
 
