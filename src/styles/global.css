@@ -243,6 +243,10 @@
 					". name ."
 					"edition tagline date";
 
+				&:not(:has(.gazette-tagline)) {
+					grid-template-areas: "edition name date";
+				}
+
 				h1 {
 					grid-area: name;
 				}
@@ -266,7 +270,7 @@
 
 			> span,
 			.gazette-tagline {
-				@apply text-fg-muted dark:text-fg-muted-dark font-serif text-sm tracking-[0.02em];
+				@apply text-fg-muted dark:text-fg-muted-dark font-serif text-base tracking-[0.02em];
 			}
 
 			> span:first-child {
