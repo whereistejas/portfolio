@@ -1,6 +1,7 @@
 ---
 import GazetteHighlights from "./GazetteHighlights.astro";
 import GazetteNote from "./GazetteNote.astro";
+import GazettePermalink from "./GazettePermalink.astro";
 import { parseAuthors } from "../lib/feed";
 import { wantsMarginNote, type GazetteItem } from "../lib/gazette";
 
@@ -9,9 +10,10 @@ interface Props {
 	highlightsHtml: string[];
 	variant: "lead" | "side";
 	noted?: boolean;
+	permalink?: string | undefined;
 }
 
-const { item, highlightsHtml, variant, noted = false } = Astro.props;
+const { item, highlightsHtml, variant, noted = false, permalink } = Astro.props;
 
 const byline = parseAuthors(item.author).join(", ");
 const pullIndex =
@@ -34,12 +36,11 @@ const hasNote =
 	]}
 	data-note-anchor={hasNote ? "" : undefined}
 >
-	<a
-		class="gazette-headline"
-		href={item.url}
-		target="_blank"
-		rel="noopener noreferrer">{item.title}</a
-	>
+	<div class="gazette-headline">
+		<a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a
+		>
+		<GazettePermalink href={permalink} title={item.title} />
+	</div>
 	{
 		byline && (
 			<p class="gazette-byline">

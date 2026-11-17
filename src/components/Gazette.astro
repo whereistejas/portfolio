@@ -4,8 +4,12 @@ import GazetteFront from "./GazetteFront.astro";
 import GazettePaper from "./GazettePaper.astro";
 import { renderHighlightsHtml } from "../lib/feed";
 import {
+	anchorsOf,
 	byRecency,
+	formatDate,
+	formatVolume,
 	groupIntoIssues,
+	volumePath,
 	withoutItems,
 	type GazetteItem,
 	type Sibling,
@@ -18,9 +22,10 @@ interface Props {
 	items: GazetteItem[];
 	sibling?: Sibling;
 	numbered?: boolean;
+	recent?: number;
 }
 
-const { name, tagline, items, sibling, numbered = true } = Astro.props;
+const { name, tagline, items, sibling, numbered = true, recent } = Astro.props;
 
 const [current, ...older] = groupIntoIssues(items);
 const backfill = numbered
@@ -28,7 +33,15 @@ const backfill = numbered
 	: older.flatMap((issue) => [issue.lead, ...issue.rest]).sort(byRecency);
 const front = current && layoutFront(current, backfill);
 const taken = new Set(front?.fold);
-const previous = older.flatMap((issue) => withoutItems(issue, taken) ?? []);
+const shown = recent === undefined ? older : older.slice(0, recent);
+const earlier = recent === undefined ? [] : older.slice(recent);
+const previous = shown.flatMap((issue) => withoutItems(issue, taken) ?? []);
+const currentAnchors = numbered && current ? anchorsOf(current) : undefined;
+const permalinkOf =
+	current && currentAnchors
+		? (item: GazetteItem) =>
+				`${volumePath(current.number)}#${currentAnchors.get(item.readwise_id)}`
+		: undefined;
 const highlightHtmlById = await renderHighlightsHtml(items);
 const builtAt = new Date();
 ---
@@ -45,6 +58,7 @@ const builtAt = new Date();
 				highlightsHtml={highlightHtmlById}
 				updatedAt={builtAt}
 				numbered={numbered}
+				permalinkOf={permalinkOf}
 			/>
 		)
 	}
@@ -61,6 +75,23 @@ const builtAt = new Date();
 					))}
 				</div>
 			</section>
+		)
+	}
+	{
+		earlier.length > 0 && (
+			<nav class="gazette-earlier" aria-label="Earlier volumes">
+				<h2>Earlier volumes</h2>
+				<ul>
+					{earlier.map((issue) => (
+						<li>
+							<a href={volumePath(issue.number)}>
+								{formatVolume(issue.number)}
+							</a>
+							<span>{formatDate(issue.weekEnd)}</span>
+						</li>
+					))}
+				</ul>
+			</nav>
 		)
 	}
 </GazettePaper>

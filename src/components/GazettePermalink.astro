@@ -1,0 +1,16 @@
+---
+interface Props {
+	href: string | undefined;
+	title: string;
+}
+
+const { href, title } = Astro.props;
+---
+
+{
+	href && (
+		<a class="gazette-permalink" href={href} aria-label={`Link to “${title}”`}>
+			#
+		</a>
+	)
+}

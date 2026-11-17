@@ -1,6 +1,11 @@
 ---
 import GazetteStory from "./GazetteStory.astro";
-import { formatLongDate, formatVolume, type Sibling } from "../lib/gazette";
+import {
+	formatLongDate,
+	formatVolume,
+	type GazetteItem,
+	type Sibling,
+} from "../lib/gazette";
 import type { Front } from "../lib/gazette-fold";
 
 interface Props {
@@ -12,6 +17,7 @@ interface Props {
 	highlightsHtml: Map<string, string[]>;
 	updatedAt: Date;
 	numbered: boolean;
+	permalinkOf: ((item: GazetteItem) => string) | undefined;
 }
 
 const {
@@ -23,6 +29,7 @@ const {
 	highlightsHtml,
 	updatedAt,
 	numbered,
+	permalinkOf,
 } = Astro.props;
 const { lead, left, right, fold, below } = front;
 const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
@@ -61,6 +68,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 						<GazetteStory
 							item={item}
 							highlightsHtml={highlightsOf(item.readwise_id)}
+							permalink={permalinkOf?.(item)}
 							variant="side"
 							noted
 						/>
@@ -73,6 +81,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 			<GazetteStory
 				item={lead}
 				highlightsHtml={highlightsOf(lead.readwise_id)}
+				permalink={permalinkOf?.(lead)}
 				variant="lead"
 				noted
 			/>
@@ -83,6 +92,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 							<GazetteStory
 								item={item}
 								highlightsHtml={highlightsOf(item.readwise_id)}
+								permalink={permalinkOf?.(item)}
 								variant="side"
 							/>
 						))}
@@ -98,6 +108,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 						<GazetteStory
 							item={item}
 							highlightsHtml={highlightsOf(item.readwise_id)}
+							permalink={permalinkOf?.(item)}
 							variant="side"
 							noted
 						/>
@@ -114,6 +125,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 					<GazetteStory
 						item={item}
 						highlightsHtml={highlightsOf(item.readwise_id)}
+						permalink={permalinkOf?.(item)}
 						variant="side"
 					/>
 				))}

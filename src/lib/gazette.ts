@@ -24,6 +24,18 @@ export interface Issue {
 	rest: GazetteItem[];
 }
 
+export const GAZETTE_FONTS = [
+	"economist-serif-roman.woff2",
+	"economist-serif-italic.woff2",
+];
+
+export const GAZETTE_PREFETCH_FONTS = [
+	"NebulaSans-Book.woff2",
+	"NebulaSans-BookItalic.woff2",
+	"NebulaSans-Bold.woff2",
+	"NebulaSans-BoldItalic.woff2",
+];
+
 const DAY_MS = 24 * 60 * 60 * 1000;
 const MARGIN_NOTE_THRESHOLD = 4;
 
@@ -48,6 +60,43 @@ const longDateFormat = new Intl.DateTimeFormat("en-GB", {
 
 export function formatVolume(number: number): string {
 	return `Vol. ${number}`;
+}
+
+export function volumeSlug(number: number): string {
+	return `vol-${number}`;
+}
+
+export function volumePath(number: number): string {
+	return `/gazette/${volumeSlug(number)}`;
+}
+
+function slugify(title: string): string {
+	return title
+		.normalize("NFKD")
+		.replace(/\p{M}/gu, "")
+		.toLowerCase()
+		.replace(/[^\p{L}\p{N}\s-]/gu, "")
+		.trim()
+		.replace(/\s+/g, "-");
+}
+
+/**
+ * Gives each piece in an issue an anchor slugged from its title, the way
+ * Markdown headings get theirs, numbering repeats so every anchor is unique.
+ */
+export function anchorsOf(issue: Issue): Map<string, string> {
+	const anchors = new Map<string, string>();
+	const used = new Set<string>();
+	for (const item of [issue.lead, ...issue.rest]) {
+		const base = slugify(item.title) || "item";
+		let anchor = base;
+		for (let repeat = 1; used.has(anchor); repeat++) {
+			anchor = `${base}-${repeat}`;
+		}
+		used.add(anchor);
+		anchors.set(item.readwise_id, anchor);
+	}
+	return anchors;
 }
 
 export function formatDate(date: Date): string {

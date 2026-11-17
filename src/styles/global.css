@@ -539,6 +539,72 @@ html.fonts-loading body {
 			.gazette-edition-title a {
 				@apply font-medium;
 			}
+
+			.gazette-edition-title a.gazette-permalink {
+				@apply font-normal;
+			}
+		}
+
+		/* ── Permalinks ──────────────────────────────────────────── */
+
+		.gazette-permalink {
+			@apply text-fg-faint dark:text-fg-faint-dark ml-0.25 font-normal opacity-0;
+			transition: opacity 150ms var(--gazette-ease-out);
+
+			&:focus-visible {
+				@apply opacity-100;
+			}
+
+			@media (hover: none) {
+				@apply opacity-100;
+			}
+		}
+
+		:is(.gazette-story, .gazette-edition-lead, .gazette-edition-list li):hover
+			.gazette-permalink {
+			@apply opacity-100;
+		}
+
+		:is(.gazette-edition-lead, .gazette-edition-list li) {
+			scroll-margin-top: 2rem;
+
+			&:target {
+				background-color: var(--gazette-highlighter-wash);
+				box-shadow: 0 0 0 0.5rem var(--gazette-highlighter-wash);
+			}
+		}
+
+		/* ── Volume navigation ───────────────────────────────────── */
+
+		.gazette-earlier {
+			@apply pt-0.5 font-serif;
+			border-top: 1px solid var(--gazette-edition-rule);
+
+			h2 {
+				@apply mb-0.75 text-2xl leading-[1.2] font-semibold;
+			}
+
+			ul {
+				@apply columns-2 gap-x-1.5 text-sm tracking-[0.02em] md:columns-3 lg:columns-4;
+			}
+
+			li {
+				@apply flex break-inside-avoid justify-between gap-1 py-0.25;
+				border-top: 1px dotted var(--gazette-rule);
+			}
+
+			span {
+				@apply text-fg-muted dark:text-fg-muted-dark;
+			}
+		}
+
+		.gazette-pager {
+			@apply flex justify-between gap-1 pt-0.5 font-serif text-base;
+			border-top: 1px solid var(--gazette-edition-rule);
+
+			a[rel="next"] {
+				@apply ml-auto;
+			}
 		}
 
 		/* ── Tucked-away highlights ──────────────────────────────── */

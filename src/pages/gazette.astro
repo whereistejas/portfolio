@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 
 import Paper from "../components/Gazette.astro";
 import Page from "../layouts/page.astro";
+import { GAZETTE_FONTS, GAZETTE_PREFETCH_FONTS } from "../lib/gazette";
 
 const archiveEntries = (await getCollection("readwise-archive")).map(
 	(entry) => entry.data
@@ -11,13 +12,8 @@ const archiveEntries = (await getCollection("readwise-archive")).map(
 
 <Page
 	title="Gazette"
-	fonts={["economist-serif-roman.woff2", "economist-serif-italic.woff2"]}
-	prefetchFonts={[
-		"NebulaSans-Book.woff2",
-		"NebulaSans-BookItalic.woff2",
-		"NebulaSans-Bold.woff2",
-		"NebulaSans-BoldItalic.woff2",
-	]}
+	fonts={GAZETTE_FONTS}
+	prefetchFonts={GAZETTE_PREFETCH_FONTS}
 >
 	<Fragment slot="main">
 		<Paper
@@ -25,6 +21,7 @@ const archiveEntries = (await getCollection("readwise-archive")).map(
 			tagline="My reading, filed weekly."
 			sibling={{ href: "/tbr", label: "Early Edition" }}
 			items={archiveEntries}
+			recent={12}
 		/>
 	</Fragment>
 </Page>

@@ -1,0 +1,79 @@
+---
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import { getCollection } from "astro:content";
+
+import GazetteEdition from "../../components/GazetteEdition.astro";
+import GazettePaper from "../../components/GazettePaper.astro";
+import Page from "../../layouts/page.astro";
+import { renderHighlightsHtml } from "../../lib/feed";
+import {
+	GAZETTE_FONTS,
+	GAZETTE_PREFETCH_FONTS,
+	formatLongDate,
+	formatVolume,
+	groupIntoIssues,
+	volumePath,
+	volumeSlug,
+} from "../../lib/gazette";
+
+export const getStaticPaths = (async () => {
+	const items = (await getCollection("readwise-archive")).map(
+		(entry) => entry.data
+	);
+	const issues = groupIntoIssues(items);
+
+	return issues.map((issue, index) => ({
+		params: { volume: volumeSlug(issue.number) },
+		props: { issue, newer: issues[index - 1], older: issues[index + 1] },
+	}));
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { issue, newer, older } = Astro.props;
+const highlightsHtml = await renderHighlightsHtml([issue.lead, ...issue.rest]);
+---
+
+<Page
+	title={`Gazette ${formatVolume(issue.number)}`}
+	fonts={GAZETTE_FONTS}
+	prefetchFonts={GAZETTE_PREFETCH_FONTS}
+>
+	<Fragment slot="main">
+		<GazettePaper>
+			<div class="gazette-masthead">
+				<h1><a href="/gazette">Gazette</a></h1>
+				<span class="gazette-volume">{formatVolume(issue.number)}</span>
+				<span class="gazette-date">{formatLongDate(issue.weekEnd)}</span>
+			</div>
+
+			<section class="gazette-previous">
+				<div class="gazette-grid">
+					<GazetteEdition
+						issue={issue}
+						highlightsHtml={highlightsHtml}
+						numbered
+						anchored
+					/>
+				</div>
+			</section>
+
+			<nav class="gazette-pager" aria-label="Volumes">
+				{
+					older && (
+						<a href={volumePath(older.number)} rel="prev">
+							← {formatVolume(older.number)}
+						</a>
+					)
+				}
+				{
+					newer && (
+						<a href={volumePath(newer.number)} rel="next">
+							{formatVolume(newer.number)} →
+						</a>
+					)
+				}
+			</nav>
+		</GazettePaper>
+	</Fragment>
+</Page>
