@@ -1,5 +1,4 @@
 ---
-import PostHog from "../components/posthog.astro";
 import "../styles/global.css";
 
 interface Props {
@@ -24,7 +23,6 @@ const {
 				new Promise((resolve) => setTimeout(resolve, 3000)),
 			]).then(() => document.documentElement.classList.remove("fonts-loading"));
 		</script>
-		<PostHog />
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
