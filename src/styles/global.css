@@ -138,7 +138,7 @@
 
 	header,
 	footer {
-		@apply flex w-full flex-row justify-between px-[1.2rem] text-2xl font-medium tracking-tight md:w-48 md:max-w-full md:px-0;
+		@apply flex w-full flex-row justify-between px-1 text-2xl font-medium tracking-tight md:w-48 md:max-w-full md:px-0;
 	}
 	header {
 		@apply pt-1;
@@ -148,7 +148,7 @@
 	}
 
 	main {
-		@apply flex h-full w-full flex-col px-[1.2rem] md:w-48 md:max-w-full md:px-0;
+		@apply flex h-full w-full flex-col px-1 md:w-48 md:max-w-full md:px-0;
 		@apply text-base text-pretty;
 	}
 
