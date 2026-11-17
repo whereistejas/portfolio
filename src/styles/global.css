@@ -208,7 +208,7 @@
 		header,
 		main,
 		footer {
-			@apply md:w-full md:max-w-6xl md:px-1.5;
+			@apply md:w-full md:max-w-5xl md:px-1.5;
 		}
 	}
 
