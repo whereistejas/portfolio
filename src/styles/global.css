@@ -178,13 +178,6 @@
 			@apply text-fg-muted dark:text-fg-muted-dark line-clamp-2 opacity-75;
 		}
 
-		.feed-desc--no-clamp {
-			@apply block;
-			-webkit-line-clamp: unset;
-			max-height: none;
-			overflow: visible;
-		}
-
 		.feed-meta,
 		.feed-tags {
 			@apply inline-flex flex-wrap items-center gap-x-[0.5em];
@@ -695,113 +688,6 @@
 			}
 		}
 	}
-
-	/* ── Highlight card (wrapper row + card surface) ──────────────── */
-
-	div.feed .feed-item.feed-item--with-highlights {
-		@apply mx-0 rounded-none bg-transparent px-0 py-0 hover:bg-transparent dark:hover:bg-transparent;
-	}
-
-	div.feed .feed-item--with-highlights .feed-item-card {
-		@apply -mx-0.75 box-border flex flex-col gap-0.5 rounded-xl bg-transparent px-0.75 py-0.75 md:-mx-1 md:px-1;
-		transition:
-			background-color 380ms ease,
-			margin 350ms cubic-bezier(0.25, 1, 0.5, 1);
-	}
-
-	div.feed
-		.feed-item--with-highlights.feed-item[data-expanded="true"]
-		.feed-item-card {
-		@apply overflow-hidden bg-bg-feed-item-hover dark:bg-neutral-800/50;
-	}
-
-	/* Gap only when an expanded card is adjacent to another expanded or hovered item */
-
-	/* Two consecutive expanded items */
-	div.feed
-		.feed-item[data-expanded="true"]
-		+ .feed-item[data-expanded="true"]
-		.feed-item-card {
-		@apply mt-0.5;
-	}
-
-	/* Expanded item followed by a hovered item */
-	@media (hover: hover) {
-		div.feed
-			.feed-item[data-expanded="true"]
-			+ .feed-item:hover
-			.feed-item-card {
-			@apply mt-0.5;
-		}
-
-		div.feed
-			.feed-item[data-expanded="true"]
-			+ .feed-item:not(.feed-item--with-highlights):hover {
-			@apply mt-0.5;
-		}
-
-		/* Hovered item followed by expanded item */
-		div.feed
-			.feed-item:hover
-			+ .feed-item[data-expanded="true"]
-			.feed-item-card {
-			@apply mt-0.5;
-		}
-	}
-
-	@media (hover: hover) {
-		div.feed .feed-item--with-highlights:hover .feed-item-card {
-			@apply bg-bg-feed-item-hover dark:bg-neutral-800/50;
-		}
-	}
-
-	/* ── Highlight count button ──────────────────────────────────── */
-
-	button.feed-highlight-btn {
-		@apply inline cursor-pointer rounded-sm border-0 bg-transparent p-0 font-[inherit] text-[inherit];
-		transition:
-			background-color 0.2s ease,
-			color 0.2s ease;
-	}
-
-	button.feed-highlight-btn[aria-expanded="true"],
-	button.feed-highlight-btn:focus-visible {
-		@apply text-fg dark:text-fg-dark;
-	}
-
-	@media (hover: hover) {
-		button.feed-highlight-btn:hover {
-			@apply text-fg dark:text-fg-dark;
-		}
-	}
-
-	/* ── Highlights body (collapsible pane) ───────────────────────── */
-
-	div.feed .feed-highlights-body {
-		/* cancel the card's flex gap so mounting/unmounting the pane at
-		   height 0 is layout-neutral; the visible spacing lives inside the
-		   animated height (list pt below) and collapses with it */
-		@apply -mt-0.5 text-fg-muted dark:text-fg-muted-dark text-pretty;
-	}
-
-	/* ── Highlight list items & blockquotes ───────────────────────── */
-
-	div.feed .feed-highlights-list {
-		@apply flex flex-col gap-1.5 pt-1.5;
-	}
-
-	div.feed .feed-highlights-list li {
-		@apply wrap-break-word;
-	}
-
-	div.feed .feed-highlights-list li blockquote {
-		@apply m-0 border-l-2 border-neutral-600/75 pl-1;
-	}
-
-	div.feed .feed-highlights-list a {
-		@apply font-normal underline underline-offset-2;
-	}
-
 
 	article.blog-article {
 		@apply prose pt-1.5 pb-1.5 md:pt-2 md:pb-2;
