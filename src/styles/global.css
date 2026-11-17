@@ -138,7 +138,7 @@
 
 	header,
 	footer {
-		@apply flex w-full flex-row justify-between px-1 text-2xl font-medium tracking-tight md:w-48 md:max-w-full md:px-0;
+		@apply flex w-full max-w-5xl flex-row justify-between px-1 text-2xl font-medium tracking-tight md:px-1.5;
 	}
 	header {
 		@apply pt-1;
@@ -148,7 +148,7 @@
 	}
 
 	main {
-		@apply flex h-full w-full flex-col px-1 md:w-48 md:max-w-full md:px-0;
+		@apply flex h-full w-full max-w-5xl flex-col px-1 md:px-1.5;
 		@apply text-base text-pretty;
 	}
 
@@ -203,14 +203,6 @@
 	}
 
 	/* ── Gazette ─────────────────────────────────────────────────── */
-
-	body.wide {
-		header,
-		main,
-		footer {
-			@apply md:w-full md:max-w-5xl md:px-1.5;
-		}
-	}
 
 	div.gazette {
 		@apply relative flex flex-col gap-3 pb-3 leading-[1.55];

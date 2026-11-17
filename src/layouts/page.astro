@@ -4,10 +4,9 @@ import "../styles/global.css";
 
 interface Props {
 	title: string | undefined;
-	wide?: boolean;
 }
 
-const { title, wide = true } = Astro.props;
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -51,7 +50,7 @@ const { title, wide = true } = Astro.props;
 		</title>
 	</head>
 
-	<body class:list={{ wide }}>
+	<body>
 		<!-- Like to view source? We might get along email@whereistejas.xyz -->
 		<a rel="me" href="https://hachyderm.io/@whereistejas" hidden>Mastodon</a>
 
