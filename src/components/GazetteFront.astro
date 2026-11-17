@@ -1,6 +1,6 @@
 ---
 import GazetteStory from "./GazetteStory.astro";
-import { formatLongDate } from "../lib/gazette";
+import { formatLongDate, formatVolume } from "../lib/gazette";
 import type { Front } from "../lib/gazette-fold";
 
 interface Props {
@@ -23,7 +23,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 	<div class="gazette-masthead">
 		<span>{formatLongDate(updatedAt)}</span>
 		<h1>{name}</h1>
-		<span>{numbered ? `No. ${edition}` : "WIP"}</span>
+		<span>{numbered ? formatVolume(edition) : "Opus in fieri"}</span>
 		{tagline && <p class="gazette-tagline">{tagline}</p>}
 	</div>
 
