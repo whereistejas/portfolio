@@ -8,6 +8,9 @@ export default defineConfig({
 	site: "https://whereistejas.xyz",
 	base: "",
 	output: "static",
+	redirects: {
+		"/inbox": "/tbr",
+	},
 	markdown: {
 		remarkPlugins: [remarkMath],
 		rehypePlugins: [rehypeKatex],

@@ -25,14 +25,14 @@ If `bun` is not on `PATH` (common in sandboxed shells), fall back to `$HOME/.bun
 
 ## Architecture
 
-Astro 5 static site (`output: "static"`) deployed to GitHub Pages. The interesting part of the architecture is the **build-time Readwise → content collection pipeline**, which you have to understand before touching anything under `src/content/` or the `archive` / `inbox` pages.
+Astro 5 static site (`output: "static"`) deployed to GitHub Pages. The interesting part of the architecture is the **build-time Readwise → content collection pipeline**, which you have to understand before touching anything under `src/content/` or the `archive` / `tbr` pages.
 
 ### Content collections
 
 `src/content/config.ts` defines two Astro collections backed by custom loaders, not filesystem globs:
 
 - `readwise-archive` — everything with `location = archive`, rendered by `src/pages/archive.astro`.
-- `readwise-queue` — queue/feed items (non-archive locations), rendered by `src/pages/inbox.astro`.
+- `readwise-queue` — queue/feed items (non-archive locations), rendered by `src/pages/tbr.astro` (`/inbox` redirects to `/tbr`).
 
 Both schemas are Zod objects defined in `src/content/types.ts`. **Always import Zod via `import { z } from "astro/zod"`** — mixing in `import { z } from "zod"` directly breaks Astro's content config. Schemas mirror the Readwise API shape; do not relax them for convenience.
 
@@ -48,7 +48,7 @@ The CI workflow runs on every push to `main` and daily at 00:00 UTC. It executes
 
 ### Pages and layouts
 
-Five top-level pages (`src/pages/{index,blog,inbox,archive,info}.astro`) share `src/layouts/page.astro`; blog posts use `src/layouts/blog.astro`. Styles are a single global sheet (`src/styles/global.css`) plus Tailwind v4 via `@tailwindcss/vite`. Markdown gets `remark-math` + `rehype-katex`; highlights rendered inside `archive.astro` are processed through a `unified()` pipeline at build time, not at runtime.
+Five top-level pages (`src/pages/{index,blog,tbr,archive,info}.astro`) share `src/layouts/page.astro`; blog posts use `src/layouts/blog.astro`. Styles are a single global sheet (`src/styles/global.css`) plus Tailwind v4 via `@tailwindcss/vite`. Markdown gets `remark-math` + `rehype-katex`; highlights rendered inside `archive.astro` are processed through a `unified()` pipeline at build time, not at runtime.
 
 ## TypeScript conventions
 
