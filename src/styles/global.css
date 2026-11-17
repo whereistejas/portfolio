@@ -246,7 +246,8 @@
 			&:not(:has(.gazette-tagline)) {
 				grid-template-areas:
 					"name name"
-					"volume date";
+					"volume volume"
+					"date date";
 			}
 
 			@media (width >= 48rem) {
@@ -294,6 +295,10 @@
 			@media (width < 48rem) {
 				&:has(.gazette-tagline) .gazette-date {
 					@apply text-left;
+				}
+
+				&:not(:has(.gazette-tagline)) :is(.gazette-volume, .gazette-date) {
+					@apply text-center;
 				}
 			}
 
