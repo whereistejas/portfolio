@@ -226,12 +226,16 @@
 		--gazette-edition-rule: var(--color-neutral-400);
 		--gazette-highlighter: oklch(0.9 0.16 98);
 		--gazette-highlighter-wash: oklch(0.97 0.07 98);
+		--gazette-count-rest: 0.5;
+		--gazette-count-ink: var(--color-fg);
 		--gazette-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
 		@media (prefers-color-scheme: dark) {
 			--gazette-rule: var(--color-neutral-700);
 			--gazette-edition-rule: var(--color-neutral-500);
-			--gazette-highlighter: oklch(0.62 0.13 95 / 0.55);
-			--gazette-highlighter-wash: oklch(0.4 0.07 95 / 0.35);
+			--gazette-highlighter: oklch(0.84 0.15 95);
+			--gazette-highlighter-wash: oklch(0.27 0.025 90);
+			--gazette-count-rest: 0.18;
+			--gazette-count-ink: var(--color-neutral-900);
 		}
 
 		/* ── Masthead ────────────────────────────────────────────── */
@@ -543,13 +547,13 @@
 				@apply absolute inset-x-0 bottom-[8%] -z-1 h-[84%] origin-bottom;
 				content: "";
 				background-color: var(--gazette-highlighter);
-				transform: scaleY(0.5);
+				transform: scaleY(var(--gazette-count-rest));
 				transition: transform 150ms var(--gazette-ease-out);
 			}
 		}
 
 		.gazette-highlights[open] .gazette-count {
-			@apply text-fg dark:text-fg-dark;
+			color: var(--gazette-count-ink);
 
 			&::before {
 				transform: scaleY(1);
@@ -557,6 +561,10 @@
 		}
 
 		@media (hover: hover) and (pointer: fine) {
+			.gazette-highlights > summary:hover .gazette-count {
+				color: var(--gazette-count-ink);
+			}
+
 			.gazette-highlights > summary:hover .gazette-count::before {
 				transform: scaleY(1);
 			}

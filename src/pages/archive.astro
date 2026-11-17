@@ -50,31 +50,16 @@ const builtAt = new Date();
 
 <script>
 	const RAIL = window.matchMedia("(width >= 116rem)");
-	const REDUCED_MOTION = window.matchMedia("(prefers-reduced-motion: reduce)");
-	const NOTE_GAP = 16;
-	const EASE_IN_OUT = "cubic-bezier(0.77, 0, 0.175, 1)";
 
-	function isOpen(note: HTMLElement): boolean {
-		const open =
-			note.parentElement
-				?.querySelector(":scope > .gazette-highlights")
-				?.hasAttribute("open") ?? false;
-		if (!open) delete note.dataset["openedAt"];
-		return open;
-	}
-
-	function moveTo(note: HTMLElement, top: number, animate: boolean) {
-		const previous = Number.parseFloat(note.style.top);
-		note.style.top = `${top}px`;
-		if (!animate || Number.isNaN(previous) || previous === top) return;
-		if (REDUCED_MOTION.matches) return;
-		note.animate(
-			[{ transform: `translateY(${previous - top}px)` }, { transform: "translateY(0)" }],
-			{ duration: 200, easing: EASE_IN_OUT }
+	function toggleOf(note: HTMLElement): HTMLDetailsElement | null {
+		return (
+			note.parentElement?.querySelector<HTMLDetailsElement>(
+				":scope > .gazette-highlights"
+			) ?? null
 		);
 	}
 
-	function placeNotes(root: HTMLElement, animate = false) {
+	function placeNotes(root: HTMLElement) {
 		if (!RAIL.matches) {
 			delete root.dataset["rail"];
 			root.style.minHeight = "";
@@ -82,39 +67,19 @@ const builtAt = new Date();
 		}
 		root.dataset["rail"] = "";
 
-		const rootTop = root.getBoundingClientRect().top;
-		const notes = Array.from(
+		const open = Array.from(
 			root.querySelectorAll<HTMLElement>("[data-gazette-note]")
-		)
-			.filter(isOpen)
-			.map((note) => {
-				note.dataset["openedAt"] ??= String(performance.now());
-				const anchor = note.closest<HTMLElement>("[data-note-anchor]") ?? note;
-				return {
-					note,
-					target: anchor.getBoundingClientRect().top - rootTop,
-					openedAt: Number(note.dataset["openedAt"]),
-				};
-			})
-			.sort((a, b) => a.openedAt - b.openedAt);
-
-		const taken: { top: number; bottom: number }[] = [];
-		let floor = 0;
-		for (const { note, target } of notes) {
-			const height = note.offsetHeight;
-			let top = target;
-			for (const slot of [...taken].sort((a, b) => a.top - b.top)) {
-				if (top + height + NOTE_GAP > slot.top && top < slot.bottom + NOTE_GAP) {
-					top = slot.bottom + NOTE_GAP;
-				}
-			}
-			taken.push({ top, bottom: top + height });
-			moveTo(note, top, animate);
-			floor = Math.max(floor, top + height + NOTE_GAP);
+		).find((note) => toggleOf(note)?.open);
+		if (!open) {
+			root.style.minHeight = "";
+			return;
 		}
 
-		const minHeight = `${floor}px`;
-		if (root.style.minHeight !== minHeight) root.style.minHeight = minHeight;
+		const anchor = open.closest<HTMLElement>("[data-note-anchor]") ?? open;
+		const top =
+			anchor.getBoundingClientRect().top - root.getBoundingClientRect().top;
+		open.style.top = `${top}px`;
+		root.style.minHeight = `${top + open.offsetHeight}px`;
 	}
 
 	const root = document.querySelector<HTMLElement>(".gazette");
@@ -134,17 +99,12 @@ const builtAt = new Date();
 		root
 			.querySelectorAll("[data-gazette-note], [data-note-anchor]")
 			.forEach((element) => observer.observe(element));
-		new MutationObserver((records) => {
-			const noteToggled = records.some(
-				(record) =>
-					record.target instanceof Element &&
-					record.target.parentElement?.classList.contains("gazette-noted")
-			);
-			placeNotes(root, noteToggled);
-		}).observe(root, {
+
+		new MutationObserver(() => placeNotes(root)).observe(root, {
 			attributeFilter: ["open"],
 			subtree: true,
 		});
+
 		RAIL.addEventListener("change", schedule);
 		document.fonts.ready.then(schedule);
 		schedule();

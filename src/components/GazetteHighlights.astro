@@ -16,7 +16,10 @@ const prefix = Astro.slots.has("default")
 
 {
 	count > 0 ? (
-		<details class:list={[className, "gazette-highlights"]}>
+		<details
+			class:list={[className, "gazette-highlights"]}
+			name="gazette-highlights"
+		>
 			<summary>
 				{prefix && <Fragment set:html={prefix} />}
 				{prefix && ", "}
