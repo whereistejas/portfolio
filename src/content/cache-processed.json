@@ -1,5 +1,49 @@
 [
   {
+    "author": "",
+    "category": "article",
+    "date_group": "18 Nov 2026",
+    "highlights": [
+      "**It is always good to situate your work in the larger context.** We all stand on the shoulders of giants! There is nothing wrong with borrowing and adapting existing work to new contexts — that is the vast majority of what I do as an engineer. When you position your work as derivative, you are acknowledging those that came before you, as you hope to be acknowledged by those who come after you."
+    ],
+    "last_highlighted_at": "2026-11-18T23:27:29.702Z",
+    "last_moved_at": "2026-11-18T23:27:56.076Z",
+    "location": "archive",
+    "readwise_id": "01m7rfrwcrbwp0znn6rjsf35ak",
+    "summary": "The author says Anthropic’s Scion closely copied Meta’s Mononoke system, and argues the overlap was intentional. They say copying ideas is acceptable, but failing to credit Mononoke is not. They acknowledge rebuilding it was still an achievement, but say the missing credit misrepresented the work.",
+    "title": "More on Anthropic’s Scion ripping off Mononoke",
+    "url": "https://sunshowers.io/posts/anthropic-mononoke-2/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "18 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-18T23:18:15.668Z",
+    "location": "archive",
+    "readwise_id": "01m7rf88x8jr019esez07pfwvy",
+    "summary": "It is important to provide credit.",
+    "title": "Anthropic’s Scion is heavily inspired by Mononoke",
+    "url": "https://sunshowers.io/posts/anthropic-mononoke/"
+  },
+  {
+    "author": "Andrew Gallant",
+    "category": "article",
+    "date_group": "18 Nov 2026",
+    "highlights": [
+      "The rewritten code lacks `unwrap()`, which is an advantage, but it’s circuitous and strange. The original code is much simpler, and it is trivial to observe that the `unwrap()` will never lead to a panic.",
+      "The really interesting bit to this coding style—pushing runtime invariants into error values—is that it’s actually impossible to properly document the error conditions. Well documented error conditions *relate the input to a function* to some failure case in some way. But one literally can’t do that for this function, because if one could, one would be documenting a bug!"
+    ],
+    "last_highlighted_at": "2026-11-18T23:10:06.942Z",
+    "last_moved_at": "2026-11-18T23:10:17.204Z",
+    "location": "archive",
+    "readwise_id": "01kzy4mrzdy0sw1pkjtf4yt4g4",
+    "summary": "Using unwrap() in Rust is okay for quick scripts or tests but not for real error handling in libraries or applications. Panics signal bugs and are not meant for regular error management. Good Rust code treats errors as values and avoids panicking except for unrecoverable bugs.",
+    "title": "Using unwrap() in Rust is Okay",
+    "url": "https://burntsushi.net/unwrap/"
+  },
+  {
     "author": "Stephen Baxter",
     "category": "epub",
     "date_group": "18 Nov 2026",
@@ -8582,19 +8626,6 @@
     "summary": "The article explains how to build a test case generator that creates valid WebAssembly instructions and modules. It uses pairs of functions to check instruction validity and generate instructions in context. This approach helps find hidden bugs by testing beyond the parser stage.",
     "title": "Writing a Test Case Generator for a Programming Language",
     "url": "https://fitzgen.com/2020/08/24/writing-a-test-case-generator.html"
-  },
-  {
-    "author": "Andrew Gallant",
-    "category": "article",
-    "date_group": "13 Aug 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-08-13T18:02:41.517Z",
-    "location": "new",
-    "readwise_id": "01kzy4mrzdy0sw1pkjtf4yt4g4",
-    "summary": "Using unwrap() in Rust is okay for quick scripts or tests but not for real error handling in libraries or applications. Panics signal bugs and are not meant for regular error management. Good Rust code treats errors as values and avoids panicking except for unrecoverable bugs.",
-    "title": "Using unwrap() in Rust is Okay",
-    "url": "https://burntsushi.net/unwrap/"
   },
   {
     "author": "Mohammed AlQuraishi",
