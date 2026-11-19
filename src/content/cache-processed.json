@@ -1,6 +1,6 @@
 [
   {
-    "author": "",
+    "author": "Rain",
     "category": "article",
     "date_group": "18 Nov 2026",
     "highlights": [
@@ -2074,26 +2074,6 @@
     "summary": "The British intelligence agencies closely control what former spies can reveal in books, citing national security. They often demand removal of details, even if those facts are public or seem harmless. This secrecy sometimes protects the agencies' reputations more than the country's safety.",
     "title": "My mission to avoid breaking the Official Secrets Act",
     "url": "https://spectator.com/article/my-mission-to-avoid-breaking-the-official-secrets-act/"
-  },
-  {
-    "author": "Amartya K. Sen",
-    "category": "pdf",
-    "date_group": "02 May 2026",
-    "highlights": [
-      "Edgeworth asserted that \"the first principle of Economics is that every agent is actuated only by self-interest",
-      "He interpreted Sidgwick to have dispelled the \"illusion\" that \"the interest of all is the interest of each,\" noting that Sidgwick found the \"two supreme principles-Egoism and Utilitarianism\" to be \"irreconcilable, unless indeed by religion.",
-      ". An outcome is said to be in \"the core\" of the economy if and only if it fulfills a set of conditions of unimprovability. These conditions, roughly speaking, are that not only is it the case that no one could be made better off without making somebody else worse off (the situation is what is called a \"Pareto optimum\"), but also that no one is worse off than he would be without trade, and that no coalition of individuals, by altering the trade among themselves, could on their own improve their own lot. Edgeworth showed that given certain general assumptions, any equilibrium that can emerge in a competitive market must satisfy these conditions and be in \"the core.",
-      "He observed that for the utilitarian good society, \"competition requires to be supplemented by arbitration, and the basis of arbitration between self-interested contractors is the greatest possible sum-total utility.\"",
-      "that a decentralized economy motivated by self-interest and guided by price signals would be compatible with a coherent disposition of economic resources that could be regarded, in a well-defined sense, as superior to a large class of possible alternative dispositions. Moreover, the price signals would operate in a way to establish this degree of coherence.",
-      "A person's choices are considered \"rational\" in this approach if and only if these choices can all be explained in terms of some preference relation consistent with the revealed preference definition, that is, if all his choices can be explained as the choosing of \"most preferred\" alternatives with respect to a postulated preference relatio"
-    ],
-    "last_highlighted_at": "2026-05-02T23:48:16.891Z",
-    "last_moved_at": "2026-05-02T23:54:52.970Z",
-    "location": "archive",
-    "readwise_id": "01jvpk2e54p9t86aby29wrgj5d",
-    "summary": "Amartya K. Sen critiques traditional economic theory for assuming that people always act out of self-interest. He argues that this view neglects other motivations, such as moral commitments, which can influence economic behavior. Sen suggests that recognizing these factors could lead to more accurate economic models and a better understanding of human behavior.",
-    "title": "Rational Fools: A Critique Of The Behavioral Foundations Of Economic Theory",
-    "url": "https://readwise.io/reader/document_raw_content/306253541"
   },
   {
     "author": "Bogdan Ionescu",
@@ -8535,7 +8515,98 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
-    "author": "Kobzol's blog",
+    "author": "kqr",
+    "category": "article",
+    "date_group": "19 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-19T00:23:52.762Z",
+    "location": "new",
+    "readwise_id": "01m7rk0f5xas29hd6gnr14ctp0",
+    "summary": "Stacked diffs make each commit a separate, reviewable change on one development branch. Maiao automatically turns those commits into linked pull requests and keeps them updated as the branch changes. This makes stacked reviews easier, though it can be hard to tell which changes depend on each other.",
+    "title": "Stacked diffs with Maiao",
+    "url": "https://entropicthoughts.com/stacked-diffs-with-maiao#merging-stacked-diffs"
+  },
+  {
+    "author": "Chris Krycho",
+    "category": "article",
+    "date_group": "19 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-19T00:19:09.954Z",
+    "location": "new",
+    "readwise_id": "01m7rjqv01fgndm92mv9w1py9j",
+    "summary": "Jujutsu is a new tool for working with Git repositories, but it handles changes and history differently. Its flexible revision system and built-in conflict handling can make common Git workflows easier. It still works with Git, though some familiar tools and branch-based workflows fit less smoothly.",
+    "title": "jj init",
+    "url": "https://v5.chriskrycho.com/essays/jj-init/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "19 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-19T00:17:07.217Z",
+    "location": "new",
+    "readwise_id": "01m7rjm34gbp94cfz5hdyy18gp",
+    "summary": "Tangled supports jujutsu-style stacked PRs so reviewers can comment on individual commits and see their evolution. Jujutsu assigns stable change-ids so edits and rebases keep a clear identity across rewrites. Tangled shows interdiffs between rounds so reviewers can track what changed.",
+    "title": "jujutsu on tangled",
+    "url": "https://blog.tangled.org/stacking/#interdiff-code-review-on-tangled"
+  },
+  {
+    "author": "Gergely Orosz",
+    "category": "article",
+    "date_group": "19 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-19T00:15:45.854Z",
+    "location": "new",
+    "readwise_id": "01m7rjhkp008zkzvhzwk9dzzrp",
+    "summary": "Stacked diffs break large changes into small, connected commits that can each be reviewed. Developers can keep working while reviews are pending instead of waiting for each change to merge. This helps them stay focused and makes code easier to review, though it requires frequent rebasing.",
+    "title": "Stacked Diffs (and why you should know about them)",
+    "url": "https://newsletter.pragmaticengineer.com/p/stacked-diffs"
+  },
+  {
+    "author": "Graphite",
+    "category": "article",
+    "date_group": "19 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-19T00:15:35.594Z",
+    "location": "new",
+    "readwise_id": "01m7rjh9naxgvftd8dpdb8ea7m",
+    "summary": "Discover the benefits of stacked diffs for code review. Learn how stacking changes can lead to faster, more efficient development workflows.",
+    "title": "Graphite is joining Cursor to reimagine the future of software development.",
+    "url": "https://graphite.com/guides/stacked-diffs"
+  },
+  {
+    "author": "Jackson Gabbard",
+    "category": "article",
+    "date_group": "19 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-19T00:15:08.206Z",
+    "location": "new",
+    "readwise_id": "01m7rjgexer73q87d0mj7rzn8y",
+    "summary": "Stacked diffs let teams review small, focused commits that can build on one another. They make it easier to work on several changes without juggling branches. The author argues this leads to clearer reviews and cleaner code history than pull requests.",
+    "title": "Stacked Diffs Versus Pull Requests",
+    "url": "https://jg.gg/2018/09/29/stacked-diffs-versus-pull-requests/%20https://graphite.com/guides/stacked-diffs%20https://newsletter.pragmaticengineer.com/p/stacked-diffs"
+  },
+  {
+    "author": "Bertrand Meyer",
+    "category": "pdf",
+    "date_group": "19 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-19T00:11:42.410Z",
+    "location": "new",
+    "readwise_id": "01m7rja5dc6hybzfxtyrf5vs49",
+    "summary": "",
+    "title": "Design By Contract",
+    "url": "https://readwise.io/reader/document_raw_content/230707521"
+  },
+  {
+    "author": "Jakub Beránek",
     "category": "article",
     "date_group": "17 Nov 2026",
     "highlights": [],
