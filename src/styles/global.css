@@ -351,22 +351,22 @@ html.fonts-loading body {
 				grid-template-areas: "lead" "right";
 			}
 			.gazette-top--left.gazette-top--right {
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
 				grid-template-areas: "lead lead" "left right";
 			}
 		}
 
 		@media (width >= 64rem) {
 			.gazette-top--left {
-				grid-template-columns: 1fr 2fr;
+				grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
 				grid-template-areas: "left lead";
 			}
 			.gazette-top--right {
-				grid-template-columns: 2fr 1fr;
+				grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
 				grid-template-areas: "lead right";
 			}
 			.gazette-top--left.gazette-top--right {
-				grid-template-columns: 1fr 2fr 1fr;
+				grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
 				grid-template-areas: "left lead right";
 			}
 
