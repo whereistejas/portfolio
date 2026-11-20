@@ -1,0 +1,41 @@
+---
+import { parseAuthors } from "../lib/feed";
+import { pullQuoteIndex, type GazetteItem } from "../lib/gazette";
+
+interface Props {
+	item: GazetteItem;
+	highlightsHtml: string[];
+}
+
+const { item, highlightsHtml } = Astro.props;
+
+const byline = parseAuthors(item.author).join(", ");
+const pullIndex = pullQuoteIndex(item);
+const pullQuote = highlightsHtml[pullIndex];
+const quotes = highlightsHtml.filter((_, i) => i !== pullIndex);
+---
+
+<article class="gazette-story gazette-story--lead gazette-article">
+	<h2 class="gazette-headline">
+		<a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a
+		>
+	</h2>
+	{
+		byline && (
+			<p class="gazette-byline">
+				By <span>{byline}</span>
+			</p>
+		)
+	}
+	{item.summary && <p class="gazette-dek">{item.summary}</p>}
+	{pullQuote && <blockquote class="gazette-pull" set:html={pullQuote} />}
+	{
+		quotes.length > 0 && (
+			<div class="gazette-highlights">
+				{quotes.map((html) => (
+					<blockquote set:html={html} />
+				))}
+			</div>
+		)
+	}
+</article>

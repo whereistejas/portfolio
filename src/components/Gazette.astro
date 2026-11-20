@@ -5,10 +5,9 @@ import GazetteFront from "./GazetteFront.astro";
 import GazettePaper from "./GazettePaper.astro";
 import { renderHighlightsHtml } from "../lib/feed";
 import {
-	anchorsOf,
 	byRecency,
 	groupIntoIssues,
-	volumePath,
+	itemPathsOf,
 	withoutItems,
 	type GazetteItem,
 	type Sibling,
@@ -35,12 +34,8 @@ const taken = new Set(front?.fold);
 const shown = recent === undefined ? older : older.slice(0, recent);
 const earlier = recent === undefined ? [] : older.slice(recent);
 const previous = shown.flatMap((issue) => withoutItems(issue, taken) ?? []);
-const currentAnchors = numbered && current ? anchorsOf(current) : undefined;
-const permalinkOf =
-	current && currentAnchors
-		? (item: GazetteItem) =>
-				`${volumePath(current.number)}#${currentAnchors.get(item.readwise_id)}`
-		: undefined;
+const currentPaths = numbered && current ? itemPathsOf(current) : undefined;
+const permalinkOf = (item: GazetteItem) => currentPaths?.get(item.readwise_id);
 const highlightHtmlById = await renderHighlightsHtml(items);
 const builtAt = new Date();
 ---

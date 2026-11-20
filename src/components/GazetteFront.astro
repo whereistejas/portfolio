@@ -18,7 +18,7 @@ interface Props {
 	highlightsHtml: Map<string, string[]>;
 	updatedAt: Date;
 	numbered: boolean;
-	permalinkOf: ((item: GazetteItem) => string) | undefined;
+	permalinkOf: (item: GazetteItem) => string | undefined;
 }
 
 const {
@@ -69,7 +69,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 						<GazetteStory
 							item={item}
 							highlightsHtml={highlightsOf(item.readwise_id)}
-							permalink={permalinkOf?.(item)}
+							permalink={permalinkOf(item)}
 							variant="side"
 							noted
 						/>
@@ -82,7 +82,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 			<GazetteStory
 				item={lead}
 				highlightsHtml={highlightsOf(lead.readwise_id)}
-				permalink={permalinkOf?.(lead)}
+				permalink={permalinkOf(lead)}
 				variant="lead"
 				noted
 			/>
@@ -93,7 +93,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 							<GazetteStory
 								item={item}
 								highlightsHtml={highlightsOf(item.readwise_id)}
-								permalink={permalinkOf?.(item)}
+								permalink={permalinkOf(item)}
 								variant="side"
 							/>
 						))}
@@ -109,7 +109,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 						<GazetteStory
 							item={item}
 							highlightsHtml={highlightsOf(item.readwise_id)}
-							permalink={permalinkOf?.(item)}
+							permalink={permalinkOf(item)}
 							variant="side"
 							noted
 						/>
@@ -126,7 +126,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 					<GazetteEditionItem
 						item={item}
 						highlightsHtml={highlightsOf(item.readwise_id)}
-						permalink={permalinkOf?.(item)}
+						permalink={permalinkOf(item)}
 						marginNote={false}
 					/>
 				))}
@@ -141,7 +141,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 					<GazetteStory
 						item={item}
 						highlightsHtml={highlightsOf(item.readwise_id)}
-						permalink={permalinkOf?.(item)}
+						permalink={permalinkOf(item)}
 						variant="side"
 					/>
 				))}

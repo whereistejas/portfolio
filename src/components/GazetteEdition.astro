@@ -8,6 +8,7 @@ import {
 	anchorsOf,
 	formatDate,
 	formatVolume,
+	itemPathsOf,
 	splitIntoColumns,
 	volumePath,
 	type Issue,
@@ -37,8 +38,8 @@ const highlightsOf = (item: GazetteItem) =>
 const anchors = numbered ? anchorsOf(issue) : undefined;
 const anchorOf = (item: GazetteItem) =>
 	anchored ? anchors?.get(item.readwise_id) : undefined;
-const permalinkOf = (item: GazetteItem) =>
-	anchors && `${volumePath(issue.number)}#${anchors.get(item.readwise_id)}`;
+const paths = numbered ? itemPathsOf(issue) : undefined;
+const permalinkOf = (item: GazetteItem) => paths?.get(item.readwise_id);
 const byline = parseAuthors(issue.lead.author).join(", ");
 const leadHighlights = highlightsOf(issue.lead);
 const hasNote = leadHighlights.length > 0;

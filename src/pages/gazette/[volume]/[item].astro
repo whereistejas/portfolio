@@ -1,0 +1,65 @@
+---
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import { getCollection } from "astro:content";
+
+import GazetteArticle from "../../../components/GazetteArticle.astro";
+import GazettePaper from "../../../components/GazettePaper.astro";
+import Page from "../../../layouts/page.astro";
+import { renderHighlightsHtml } from "../../../lib/feed";
+import {
+	GAZETTE_FONTS,
+	GAZETTE_PREFETCH_FONTS,
+	anchorsOf,
+	formatLongDate,
+	formatVolume,
+	groupIntoIssues,
+	volumePath,
+	volumeSlug,
+} from "../../../lib/gazette";
+
+export const getStaticPaths = (async () => {
+	const items = (await getCollection("readwise-archive")).map(
+		(entry) => entry.data
+	);
+
+	return groupIntoIssues(items).flatMap((issue) =>
+		[...anchorsOf(issue)].map(([id, slug]) => {
+			const item = [issue.lead, ...issue.rest].find(
+				(candidate) => candidate.readwise_id === id
+			);
+			if (!item) throw new Error("anchorsOf only names pieces of its issue");
+
+			return {
+				params: { volume: volumeSlug(issue.number), item: slug },
+				props: { issue, item },
+			};
+		})
+	);
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { issue, item } = Astro.props;
+const highlightsHtml =
+	(await renderHighlightsHtml([item])).get(item.readwise_id) ?? [];
+---
+
+<Page
+	title={`${item.title} · Gazette`}
+	fonts={GAZETTE_FONTS}
+	prefetchFonts={GAZETTE_PREFETCH_FONTS}
+>
+	<Fragment slot="main">
+		<GazettePaper>
+			<div class="gazette-masthead">
+				<h1><a href="/gazette">Gazette</a></h1>
+				<a class="gazette-volume" href={volumePath(issue.number)}>
+					{formatVolume(issue.number)}
+				</a>
+				<span class="gazette-date">{formatLongDate(issue.weekEnd)}</span>
+			</div>
+
+			<GazetteArticle item={item} highlightsHtml={highlightsHtml} />
+		</GazettePaper>
+	</Fragment>
+</Page>

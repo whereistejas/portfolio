@@ -70,6 +70,30 @@ export function volumePath(number: number): string {
 	return `/gazette/${volumeSlug(number)}`;
 }
 
+export function itemPath(number: number, slug: string): string {
+	return `${volumePath(number)}/${slug}`;
+}
+
+/** Maps each piece in an issue, by Readwise id, to the path of its own page. */
+export function itemPathsOf(issue: Issue): Map<string, string> {
+	return new Map(
+		[...anchorsOf(issue)].map(([id, slug]) => [
+			id,
+			itemPath(issue.number, slug),
+		])
+	);
+}
+
+/**
+ * Picks the highlight shown as a pull quote: the first one long enough to
+ * read as a sentence and short enough to set large. -1 when none fits.
+ */
+export function pullQuoteIndex(item: GazetteItem): number {
+	return item.highlights.findIndex(
+		(text) => text.length >= 60 && text.length <= 400
+	);
+}
+
 function slugify(title: string): string {
 	return title
 		.normalize("NFKD")
