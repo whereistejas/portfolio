@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+
+import GazettePaper from "../../../components/GazettePaper.astro";
+import Page from "../../../layouts/page.astro";
+import {
+	GAZETTE_FONTS,
+	GAZETTE_PREFETCH_FONTS,
+	authorsOf,
+} from "../../../lib/gazette";
+
+const items = (await getCollection("readwise-archive")).map(
+	(entry) => entry.data
+);
+const authors = authorsOf(items).sort(
+	(a, b) => b.items.length - a.items.length || a.name.localeCompare(b.name)
+);
+---
+
+<Page
+	title="Authors · Gazette"
+	fonts={GAZETTE_FONTS}
+	prefetchFonts={GAZETTE_PREFETCH_FONTS}
+>
+	<Fragment slot="main">
+		<GazettePaper>
+			<div class="gazette-masthead">
+				<h1><a href="/gazette">Gazette</a></h1>
+				<span class="gazette-volume">Authors</span>
+			</div>
+
+			<nav class="gazette-authors" aria-label="Authors">
+				<ul>
+					{
+						authors.map((author) => (
+							<li>
+								<a href={`/gazette/authors/${author.slug}`}>{author.name}</a>
+								<span>{author.items.length}</span>
+							</li>
+						))
+					}
+				</ul>
+			</nav>
+		</GazettePaper>
+	</Fragment>
+</Page>

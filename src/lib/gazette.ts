@@ -1,4 +1,5 @@
 import type { ReadwiseArchiveItem } from "../content/types";
+import { parseAuthors } from "./feed";
 
 export type GazetteItem = Pick<
 	ReadwiseArchiveItem,
@@ -199,12 +200,70 @@ export function groupIntoIssues(items: GazetteItem[]): Issue[] {
 		.reverse();
 }
 
+/** Keeps the pieces of an issue that pass `keep`, in rank order. */
+export function filterIssue(
+	issue: Issue,
+	keep: (item: GazetteItem) => boolean
+): Issue | undefined {
+	const [lead, ...rest] = [issue.lead, ...issue.rest].filter(keep);
+	return lead && { ...issue, lead, rest };
+}
+
 export function withoutItems(
 	issue: Issue,
 	taken: Set<GazetteItem>
 ): Issue | undefined {
-	const [lead, ...rest] = [issue.lead, ...issue.rest].filter(
-		(item) => !taken.has(item)
-	);
-	return lead && { ...issue, lead, rest };
+	return filterIssue(issue, (item) => !taken.has(item));
+}
+
+/**
+ * Slugs an author's name for the path of their page. Spellings that differ
+ * only in case or accents share a slug, and so a page.
+ */
+export function authorSlug(name: string): string {
+	return slugify(name);
+}
+
+export function authorPath(name: string): string | undefined {
+	const slug = authorSlug(name);
+	return slug ? `/gazette/authors/${slug}` : undefined;
+}
+
+export interface Author {
+	slug: string;
+	name: string;
+	items: GazetteItem[];
+}
+
+/**
+ * Groups pieces by author, splitting co-authored bylines. Spellings that
+ * share a slug share an author, named by the spelling used most often.
+ */
+export function authorsOf(items: GazetteItem[]): Author[] {
+	const bySlug = new Map<
+		string,
+		{ spellings: Map<string, number>; items: Set<GazetteItem> }
+	>();
+	for (const item of items) {
+		for (const name of parseAuthors(item.author)) {
+			const slug = authorSlug(name);
+			if (!slug) continue;
+
+			const author = bySlug.get(slug) ?? {
+				spellings: new Map<string, number>(),
+				items: new Set<GazetteItem>(),
+			};
+			author.spellings.set(name, (author.spellings.get(name) ?? 0) + 1);
+			author.items.add(item);
+			bySlug.set(slug, author);
+		}
+	}
+
+	return [...bySlug].map(([slug, { spellings, items }]) => ({
+		slug,
+		name: [...spellings].reduce((best, next) =>
+			next[1] > best[1] ? next : best
+		)[0],
+		items: [...items],
+	}));
 }

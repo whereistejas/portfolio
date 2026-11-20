@@ -563,6 +563,10 @@ html.fonts-loading body {
 			}
 		}
 
+		.gazette-byline a:hover {
+			@apply underline underline-offset-2;
+		}
+
 		/* ── Permalinks ──────────────────────────────────────────── */
 
 		.gazette-permalink {
@@ -593,8 +597,11 @@ html.fonts-loading body {
 		/* ── Volume navigation ───────────────────────────────────── */
 
 		.gazette-earlier {
-			@apply pt-0.5 font-serif;
 			border-top: 1px solid var(--gazette-edition-rule);
+		}
+
+		:is(.gazette-earlier, .gazette-authors) {
+			@apply pt-0.5 font-serif;
 
 			h2 {
 				@apply mb-0.75 text-2xl leading-[1.2] font-semibold;

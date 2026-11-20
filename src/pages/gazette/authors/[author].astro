@@ -1,0 +1,72 @@
+---
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
+import { getCollection } from "astro:content";
+
+import GazetteEdition from "../../../components/GazetteEdition.astro";
+import GazettePaper from "../../../components/GazettePaper.astro";
+import Page from "../../../layouts/page.astro";
+import { renderHighlightsHtml } from "../../../lib/feed";
+import {
+	GAZETTE_FONTS,
+	GAZETTE_PREFETCH_FONTS,
+	authorsOf,
+	filterIssue,
+	groupIntoIssues,
+	itemPathsOf,
+} from "../../../lib/gazette";
+
+export const getStaticPaths = (async () => {
+	const items = (await getCollection("readwise-archive")).map(
+		(entry) => entry.data
+	);
+	const issues = groupIntoIssues(items);
+
+	return authorsOf(items).map((author) => {
+		const theirs = new Set(author.items);
+		const volumes = issues.flatMap((issue) => {
+			const own = filterIssue(issue, (item) => theirs.has(item));
+			return own ? [{ issue: own, paths: itemPathsOf(issue) }] : [];
+		});
+
+		return {
+			params: { author: author.slug },
+			props: { name: author.name, items: author.items, volumes },
+		};
+	});
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { name, items, volumes } = Astro.props;
+const highlightsHtml = await renderHighlightsHtml(items);
+---
+
+<Page
+	title={`${name} · Gazette`}
+	fonts={GAZETTE_FONTS}
+	prefetchFonts={GAZETTE_PREFETCH_FONTS}
+>
+	<Fragment slot="main">
+		<GazettePaper>
+			<div class="gazette-masthead">
+				<h1><a href="/gazette">Gazette</a></h1>
+				<span class="gazette-volume">{name}</span>
+			</div>
+
+			<section class="gazette-previous">
+				<div class="gazette-grid">
+					{
+						volumes.map(({ issue, paths }) => (
+							<GazetteEdition
+								issue={issue}
+								highlightsHtml={highlightsHtml}
+								numbered
+								paths={paths}
+							/>
+						))
+					}
+				</div>
+			</section>
+		</GazettePaper>
+	</Fragment>
+</Page>

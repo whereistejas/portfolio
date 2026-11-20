@@ -1,4 +1,5 @@
 ---
+import GazetteAuthors from "./GazetteAuthors.astro";
 import GazetteEditionItem from "./GazetteEditionItem.astro";
 import GazetteHighlights from "./GazetteHighlights.astro";
 import GazetteNote from "./GazetteNote.astro";
@@ -18,6 +19,8 @@ interface Props {
 	issue: Issue;
 	highlightsHtml: Map<string, string[]>;
 	numbered: boolean;
+	/** Item paths of the whole volume, when `issue` shows only part of it. */
+	paths?: Map<string, string>;
 }
 
 const { issue, highlightsHtml, numbered } = Astro.props;
@@ -33,9 +36,9 @@ const span = Math.min(
 );
 const highlightsOf = (item: GazetteItem) =>
 	highlightsHtml.get(item.readwise_id) ?? [];
-const paths = numbered ? itemPathsOf(issue) : undefined;
+const paths = numbered ? (Astro.props.paths ?? itemPathsOf(issue)) : undefined;
 const permalinkOf = (item: GazetteItem) => paths?.get(item.readwise_id);
-const byline = parseAuthors(issue.lead.author).join(", ");
+const authors = parseAuthors(issue.lead.author);
 const leadHighlights = highlightsOf(issue.lead);
 const hasNote = leadHighlights.length > 0;
 const [firstColumn = [], ...otherColumns] = splitIntoColumns(
@@ -80,9 +83,12 @@ const [firstColumn = [], ...otherColumns] = splitIntoColumns(
 					/>
 				</div>
 				{
-					byline && (
+					authors.length > 0 && (
 						<p class="gazette-byline">
-							By <span>{byline}</span>
+							By{" "}
+							<span>
+								<GazetteAuthors names={authors} linked={numbered} />
+							</span>
 						</p>
 					)
 				}
@@ -109,6 +115,7 @@ const [firstColumn = [], ...otherColumns] = splitIntoColumns(
 								item={item}
 								highlightsHtml={highlightsOf(item)}
 								permalink={permalinkOf(item)}
+								linked={numbered}
 							/>
 						))}
 					</ul>
@@ -124,6 +131,7 @@ const [firstColumn = [], ...otherColumns] = splitIntoColumns(
 								item={item}
 								highlightsHtml={highlightsOf(item)}
 								permalink={permalinkOf(item)}
+								linked={numbered}
 							/>
 						))}
 					</ul>

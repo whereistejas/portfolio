@@ -1,0 +1,24 @@
+---
+import { authorPath } from "../lib/gazette";
+
+interface Props {
+	names: string[];
+	linked: boolean;
+}
+
+const { names, linked } = Astro.props;
+
+const authors = names.map((name) => ({
+	name,
+	href: linked ? authorPath(name) : undefined,
+}));
+---
+
+{
+	authors.map(({ name, href }, index) => (
+		<>
+			{index > 0 && ", "}
+			{href ? <a href={href}>{name}</a> : name}
+		</>
+	))
+}

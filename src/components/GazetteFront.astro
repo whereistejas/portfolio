@@ -70,6 +70,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 							item={item}
 							highlightsHtml={highlightsOf(item.readwise_id)}
 							permalink={permalinkOf(item)}
+							linked={numbered}
 							variant="side"
 							noted
 						/>
@@ -83,6 +84,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 				item={lead}
 				highlightsHtml={highlightsOf(lead.readwise_id)}
 				permalink={permalinkOf(lead)}
+				linked={numbered}
 				variant="lead"
 				noted
 			/>
@@ -94,6 +96,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 								item={item}
 								highlightsHtml={highlightsOf(item.readwise_id)}
 								permalink={permalinkOf(item)}
+								linked={numbered}
 								variant="side"
 							/>
 						))}
@@ -110,6 +113,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 							item={item}
 							highlightsHtml={highlightsOf(item.readwise_id)}
 							permalink={permalinkOf(item)}
+							linked={numbered}
 							variant="side"
 							noted
 						/>
@@ -127,6 +131,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 						item={item}
 						highlightsHtml={highlightsOf(item.readwise_id)}
 						permalink={permalinkOf(item)}
+						linked={numbered}
 						marginNote={false}
 					/>
 				))}
@@ -142,6 +147,7 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 						item={item}
 						highlightsHtml={highlightsOf(item.readwise_id)}
 						permalink={permalinkOf(item)}
+						linked={numbered}
 						variant="side"
 					/>
 				))}
