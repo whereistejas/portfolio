@@ -135,20 +135,17 @@ function aboveTheFold(
 }
 
 /**
- * Lays out the front page of an issue. The right column takes the stories
- * with highlights, the left the most recent of the rest. Stories go under the
- * lead while they fit, from the issue's own leftovers and then from
- * `backfill`; the leftovers that don't fit go below the fold.
+ * Lays out the front page of an issue. The stories ranked after the lead
+ * alternate between the right and left columns, so both columns carry the
+ * most highlighted stories, then the most recent when highlights run out.
+ * The rest, newest first, go under the lead while they fit, followed by
+ * `backfill`; those that don't fit go below the fold.
  */
 export function layoutFront(issue: Issue, backfill: GazetteItem[]): Front {
-	const right = issue.rest
-		.filter((item) => item.highlights.length > 0)
-		.slice(0, SIDE_STORIES);
-	const remaining = issue.rest
-		.filter((item) => !right.includes(item))
-		.sort(byRecency);
-	const left = remaining.slice(0, SIDE_STORIES);
-	const more = remaining.slice(SIDE_STORIES);
+	const top = issue.rest.slice(0, SIDE_STORIES * 2);
+	const right = top.filter((_, i) => i % 2 === 0);
+	const left = top.filter((_, i) => i % 2 === 1);
+	const more = issue.rest.slice(SIDE_STORIES * 2).sort(byRecency);
 
 	const candidates = [...more, ...backfill];
 	const fold = candidates.slice(
