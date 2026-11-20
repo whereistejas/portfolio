@@ -1,5 +1,18 @@
 [
   {
+    "author": "Steve Klabnik, Carol Nichols",
+    "category": "article",
+    "date_group": "20 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-20T02:45:42.276Z",
+    "location": "archive",
+    "readwise_id": "01m7vb6wpaqsz77k5nqteca2xm",
+    "summary": "The Rust Programming Language emphasizes returning Result values for functions that might fail, giving calling code options to handle errors effectively. Panicking is recommended when encountering unrecoverable situations, ensuring safety and reliability in your code. Rust's error handling mechanisms, like using Result and panicking strategically, help in writing robust and reliable programs.",
+    "title": "To panic! or Not to panic!",
+    "url": "https://doc.rust-lang.org/book/ch09-03-to-panic-or-not-to-panic.html"
+  },
+  {
     "author": "Rain",
     "category": "article",
     "date_group": "18 Nov 2026",
@@ -15,7 +28,7 @@
     "url": "https://sunshowers.io/posts/anthropic-mononoke-2/"
   },
   {
-    "author": "",
+    "author": "Rain",
     "category": "article",
     "date_group": "18 Nov 2026",
     "highlights": [],
@@ -8515,7 +8528,7 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
-    "author": "",
+    "author": "Aleksey Kladov",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8528,20 +8541,7 @@
     "url": "https://rust-analyzer.github.io//blog/2023/07/24/durable-incrementality.html"
   },
   {
-    "author": "",
-    "category": "article",
-    "date_group": "20 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-20T02:05:17.898Z",
-    "location": "new",
-    "readwise_id": "01m7vb6wpaqsz77k5nqteca2xm",
-    "summary": "The Rust Programming Language emphasizes returning Result values for functions that might fail, giving calling code options to handle errors effectively. Panicking is recommended when encountering unrecoverable situations, ensuring safety and reliability in your code. Rust's error handling mechanisms, like using Result and panicking strategically, help in writing robust and reliable programs.",
-    "title": "The Rust Programming Language",
-    "url": "https://doc.rust-lang.org/book/ch09-03-to-panic-or-not-to-panic.html"
-  },
-  {
-    "author": "",
+    "author": "Alice Ryhl",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8554,7 +8554,7 @@
     "url": "https://ryhl.io/blog/async-what-is-blocking/"
   },
   {
-    "author": "",
+    "author": "Justin Steinman",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8567,7 +8567,7 @@
     "url": "https://stripeacross.com/posts/poisson-disk-sampling/"
   },
   {
-    "author": "",
+    "author": "Packy McCormick",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8576,11 +8576,11 @@
     "location": "new",
     "readwise_id": "01m7vb6r4tf31xh9b8d31zeyfb",
     "summary": "Fuse Energy is an ambitious company aiming to achieve clean fusion energy by selling radiation-as-a-service to fund its journey. By focusing on pulsed power generators, like TITAN, and aligning with government needs, Fuse aims to become a capital-efficient leader in the fusion industry. The company's strategic approach involves building progressively larger machines to generate revenue and eventually deliver fusion power globally.",
-    "title": "Not Boring by Packy McCormick",
+    "title": "Fuse Energy",
     "url": "https://www.notboring.co/p/fuse-energy"
   },
   {
-    "author": "",
+    "author": "Steve Blank",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8602,11 +8602,11 @@
     "location": "new",
     "readwise_id": "01m7vb6n5dy5ezk4tdh36far8m",
     "summary": "AI is improving very fast and can do many tasks that used to need humans, especially in coding and investing. It learns from past patterns but may not always understand or create truly new ideas. While AI can replace many jobs, its full impact on society and the economy is still uncertain.",
-    "title": "The Memo",
+    "title": "AI Hurtles Ahead",
     "url": "https://readwise-assets.s3.amazonaws.com/media/wisereads/articles/ai-hurtles-ahead/1160.pdf"
   },
   {
-    "author": "",
+    "author": "Alice Ryhl",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8619,7 +8619,7 @@
     "url": "https://ryhl.io/blog/actors-with-tokio/"
   },
   {
-    "author": "",
+    "author": "Russell Cohen",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8632,7 +8632,7 @@
     "url": "https://dial9-rs.github.io/blog/principles-for-fast-tokio-applications/"
   },
   {
-    "author": "",
+    "author": "Nicholas Nethercote",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8645,7 +8645,7 @@
     "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html"
   },
   {
-    "author": "",
+    "author": "Daniel Lemire",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8658,7 +8658,7 @@
     "url": "https://lemire.me/blog/2025/04/13/detect-control-characters-quotes-and-backslashes-efficiently-using-swar/"
   },
   {
-    "author": "",
+    "author": "Yagiz Nizipli",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8671,7 +8671,7 @@
     "url": "https://www.yagiz.co/eight-bytes-in-one-register"
   },
   {
-    "author": "",
+    "author": "Sergey Slotin",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8684,7 +8684,7 @@
     "url": "https://en.algorithmica.org/hpc/pipelining/branchless/"
   },
   {
-    "author": "",
+    "author": "Abhinav Upadhyay",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8697,7 +8697,7 @@
     "url": "https://blog.codingconfessions.com/p/virtual-memory"
   },
   {
-    "author": "",
+    "author": "Nathaniel J. Smith",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8710,7 +8710,7 @@
     "url": "https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/"
   },
   {
-    "author": "",
+    "author": "Stuart Sul, Chris Ré",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8723,7 +8723,7 @@
     "url": "https://hazyresearch.stanford.edu/blog/2026-08-05-retire-the-abstractions"
   },
   {
-    "author": "",
+    "author": "Nikita Popov",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8736,7 +8736,7 @@
     "url": "https://www.npopov.com/2020/05/10/Make-LLVM-fast-again.html"
   },
   {
-    "author": "",
+    "author": "Brie Wolfson",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8749,7 +8749,7 @@
     "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
   },
   {
-    "author": "",
+    "author": "Shaun Maguire",
     "category": "tweet",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8762,7 +8762,7 @@
     "url": "https://x.com/shaunmmaguire/status/2116260821080973679/?rw_tt_thread=True"
   },
   {
-    "author": "",
+    "author": "Anne Applebaum",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8771,11 +8771,11 @@
     "location": "new",
     "readwise_id": "01m7vb609nd6kaz5vb95vtty78",
     "summary": "The U.S. is controlling Venezuela’s oil and mineral sales while working with figures from the ruling regime. Many Venezuelans fear this deal will enrich powerful people without bringing real change. They want a legitimate government, elections, and a peaceful path to democracy.",
-    "title": "What the U.S. Is Really Doing in Venezuela - The Atlantic",
+    "title": "What the U.S. Is Really Doing in Venezuela",
     "url": "https://www.theatlantic.com/magazine/2026/12/trump-oil-venezuela-exploitation/689033/"
   },
   {
-    "author": "",
+    "author": "Brian Patrick Eha",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [],
@@ -8784,7 +8784,7 @@
     "location": "new",
     "readwise_id": "01m7vb5yrsyspgckm0qmxrxz3p",
     "summary": "Stories of heroes vanquishing the shadowy forces governing their worlds resonate in today’s frustrated, micromanaged America.",
-    "title": "Escaping Only So Far",
+    "title": "Why Is Young-Adult Fiction So Popular?",
     "url": "https://www.city-journal.org/why-is-young-adult-fiction-so-popular"
   },
   {
@@ -8814,7 +8814,7 @@
     "url": "https://v5.chriskrycho.com/essays/jj-init/"
   },
   {
-    "author": "",
+    "author": "Akshay Oppiliappan",
     "category": "article",
     "date_group": "19 Nov 2026",
     "highlights": [],
@@ -8823,7 +8823,7 @@
     "location": "new",
     "readwise_id": "01m7rjm34gbp94cfz5hdyy18gp",
     "summary": "Tangled supports jujutsu-style stacked PRs so reviewers can comment on individual commits and see their evolution. Jujutsu assigns stable change-ids so edits and rebases keep a clear identity across rewrites. Tangled shows interdiffs between rounds so reviewers can track what changed.",
-    "title": "jujutsu on tangled",
+    "title": "Jujutsu on Tangled",
     "url": "https://blog.tangled.org/stacking/#interdiff-code-review-on-tangled"
   },
   {
@@ -9852,7 +9852,7 @@
     "url": "https://www.harudagondi.space/blog/parse-dont-validate-and-type-driven-design-in-rust/"
   },
   {
-    "author": "",
+    "author": "xnacly",
     "category": "article",
     "date_group": "16 Feb 2026",
     "highlights": [],
