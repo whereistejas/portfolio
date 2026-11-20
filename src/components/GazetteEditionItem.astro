@@ -35,9 +35,8 @@ const byline = parseAuthors(item.author).join(", ");
 			byline && (
 				<>
 					<br />
-					<span class="gazette-byline">
-						By <span>{byline}</span>
-					</span>
+					{/* prettier-ignore */}
+					<span class="gazette-byline">By <span>{byline}</span></span>
 				</>
 			)
 		}
