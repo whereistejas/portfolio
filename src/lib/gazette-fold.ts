@@ -1,4 +1,4 @@
-import { byRecency, type GazetteItem, type Issue } from "./gazette";
+import type { GazetteItem, Issue } from "./gazette";
 
 export interface Front {
 	lead: GazetteItem;
@@ -136,19 +136,18 @@ function aboveTheFold(
 }
 
 /**
- * Lays out the front page of an issue. The stories ranked after the lead
- * alternate between the right and left columns, so both columns carry the
- * most highlighted stories, then the most recent when highlights run out.
- * The rest, newest first, go under the lead while they fit, followed by
- * `backfill`; those that don't fit go below the fold. Phones show the lead
- * and the two stories ranked after it in full, then `compact`: the other
- * stories as short rows, in rank order and then newest first.
+ * Lays out the front page of an issue in rank order: the most highlighted
+ * stories first, then the most recent. The six stories ranked after the lead
+ * alternate between the right and left columns. The rest go under the lead
+ * while they fit, followed by `backfill`; those that don't fit go below the
+ * fold. Phones show the lead and the two stories ranked after it in full,
+ * then `compact`: the other stories as short rows, in rank order.
  */
 export function layoutFront(issue: Issue, backfill: GazetteItem[]): Front {
 	const top = issue.rest.slice(0, SIDE_STORIES * 2);
 	const right = top.filter((_, i) => i % 2 === 0);
 	const left = top.filter((_, i) => i % 2 === 1);
-	const more = issue.rest.slice(SIDE_STORIES * 2).sort(byRecency);
+	const more = issue.rest.slice(SIDE_STORIES * 2);
 
 	const candidates = [...more, ...backfill];
 	const fold = candidates.slice(

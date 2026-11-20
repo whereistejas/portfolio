@@ -44,9 +44,9 @@ The permalink is the `#` after an article's title, from `GazettePermalink` (`src
 
 ## The front on phones
 
-On screens wider than 48rem, the stories ranked after the lead alternate between the right and left columns (`layoutFront`, `src/lib/gazette-fold.ts`): the second goes right, the third left, and so on for six stories. The rest, newest first, fill the space under the lead and then the grid below.
+On screens wider than 48rem, the stories ranked after the lead alternate between the right and left columns (`layoutFront`, `src/lib/gazette-fold.ts`): the second goes right, the third left, and so on for six stories. The rest keep their rank, so any remaining stories with highlights come first and the others follow newest first; they fill the space under the lead and then the grid below.
 
-Phones, under 48rem, stack everything in one column, so they don't alternate. They show the lead and the stories ranked second and third in full, as the table describes. Every other story becomes a short row, in rank order and then newest first: first the fourth to seventh, then the stories under the lead, then the grid.
+Phones, under 48rem, stack everything in one column, so they don't alternate. They show the lead and the stories ranked second and third in full, as the table describes. Every other story becomes a short row, in rank order: first the fourth to seventh, then the stories under the lead, then the grid.
 
 The short rows are `GazetteEditionItem`s in a list of their own, which only phones see. They behave like the rows of a back issue:
 
