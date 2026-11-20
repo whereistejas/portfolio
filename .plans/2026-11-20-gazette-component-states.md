@@ -44,6 +44,21 @@ The permalink is the `#` after an article's title, from `GazettePermalink` (`src
 | Edition heading | None | "Vol. N" linking to the volume page, and the week's end date | Same; "Vol. N" links to the page you are on | None |
 | Navigation | "Earlier volumes" list, loading more editions as you scroll | None | Links to the older and newer volume | None beyond the masthead's link to the volume |
 
+## The front on phones
+
+On screens wider than 48rem, the stories ranked after the lead alternate between the right and left columns (`layoutFront`, `src/lib/gazette-fold.ts`): the second goes right, the third left, and so on for six stories. The rest, newest first, fill the space under the lead and then the grid below.
+
+Phones, under 48rem, stack everything in one column, so they don't alternate. They show the lead and the stories ranked second and third in full, as the table describes. Every other story becomes a short row, in rank order and then newest first: first the fourth to seventh, then the stories under the lead, then the grid.
+
+The short rows are `GazetteEditionItem`s in a list of their own, which only phones see. They behave like the rows of a back issue:
+
+- **Accordion:** closed; the title and byline are the toggle. It shares `name="gazette-highlights"` with the rest of the page, so opening a row closes any other open accordion.
+- **Margin note:** none. The front passes `marginNote={false}`, so a hidden row can't hold an open note when the window widens.
+- **Permalink:** the same link as the story's full version.
+- **Anchor `id`:** none.
+
+The full stories after the third are still in the page, hidden on phones by CSS, and the short rows are hidden on wider screens. Opening a story on one side and then crossing 48rem doesn't carry the open state across.
+
 ## Permalinks move to the item page
 
 Today the permalink points to `/gazette/vol-N#<anchor>`, where the anchor is a slug of the article's title (`anchorsOf`, `src/lib/gazette.ts:87`). The volume page gives each article that slug as its `id`, so the browser scrolls to it, and `:target` (`src/styles/global.css:571`) paints it with a yellow wash.

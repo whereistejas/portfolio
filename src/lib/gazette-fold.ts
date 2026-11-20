@@ -6,6 +6,7 @@ export interface Front {
 	right: GazetteItem[];
 	fold: GazetteItem[];
 	below: GazetteItem[];
+	compact: GazetteItem[];
 }
 
 const SIDE_STORIES = 3;
@@ -139,7 +140,9 @@ function aboveTheFold(
  * alternate between the right and left columns, so both columns carry the
  * most highlighted stories, then the most recent when highlights run out.
  * The rest, newest first, go under the lead while they fit, followed by
- * `backfill`; those that don't fit go below the fold.
+ * `backfill`; those that don't fit go below the fold. Phones show the lead
+ * and the two stories ranked after it in full, then `compact`: the other
+ * stories as short rows, in rank order and then newest first.
  */
 export function layoutFront(issue: Issue, backfill: GazetteItem[]): Front {
 	const top = issue.rest.slice(0, SIDE_STORIES * 2);
@@ -153,5 +156,6 @@ export function layoutFront(issue: Issue, backfill: GazetteItem[]): Front {
 		aboveTheFold(left, issue.lead, right, candidates)
 	);
 	const below = more.filter((item) => !fold.includes(item));
-	return { lead: issue.lead, left, right, fold, below };
+	const compact = [...top.slice(2), ...fold, ...below];
+	return { lead: issue.lead, left, right, fold, below, compact };
 }

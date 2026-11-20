@@ -1,4 +1,5 @@
 ---
+import GazetteEditionItem from "./GazetteEditionItem.astro";
 import GazetteStory from "./GazetteStory.astro";
 import {
 	formatLongDate,
@@ -31,7 +32,7 @@ const {
 	numbered,
 	permalinkOf,
 } = Astro.props;
-const { lead, left, right, fold, below } = front;
+const { lead, left, right, fold, below, compact } = front;
 const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 ---
 
@@ -117,6 +118,21 @@ const highlightsOf = (id: string) => highlightsHtml.get(id) ?? [];
 			)
 		}
 	</div>
+
+	{
+		compact.length > 0 && (
+			<ul class="gazette-edition-list gazette-compact">
+				{compact.map((item) => (
+					<GazetteEditionItem
+						item={item}
+						highlightsHtml={highlightsOf(item.readwise_id)}
+						permalink={permalinkOf?.(item)}
+						marginNote={false}
+					/>
+				))}
+			</ul>
+		)
+	}
 
 	{
 		below.length > 0 && (

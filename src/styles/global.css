@@ -476,6 +476,24 @@ html.fonts-loading body {
 			}
 		}
 
+		/* ── Front page on phones: three stories, then short rows ── */
+
+		.gazette-edition-list.gazette-compact {
+			@apply -mt-1;
+
+			@media (width >= 48rem) {
+				@apply hidden;
+			}
+		}
+
+		@media (width < 48rem) {
+			.gazette-side .gazette-story:not(:first-child),
+			.gazette-fold,
+			.gazette-more-grid {
+				@apply hidden;
+			}
+		}
+
 		/* ── Previous editions ───────────────────────────────────── */
 
 		.gazette-grid {

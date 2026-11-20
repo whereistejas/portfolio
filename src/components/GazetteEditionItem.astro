@@ -10,11 +10,12 @@ interface Props {
 	highlightsHtml: string[];
 	id?: string | undefined;
 	permalink?: string | undefined;
+	marginNote?: boolean;
 }
 
-const { item, highlightsHtml, id, permalink } = Astro.props;
+const { item, highlightsHtml, id, permalink, marginNote = true } = Astro.props;
 
-const hasNote = wantsMarginNote(highlightsHtml.length);
+const hasNote = marginNote && wantsMarginNote(highlightsHtml.length);
 const byline = parseAuthors(item.author).join(", ");
 ---
 
