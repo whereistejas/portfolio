@@ -4,14 +4,14 @@ The gazette reuses the same components on different pages, and each page renders
 
 ## The pages
 
-There are two gazette pages today, and a third is planned.
+There are three gazette pages.
 
 - **Front page**, `/gazette` (`src/pages/gazette.astro`, which renders `src/components/Gazette.astro`). It has three parts:
   - **The front**: the latest volume, laid out like a newspaper front page by `GazetteFront` (`src/components/GazetteFront.astro`) with one `GazetteStory` per article.
   - **Back issues**: the 12 volumes before it, each rendered as a compact `GazetteEdition` (`src/components/GazetteEdition.astro`).
   - **Earlier volumes**: a list of links to every older volume (`GazetteEarlier`, `src/components/GazetteEarlier.astro`). As you scroll near the list, its script fetches four of those volume pages at a time and moves their `.gazette-edition` element onto the front page. Editions loaded this way keep the markup they had on the volume page.
 - **Volume page**, `/gazette/vol-N` (`src/pages/gazette/[volume].astro`). Shows one volume as a `GazetteEdition`.
-- **Item page** (planned). One article and its highlights.
+- **Item page**, `/gazette/vol-N/<slug>` (`src/pages/gazette/[volume]/[item].astro`). One article and its highlights, rendered by `GazetteArticle` (`src/components/GazetteArticle.astro`).
 
 `/tbr` (`src/pages/tbr.astro`) also renders `Gazette.astro`, but with `numbered={false}`: it has no volume numbers and no permalinks. Any change to a shared component reaches it too.
 
@@ -26,8 +26,6 @@ The second is the **margin note**, `GazetteNote` (`src/components/GazetteNote.as
 Only some articles get a margin note. The table below says which ones do on each page.
 
 ## States by page
-
-The table shows the states once the item page exists. Only the permalink and the anchors change for the pages that exist today; the next section covers that change.
 
 The permalink is the `#` after an article's title, from `GazettePermalink` (`src/components/GazettePermalink.astro`). The link is invisible until you hover over the article or focus the link, and it is always visible on touch screens.
 
@@ -59,11 +57,11 @@ The short rows are `GazetteEditionItem`s in a list of their own, which only phon
 
 The full stories after the third are still in the page, hidden on phones by CSS, and the short rows are hidden on wider screens. Opening a story on one side and then crossing 48rem doesn't carry the open state across.
 
-## Permalinks move to the item page
+## Permalinks moved to the item page
 
-Today the permalink points to `/gazette/vol-N#<anchor>`, where the anchor is a slug of the article's title (`anchorsOf`, `src/lib/gazette.ts:87`). The volume page gives each article that slug as its `id`, so the browser scrolls to it, and `:target` (`src/styles/global.css:571`) paints it with a yellow wash.
+The permalink used to point to `/gazette/vol-N#<anchor>`, where the anchor is a slug of the article's title (`anchorsOf`, `src/lib/gazette.ts`). The volume page gave each article that slug as its `id`, so the browser scrolled to it, and a `:target` rule painted it with a yellow wash.
 
-Once each article has its own page, the permalink points there instead, and nothing needs the `id`s any more. So they go, along with the `anchored` prop of `GazetteEdition`, the `:target` wash and its `scroll-margin-top`. `anchorsOf` stays, because its slug names the item page: `/gazette/vol-N/<slug>`.
+Now that each article has its own page, the permalink points there instead (`itemPathsOf`, `src/lib/gazette.ts`), and nothing needs the `id`s any more. So they went, along with the `anchored` prop of `GazetteEdition`, the `:target` wash and its `scroll-margin-top`. `anchorsOf` stays, because its slug names the item page.
 
 That URL can change. Volume numbers shift when a re-archived article lands in an older week that had no articles, and the `-1`, `-2` suffixes on repeated titles follow the order of articles within a volume. We accept that: an old item link may then lead nowhere, or to a different article with the same title.
 
@@ -75,9 +73,9 @@ The item page exists to show one article's highlights, so it drops everything th
 
 - **No accordion.** All highlights show as plain quotes. With nothing to open, the page has no states to switch between.
 - **No margin note.** It would repeat highlights that are already on the page.
-- **Full summary and a pull quote**, as on the front page's lead story. The remaining highlights follow as quotes.
+- **Full summary and a pull quote**, as on the front page's lead story, whose styles (`gazette-story--lead`) it borrows. The remaining highlights follow as quotes, styled like the ones in an open accordion.
 - **No permalink and no anchor.** The `#` would point at the page itself, and nothing links into the page by fragment.
-- **The volume page's masthead.** Its "Vol. N" links to the whole volume, which is the way back. There are no links to older and newer volumes, or to neighbouring items.
+- **The volume page's masthead**, except that "Vol. N" links to the whole volume, which is the way back. There are no links to older and newer volumes, or to neighbouring items.
 
 ## Keeping the volume page otherwise unchanged
 
