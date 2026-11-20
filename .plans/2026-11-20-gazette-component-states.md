@@ -31,31 +31,32 @@ The permalink is the `#` after an article's title, from `GazettePermalink` (`src
 
 | | Front page: the front | Front page: back issues | Volume page | Item page |
 | --- | --- | --- | --- | --- |
-| Component | `GazetteStory`: one lead story, then side stories in the left and right columns, the fold under the lead, and the grid below | `GazetteEdition`: a lead piece, then the rest as a list (`GazetteEditionItem`) | `GazetteEdition`, as on the front page | Open |
-| Summary text (dek) | Lead: in full. Side stories: cut to the lines that fit their space | Lead: in full. List items: none | As on the front page | Open |
-| Pull quote | Lead only: its first highlight of 60 to 400 characters | None | None | Open |
-| Highlights accordion | Closed. A separate "N highlights" line under the summary | Closed. Lead: a separate line. List items: the title and byline are the toggle | As on the front page | **Open by default** |
-| Margin note | Lead and the left and right columns: whenever highlights remain after the pull quote. Fold and grid: more than 4 highlights | Lead: whenever it has highlights. List items: more than 4 highlights | As on the front page | **None** |
-| Permalink (`#`) | Yes, to the latest volume | Yes | Yes | Open |
-| Anchor `id`, yellow wash when linked to | No | No, except editions loaded while scrolling, which bring the volume page's `id`s | Yes, the wash comes from `:target` (`src/styles/global.css:571`) | Not needed |
-| Masthead | Paper name, "Early Edition →" link to `/tbr`, "Vol. N", build date, tagline | None of its own | "Gazette" linking to `/gazette`, "Vol. N", the week's end date | Open |
-| Edition heading | None | "Vol. N" linking to the volume page, and the week's end date | Same; "Vol. N" links to the page you are on | Open |
-| Navigation | "Earlier volumes" list, loading more editions as you scroll | None | Links to the older and newer volume | Open |
-
-Bold cells are decided. "Open" cells are the questions below.
+| Component | `GazetteStory`: one lead story, then side stories in the left and right columns, the fold under the lead, and the grid below | `GazetteEdition`: a lead piece, then the rest as a list (`GazetteEditionItem`) | `GazetteEdition`, as on the front page | Its own component, not `GazetteEdition` |
+| Summary text (dek) | Lead: in full. Side stories: cut to the lines that fit their space | Lead: in full. List items: none | As on the front page | In full |
+| Pull quote | Lead only: its first highlight of 60 to 400 characters | None | None | Yes: the first highlight of 60 to 400 characters, as on the lead story |
+| Highlights accordion | Closed. A separate "N highlights" line under the summary | Closed. Lead: a separate line. List items: the title and byline are the toggle | As on the front page | None: every highlight is shown as a plain quote, with no toggle |
+| Margin note | Lead and the left and right columns: whenever highlights remain after the pull quote. Fold and grid: more than 4 highlights | Lead: whenever it has highlights. List items: more than 4 highlights | As on the front page | None |
+| Permalink (`#`) | Yes, to the latest volume | Yes | Yes | None |
+| Anchor `id`, yellow wash when linked to | No | No, except editions loaded while scrolling, which bring the volume page's `id`s | Yes, the wash comes from `:target` (`src/styles/global.css:571`) | None |
+| Masthead | Paper name, "Early Edition →" link to `/tbr`, "Vol. N", build date, tagline | None of its own | "Gazette" linking to `/gazette`, "Vol. N", the week's end date | As on the volume page; "Vol. N" links to the whole volume |
+| Edition heading | None | "Vol. N" linking to the volume page, and the week's end date | Same; "Vol. N" links to the page you are on | None |
+| Navigation | "Earlier volumes" list, loading more editions as you scroll | None | Links to the older and newer volume | None beyond the masthead's link to the volume |
 
 ## The item page
 
-Two things are decided.
+The item page exists to show one article's highlights, so it drops everything that hides them or competes with them.
 
-- **No margin note.** On a page with one article, the note would repeat the highlights in the margin for no reason. The item page should not mark the article as noted, so the accordion's own content shows at every width.
-- **The accordion starts open.** The highlights are the reason to visit an item page, so they show without a click.
+- **No accordion.** All highlights show as plain quotes. With nothing to open, the page has no states to switch between.
+- **No margin note.** It would repeat highlights that are already on the page.
+- **Full summary and a pull quote**, as on the front page's lead story. The remaining highlights follow as quotes.
+- **No permalink and no anchor.** The `#` would point at the page itself, and nothing links into the page by fragment.
+- **The volume page's masthead.** Its "Vol. N" links to the whole volume, which is the way back. There are no links to older and newer volumes, or to neighbouring items.
 
-The rest is open:
+## Keeping the volume page unchanged
 
-- Should the accordion still close, or should the highlights be plain blockquotes with no toggle?
-- Does the summary show in full? Does the first suitable highlight become a pull quote, as on the lead story?
-- The `#` link would point at the page itself. Drop it, or keep it as a "copy link" target?
-- What links back: to the volume (and to the article's place in it), to the previous and next item, or both?
-- What does the masthead show?
-- If the item page reuses `GazetteEdition` or `GazetteEditionItem`, its changes must not alter the volume page's edition. That edition is also the one the front page copies in as you scroll.
+The volume page's edition is also the one the front page copies in as you scroll: `GazetteEarlier` fetches each volume page and takes its `.gazette-edition` element. So the item page must not change how the volume page renders.
+
+- **Its own component.** The item page renders the article with a component of its own, not with `GazetteEdition` or `GazetteEditionItem` in a new mode. It can reuse helpers such as `parseAuthors` and the highlight HTML from `renderHighlightsHtml`, but no edition component, so the volume page's markup cannot change by accident.
+- **No edition on the item page.** The page contains no `.gazette-edition` element, so the front page's scrolling can never pick it up.
+- **Styles under its own class.** New rules in `src/styles/global.css` select only the item page's own class, so they cannot restyle the volume page. The build comparison below checks markup, not styles.
+- **A before-and-after build.** Build the site before and after the change, and compare every `dist/gazette/vol-*/index.html`. Apart from hashed asset names, the files must be identical.
