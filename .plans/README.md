@@ -2,6 +2,7 @@
 
 ## Active / recent
 
+- [Gazette component states](./2026-11-20-gazette-component-states.md) — How each gazette component renders on the front page, the volume page and the planned item page; open questions for the item page.
 - [Cache pipeline refactor](./2026-04-20-cache-pipeline-refactor.md) — Three-phase plan to remove the dead LLM pipeline, unify archive + queue around `cache-processed.json`, and sort the inbox by `last_highlighted_at`.
 - [Archive highlights pane UX](./2026-03-30-archive-highlights-pane-ux.md) — Card states (idle / hover / expanded), overlay scrim, hover parity with plain feed rows, smooth border and shadow transitions.
 
