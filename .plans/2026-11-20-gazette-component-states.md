@@ -48,7 +48,9 @@ The permalink is the `#` after an article's title, from `GazettePermalink` (`src
 
 Today the permalink points to `/gazette/vol-N#<anchor>`, where the anchor is a slug of the article's title (`anchorsOf`, `src/lib/gazette.ts:87`). The volume page gives each article that slug as its `id`, so the browser scrolls to it, and `:target` (`src/styles/global.css:571`) paints it with a yellow wash.
 
-Once each article has its own page, the permalink points there instead, and nothing needs the `id`s any more. So they go, along with the `anchored` prop of `GazetteEdition`, the `:target` wash and its `scroll-margin-top`. `anchorsOf` stays, because its slug names the item page.
+Once each article has its own page, the permalink points there instead, and nothing needs the `id`s any more. So they go, along with the `anchored` prop of `GazetteEdition`, the `:target` wash and its `scroll-margin-top`. `anchorsOf` stays, because its slug names the item page: `/gazette/vol-N/<slug>`.
+
+That URL can change. Volume numbers shift when a re-archived article lands in an older week that had no articles, and the `-1`, `-2` suffixes on repeated titles follow the order of articles within a volume. We accept that: an old item link may then lead nowhere, or to a different article with the same title.
 
 Links shared before the change still open the right volume, but at the top and without the wash. Dropping the `id`s also fixes a bug: editions loaded while scrolling the front page used to bring their `id`s with them, and titles that repeat across volumes gave the front page duplicate `id`s.
 
