@@ -27,8 +27,7 @@ const byline = parseAuthors(item.author).join(", ");
 		highlightsHtml={highlightsHtml}
 	>
 		<a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a
-		>
-		<GazettePermalink href={permalink} title={item.title} />
+		><GazettePermalink href={permalink} title={item.title} />
 		{
 			byline && (
 				<>

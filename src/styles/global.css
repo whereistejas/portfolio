@@ -566,8 +566,15 @@ html.fonts-loading body {
 		/* ── Permalinks ──────────────────────────────────────────── */
 
 		.gazette-permalink {
-			@apply text-fg-faint dark:text-fg-faint-dark ml-0.25 font-normal opacity-0;
+			@apply text-fg-faint dark:text-fg-faint-dark inline-block w-0 font-normal whitespace-nowrap opacity-0;
+			translate: calc(0.25em + 0.25rem) 0;
 			transition: opacity 150ms var(--gazette-ease-out);
+
+			&:has(+ .gazette-count) {
+				@apply w-auto;
+				translate: none;
+				margin-left: calc(0.25em + 0.25rem);
+			}
 
 			&:focus-visible {
 				@apply opacity-100;

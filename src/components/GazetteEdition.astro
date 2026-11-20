@@ -74,8 +74,7 @@ const [firstColumn = [], ...otherColumns] = splitIntoColumns(
 				<div class="gazette-headline">
 					<a href={issue.lead.url} target="_blank" rel="noopener noreferrer"
 						>{issue.lead.title}</a
-					>
-					<GazettePermalink
+					><GazettePermalink
 						href={permalinkOf(issue.lead)}
 						title={issue.lead.title}
 					/>
