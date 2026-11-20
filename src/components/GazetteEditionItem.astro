@@ -8,12 +8,11 @@ import { wantsMarginNote, type GazetteItem } from "../lib/gazette";
 interface Props {
 	item: GazetteItem;
 	highlightsHtml: string[];
-	id?: string | undefined;
 	permalink?: string | undefined;
 	marginNote?: boolean;
 }
 
-const { item, highlightsHtml, id, permalink, marginNote = true } = Astro.props;
+const { item, highlightsHtml, permalink, marginNote = true } = Astro.props;
 
 const hasNote = marginNote && wantsMarginNote(highlightsHtml.length);
 const byline = parseAuthors(item.author).join(", ");
@@ -22,7 +21,6 @@ const byline = parseAuthors(item.author).join(", ");
 <li
 	class:list={{ "gazette-noted": hasNote }}
 	data-note-anchor={hasNote ? "" : undefined}
-	id={id}
 >
 	<GazetteHighlights
 		class="gazette-edition-title"

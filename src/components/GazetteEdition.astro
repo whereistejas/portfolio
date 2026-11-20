@@ -5,7 +5,6 @@ import GazetteNote from "./GazetteNote.astro";
 import GazettePermalink from "./GazettePermalink.astro";
 import { parseAuthors } from "../lib/feed";
 import {
-	anchorsOf,
 	formatDate,
 	formatVolume,
 	itemPathsOf,
@@ -19,10 +18,9 @@ interface Props {
 	issue: Issue;
 	highlightsHtml: Map<string, string[]>;
 	numbered: boolean;
-	anchored?: boolean;
 }
 
-const { issue, highlightsHtml, numbered, anchored = false } = Astro.props;
+const { issue, highlightsHtml, numbered } = Astro.props;
 
 const LEAD_LINES = 4;
 const LINES_PER_COLUMN = 9;
@@ -35,9 +33,6 @@ const span = Math.min(
 );
 const highlightsOf = (item: GazetteItem) =>
 	highlightsHtml.get(item.readwise_id) ?? [];
-const anchors = numbered ? anchorsOf(issue) : undefined;
-const anchorOf = (item: GazetteItem) =>
-	anchored ? anchors?.get(item.readwise_id) : undefined;
 const paths = numbered ? itemPathsOf(issue) : undefined;
 const permalinkOf = (item: GazetteItem) => paths?.get(item.readwise_id);
 const byline = parseAuthors(issue.lead.author).join(", ");
@@ -75,7 +70,6 @@ const [firstColumn = [], ...otherColumns] = splitIntoColumns(
 			<div
 				class:list={["gazette-edition-lead", { "gazette-noted": hasNote }]}
 				data-note-anchor={hasNote ? "" : undefined}
-				id={anchorOf(issue.lead)}
 			>
 				<div class="gazette-headline">
 					<a href={issue.lead.url} target="_blank" rel="noopener noreferrer"
@@ -115,7 +109,6 @@ const [firstColumn = [], ...otherColumns] = splitIntoColumns(
 							<GazetteEditionItem
 								item={item}
 								highlightsHtml={highlightsOf(item)}
-								id={anchorOf(item)}
 								permalink={permalinkOf(item)}
 							/>
 						))}
@@ -131,7 +124,6 @@ const [firstColumn = [], ...otherColumns] = splitIntoColumns(
 							<GazetteEditionItem
 								item={item}
 								highlightsHtml={highlightsOf(item)}
-								id={anchorOf(item)}
 								permalink={permalinkOf(item)}
 							/>
 						))}

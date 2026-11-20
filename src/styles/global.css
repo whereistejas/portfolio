@@ -583,15 +583,6 @@ html.fonts-loading body {
 			@apply opacity-100;
 		}
 
-		:is(.gazette-edition-lead, .gazette-edition-list li) {
-			scroll-margin-top: 2rem;
-
-			&:target {
-				background-color: var(--gazette-highlighter-wash);
-				box-shadow: 0 0 0 0.5rem var(--gazette-highlighter-wash);
-			}
-		}
-
 		/* ── Volume navigation ───────────────────────────────────── */
 
 		.gazette-earlier {
