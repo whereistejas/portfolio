@@ -3,11 +3,7 @@ import GazetteHighlights from "./GazetteHighlights.astro";
 import GazetteNote from "./GazetteNote.astro";
 import GazettePermalink from "./GazettePermalink.astro";
 import { parseAuthors } from "../lib/feed";
-import {
-	pullQuoteIndex,
-	wantsMarginNote,
-	type GazetteItem,
-} from "../lib/gazette";
+import { wantsMarginNote, type GazetteItem } from "../lib/gazette";
 
 interface Props {
 	item: GazetteItem;
@@ -20,7 +16,12 @@ interface Props {
 const { item, highlightsHtml, variant, noted = false, permalink } = Astro.props;
 
 const byline = parseAuthors(item.author).join(", ");
-const pullIndex = variant === "lead" ? pullQuoteIndex(item) : -1;
+const pullIndex =
+	variant === "lead"
+		? item.highlights.findIndex(
+				(text) => text.length >= 60 && text.length <= 400
+			)
+		: -1;
 const pullQuote = highlightsHtml[pullIndex];
 const tucked = highlightsHtml.filter((_, i) => i !== pullIndex);
 const hasNote =

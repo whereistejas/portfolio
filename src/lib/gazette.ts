@@ -84,16 +84,6 @@ export function itemPathsOf(issue: Issue): Map<string, string> {
 	);
 }
 
-/**
- * Picks the highlight shown as a pull quote: the first one long enough to
- * read as a sentence and short enough to set large. -1 when none fits.
- */
-export function pullQuoteIndex(item: GazetteItem): number {
-	return item.highlights.findIndex(
-		(text) => text.length >= 60 && text.length <= 400
-	);
-}
-
 function slugify(title: string): string {
 	return title
 		.normalize("NFKD")

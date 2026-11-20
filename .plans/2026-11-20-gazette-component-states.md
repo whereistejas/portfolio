@@ -33,7 +33,7 @@ The permalink is the `#` after an article's title, from `GazettePermalink` (`src
 | --- | --- | --- | --- | --- |
 | Component | `GazetteStory`: one lead story, then side stories in the left and right columns, the fold under the lead, and the grid below | `GazetteEdition`: a lead piece, then the rest as a list (`GazetteEditionItem`) | `GazetteEdition`, as on the front page | Its own component, not `GazetteEdition` |
 | Summary text (dek) | Lead: in full. Side stories: cut to the lines that fit their space | Lead: in full. List items: none | As on the front page | In full |
-| Pull quote | Lead only: its first highlight of 60 to 400 characters | None | None | Yes: the first highlight of 60 to 400 characters, as on the lead story |
+| Pull quote | Lead only: its first highlight of 60 to 400 characters | None | None | None: the first highlight is a quote like the others |
 | Highlights accordion | Closed. A separate "N highlights" line under the summary | Closed. Lead: a separate line. List items: the title and byline are the toggle | As on the front page | None: every highlight is shown as a plain quote, with no toggle |
 | Margin note | Lead and the left and right columns: whenever highlights remain after the pull quote. Fold and grid: more than 4 highlights | Lead: whenever it has highlights. List items: more than 4 highlights | As on the front page | None |
 | Permalink (`#`) | Yes, to the item page | Yes, to the item page | Yes, to the item page | None |
@@ -73,7 +73,7 @@ The item page exists to show one article's highlights, so it drops everything th
 
 - **No accordion.** All highlights show as plain quotes. With nothing to open, the page has no states to switch between.
 - **No margin note.** It would repeat highlights that are already on the page.
-- **Full summary and a pull quote**, as on the front page's lead story, whose styles (`gazette-story--lead`) it borrows. The remaining highlights follow as quotes, styled like the ones in an open accordion.
+- **Full summary, no pull quote.** The headline, byline and summary borrow the front page's lead story styles (`gazette-story--lead`). Every highlight follows in order as a quote, styled like the ones in an open accordion; a large italic pull quote would only repeat one of them out of order.
 - **No permalink and no anchor.** The `#` would point at the page itself, and nothing links into the page by fragment.
 - **The volume page's masthead**, except that "Vol. N" links to the whole volume, which is the way back. There are no links to older and newer volumes, or to neighbouring items.
 

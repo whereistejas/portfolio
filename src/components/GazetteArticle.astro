@@ -1,6 +1,6 @@
 ---
 import { parseAuthors } from "../lib/feed";
-import { pullQuoteIndex, type GazetteItem } from "../lib/gazette";
+import type { GazetteItem } from "../lib/gazette";
 
 interface Props {
 	item: GazetteItem;
@@ -10,9 +10,6 @@ interface Props {
 const { item, highlightsHtml } = Astro.props;
 
 const byline = parseAuthors(item.author).join(", ");
-const pullIndex = pullQuoteIndex(item);
-const pullQuote = highlightsHtml[pullIndex];
-const quotes = highlightsHtml.filter((_, i) => i !== pullIndex);
 ---
 
 <article class="gazette-story gazette-story--lead gazette-article">
@@ -28,11 +25,10 @@ const quotes = highlightsHtml.filter((_, i) => i !== pullIndex);
 		)
 	}
 	{item.summary && <p class="gazette-dek">{item.summary}</p>}
-	{pullQuote && <blockquote class="gazette-pull" set:html={pullQuote} />}
 	{
-		quotes.length > 0 && (
+		highlightsHtml.length > 0 && (
 			<div class="gazette-highlights">
-				{quotes.map((html) => (
+				{highlightsHtml.map((html) => (
 					<blockquote set:html={html} />
 				))}
 			</div>
