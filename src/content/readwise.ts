@@ -8,8 +8,17 @@ import type {
 	ReadwiseLocation,
 	ReadwiseQueueItem,
 } from "./types.ts";
-import { processedItemSchema, readwiseExportResponseSchema } from "./types.ts";
-import { PROCESSED_CACHE_PATH, writeJsonCache } from "./utils.ts";
+import {
+	archiveDatesSchema,
+	processedItemSchema,
+	readwiseExportResponseSchema,
+} from "./types.ts";
+import {
+	ARCHIVE_DATES_PATH,
+	PROCESSED_CACHE_PATH,
+	readJsonCache,
+	writeJsonCache,
+} from "./utils.ts";
 
 function cleanAuthor(raw: string | null | undefined): string {
 	if (!raw) return "";
@@ -226,19 +235,23 @@ async function loadProcessedCache(): Promise<ProcessedItem[]> {
 	}
 }
 
-function toProcessedItem(
-	item: ReadwiseItem,
-	highlightsBySourceUrl: HighlightsBySourceUrl
-): ProcessedItem {
-	const joinKey = normalizeUrlForJoin(item.url.href);
-	const bundle = highlightsBySourceUrl.get(joinKey);
-	const dateGroup = item.last_moved_at
+function formatDateGroup(date: Date): string {
+	return date
 		.toLocaleDateString("en-GB", {
 			day: "2-digit",
 			month: "short",
 			year: "numeric",
 		})
 		.replace(/\//g, ".");
+}
+
+function toProcessedItem(
+	item: ReadwiseItem,
+	highlightsBySourceUrl: HighlightsBySourceUrl
+): ProcessedItem {
+	const joinKey = normalizeUrlForJoin(item.url.href);
+	const bundle = highlightsBySourceUrl.get(joinKey);
+	const dateGroup = formatDateGroup(item.last_moved_at);
 
 	return {
 		readwise_id: item.id,
@@ -281,27 +294,46 @@ export async function refreshProcessedCache(token: string): Promise<void> {
 	);
 }
 
-function processedToArchive(item: ProcessedItem): ReadwiseArchiveItem {
+async function loadArchiveDates(): Promise<Map<string, Date>> {
+	const dates = archiveDatesSchema.parse(
+		await readJsonCache(ARCHIVE_DATES_PATH, {})
+	);
+	return new Map(
+		Object.entries(dates).map(([id, date]) => [id, new Date(date)])
+	);
+}
+
+function processedToArchive(
+	item: ProcessedItem,
+	archivedAt: Date | undefined
+): ReadwiseArchiveItem {
+	const lastMovedAt = archivedAt ?? new Date(item.last_moved_at);
+
 	return {
 		id: item.readwise_id,
 		readwise_id: item.readwise_id,
 		title: item.title,
 		url: item.url,
-		last_moved_at: new Date(item.last_moved_at),
+		last_moved_at: lastMovedAt,
 		summary: item.summary,
 		author: item.author,
 		location: item.location,
 		category: item.category,
-		dateGroup: item.date_group,
+		dateGroup: archivedAt ? formatDateGroup(archivedAt) : item.date_group,
 		highlights: item.highlights,
 	};
 }
 
 export async function loadReadwiseArchive(): Promise<ReadwiseArchiveItem[]> {
-	const items = await loadProcessedCache();
+	const [items, archiveDates] = await Promise.all([
+		loadProcessedCache(),
+		loadArchiveDates(),
+	]);
 	return items
 		.filter((item) => item.location === "archive")
-		.map(processedToArchive);
+		.map((item) =>
+			processedToArchive(item, archiveDates.get(item.readwise_id))
+		);
 }
 
 export async function loadReadwiseQueue(): Promise<ReadwiseQueueItem[]> {

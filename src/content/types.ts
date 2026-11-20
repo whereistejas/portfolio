@@ -86,6 +86,12 @@ export const processedItemSchema = z.object({
 });
 export type ProcessedItem = z.infer<typeof processedItemSchema>;
 
+/**
+ * Archive dates Readwise can't record: Readwise id → the date the piece was
+ * really archived, for pieces imported into the archive after the fact.
+ */
+export const archiveDatesSchema = z.record(z.string(), z.iso.datetime());
+
 export const readwiseArchiveSchema = z.object({
 	id: z.string(),
 	readwise_id: z.string(),

@@ -42,6 +42,8 @@ Both schemas are Zod objects defined in `src/content/types.ts`. **Always import 
 
 - **Processed cache** — the merged `ProcessedItem[]` committed to `src/content/cache-processed.json`. This file is checked in so CI can build without calling the Readwise API if nothing changed.
 
+- **Archive dates** — `src/content/archive-dates.json` maps Readwise ids to the date a piece was really archived. The archive loader uses it instead of `last_moved_at`, because the Reader API can't backdate pieces imported into the archive after the fact (the 25 articles brought over from Matter on 17 Nov 2026 carry their Matter dates here).
+
 Cache paths are centralized in `src/content/utils.ts` (`readJsonCache` / `writeJsonCache` sort keys for deterministic diffs). The archive loader fetches from the Readwise API when `READWISE_TOKEN` is set, updates the cache, and falls back to the cache otherwise. The queue loader fetches fresh each build but never writes to the cache.
 
 The CI workflow runs on every push to `main` and daily at 00:00 UTC. It executes `bun run build` with `READWISE_TOKEN`, then commits any refreshed `src/content/*.json` back to `main` with `[skip ci]` before deploying to Pages.
