@@ -1,5 +1,22 @@
 [
   {
+    "author": "",
+    "category": "article",
+    "date_group": "20 Nov 2026",
+    "highlights": [
+      "I’m not sure what it would take for things to be so bad for the p50 to be at 87s if you do background pre-fetching once a devbox has booted up.",
+      "Post-migration: 3.5s seems surprisingly high, given everything else. With sparse checkouts, presumably this number should be proportional to the size of the diff within that subset between pull operations. For example, naively, I’d expect network to be the limiting factor",
+      "Meaningless comparisons: There are many throughout the post, but here’s one example. “Fetched naively, that would be over 600 PB of git traffic per day.” – here, the 600 PB number is based on 25 million checkouts × 25 GB per compressed copy of the checkout. Given that most clients already have a copy of the repo, this is not a meaningful baseline to compare against unless the daily churn and growth rates add up to close to 100%."
+    ],
+    "last_highlighted_at": "2026-11-20T22:40:22.450Z",
+    "last_moved_at": "2026-11-20T22:41:33.396Z",
+    "location": "archive",
+    "readwise_id": "01m7xhn35ets366g155kjkpmdz",
+    "summary": "Scion is Anthropic’s custom version control system, built to handle a large monorepo and make coding workflows easier. The author finds its five-month migration impressive but says many of its ideas already appeared in earlier systems like Mononoke. They also criticize the announcement for being vague and presenting established ideas as new.",
+    "title": "An outsider’s perspective on Scion and Mononoke",
+    "url": "https://typesanitizer.com/blog/scion.html"
+  },
+  {
     "author": "Steve Klabnik, Carol Nichols",
     "category": "article",
     "date_group": "20 Nov 2026",
@@ -8526,6 +8543,19 @@
     "summary": "Starting your day with a productive task boosts your energy and sets a positive tone for the rest of the day. Avoid checking social media in the morning, as it can drain your motivation and energy. Consistency in doing one important thing each day is key to maintaining productivity and overall well-being.",
     "title": "Advice That Actually Worked For Me",
     "url": "https://nabeelqu.co/advice"
+  },
+  {
+    "author": "Martin Kleppmann",
+    "category": "article",
+    "date_group": "20 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-20T22:44:02.660Z",
+    "location": "new",
+    "readwise_id": "01m7xj33f4ah7fdgm8p6c10q9x",
+    "summary": "The text discusses reimagining databases with Apache Samza, focusing on treating databases as always-growing collections of immutable facts rather than shared mutable states. It explores the concept of materialized views as a mechanism for cache maintenance within databases, suggesting a modern and scalable approach to managing data infrastructure. The text emphasizes the shift towards consuming and joining streams, maintaining materialized views, and the potential benefits of updating views from a stream of changes for improved data processing.",
+    "title": "Turning the database inside-out with Apache Samza",
+    "url": "https://martin.kleppmann.com/2015/03/04/turning-the-database-inside-out.html"
   },
   {
     "author": "Aleksey Kladov",
