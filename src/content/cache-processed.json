@@ -1,5 +1,23 @@
 [
   {
+    "author": "Brie Wolfson",
+    "category": "article",
+    "date_group": "21 Nov 2026",
+    "highlights": [
+      "The Silicon Valley spirit has always been about thinking big, moving fast, delivering impact, and doing things our own way. But I fear this game is getting the best of us.",
+      "What strikes me about this way of building a company is its honesty: letting ambition grow alongside contact with the market, prioritizing customers, hiring to fill a pressing need, and being very selective about ownership. And yet how rare it feels in Silicon Valley, especially in the AI era. With all the money flying around, it’s easy to forget that you *can* take this path.",
+      "“I get there’s a compute crunch, but why do I have to fill out a pile of paperwork, beg to get off waitlists, or text 20 people for an invite in order to use a product?” I was asked by a turbopuffer customer—an up-and-coming hedge fund manager in New York—who contrasted the company with others in Silicon Valley which often make him feel he’s doing *them* a favor by using their products. “With turbopuffer, I feel like an actual customer. I use the product, I pay for it, it’s useful, and they help me when I need them.”",
+      "**Everyone works hard and ships a lot**, especially when it comes to customer needs, but the place lacks the frenetic, sprint-on-everything-all-the-time quality I see at other AI startups. People have room to focus on their work and the time to step out for their quarterly haircut or to pick up their kids from school. Some of this composure I sense can surely be attributed to the high talent bar and culture of end-to-end ownership. But another big piece of it is that the intensity is counterbalanced by a lot of silliness and genuine affection for one another."
+    ],
+    "last_highlighted_at": "2026-11-21T11:57:00.791Z",
+    "last_moved_at": "2026-11-21T16:16:07.203Z",
+    "location": "archive",
+    "readwise_id": "01m7vb63m6rjny3bamh88n3194",
+    "summary": "A love letter to turbopuffer, a new kind of AI company",
+    "title": "The Sane Asylum",
+    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
+  },
+  {
     "author": "",
     "category": "article",
     "date_group": "20 Nov 2026",
@@ -8623,19 +8641,6 @@
     "url": "https://www.thecipherbrief.com/drones-changing-warfare"
   },
   {
-    "author": "Howard Marks",
-    "category": "pdf",
-    "date_group": "20 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-20T02:05:10.190Z",
-    "location": "new",
-    "readwise_id": "01m7vb6n5dy5ezk4tdh36far8m",
-    "summary": "AI is improving very fast and can do many tasks that used to need humans, especially in coding and investing. It learns from past patterns but may not always understand or create truly new ideas. While AI can replace many jobs, its full impact on society and the economy is still uncertain.",
-    "title": "AI Hurtles Ahead",
-    "url": "https://readwise-assets.s3.amazonaws.com/media/wisereads/articles/ai-hurtles-ahead/1160.pdf"
-  },
-  {
     "author": "Alice Ryhl",
     "category": "article",
     "date_group": "20 Nov 2026",
@@ -8764,32 +8769,6 @@
     "summary": "I’m not sure whether this has been true in the past, but it certainly isn’t true now. Each LLVM release is a few percent slower than the last.",
     "title": "Make LLVM fast again",
     "url": "https://www.npopov.com/2020/05/10/Make-LLVM-fast-again.html"
-  },
-  {
-    "author": "Brie Wolfson",
-    "category": "article",
-    "date_group": "20 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-20T02:04:52.230Z",
-    "location": "new",
-    "readwise_id": "01m7vb63m6rjny3bamh88n3194",
-    "summary": "A love letter to turbopuffer, a new kind of AI company",
-    "title": "The Sane Asylum",
-    "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
-  },
-  {
-    "author": "Shaun Maguire",
-    "category": "tweet",
-    "date_group": "20 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-20T02:04:50.504Z",
-    "location": "new",
-    "readwise_id": "01m7vb61yp1er22qftbe5bhemg",
-    "summary": "The author predicts SpaceX’s revenue will grow rapidly, though the forecast has major uncertainties. He argues that Starship, the company’s talent, and low costs give SpaceX a huge advantage. He also expects Starlink and satellite-to-phone services to become highly profitable.",
-    "title": "People don't understand SpaceX",
-    "url": "https://x.com/shaunmmaguire/status/2116260821080973679/?rw_tt_thread=True"
   },
   {
     "author": "Anne Applebaum",
