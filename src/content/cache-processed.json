@@ -1,5 +1,54 @@
 [
   {
+    "author": "Gergely Orosz",
+    "category": "article",
+    "date_group": "23 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-23T02:19:41.462Z",
+    "location": "archive",
+    "readwise_id": "01kmnfytzbyg72w270t2e5b27b",
+    "summary": "A standout engineer named Sam succeeds by breaking down tasks clearly and communicating well with stakeholders. They build strong relationships, learn from others, and focus on quality work beyond their expertise. Sam also understands office politics and uses referrals instead of typical job applications to advance their career.",
+    "title": "“How to be a 10x engineer” – interview with a standout dev",
+    "url": "https://newsletter.pragmaticengineer.com/p/how-to-be-a-10x-engineer-interview?r=1gvqcg&utm_medium=ios&triedRedirect=true"
+  },
+  {
+    "author": "Maciej Cegłowski",
+    "category": "article",
+    "date_group": "23 Nov 2026",
+    "highlights": [
+      "consider the three ways gravity helps to make the process hygienic and easy on Earth:\n\n1.  It presses you down against the toilet with enough force that you can position your body comfortably, and maintain that position.\n    \n2.  It pulls waste away from the body with vigor, easily overcoming contact forces like surface tension.\n    \n3.  It sequesters body waste, first under a layer of water, then ultimately in a gravity-fed sewer pipe or septic tank. The water barrier in the toilet bowl minimizes the time waste is exposed to air and prevents odors from downstream parts of the system from reaching your nose.\n    \n\nIn a zero-gravity environment, you have to find alternatives for all three jobs.",
+      "The state of the art for fecal collection is single-use porous bags that allow airflow but retain solids and water. These are tied off after use and placed in a collection cylinder, along with any gloves and wipes that the astronaut used for cleanup.\n\nEach collection cylinder is designed to hold about ten bags, with astronauts adding compression plates between deposits as needed to squash things down. The fecal bags are not sterilized, so the lid of the collection cylinder has a permeable filter meant to trap odors while letting evolved gases escape to the cabin.",
+      "the likely [shape for a Mars mission](https://idlewords.com/2025/02/the_shape_of_a_mars_mission.htm) is a six month journey out, followed by a 700 day surface stay, then a six month return trip to Earth.",
+      "Both the water and sanitation systems on the space station are designed to be used frequently, and the regular flow of water through their parts helps to control microbial growth and flush away biofilms.\n\nOnce water sits stagnant inside a system for long periods of time, the fight against microbes gets challenging. NASA learned this lesson the hard way on the space station, when a drinking water assembly that waited too long on the ground arrived so contaminated with bacteria that it had to be thrown away."
+    ],
+    "last_highlighted_at": "2026-11-23T02:07:07.653Z",
+    "last_moved_at": "2026-11-23T02:11:54.804Z",
+    "location": "archive",
+    "readwise_id": "01kp8efwfx5zj4ep7b59z6hsrz",
+    "summary": "Space toilets are very hard to design because there is no gravity to help waste go away. Astronauts use special tools and methods to manage waste, but problems like bad smells and clogs still happen. Future Mars missions need even better toilets that work for a long time and keep waste safely stored.",
+    "title": "Let's talk space toilets!",
+    "url": "https://mceglowski.substack.com/p/lets-talk-space-toilets"
+  },
+  {
+    "author": "Steve Blank",
+    "category": "article",
+    "date_group": "23 Nov 2026",
+    "highlights": [
+      "The U.S. has discovered that 1) air superiority and [missile defense](https://www.thecipherbrief.com/tag/missile-defense) systems ([THAAD](https://www.congress.gov/crs-product/IF12645), [Patriot](https://en.wikipedia.org/wiki/MIM-104_Patriot) batteries) designed to counter tens/hundreds of aircraft and missiles is insufficient against asymmetric attacks of thousands of drones. And that 2) undefended high-value *fixed* civilian infrastructure - [oil](https://www.thecipherbrief.com/tag/oil) tankers, data centers, desalination plants, oil refineries, energy nodes, factories, et al -are all at risk.",
+      "The logical response is to go underground (or out to space) but the technology to do it quickly, cheaply, and at scale is genuinely new. The gap in current thinking is between \"put up nets\" (cheap, fast, limited) and \"build a Cold War concrete bunker\" (expensive, slow, permanent). What's missing is the middle layer - *rapidly bored shallow tunnels* that provide genuine overhead cover for movement corridors, equipment parking, and personnel protection.",
+      "For decades the U.S. has built air defense systems designed for shooting down aircraft and missiles. ... All of these systems were designed to use expensive missiles to shoot down equally expensive aircraft and missiles. None of these systems were designed to shoot down hundreds/thousands of very low-cost drones. ... Today, drones are the new artillery; a persistent, cheap and precise overhead threat but with the ability to maneuver laterally, enter openings, and loiter. And mass drone attacks put every high value military *and* civilian target on the surface at risk.",
+      "A net stops an FPV drone's propellers. A shelter stops shrapnel. But a tunnel 15-30 feet underground is invisible to ISR, immune to most top-attack munitions, can't be entered by a drone through a door or window, and survives anything short of a bunker-buster."
+    ],
+    "last_highlighted_at": "2026-11-23T01:42:35.957Z",
+    "last_moved_at": "2026-11-23T01:44:04.174Z",
+    "location": "archive",
+    "readwise_id": "01m7vb6pm51j4wgcta0dr1nsbt",
+    "summary": "OPINION — Drones in Ukraine and in the War with Iran have made the surface of the earth a contested space. The U.S. has discovered that 1) air superiority and missile defense systems (THAAD, Patriot batteries) designed to counter tens/hundreds of aircraft and missiles is insufficient against asymmet...",
+    "title": "Drones Are Changing Warfare And America Isn’t Ready",
+    "url": "https://www.thecipherbrief.com/drones-changing-warfare"
+  },
+  {
     "author": "Brie Wolfson",
     "category": "article",
     "date_group": "21 Nov 2026",
@@ -8563,6 +8612,32 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
+    "author": "",
+    "category": "article",
+    "date_group": "23 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-23T02:02:31.280Z",
+    "location": "new",
+    "readwise_id": "01m8327yzgf12947tq33p2n2bv",
+    "summary": "The essay argues that sending people to Mars soon would be costly, dangerous, and scientifically harmful. Human explorers could contaminate Mars and disrupt the search for life there. The author urges careful research and robotic exploration before any human landing.",
+    "title": "Why Not Mars",
+    "url": "https://idlewords.com/2023/1/why_not_mars.htm"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "23 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-23T02:01:28.952Z",
+    "location": "new",
+    "readwise_id": "01m832623rry198jn1gkh4s4ky",
+    "summary": "Traveling to Mars has strict timing and safety challenges that make missions complicated. Astronauts will face long journeys with no chance of rescue, increasing the risks involved. Preparing for a Mars mission will take many years of testing and planning to ensure crew safety and success.",
+    "title": "The Shape of a Mars Mission",
+    "url": "https://idlewords.com/2025/02/the_shape_of_a_mars_mission.htm"
+  },
+  {
     "author": "Martin Kleppmann",
     "category": "article",
     "date_group": "20 Nov 2026",
@@ -8626,19 +8701,6 @@
     "summary": "Fuse Energy is an ambitious company aiming to achieve clean fusion energy by selling radiation-as-a-service to fund its journey. By focusing on pulsed power generators, like TITAN, and aligning with government needs, Fuse aims to become a capital-efficient leader in the fusion industry. The company's strategic approach involves building progressively larger machines to generate revenue and eventually deliver fusion power globally.",
     "title": "Fuse Energy",
     "url": "https://www.notboring.co/p/fuse-energy"
-  },
-  {
-    "author": "Steve Blank",
-    "category": "article",
-    "date_group": "20 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-20T02:05:11.683Z",
-    "location": "new",
-    "readwise_id": "01m7vb6pm51j4wgcta0dr1nsbt",
-    "summary": "OPINION — Drones in Ukraine and in the War with Iran have made the surface of the earth a contested space. The U.S. has discovered that 1) air superiority and missile defense systems (THAAD, Patriot batteries) designed to counter tens/hundreds of aircraft and missiles is insufficient against asymmet...",
-    "title": "Drones Are Changing Warfare And America Isn’t Ready",
-    "url": "https://www.thecipherbrief.com/drones-changing-warfare"
   },
   {
     "author": "Alice Ryhl",
@@ -9521,19 +9583,6 @@
     "url": "https://spawn-queue.acm.org/doi/fullHtml/10.1145/3773095"
   },
   {
-    "author": "Maciej Cegłowski",
-    "category": "article",
-    "date_group": "15 Apr 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-04-15T11:30:13.117Z",
-    "location": "new",
-    "readwise_id": "01kp8efwfx5zj4ep7b59z6hsrz",
-    "summary": "Space toilets are very hard to design because there is no gravity to help waste go away. Astronauts use special tools and methods to manage waste, but problems like bad smells and clogs still happen. Future Mars missions need even better toilets that work for a long time and keep waste safely stored.",
-    "title": "Let's talk space toilets!",
-    "url": "https://mceglowski.substack.com/p/lets-talk-space-toilets"
-  },
-  {
     "author": "Robert E. Strom, Shaula Yemini",
     "category": "pdf",
     "date_group": "14 Apr 2026",
@@ -9747,19 +9796,6 @@
     "url": "https://leostera.substack.com/p/a-quick-guide-to-gadts-and-why-you"
   },
   {
-    "author": "Gergely Orosz",
-    "category": "article",
-    "date_group": "26 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-03-26T16:34:35.542Z",
-    "location": "new",
-    "readwise_id": "01kmnfytzbyg72w270t2e5b27b",
-    "summary": "A standout engineer named Sam succeeds by breaking down tasks clearly and communicating well with stakeholders. They build strong relationships, learn from others, and focus on quality work beyond their expertise. Sam also understands office politics and uses referrals instead of typical job applications to advance their career.",
-    "title": "“How to be a 10x engineer” – interview with a standout dev",
-    "url": "https://newsletter.pragmaticengineer.com/p/how-to-be-a-10x-engineer-interview?r=1gvqcg&utm_medium=ios&triedRedirect=true"
-  },
-  {
     "author": "Stefanos Baziotis",
     "category": "article",
     "date_group": "26 Mar 2026",
@@ -9789,12 +9825,14 @@
     "author": "Matt Beard",
     "category": "article",
     "date_group": "21 Mar 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "Skills are not passive objects in the minds that carry them."
+    ],
+    "last_highlighted_at": "2026-11-23T02:14:03.362Z",
     "last_moved_at": "2026-03-21T23:17:07.623Z",
     "location": "new",
     "readwise_id": "01km9b09zy8dcjkarnybh8jxqy",
-    "summary": "Your work shapes who you become, often in ways you don’t notice. Choose a career and community that build the values and habits you want to grow. Remember, your job is just one part of a meaningful life.",
+    "summary": "Your work shapes your habits, values, and the way you see others. Choose a career and community that reward qualities you want to grow, like empathy and clear thinking. Consider these factors alongside practical needs, since work doesn’t have to be your only source of meaning.",
     "title": "Your Work Will Change You Whether You Like It Or Not",
     "url": "https://thatvastvariety.substack.com/p/your-work-will-change-you-whether?r=1gvqcg&utm_medium=ios&triedRedirect=true"
   },
