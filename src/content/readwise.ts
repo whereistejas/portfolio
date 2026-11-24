@@ -191,9 +191,17 @@ async function fetchAllReadwiseReaderItems(
 		const docs = data.results ?? [];
 
 		for (const doc of docs) {
+			const sourceUrl = URL.parse(doc.source_url ?? "");
+			if (!sourceUrl) {
+				console.warn(
+					`[readwise] Skipping "${doc.title}" (${doc.id}): source_url ${JSON.stringify(doc.source_url)} is not an absolute URL`
+				);
+				continue;
+			}
+
 			items.push({
 				id: doc.id,
-				url: new URL(doc.source_url),
+				url: sourceUrl,
 				last_moved_at: new Date(doc.last_moved_at),
 				title: doc.title,
 				summary: doc.summary,
