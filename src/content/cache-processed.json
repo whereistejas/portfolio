@@ -1,5 +1,93 @@
 [
   {
+    "author": "Brian Potter",
+    "category": "article",
+    "date_group": "25 Nov 2026",
+    "highlights": [
+      "Qatar is responsible for roughly 1/3rd of the world’s supply of helium, which was formerly transported through the Strait of Hormuz in specialized containers.",
+      "The strong magnetic fields in MRI machines are created by superconducting magnets ... [](https://www.construction-physics.com/p/helium-is-hard-to-replace/#footnote-2-193615300)The vast majority of MRI machines used today use superconducting magnets made from niobium-titanium (NbTi), which becomes superconducting at 9.2 degrees above absolute zero. This is well below the boiling point of any other coolant, making liquid helium the only practical option for cooling the magnets."
+    ],
+    "last_highlighted_at": "2026-11-25T20:06:02.667Z",
+    "last_moved_at": "2026-11-25T20:27:48.295Z",
+    "location": "archive",
+    "readwise_id": "01kny92tsgq7zpvp3rv6p96dph",
+    "summary": "Helium is rare on Earth and comes mostly from underground natural gas pockets. It has unique properties that make it hard to replace in industries like semiconductors, aerospace, and medical imaging. Recycling helium can greatly reduce its use, but most of it is still wasted.",
+    "title": "Helium Is Hard to Replace",
+    "url": "https://www.construction-physics.com/p/helium-is-hard-to-replace"
+  },
+  {
+    "author": "Steve Blank",
+    "category": "article",
+    "date_group": "25 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-25T10:36:31.766Z",
+    "location": "archive",
+    "readwise_id": "01kny95gbehap12x5fb1n2qyc0",
+    "summary": "Drones have made all surface targets, military and civilian, vulnerable to attack. Current air defenses are not enough, so the U.S. must protect key assets by moving them underground or out of sight. A new, fast, and affordable approach to building underground shelters and tunnels is needed to improve survival and defense.",
+    "title": "Nowhere Is Safe",
+    "url": "https://steveblank.com/2026/04/09/nowhere-is-safe/"
+  },
+  {
+    "author": "Theresa Ronnie",
+    "category": "article",
+    "date_group": "25 Nov 2026",
+    "highlights": [
+      "***Criticality is the state in which a fission chain reaction becomes self-sustaining.*** Each fission event produces exactly enough neutrons to trigger subsequent reactions at a steady rate, without external input. It is the threshold a reactor must cross before it can be scaled to full power and connected to the grid.",
+      "nuclear electricity in India is more expensive per unit than solar, with multiple independent analyses placing the levelised cost of nuclear at two to three times that of solar ... The economic case for nuclear rests on baseload reliability and fuel sovereignty, not on marginal cost. Solar and nuclear serve different grid functions. Both are necessary. They are not in competition.",
+      "India’s existing template is instructive. Its contribution to Bangladesh’s Rooppur Nuclear Power Plant, alongside Russia’s Rosatom, included capacity building, knowledge transfer, and training of Bangladeshi nuclear engineers. The Indian Council of World Affairs (a Government of India think tank) has outlined this as a model for what it terms **“thorium diplomacy”**: using nuclear knowledge-sharing as soft power, with the FBR and thorium cycle as the long-term centrepiece."
+    ],
+    "last_highlighted_at": "2026-11-25T10:38:21.935Z",
+    "last_moved_at": "2026-11-25T10:36:16.519Z",
+    "location": "archive",
+    "readwise_id": "01knsgr30eawm987kd0mn3zw25",
+    "summary": "India’s Prototype Fast Breeder Reactor at Kalpakkam reached first criticality on April 6, 2026, marking a major step in its nuclear program. This reactor uses advanced technology to produce more fuel than it consumes, moving India toward energy independence. The success opens the way for more fast breeder reactors and growth in India’s nuclear capacity by 2047.",
+    "title": "Breaking news: The Prototype Fast Breeder Reactor at Kalpakkam achieves first criticality",
+    "url": "https://theclimatedesk.substack.com/p/breaking-news-the-prototype-fast"
+  },
+  {
+    "author": "Herb Sutter",
+    "category": "article",
+    "date_group": "24 Nov 2026",
+    "highlights": [
+      "The most controversial feature in C++26 is contracts: `pre`, `post`, and `contract_assert`.",
+      "several NBs told the committee was their primary request for contracts: It is a pure extension that gives programmers a way to express in source code that a specific contract is always enforced, guaranteeing that “program execution will not continue past the contract assertion if it is violated, regardless of the semantics of other contract assertions” that various parts of the program may be built with."
+    ],
+    "last_highlighted_at": "2026-11-23T23:55:58.526Z",
+    "last_moved_at": "2026-11-24T00:00:09.690Z",
+    "location": "archive",
+    "readwise_id": "01m85d6fdqe7gyjta89t5s01np",
+    "summary": "The C++ committee finished revising C++26 and plans to send it for approval again, keeping contracts in the standard. Most of the meeting focused on concerns about contracts and changes to address them. The committee also approved new C++29 features, including labeled loops and a flexible ranges view.",
+    "title": "C++26 is done (again)! - Trip report: November 2026 ISO C++ standards meeting (Búzios, Brazil)",
+    "url": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/"
+  },
+  {
+    "author": "Chinmay Tumbe",
+    "category": "article",
+    "date_group": "23 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-23T19:25:48.663Z",
+    "location": "archive",
+    "readwise_id": "01knz9mzbwn1wdc71xqfrpwng7",
+    "summary": "The book *Made in India* tells the story of Desh Bandhu Gupta, founder of Lupin, and his role in building India’s global pharmaceutical industry. It shows both his personal struggles and the company’s growth into a billion-dollar firm making important medicines like anti-TB drugs. The book also highlights the challenges and successes of Indian pharma, while noting the support from family and the government’s role.",
+    "title": "‘Made in India’: A fine exposition of the personal and professional in creating pharma brand Lupin",
+    "url": "https://scroll.in/article/1091985/made-in-india-a-fine-exposition-of-the-personal-and-professional-in-creating-pharma-brand-lupin"
+  },
+  {
+    "author": "Maciej Cegłowski",
+    "category": "article",
+    "date_group": "23 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-23T13:29:37.348Z",
+    "location": "archive",
+    "readwise_id": "01m8327yzgf12947tq33p2n2bv",
+    "summary": "The essay argues that sending people to Mars soon would be costly, dangerous, and scientifically harmful. Human explorers could contaminate Mars and disrupt the search for life there. The author urges careful research and robotic exploration before any human landing.",
+    "title": "Why Not Mars",
+    "url": "https://idlewords.com/2023/1/why_not_mars.htm"
+  },
+  {
     "author": "Gergely Orosz",
     "category": "article",
     "date_group": "23 Nov 2026",
@@ -67,7 +155,7 @@
     "url": "https://colossus.com/article/sane-asylum-turbopuffer/"
   },
   {
-    "author": "",
+    "author": "Varun Gandhi",
     "category": "article",
     "date_group": "20 Nov 2026",
     "highlights": [
@@ -6524,9 +6612,10 @@
       "The people always see clearly into the hearts of those who rule them.",
       "Of course, that does not justify what has been done to you, but it might explain it.”",
       "But Bheema was not to know this, save from stories he had heard, which he hardly took literally. Like men of every age, he, too, thought that all times had been exactly like the one he lived in.",
-      "“All that is past. When the sun sets on one day, who can call him back so you can live the same day again? There is no returning; not a moment may we retrieve. Turn your heart away from what is over.”"
+      "“All that is past. When the sun sets on one day, who can call him back so you can live the same day again? There is no returning; not a moment may we retrieve. Turn your heart away from what is over.”",
+      "“You don’t know his heart. How quick his anger was when I stood before him and how cold his hatred. I thought I would die. And you want me to go back to that man and beg him to marry me? Never! And he would never do it. You are too kind Devavrata and full of such lofty wisdom.” Her eyes flashed. “But you are not kind enough to break your oath and unfortunately your wisdom is of no use to me. You never hesitated when you abducted me. Why can’t you use the same courage now to save my life?”"
     ],
-    "last_highlighted_at": "2026-11-17T00:47:58.283Z",
+    "last_highlighted_at": "2026-11-24T19:27:48.978Z",
     "last_moved_at": "2025-07-02T20:08:02.726Z",
     "location": "archive",
     "readwise_id": "01jmhrpf9y5fmxkzj9x3gkdvyx",
@@ -8612,20 +8701,46 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
-    "author": "",
+    "author": "Armin Ronacher",
+    "category": "article",
+    "date_group": "26 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-26T00:10:05.740Z",
+    "location": "new",
+    "readwise_id": "01m8ak08hczpvt6qbpyzpc5gvv",
+    "summary": "The author argues that Rust’s mutex poisoning causes more problems than it solves. It can trigger deadlocks, repeated panics, and outages, while recovery is rarely handled well. They want ordinary mutexes not to poison, with poisoning available as an optional feature.",
+    "title": "Abolish Lock Poisoning",
+    "url": "https://lucumr.pocoo.org/2026/11/25/poisoning/"
+  },
+  {
+    "author": "Tony Finch",
+    "category": "article",
+    "date_group": "24 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-24T10:12:20.994Z",
+    "location": "new",
+    "readwise_id": "01m86gnjw2x5n8mxk0f24vt34a",
+    "summary": "Product types combine values, while sum types offer alternatives. Dependent pairs use a sum-like structure, and dependent functions use a product-like structure. The Greek symbols Σ and Π reflect these ways of counting possibilities.",
+    "title": "2025-05-28 – the algebra of dependent types",
+    "url": "https://dotat.at/@/2025-05-28-types.html"
+  },
+  {
+    "author": "Epic Games",
     "category": "article",
     "date_group": "23 Nov 2026",
     "highlights": [],
     "last_highlighted_at": null,
-    "last_moved_at": "2026-11-23T02:02:31.280Z",
+    "last_moved_at": "2026-11-23T09:34:53.992Z",
     "location": "new",
-    "readwise_id": "01m8327yzgf12947tq33p2n2bv",
-    "summary": "The essay argues that sending people to Mars soon would be costly, dangerous, and scientifically harmful. Human explorers could contaminate Mars and disrupt the search for life there. The author urges careful research and robotic exploration before any human landing.",
-    "title": "Why Not Mars",
-    "url": "https://idlewords.com/2023/1/why_not_mars.htm"
+    "readwise_id": "01m83w49h8jff5jw8jkqvf4mf5",
+    "summary": "Lore stores file content as immutable, deduplicated pieces and keeps branch pointers in a separate mutable store. Its version control features build on this storage, but other applications can use the storage alone. Changes are written first, then a single pointer update publishes them atomically.",
+    "title": "The Lore Version Control System¶",
+    "url": "https://epicgames.github.io/lore/explanation/system-design/"
   },
   {
-    "author": "",
+    "author": "Maciej Cegłowski",
     "category": "article",
     "date_group": "23 Nov 2026",
     "highlights": [],
@@ -9650,45 +9765,6 @@
     "url": "https://www.neuroai.science/p/blue-light-filters-dont-work"
   },
   {
-    "author": "Chinmay Tumbe",
-    "category": "article",
-    "date_group": "11 Apr 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-04-11T22:12:27.132Z",
-    "location": "new",
-    "readwise_id": "01knz9mzbwn1wdc71xqfrpwng7",
-    "summary": "The book *Made in India* tells the story of Desh Bandhu Gupta, founder of Lupin, and his role in building India’s global pharmaceutical industry. It shows both his personal struggles and the company’s growth into a billion-dollar firm making important medicines like anti-TB drugs. The book also highlights the challenges and successes of Indian pharma, while noting the support from family and the government’s role.",
-    "title": "‘Made in India’: A fine exposition of the personal and professional in creating pharma brand Lupin",
-    "url": "https://scroll.in/article/1091985/made-in-india-a-fine-exposition-of-the-personal-and-professional-in-creating-pharma-brand-lupin"
-  },
-  {
-    "author": "Steve Blank",
-    "category": "article",
-    "date_group": "11 Apr 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-04-11T12:44:45.806Z",
-    "location": "new",
-    "readwise_id": "01kny95gbehap12x5fb1n2qyc0",
-    "summary": "Drones have made all surface targets, military and civilian, vulnerable to attack. Current air defenses are not enough, so the U.S. must protect key assets by moving them underground or out of sight. A new, fast, and affordable approach to building underground shelters and tunnels is needed to improve survival and defense.",
-    "title": "Nowhere Is Safe",
-    "url": "https://steveblank.com/2026/04/09/nowhere-is-safe/"
-  },
-  {
-    "author": "Brian Potter",
-    "category": "article",
-    "date_group": "11 Apr 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-04-11T12:43:18.192Z",
-    "location": "new",
-    "readwise_id": "01kny92tsgq7zpvp3rv6p96dph",
-    "summary": "Helium is rare on Earth and comes mostly from underground natural gas pockets. It has unique properties that make it hard to replace in industries like semiconductors, aerospace, and medical imaging. Recycling helium can greatly reduce its use, but most of it is still wasted.",
-    "title": "Helium Is Hard to Replace",
-    "url": "https://www.construction-physics.com/p/helium-is-hard-to-replace"
-  },
-  {
     "author": "Matt Keeter",
     "category": "article",
     "date_group": "10 Apr 2026",
@@ -9713,19 +9789,6 @@
     "summary": "The author prefers the Model Context Protocol (MCP) over Skills for connecting AI to services because MCP offers seamless, remote access without installing extra tools. Skills are useful for teaching knowledge but often require clunky command-line interfaces that limit usability. Combining MCP as a connector and Skills as a knowledge layer creates a smoother, more practical AI integration experience.",
     "title": "I Still Prefer MCP Over Skills",
     "url": "https://david.coffee/i-still-prefer-mcp-over-skills/"
-  },
-  {
-    "author": "Theresa Ronnie",
-    "category": "article",
-    "date_group": "09 Apr 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-04-09T16:21:02.605Z",
-    "location": "new",
-    "readwise_id": "01knsgr30eawm987kd0mn3zw25",
-    "summary": "India’s Prototype Fast Breeder Reactor at Kalpakkam reached first criticality on April 6, 2026, marking a major step in its nuclear program. This reactor uses advanced technology to produce more fuel than it consumes, moving India toward energy independence. The success opens the way for more fast breeder reactors and growth in India’s nuclear capacity by 2047.",
-    "title": "Breaking news: The Prototype Fast Breeder Reactor at Kalpakkam achieves first criticality",
-    "url": "https://theclimatedesk.substack.com/p/breaking-news-the-prototype-fast"
   },
   {
     "author": "Adolfo Ochagavía",
