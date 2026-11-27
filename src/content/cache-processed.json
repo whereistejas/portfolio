@@ -1,5 +1,31 @@
 [
   {
+    "author": "Armin Ronacher",
+    "category": "article",
+    "date_group": "26 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-26T14:32:20.790Z",
+    "location": "archive",
+    "readwise_id": "01m8ak08hczpvt6qbpyzpc5gvv",
+    "summary": "The author argues that Rust’s mutex poisoning causes more problems than it solves. It can trigger deadlocks, repeated panics, and outages, while recovery is rarely handled well. They want ordinary mutexes not to poison, with poisoning available as an optional feature.",
+    "title": "Abolish Lock Poisoning",
+    "url": "https://lucumr.pocoo.org/2026/11/25/poisoning/"
+  },
+  {
+    "author": "Rain",
+    "category": "article",
+    "date_group": "26 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-26T13:35:18.524Z",
+    "location": "archive",
+    "readwise_id": "01m8c0z1rhx9texprn99vk1vq1",
+    "summary": "The article argues that Lean can verify a mathematical certificate even if people do not understand it. It says claims that the certificate cannot be checked are false, though a machine-verified certificate is different from a human-understood proof. Science communicators should avoid spreading misinformation about formal verification.",
+    "title": "When science communicators spread misinformation",
+    "url": "https://sunshowers.io/posts/science-communicator-misinformation/"
+  },
+  {
     "author": "Brian Potter",
     "category": "article",
     "date_group": "25 Nov 2026",
@@ -8701,19 +8727,6 @@
     "url": "https://nabeelqu.co/advice"
   },
   {
-    "author": "Armin Ronacher",
-    "category": "article",
-    "date_group": "26 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
-    "last_moved_at": "2026-11-26T00:10:05.740Z",
-    "location": "new",
-    "readwise_id": "01m8ak08hczpvt6qbpyzpc5gvv",
-    "summary": "The author argues that Rust’s mutex poisoning causes more problems than it solves. It can trigger deadlocks, repeated panics, and outages, while recovery is rarely handled well. They want ordinary mutexes not to poison, with poisoning available as an optional feature.",
-    "title": "Abolish Lock Poisoning",
-    "url": "https://lucumr.pocoo.org/2026/11/25/poisoning/"
-  },
-  {
     "author": "Tony Finch",
     "category": "article",
     "date_group": "24 Nov 2026",
@@ -8743,8 +8756,11 @@
     "author": "Maciej Cegłowski",
     "category": "article",
     "date_group": "23 Nov 2026",
-    "highlights": [],
-    "last_highlighted_at": null,
+    "highlights": [
+      "There is just one brief window every 26 months when travel between our two planets is feasible, and this constraint of orbital mechanics is so fundamental that we’ve known since Lindbergh crossed the Atlantic what a mission to Mars must look like.",
+      "Before comparing the merits of each, it’s worth stressing what they have in common—both are *long*, more than double the absolute record for space flight (438 days), five times longer than anyone has remained in space without resupply (128 days), and about ten times humanity’s accumulated time beyond low Earth orbit (82 days)."
+    ],
+    "last_highlighted_at": "2026-11-26T16:54:15.869Z",
     "last_moved_at": "2026-11-23T02:01:28.952Z",
     "location": "new",
     "readwise_id": "01m832623rry198jn1gkh4s4ky",
