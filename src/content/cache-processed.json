@@ -1,5 +1,35 @@
 [
   {
+    "author": "Leonardo de Moura",
+    "category": "article",
+    "date_group": "27 Nov 2026",
+    "highlights": [],
+    "last_highlighted_at": null,
+    "last_moved_at": "2026-11-27T17:48:00.298Z",
+    "location": "archive",
+    "readwise_id": "01m8f1wa9ggean1s2w5mvp5kqk",
+    "summary": "Lean is a proof system designed with a tiny, simple core called the kernel that checks proofs independently to avoid hidden bugs. Multiple independent kernels run the same tests to catch errors quickly and improve safety. This approach makes Lean reliable and helps it keep getting better, even when AI tries to find mistakes.",
+    "title": "Who Watches the Provers?",
+    "url": "https://leodemoura.github.io/blog/2026-3-16-who-watches-the-provers/"
+  },
+  {
+    "author": "",
+    "category": "article",
+    "date_group": "27 Nov 2026",
+    "highlights": [
+      "There are some computer programs that claim to check every step in a proof. However, various \"soundness bugs\" have been reported that at least potentially allowed false statements to slip past these programs. In many cases, these bugs have been demonstrated to be exploitable.",
+      "One standard path towards security is to minimize the complexity of the trusted computing base, which by definition is the part of the system that security reviewers need to check. From this perspective, HOL Light's proof-checking kernel is attractive because of its stability and simplicity, only 400 lines of code. But this size measurement doesn't say how carefully the HOL Light code has been reviewed, and doesn't say anything about the possibility of bugs in the underlying programming language.",
+      "From a security perspective, it's still [concerning](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf) to be relying on large proof-checking binaries, where the answer to why we're supposed to trust one binary is that the binary has supposedly been checked by another large proof-checking binary. I'd like to see more work on simplifying these binaries."
+    ],
+    "last_highlighted_at": "2026-11-27T17:00:35.691Z",
+    "last_moved_at": "2026-11-27T16:57:52.448Z",
+    "location": "archive",
+    "readwise_id": "01m8ez24bq2hvmp1tb4qfks0nt",
+    "summary": "Proof-checking programs can contain bugs that let false claims pass as proofs. Using several checkers and keeping their trusted code small may reduce risk, but bugs can be shared. The author argues that simpler checkers and computer-checked proofs of their correctness are important.",
+    "title": "False computer-checked proofs",
+    "url": "https://cr.yp.to/proofs/falseccp.html"
+  },
+  {
     "author": "Armin Ronacher",
     "category": "article",
     "date_group": "26 Nov 2026",
@@ -31,9 +61,13 @@
     "date_group": "25 Nov 2026",
     "highlights": [
       "Qatar is responsible for roughly 1/3rd of the world’s supply of helium, which was formerly transported through the Strait of Hormuz in specialized containers.",
-      "The strong magnetic fields in MRI machines are created by superconducting magnets ... [](https://www.construction-physics.com/p/helium-is-hard-to-replace/#footnote-2-193615300)The vast majority of MRI machines used today use superconducting magnets made from niobium-titanium (NbTi), which becomes superconducting at 9.2 degrees above absolute zero. This is well below the boiling point of any other coolant, making liquid helium the only practical option for cooling the magnets."
+      "The strong magnetic fields in MRI machines are created by superconducting magnets ... [](https://www.construction-physics.com/p/helium-is-hard-to-replace/#footnote-2-193615300)The vast majority of MRI machines used today use superconducting magnets made from niobium-titanium (NbTi), which becomes superconducting at 9.2 degrees above absolute zero. This is well below the boiling point of any other coolant, making liquid helium the only practical option for cooling the magnets.",
+      "Because helium is so light, it rises to the very top of the atmosphere, where it eventually escapes into space. [[1]](https://www.construction-physics.com/p/helium-is-hard-to-replace/#footnote-1-193615300) So essentially all helium used by modern civilization comes from underground.",
+      "thanks to the small size and completely filled outer electron shell of helium atoms, helium has a lower boiling point than any other element.",
+      "at atmospheric pressure helium stays a liquid all the way to absolute zero. If you need to cool something to just a few degrees above absolute zero, liquid helium is essentially the only practical way to do that.",
+      "Helium also has high thermal conductivity — at room temperature, helium can move heat about six times better than air."
     ],
-    "last_highlighted_at": "2026-11-25T20:06:02.667Z",
+    "last_highlighted_at": "2026-11-27T16:36:33.296Z",
     "last_moved_at": "2026-11-25T20:27:48.295Z",
     "location": "archive",
     "readwise_id": "01kny92tsgq7zpvp3rv6p96dph",
@@ -8758,9 +8792,11 @@
     "date_group": "23 Nov 2026",
     "highlights": [
       "There is just one brief window every 26 months when travel between our two planets is feasible, and this constraint of orbital mechanics is so fundamental that we’ve known since Lindbergh crossed the Atlantic what a mission to Mars must look like.",
-      "Before comparing the merits of each, it’s worth stressing what they have in common—both are *long*, more than double the absolute record for space flight (438 days), five times longer than anyone has remained in space without resupply (128 days), and about ten times humanity’s accumulated time beyond low Earth orbit (82 days)."
+      "Before comparing the merits of each, it’s worth stressing what they have in common—both are *long*, more than double the absolute record for space flight (438 days), five times longer than anyone has remained in space without resupply (128 days), and about ten times humanity’s accumulated time beyond low Earth orbit (82 days).",
+      "The effect of this no-abort condition is to make Mars mission design acutely risk-averse.",
+      "The bedrock axiom of reliability engineering—that complex designs can be partitioned into isolated subsystems with independent failure rates—does not hold for regenerative life support."
     ],
-    "last_highlighted_at": "2026-11-26T16:54:15.869Z",
+    "last_highlighted_at": "2026-11-27T20:44:03.194Z",
     "last_moved_at": "2026-11-23T02:01:28.952Z",
     "location": "new",
     "readwise_id": "01m832623rry198jn1gkh4s4ky",
